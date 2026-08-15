@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   devise_for :users
 
   namespace :admin do
-    resources :users
+    resources :users do
+      member do
+        get :download_signature
+        get :download_validator_signature
+        get :download_confirmator_signature
+      end
+    end
     root to: "users#index"
   end
 

@@ -1,14 +1,62 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {},
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "user_signature_upload_flow",
+        "label": "User Signature Upload and Download Flow",
+        "nodes": [
+          "models_user_mount_user_signature",
+          "uploaders_user_signature_uploader_class",
+          "admin_users_controller_download_signature",
+          "config_routes_download_signature",
+          "fields_carrierwave_field_class"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "app/models/user.rb"
+      },
+      {
+        "id": "validator_confirmator_signature_pattern",
+        "label": "Validator Signature Field-to-Test Workflow Pattern",
+        "nodes": [
+          "migrate_add_validator_fields_to_users_class",
+          "models_user_mount_validator_signature",
+          "uploaders_validator_signature_uploader_class",
+          "admin_users_controller_download_validator_signature",
+          "admin_user_signature_upload_spec_validator_signature_test"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb"
+      },
+      {
+        "id": "carrierwave_upload_security_policy",
+        "label": "CarrierWave Global Upload Security Policy",
+        "nodes": [
+          "initializers_carrierwave_extension_allowlist",
+          "initializers_carrierwave_content_type_allowlist",
+          "uploaders_user_signature_uploader_class",
+          "uploaders_validator_signature_uploader_class",
+          "uploaders_confirmator_signature_uploader_class"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "config/initializers/carrierwave.rb"
+      }
+    ]
+  },
   "nodes": [
     {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L1",
-      "community": 0,
+      "community": 3,
       "norm_label": "package.json",
       "id": "package_json"
     },
@@ -17,7 +65,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L2",
-      "community": 0,
+      "community": 3,
       "norm_label": "name",
       "id": "terminus_package_name"
     },
@@ -26,7 +74,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L3",
-      "community": 0,
+      "community": 3,
       "norm_label": "private",
       "id": "terminus_package_private"
     },
@@ -35,7 +83,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L4",
-      "community": 0,
+      "community": 3,
       "norm_label": "devdependencies",
       "id": "terminus_package_devdependencies"
     },
@@ -44,7 +92,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L5",
-      "community": 0,
+      "community": 3,
       "norm_label": "esbuild",
       "id": "terminus_package_devdependencies_esbuild"
     },
@@ -53,7 +101,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
-      "community": 10,
+      "community": 3,
       "norm_label": "scripts",
       "id": "terminus_package_scripts"
     },
@@ -62,7 +110,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L8",
-      "community": 10,
+      "community": 3,
       "norm_label": "build",
       "id": "terminus_package_scripts_build"
     },
@@ -71,7 +119,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L9",
-      "community": 10,
+      "community": 3,
       "norm_label": "build:css:compile",
       "id": "terminus_package_scripts_build_css_compile"
     },
@@ -80,7 +128,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L10",
-      "community": 10,
+      "community": 3,
       "norm_label": "build:css:prefix",
       "id": "terminus_package_scripts_build_css_prefix"
     },
@@ -89,7 +137,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L11",
-      "community": 10,
+      "community": 3,
       "norm_label": "build:css",
       "id": "terminus_package_scripts_build_css"
     },
@@ -98,7 +146,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
-      "community": 10,
+      "community": 3,
       "norm_label": "watch:css",
       "id": "terminus_package_scripts_watch_css"
     },
@@ -107,7 +155,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L14",
-      "community": 0,
+      "community": 7,
       "norm_label": "dependencies",
       "id": "terminus_package_dependencies"
     },
@@ -116,7 +164,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
-      "community": 0,
+      "community": 7,
       "norm_label": "@hotwired/stimulus",
       "id": "terminus_package_dependencies_hotwired_stimulus"
     },
@@ -125,7 +173,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
-      "community": 0,
+      "community": 7,
       "norm_label": "@popperjs/core",
       "id": "terminus_package_dependencies_popperjs_core"
     },
@@ -134,7 +182,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L17",
-      "community": 0,
+      "community": 7,
       "norm_label": "autoprefixer",
       "id": "terminus_package_dependencies_autoprefixer"
     },
@@ -143,7 +191,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L18",
-      "community": 0,
+      "community": 7,
       "norm_label": "bootstrap",
       "id": "terminus_package_dependencies_bootstrap"
     },
@@ -152,7 +200,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L20",
-      "community": 0,
+      "community": 7,
       "norm_label": "bootswatch",
       "id": "terminus_package_dependencies_bootswatch"
     },
@@ -161,7 +209,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L21",
-      "community": 0,
+      "community": 7,
       "norm_label": "nodemon",
       "id": "terminus_package_dependencies_nodemon"
     },
@@ -170,7 +218,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L22",
-      "community": 0,
+      "community": 7,
       "norm_label": "postcss",
       "id": "terminus_package_dependencies_postcss"
     },
@@ -179,7 +227,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L23",
-      "community": 0,
+      "community": 7,
       "norm_label": "postcss-cli",
       "id": "terminus_package_dependencies_postcss_cli"
     },
@@ -188,7 +236,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L24",
-      "community": 0,
+      "community": 7,
       "norm_label": "sass",
       "id": "terminus_package_dependencies_sass"
     },
@@ -197,7 +245,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L26",
-      "community": 0,
+      "community": 3,
       "norm_label": "browserslist",
       "id": "terminus_package_browserslist"
     },
@@ -206,7 +254,7 @@
       "file_type": "code",
       "source_file": "config/boot.rb",
       "source_location": "L1",
-      "community": 20,
+      "community": 26,
       "norm_label": "boot.rb",
       "id": "config_boot_rb"
     },
@@ -215,7 +263,7 @@
       "file_type": "code",
       "source_file": "config/routes.rb",
       "source_location": "L1",
-      "community": 21,
+      "community": 27,
       "norm_label": "routes.rb",
       "id": "config_routes_rb"
     },
@@ -224,7 +272,7 @@
       "file_type": "code",
       "source_file": "config/ci.rb",
       "source_location": "L1",
-      "community": 22,
+      "community": 28,
       "norm_label": "ci.rb",
       "id": "config_ci_rb"
     },
@@ -233,7 +281,7 @@
       "file_type": "code",
       "source_file": "config/environment.rb",
       "source_location": "L1",
-      "community": 23,
+      "community": 29,
       "norm_label": "environment.rb",
       "id": "config_environment_rb"
     },
@@ -242,7 +290,7 @@
       "file_type": "code",
       "source_file": "config/application.rb",
       "source_location": "L1",
-      "community": 8,
+      "community": 11,
       "norm_label": "application.rb",
       "id": "config_application_rb"
     },
@@ -251,7 +299,7 @@
       "file_type": "code",
       "source_file": "config/puma.rb",
       "source_location": "L1",
-      "community": 24,
+      "community": 30,
       "norm_label": "puma.rb",
       "id": "config_puma_rb"
     },
@@ -260,7 +308,7 @@
       "file_type": "code",
       "source_file": "config/environments/production.rb",
       "source_location": "L1",
-      "community": 25,
+      "community": 31,
       "norm_label": "production.rb",
       "id": "config_environments_production_rb"
     },
@@ -269,7 +317,7 @@
       "file_type": "code",
       "source_file": "config/environments/test.rb",
       "source_location": "L1",
-      "community": 26,
+      "community": 32,
       "norm_label": "test.rb",
       "id": "config_environments_test_rb"
     },
@@ -278,7 +326,7 @@
       "file_type": "code",
       "source_file": "config/environments/development.rb",
       "source_location": "L1",
-      "community": 27,
+      "community": 33,
       "norm_label": "development.rb",
       "id": "config_environments_development_rb"
     },
@@ -287,7 +335,7 @@
       "file_type": "code",
       "source_file": "config/initializers/devise.rb",
       "source_location": "L1",
-      "community": 28,
+      "community": 34,
       "norm_label": "devise.rb",
       "id": "config_initializers_devise_rb"
     },
@@ -296,7 +344,7 @@
       "file_type": "code",
       "source_file": "config/initializers/content_security_policy.rb",
       "source_location": "L1",
-      "community": 29,
+      "community": 35,
       "norm_label": "content_security_policy.rb",
       "id": "config_initializers_content_security_policy_rb"
     },
@@ -305,7 +353,7 @@
       "file_type": "code",
       "source_file": "config/initializers/filter_parameter_logging.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 36,
       "norm_label": "filter_parameter_logging.rb",
       "id": "config_initializers_filter_parameter_logging_rb"
     },
@@ -314,7 +362,7 @@
       "file_type": "code",
       "source_file": "config/initializers/assets.rb",
       "source_location": "L1",
-      "community": 31,
+      "community": 37,
       "norm_label": "assets.rb",
       "id": "config_initializers_assets_rb"
     },
@@ -323,7 +371,7 @@
       "file_type": "code",
       "source_file": "config/initializers/inflections.rb",
       "source_location": "L1",
-      "community": 32,
+      "community": 38,
       "norm_label": "inflections.rb",
       "id": "config_initializers_inflections_rb"
     },
@@ -332,7 +380,7 @@
       "file_type": "code",
       "source_file": "spec/spec_helper.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 39,
       "norm_label": "spec_helper.rb",
       "id": "spec_spec_helper_rb"
     },
@@ -341,7 +389,7 @@
       "file_type": "code",
       "source_file": "spec/rails_helper.rb",
       "source_location": "L1",
-      "community": 34,
+      "community": 40,
       "norm_label": "rails_helper.rb",
       "id": "spec_rails_helper_rb"
     },
@@ -350,7 +398,7 @@
       "file_type": "code",
       "source_file": "spec/system/login_spec.rb",
       "source_location": "L1",
-      "community": 35,
+      "community": 41,
       "norm_label": "login_spec.rb",
       "id": "spec_system_login_spec_rb"
     },
@@ -359,7 +407,7 @@
       "file_type": "code",
       "source_file": "spec/models/user_spec.rb",
       "source_location": "L1",
-      "community": 36,
+      "community": 42,
       "norm_label": "user_spec.rb",
       "id": "spec_models_user_spec_rb"
     },
@@ -368,7 +416,7 @@
       "file_type": "code",
       "source_file": "spec/factories/users.rb",
       "source_location": "L1",
-      "community": 37,
+      "community": 43,
       "norm_label": "users.rb",
       "id": "spec_factories_users_rb"
     },
@@ -377,7 +425,7 @@
       "file_type": "code",
       "source_file": "app/views/pwa/service-worker.js",
       "source_location": "L1",
-      "community": 38,
+      "community": 44,
       "norm_label": "service-worker.js",
       "id": "app_views_pwa_service_worker_js"
     },
@@ -386,7 +434,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L11",
-      "community": 3,
+      "community": 0,
       "norm_label": ".index?()",
       "id": "policies_application_policy_applicationpolicy_index"
     },
@@ -395,7 +443,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L15",
-      "community": 3,
+      "community": 0,
       "norm_label": ".show?()",
       "id": "policies_application_policy_applicationpolicy_show"
     },
@@ -404,7 +452,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L19",
-      "community": 3,
+      "community": 0,
       "norm_label": ".create?()",
       "id": "policies_application_policy_applicationpolicy_create"
     },
@@ -413,7 +461,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L23",
-      "community": 3,
+      "community": 0,
       "norm_label": ".new?()",
       "id": "policies_application_policy_applicationpolicy_new"
     },
@@ -422,7 +470,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L27",
-      "community": 3,
+      "community": 0,
       "norm_label": ".update?()",
       "id": "policies_application_policy_applicationpolicy_update"
     },
@@ -431,7 +479,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L31",
-      "community": 3,
+      "community": 0,
       "norm_label": ".edit?()",
       "id": "policies_application_policy_applicationpolicy_edit"
     },
@@ -440,7 +488,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L35",
-      "community": 3,
+      "community": 0,
       "norm_label": ".destroy?()",
       "id": "policies_application_policy_applicationpolicy_destroy"
     },
@@ -449,7 +497,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L41",
-      "community": 3,
+      "community": 0,
       "norm_label": ".admin?()",
       "id": "policies_application_policy_applicationpolicy_admin"
     },
@@ -458,7 +506,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L45",
-      "community": 3,
+      "community": 0,
       "norm_label": "scope",
       "id": "policies_application_policy_scope"
     },
@@ -467,7 +515,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L46",
-      "community": 3,
+      "community": 0,
       "norm_label": ".initialize()",
       "id": "policies_application_policy_scope_initialize"
     },
@@ -476,7 +524,7 @@
       "file_type": "code",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L51",
-      "community": 3,
+      "community": 0,
       "norm_label": ".resolve()",
       "id": "policies_application_policy_scope_resolve"
     },
@@ -485,7 +533,7 @@
       "file_type": "code",
       "source_file": "app/helpers/application_helper.rb",
       "source_location": "L1",
-      "community": 39,
+      "community": 45,
       "norm_label": "application_helper.rb",
       "id": "app_helpers_application_helper_rb"
     },
@@ -494,7 +542,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/index.js",
       "source_location": "L1",
-      "community": 8,
+      "community": 11,
       "norm_label": "index.js",
       "id": "app_javascript_controllers_index_js"
     },
@@ -503,7 +551,7 @@
       "file_type": "code",
       "source_file": "app/models/application_record.rb",
       "source_location": "L1",
-      "community": 40,
+      "community": 46,
       "norm_label": "application_record.rb",
       "id": "app_models_application_record_rb"
     },
@@ -512,7 +560,7 @@
       "file_type": "code",
       "source_file": "app/models/user.rb",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "user.rb",
       "id": "app_models_user_rb"
     },
@@ -521,7 +569,7 @@
       "file_type": "code",
       "source_file": "app/models/user.rb",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "user",
       "id": "models_user_user"
     },
@@ -530,7 +578,7 @@
       "file_type": "code",
       "source_file": "app/models/user.rb",
       "source_location": "L10",
-      "community": 1,
+      "community": 0,
       "norm_label": ".email_required?()",
       "id": "models_user_user_email_required"
     },
@@ -539,7 +587,7 @@
       "file_type": "code",
       "source_file": "app/models/user.rb",
       "source_location": "L14",
-      "community": 1,
+      "community": 0,
       "norm_label": ".email_changed?()",
       "id": "models_user_user_email_changed"
     },
@@ -548,7 +596,7 @@
       "file_type": "code",
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L1",
-      "community": 5,
+      "community": 12,
       "norm_label": "home_controller.rb",
       "id": "app_controllers_home_controller_rb"
     },
@@ -557,7 +605,7 @@
       "file_type": "code",
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L2",
-      "community": 5,
+      "community": 12,
       "norm_label": ".index()",
       "id": "controllers_home_controller_homecontroller_index"
     },
@@ -566,7 +614,7 @@
       "file_type": "code",
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L1",
-      "community": 5,
+      "community": 12,
       "norm_label": "application_controller.rb",
       "id": "app_controllers_application_controller_rb"
     },
@@ -575,7 +623,7 @@
       "file_type": "code",
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L12",
-      "community": 5,
+      "community": 12,
       "norm_label": ".user_not_authorized()",
       "id": "controllers_application_controller_applicationcontroller_user_not_authorized"
     },
@@ -584,7 +632,7 @@
       "file_type": "code",
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L1",
-      "community": 5,
+      "community": 12,
       "norm_label": "application_controller.rb",
       "id": "app_controllers_admin_application_controller_rb"
     },
@@ -593,7 +641,7 @@
       "file_type": "code",
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L12",
-      "community": 5,
+      "community": 12,
       "norm_label": ".authenticate_admin()",
       "id": "admin_application_controller_applicationcontroller_authenticate_admin"
     },
@@ -616,20 +664,11 @@
       "id": "admin_users_controller_userscontroller_resource_params"
     },
     {
-      "label": "user_dashboard.rb",
-      "file_type": "code",
-      "source_file": "app/dashboards/user_dashboard.rb",
-      "source_location": "L1",
-      "community": 1,
-      "norm_label": "user_dashboard.rb",
-      "id": "app_dashboards_user_dashboard_rb"
-    },
-    {
       "label": ".display_resource()",
       "file_type": "code",
       "source_file": "app/dashboards/user_dashboard.rb",
       "source_location": "L91",
-      "community": 1,
+      "community": 2,
       "norm_label": ".display_resource()",
       "id": "dashboards_user_dashboard_userdashboard_display_resource"
     },
@@ -638,7 +677,7 @@
       "file_type": "code",
       "source_file": "app/mailers/application_mailer.rb",
       "source_location": "L1",
-      "community": 41,
+      "community": 47,
       "norm_label": "application_mailer.rb",
       "id": "app_mailers_application_mailer_rb"
     },
@@ -647,7 +686,7 @@
       "file_type": "code",
       "source_file": "db/seeds.rb",
       "source_location": "L1",
-      "community": 42,
+      "community": 48,
       "norm_label": "seeds.rb",
       "id": "db_seeds_rb"
     },
@@ -656,7 +695,7 @@
       "file_type": "code",
       "source_file": "db/schema.rb",
       "source_location": "L1",
-      "community": 43,
+      "community": 49,
       "norm_label": "schema.rb",
       "id": "db_schema_rb"
     },
@@ -665,7 +704,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260815090539_devise_create_users.rb",
       "source_location": "L1",
-      "community": 1,
+      "community": 2,
       "norm_label": "20260815090539_devise_create_users.rb",
       "id": "db_migrate_20260815090539_devise_create_users_rb"
     },
@@ -674,7 +713,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260815090539_devise_create_users.rb",
       "source_location": "L3",
-      "community": 1,
+      "community": 2,
       "norm_label": "devisecreateusers",
       "id": "migrate_20260815090539_devise_create_users_devisecreateusers"
     },
@@ -683,7 +722,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260815090539_devise_create_users.rb",
       "source_location": "L4",
-      "community": 1,
+      "community": 2,
       "norm_label": ".change()",
       "id": "migrate_20260815090539_devise_create_users_devisecreateusers_change"
     },
@@ -696,7 +735,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "admin::applicationcontroller#authenticate_admin",
       "id": "admin_application_controller_authenticate_admin"
     },
@@ -722,7 +761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 0,
       "norm_label": "applicationcontroller#user_not_authorized",
       "id": "controllers_application_controller_user_not_authorized"
     },
@@ -735,7 +774,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 2,
       "norm_label": "userdashboard#display_resource",
       "id": "dashboards_user_dashboard_display_resource"
     },
@@ -748,7 +787,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 50,
       "norm_label": "applicationhelper",
       "id": "helpers_application_helper_applicationhelper"
     },
@@ -761,7 +800,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 51,
       "norm_label": "application.js entry point",
       "id": "javascript_application_entry"
     },
@@ -774,7 +813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "user#email_required?",
       "id": "models_user_email_required"
     },
@@ -787,7 +826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 52,
       "norm_label": "user#email_changed?",
       "id": "models_user_email_changed"
     },
@@ -800,7 +839,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 0,
       "norm_label": "applicationpolicy#admin?",
       "id": "policies_application_policy_admin"
     },
@@ -813,7 +852,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 53,
       "norm_label": "pwa service worker (placeholder)",
       "id": "pwa_service_worker_serviceworker"
     },
@@ -826,7 +865,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "users table schema",
       "id": "db_schema_users_table"
     },
@@ -839,7 +878,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "db/seeds.rb admin user seed",
       "id": "db_seeds_seed"
     },
@@ -852,7 +891,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": ":user factorybot factory",
       "id": "factories_users_user_factory"
     },
@@ -865,7 +904,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "user model spec",
       "id": "models_user_spec_user_spec"
     },
@@ -878,7 +917,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "rails_helper rspec config",
       "id": "spec_rails_helper_config"
     },
@@ -891,7 +930,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 54,
       "norm_label": "spec_helper rspec config",
       "id": "spec_spec_helper_config"
     },
@@ -904,7 +943,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "login system spec",
       "id": "system_login_spec_login_spec"
     },
@@ -917,7 +956,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "terminus::application",
       "id": "config_application"
     },
@@ -930,7 +969,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "boot configuration",
       "id": "config_boot"
     },
@@ -943,7 +982,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 21,
       "norm_label": "bundler audit config",
       "id": "config_bundler_audit"
     },
@@ -956,7 +995,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 14,
       "norm_label": "action cable config",
       "id": "config_cable"
     },
@@ -969,7 +1008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 21,
       "norm_label": "ci pipeline (bin/ci)",
       "id": "config_ci"
     },
@@ -982,7 +1021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 14,
       "norm_label": "database config",
       "id": "config_database"
     },
@@ -995,7 +1034,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "environment loader",
       "id": "config_environment"
     },
@@ -1008,7 +1047,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "development environment config",
       "id": "environments_development"
     },
@@ -1021,7 +1060,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "production environment config",
       "id": "environments_production"
     },
@@ -1034,7 +1073,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "test environment config",
       "id": "environments_test"
     },
@@ -1047,7 +1086,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 55,
       "norm_label": "assets initializer",
       "id": "initializers_assets"
     },
@@ -1060,7 +1099,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 56,
       "norm_label": "content security policy initializer",
       "id": "initializers_content_security_policy"
     },
@@ -1073,7 +1112,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "devise initializer",
       "id": "initializers_devise"
     },
@@ -1086,7 +1125,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "filter parameter logging initializer",
       "id": "initializers_filter_parameter_logging"
     },
@@ -1099,7 +1138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 57,
       "norm_label": "inflections initializer",
       "id": "initializers_inflections"
     },
@@ -1112,7 +1151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "devise english locale",
       "id": "locales_devise_en"
     },
@@ -1125,7 +1164,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "english locale",
       "id": "locales_en"
     },
@@ -1138,7 +1177,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 14,
       "norm_label": "puma server config",
       "id": "config_puma"
     },
@@ -1151,7 +1190,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "application routes",
       "id": "config_routes"
     },
@@ -1164,7 +1203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "active storage config",
       "id": "config_storage"
     },
@@ -1177,7 +1216,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/brakeman runner script",
       "id": "bin_brakeman"
     },
@@ -1190,7 +1229,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/bundler-audit runner script",
       "id": "bin_bundleraudit"
     },
@@ -1203,7 +1242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/ci runner script",
       "id": "bin_ci"
     },
@@ -1216,7 +1255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/dev server script",
       "id": "bin_dev"
     },
@@ -1229,7 +1268,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/docker-entrypoint script",
       "id": "bin_dockerentrypoint"
     },
@@ -1242,7 +1281,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/rails cli script",
       "id": "bin_rails"
     },
@@ -1255,7 +1294,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 58,
       "norm_label": "bin/rake cli script",
       "id": "bin_rake"
     },
@@ -1268,7 +1307,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/rubocop runner script",
       "id": "bin_rubocop"
     },
@@ -1281,7 +1320,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "bin/setup script",
       "id": "bin_setup"
     },
@@ -1294,7 +1333,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 59,
       "norm_label": "bin/thrust runner script",
       "id": "bin_thrust"
     },
@@ -1307,7 +1346,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "dependabot configuration",
       "id": "github_dependabot"
     },
@@ -1320,7 +1359,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "github actions ci workflow",
       "id": "workflows_ci"
     },
@@ -1333,7 +1372,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "rubocop configuration",
       "id": "rubocop_yml"
     },
@@ -1346,7 +1385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 60,
       "norm_label": "400 bad request page",
       "id": "public_400"
     },
@@ -1359,7 +1398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 61,
       "norm_label": "404 not found page",
       "id": "public_404"
     },
@@ -1372,7 +1411,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 62,
       "norm_label": "406 unsupported browser page",
       "id": "public_406_unsupported_browser"
     },
@@ -1385,7 +1424,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 63,
       "norm_label": "422 unprocessable entity page",
       "id": "public_422"
     },
@@ -1398,7 +1437,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 64,
       "norm_label": "500 internal server error page",
       "id": "public_500"
     },
@@ -1411,7 +1450,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 65,
       "norm_label": "robots.txt",
       "id": "public_robots_txt"
     },
@@ -1424,7 +1463,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "stack tecnico",
       "id": "claude_md_tech_stack"
     },
@@ -1437,7 +1476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 66,
       "norm_label": "struttura del progetto",
       "id": "claude_md_project_structure"
     },
@@ -1450,7 +1489,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "convenzioni di codice",
       "id": "claude_md_code_conventions"
     },
@@ -1463,7 +1502,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "regole per i test",
       "id": "claude_md_testing_conventions"
     },
@@ -1476,7 +1515,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 19,
       "norm_label": "database conventions",
       "id": "claude_md_database_conventions"
     },
@@ -1489,7 +1528,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "sicurezza (project conventions)",
       "id": "claude_md_security_conventions"
     },
@@ -1502,7 +1541,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 67,
       "norm_label": "performance conventions",
       "id": "claude_md_performance_conventions"
     },
@@ -1515,7 +1554,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 68,
       "norm_label": "workflow con claude code",
       "id": "claude_md_workflow_guide"
     },
@@ -1528,7 +1567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "gem principali",
       "id": "claude_md_gem_list"
     },
@@ -1541,7 +1580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 20,
       "norm_label": "variabili d'ambiente richieste",
       "id": "claude_md_env_vars"
     },
@@ -1554,7 +1593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "comandi utili",
       "id": "claude_md_useful_commands"
     },
@@ -1567,7 +1606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 69,
       "norm_label": "anti-pattern da evitare",
       "id": "claude_md_anti_patterns"
     },
@@ -1580,7 +1619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "best practice di sicurezza per ruby on rails",
       "id": "claude_md_rails_security_guide"
     },
@@ -1593,7 +1632,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 19,
       "norm_label": "protezione dall'sql injection",
       "id": "claude_md_sql_injection_protection"
     },
@@ -1606,7 +1645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 70,
       "norm_label": "mitigazione del cross-site scripting (xss)",
       "id": "claude_md_xss_mitigation"
     },
@@ -1619,7 +1658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 20,
       "norm_label": "gestione sicura di segreti e credenziali",
       "id": "claude_md_secrets_management"
     },
@@ -1632,7 +1671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 66,
+      "community": 71,
       "norm_label": "gestione sicura delle sessioni e cookie",
       "id": "claude_md_session_cookie_security"
     },
@@ -1645,7 +1684,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "protezione csrf",
       "id": "claude_md_csrf_protection"
     },
@@ -1658,7 +1697,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 72,
       "norm_label": "upload di file sicuri",
       "id": "claude_md_secure_file_uploads"
     },
@@ -1671,7 +1710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "autenticazione e autorizzazione robuste",
       "id": "claude_md_auth_authz_practices"
     },
@@ -1684,7 +1723,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "monitoraggio e audit di sicurezza continui",
       "id": "claude_md_security_monitoring_audit"
     },
@@ -1697,7 +1736,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "graphify knowledge graph setup",
       "id": "claude_md_graphify_setup"
     },
@@ -1710,7 +1749,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "costruzione dell'applicazione terminus",
       "id": "claude_md_terminus_app_spec"
     },
@@ -1723,7 +1762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "terminus database spec",
       "id": "claude_md_terminus_db_spec"
     },
@@ -1736,7 +1775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "terminus interfaccia grafica spec",
       "id": "claude_md_terminus_ui_spec"
     },
@@ -1749,7 +1788,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "terminus autenticazione spec",
       "id": "claude_md_terminus_auth_spec"
     },
@@ -1762,7 +1801,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "terminus amministrazione spec",
       "id": "claude_md_terminus_admin_spec"
     },
@@ -1775,7 +1814,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "terminus autorizzazione spec",
       "id": "claude_md_terminus_authz_spec"
     },
@@ -1788,7 +1827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "terminus user model spec",
       "id": "claude_md_terminus_user_model_spec"
     },
@@ -1801,7 +1840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 73,
       "norm_label": "icon.svg (default rails favicon, red circle)",
       "id": "public_icon_svg"
     },
@@ -1810,7 +1849,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L1",
-      "community": 8,
+      "community": 11,
       "norm_label": "flash_controller.js",
       "id": "app_javascript_controllers_flash_controller_js"
     },
@@ -1819,7 +1858,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L6",
-      "community": 8,
+      "community": 11,
       "norm_label": "connect()",
       "id": "controllers_flash_controller_connect"
     },
@@ -1828,7 +1867,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L10",
-      "community": 8,
+      "community": 11,
       "norm_label": "disconnect()",
       "id": "controllers_flash_controller_disconnect"
     },
@@ -1837,7 +1876,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L14",
-      "community": 8,
+      "community": 11,
       "norm_label": "dismiss()",
       "id": "controllers_flash_controller_dismiss"
     },
@@ -1850,7 +1889,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 22,
       "norm_label": "flashcontroller (stimulus)",
       "id": "controllers_flash_controller"
     },
@@ -1863,7 +1902,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 22,
       "norm_label": "stimulus controllers manifest",
       "id": "controllers_index"
     },
@@ -1876,7 +1915,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 23,
       "norm_label": "italian locale override (devise-i18n nil fix)",
       "id": "locales_it"
     },
@@ -1889,7 +1928,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 23,
       "norm_label": "devise-i18n nil activerecord.models.user bug (italian)",
       "id": "locales_it_devise_i18n_nil_translation_bug"
     },
@@ -1902,7 +1941,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "test/development database isolation rule",
       "id": "claude_md_test_database_isolation"
     },
@@ -1915,7 +1954,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 69,
+      "community": 74,
       "norm_label": "color palette swatches (colors.svg)",
       "id": "images_colors"
     },
@@ -1928,7 +1967,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 75,
       "norm_label": "terminus navbar logo (svg)",
       "id": "navbar_navbar_logo"
     },
@@ -1941,7 +1980,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 24,
       "norm_label": "terminus login logo",
       "id": "login_login_logo"
     },
@@ -1954,7 +1993,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 24,
       "norm_label": "devise layout (devise.html.erb)",
       "id": "layouts_devise"
     },
@@ -1963,7 +2002,7 @@
       "file_type": "code",
       "source_file": "spec/system/navbar_spec.rb",
       "source_location": "L1",
-      "community": 19,
+      "community": 25,
       "norm_label": "navbar_spec.rb",
       "id": "spec_system_navbar_spec_rb"
     },
@@ -1972,7 +2011,7 @@
       "file_type": "code",
       "source_file": "spec/system/navbar_spec.rb",
       "source_location": "L32",
-      "community": 19,
+      "community": 25,
       "norm_label": "login_as()",
       "id": "system_navbar_spec_login_as"
     },
@@ -1981,7 +2020,7 @@
       "file_type": "code",
       "source_file": "config/initializers/secure_headers.rb",
       "source_location": "L1",
-      "community": 71,
+      "community": 76,
       "norm_label": "secure_headers.rb",
       "id": "config_initializers_secure_headers_rb"
     },
@@ -1994,7 +2033,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "secure headers initializer",
       "id": "initializers_secure_headers"
     },
@@ -2007,7 +2046,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "content-security-policy configuration",
       "id": "initializers_secure_headers_csp"
     },
@@ -2020,7 +2059,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "hsts header configuration (production-only)",
       "id": "initializers_secure_headers_hsts"
     },
@@ -2033,7 +2072,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "secure cookie flags configuration",
       "id": "initializers_secure_headers_cookie_flags"
     },
@@ -2046,7 +2085,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "rationale: csp style-src allows unsafe-inline for bootstrap data-uri svgs and rails default error pages",
       "id": "initializers_secure_headers_style_src_rationale"
     },
@@ -2059,7 +2098,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "force_ssl / ssl_options configuration",
       "id": "environments_production_force_ssl"
     },
@@ -2072,7 +2111,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "rationale: rails hsts emission disabled because secure_headers now owns the hsts header",
       "id": "environments_production_ssl_options_hsts_rationale"
     },
@@ -2085,7 +2124,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "security audit performed and documented (secure_headers/csp added as a result)",
       "id": "claude_md_security_audit"
     },
@@ -2098,7 +2137,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "readme",
       "id": "readme"
     },
@@ -2111,7 +2150,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "readme english translation section",
       "id": "readme_english_translation"
     },
@@ -2124,7 +2163,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "licence (bilingual mit license)",
       "id": "licence"
     },
@@ -2137,9 +2176,589 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_dev_credential_redaction",
-      "community": 9,
-      "norm_label": "dev db credentials redacted from nota bene"
+      "community": 10,
+      "norm_label": "dev db credentials redacted from nota bene",
+      "id": "claude_md_dev_credential_redaction"
+    },
+    {
+      "label": "carrierwave.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "L1",
+      "id": "config_initializers_carrierwave_rb",
+      "community": 1,
+      "norm_label": "carrierwave.rb"
+    },
+    {
+      "label": "extension_allowlist()",
+      "file_type": "code",
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "L9",
+      "id": "initializers_carrierwave_extension_allowlist",
+      "community": 1,
+      "norm_label": "extension_allowlist()"
+    },
+    {
+      "label": "content_type_allowlist()",
+      "file_type": "code",
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "L13",
+      "id": "initializers_carrierwave_content_type_allowlist",
+      "community": 1,
+      "norm_label": "content_type_allowlist()"
+    },
+    {
+      "label": ".download_signature()",
+      "file_type": "code",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L11",
+      "id": "admin_users_controller_userscontroller_download_signature",
+      "community": 5,
+      "norm_label": ".download_signature()"
+    },
+    {
+      "label": ".send_uploaded_file()",
+      "file_type": "code",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L25",
+      "id": "admin_users_controller_userscontroller_send_uploaded_file",
+      "community": 5,
+      "norm_label": ".send_uploaded_file()"
+    },
+    {
+      "label": ".uploader()",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L4",
+      "id": "fields_carrierwave_field_carrierwavefield_uploader",
+      "community": 5,
+      "norm_label": ".uploader()"
+    },
+    {
+      "label": ".url()",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L14",
+      "id": "fields_carrierwave_field_carrierwavefield_url",
+      "community": 5,
+      "norm_label": ".url()"
+    },
+    {
+      "label": ".filename()",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L21",
+      "id": "fields_carrierwave_field_carrierwavefield_filename",
+      "community": 5,
+      "norm_label": ".filename()"
+    },
+    {
+      "label": ".image?()",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L25",
+      "id": "fields_carrierwave_field_carrierwavefield_image",
+      "community": 1,
+      "norm_label": ".image?()"
+    },
+    {
+      "label": ".to_s()",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L29",
+      "id": "fields_carrierwave_field_carrierwavefield_to_s",
+      "community": 1,
+      "norm_label": ".to_s()"
+    },
+    {
+      "label": ".store_dir()",
+      "file_type": "code",
+      "source_file": "app/uploaders/validator_signature_uploader.rb",
+      "source_location": "L4",
+      "id": "uploaders_validator_signature_uploader_validatorsignatureuploader_store_dir",
+      "community": 1,
+      "norm_label": ".store_dir()"
+    },
+    {
+      "label": ".store_dir()",
+      "file_type": "code",
+      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
+      "source_location": "L4",
+      "id": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_store_dir",
+      "community": 1,
+      "norm_label": ".store_dir()"
+    },
+    {
+      "label": ".store_dir()",
+      "file_type": "code",
+      "source_file": "app/uploaders/user_signature_uploader.rb",
+      "source_location": "L4",
+      "id": "uploaders_user_signature_uploader_usersignatureuploader_store_dir",
+      "community": 1,
+      "norm_label": ".store_dir()"
+    },
+    {
+      "label": "20260815171707_add_validator_fields_to_users.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20260815171707_add_validator_fields_to_users_rb",
+      "community": 16,
+      "norm_label": "20260815171707_add_validator_fields_to_users.rb"
+    },
+    {
+      "label": "AddValidatorFieldsToUsers",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "L1",
+      "id": "migrate_20260815171707_add_validator_fields_to_users_addvalidatorfieldstousers",
+      "community": 16,
+      "norm_label": "addvalidatorfieldstousers"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "L2",
+      "id": "migrate_20260815171707_add_validator_fields_to_users_addvalidatorfieldstousers_change",
+      "community": 16,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "20260815162220_add_user_signature_to_users.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20260815162220_add_user_signature_to_users_rb",
+      "community": 17,
+      "norm_label": "20260815162220_add_user_signature_to_users.rb"
+    },
+    {
+      "label": "AddUserSignatureToUsers",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "L1",
+      "id": "migrate_20260815162220_add_user_signature_to_users_addusersignaturetousers",
+      "community": 17,
+      "norm_label": "addusersignaturetousers"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "L2",
+      "id": "migrate_20260815162220_add_user_signature_to_users_addusersignaturetousers_change",
+      "community": 17,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "20260815172517_add_confirmator_fields_to_users.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20260815172517_add_confirmator_fields_to_users_rb",
+      "community": 18,
+      "norm_label": "20260815172517_add_confirmator_fields_to_users.rb"
+    },
+    {
+      "label": "AddConfirmatorFieldsToUsers",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "L1",
+      "id": "migrate_20260815172517_add_confirmator_fields_to_users_addconfirmatorfieldstousers",
+      "community": 18,
+      "norm_label": "addconfirmatorfieldstousers"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "L2",
+      "id": "migrate_20260815172517_add_confirmator_fields_to_users_addconfirmatorfieldstousers_change",
+      "community": 18,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "20260815173334_add_institute_and_office_to_users.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20260815173334_add_institute_and_office_to_users_rb",
+      "community": 2,
+      "norm_label": "20260815173334_add_institute_and_office_to_users.rb"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "L2",
+      "id": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers_change",
+      "community": 2,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "Devise Routes for Users",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_routes_devise_for_users",
+      "community": 2,
+      "norm_label": "devise routes for users"
+    },
+    {
+      "label": "Admin Namespace Users Resources",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "lines 4-11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_routes_admin_users_resources",
+      "community": 15,
+      "norm_label": "admin namespace users resources"
+    },
+    {
+      "label": "Download Signature Route",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "line 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_routes_download_signature",
+      "community": 5,
+      "norm_label": "download signature route"
+    },
+    {
+      "label": "Download Validator Signature Route",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "line 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_routes_download_validator_signature",
+      "community": 5,
+      "norm_label": "download validator signature route"
+    },
+    {
+      "label": "Download Confirmator Signature Route",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "line 9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_routes_download_confirmator_signature",
+      "community": 5,
+      "norm_label": "download confirmator signature route"
+    },
+    {
+      "label": "Admin Root Route",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "line 12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_routes_admin_root",
+      "community": 15,
+      "norm_label": "admin root route"
+    },
+    {
+      "label": "CarrierWave Global Configuration",
+      "file_type": "code",
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 1-5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "initializers_carrierwave_config",
+      "community": 77,
+      "norm_label": "carrierwave global configuration"
+    },
+    {
+      "label": "User Model",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "models_user_class",
+      "community": 2,
+      "norm_label": "user model"
+    },
+    {
+      "label": "User mount_uploader user_signature",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "line 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "models_user_mount_user_signature",
+      "community": 1,
+      "norm_label": "user mount_uploader user_signature"
+    },
+    {
+      "label": "User mount_uploader validator_signature",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "line 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "models_user_mount_validator_signature",
+      "community": 1,
+      "norm_label": "user mount_uploader validator_signature"
+    },
+    {
+      "label": "User mount_uploader confirmator_signature",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "line 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "models_user_mount_confirmator_signature",
+      "community": 1,
+      "norm_label": "user mount_uploader confirmator_signature"
+    },
+    {
+      "label": "Admin::UsersController",
+      "file_type": "code",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "admin_users_controller_class",
+      "community": 15,
+      "norm_label": "admin::userscontroller"
+    },
+    {
+      "label": "Admin::UsersController#download_signature",
+      "file_type": "code",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "lines 11-13",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "admin_users_controller_download_signature",
+      "community": 1,
+      "norm_label": "admin::userscontroller#download_signature"
+    },
+    {
+      "label": "Admin::UsersController#send_uploaded_file",
+      "file_type": "code",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "lines 25-29",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "admin_users_controller_send_uploaded_file",
+      "community": 1,
+      "norm_label": "admin::userscontroller#send_uploaded_file"
+    },
+    {
+      "label": "UserDashboard",
+      "file_type": "code",
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dashboards_user_dashboard_class",
+      "community": 2,
+      "norm_label": "userdashboard"
+    },
+    {
+      "label": "UserDashboard::ATTRIBUTE_TYPES",
+      "file_type": "code",
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "lines 10-36",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dashboards_user_dashboard_attribute_types",
+      "community": 5,
+      "norm_label": "userdashboard::attribute_types"
+    },
+    {
+      "label": "CarrierwaveField#url",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "lines 14-19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fields_carrierwave_field_url",
+      "community": 5,
+      "norm_label": "carrierwavefield#url"
+    },
+    {
+      "label": "CarrierwaveField#uploader",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "lines 4-6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fields_carrierwave_field_uploader",
+      "community": 5,
+      "norm_label": "carrierwavefield#uploader"
+    },
+    {
+      "label": "CarrierwaveField#filename",
+      "file_type": "code",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "lines 21-23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fields_carrierwave_field_filename",
+      "community": 5,
+      "norm_label": "carrierwavefield#filename"
+    },
+    {
+      "label": "ValidatorSignatureUploader",
+      "file_type": "code",
+      "source_file": "app/uploaders/validator_signature_uploader.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "uploaders_validator_signature_uploader_class",
+      "community": 1,
+      "norm_label": "validatorsignatureuploader"
+    },
+    {
+      "label": "ConfirmatorSignatureUploader",
+      "file_type": "code",
+      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "uploaders_confirmator_signature_uploader_class",
+      "community": 1,
+      "norm_label": "confirmatorsignatureuploader"
+    },
+    {
+      "label": "UserSignatureUploader",
+      "file_type": "code",
+      "source_file": "app/uploaders/user_signature_uploader.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "uploaders_user_signature_uploader_class",
+      "community": 1,
+      "norm_label": "usersignatureuploader"
+    },
+    {
+      "label": "AddValidatorFieldsToUsers Migration",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "migrate_add_validator_fields_to_users_class",
+      "community": 2,
+      "norm_label": "addvalidatorfieldstousers migration"
+    },
+    {
+      "label": "AddUserSignatureToUsers Migration",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "migrate_add_user_signature_to_users_class",
+      "community": 2,
+      "norm_label": "addusersignaturetousers migration"
+    },
+    {
+      "label": "AddConfirmatorFieldsToUsers Migration",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "migrate_add_confirmator_fields_to_users_class",
+      "community": 2,
+      "norm_label": "addconfirmatorfieldstousers migration"
+    },
+    {
+      "label": "AddInstituteAndOfficeToUsers Migration",
+      "file_type": "code",
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "migrate_add_institute_and_office_to_users_class",
+      "community": 2,
+      "norm_label": "addinstituteandofficetousers migration"
+    },
+    {
+      "label": "Italian User Attribute Translations",
+      "file_type": "document",
+      "source_file": "config/locales/it.yml",
+      "source_location": "lines 7-32",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "locales_it_user_attributes",
+      "community": 1,
+      "norm_label": "italian user attribute translations"
+    },
+    {
+      "label": "Signature Upload Test Fixture (signature.png)",
+      "file_type": "image",
+      "source_file": "spec/fixtures/files/signature.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "files_signature_fixture",
+      "community": 78,
+      "norm_label": "signature upload test fixture (signature.png)"
     }
   ],
   "links": [
@@ -2648,7 +3267,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/models/user.rb",
-      "source_location": "L10",
+      "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "models_user_user",
@@ -2658,7 +3277,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/models/user.rb",
-      "source_location": "L14",
+      "source_location": "L18",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "models_user_user",
@@ -2817,42 +3436,52 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/dashboards/user_dashboard.rb",
-      "source_location": "L91",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_dashboards_user_dashboard_rb",
-      "target": "dashboards_user_dashboard_userdashboard_display_resource"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "app/controllers/admin/users_controller.rb",
-      "source_location": null,
+      "source_location": "L11",
       "weight": 1.0,
-      "source": "admin_users_controller_resource_params",
-      "target": "app_dashboards_user_dashboard_rb"
+      "source": "admin_users_controller_userscontroller",
+      "target": "admin_users_controller_userscontroller_download_signature",
+      "confidence_score": 1.0
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "app/dashboards/user_dashboard.rb",
-      "source_location": null,
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L15",
       "weight": 1.0,
-      "source": "app_dashboards_user_dashboard_rb",
-      "target": "db_schema_users_table"
+      "source": "admin_users_controller_userscontroller",
+      "target": "config_routes_download_validator_signature",
+      "confidence_score": 1.0
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "app/dashboards/user_dashboard.rb",
-      "source_location": null,
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L19",
       "weight": 1.0,
-      "source": "app_dashboards_user_dashboard_rb",
-      "target": "migrate_20260815090539_devise_create_users_devisecreateusers"
+      "source": "admin_users_controller_userscontroller",
+      "target": "config_routes_download_confirmator_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "admin_users_controller_userscontroller",
+      "target": "admin_users_controller_userscontroller_send_uploaded_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboards_user_dashboard_class",
+      "target": "dashboards_user_dashboard_userdashboard_display_resource"
     },
     {
       "relation": "contains",
@@ -2862,6 +3491,16 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "db_migrate_20260815090539_devise_create_users_rb",
+      "target": "migrate_20260815090539_devise_create_users_devisecreateusers"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_class",
       "target": "migrate_20260815090539_devise_create_users_devisecreateusers"
     },
     {
@@ -2895,6 +3534,46 @@
       "target": "policies_application_policy_admin"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "admin_users_controller_resource_params",
+      "target": "dashboards_user_dashboard_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 20",
+      "weight": 1.0,
+      "source": "uploaders_user_signature_uploader_class",
+      "target": "admin_users_controller_resource_params"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 44",
+      "weight": 1.0,
+      "source": "uploaders_validator_signature_uploader_class",
+      "target": "admin_users_controller_resource_params"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 69",
+      "weight": 1.0,
+      "source": "uploaders_confirmator_signature_uploader_class",
+      "target": "admin_users_controller_resource_params"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
@@ -2905,6 +3584,16 @@
       "target": "policies_application_policy_admin"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "lines 121-123",
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_display_resource",
+      "target": "models_user_class"
+    },
+    {
       "relation": "shares_data_with",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
@@ -2912,6 +3601,66 @@
       "source_location": null,
       "weight": 1.0,
       "source": "models_user_email_required",
+      "target": "db_schema_users_table"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_class",
+      "target": "db_schema_users_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/schema.rb",
+      "source_location": "lines 17-44",
+      "weight": 1.0,
+      "source": "db_schema_users_table",
+      "target": "models_user_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "lines 2-6",
+      "weight": 1.0,
+      "source": "migrate_add_validator_fields_to_users_class",
+      "target": "db_schema_users_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "migrate_add_user_signature_to_users_class",
+      "target": "db_schema_users_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "lines 2-6",
+      "weight": 1.0,
+      "source": "migrate_add_confirmator_fields_to_users_class",
+      "target": "db_schema_users_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "lines 2-5",
+      "weight": 1.0,
+      "source": "migrate_add_institute_and_office_to_users_class",
       "target": "db_schema_users_table"
     },
     {
@@ -3631,8 +4380,711 @@
       "weight": 1.0,
       "source": "readme_english_translation",
       "target": "readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "config_initializers_carrierwave_rb",
+      "target": "initializers_carrierwave_extension_allowlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "config_initializers_carrierwave_rb",
+      "target": "initializers_carrierwave_content_type_allowlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 9-11",
+      "weight": 1.0,
+      "source": "initializers_carrierwave_extension_allowlist",
+      "target": "uploaders_user_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 9-11",
+      "weight": 1.0,
+      "source": "initializers_carrierwave_extension_allowlist",
+      "target": "uploaders_validator_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 9-11",
+      "weight": 1.0,
+      "source": "initializers_carrierwave_extension_allowlist",
+      "target": "uploaders_confirmator_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 13-15",
+      "weight": 1.0,
+      "source": "initializers_carrierwave_content_type_allowlist",
+      "target": "uploaders_user_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 13-15",
+      "weight": 1.0,
+      "source": "initializers_carrierwave_content_type_allowlist",
+      "target": "uploaders_validator_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/initializers/carrierwave.rb",
+      "source_location": "lines 13-15",
+      "weight": 1.0,
+      "source": "initializers_carrierwave_content_type_allowlist",
+      "target": "uploaders_confirmator_signature_uploader_class"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "admin_users_controller_userscontroller_download_signature",
+      "target": "admin_users_controller_userscontroller_send_uploaded_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "config_routes_download_validator_signature",
+      "target": "admin_users_controller_userscontroller_send_uploaded_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "config_routes_download_confirmator_signature",
+      "target": "admin_users_controller_userscontroller_send_uploaded_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_carrierwavefield_uploader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_carrierwavefield_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_carrierwavefield_filename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_carrierwavefield_image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_carrierwavefield_image",
+      "target": "fields_carrierwave_field_carrierwavefield_to_s",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_carrierwavefield_to_s",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/uploaders/validator_signature_uploader.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "uploaders_validator_signature_uploader_validatorsignatureuploader_store_dir",
+      "target": "fields_carrierwave_field_carrierwavefield_to_s"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_store_dir",
+      "target": "fields_carrierwave_field_carrierwavefield_to_s"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/uploaders/user_signature_uploader.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "uploaders_user_signature_uploader_usersignatureuploader_store_dir",
+      "target": "fields_carrierwave_field_carrierwavefield_to_s"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/uploaders/validator_signature_uploader.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "uploaders_validator_signature_uploader_class",
+      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_store_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "uploaders_confirmator_signature_uploader_class",
+      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_store_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/uploaders/user_signature_uploader.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "uploaders_user_signature_uploader_class",
+      "target": "uploaders_user_signature_uploader_usersignatureuploader_store_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20260815171707_add_validator_fields_to_users_rb",
+      "target": "migrate_20260815171707_add_validator_fields_to_users_addvalidatorfieldstousers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_20260815171707_add_validator_fields_to_users_addvalidatorfieldstousers",
+      "target": "migrate_20260815171707_add_validator_fields_to_users_addvalidatorfieldstousers_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20260815162220_add_user_signature_to_users_rb",
+      "target": "migrate_20260815162220_add_user_signature_to_users_addusersignaturetousers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_20260815162220_add_user_signature_to_users_addusersignaturetousers",
+      "target": "migrate_20260815162220_add_user_signature_to_users_addusersignaturetousers_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20260815172517_add_confirmator_fields_to_users_rb",
+      "target": "migrate_20260815172517_add_confirmator_fields_to_users_addconfirmatorfieldstousers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_20260815172517_add_confirmator_fields_to_users_addconfirmatorfieldstousers",
+      "target": "migrate_20260815172517_add_confirmator_fields_to_users_addconfirmatorfieldstousers_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20260815173334_add_institute_and_office_to_users_rb",
+      "target": "migrate_add_institute_and_office_to_users_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_add_institute_and_office_to_users_class",
+      "target": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/routes.rb",
+      "source_location": "line 2",
+      "weight": 1.0,
+      "source": "config_routes_devise_for_users",
+      "target": "models_user_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/routes.rb",
+      "source_location": "lines 4-11",
+      "weight": 1.0,
+      "source": "config_routes_admin_users_resources",
+      "target": "admin_users_controller_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/routes.rb",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "config_routes_download_signature",
+      "target": "admin_users_controller_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "line 25",
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_attribute_types",
+      "target": "config_routes_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "line 18",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "config_routes_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/routes.rb",
+      "source_location": "line 8",
+      "weight": 1.0,
+      "source": "config_routes_download_validator_signature",
+      "target": "admin_users_controller_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "line 28",
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_attribute_types",
+      "target": "config_routes_download_validator_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/routes.rb",
+      "source_location": "line 9",
+      "weight": 1.0,
+      "source": "config_routes_download_confirmator_signature",
+      "target": "admin_users_controller_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "line 31",
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_attribute_types",
+      "target": "config_routes_download_confirmator_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "config/routes.rb",
+      "source_location": "line 12",
+      "weight": 1.0,
+      "source": "config_routes_admin_root",
+      "target": "admin_users_controller_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_class",
+      "target": "models_user_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "config/locales/it.yml",
+      "source_location": "lines 3-6",
+      "weight": 1.0,
+      "source": "locales_it_user_attributes",
+      "target": "models_user_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/models/user.rb",
+      "source_location": "line 6",
+      "weight": 1.0,
+      "source": "models_user_mount_user_signature",
+      "target": "uploaders_user_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "line 12",
+      "weight": 1.0,
+      "source": "admin_users_controller_download_signature",
+      "target": "models_user_mount_user_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "migrate_add_user_signature_to_users_class",
+      "target": "models_user_mount_user_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/models/user.rb",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "models_user_mount_validator_signature",
+      "target": "uploaders_validator_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "line 16",
+      "weight": 1.0,
+      "source": "admin_users_controller_download_signature",
+      "target": "models_user_mount_validator_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb",
+      "source_location": "line 5",
+      "weight": 1.0,
+      "source": "migrate_add_validator_fields_to_users_class",
+      "target": "models_user_mount_validator_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/models/user.rb",
+      "source_location": "line 8",
+      "weight": 1.0,
+      "source": "models_user_mount_confirmator_signature",
+      "target": "uploaders_confirmator_signature_uploader_class"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "line 20",
+      "weight": 1.0,
+      "source": "admin_users_controller_download_signature",
+      "target": "models_user_mount_confirmator_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815172517_add_confirmator_fields_to_users.rb",
+      "source_location": "line 5",
+      "weight": 1.0,
+      "source": "migrate_add_confirmator_fields_to_users_class",
+      "target": "models_user_mount_confirmator_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 26",
+      "weight": 1.0,
+      "source": "uploaders_user_signature_uploader_class",
+      "target": "admin_users_controller_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 51",
+      "weight": 1.0,
+      "source": "uploaders_validator_signature_uploader_class",
+      "target": "admin_users_controller_download_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 76",
+      "weight": 1.0,
+      "source": "uploaders_confirmator_signature_uploader_class",
+      "target": "admin_users_controller_download_signature"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/controllers/admin/users_controller.rb",
+      "source_location": "line 20",
+      "weight": 1.0,
+      "source": "admin_users_controller_download_signature",
+      "target": "admin_users_controller_send_uploaded_file"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboards/user_dashboard.rb",
+      "source_location": "lines 25-31",
+      "weight": 1.0,
+      "source": "dashboards_user_dashboard_attribute_types",
+      "target": "fields_carrierwave_field_url"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
+      "source_location": "lines 3-4",
+      "weight": 1.0,
+      "source": "migrate_add_institute_and_office_to_users_class",
+      "target": "dashboards_user_dashboard_attribute_types"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "config/locales/it.yml",
+      "source_location": "lines 8-31",
+      "weight": 1.0,
+      "source": "locales_it_user_attributes",
+      "target": "dashboards_user_dashboard_attribute_types"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "line 26",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_uploader"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "line 30",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_url",
+      "target": "fields_carrierwave_field_filename"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/fields/carrierwave_field.rb",
+      "source_location": "line 22",
+      "weight": 1.0,
+      "source": "fields_carrierwave_field_filename",
+      "target": "fields_carrierwave_field_uploader"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "lines 37-39",
+      "weight": 1.0,
+      "source": "uploaders_validator_signature_uploader_class",
+      "target": "locales_it_user_attributes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "lines 62-64",
+      "weight": 1.0,
+      "source": "uploaders_confirmator_signature_uploader_class",
+      "target": "locales_it_user_attributes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/system/admin/user_signature_upload_spec.rb",
+      "source_location": "line 17",
+      "weight": 1.0,
+      "source": "uploaders_user_signature_uploader_class",
+      "target": "locales_it_user_attributes"
     }
   ],
-  "hyperedges": [],
-  "built_at_commit": "71031ad184d8bbc9351f5bc95f0602c36202a1c9"
+  "hyperedges": [
+    {
+      "id": "user_signature_upload_flow",
+      "label": "User Signature Upload and Download Flow",
+      "nodes": [
+        "models_user_mount_user_signature",
+        "uploaders_user_signature_uploader_class",
+        "admin_users_controller_download_signature",
+        "config_routes_download_signature",
+        "fields_carrierwave_field_class"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "app/models/user.rb"
+    },
+    {
+      "id": "validator_confirmator_signature_pattern",
+      "label": "Validator Signature Field-to-Test Workflow Pattern",
+      "nodes": [
+        "migrate_add_validator_fields_to_users_class",
+        "models_user_mount_validator_signature",
+        "uploaders_validator_signature_uploader_class",
+        "admin_users_controller_download_validator_signature",
+        "admin_user_signature_upload_spec_validator_signature_test"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "db/migrate/20260815171707_add_validator_fields_to_users.rb"
+    },
+    {
+      "id": "carrierwave_upload_security_policy",
+      "label": "CarrierWave Global Upload Security Policy",
+      "nodes": [
+        "initializers_carrierwave_extension_allowlist",
+        "initializers_carrierwave_content_type_allowlist",
+        "uploaders_user_signature_uploader_class",
+        "uploaders_validator_signature_uploader_class",
+        "uploaders_confirmator_signature_uploader_class"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "config/initializers/carrierwave.rb"
+    }
+  ],
+  "built_at_commit": "b55e124aa8e0382dbc619417befdbb6036ac6666"
 }

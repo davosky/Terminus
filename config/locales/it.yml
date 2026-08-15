@@ -7,15 +7,25 @@ it:
     attributes:
       user:
         username: Nome utente
+        email: Email
         first_name: Nome
         last_name: Cognome
         gender: Genere
         region: Regione
         province: Provincia
         category: Categoria
+        institute: Istituto
+        office: Ufficio
         admin: Amministratore
         manager: Responsabile
         regular: Dipendente
+        user_signature: Firma Utente
+        validator: Validatore
+        validator_presentation: Titolo Validatore
+        validator_signature: Firma Validatore
+        confirmator: Confermatore
+        confirmator_presentation: Titolo Confermatore
+        confirmator_signature: Firma Confermatore
         password: Password
         password_confirmation: Conferma password
         created_at: Creato il

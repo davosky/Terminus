@@ -10,7 +10,10 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     admin: Field::Boolean,
+    email: Field::Email,
     category: Field::String,
+    institute: Field::String,
+    office: Field::String,
     first_name: Field::String,
     gender: Field::String,
     last_name: Field::String,
@@ -19,6 +22,13 @@ class UserDashboard < Administrate::BaseDashboard
     region: Field::String,
     regular: Field::Boolean,
     username: Field::String,
+    user_signature: CarrierwaveField.with_options(download_path: :download_signature_admin_user_path),
+    validator: Field::String,
+    validator_presentation: Field::String,
+    validator_signature: CarrierwaveField.with_options(download_path: :download_validator_signature_admin_user_path),
+    confirmator: Field::String,
+    confirmator_presentation: Field::String,
+    confirmator_signature: CarrierwaveField.with_options(download_path: :download_confirmator_signature_admin_user_path),
     password: Field::Password,
     password_confirmation: Field::Password,
     created_at: Field::DateTime,
@@ -43,15 +53,25 @@ class UserDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
     id
     username
+    email
     first_name
     last_name
     gender
     region
     province
     category
+    institute
+    office
     admin
     manager
     regular
+    user_signature
+    validator
+    validator_presentation
+    validator_signature
+    confirmator
+    confirmator_presentation
+    confirmator_signature
     created_at
     updated_at
   ].freeze
@@ -61,15 +81,25 @@ class UserDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     username
+    email
     first_name
     last_name
     gender
     region
     province
     category
+    institute
+    office
     admin
     manager
     regular
+    user_signature
+    validator
+    validator_presentation
+    validator_signature
+    confirmator
+    confirmator_presentation
+    confirmator_signature
     password
     password_confirmation
   ].freeze

@@ -1,0 +1,9 @@
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <% if field.url.present? %>
+    <p><%= link_to field.filename, field.url, target: "_blank", rel: "noopener" %></p>
+  <% end %>
+  <%= f.file_field field.attribute %>
+</div>

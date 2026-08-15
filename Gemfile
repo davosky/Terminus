@@ -42,6 +42,9 @@ gem "thruster", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
+# File uploads (PNG images, PDF documents) stored on local filesystem
+gem "carrierwave", "~> 3.0"
+
 # CSV parsing and writing
 gem "csv"
 

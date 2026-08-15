@@ -1,0 +1,11 @@
+<% if field.url.present? %>
+  <% if field.image? %>
+    <%= link_to field.url, target: "_blank", rel: "noopener" do %>
+      <%= image_tag field.url, alt: field.filename, style: "max-width: 200px; max-height: 200px;" %>
+    <% end %>
+  <% else %>
+    <%= link_to field.filename, field.url, target: "_blank", rel: "noopener" %>
+  <% end %>
+<% else %>
+  &mdash;
+<% end %>

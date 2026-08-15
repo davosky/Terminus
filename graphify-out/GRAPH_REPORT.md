@@ -1,30 +1,29 @@
 # Graph Report - .  (2026-08-15)
 
 ## Corpus Check
-- 5 files · ~19,322 words
+- 1 files · ~19,315 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 189 nodes · 146 edges · 73 communities (39 shown, 34 thin omitted)
-- Extraction: 68% EXTRACTED · 31% INFERRED · 1% AMBIGUOUS · INFERRED: 45 edges (avg confidence: 0.83)
-- Token cost: 51,816 input · 0 output
+- 190 nodes · 148 edges · 72 communities (39 shown, 33 thin omitted)
+- Extraction: 68% EXTRACTED · 32% INFERRED · 1% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.83)
+- Token cost: 40,163 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Username Auth Flow (User + Devise + Admin Dashboard)|Username Auth Flow (User + Devise + Admin Dashboard)]]
 - [[_COMMUNITY_Frontend Deps & Project Docs|Frontend Deps & Project Docs]]
+- [[_COMMUNITY_Username Auth Flow (User + Devise + Admin Dashboard)|Username Auth Flow (User + Devise + Admin Dashboard)]]
 - [[_COMMUNITY_Dev Tooling & CI Scripts|Dev Tooling & CI Scripts]]
 - [[_COMMUNITY_Pundit Authorization Policies|Pundit Authorization Policies]]
 - [[_COMMUNITY_CLAUDE.md Terminus App Spec|CLAUDE.md Terminus App Spec]]
-- [[_COMMUNITY_JSCSS Dependencies (Bootstrap, Stimulus)|JS/CSS Dependencies (Bootstrap, Stimulus)]]
 - [[_COMMUNITY_Admin & Base Controllers|Admin & Base Controllers]]
 - [[_COMMUNITY_Rails App Boot & Devise Setup|Rails App Boot & Devise Setup]]
 - [[_COMMUNITY_Secure Headers & CSP Hardening|Secure Headers & CSP Hardening]]
+- [[_COMMUNITY_Security Guide & DB Credential Hygiene|Security Guide & DB Credential Hygiene]]
+- [[_COMMUNITY_JSCSS Build Scripts|JS/CSS Build Scripts]]
 - [[_COMMUNITY_Rails Environment Configs|Rails Environment Configs]]
-- [[_COMMUNITY_CSRF Security Practices|CSRF Security Practices]]
 - [[_COMMUNITY_CableDBPuma Runtime Config|Cable/DB/Puma Runtime Config]]
 - [[_COMMUNITY_Secrets & Env Vars Guidance|Secrets & Env Vars Guidance]]
 - [[_COMMUNITY_SQL Injection & DB Conventions|SQL Injection & DB Conventions]]
-- [[_COMMUNITY_TestDev Database Isolation Rule|Test/Dev Database Isolation Rule]]
 - [[_COMMUNITY_Bundler Audit & CI Pipeline|Bundler Audit & CI Pipeline]]
 - [[_COMMUNITY_FlashController Manifest Registration|FlashController Manifest Registration]]
 - [[_COMMUNITY_Italian Locale devise-i18n Fix|Italian Locale devise-i18n Fix]]
@@ -80,15 +79,15 @@
 - `User` --shares_data_with--> `users table schema`  [INFERRED]
   app/models/user.rb → db/schema.rb
 
-## Communities (73 total, 34 thin omitted)
+## Communities (72 total, 33 thin omitted)
 
-### Community 0 - "Username Auth Flow (User + Devise + Admin Dashboard)"
+### Community 0 - "Frontend Deps & Project Docs"
+Cohesion: 0.10
+Nodes (19): Stack Tecnico, LICENCE (Bilingual MIT License), README, README English Translation Section, browserslist, dependencies, autoprefixer, bootstrap (+11 more)
+
+### Community 1 - "Username Auth Flow (User + Devise + Admin Dashboard)"
 Cohesion: 0.14
 Nodes (11): Admin::ApplicationController#authenticate_admin, Admin::UsersController#resource_params, users table schema, db/seeds.rb admin user seed, :user FactoryBot factory, DeviseCreateUsers, User#email_required?, User model spec (+3 more)
-
-### Community 1 - "Frontend Deps & Project Docs"
-Cohesion: 0.12
-Nodes (15): Stack Tecnico, LICENCE (Bilingual MIT License), README, README English Translation Section, browserslist, devDependencies, esbuild, name (+7 more)
 
 ### Community 2 - "Dev Tooling & CI Scripts"
 Cohesion: 0.20
@@ -102,25 +101,25 @@ Nodes (3): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, 
 Cohesion: 0.29
 Nodes (10): Autenticazione e Autorizzazione Robuste, Gem Principali, Graphify Knowledge Graph Setup, Terminus Amministrazione Spec, Costruzione dell'Applicazione Terminus, Terminus Autenticazione Spec, Terminus Autorizzazione Spec, Terminus Database Spec (+2 more)
 
-### Community 5 - "JS/CSS Dependencies (Bootstrap, Stimulus)"
-Cohesion: 0.20
-Nodes (10): dependencies, autoprefixer, bootstrap, bootswatch, @hotwired/stimulus, nodemon, @popperjs/core, postcss (+2 more)
-
-### Community 7 - "Rails App Boot & Devise Setup"
+### Community 6 - "Rails App Boot & Devise Setup"
 Cohesion: 0.25
 Nodes (8): Terminus::Application, Boot Configuration, Environment Loader, Application Routes, Devise Initializer, Filter Parameter Logging Initializer, Devise English Locale, English Locale
 
-### Community 8 - "Secure Headers & CSP Hardening"
+### Community 7 - "Secure Headers & CSP Hardening"
 Cohesion: 0.29
 Nodes (8): Security Audit Performed and Documented (secure_headers/CSP added as a result), force_ssl / ssl_options Configuration, Rationale: Rails HSTS emission disabled because secure_headers now owns the HSTS header, Secure Headers Initializer, Secure Cookie Flags Configuration, Content-Security-Policy Configuration, HSTS Header Configuration (production-only), Rationale: CSP style-src allows unsafe-inline for Bootstrap data-URI SVGs and Rails default error pages
 
-### Community 10 - "Rails Environment Configs"
+### Community 9 - "Security Guide & DB Credential Hygiene"
+Cohesion: 0.33
+Nodes (6): Protezione CSRF, Dev DB Credentials Redacted from NOTA BENE, Best Practice di Sicurezza per Ruby on Rails, Sicurezza (Project Conventions), Test/Development Database Isolation Rule, Regole per i Test
+
+### Community 10 - "JS/CSS Build Scripts"
+Cohesion: 0.33
+Nodes (6): scripts, build, build:css, build:css:compile, build:css:prefix, watch:css
+
+### Community 11 - "Rails Environment Configs"
 Cohesion: 0.50
 Nodes (4): Active Storage Config, Development Environment Config, Production Environment Config, Test Environment Config
-
-### Community 11 - "CSRF Security Practices"
-Cohesion: 0.67
-Nodes (3): Protezione CSRF, Best Practice di Sicurezza per Ruby on Rails, Sicurezza (Project Conventions)
 
 ### Community 12 - "Cable/DB/Puma Runtime Config"
 Cohesion: 0.67
@@ -133,7 +132,7 @@ Nodes (3): Action Cable Config, Database Config, Puma Server Config
 ## Knowledge Gaps
 - **71 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+66 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **34 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **33 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -142,8 +141,6 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `User` connect `Username Auth Flow (User + Devise + Admin Dashboard)` to `Pundit Authorization Policies`?**
   _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `JS/CSS Dependencies (Bootstrap, Stimulus)` to `Frontend Deps & Project Docs`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **Why does `ApplicationPolicy#admin?` connect `Pundit Authorization Policies` to `Username Auth Flow (User + Devise + Admin Dashboard)`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `Admin::ApplicationController#authenticate_admin`) actually correct?**
@@ -151,4 +148,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 7 inferred relationships involving `User` (e.g. with `Scope` and `Admin::ApplicationController#authenticate_admin`) actually correct?**
   _`User` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `name`, `private`, `esbuild` to the rest of the system?**
-  _80 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Frontend Deps & Project Docs` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

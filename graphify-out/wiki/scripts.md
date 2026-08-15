@@ -2,7 +2,7 @@
 
 > God node · 6 connections · `package.json`
 
-**Community:** [[Frontend Deps & Project Docs]]
+**Community:** [[JS/CSS Build Scripts]]
 
 ## Connections by Relation
 

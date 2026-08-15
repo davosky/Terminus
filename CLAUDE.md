@@ -1037,11 +1037,3 @@ Una pagina unica con al centro il logo dell'applicazione e una card dove sono pr
 **NOTA BENE:**
 
 i database **terminus_development** e **terminus_test** sono già stati creati e sono subito utilizzabili,
-
-le credenziali sono:  
-
-.env:
-
-DATABASE_HOST=localhost
-DATABASE_USER=terminus
-DATABASE_PASSWORD=Dfr368qE

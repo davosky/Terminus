@@ -1,10 +1,10 @@
-# Content Security Policy Initializer
+# Secure Headers Initializer File
 
 > 1 nodes · cohesion 1.00
 
 ## Key Concepts
 
-- **Content Security Policy Initializer** (0 connections) — `config/initializers/content_security_policy.rb`
+- **secure_headers.rb** (0 connections) — `config/initializers/secure_headers.rb`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `config/initializers/content_security_policy.rb`
+- `config/initializers/secure_headers.rb`
 
 ## Audit Trail
 

@@ -2,7 +2,7 @@
 
 > God node · 6 connections · `package.json`
 
-**Community:** [[JS/CSS Dependencies (Bootstrap, Stimulus)]]
+**Community:** [[Frontend Deps & Project Docs]]
 
 ## Connections by Relation
 

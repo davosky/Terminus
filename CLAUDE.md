@@ -1018,9 +1018,9 @@ Una pagina unica con al centro il logo dell'applicazione e una card dove sono pr
      - manager:boolean
      - regular:boolean
    - creare un primo utente amministratore con i seguenti dati
-     - username:davo
-     - password:pAssword1234567
-     - password_confirmation:pAssword1234567
+     - username:
+     - password:
+     - password_confirmation:
      - first_name:Davo
      - last_name:Davosky
      - gender:M

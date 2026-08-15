@@ -1,10 +1,10 @@
-# Content Security Policy Initializer
+# Content Security Policy Initializer (Rails built-in, unused)
 
 > 1 nodes · cohesion 1.00
 
 ## Key Concepts
 
-- **Content Security Policy Initializer** (0 connections) — `config/initializers/content_security_policy.rb`
+- **content_security_policy.rb** (0 connections) — `config/initializers/content_security_policy.rb`
 
 ## Relationships
 

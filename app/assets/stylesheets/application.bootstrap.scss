@@ -6,3 +6,7 @@ $font-family-sans-serif: "Asap Condensed", -apple-system, BlinkMacSystemFont, "S
 @import 'bootstrap/scss/bootstrap';
 @import 'bootswatch/dist/lumen/bootswatch';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+.login-card {
+  max-width: 24rem;
+}

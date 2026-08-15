@@ -21,7 +21,7 @@
 
 ## Relationships
 
-- [[JS/CSS Dependencies (Bootstrap, Stimulus)]] (1 shared connections)
+- [[Frontend Deps & Project Docs]] (1 shared connections)
 
 ## Source Files
 

@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L14",
-      "community": 4,
+      "community": 5,
       "norm_label": "dependencies",
       "id": "terminus_package_dependencies"
     },
@@ -116,7 +116,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
-      "community": 4,
+      "community": 5,
       "norm_label": "@hotwired/stimulus",
       "id": "terminus_package_dependencies_hotwired_stimulus"
     },
@@ -125,7 +125,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
-      "community": 4,
+      "community": 5,
       "norm_label": "@popperjs/core",
       "id": "terminus_package_dependencies_popperjs_core"
     },
@@ -134,7 +134,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L17",
-      "community": 4,
+      "community": 5,
       "norm_label": "autoprefixer",
       "id": "terminus_package_dependencies_autoprefixer"
     },
@@ -143,7 +143,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L18",
-      "community": 4,
+      "community": 5,
       "norm_label": "bootstrap",
       "id": "terminus_package_dependencies_bootstrap"
     },
@@ -152,7 +152,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L20",
-      "community": 4,
+      "community": 5,
       "norm_label": "bootswatch",
       "id": "terminus_package_dependencies_bootswatch"
     },
@@ -161,7 +161,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L21",
-      "community": 4,
+      "community": 5,
       "norm_label": "nodemon",
       "id": "terminus_package_dependencies_nodemon"
     },
@@ -170,7 +170,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L22",
-      "community": 4,
+      "community": 5,
       "norm_label": "postcss",
       "id": "terminus_package_dependencies_postcss"
     },
@@ -179,7 +179,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L23",
-      "community": 4,
+      "community": 5,
       "norm_label": "postcss-cli",
       "id": "terminus_package_dependencies_postcss_cli"
     },
@@ -188,7 +188,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L24",
-      "community": 4,
+      "community": 5,
       "norm_label": "sass",
       "id": "terminus_package_dependencies_sass"
     },
@@ -206,7 +206,7 @@
       "file_type": "code",
       "source_file": "config/boot.rb",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "norm_label": "boot.rb",
       "id": "config_boot_rb"
     },
@@ -215,7 +215,7 @@
       "file_type": "code",
       "source_file": "config/routes.rb",
       "source_location": "L1",
-      "community": 21,
+      "community": 22,
       "norm_label": "routes.rb",
       "id": "config_routes_rb"
     },
@@ -224,7 +224,7 @@
       "file_type": "code",
       "source_file": "config/ci.rb",
       "source_location": "L1",
-      "community": 22,
+      "community": 23,
       "norm_label": "ci.rb",
       "id": "config_ci_rb"
     },
@@ -233,7 +233,7 @@
       "file_type": "code",
       "source_file": "config/environment.rb",
       "source_location": "L1",
-      "community": 23,
+      "community": 24,
       "norm_label": "environment.rb",
       "id": "config_environment_rb"
     },
@@ -242,7 +242,7 @@
       "file_type": "code",
       "source_file": "config/application.rb",
       "source_location": "L1",
-      "community": 8,
+      "community": 9,
       "norm_label": "application.rb",
       "id": "config_application_rb"
     },
@@ -251,7 +251,7 @@
       "file_type": "code",
       "source_file": "config/puma.rb",
       "source_location": "L1",
-      "community": 24,
+      "community": 25,
       "norm_label": "puma.rb",
       "id": "config_puma_rb"
     },
@@ -260,7 +260,7 @@
       "file_type": "code",
       "source_file": "config/environments/production.rb",
       "source_location": "L1",
-      "community": 25,
+      "community": 26,
       "norm_label": "production.rb",
       "id": "config_environments_production_rb"
     },
@@ -269,7 +269,7 @@
       "file_type": "code",
       "source_file": "config/environments/test.rb",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "norm_label": "test.rb",
       "id": "config_environments_test_rb"
     },
@@ -278,7 +278,7 @@
       "file_type": "code",
       "source_file": "config/environments/development.rb",
       "source_location": "L1",
-      "community": 27,
+      "community": 28,
       "norm_label": "development.rb",
       "id": "config_environments_development_rb"
     },
@@ -287,7 +287,7 @@
       "file_type": "code",
       "source_file": "config/initializers/devise.rb",
       "source_location": "L1",
-      "community": 28,
+      "community": 29,
       "norm_label": "devise.rb",
       "id": "config_initializers_devise_rb"
     },
@@ -296,7 +296,7 @@
       "file_type": "code",
       "source_file": "config/initializers/content_security_policy.rb",
       "source_location": "L1",
-      "community": 29,
+      "community": 30,
       "norm_label": "content_security_policy.rb",
       "id": "config_initializers_content_security_policy_rb"
     },
@@ -305,7 +305,7 @@
       "file_type": "code",
       "source_file": "config/initializers/filter_parameter_logging.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 31,
       "norm_label": "filter_parameter_logging.rb",
       "id": "config_initializers_filter_parameter_logging_rb"
     },
@@ -314,7 +314,7 @@
       "file_type": "code",
       "source_file": "config/initializers/assets.rb",
       "source_location": "L1",
-      "community": 31,
+      "community": 32,
       "norm_label": "assets.rb",
       "id": "config_initializers_assets_rb"
     },
@@ -323,7 +323,7 @@
       "file_type": "code",
       "source_file": "config/initializers/inflections.rb",
       "source_location": "L1",
-      "community": 32,
+      "community": 33,
       "norm_label": "inflections.rb",
       "id": "config_initializers_inflections_rb"
     },
@@ -332,7 +332,7 @@
       "file_type": "code",
       "source_file": "spec/spec_helper.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 34,
       "norm_label": "spec_helper.rb",
       "id": "spec_spec_helper_rb"
     },
@@ -341,7 +341,7 @@
       "file_type": "code",
       "source_file": "spec/rails_helper.rb",
       "source_location": "L1",
-      "community": 34,
+      "community": 35,
       "norm_label": "rails_helper.rb",
       "id": "spec_rails_helper_rb"
     },
@@ -350,7 +350,7 @@
       "file_type": "code",
       "source_file": "spec/system/login_spec.rb",
       "source_location": "L1",
-      "community": 35,
+      "community": 36,
       "norm_label": "login_spec.rb",
       "id": "spec_system_login_spec_rb"
     },
@@ -359,7 +359,7 @@
       "file_type": "code",
       "source_file": "spec/models/user_spec.rb",
       "source_location": "L1",
-      "community": 36,
+      "community": 37,
       "norm_label": "user_spec.rb",
       "id": "spec_models_user_spec_rb"
     },
@@ -368,7 +368,7 @@
       "file_type": "code",
       "source_file": "spec/factories/users.rb",
       "source_location": "L1",
-      "community": 37,
+      "community": 38,
       "norm_label": "users.rb",
       "id": "spec_factories_users_rb"
     },
@@ -377,7 +377,7 @@
       "file_type": "code",
       "source_file": "app/views/pwa/service-worker.js",
       "source_location": "L1",
-      "community": 38,
+      "community": 39,
       "norm_label": "service-worker.js",
       "id": "app_views_pwa_service_worker_js"
     },
@@ -485,7 +485,7 @@
       "file_type": "code",
       "source_file": "app/helpers/application_helper.rb",
       "source_location": "L1",
-      "community": 39,
+      "community": 40,
       "norm_label": "application_helper.rb",
       "id": "app_helpers_application_helper_rb"
     },
@@ -494,7 +494,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/index.js",
       "source_location": "L1",
-      "community": 8,
+      "community": 9,
       "norm_label": "index.js",
       "id": "app_javascript_controllers_index_js"
     },
@@ -503,7 +503,7 @@
       "file_type": "code",
       "source_file": "app/models/application_record.rb",
       "source_location": "L1",
-      "community": 40,
+      "community": 41,
       "norm_label": "application_record.rb",
       "id": "app_models_application_record_rb"
     },
@@ -638,7 +638,7 @@
       "file_type": "code",
       "source_file": "app/mailers/application_mailer.rb",
       "source_location": "L1",
-      "community": 41,
+      "community": 42,
       "norm_label": "application_mailer.rb",
       "id": "app_mailers_application_mailer_rb"
     },
@@ -647,7 +647,7 @@
       "file_type": "code",
       "source_file": "db/seeds.rb",
       "source_location": "L1",
-      "community": 42,
+      "community": 43,
       "norm_label": "seeds.rb",
       "id": "db_seeds_rb"
     },
@@ -656,7 +656,7 @@
       "file_type": "code",
       "source_file": "db/schema.rb",
       "source_location": "L1",
-      "community": 43,
+      "community": 44,
       "norm_label": "schema.rb",
       "id": "db_schema_rb"
     },
@@ -735,7 +735,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "userdashboard#display_resource",
       "id": "dashboards_user_dashboard_display_resource"
     },
@@ -748,7 +748,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 46,
       "norm_label": "applicationhelper",
       "id": "helpers_application_helper_applicationhelper"
     },
@@ -761,7 +761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 47,
       "norm_label": "application.js entry point",
       "id": "javascript_application_entry"
     },
@@ -787,7 +787,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 48,
       "norm_label": "user#email_changed?",
       "id": "models_user_email_changed"
     },
@@ -813,7 +813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 49,
       "norm_label": "pwa service worker (placeholder)",
       "id": "pwa_service_worker_serviceworker"
     },
@@ -891,7 +891,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "spec_helper rspec config",
       "id": "spec_spec_helper_config"
     },
@@ -943,7 +943,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "bundler audit config",
       "id": "config_bundler_audit"
     },
@@ -956,7 +956,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "action cable config",
       "id": "config_cable"
     },
@@ -969,7 +969,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "ci pipeline (bin/ci)",
       "id": "config_ci"
     },
@@ -982,7 +982,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "database config",
       "id": "config_database"
     },
@@ -1008,7 +1008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "development environment config",
       "id": "environments_development"
     },
@@ -1021,7 +1021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "production environment config",
       "id": "environments_production"
     },
@@ -1034,7 +1034,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "test environment config",
       "id": "environments_test"
     },
@@ -1047,7 +1047,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "assets initializer",
       "id": "initializers_assets"
     },
@@ -1060,7 +1060,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "content security policy initializer",
       "id": "initializers_content_security_policy"
     },
@@ -1099,7 +1099,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "inflections initializer",
       "id": "initializers_inflections"
     },
@@ -1138,7 +1138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "puma server config",
       "id": "config_puma"
     },
@@ -1164,7 +1164,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "active storage config",
       "id": "config_storage"
     },
@@ -1255,7 +1255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "bin/rake cli script",
       "id": "bin_rake"
     },
@@ -1294,7 +1294,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 55,
       "norm_label": "bin/thrust runner script",
       "id": "bin_thrust"
     },
@@ -1325,19 +1325,6 @@
       "id": "workflows_ci"
     },
     {
-      "label": "README",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "readme",
-      "id": "readme_md"
-    },
-    {
       "label": "Rubocop Configuration",
       "file_type": "code",
       "source_file": ".rubocop.yml",
@@ -1359,7 +1346,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 56,
       "norm_label": "400 bad request page",
       "id": "public_400"
     },
@@ -1372,7 +1359,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 57,
       "norm_label": "404 not found page",
       "id": "public_404"
     },
@@ -1385,7 +1372,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 58,
       "norm_label": "406 unsupported browser page",
       "id": "public_406_unsupported_browser"
     },
@@ -1398,7 +1385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 59,
       "norm_label": "422 unprocessable entity page",
       "id": "public_422"
     },
@@ -1411,7 +1398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 60,
       "norm_label": "500 internal server error page",
       "id": "public_500"
     },
@@ -1424,7 +1411,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 61,
       "norm_label": "robots.txt",
       "id": "public_robots_txt"
     },
@@ -1450,7 +1437,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 62,
       "norm_label": "struttura del progetto",
       "id": "claude_md_project_structure"
     },
@@ -1476,7 +1463,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "regole per i test",
       "id": "claude_md_testing_conventions"
     },
@@ -1489,7 +1476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "database conventions",
       "id": "claude_md_database_conventions"
     },
@@ -1502,7 +1489,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "sicurezza (project conventions)",
       "id": "claude_md_security_conventions"
     },
@@ -1515,7 +1502,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 63,
       "norm_label": "performance conventions",
       "id": "claude_md_performance_conventions"
     },
@@ -1528,7 +1515,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 64,
       "norm_label": "workflow con claude code",
       "id": "claude_md_workflow_guide"
     },
@@ -1541,7 +1528,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "gem principali",
       "id": "claude_md_gem_list"
     },
@@ -1554,7 +1541,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "variabili d'ambiente richieste",
       "id": "claude_md_env_vars"
     },
@@ -1580,7 +1567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 65,
       "norm_label": "anti-pattern da evitare",
       "id": "claude_md_anti_patterns"
     },
@@ -1593,7 +1580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "best practice di sicurezza per ruby on rails",
       "id": "claude_md_rails_security_guide"
     },
@@ -1606,7 +1593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "protezione dall'sql injection",
       "id": "claude_md_sql_injection_protection"
     },
@@ -1619,7 +1606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 66,
       "norm_label": "mitigazione del cross-site scripting (xss)",
       "id": "claude_md_xss_mitigation"
     },
@@ -1632,7 +1619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "gestione sicura di segreti e credenziali",
       "id": "claude_md_secrets_management"
     },
@@ -1645,7 +1632,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 66,
+      "community": 67,
       "norm_label": "gestione sicura delle sessioni e cookie",
       "id": "claude_md_session_cookie_security"
     },
@@ -1658,7 +1645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "protezione csrf",
       "id": "claude_md_csrf_protection"
     },
@@ -1671,7 +1658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 68,
       "norm_label": "upload di file sicuri",
       "id": "claude_md_secure_file_uploads"
     },
@@ -1684,7 +1671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "autenticazione e autorizzazione robuste",
       "id": "claude_md_auth_authz_practices"
     },
@@ -1710,7 +1697,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "graphify knowledge graph setup",
       "id": "claude_md_graphify_setup"
     },
@@ -1723,7 +1710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "costruzione dell'applicazione terminus",
       "id": "claude_md_terminus_app_spec"
     },
@@ -1736,7 +1723,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "terminus database spec",
       "id": "claude_md_terminus_db_spec"
     },
@@ -1749,7 +1736,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "terminus interfaccia grafica spec",
       "id": "claude_md_terminus_ui_spec"
     },
@@ -1762,7 +1749,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "terminus autenticazione spec",
       "id": "claude_md_terminus_auth_spec"
     },
@@ -1775,7 +1762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "terminus amministrazione spec",
       "id": "claude_md_terminus_admin_spec"
     },
@@ -1788,7 +1775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "terminus autorizzazione spec",
       "id": "claude_md_terminus_authz_spec"
     },
@@ -1801,7 +1788,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "terminus user model spec",
       "id": "claude_md_terminus_user_model_spec"
     },
@@ -1814,7 +1801,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 69,
       "norm_label": "icon.svg (default rails favicon, red circle)",
       "id": "public_icon_svg"
     },
@@ -1823,7 +1810,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L1",
-      "community": 8,
+      "community": 9,
       "norm_label": "flash_controller.js",
       "id": "app_javascript_controllers_flash_controller_js"
     },
@@ -1832,7 +1819,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L6",
-      "community": 8,
+      "community": 9,
       "norm_label": "connect()",
       "id": "controllers_flash_controller_connect"
     },
@@ -1841,7 +1828,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L10",
-      "community": 8,
+      "community": 9,
       "norm_label": "disconnect()",
       "id": "controllers_flash_controller_disconnect"
     },
@@ -1850,7 +1837,7 @@
       "file_type": "code",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L14",
-      "community": 8,
+      "community": 9,
       "norm_label": "dismiss()",
       "id": "controllers_flash_controller_dismiss"
     },
@@ -1863,7 +1850,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "flashcontroller (stimulus)",
       "id": "controllers_flash_controller"
     },
@@ -1876,7 +1863,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "stimulus controllers manifest",
       "id": "controllers_index"
     },
@@ -1915,7 +1902,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "test/development database isolation rule",
       "id": "claude_md_test_database_isolation"
     },
@@ -1928,7 +1915,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 69,
+      "community": 70,
       "norm_label": "color palette swatches (colors.svg)",
       "id": "images_colors"
     },
@@ -1941,7 +1928,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 71,
       "norm_label": "terminus navbar logo (svg)",
       "id": "navbar_navbar_logo"
     },
@@ -1954,7 +1941,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 19,
       "norm_label": "terminus login logo",
       "id": "login_login_logo"
     },
@@ -1967,7 +1954,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 19,
       "norm_label": "devise layout (devise.html.erb)",
       "id": "layouts_devise"
     },
@@ -1976,18 +1963,170 @@
       "file_type": "code",
       "source_file": "spec/system/navbar_spec.rb",
       "source_location": "L1",
-      "id": "spec_system_navbar_spec_rb",
-      "community": 19,
-      "norm_label": "navbar_spec.rb"
+      "community": 20,
+      "norm_label": "navbar_spec.rb",
+      "id": "spec_system_navbar_spec_rb"
     },
     {
       "label": "login_as()",
       "file_type": "code",
       "source_file": "spec/system/navbar_spec.rb",
       "source_location": "L32",
-      "id": "system_navbar_spec_login_as",
-      "community": 19,
-      "norm_label": "login_as()"
+      "community": 20,
+      "norm_label": "login_as()",
+      "id": "system_navbar_spec_login_as"
+    },
+    {
+      "label": "secure_headers.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "L1",
+      "id": "config_initializers_secure_headers_rb",
+      "community": 72,
+      "norm_label": "secure_headers.rb"
+    },
+    {
+      "label": "Secure Headers Initializer",
+      "file_type": "code",
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "initializers_secure_headers",
+      "community": 8,
+      "norm_label": "secure headers initializer"
+    },
+    {
+      "label": "Content-Security-Policy Configuration",
+      "file_type": "concept",
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "21-35",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "initializers_secure_headers_csp",
+      "community": 8,
+      "norm_label": "content-security-policy configuration"
+    },
+    {
+      "label": "HSTS Header Configuration (production-only)",
+      "file_type": "concept",
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "3-7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "initializers_secure_headers_hsts",
+      "community": 8,
+      "norm_label": "hsts header configuration (production-only)"
+    },
+    {
+      "label": "Secure Cookie Flags Configuration",
+      "file_type": "concept",
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "13-17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "initializers_secure_headers_cookie_flags",
+      "community": 8,
+      "norm_label": "secure cookie flags configuration"
+    },
+    {
+      "label": "Rationale: CSP style-src allows unsafe-inline for Bootstrap data-URI SVGs and Rails default error pages",
+      "file_type": "rationale",
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "24-27",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "initializers_secure_headers_style_src_rationale",
+      "community": 8,
+      "norm_label": "rationale: csp style-src allows unsafe-inline for bootstrap data-uri svgs and rails default error pages"
+    },
+    {
+      "label": "force_ssl / ssl_options Configuration",
+      "file_type": "concept",
+      "source_file": "config/environments/production.rb",
+      "source_location": "30-34",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "environments_production_force_ssl",
+      "community": 8,
+      "norm_label": "force_ssl / ssl_options configuration"
+    },
+    {
+      "label": "Rationale: Rails HSTS emission disabled because secure_headers now owns the HSTS header",
+      "file_type": "rationale",
+      "source_file": "config/environments/production.rb",
+      "source_location": "30-32",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "environments_production_ssl_options_hsts_rationale",
+      "community": 8,
+      "norm_label": "rationale: rails hsts emission disabled because secure_headers now owns the hsts header"
+    },
+    {
+      "label": "Security Audit Performed and Documented (secure_headers/CSP added as a result)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_md_security_audit",
+      "community": 8,
+      "norm_label": "security audit performed and documented (secure_headers/csp added as a result)"
+    },
+    {
+      "label": "README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme",
+      "community": 1,
+      "norm_label": "readme"
+    },
+    {
+      "label": "README English Translation Section",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "30-56",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_english_translation",
+      "community": 1,
+      "norm_label": "readme english translation section"
+    },
+    {
+      "label": "LICENCE (Bilingual MIT License)",
+      "file_type": "document",
+      "source_file": "LICENCE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "licence",
+      "community": 1,
+      "norm_label": "licence (bilingual mit license)"
     }
   ],
   "links": [
@@ -3096,21 +3235,21 @@
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.65,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_md",
-      "target": "claude_md_tech_stack"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
       "source_file": ".rubocop.yml",
       "source_location": null,
       "weight": 1.0,
       "source": "rubocop_yml",
       "target": "claude_md_code_conventions"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "claude_md_tech_stack"
     },
     {
       "relation": "rationale_for",
@@ -3356,10 +3495,111 @@
       "source_file": "spec/system/navbar_spec.rb",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_system_navbar_spec_rb",
-      "target": "system_navbar_spec_login_as",
-      "confidence_score": 1.0
+      "target": "system_navbar_spec_login_as"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "21-35",
+      "weight": 1.0,
+      "source": "initializers_secure_headers_csp",
+      "target": "initializers_secure_headers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "3-7",
+      "weight": 1.0,
+      "source": "initializers_secure_headers_hsts",
+      "target": "initializers_secure_headers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "13-17",
+      "weight": 1.0,
+      "source": "initializers_secure_headers_cookie_flags",
+      "target": "initializers_secure_headers"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_md_security_audit",
+      "target": "initializers_secure_headers"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "config/initializers/secure_headers.rb",
+      "source_location": "24-27",
+      "weight": 1.0,
+      "source": "initializers_secure_headers_style_src_rationale",
+      "target": "initializers_secure_headers_csp"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "config/environments/production.rb",
+      "source_location": "30-32",
+      "weight": 1.0,
+      "source": "environments_production_ssl_options_hsts_rationale",
+      "target": "initializers_secure_headers_hsts"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "config/environments/production.rb",
+      "source_location": "30-32",
+      "weight": 1.0,
+      "source": "environments_production_ssl_options_hsts_rationale",
+      "target": "environments_production_force_ssl"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.65,
+      "source": "claude_md_security_audit",
+      "target": "environments_production_force_ssl"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "24-26,53-55",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "licence"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "30-56",
+      "weight": 1.0,
+      "source": "readme_english_translation",
+      "target": "readme"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "509df5b43ec8c5600dfd6747e8aaa612f6b7ee4c"
 }

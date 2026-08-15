@@ -64,6 +64,9 @@ gem "pagy"
 # View components
 gem "view_component"
 
+# Manage HTTP security headers (CSP, HSTS, X-Frame-Options, ...)
+gem "secure_headers"
+
 group :development, :test do
   # Load environment variables from .env files
   gem "dotenv-rails"

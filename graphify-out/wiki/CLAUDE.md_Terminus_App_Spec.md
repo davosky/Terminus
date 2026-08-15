@@ -1,6 +1,6 @@
 # CLAUDE.md Terminus App Spec
 
-> 9 nodes · cohesion 0.33
+> 10 nodes · cohesion 0.29
 
 ## Key Concepts
 
@@ -10,13 +10,14 @@
 - **Terminus Autorizzazione Spec** (3 connections) — `CLAUDE.md`
 - **Autenticazione e Autorizzazione Robuste** (2 connections) — `CLAUDE.md`
 - **Terminus Amministrazione Spec** (2 connections) — `CLAUDE.md`
+- **Terminus Interfaccia Grafica Spec** (2 connections) — `CLAUDE.md`
 - **Terminus User Model Spec** (2 connections) — `CLAUDE.md`
 - **Graphify Knowledge Graph Setup** (1 connections) — `CLAUDE.md`
 - **Terminus Database Spec** (1 connections) — `CLAUDE.md`
 
 ## Relationships
 
-- [[JS/CSS Dependencies (Bootstrap, Stimulus)]] (1 shared connections)
+- [[Frontend Deps & Project Docs]] (1 shared connections)
 
 ## Source Files
 
@@ -24,8 +25,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 11 (44%)
-- INFERRED: 14 (56%)
+- EXTRACTED: 12 (44%)
+- INFERRED: 15 (56%)
 - AMBIGUOUS: 0 (0%)
 
 ---

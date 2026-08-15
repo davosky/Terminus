@@ -27,8 +27,11 @@ Rails.application.configure do
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # config.assume_ssl = true
 
-  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  # Force all access to the app over SSL and use secure cookies. The HSTS
+  # header itself is managed by secure_headers (config/initializers/secure_headers.rb)
+  # alongside the other security headers, so Rails' own HSTS emission is disabled here.
+  config.force_ssl = true
+  config.ssl_options = { hsts: false }
 
   # Skip http-to-https redirect for the default health check endpoint.
   # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }

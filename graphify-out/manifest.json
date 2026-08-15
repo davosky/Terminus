@@ -35,9 +35,9 @@
     "semantic_hash": "68bc20972f773f2f496be49122f06ea4"
   },
   "/home/davo/Programmazione/Terminus/config/environments/production.rb": {
-    "mtime": 1786784555.835401,
-    "ast_hash": "725f3dbc598066c88e759db59f0c0902",
-    "semantic_hash": "725f3dbc598066c88e759db59f0c0902"
+    "mtime": 1786793210.4056547,
+    "ast_hash": "5ee4c30a83dc9c38a1269e96269c4360",
+    "semantic_hash": "5ee4c30a83dc9c38a1269e96269c4360"
   },
   "/home/davo/Programmazione/Terminus/config/environments/test.rb": {
     "mtime": 1786784555.8357973,
@@ -245,14 +245,14 @@
     "semantic_hash": "178a89a69281be0cc6eac84595703252"
   },
   "/home/davo/Programmazione/Terminus/README.md": {
-    "mtime": 1786784555.6232646,
-    "ast_hash": "c53b9907999d92eabaf1a2004cac7cb6",
-    "semantic_hash": "c53b9907999d92eabaf1a2004cac7cb6"
+    "mtime": 1786792797.3160532,
+    "ast_hash": "2cdbf2688bc6a8520e596e6daf6ab5a1",
+    "semantic_hash": "2cdbf2688bc6a8520e596e6daf6ab5a1"
   },
   "/home/davo/Programmazione/Terminus/CLAUDE.md": {
-    "mtime": 1786786991.589952,
-    "ast_hash": "dd3c86b648b8afbbc276fba30792f20f",
-    "semantic_hash": "dd3c86b648b8afbbc276fba30792f20f"
+    "mtime": 1786793092.8622775,
+    "ast_hash": "7dc27aca9fe55d86d6e392af4c7953d6",
+    "semantic_hash": "7dc27aca9fe55d86d6e392af4c7953d6"
   },
   "/home/davo/Programmazione/Terminus/config/bundler-audit.yml": {
     "mtime": 1786784555.8341768,
@@ -363,5 +363,15 @@
     "mtime": 1786790810.1727195,
     "ast_hash": "50dc95919a3d96926d8750527a0f7546",
     "semantic_hash": "50dc95919a3d96926d8750527a0f7546"
+  },
+  "/home/davo/Programmazione/Terminus/config/initializers/secure_headers.rb": {
+    "mtime": 1786793273.781503,
+    "ast_hash": "b250a09dde5ae9ae603bac83e3f14d56",
+    "semantic_hash": "b250a09dde5ae9ae603bac83e3f14d56"
+  },
+  "/home/davo/Programmazione/Terminus/LICENCE.md": {
+    "mtime": 1784181188.2680452,
+    "ast_hash": "d10a857a3817b9a710c2c7f360bd3e78",
+    "semantic_hash": "d10a857a3817b9a710c2c7f360bd3e78"
   }
 }

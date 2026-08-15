@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Terminus" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Terminus">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center vh-100 px-3">
+      <div class="mb-4 text-center">
+        <span class="display-5 fw-bold text-primary">
+          <%= image_tag("login/login-logo.svg", class: "img-fluid", alt: "login-logo") %>
+        </span>
+        <p class="text-body-secondary mb-0">Gestione rimborsi spese ed assenze</p>
+      </div>
+      <div class="card shadow-sm w-100" style="max-width: 24rem;">
+        <div class="card-body p-4">
+          <%# Only show flash from a failed sign-in submission (POST), never
+              the "you need to sign in" notice that arrives via redirect. %>
+          <% if request.post? && alert %>
+            <div class="alert alert-warning fade show" role="alert" data-controller="flash"><%= alert %></div>
+          <% end %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

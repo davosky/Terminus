@@ -1,19 +1,21 @@
 <% content_for :title, "Elimina Veicolo" %>
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col col-lg-6 p-2 m-2">
-      <div class="my-4">
-        <h2 class="text-danger">
-          <%= image_tag("vehicles/vehicles_destroy.svg", class: "img-fluid", alt: "vehicles_destroy") %>
-        </h2>
-      </div>
+    <div class="col col-lg-8 p-2 m-2">
+      <h2 class="text-danger">
+        <%= image_tag("vehicles/vehicles_destroy.svg", class: "img-fluid me-3", alt: "vehicles_destroy") %>
+        <span class="text-danger">
+          <i>Elimina Veicolo</i>
+        </span>
+      </h2>
+      <hr class="text-danger mt-3 mb-4"/>
       <div class="card border-danger">
         <div class="card-body">
           <h5 class="card-title text-danger">
             <i class="bi bi-exclamation-triangle-fill me-2"></i>Conferma eliminazione
           </h5>
-          <p class="card-text mt-3">
-            Stai per eliminare il veicolo <strong><%= @vehicle.name %> con targa <%= @vehicle.licence_plate %></strong>
+          <p class="text-danger mt-3">
+            Stai per eliminare il veicolo&emsp;<strong><%= @vehicle.name %> con targa <%= @vehicle.licence_plate %></strong>
           </p>
           <p class="card-text text-danger">Questa operazione è irreversibile.</p>
           <div class="d-flex gap-2 mt-4">

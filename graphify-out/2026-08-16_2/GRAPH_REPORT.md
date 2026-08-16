@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-16)
 
 ## Corpus Check
-- 75 files · ~43,496 words
+- 74 files · ~43,393 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 425 nodes · 417 edges · 97 communities (51 shown, 46 thin omitted)
-- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 80 edges (avg confidence: 0.86)
+- 421 nodes · 414 edges · 96 communities (50 shown, 46 thin omitted)
+- Extraction: 80% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 80 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `16a74a1c`
+- Built from commit: `327f1855`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -109,7 +109,7 @@
 ## Hyperedges (group relationships)
 - **Vehicle CRUD action icon set (index/show/new/edit/destroy)** —  [INFERRED 0.85]
 
-## Communities (97 total, 46 thin omitted)
+## Communities (96 total, 46 thin omitted)
 
 ### Community 0 - "Stack & Project Metadata"
 Cohesion: 0.07
@@ -206,11 +206,11 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Action Cable Config` and `Database Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 79` to `Community 80`, `Community 84`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Why does `User` connect `User Model & Authorization` to `Community 82`, `Signature Upload & CarrierWave`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
 - **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 80` to `Community 79`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Are the 8 inferred relationships involving `User` (e.g. with `.owner?()` and `Scope`) actually correct?**
   _`User` has 8 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `Admin::ApplicationController#authenticate_admin`) actually correct?**

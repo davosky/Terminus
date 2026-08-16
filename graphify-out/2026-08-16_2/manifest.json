@@ -160,7 +160,7 @@
     "semantic_hash": "3e8a0e5db5574a641ffd37958ff33307"
   },
   "/home/davo/Programmazione/Terminus/app/helpers/application_helper.rb": {
-    "mtime": 1786898638.5574894,
+    "mtime": 1786784555.6315608,
     "ast_hash": "7b9ebb8b67ebd491bc8e091b4d757357",
     "semantic_hash": "7b9ebb8b67ebd491bc8e091b4d757357"
   },
@@ -430,29 +430,29 @@
     "semantic_hash": "e44e7ecfec99356632c13cd3eaa3e250"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/vehicles/vehicles_index.svg": {
-    "mtime": 1786893315.9616008,
-    "ast_hash": "6ec72843f640ffec7b5d1a34559240b5",
-    "semantic_hash": ""
+    "mtime": 1786873686.580107,
+    "ast_hash": "0e560059a55f8582295fa52e59637628",
+    "semantic_hash": "0e560059a55f8582295fa52e59637628"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/vehicles/vehicles_edit.svg": {
-    "mtime": 1786895265.5276003,
-    "ast_hash": "8f1202c2d7a52293345c723fab7e7851",
-    "semantic_hash": ""
+    "mtime": 1786873926.7273128,
+    "ast_hash": "74fc25dc38e97a9faf139fd25ba03b90",
+    "semantic_hash": "74fc25dc38e97a9faf139fd25ba03b90"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/vehicles/vehicles_show.svg": {
-    "mtime": 1786896096.8042428,
-    "ast_hash": "5093b7b05980059dc2bedac3e2427d7b",
-    "semantic_hash": ""
+    "mtime": 1786874092.4809344,
+    "ast_hash": "19f7a8e46f84d28c88c9d6c64ae1b4e5",
+    "semantic_hash": "19f7a8e46f84d28c88c9d6c64ae1b4e5"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/vehicles/vehicles_destroy.svg": {
-    "mtime": 1786895358.759416,
-    "ast_hash": "0b5b463296d132a2870e8951dbc2a3c3",
-    "semantic_hash": ""
+    "mtime": 1786874013.8993835,
+    "ast_hash": "e866c0b93feea6d462f189078ab796cd",
+    "semantic_hash": "e866c0b93feea6d462f189078ab796cd"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/vehicles/vehicles_new.svg": {
-    "mtime": 1786894130.3414142,
-    "ast_hash": "b0da7c99241313c1acb400c70f9307cc",
-    "semantic_hash": ""
+    "mtime": 1786873825.0768707,
+    "ast_hash": "70df497a457ca15a930c4205b82809f0",
+    "semantic_hash": "70df497a457ca15a930c4205b82809f0"
   },
   "/home/davo/Programmazione/Terminus/spec/requests/vehicles_spec.rb": {
     "mtime": 1786876140.8971589,
@@ -517,11 +517,6 @@
   "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/131/signature.png": {
     "mtime": 1786877036.5605993,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/helpers/vehicles_helper.rb": {
-    "mtime": 1786900180.1220474,
-    "ast_hash": "5a166a9b31d74fdd92df9b3779bc1b13",
     "semantic_hash": ""
   }
 }

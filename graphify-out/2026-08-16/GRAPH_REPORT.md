@@ -1,18 +1,13 @@
-# Graph Report - Terminus  (2026-08-16)
+# Graph Report - .  (2026-08-16)
 
 ## Corpus Check
-- 75 files · ~43,496 words
+- 5 files · ~42,376 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 425 nodes · 417 edges · 97 communities (51 shown, 46 thin omitted)
-- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 80 edges (avg confidence: 0.86)
+- 249 nodes · 233 edges · 79 communities (43 shown, 36 thin omitted)
+- Extraction: 66% EXTRACTED · 34% INFERRED · 0% AMBIGUOUS · INFERRED: 79 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `16a74a1c`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Stack & Project Metadata|Stack & Project Metadata]]
@@ -26,8 +21,6 @@
 - [[_COMMUNITY_Rails App Boot & Locales|Rails App Boot & Locales]]
 - [[_COMMUNITY_Vehicle CRUD Icon Set|Vehicle CRUD Icon Set]]
 - [[_COMMUNITY_Security & Test DB Isolation Rules|Security & Test DB Isolation Rules]]
-- [[_COMMUNITY_Stimulus Flash Controller|Stimulus Flash Controller]]
-- [[_COMMUNITY_Application Controllers|Application Controllers]]
 - [[_COMMUNITY_Storage & Environment Configs|Storage & Environment Configs]]
 - [[_COMMUNITY_Core Rails Configs|Core Rails Configs]]
 - [[_COMMUNITY_Admin Users Namespace|Admin Users Namespace]]
@@ -40,8 +33,6 @@
 - [[_COMMUNITY_Stimulus Controllers|Stimulus Controllers]]
 - [[_COMMUNITY_Devise Italian Locale Fix|Devise Italian Locale Fix]]
 - [[_COMMUNITY_Devise Layout & Logo|Devise Layout & Logo]]
-- [[_COMMUNITY_Community 46|Community 46]]
-- [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
@@ -69,38 +60,26 @@
 - [[_COMMUNITY_Community 75|Community 75]]
 - [[_COMMUNITY_Community 77|Community 77]]
 - [[_COMMUNITY_Community 78|Community 78]]
-- [[_COMMUNITY_Community 79|Community 79]]
-- [[_COMMUNITY_Community 80|Community 80]]
-- [[_COMMUNITY_Community 81|Community 81]]
-- [[_COMMUNITY_Community 82|Community 82]]
-- [[_COMMUNITY_Community 83|Community 83]]
-- [[_COMMUNITY_Community 84|Community 84]]
-- [[_COMMUNITY_Community 85|Community 85]]
-- [[_COMMUNITY_Community 86|Community 86]]
-- [[_COMMUNITY_Community 87|Community 87]]
-- [[_COMMUNITY_Community 88|Community 88]]
-- [[_COMMUNITY_Community 89|Community 89]]
-- [[_COMMUNITY_Community 90|Community 90]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `CLAUDE.md — Guida per Claude Code` - 23 edges
-2. `User` - 13 edges
-3. `ApplicationPolicy#admin?` - 13 edges
-4. `VehiclesController` - 11 edges
-5. `ApplicationPolicy` - 10 edges
-6. `Admin::UsersController#download_signature` - 10 edges
-7. `UsersController` - 9 edges
-8. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
-9. `users table schema` - 9 edges
-10. `CarrierwaveField#url` - 9 edges
+1. `ApplicationPolicy#admin?` - 13 edges
+2. `User` - 12 edges
+3. `Admin::UsersController#download_signature` - 10 edges
+4. `users table schema` - 9 edges
+5. `CarrierwaveField#url` - 9 edges
+6. `Costruzione dell'Applicazione Terminus` - 7 edges
+7. `ValidatorSignatureUploader` - 7 edges
+8. `ConfirmatorSignatureUploader` - 7 edges
+9. `UserSignatureUploader` - 7 edges
+10. `scripts` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `Italian User Attribute Translations` --references--> `User Model`  [INFERRED]
+  config/locales/it.yml → app/models/user.rb
 - `Italian User Attribute Translations` --references--> `UserDashboard::ATTRIBUTE_TYPES`  [INFERRED]
   config/locales/it.yml → app/dashboards/user_dashboard.rb
 - `Security Audit Performed and Documented (secure_headers/CSP added as a result)` --conceptually_related_to--> `force_ssl / ssl_options Configuration`  [INFERRED]
   CLAUDE.md → config/environments/production.rb
-- `Italian User Attribute Translations` --references--> `User Model`  [INFERRED]
-  config/locales/it.yml → app/models/user.rb
 - `User` --shares_data_with--> `users table schema`  [INFERRED]
   app/models/user.rb → db/schema.rb
 - `User` --shares_data_with--> `DeviseCreateUsers`  [INFERRED]
@@ -109,31 +88,31 @@
 ## Hyperedges (group relationships)
 - **Vehicle CRUD action icon set (index/show/new/edit/destroy)** —  [INFERRED 0.85]
 
-## Communities (97 total, 46 thin omitted)
+## Communities (79 total, 36 thin omitted)
 
 ### Community 0 - "Stack & Project Metadata"
-Cohesion: 0.07
-Nodes (26): Stack Tecnico, LICENCE (Bilingual MIT License), README, README English Translation Section, browserslist, dependencies, autoprefixer, bootstrap (+18 more)
+Cohesion: 0.08
+Nodes (25): Stack Tecnico, LICENCE (Bilingual MIT License), README, README English Translation Section, browserslist, dependencies, autoprefixer, bootstrap (+17 more)
 
 ### Community 1 - "User Model & Authorization"
 Cohesion: 0.14
-Nodes (11): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, User model spec, User, ApplicationPolicy#admin?, ApplicationPolicy (+3 more)
+Nodes (10): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, User model spec, User, ApplicationPolicy#admin?, Scope (+2 more)
 
 ### Community 2 - "Signature Upload & CarrierWave"
-Cohesion: 0.12
-Nodes (23): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Devise Routes for Users, UserDashboard, UserDashboard#display_resource, UserDashboard, users table schema (+15 more)
+Cohesion: 0.20
+Nodes (12): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, content_type_allowlist(), extension_allowlist(), Italian User Attribute Translations, User mount_uploader confirmator_signature, User mount_uploader user_signature (+4 more)
 
 ### Community 3 - "Devise Auth & UserDashboard"
-Cohesion: 0.22
-Nodes (6): UsersController, Download Confirmator Signature Route, Download Validator Signature Route, UserDashboard::ATTRIBUTE_TYPES, AddInstituteAndOfficeToUsers, AddInstituteAndOfficeToUsers Migration
+Cohesion: 0.14
+Nodes (11): Devise Routes for Users, UserDashboard, UserDashboard#display_resource, users table schema, DeviseCreateUsers, AddConfirmatorFieldsToUsers Migration, AddInstituteAndOfficeToUsers Migration, AddUserSignatureToUsers Migration (+3 more)
 
 ### Community 4 - "Bin Scripts & Tooling"
 Cohesion: 0.20
 Nodes (14): bin/brakeman Runner Script, bin/bundler-audit Runner Script, bin/ci Runner Script, bin/dev Server Script, bin/docker-entrypoint Script, bin/rails CLI Script, bin/rubocop Runner Script, bin/setup Script (+6 more)
 
 ### Community 5 - "Signature Download Routes"
-Cohesion: 0.13
-Nodes (8): Download Signature Route, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader, CarrierwaveField#url, ConfirmatorSignatureUploader, UserSignatureUploader, ValidatorSignatureUploader
+Cohesion: 0.21
+Nodes (8): UsersController, Download Confirmator Signature Route, Download Signature Route, Download Validator Signature Route, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField#filename, CarrierwaveField#uploader, CarrierwaveField#url
 
 ### Community 6 - "CLAUDE.md Security & Conventions"
 Cohesion: 0.29
@@ -155,10 +134,6 @@ Nodes (8): Multi-stop Gradient Palette (yellow/orange, pink/blue/purple), Vehicl
 Cohesion: 0.33
 Nodes (6): Protezione CSRF, Dev DB Credentials Redacted from NOTA BENE, Best Practice di Sicurezza per Ruby on Rails, Sicurezza (Project Conventions), Test/Development Database Isolation Rule, Regole per i Test
 
-### Community 12 - "Application Controllers"
-Cohesion: 0.31
-Nodes (3): ApplicationController, ApplicationController, HomeController
-
 ### Community 13 - "Storage & Environment Configs"
 Cohesion: 0.50
 Nodes (4): Active Storage Config, Development Environment Config, Production Environment Config, Test Environment Config
@@ -171,49 +146,29 @@ Nodes (3): Action Cable Config, Database Config, Puma Server Config
 Cohesion: 0.67
 Nodes (3): Admin::UsersController, Admin Root Route, Admin Namespace Users Resources
 
-### Community 79 - "Community 79"
-Cohesion: 0.04
-Nodes (48): ❌ Anti-Pattern da Evitare, Approccio: Test-first quando possibile, Approfondimento: Brakeman, Approfondimento: bundler-audit, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:bash (Ruby:        >= 4.0.1) (+40 more)
-
-### Community 80 - "Community 80"
-Cohesion: 0.06
-Nodes (33): 1. Protezione dall'SQL Injection, 2. Mitigazione del Cross-Site Scripting (XSS), 3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili, 4. Corretta Gestione delle Sessioni e Cookie Sicuri, 5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF), 6. Upload di File Sicuri e Gestione degli Allegati, 7. Autenticazione e Autorizzazione Robuste, 8. Monitoraggio e Audit di Sicurezza Continui (+25 more)
-
-### Community 83 - "Community 83"
-Cohesion: 0.18
-Nodes (10): Avvio del progetto, code:bash (bin/setup   # setup iniziale (dipendenze, database)), code:bash (bin/setup   # initial setup (dependencies, database)), Getting started, License, Licenza, Stack tecnico, Tech stack (+2 more)
-
-### Community 84 - "Community 84"
-Cohesion: 0.33
-Nodes (6): code:text (Aggiungi la possibilità per gli utenti di commentare i Post.), Come fare una richiesta efficace, Cose che Claude Code può fare autonomamente, Cose su cui chiedere conferma prima, Esempio di prompt efficace, 🚀 Workflow con Claude Code
-
-### Community 85 - "Community 85"
-Cohesion: 0.40
-Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, Italiano
-
 ## Ambiguous Edges - Review These
 - `Action Cable Config` → `Database Config`  [AMBIGUOUS]
   config/cable.yml · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **157 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+152 more)
+- **81 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+76 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **36 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Action Cable Config` and `Database Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 79` to `Community 80`, `Community 84`?**
+- **Why does `User` connect `User Model & Authorization` to `Devise Auth & UserDashboard`?**
+  _High betweenness centrality (0.039) - this node is a cross-community bridge._
+- **Why does `users table schema` connect `Devise Auth & UserDashboard` to `User Model & Authorization`?**
   _High betweenness centrality (0.035) - this node is a cross-community bridge._
-- **Why does `User` connect `User Model & Authorization` to `Community 82`, `Signature Upload & CarrierWave`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 80` to `Community 79`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
-- **Are the 8 inferred relationships involving `User` (e.g. with `.owner?()` and `Scope`) actually correct?**
-  _`User` has 8 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `Admin::ApplicationController#authenticate_admin`) actually correct?**
   _`ApplicationPolicy#admin?` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `name`, `private`, `esbuild` to the rest of the system?**
-  _165 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Are the 7 inferred relationships involving `User` (e.g. with `Scope` and `Admin::ApplicationController#authenticate_admin`) actually correct?**
+  _`User` has 7 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 3 inferred relationships involving `Admin::UsersController#download_signature` (e.g. with `Download Signature Route` and `Download Validator Signature Route`) actually correct?**
+  _`Admin::UsersController#download_signature` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 8 inferred relationships involving `users table schema` (e.g. with `User` and `User#email_required?`) actually correct?**
+  _`users table schema` has 8 INFERRED edges - model-reasoned connections that need verification._

@@ -1,41 +1,41 @@
 <% content_for :title, "Veicoli - Terminus" %>
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col col-lg-6 p-2 m-2">
-      <div class="my-4">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
         <h2>
-          <%= image_tag("vehicles/vehicles_index.svg", class: "img-fluid", alt: "vehicles_index") %>
+          <%= image_tag("vehicles/vehicles_index.svg", class: "img-fluid me-3", alt: "vehicles_index") %>
+          <span class="text-primary">
+            <i>I miei Veicoli</i>
+          </span>
         </h2>
+        <%= link_to new_vehicle_path, class: "btn btn-primary" do %>
+          <i class="bi bi-plus-lg"></i><i class="bi bi-car-front me-2"></i>Nuovo Veicolo
+        <% end %>
       </div>
-
-      <div class="card">
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
         <div class="card-body">
-          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
-            <h5 class="card-title mb-0">I miei veicoli</h5>
-            <%= link_to new_vehicle_path, class: "btn btn-primary btn-sm" do %>
-              <i class="bi bi-plus-lg"></i>&emsp;Nuovo Veicolo
-            <% end %>
-          </div>
-
           <% if @vehicles.any? %>
             <div class="list-group">
               <% @vehicles.each do |vehicle| %>
                 <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2">
                   <div>
-                    <div class="fw-bold"><%= vehicle.name %></div>
-                    <div class="text-body-secondary small">
-                      <%= vehicle.producer %> &middot; <%= vehicle.licence_plate %> &middot;
-                      &euro;<%= number_with_precision(vehicle.cost_per_km, precision: 2) %>/km
-                    </div>
+                    <span class="fs-4 fw-bold">
+                      <%= vehicle.name %>
+                    </span>
+                    <span class="ms-3 fs-5 fw-normal">
+                      <%= vehicle.licence_plate %>
+                    </span>
                   </div>
                   <div class="d-flex gap-2">
-                    <%= link_to vehicle_path(vehicle), class: "btn btn-sm btn-outline-secondary" do %>
+                    <%= link_to vehicle_path(vehicle), class: "btn btn-sm btn-info", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Visualizza il Record Corrente" do %>
                       <i class="bi bi-eye"></i>
                     <% end %>
-                    <%= link_to edit_vehicle_path(vehicle), class: "btn btn-sm btn-outline-primary" do %>
+                    <%= link_to edit_vehicle_path(vehicle), class: "btn btn-sm btn-warning", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Modifica il Record Corrente" do %>
                       <i class="bi bi-pencil"></i>
                     <% end %>
-                    <%= link_to confirm_destroy_vehicle_path(vehicle), class: "btn btn-sm btn-outline-danger" do %>
+                    <%= link_to confirm_destroy_vehicle_path(vehicle), class: "btn btn-sm btn-danger", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Elimina il Record Corrente" do %>
                       <i class="bi bi-trash"></i>
                     <% end %>
                   </div>

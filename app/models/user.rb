@@ -3,6 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :rememberable, :validatable
 
+  has_many :vehicles, dependent: :destroy
+
   mount_uploader :user_signature, UserSignatureUploader
   mount_uploader :validator_signature, ValidatorSignatureUploader
   mount_uploader :confirmator_signature, ConfirmatorSignatureUploader

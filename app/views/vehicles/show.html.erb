@@ -1,0 +1,41 @@
+<% content_for :title, "#{@vehicle.name} - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="my-4">
+        <h2>
+          <%= image_tag("vehicles/vehicles_show.svg", class: "img-fluid", alt: "vehicles_show") %>
+        </h2>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= @vehicle.name %></h5>
+
+          <dl class="row mb-0 mt-3">
+            <dt class="col-sm-4"><%= Vehicle.human_attribute_name(:producer) %></dt>
+            <dd class="col-sm-8"><%= @vehicle.producer %></dd>
+
+            <dt class="col-sm-4"><%= Vehicle.human_attribute_name(:licence_plate) %></dt>
+            <dd class="col-sm-8"><%= @vehicle.licence_plate %></dd>
+
+            <dt class="col-sm-4"><%= Vehicle.human_attribute_name(:cost_per_km) %></dt>
+            <dd class="col-sm-8">&euro;<%= number_with_precision(@vehicle.cost_per_km, precision: 2) %></dd>
+
+            <dt class="col-sm-4"><%= Vehicle.human_attribute_name(:position) %></dt>
+            <dd class="col-sm-8"><%= @vehicle.position %></dd>
+          </dl>
+
+          <div class="d-flex gap-2 mt-3">
+            <%= link_to edit_vehicle_path(@vehicle), class: "btn btn-primary" do %>
+              <i class="bi bi-pencil"></i>&emsp;Modifica
+            <% end %>
+            <%= link_to vehicles_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

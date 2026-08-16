@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  resources :vehicles do
+    member do
+      get :confirm_destroy
+    end
+  end
+
   namespace :admin do
     resources :users do
       member do
@@ -9,6 +15,7 @@ Rails.application.routes.draw do
         get :download_confirmator_signature
       end
     end
+    resources :vehicles
     root to: "users#index"
   end
 

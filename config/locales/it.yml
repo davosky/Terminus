@@ -4,7 +4,19 @@ it:
       user:
         one: Utente
         other: Utenti
+      vehicle:
+        one: Veicolo
+        other: Veicoli
     attributes:
+      vehicle:
+        name: Nome Modello
+        producer: Produttore
+        licence_plate: Targa
+        cost_per_km: Costo al Km
+        position: Posizione
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
       user:
         username: Nome utente
         email: Email

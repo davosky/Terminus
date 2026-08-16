@@ -1,176 +1,219 @@
-# Graph Report - .  (2026-08-15)
+# Graph Report - Terminus  (2026-08-16)
 
 ## Corpus Check
-- 17 files · ~19,894 words
+- 74 files · ~43,393 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 241 nodes · 226 edges · 79 communities (43 shown, 36 thin omitted)
-- Extraction: 67% EXTRACTED · 33% INFERRED · 0% AMBIGUOUS · INFERRED: 74 edges (avg confidence: 0.86)
-- Token cost: 107,228 input · 0 output
+- 421 nodes · 414 edges · 96 communities (50 shown, 46 thin omitted)
+- Extraction: 80% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 80 edges (avg confidence: 0.86)
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `327f1855`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Pundit Authorization & User Model|Pundit Authorization & User Model]]
-- [[_COMMUNITY_CarrierWave Signature Uploaders|CarrierWave Signature Uploaders]]
-- [[_COMMUNITY_User Schema & Migrations|User Schema & Migrations]]
-- [[_COMMUNITY_Frontend Deps & Project Docs|Frontend Deps & Project Docs]]
-- [[_COMMUNITY_Dev Tooling & CI Scripts|Dev Tooling & CI Scripts]]
-- [[_COMMUNITY_Admin Signature Download Routes|Admin Signature Download Routes]]
-- [[_COMMUNITY_CLAUDE.md Terminus App Spec|CLAUDE.md Terminus App Spec]]
-- [[_COMMUNITY_JS Frontend Dependencies|JS Frontend Dependencies]]
-- [[_COMMUNITY_Rails App Boot & Devise Setup|Rails App Boot & Devise Setup]]
-- [[_COMMUNITY_Secure Headers & CSP Hardening|Secure Headers & CSP Hardening]]
-- [[_COMMUNITY_Security Guide & DB Credential Hygiene|Security Guide & DB Credential Hygiene]]
-- [[_COMMUNITY_Rails Environment Configs|Rails Environment Configs]]
-- [[_COMMUNITY_CableDBPuma Runtime Config|Cable/DB/Puma Runtime Config]]
-- [[_COMMUNITY_Admin Users Routes & Controller|Admin Users Routes & Controller]]
+- [[_COMMUNITY_Stack & Project Metadata|Stack & Project Metadata]]
+- [[_COMMUNITY_User Model & Authorization|User Model & Authorization]]
+- [[_COMMUNITY_Signature Upload & CarrierWave|Signature Upload & CarrierWave]]
+- [[_COMMUNITY_Devise Auth & UserDashboard|Devise Auth & UserDashboard]]
+- [[_COMMUNITY_Bin Scripts & Tooling|Bin Scripts & Tooling]]
+- [[_COMMUNITY_Signature Download Routes|Signature Download Routes]]
+- [[_COMMUNITY_CLAUDE.md Security & Conventions|CLAUDE.md Security & Conventions]]
+- [[_COMMUNITY_Secure Headers & CSP Rationale|Secure Headers & CSP Rationale]]
+- [[_COMMUNITY_Rails App Boot & Locales|Rails App Boot & Locales]]
+- [[_COMMUNITY_Vehicle CRUD Icon Set|Vehicle CRUD Icon Set]]
+- [[_COMMUNITY_Security & Test DB Isolation Rules|Security & Test DB Isolation Rules]]
+- [[_COMMUNITY_Stimulus Flash Controller|Stimulus Flash Controller]]
+- [[_COMMUNITY_Application Controllers|Application Controllers]]
+- [[_COMMUNITY_Storage & Environment Configs|Storage & Environment Configs]]
+- [[_COMMUNITY_Core Rails Configs|Core Rails Configs]]
+- [[_COMMUNITY_Admin Users Namespace|Admin Users Namespace]]
 - [[_COMMUNITY_Validator Fields Migration|Validator Fields Migration]]
-- [[_COMMUNITY_User Signature Migration|User Signature Migration]]
 - [[_COMMUNITY_Confirmator Fields Migration|Confirmator Fields Migration]]
-- [[_COMMUNITY_SQL Injection & DB Conventions|SQL Injection & DB Conventions]]
-- [[_COMMUNITY_Secrets & Env Vars Guidance|Secrets & Env Vars Guidance]]
-- [[_COMMUNITY_Bundler Audit & CI Pipeline|Bundler Audit & CI Pipeline]]
-- [[_COMMUNITY_FlashController Manifest Registration|FlashController Manifest Registration]]
-- [[_COMMUNITY_Italian Locale devise-i18n Fix|Italian Locale devise-i18n Fix]]
-- [[_COMMUNITY_Login Page Logo & Layout|Login Page Logo & Layout]]
-- [[_COMMUNITY_ApplicationHelper Module|ApplicationHelper Module]]
-- [[_COMMUNITY_JS Application Entry Point|JS Application Entry Point]]
-- [[_COMMUNITY_Useremail_changed|User#email_changed?]]
-- [[_COMMUNITY_PWA Service Worker Placeholder|PWA Service Worker Placeholder]]
-- [[_COMMUNITY_Spec Helper RSpec Config|Spec Helper RSpec Config]]
-- [[_COMMUNITY_Assets Initializer|Assets Initializer]]
-- [[_COMMUNITY_Content Security Policy Initializer|Content Security Policy Initializer]]
-- [[_COMMUNITY_Inflections Initializer|Inflections Initializer]]
-- [[_COMMUNITY_Rake CLI Script|Rake CLI Script]]
-- [[_COMMUNITY_Thruster Runner Script|Thruster Runner Script]]
-- [[_COMMUNITY_400 Bad Request Page|400 Bad Request Page]]
-- [[_COMMUNITY_404 Not Found Page|404 Not Found Page]]
-- [[_COMMUNITY_406 Unsupported Browser Page|406 Unsupported Browser Page]]
-- [[_COMMUNITY_422 Unprocessable Entity Page|422 Unprocessable Entity Page]]
-- [[_COMMUNITY_500 Internal Server Error Page|500 Internal Server Error Page]]
-- [[_COMMUNITY_Project Structure Docs|Project Structure Docs]]
-- [[_COMMUNITY_Performance Conventions Docs|Performance Conventions Docs]]
-- [[_COMMUNITY_Claude Code Workflow Docs|Claude Code Workflow Docs]]
-- [[_COMMUNITY_Anti-Patterns to Avoid Docs|Anti-Patterns to Avoid Docs]]
-- [[_COMMUNITY_XSS Mitigation Guide|XSS Mitigation Guide]]
-- [[_COMMUNITY_Session & Cookie Security Guide|Session & Cookie Security Guide]]
-- [[_COMMUNITY_Secure File Upload Guide|Secure File Upload Guide]]
-- [[_COMMUNITY_Default Rails Favicon Asset|Default Rails Favicon Asset]]
-- [[_COMMUNITY_Color Palette Swatches|Color Palette Swatches]]
-- [[_COMMUNITY_Navbar Logo Asset|Navbar Logo Asset]]
-- [[_COMMUNITY_CarrierWave Global Config|CarrierWave Global Config]]
-- [[_COMMUNITY_Signature Test Fixture|Signature Test Fixture]]
+- [[_COMMUNITY_User Signature Migration|User Signature Migration]]
+- [[_COMMUNITY_Database Conventions & SQLi|Database Conventions & SQLi]]
+- [[_COMMUNITY_Secrets & Env Vars|Secrets & Env Vars]]
+- [[_COMMUNITY_CI & Bundler Audit|CI & Bundler Audit]]
+- [[_COMMUNITY_Stimulus Controllers|Stimulus Controllers]]
+- [[_COMMUNITY_Devise Italian Locale Fix|Devise Italian Locale Fix]]
+- [[_COMMUNITY_Devise Layout & Logo|Devise Layout & Logo]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `ApplicationPolicy#admin?` - 13 edges
-2. `User` - 12 edges
-3. `Admin::UsersController#download_signature` - 10 edges
-4. `users table schema` - 9 edges
-5. `CarrierwaveField#url` - 9 edges
-6. `Costruzione dell'Applicazione Terminus` - 7 edges
-7. `ValidatorSignatureUploader` - 7 edges
-8. `ConfirmatorSignatureUploader` - 7 edges
-9. `UserSignatureUploader` - 7 edges
-10. `scripts` - 6 edges
+1. `CLAUDE.md — Guida per Claude Code` - 23 edges
+2. `User` - 13 edges
+3. `ApplicationPolicy#admin?` - 13 edges
+4. `VehiclesController` - 11 edges
+5. `ApplicationPolicy` - 10 edges
+6. `Admin::UsersController#download_signature` - 10 edges
+7. `UsersController` - 9 edges
+8. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
+9. `users table schema` - 9 edges
+10. `CarrierwaveField#url` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Italian User Attribute Translations` --references--> `User Model`  [INFERRED]
-  config/locales/it.yml → app/models/user.rb
 - `Italian User Attribute Translations` --references--> `UserDashboard::ATTRIBUTE_TYPES`  [INFERRED]
   config/locales/it.yml → app/dashboards/user_dashboard.rb
 - `Security Audit Performed and Documented (secure_headers/CSP added as a result)` --conceptually_related_to--> `force_ssl / ssl_options Configuration`  [INFERRED]
   CLAUDE.md → config/environments/production.rb
+- `Italian User Attribute Translations` --references--> `User Model`  [INFERRED]
+  config/locales/it.yml → app/models/user.rb
 - `User` --shares_data_with--> `users table schema`  [INFERRED]
   app/models/user.rb → db/schema.rb
 - `User` --shares_data_with--> `DeviseCreateUsers`  [INFERRED]
   app/models/user.rb → db/migrate/20260815090539_devise_create_users.rb
 
 ## Hyperedges (group relationships)
-- **User Signature Upload and Download Flow** — models_user_mount_user_signature, uploaders_user_signature_uploader_class, admin_users_controller_download_signature, config_routes_download_signature, fields_carrierwave_field_class [INFERRED 0.85]
-- **Validator Signature Field-to-Test Workflow Pattern** — migrate_add_validator_fields_to_users_class, models_user_mount_validator_signature, uploaders_validator_signature_uploader_class, admin_users_controller_download_validator_signature, admin_user_signature_upload_spec_validator_signature_test [INFERRED 0.85]
-- **CarrierWave Global Upload Security Policy** — initializers_carrierwave_extension_allowlist, initializers_carrierwave_content_type_allowlist, uploaders_user_signature_uploader_class, uploaders_validator_signature_uploader_class, uploaders_confirmator_signature_uploader_class [INFERRED 0.85]
+- **Vehicle CRUD action icon set (index/show/new/edit/destroy)** —  [INFERRED 0.85]
 
-## Communities (79 total, 36 thin omitted)
+## Communities (96 total, 46 thin omitted)
 
-### Community 0 - "Pundit Authorization & User Model"
+### Community 0 - "Stack & Project Metadata"
+Cohesion: 0.07
+Nodes (26): Stack Tecnico, LICENCE (Bilingual MIT License), README, README English Translation Section, browserslist, dependencies, autoprefixer, bootstrap (+18 more)
+
+### Community 1 - "User Model & Authorization"
 Cohesion: 0.14
-Nodes (10): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, User model spec, User, ApplicationPolicy#admin?, Scope (+2 more)
+Nodes (11): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, User model spec, User, ApplicationPolicy#admin?, ApplicationPolicy (+3 more)
 
-### Community 1 - "CarrierWave Signature Uploaders"
-Cohesion: 0.20
-Nodes (12): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, content_type_allowlist(), extension_allowlist(), Italian User Attribute Translations, User mount_uploader confirmator_signature, User mount_uploader user_signature (+4 more)
-
-### Community 2 - "User Schema & Migrations"
-Cohesion: 0.14
-Nodes (11): Devise Routes for Users, UserDashboard, UserDashboard#display_resource, users table schema, DeviseCreateUsers, AddConfirmatorFieldsToUsers Migration, AddInstituteAndOfficeToUsers Migration, AddUserSignatureToUsers Migration (+3 more)
-
-### Community 3 - "Frontend Deps & Project Docs"
+### Community 2 - "Signature Upload & CarrierWave"
 Cohesion: 0.12
-Nodes (15): Stack Tecnico, LICENCE (Bilingual MIT License), README, README English Translation Section, browserslist, devDependencies, esbuild, name (+7 more)
+Nodes (23): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Devise Routes for Users, UserDashboard, UserDashboard#display_resource, UserDashboard, users table schema (+15 more)
 
-### Community 4 - "Dev Tooling & CI Scripts"
+### Community 3 - "Devise Auth & UserDashboard"
+Cohesion: 0.22
+Nodes (6): UsersController, Download Confirmator Signature Route, Download Validator Signature Route, UserDashboard::ATTRIBUTE_TYPES, AddInstituteAndOfficeToUsers, AddInstituteAndOfficeToUsers Migration
+
+### Community 4 - "Bin Scripts & Tooling"
 Cohesion: 0.20
 Nodes (14): bin/brakeman Runner Script, bin/bundler-audit Runner Script, bin/ci Runner Script, bin/dev Server Script, bin/docker-entrypoint Script, bin/rails CLI Script, bin/rubocop Runner Script, bin/setup Script (+6 more)
 
-### Community 5 - "Admin Signature Download Routes"
-Cohesion: 0.21
-Nodes (8): UsersController, Download Confirmator Signature Route, Download Signature Route, Download Validator Signature Route, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField#filename, CarrierwaveField#uploader, CarrierwaveField#url
+### Community 5 - "Signature Download Routes"
+Cohesion: 0.13
+Nodes (8): Download Signature Route, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader, CarrierwaveField#url, ConfirmatorSignatureUploader, UserSignatureUploader, ValidatorSignatureUploader
 
-### Community 6 - "CLAUDE.md Terminus App Spec"
+### Community 6 - "CLAUDE.md Security & Conventions"
 Cohesion: 0.29
 Nodes (10): Autenticazione e Autorizzazione Robuste, Gem Principali, Graphify Knowledge Graph Setup, Terminus Amministrazione Spec, Costruzione dell'Applicazione Terminus, Terminus Autenticazione Spec, Terminus Autorizzazione Spec, Terminus Database Spec (+2 more)
 
-### Community 7 - "JS Frontend Dependencies"
-Cohesion: 0.20
-Nodes (10): dependencies, autoprefixer, bootstrap, bootswatch, @hotwired/stimulus, nodemon, @popperjs/core, postcss (+2 more)
-
-### Community 8 - "Rails App Boot & Devise Setup"
-Cohesion: 0.25
-Nodes (8): Terminus::Application, Boot Configuration, Environment Loader, Application Routes, Devise Initializer, Filter Parameter Logging Initializer, Devise English Locale, English Locale
-
-### Community 9 - "Secure Headers & CSP Hardening"
+### Community 7 - "Secure Headers & CSP Rationale"
 Cohesion: 0.29
 Nodes (8): Security Audit Performed and Documented (secure_headers/CSP added as a result), force_ssl / ssl_options Configuration, Rationale: Rails HSTS emission disabled because secure_headers now owns the HSTS header, Secure Headers Initializer, Secure Cookie Flags Configuration, Content-Security-Policy Configuration, HSTS Header Configuration (production-only), Rationale: CSP style-src allows unsafe-inline for Bootstrap data-URI SVGs and Rails default error pages
 
-### Community 10 - "Security Guide & DB Credential Hygiene"
+### Community 8 - "Rails App Boot & Locales"
+Cohesion: 0.25
+Nodes (8): Terminus::Application, Boot Configuration, Environment Loader, Application Routes, Devise Initializer, Filter Parameter Logging Initializer, Devise English Locale, English Locale
+
+### Community 9 - "Vehicle CRUD Icon Set"
+Cohesion: 0.25
+Nodes (8): Multi-stop Gradient Palette (yellow/orange, pink/blue/purple), Vehicles Destroy Icon, Vehicles Edit Icon (SVG), Vehicles Index Icon (Car Illustration SVG), Vehicles "New" Action Icon (SVG), Multi-color Gradient Palette (pink/blue/purple/orange-yellow), Vehicles Show Icon (SVG), Vehicle Model/Resource
+
+### Community 10 - "Security & Test DB Isolation Rules"
 Cohesion: 0.33
 Nodes (6): Protezione CSRF, Dev DB Credentials Redacted from NOTA BENE, Best Practice di Sicurezza per Ruby on Rails, Sicurezza (Project Conventions), Test/Development Database Isolation Rule, Regole per i Test
 
-### Community 13 - "Rails Environment Configs"
+### Community 12 - "Application Controllers"
+Cohesion: 0.31
+Nodes (3): ApplicationController, ApplicationController, HomeController
+
+### Community 13 - "Storage & Environment Configs"
 Cohesion: 0.50
 Nodes (4): Active Storage Config, Development Environment Config, Production Environment Config, Test Environment Config
 
-### Community 14 - "Cable/DB/Puma Runtime Config"
+### Community 14 - "Core Rails Configs"
 Cohesion: 0.67
 Nodes (3): Action Cable Config, Database Config, Puma Server Config
 
-### Community 15 - "Admin Users Routes & Controller"
+### Community 15 - "Admin Users Namespace"
 Cohesion: 0.67
 Nodes (3): Admin::UsersController, Admin Root Route, Admin Namespace Users Resources
+
+### Community 79 - "Community 79"
+Cohesion: 0.04
+Nodes (48): ❌ Anti-Pattern da Evitare, Approccio: Test-first quando possibile, Approfondimento: Brakeman, Approfondimento: bundler-audit, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:bash (Ruby:        >= 4.0.1) (+40 more)
+
+### Community 80 - "Community 80"
+Cohesion: 0.06
+Nodes (33): 1. Protezione dall'SQL Injection, 2. Mitigazione del Cross-Site Scripting (XSS), 3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili, 4. Corretta Gestione delle Sessioni e Cookie Sicuri, 5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF), 6. Upload di File Sicuri e Gestione degli Allegati, 7. Autenticazione e Autorizzazione Robuste, 8. Monitoraggio e Audit di Sicurezza Continui (+25 more)
+
+### Community 83 - "Community 83"
+Cohesion: 0.18
+Nodes (10): Avvio del progetto, code:bash (bin/setup   # setup iniziale (dipendenze, database)), code:bash (bin/setup   # initial setup (dependencies, database)), Getting started, License, Licenza, Stack tecnico, Tech stack (+2 more)
+
+### Community 84 - "Community 84"
+Cohesion: 0.33
+Nodes (6): code:text (Aggiungi la possibilità per gli utenti di commentare i Post.), Come fare una richiesta efficace, Cose che Claude Code può fare autonomamente, Cose su cui chiedere conferma prima, Esempio di prompt efficace, 🚀 Workflow con Claude Code
+
+### Community 85 - "Community 85"
+Cohesion: 0.40
+Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, Italiano
 
 ## Ambiguous Edges - Review These
 - `Action Cable Config` → `Database Config`  [AMBIGUOUS]
   config/cable.yml · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **76 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+71 more)
+- **157 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+152 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **36 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Action Cable Config` and `Database Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `Pundit Authorization & User Model` to `User Schema & Migrations`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **Why does `users table schema` connect `User Schema & Migrations` to `Pundit Authorization & User Model`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 79` to `Community 80`, `Community 84`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Why does `User` connect `User Model & Authorization` to `Community 82`, `Signature Upload & CarrierWave`?**
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
+- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 80` to `Community 79`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Are the 8 inferred relationships involving `User` (e.g. with `.owner?()` and `Scope`) actually correct?**
+  _`User` has 8 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `Admin::ApplicationController#authenticate_admin`) actually correct?**
   _`ApplicationPolicy#admin?` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 7 inferred relationships involving `User` (e.g. with `Scope` and `Admin::ApplicationController#authenticate_admin`) actually correct?**
-  _`User` has 7 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 3 inferred relationships involving `Admin::UsersController#download_signature` (e.g. with `Download Signature Route` and `Download Validator Signature Route`) actually correct?**
-  _`Admin::UsersController#download_signature` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 8 inferred relationships involving `users table schema` (e.g. with `User` and `User#email_required?`) actually correct?**
-  _`users table schema` has 8 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `name`, `private`, `esbuild` to the rest of the system?**
+  _165 weakly-connected nodes found - possible documentation gaps or missing edges._

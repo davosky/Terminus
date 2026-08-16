@@ -1,0 +1,52 @@
+<% content_for :title, "Veicoli - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="my-4">
+        <h2>
+          <%= image_tag("vehicles/vehicles_index.svg", class: "img-fluid", alt: "vehicles_index") %>
+        </h2>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <h5 class="card-title mb-0">I miei veicoli</h5>
+            <%= link_to new_vehicle_path, class: "btn btn-primary btn-sm" do %>
+              <i class="bi bi-plus-lg"></i>&emsp;Nuovo Veicolo
+            <% end %>
+          </div>
+
+          <% if @vehicles.any? %>
+            <div class="list-group">
+              <% @vehicles.each do |vehicle| %>
+                <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <div>
+                    <div class="fw-bold"><%= vehicle.name %></div>
+                    <div class="text-body-secondary small">
+                      <%= vehicle.producer %> &middot; <%= vehicle.licence_plate %> &middot;
+                      &euro;<%= number_with_precision(vehicle.cost_per_km, precision: 2) %>/km
+                    </div>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <%= link_to vehicle_path(vehicle), class: "btn btn-sm btn-outline-secondary" do %>
+                      <i class="bi bi-eye"></i>
+                    <% end %>
+                    <%= link_to edit_vehicle_path(vehicle), class: "btn btn-sm btn-outline-primary" do %>
+                      <i class="bi bi-pencil"></i>
+                    <% end %>
+                    <%= link_to confirm_destroy_vehicle_path(vehicle), class: "btn btn-sm btn-outline-danger" do %>
+                      <i class="bi bi-trash"></i>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Non hai ancora nessun veicolo registrato.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

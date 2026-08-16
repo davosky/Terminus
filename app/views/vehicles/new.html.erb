@@ -1,0 +1,19 @@
+<% content_for :title, "Nuovo Veicolo - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="my-4">
+        <h2>
+          <%= image_tag("vehicles/vehicles_new.svg", class: "img-fluid", alt: "vehicles_new") %>
+        </h2>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nuovo Veicolo</h5>
+          <%= render "form", vehicle: @vehicle %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

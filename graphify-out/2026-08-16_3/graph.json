@@ -1204,7 +1204,7 @@
       "label": ".send_uploaded_file()",
       "file_type": "code",
       "source_file": "app/controllers/admin/users_controller.rb",
-      "source_location": "L27",
+      "source_location": "L25",
       "id": "admin_users_controller_userscontroller_send_uploaded_file",
       "community": 3,
       "norm_label": ".send_uploaded_file()"
@@ -1372,33 +1372,6 @@
       "norm_label": ".store_dir()"
     },
     {
-      "label": ".extension_allowlist()",
-      "file_type": "code",
-      "source_file": "app/uploaders/validator_signature_uploader.rb",
-      "source_location": "L8",
-      "id": "uploaders_validator_signature_uploader_validatorsignatureuploader_extension_allowlist",
-      "community": 5,
-      "norm_label": ".extension_allowlist()"
-    },
-    {
-      "label": ".content_type_allowlist()",
-      "file_type": "code",
-      "source_file": "app/uploaders/validator_signature_uploader.rb",
-      "source_location": "L12",
-      "id": "uploaders_validator_signature_uploader_validatorsignatureuploader_content_type_allowlist",
-      "community": 5,
-      "norm_label": ".content_type_allowlist()"
-    },
-    {
-      "label": ".size_range()",
-      "file_type": "code",
-      "source_file": "app/uploaders/validator_signature_uploader.rb",
-      "source_location": "L16",
-      "id": "uploaders_validator_signature_uploader_validatorsignatureuploader_size_range",
-      "community": 5,
-      "norm_label": ".size_range()"
-    },
-    {
       "label": "confirmator_signature_uploader.rb",
       "file_type": "code",
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
@@ -1426,33 +1399,6 @@
       "norm_label": ".store_dir()"
     },
     {
-      "label": ".extension_allowlist()",
-      "file_type": "code",
-      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
-      "source_location": "L8",
-      "id": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_extension_allowlist",
-      "community": 5,
-      "norm_label": ".extension_allowlist()"
-    },
-    {
-      "label": ".content_type_allowlist()",
-      "file_type": "code",
-      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
-      "source_location": "L12",
-      "id": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_content_type_allowlist",
-      "community": 5,
-      "norm_label": ".content_type_allowlist()"
-    },
-    {
-      "label": ".size_range()",
-      "file_type": "code",
-      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
-      "source_location": "L16",
-      "id": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_size_range",
-      "community": 5,
-      "norm_label": ".size_range()"
-    },
-    {
       "label": "user_signature_uploader.rb",
       "file_type": "code",
       "source_file": "app/uploaders/user_signature_uploader.rb",
@@ -1478,33 +1424,6 @@
       "id": "uploaders_user_signature_uploader_usersignatureuploader_store_dir",
       "community": 5,
       "norm_label": ".store_dir()"
-    },
-    {
-      "label": ".extension_allowlist()",
-      "file_type": "code",
-      "source_file": "app/uploaders/user_signature_uploader.rb",
-      "source_location": "L8",
-      "id": "uploaders_user_signature_uploader_usersignatureuploader_extension_allowlist",
-      "community": 5,
-      "norm_label": ".extension_allowlist()"
-    },
-    {
-      "label": ".content_type_allowlist()",
-      "file_type": "code",
-      "source_file": "app/uploaders/user_signature_uploader.rb",
-      "source_location": "L12",
-      "id": "uploaders_user_signature_uploader_usersignatureuploader_content_type_allowlist",
-      "community": 5,
-      "norm_label": ".content_type_allowlist()"
-    },
-    {
-      "label": ".size_range()",
-      "file_type": "code",
-      "source_file": "app/uploaders/user_signature_uploader.rb",
-      "source_location": "L16",
-      "id": "uploaders_user_signature_uploader_usersignatureuploader_size_range",
-      "community": 5,
-      "norm_label": ".size_range()"
     },
     {
       "label": "application_mailer.rb",
@@ -2520,7 +2439,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L789",
       "id": "terminus_claude_approfondimento_bundler_audit",
-      "community": 97,
+      "community": 79,
       "norm_label": "approfondimento: bundler-audit"
     },
     {
@@ -2529,7 +2448,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L793",
       "id": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "community": 97,
+      "community": 79,
       "norm_label": "installazione e utilizzo bundler-audit"
     },
     {
@@ -2538,7 +2457,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L797",
       "id": "terminus_claude_codeblock_38",
-      "community": 97,
+      "community": 79,
       "norm_label": "code:ruby"
     },
     {
@@ -2547,7 +2466,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L805",
       "id": "terminus_claude_codeblock_39",
-      "community": 97,
+      "community": 79,
       "norm_label": "code:bash"
     },
     {
@@ -2556,7 +2475,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L819",
       "id": "terminus_claude_codeblock_40",
-      "community": 97,
+      "community": 79,
       "norm_label": "code:ruby"
     },
     {
@@ -2565,7 +2484,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L851",
       "id": "terminus_claude_codeblock_41",
-      "community": 97,
+      "community": 79,
       "norm_label": "code:ruby"
     },
     {
@@ -2574,7 +2493,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L858",
       "id": "terminus_claude_codeblock_42",
-      "community": 97,
+      "community": 79,
       "norm_label": "code:ruby"
     },
     {
@@ -5372,9 +5291,9 @@
       "source_file": "app/helpers/vehicles_helper.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_vehicles_helper_rb",
-      "target": "helpers_vehicles_helper_form_label_class"
+      "target": "helpers_vehicles_helper_form_label_class",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5382,9 +5301,9 @@
       "source_file": "app/helpers/vehicles_helper.rb",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_vehicles_helper_rb",
-      "target": "helpers_vehicles_helper_form_submit_label"
+      "target": "helpers_vehicles_helper_form_submit_label",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5392,9 +5311,9 @@
       "source_file": "app/helpers/vehicles_helper.rb",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_vehicles_helper_rb",
-      "target": "helpers_vehicles_helper_form_submit_accent"
+      "target": "helpers_vehicles_helper_form_submit_accent",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -6223,36 +6142,6 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/uploaders/validator_signature_uploader.rb",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_extension_allowlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/validator_signature_uploader.rb",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_content_type_allowlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/validator_signature_uploader.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_size_range",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/validator_signature_uploader.rb",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6283,36 +6172,6 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_extension_allowlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_content_type_allowlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_size_range",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/confirmator_signature_uploader.rb",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6338,36 +6197,6 @@
       "confidence_score": 1.0,
       "source": "uploaders_user_signature_uploader_usersignatureuploader",
       "target": "uploaders_user_signature_uploader_usersignatureuploader_store_dir"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/user_signature_uploader.rb",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_extension_allowlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/user_signature_uploader.rb",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_content_type_allowlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/uploaders/user_signature_uploader.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_size_range",
-      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -8805,5 +8634,5 @@
       "source_file": "app/assets/images/vehicles/vehicles_new.svg"
     }
   ],
-  "built_at_commit": "fbf0806af112d828011e8a7853c73c462464ba1e"
+  "built_at_commit": "16a74a1ca0c4a775b55b61fc6508665f270862d6"
 }

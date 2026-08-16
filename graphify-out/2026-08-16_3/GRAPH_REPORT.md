@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-16)
 
 ## Corpus Check
-- 75 files · ~43,579 words
+- 75 files · ~43,496 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 434 nodes · 426 edges · 98 communities (52 shown, 46 thin omitted)
+- 425 nodes · 417 edges · 97 communities (51 shown, 46 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 80 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fbf0806a`
+- Built from commit: `16a74a1c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -81,7 +81,6 @@
 - [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Community 89|Community 89]]
 - [[_COMMUNITY_Community 90|Community 90]]
-- [[_COMMUNITY_Community 97|Community 97]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — Guida per Claude Code` - 23 edges
@@ -110,7 +109,7 @@
 ## Hyperedges (group relationships)
 - **Vehicle CRUD action icon set (index/show/new/edit/destroy)** —  [INFERRED 0.85]
 
-## Communities (98 total, 46 thin omitted)
+## Communities (97 total, 46 thin omitted)
 
 ### Community 0 - "Stack & Project Metadata"
 Cohesion: 0.07
@@ -133,7 +132,7 @@ Cohesion: 0.20
 Nodes (14): bin/brakeman Runner Script, bin/bundler-audit Runner Script, bin/ci Runner Script, bin/dev Server Script, bin/docker-entrypoint Script, bin/rails CLI Script, bin/rubocop Runner Script, bin/setup Script (+6 more)
 
 ### Community 5 - "Signature Download Routes"
-Cohesion: 0.08
+Cohesion: 0.13
 Nodes (8): Download Signature Route, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader, CarrierwaveField#url, ConfirmatorSignatureUploader, UserSignatureUploader, ValidatorSignatureUploader
 
 ### Community 6 - "CLAUDE.md Security & Conventions"
@@ -173,8 +172,8 @@ Cohesion: 0.67
 Nodes (3): Admin::UsersController, Admin Root Route, Admin Namespace Users Resources
 
 ### Community 79 - "Community 79"
-Cohesion: 0.05
-Nodes (41): ❌ Anti-Pattern da Evitare, Approccio: Test-first quando possibile, Approfondimento: Brakeman, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:bash (Ruby:        >= 4.0.1), code:bash (# Setup) (+33 more)
+Cohesion: 0.04
+Nodes (48): ❌ Anti-Pattern da Evitare, Approccio: Test-first quando possibile, Approfondimento: Brakeman, Approfondimento: bundler-audit, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:bash (Ruby:        >= 4.0.1) (+40 more)
 
 ### Community 80 - "Community 80"
 Cohesion: 0.06
@@ -192,10 +191,6 @@ Nodes (6): code:text (Aggiungi la possibilità per gli utenti di commentare i Po
 Cohesion: 0.40
 Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, Italiano
 
-### Community 97 - "Community 97"
-Cohesion: 0.29
-Nodes (7): Approfondimento: bundler-audit, code:ruby, code:bash, code:ruby, code:ruby, code:ruby, Installazione e Utilizzo bundler-audit
-
 ## Ambiguous Edges - Review These
 - `Action Cable Config` → `Database Config`  [AMBIGUOUS]
   config/cable.yml · relation: conceptually_related_to
@@ -210,12 +205,12 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Action Cable Config` and `Database Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 79` to `Community 80`, `Community 97`, `Community 84`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 79` to `Community 80`, `Community 84`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Why does `User` connect `User Model & Authorization` to `Community 82`, `Signature Upload & CarrierWave`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **Why does `users table schema` connect `Signature Upload & CarrierWave` to `User Model & Authorization`, `Devise Auth & UserDashboard`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 80` to `Community 79`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Are the 8 inferred relationships involving `User` (e.g. with `.owner?()` and `Scope`) actually correct?**
   _`User` has 8 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `Admin::ApplicationController#authenticate_admin`) actually correct?**

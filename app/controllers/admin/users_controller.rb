@@ -22,10 +22,14 @@ module Admin
 
     private
 
+    SAFE_SIGNATURE_CONTENT_TYPES = { "png" => "image/png", "jpg" => "image/jpeg", "jpeg" => "image/jpeg" }.freeze
+
     def send_uploaded_file(file)
       raise ActiveRecord::RecordNotFound if file.blank?
 
-      send_file file.path, disposition: "inline", type: file.file.content_type
+      extension = File.extname(file.path).delete(".").downcase
+      content_type = SAFE_SIGNATURE_CONTENT_TYPES.fetch(extension, "application/octet-stream")
+      send_file file.path, disposition: "inline", type: content_type
     end
   end
 end

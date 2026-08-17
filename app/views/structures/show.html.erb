@@ -1,0 +1,30 @@
+<% content_for :title, "#{@structure.name} - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("structures/structures_show.svg", class: "img-fluid me-3", alt: "structures_show") %>
+        <span class="text-info">
+          <i><%= @structure.name %></i>
+        </span>
+      </h2>
+      <hr class="text-info mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <dl class="row mb-0 mt-3">
+            <dt class="col-sm-3"><%= Structure.human_attribute_name(:position) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @structure.position %></dd>
+          </dl>
+          <div class="d-flex gap-2 mt-3">
+            <%= link_to edit_structure_path(@structure), class: "btn btn-primary" do %>
+              <i class="bi bi-pencil"></i>&emsp;Modifica
+            <% end %>
+            <%= link_to structures_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

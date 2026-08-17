@@ -19,6 +19,9 @@ it:
       place:
         one: Luogo
         other: Luoghi
+      structure:
+        one: Struttura
+        other: Strutture
     attributes:
       vehicle:
         name: Nome Modello
@@ -51,6 +54,12 @@ it:
         updated_at: Aggiornato il
       place:
         name: Luogo
+        position: Posizione
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
+      structure:
+        name: Struttura
         position: Posizione
         user: Utente
         created_at: Creato il

@@ -10,6 +10,9 @@ it:
       transport:
         one: Trasporto
         other: Trasporti
+      reason:
+        one: Motivo Missione
+        other: Motivi Missione
     attributes:
       vehicle:
         name: Nome Modello
@@ -22,6 +25,12 @@ it:
         updated_at: Aggiornato il
       transport:
         name: Trasporto
+        position: Posizione
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
+      reason:
+        name: Motivo Missione
         position: Posizione
         user: Utente
         created_at: Creato il

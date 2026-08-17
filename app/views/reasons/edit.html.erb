@@ -1,0 +1,19 @@
+<% content_for :title, "Modifica Motivo Missione - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("reasons/reasons_edit.svg", class: "img-fluid me-3", alt: "reasons_edit") %>
+        <span class="text-warning">
+          <i>Modifica Motivo Missione</i>
+        </span>
+      </h2>
+      <hr class="text-warning mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <%= render "form", reason: @reason %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

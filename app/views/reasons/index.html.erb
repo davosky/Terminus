@@ -1,0 +1,49 @@
+<% content_for :title, "Motivi Missione - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("reasons/reasons_index.svg", class: "img-fluid me-3", alt: "reasons_index") %>
+          <span class="text-primary">
+            <i>I miei Motivi Missione</i>
+          </span>
+        </h2>
+        <%= link_to new_reason_path, class: "btn btn-primary" do %>
+          <i class="bi bi-plus-lg"></i><i class="bi bi-clipboard-check me-2"></i>Nuovo Motivo Missione
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <% if @reasons.any? %>
+            <div class="list-group">
+              <% @reasons.each do |reason| %>
+                <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <div>
+                    <span class="fs-4 fw-bold">
+                      <%= reason.name %>
+                    </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <%= link_to reason_path(reason), class: "btn btn-sm btn-info", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Visualizza il Record Corrente" do %>
+                      <i class="bi bi-eye"></i>
+                    <% end %>
+                    <%= link_to edit_reason_path(reason), class: "btn btn-sm btn-warning", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Modifica il Record Corrente" do %>
+                      <i class="bi bi-pencil"></i>
+                    <% end %>
+                    <%= link_to confirm_destroy_reason_path(reason), class: "btn btn-sm btn-danger", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Elimina il Record Corrente" do %>
+                      <i class="bi bi-trash"></i>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Non hai ancora nessun motivo missione registrato.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

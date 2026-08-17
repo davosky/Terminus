@@ -1,0 +1,52 @@
+<% content_for :title, "Percorsi - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("paths/paths_index.svg", class: "img-fluid me-3", alt: "paths_index") %>
+          <span class="text-primary">
+            <i>I miei Percorsi</i>
+          </span>
+        </h2>
+        <%= link_to new_path_path, class: "btn btn-primary" do %>
+          <i class="bi bi-plus-lg"></i><i class="bi bi-signpost-split me-2"></i>Nuovo Percorso
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <% if @paths.any? %>
+            <div class="list-group">
+              <% @paths.each do |path| %>
+                <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <div>
+                    <span class="fs-4 fw-bold">
+                      <%= path.name %>
+                    </span>
+                    <span class="ms-3 fs-5 fw-normal">
+                      <%= number_with_precision(path.lenght, precision: 2) %> km
+                    </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <%= link_to path_path(path), class: "btn btn-sm btn-info", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Visualizza il Record Corrente" do %>
+                      <i class="bi bi-eye"></i>
+                    <% end %>
+                    <%= link_to edit_path_path(path), class: "btn btn-sm btn-warning", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Modifica il Record Corrente" do %>
+                      <i class="bi bi-pencil"></i>
+                    <% end %>
+                    <%= link_to confirm_destroy_path_path(path), class: "btn btn-sm btn-danger", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Elimina il Record Corrente" do %>
+                      <i class="bi bi-trash"></i>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Non hai ancora nessun percorso registrato.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

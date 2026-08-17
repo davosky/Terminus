@@ -57,6 +57,11 @@
                       <i class="bi bi-clipboard-check me-2"></i>Motivi Missione
                     <% end %>
                   </li>
+                  <li>
+                    <%= link_to paths_path, class: "dropdown-item" do %>
+                      <i class="bi bi-signpost-split me-2"></i>Percorsi
+                    <% end %>
+                  </li>
                 </ul>
               </li>
               <% if current_user.admin? %>

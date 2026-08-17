@@ -1,0 +1,19 @@
+<% content_for :title, "Nuovo Percorso - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("paths/paths_new.svg", class: "img-fluid me-3", alt: "paths_new") %>
+        <span class="text-success">
+          <i>Nuovo Percorso</i>
+        </span>
+      </h2>
+      <hr class="text-success mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <%= render "form", path: @path %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<%= form_with model: path do |f| %>
+  <% if path.errors.any? %>
+    <div class="alert alert-danger">
+      <ul class="mb-0">
+        <% path.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="mb-3">
+    <%= f.label :name, class: form_label_class_path %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :lenght, class: form_label_class_path %>
+    <%= f.number_field :lenght, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :highway_cost, class: form_label_class_path %>
+    <%= f.number_field :highway_cost, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :position, class: form_label_class_path %>
+    <%= f.number_field :position, class: "form-control" %>
+  </div>
+  <div class="d-flex gap-2">
+    <%= f.button class: form_submit_accent_path do %>
+      <i class="bi bi-signpost-split me-2"></i><%= form_submit_label_path %>
+    <% end %>
+    <%= link_to paths_path, class: "btn btn-secondary" do %>
+      <i class="bi bi-arrow-counterclockwise"></i>
+      &emsp;
+      Annulla
+    <% end %>
+  </div>
+<% end %>

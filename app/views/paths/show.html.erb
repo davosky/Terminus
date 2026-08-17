@@ -1,0 +1,34 @@
+<% content_for :title, "#{@path.name} - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("paths/paths_show.svg", class: "img-fluid me-3", alt: "paths_show") %>
+        <span class="text-info">
+          <i><%= @path.name %></i>
+        </span>
+      </h2>
+      <hr class="text-info mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <dl class="row mb-0 mt-3">
+            <dt class="col-sm-3"><%= Path.human_attribute_name(:lenght) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= number_with_precision(@path.lenght, precision: 2) %> km</dd>
+            <dt class="col-sm-3"><%= Path.human_attribute_name(:highway_cost) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary">&euro;<%= number_with_precision(@path.highway_cost, precision: 2) %></dd>
+            <dt class="col-sm-3"><%= Path.human_attribute_name(:position) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @path.position %></dd>
+          </dl>
+          <div class="d-flex gap-2 mt-3">
+            <%= link_to edit_path_path(@path), class: "btn btn-primary" do %>
+              <i class="bi bi-pencil"></i>&emsp;Modifica
+            <% end %>
+            <%= link_to paths_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

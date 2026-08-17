@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :rememberable, :validatable
 
   has_many :vehicles, dependent: :destroy
+  has_many :transports, dependent: :destroy
 
   mount_uploader :user_signature, UserSignatureUploader
   mount_uploader :validator_signature, ValidatorSignatureUploader

@@ -1,0 +1,23 @@
+<% content_for :title, "Modifica Trasporto - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("transports/transports_edit.svg", class: "img-fluid me-3", alt: "transports_edit") %>
+        <span class="text-warning">
+          <i>Modifica Trasporto</i>
+        </span>
+      </h2>
+      <hr class="text-warning mt-3 mb-4"/>
+      <div class="card <%= @transport.protected_record? ? "border-danger" : "border-0" %>">
+        <div class="card-body">
+          <% if @transport.protected_record? %>
+            <%= render "protected_warning", action_label: "modificato" %>
+          <% else %>
+            <%= render "form", transport: @transport %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

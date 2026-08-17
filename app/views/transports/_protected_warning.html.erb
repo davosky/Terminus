@@ -1,0 +1,12 @@
+<h2>
+  <i class="bi bi-exclamation-triangle-fill me-2"></i>Attenzione
+</h2>
+<hr/>
+<p>
+  <i>Record di Sistema - Questo record non può essere <%= action_label %></i>
+</p>
+<div class="d-flex gap-2 mt-4">
+  <%= link_to transports_path, class: "btn btn-secondary" do %>
+    <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+  <% end %>
+</div>

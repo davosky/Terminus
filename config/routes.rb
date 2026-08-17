@@ -25,6 +25,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :places do
+    member do
+      get :confirm_destroy
+    end
+  end
+
   namespace :admin do
     resources :users do
       member do
@@ -37,6 +43,7 @@ Rails.application.routes.draw do
     resources :transports
     resources :reasons
     resources :paths
+    resources :places
     root to: "users#index"
   end
 

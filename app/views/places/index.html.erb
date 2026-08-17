@@ -1,0 +1,49 @@
+<% content_for :title, "Luoghi - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("places/places_index.svg", class: "img-fluid me-3", alt: "places_index") %>
+          <span class="text-primary">
+            <i>I miei Luoghi</i>
+          </span>
+        </h2>
+        <%= link_to new_place_path, class: "btn btn-primary" do %>
+          <i class="bi bi-plus-lg"></i><i class="bi bi-geo-alt me-2"></i>Nuovo Luogo
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <% if @places.any? %>
+            <div class="list-group">
+              <% @places.each do |place| %>
+                <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <div>
+                    <span class="fs-4 fw-bold">
+                      <%= place.name %>
+                    </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <%= link_to place_path(place), class: "btn btn-sm btn-info", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Visualizza il Record Corrente" do %>
+                      <i class="bi bi-eye"></i>
+                    <% end %>
+                    <%= link_to edit_place_path(place), class: "btn btn-sm btn-warning", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Modifica il Record Corrente" do %>
+                      <i class="bi bi-pencil"></i>
+                    <% end %>
+                    <%= link_to confirm_destroy_place_path(place), class: "btn btn-sm btn-danger", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Elimina il Record Corrente" do %>
+                      <i class="bi bi-trash"></i>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Non hai ancora nessun luogo registrato.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

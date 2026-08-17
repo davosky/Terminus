@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_17_112820) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_17_115231) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -23,6 +23,15 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_17_112820) do
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_paths_on_user_id"
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.integer "position"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_places_on_user_id"
   end
 
   create_table "reasons", force: :cascade do |t|
@@ -85,6 +94,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_17_112820) do
   end
 
   add_foreign_key "paths", "users"
+  add_foreign_key "places", "users"
   add_foreign_key "reasons", "users"
   add_foreign_key "transports", "users"
   add_foreign_key "vehicles", "users"

@@ -1,0 +1,29 @@
+<%= form_with model: place do |f| %>
+  <% if place.errors.any? %>
+    <div class="alert alert-danger">
+      <ul class="mb-0">
+        <% place.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="mb-3">
+    <%= f.label :name, class: form_label_class_place %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :position, class: form_label_class_place %>
+    <%= f.number_field :position, class: "form-control" %>
+  </div>
+  <div class="d-flex gap-2">
+    <%= f.button class: form_submit_accent_place do %>
+      <i class="bi bi-geo-alt me-2"></i><%= form_submit_label_place %>
+    <% end %>
+    <%= link_to places_path, class: "btn btn-secondary" do %>
+      <i class="bi bi-arrow-counterclockwise"></i>
+      &emsp;
+      Annulla
+    <% end %>
+  </div>
+<% end %>

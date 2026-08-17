@@ -16,6 +16,9 @@ it:
       path:
         one: Percorso
         other: Percorsi
+      place:
+        one: Luogo
+        other: Luoghi
     attributes:
       vehicle:
         name: Nome Modello
@@ -42,6 +45,12 @@ it:
         name: Percorso
         lenght: Lunghezza Percorso
         highway_cost: Costo Autostrada
+        position: Posizione
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
+      place:
+        name: Luogo
         position: Posizione
         user: Utente
         created_at: Creato il

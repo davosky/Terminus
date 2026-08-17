@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :transports, dependent: :destroy
   has_many :reasons, dependent: :destroy
   has_many :paths, dependent: :destroy
+  has_many :places, dependent: :destroy
 
   mount_uploader :user_signature, UserSignatureUploader
   mount_uploader :validator_signature, ValidatorSignatureUploader

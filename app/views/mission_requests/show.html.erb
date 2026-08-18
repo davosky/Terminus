@@ -1,0 +1,46 @@
+<% content_for :title, "#{@mission_request.name} - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("mission_requests/mission_requests_show.svg", class: "img-fluid me-3", alt: "mission_requests_show") %>
+        <span class="text-info">
+          <i><%= @mission_request.name %></i>
+        </span>
+      </h2>
+      <hr class="text-info mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <dl class="row mb-0 mt-3">
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:departure_date) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= l(@mission_request.departure_date, format: :long) if @mission_request.departure_date %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:return_date) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= l(@mission_request.return_date, format: :long) if @mission_request.return_date %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:request_date) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:reason) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @mission_request.display_reason %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:place) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @mission_request.display_place %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:structure) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @mission_request.display_structure %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:path) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @mission_request.display_path %></dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:path_lenght_fr) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= number_with_precision(@mission_request.display_path_lenght, precision: 2) %> km</dd>
+            <dt class="col-sm-3"><%= MissionRequest.human_attribute_name(:highway_cost_fr) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary">&euro;<%= number_with_precision(@mission_request.display_highway_cost, precision: 2) %></dd>
+          </dl>
+          <div class="d-flex gap-2 mt-3">
+            <%= link_to edit_mission_request_path(@mission_request), class: "btn btn-primary" do %>
+              <i class="bi bi-pencil"></i>&emsp;Modifica
+            <% end %>
+            <%= link_to mission_requests_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

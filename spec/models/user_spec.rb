@@ -31,4 +31,14 @@ RSpec.describe User, type: :model do
       expect(build(:user, username: "mario")).to be_valid
     end
   end
+
+  describe "richiesta missione" do
+    it "non richiede la missione di default" do
+      expect(build(:user).mission_requesting_user).to be(false)
+    end
+
+    it "può essere contraddistinto come utente che richiede la missione" do
+      expect(build(:user, mission_requesting_user: true).mission_requesting_user).to be(true)
+    end
+  end
 end

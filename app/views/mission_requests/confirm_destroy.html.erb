@@ -1,0 +1,35 @@
+<% content_for :title, "Elimina Richiesta Missione" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2 class="text-danger">
+        <%= image_tag("mission_requests/mission_requests_destroy.svg", class: "img-fluid me-3", alt: "mission_requests_destroy") %>
+        <span class="text-danger">
+          <i>Elimina Richiesta Missione</i>
+        </span>
+      </h2>
+      <hr class="text-danger mt-3 mb-4"/>
+      <div class="card border-danger">
+        <div class="card-body">
+          <h5 class="card-title text-danger">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>Conferma eliminazione
+          </h5>
+          <p class="text-danger mt-3">
+            Stai per eliminare la richiesta missione&emsp;<strong><%= @mission_request.name %></strong>
+          </p>
+          <p class="card-text text-danger">Questa operazione è irreversibile.</p>
+          <div class="d-flex gap-2 mt-4">
+            <%= button_to mission_request_path(@mission_request),
+                  method: :delete,
+                  class: "btn btn-danger" do %>
+              <i class="bi bi-trash"></i>&emsp;Elimina Definitivamente
+            <% end %>
+            <%= link_to mission_requests_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Annulla
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

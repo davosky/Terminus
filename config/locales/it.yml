@@ -22,6 +22,9 @@ it:
       structure:
         one: Struttura
         other: Strutture
+      mission_request:
+        one: Richiesta Missione
+        other: Richieste Missione
     attributes:
       vehicle:
         name: Nome Modello
@@ -64,6 +67,24 @@ it:
         user: Utente
         created_at: Creato il
         updated_at: Aggiornato il
+      mission_request:
+        name: Codice Richiesta Missione
+        departure_date: Data Partenza
+        return_date: Data Ritorno
+        request_date: Data Richiesta
+        reason: Motivo Missione
+        place: Luogo
+        structure: Struttura
+        path: Percorso
+        reason_fr: Motivo Missione
+        place_fr: Luogo
+        structure_fr: Struttura
+        path_fr: Percorso
+        path_lenght_fr: Lunghezza Percorso
+        highway_cost_fr: Costo Autostrada
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
       user:
         username: Nome utente
         email: Email
@@ -78,6 +99,7 @@ it:
         admin: Amministratore
         manager: Responsabile
         regular: Dipendente
+        mission_requesting_user: Richiede Missione
         user_signature: Firma Utente
         validator: Validatore
         validator_presentation: Titolo Validatore

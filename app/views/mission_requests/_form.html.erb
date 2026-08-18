@@ -1,0 +1,91 @@
+<%= form_with model: mission_request do |f| %>
+  <% if mission_request.errors.any? %>
+    <div class="alert alert-danger">
+      <ul class="mb-0">
+        <% mission_request.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="mb-3">
+    <%= f.label :departure_date, class: form_label_class_mission_request %>
+    <%= f.date_field :departure_date, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :return_date, class: form_label_class_mission_request %>
+    <%= f.date_field :return_date, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :request_date, class: form_label_class_mission_request %>
+    <%= f.date_field :request_date, class: "form-control" %>
+  </div>
+
+  <div data-controller="mission-request-mode">
+    <label class="<%= form_label_class_mission_request %> d-block">Modalità di Inserimento</label>
+    <div class="btn-group mb-3" role="group">
+      <input type="radio" class="btn-check" name="input_mode" id="input_mode_stored" autocomplete="off" data-action="mission-request-mode#showStored" <%= "checked" if stored_mode_checked?(mission_request) %>>
+      <label class="btn btn-outline-primary" for="input_mode_stored">Modelli Memorizzati</label>
+
+      <input type="radio" class="btn-check" name="input_mode" id="input_mode_free" autocomplete="off" data-action="mission-request-mode#showFree" <%= "checked" unless stored_mode_checked?(mission_request) %>>
+      <label class="btn btn-outline-primary" for="input_mode_free">Campi Liberi</label>
+    </div>
+
+    <div data-mission-request-mode-target="stored" class="<%= "d-none" unless stored_mode_checked?(mission_request) %>">
+      <div class="mb-3">
+        <%= f.label :reason_id, MissionRequest.human_attribute_name(:reason), class: form_label_class_mission_request %>
+        <%= f.collection_select :reason_id, current_user.reasons.ordered, :id, :name, { include_blank: "Seleziona un motivo" }, class: "form-select" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :place_id, MissionRequest.human_attribute_name(:place), class: form_label_class_mission_request %>
+        <%= f.collection_select :place_id, current_user.places.ordered, :id, :name, { include_blank: "Seleziona un luogo" }, class: "form-select" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :structure_id, MissionRequest.human_attribute_name(:structure), class: form_label_class_mission_request %>
+        <%= f.collection_select :structure_id, current_user.structures.ordered, :id, :name, { include_blank: "Seleziona una struttura" }, class: "form-select" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :path_id, MissionRequest.human_attribute_name(:path), class: form_label_class_mission_request %>
+        <%= f.collection_select :path_id, current_user.paths.ordered, :id, :name, { include_blank: "Seleziona un percorso" }, class: "form-select" %>
+      </div>
+    </div>
+
+    <div data-mission-request-mode-target="free" class="<%= "d-none" if stored_mode_checked?(mission_request) %>">
+      <div class="mb-3">
+        <%= f.label :reason_fr, class: form_label_class_mission_request %>
+        <%= f.text_field :reason_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :place_fr, class: form_label_class_mission_request %>
+        <%= f.text_field :place_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :structure_fr, class: form_label_class_mission_request %>
+        <%= f.text_field :structure_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :path_fr, class: form_label_class_mission_request %>
+        <%= f.text_field :path_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :path_lenght_fr, class: form_label_class_mission_request %>
+        <%= f.number_field :path_lenght_fr, step: 0.01, min: 0, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :highway_cost_fr, class: form_label_class_mission_request %>
+        <%= f.number_field :highway_cost_fr, step: 0.01, min: 0, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex gap-2">
+    <%= f.button class: form_submit_accent_mission_request do %>
+      <i class="bi bi-airplane me-2"></i><%= form_submit_label_mission_request %>
+    <% end %>
+    <%= link_to mission_requests_path, class: "btn btn-secondary" do %>
+      <i class="bi bi-arrow-counterclockwise"></i>
+      &emsp;
+      Annulla
+    <% end %>
+  </div>
+<% end %>

@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import FlashController from "./flash_controller"
 application.register("flash", FlashController)
+
+import MissionRequestModeController from "./mission_request_mode_controller"
+application.register("mission-request-mode", MissionRequestModeController)

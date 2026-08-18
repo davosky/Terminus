@@ -1,0 +1,19 @@
+<% content_for :title, "Nuova Richiesta Missione - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("mission_requests/mission_requests_new.svg", class: "img-fluid me-3", alt: "mission_requests_new") %>
+        <span class="text-success">
+          <i>Nuova Richiesta Missione</i>
+        </span>
+      </h2>
+      <hr class="text-success mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <%= render "form", mission_request: @mission_request %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

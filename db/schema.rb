@@ -10,9 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_17_120521) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_18_173157) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "mission_requests", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.date "departure_date"
+    t.decimal "highway_cost_fr", precision: 8, scale: 2, default: "0.0"
+    t.string "name"
+    t.string "path_fr"
+    t.bigint "path_id"
+    t.decimal "path_lenght_fr", precision: 8, scale: 2, default: "0.0"
+    t.string "place_fr"
+    t.bigint "place_id"
+    t.string "reason_fr"
+    t.bigint "reason_id"
+    t.date "request_date"
+    t.date "return_date"
+    t.string "structure_fr"
+    t.bigint "structure_id"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["name"], name: "index_mission_requests_on_name", unique: true
+    t.index ["path_id"], name: "index_mission_requests_on_path_id"
+    t.index ["place_id"], name: "index_mission_requests_on_place_id"
+    t.index ["reason_id"], name: "index_mission_requests_on_reason_id"
+    t.index ["structure_id"], name: "index_mission_requests_on_structure_id"
+    t.index ["user_id"], name: "index_mission_requests_on_user_id"
+  end
 
   create_table "paths", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -75,6 +101,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_17_120521) do
     t.string "institute"
     t.string "last_name"
     t.boolean "manager", default: false, null: false
+    t.boolean "mission_requesting_user", default: false, null: false
     t.string "office"
     t.string "province"
     t.string "region"
@@ -102,6 +129,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_17_120521) do
     t.index ["user_id"], name: "index_vehicles_on_user_id"
   end
 
+  add_foreign_key "mission_requests", "paths"
+  add_foreign_key "mission_requests", "places"
+  add_foreign_key "mission_requests", "reasons"
+  add_foreign_key "mission_requests", "structures"
+  add_foreign_key "mission_requests", "users"
   add_foreign_key "paths", "users"
   add_foreign_key "places", "users"
   add_foreign_key "reasons", "users"

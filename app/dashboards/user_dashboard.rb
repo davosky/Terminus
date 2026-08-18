@@ -18,6 +18,7 @@ class UserDashboard < Administrate::BaseDashboard
     gender: Field::String,
     last_name: Field::String,
     manager: Field::Boolean,
+    mission_requesting_user: Field::Boolean,
     province: Field::String,
     region: Field::String,
     regular: Field::Boolean,
@@ -65,6 +66,7 @@ class UserDashboard < Administrate::BaseDashboard
     admin
     manager
     regular
+    mission_requesting_user
     user_signature
     validator
     validator_presentation
@@ -93,6 +95,7 @@ class UserDashboard < Administrate::BaseDashboard
     admin
     manager
     regular
+    mission_requesting_user
     user_signature
     validator
     validator_presentation

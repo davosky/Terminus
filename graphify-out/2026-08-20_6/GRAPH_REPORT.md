@@ -1,11 +1,11 @@
 # Graph Report - Terminus  (2026-08-20)
 
 ## Corpus Check
-- 156 files · ~236,045 words
+- 155 files · ~235,940 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 855 nodes · 1085 edges · 168 communities (100 shown, 68 thin omitted)
+- 854 nodes · 1085 edges · 167 communities (99 shown, 68 thin omitted)
 - Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 231 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
@@ -153,7 +153,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (168 total, 68 thin omitted)
+## Communities (167 total, 68 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05

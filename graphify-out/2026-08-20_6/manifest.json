@@ -1178,25 +1178,5 @@
     "mtime": 1787224129.0819924,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/requests/admin/authorization_spec.rb": {
-    "mtime": 1787225660.7199957,
-    "ast_hash": "56c138dae9174248b82d5f529da9767c",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/739/signature.png": {
-    "mtime": 1787225672.2775297,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/737/signature.png": {
-    "mtime": 1787225672.2223396,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/741/signature.png": {
-    "mtime": 1787225672.3277087,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
   }
 }

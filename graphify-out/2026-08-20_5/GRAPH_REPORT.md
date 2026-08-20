@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-20)
 
 ## Corpus Check
-- 156 files · ~236,045 words
+- 154 files · ~235,846 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 855 nodes · 1085 edges · 168 communities (100 shown, 68 thin omitted)
-- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 231 edges (avg confidence: 0.87)
+- 851 nodes · 1083 edges · 166 communities (99 shown, 67 thin omitted)
+- Extraction: 78% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 231 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `50798566`
+- Built from commit: `2946c914`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -127,7 +127,6 @@
 - [[_COMMUNITY_Community 155|Community 155]]
 - [[_COMMUNITY_Community 157|Community 157]]
 - [[_COMMUNITY_Community 158|Community 158]]
-- [[_COMMUNITY_Community 166|Community 166]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `User` - 26 edges
@@ -153,7 +152,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (168 total, 68 thin omitted)
+## Communities (166 total, 67 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -164,8 +163,8 @@ Cohesion: 0.05
 Nodes (23): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, UsersController, PathDashboard, PlaceDashboard, ReasonDashboard (+15 more)
 
 ### Community 2 - "Admin User Signature Downloads"
-Cohesion: 0.15
-Nodes (5): TransportsController, TransportsController, TransportDashboard, CreateTransports migration, Transport
+Cohesion: 0.13
+Nodes (7): Admin::TransportsController, TransportsController, Admin::VehiclesController, TransportsController, TransportDashboard, CreateTransports migration, Transport
 
 ### Community 3 - "Terminus App Blueprint (Devise/Users/Setup)"
 Cohesion: 0.09
@@ -288,8 +287,8 @@ Cohesion: 0.67
 Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation Section
 
 ### Community 124 - "Community 124"
-Cohesion: 0.14
-Nodes (7): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, VehicleDashboard, CreateVehicles migration, Vehicle
+Cohesion: 0.16
+Nodes (5): VehiclesController, VehiclesController, VehicleDashboard, CreateVehicles migration, Vehicle
 
 ### Community 126 - "Community 126"
 Cohesion: 0.14
@@ -344,7 +343,7 @@ Nodes (3): ApplicationController, ApplicationController, HomeController
 ## Knowledge Gaps
 - **215 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+210 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **68 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **67 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -356,7 +355,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `User` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Place CRUD Icon Set`, `Community 125`, `Community 157`, `Community 127`?**
   _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Why does `PlacesController` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Secure Headers & CSP Config`, `Community 125`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `Path` connect `Admin Panel: Transports & Vehicles` to `Paths Controller CRUD`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Are the 12 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**

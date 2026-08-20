@@ -481,15 +481,6 @@
       "norm_label": "places_spec.rb"
     },
     {
-      "label": "authorization_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/requests/admin/authorization_spec.rb",
-      "source_location": "L1",
-      "id": "spec_requests_admin_authorization_spec_rb",
-      "community": 167,
-      "norm_label": "authorization_spec.rb"
-    },
-    {
       "label": "vehicle_policy_spec.rb",
       "file_type": "code",
       "source_file": "spec/policies/vehicle_policy_spec.rb",
@@ -15706,9 +15697,9 @@
       "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "db_migrate_20260820111753_add_payroll_to_users_rb",
-      "target": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers"
+      "target": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15716,9 +15707,9 @@
       "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers",
-      "target": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers_change"
+      "target": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers_change",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",

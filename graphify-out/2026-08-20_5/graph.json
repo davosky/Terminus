@@ -481,15 +481,6 @@
       "norm_label": "places_spec.rb"
     },
     {
-      "label": "authorization_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/requests/admin/authorization_spec.rb",
-      "source_location": "L1",
-      "id": "spec_requests_admin_authorization_spec_rb",
-      "community": 167,
-      "norm_label": "authorization_spec.rb"
-    },
-    {
       "label": "vehicle_policy_spec.rb",
       "file_type": "code",
       "source_file": "spec/policies/vehicle_policy_spec.rb",
@@ -3580,7 +3571,7 @@
       "label": ".display_resource()",
       "file_type": "code",
       "source_file": "app/dashboards/user_dashboard.rb",
-      "source_location": "L127",
+      "source_location": "L124",
       "id": "dashboards_user_dashboard_userdashboard_display_resource",
       "community": 52,
       "norm_label": ".display_resource()"
@@ -4168,33 +4159,6 @@
       "source_location": "L2",
       "id": "migrate_20260815171707_add_validator_fields_to_users_addvalidatorfieldstousers_change",
       "community": 39,
-      "norm_label": ".change()"
-    },
-    {
-      "label": "20260820111753_add_payroll_to_users.rb",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
-      "source_location": "L1",
-      "id": "db_migrate_20260820111753_add_payroll_to_users_rb",
-      "community": 166,
-      "norm_label": "20260820111753_add_payroll_to_users.rb"
-    },
-    {
-      "label": "AddPayrollToUsers",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
-      "source_location": "L1",
-      "id": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers",
-      "community": 166,
-      "norm_label": "addpayrolltousers"
-    },
-    {
-      "label": ".change()",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
-      "source_location": "L2",
-      "id": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers_change",
-      "community": 166,
       "norm_label": ".change()"
     },
     {
@@ -7874,7 +7838,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 124,
+      "community": 2,
       "norm_label": "admin::vehiclescontroller",
       "id": "admin_vehicles_controller_vehicles_controller"
     },
@@ -7939,7 +7903,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 124,
+      "community": 2,
       "norm_label": "admin::transportscontroller",
       "id": "admin_transports_controller_transports_controller"
     },
@@ -15703,26 +15667,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "db_migrate_20260820111753_add_payroll_to_users_rb",
-      "target": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "db/migrate/20260820111753_add_payroll_to_users.rb",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers",
-      "target": "migrate_20260820111753_add_payroll_to_users_addpayrolltousers_change"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "db/migrate/20260815162220_add_user_signature_to_users.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -19722,5 +19666,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5079856681bfc64efab7b3f4166bf78f2aa424c3"
+  "built_at_commit": "2946c914a7b0278f3e6393c1770939e829b4c61a"
 }

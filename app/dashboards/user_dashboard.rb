@@ -19,6 +19,7 @@ class UserDashboard < Administrate::BaseDashboard
     last_name: Field::String,
     manager: Field::Boolean,
     mission_requesting_user: Field::Boolean,
+    payroll: Field::Boolean,
     province: Field::String,
     region: Field::String,
     regular: Field::Boolean,
@@ -67,6 +68,7 @@ class UserDashboard < Administrate::BaseDashboard
     manager
     regular
     mission_requesting_user
+    payroll
     user_signature
     validator
     validator_presentation
@@ -96,6 +98,7 @@ class UserDashboard < Administrate::BaseDashboard
     manager
     regular
     mission_requesting_user
+    payroll
     user_signature
     validator
     validator_presentation

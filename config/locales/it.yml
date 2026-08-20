@@ -100,6 +100,7 @@ it:
         manager: Responsabile
         regular: Dipendente
         mission_requesting_user: Richiede Missione
+        payroll: Amministrazione
         user_signature: Firma Utente
         validator: Validatore
         validator_presentation: Titolo Validatore

@@ -45,4 +45,14 @@ RSpec.describe User, type: :model do
       expect(build(:user, mission_requesting_user: true).mission_requesting_user).to be(true)
     end
   end
+
+  describe "amministrazione (payroll)" do
+    it "non è di amministrazione di default" do
+      expect(build(:user).payroll).to be(false)
+    end
+
+    it "può essere contraddistinto come utente di amministrazione" do
+      expect(build(:user, payroll: true).payroll).to be(true)
+    end
+  end
 end

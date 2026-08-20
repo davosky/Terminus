@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_20_104956) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_20_111753) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -105,6 +105,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_20_104956) do
     t.boolean "manager", default: false, null: false
     t.boolean "mission_requesting_user", default: false, null: false
     t.string "office"
+    t.boolean "payroll", default: false, null: false
     t.string "province"
     t.string "region"
     t.boolean "regular", default: false, null: false

@@ -481,69 +481,6 @@
       "norm_label": "places_spec.rb"
     },
     {
-      "label": "vehicle_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/vehicle_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_vehicle_policy_spec_rb",
-      "community": 165,
-      "norm_label": "vehicle_policy_spec.rb"
-    },
-    {
-      "label": "reason_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/reason_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_reason_policy_spec_rb",
-      "community": 162,
-      "norm_label": "reason_policy_spec.rb"
-    },
-    {
-      "label": "place_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/place_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_place_policy_spec_rb",
-      "community": 161,
-      "norm_label": "place_policy_spec.rb"
-    },
-    {
-      "label": "transport_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/transport_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_transport_policy_spec_rb",
-      "community": 164,
-      "norm_label": "transport_policy_spec.rb"
-    },
-    {
-      "label": "path_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/path_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_path_policy_spec_rb",
-      "community": 160,
-      "norm_label": "path_policy_spec.rb"
-    },
-    {
-      "label": "structure_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/structure_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_structure_policy_spec_rb",
-      "community": 163,
-      "norm_label": "structure_policy_spec.rb"
-    },
-    {
-      "label": "mission_request_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/mission_request_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_mission_request_policy_spec_rb",
-      "community": 159,
-      "norm_label": "mission_request_policy_spec.rb"
-    },
-    {
       "label": "mission_request_code_generator_spec.rb",
       "file_type": "code",
       "source_file": "spec/services/mission_request_code_generator_spec.rb",

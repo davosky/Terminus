@@ -1,11 +1,11 @@
 # Graph Report - Terminus  (2026-08-20)
 
 ## Corpus Check
-- 154 files · ~235,846 words
+- 147 files · ~234,862 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 851 nodes · 1083 edges · 166 communities (99 shown, 67 thin omitted)
+- 844 nodes · 1083 edges · 159 communities (92 shown, 67 thin omitted)
 - Extraction: 78% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 231 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
@@ -152,7 +152,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (166 total, 67 thin omitted)
+## Communities (159 total, 67 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -353,7 +353,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `User` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Place CRUD Icon Set`, `Community 125`, `Community 157`, `Community 127`?**
-  _High betweenness centrality (0.050) - this node is a cross-community bridge._
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
 - **Why does `PlacesController` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Secure Headers & CSP Config`, `Community 125`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `Path` connect `Admin Panel: Transports & Vehicles` to `Paths Controller CRUD`?**

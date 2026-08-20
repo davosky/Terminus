@@ -481,69 +481,6 @@
       "norm_label": "places_spec.rb"
     },
     {
-      "label": "vehicle_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/vehicle_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_vehicle_policy_spec_rb",
-      "community": 165,
-      "norm_label": "vehicle_policy_spec.rb"
-    },
-    {
-      "label": "reason_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/reason_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_reason_policy_spec_rb",
-      "community": 162,
-      "norm_label": "reason_policy_spec.rb"
-    },
-    {
-      "label": "place_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/place_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_place_policy_spec_rb",
-      "community": 161,
-      "norm_label": "place_policy_spec.rb"
-    },
-    {
-      "label": "transport_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/transport_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_transport_policy_spec_rb",
-      "community": 164,
-      "norm_label": "transport_policy_spec.rb"
-    },
-    {
-      "label": "path_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/path_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_path_policy_spec_rb",
-      "community": 160,
-      "norm_label": "path_policy_spec.rb"
-    },
-    {
-      "label": "structure_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/structure_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_structure_policy_spec_rb",
-      "community": 163,
-      "norm_label": "structure_policy_spec.rb"
-    },
-    {
-      "label": "mission_request_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/mission_request_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_mission_request_policy_spec_rb",
-      "community": 159,
-      "norm_label": "mission_request_policy_spec.rb"
-    },
-    {
       "label": "mission_request_code_generator_spec.rb",
       "file_type": "code",
       "source_file": "spec/services/mission_request_code_generator_spec.rb",
@@ -1395,7 +1332,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L1",
       "id": "app_policies_structure_policy_rb",
-      "community": 157,
+      "community": 9,
       "norm_label": "structure_policy.rb"
     },
     {
@@ -1404,7 +1341,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L3",
       "id": "policies_structure_policy_structurepolicy",
-      "community": 157,
+      "community": 9,
       "norm_label": "structurepolicy"
     },
     {
@@ -1413,7 +1350,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L4",
       "id": "policies_structure_policy_structurepolicy_index",
-      "community": 157,
+      "community": 9,
       "norm_label": ".index?()"
     },
     {
@@ -1422,7 +1359,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L8",
       "id": "policies_structure_policy_structurepolicy_show",
-      "community": 157,
+      "community": 9,
       "norm_label": ".show?()"
     },
     {
@@ -1431,7 +1368,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L12",
       "id": "policies_structure_policy_structurepolicy_create",
-      "community": 157,
+      "community": 9,
       "norm_label": ".create?()"
     },
     {
@@ -1440,7 +1377,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L16",
       "id": "policies_structure_policy_structurepolicy_update",
-      "community": 157,
+      "community": 9,
       "norm_label": ".update?()"
     },
     {
@@ -1449,7 +1386,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L20",
       "id": "policies_structure_policy_structurepolicy_destroy",
-      "community": 157,
+      "community": 9,
       "norm_label": ".destroy?()"
     },
     {
@@ -1458,7 +1395,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L24",
       "id": "policies_structure_policy_structurepolicy_confirm_destroy",
-      "community": 157,
+      "community": 9,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1467,7 +1404,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L30",
       "id": "policies_structure_policy_structurepolicy_owner",
-      "community": 157,
+      "community": 9,
       "norm_label": ".owner?()"
     },
     {
@@ -1476,7 +1413,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L34",
       "id": "policies_structure_policy_scope",
-      "community": 157,
+      "community": 9,
       "norm_label": "scope"
     },
     {
@@ -1485,7 +1422,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L35",
       "id": "policies_structure_policy_scope_resolve",
-      "community": 157,
+      "community": 9,
       "norm_label": ".resolve()"
     },
     {
@@ -1494,7 +1431,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L1",
       "id": "app_policies_reason_policy_rb",
-      "community": 17,
+      "community": 10,
       "norm_label": "reason_policy.rb"
     },
     {
@@ -1503,7 +1440,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L3",
       "id": "policies_reason_policy_reasonpolicy",
-      "community": 17,
+      "community": 10,
       "norm_label": "reasonpolicy"
     },
     {
@@ -1512,7 +1449,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L4",
       "id": "policies_reason_policy_reasonpolicy_index",
-      "community": 17,
+      "community": 10,
       "norm_label": ".index?()"
     },
     {
@@ -1521,7 +1458,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L8",
       "id": "policies_reason_policy_reasonpolicy_show",
-      "community": 17,
+      "community": 10,
       "norm_label": ".show?()"
     },
     {
@@ -1530,7 +1467,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L12",
       "id": "policies_reason_policy_reasonpolicy_create",
-      "community": 17,
+      "community": 10,
       "norm_label": ".create?()"
     },
     {
@@ -1539,7 +1476,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L16",
       "id": "policies_reason_policy_reasonpolicy_update",
-      "community": 17,
+      "community": 10,
       "norm_label": ".update?()"
     },
     {
@@ -1548,7 +1485,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L20",
       "id": "policies_reason_policy_reasonpolicy_destroy",
-      "community": 17,
+      "community": 10,
       "norm_label": ".destroy?()"
     },
     {
@@ -1557,7 +1494,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L24",
       "id": "policies_reason_policy_reasonpolicy_confirm_destroy",
-      "community": 17,
+      "community": 10,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1566,7 +1503,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L30",
       "id": "policies_reason_policy_reasonpolicy_owner",
-      "community": 17,
+      "community": 10,
       "norm_label": ".owner?()"
     },
     {
@@ -1575,7 +1512,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L34",
       "id": "policies_reason_policy_scope",
-      "community": 17,
+      "community": 10,
       "norm_label": "scope"
     },
     {
@@ -1584,7 +1521,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L35",
       "id": "policies_reason_policy_scope_resolve",
-      "community": 17,
+      "community": 10,
       "norm_label": ".resolve()"
     },
     {
@@ -1593,7 +1530,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L1",
       "id": "app_policies_mission_request_policy_rb",
-      "community": 4,
+      "community": 17,
       "norm_label": "mission_request_policy.rb"
     },
     {
@@ -1602,7 +1539,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L3",
       "id": "policies_mission_request_policy_missionrequestpolicy",
-      "community": 4,
+      "community": 17,
       "norm_label": "missionrequestpolicy"
     },
     {
@@ -1611,7 +1548,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L4",
       "id": "policies_mission_request_policy_missionrequestpolicy_index",
-      "community": 4,
+      "community": 17,
       "norm_label": ".index?()"
     },
     {
@@ -1620,7 +1557,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L8",
       "id": "policies_mission_request_policy_missionrequestpolicy_show",
-      "community": 4,
+      "community": 17,
       "norm_label": ".show?()"
     },
     {
@@ -1629,7 +1566,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L12",
       "id": "policies_mission_request_policy_missionrequestpolicy_create",
-      "community": 4,
+      "community": 17,
       "norm_label": ".create?()"
     },
     {
@@ -1638,7 +1575,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L16",
       "id": "policies_mission_request_policy_missionrequestpolicy_update",
-      "community": 4,
+      "community": 17,
       "norm_label": ".update?()"
     },
     {
@@ -1647,7 +1584,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L20",
       "id": "policies_mission_request_policy_missionrequestpolicy_destroy",
-      "community": 4,
+      "community": 17,
       "norm_label": ".destroy?()"
     },
     {
@@ -1656,7 +1593,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L24",
       "id": "policies_mission_request_policy_missionrequestpolicy_confirm_destroy",
-      "community": 4,
+      "community": 17,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1665,7 +1602,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L30",
       "id": "policies_mission_request_policy_missionrequestpolicy_owner",
-      "community": 4,
+      "community": 17,
       "norm_label": ".owner?()"
     },
     {
@@ -1674,7 +1611,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L34",
       "id": "policies_mission_request_policy_scope",
-      "community": 4,
+      "community": 17,
       "norm_label": "scope"
     },
     {
@@ -1683,7 +1620,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L35",
       "id": "policies_mission_request_policy_scope_resolve",
-      "community": 4,
+      "community": 17,
       "norm_label": ".resolve()"
     },
     {
@@ -2403,7 +2340,7 @@
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_home_controller_rb",
-      "community": 158,
+      "community": 4,
       "norm_label": "home_controller.rb"
     },
     {
@@ -2412,7 +2349,7 @@
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L1",
       "id": "controllers_home_controller_homecontroller",
-      "community": 158,
+      "community": 4,
       "norm_label": "homecontroller"
     },
     {
@@ -2421,7 +2358,7 @@
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L2",
       "id": "controllers_home_controller_homecontroller_index",
-      "community": 158,
+      "community": 4,
       "norm_label": ".index()"
     },
     {
@@ -2538,7 +2475,7 @@
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_application_controller_rb",
-      "community": 158,
+      "community": 4,
       "norm_label": "application_controller.rb"
     },
     {
@@ -2547,7 +2484,7 @@
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L1",
       "id": "controllers_application_controller_applicationcontroller",
-      "community": 158,
+      "community": 4,
       "norm_label": "applicationcontroller"
     },
     {
@@ -2556,7 +2493,7 @@
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L12",
       "id": "controllers_application_controller_applicationcontroller_user_not_authorized",
-      "community": 158,
+      "community": 4,
       "norm_label": ".user_not_authorized()"
     },
     {
@@ -3231,7 +3168,7 @@
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_admin_application_controller_rb",
-      "community": 158,
+      "community": 4,
       "norm_label": "application_controller.rb"
     },
     {
@@ -3240,7 +3177,7 @@
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L8",
       "id": "admin_application_controller_applicationcontroller",
-      "community": 158,
+      "community": 4,
       "norm_label": "applicationcontroller"
     },
     {
@@ -3249,7 +3186,7 @@
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L12",
       "id": "admin_application_controller_applicationcontroller_authenticate_admin",
-      "community": 158,
+      "community": 4,
       "norm_label": ".authenticate_admin()"
     },
     {
@@ -7838,7 +7775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 124,
       "norm_label": "admin::vehiclescontroller",
       "id": "admin_vehicles_controller_vehicles_controller"
     },
@@ -7903,7 +7840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 124,
       "norm_label": "admin::transportscontroller",
       "id": "admin_transports_controller_transports_controller"
     },
@@ -9031,9 +8968,9 @@
       "source_file": "spec/requests/sessions_spec.rb",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_requests_sessions_spec_rb",
-      "target": "requests_sessions_spec_attempt_login"
+      "target": "requests_sessions_spec_attempt_login",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9391,17 +9328,6 @@
       "target": "models_user_user"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_transport_policy_transportpolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/transport_policy.rb",
@@ -9430,17 +9356,6 @@
       "confidence_score": 1.0,
       "source": "policies_transportpolicy",
       "target": "policies_transport_policy_scope"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_transport_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
     },
     {
       "relation": "contains",
@@ -9678,17 +9593,6 @@
       "target": "models_user_user"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/path_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_path_policy_pathpolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/path_policy.rb",
@@ -9697,17 +9601,6 @@
       "confidence_score": 1.0,
       "source": "policies_path_policy_scope",
       "target": "policies_path_policy_scope_resolve"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/path_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_path_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
     },
     {
       "relation": "contains",
@@ -9915,17 +9808,6 @@
       "target": "models_user_user"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/vehicle_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_vehicle_policy_vehiclepolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/vehicle_policy.rb",
@@ -9954,17 +9836,6 @@
       "confidence_score": 1.0,
       "source": "policies_vehiclepolicy",
       "target": "policies_vehicle_policy_scope"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/vehicle_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_vehicle_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
     },
     {
       "relation": "contains",
@@ -10232,94 +10103,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "policies_application_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/place_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_place_policy_placepolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/place_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_place_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/structure_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_structure_policy_structurepolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/structure_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_structure_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/reason_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_reason_policy_reasonpolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/reason_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_reason_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/mission_request_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_mission_request_policy_missionrequestpolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/mission_request_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_mission_request_policy_scope_resolve",
       "target": "policies_application_policy_applicationpolicy_admin"
     },
     {
@@ -15530,9 +15313,9 @@
       "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "db_migrate_20260820104956_add_lockable_to_users_rb",
-      "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers"
+      "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15540,9 +15323,9 @@
       "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "migrate_20260820104956_add_lockable_to_users_addlockabletousers",
-      "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers_change"
+      "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers_change",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -19666,5 +19449,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2946c914a7b0278f3e6393c1770939e829b4c61a"
+  "built_at_commit": "56a2fc46476df7765f9fd017acc69ef011753fce"
 }

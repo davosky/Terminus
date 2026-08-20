@@ -1093,55 +1093,5 @@
     "mtime": 1787223293.4099731,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/vehicle_policy_spec.rb": {
-    "mtime": 1787223981.161747,
-    "ast_hash": "2c9cd308274e3ec91d230bd753189a67",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/reason_policy_spec.rb": {
-    "mtime": 1787223993.7693348,
-    "ast_hash": "63faedd3ebabfca27293f14243768123",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/place_policy_spec.rb": {
-    "mtime": 1787223999.085372,
-    "ast_hash": "e37b76b43caa78084c52ff8ef368895b",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/transport_policy_spec.rb": {
-    "mtime": 1787223987.0902903,
-    "ast_hash": "740415e2581fa4c5641b399164cb26da",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/path_policy_spec.rb": {
-    "mtime": 1787224010.0600276,
-    "ast_hash": "7a4ad66e6c71acfdeb5639536e3b62e3",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/structure_policy_spec.rb": {
-    "mtime": 1787224004.5049882,
-    "ast_hash": "c424df7ea83e508c21d65572b4a858da",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/mission_request_policy_spec.rb": {
-    "mtime": 1787224015.826433,
-    "ast_hash": "d1b45d649d7aea3fa07434fb3e66fd10",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/1845/signature.png": {
-    "mtime": 1787224029.299445,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/1843/signature.png": {
-    "mtime": 1787224029.2479496,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/1847/signature.png": {
-    "mtime": 1787224029.3568316,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
   }
 }

@@ -22,8 +22,7 @@
   </div>
   <div data-controller="mission-request-mode" class="bg-secondary border-0 rounded pt-1 pb-1 ps-2 pe-2 mb-3">
     <% if mission_request.new_record? %>
-      <hr class="<%= form_hr_mission_request %>" />
-      <label class="<%= form_label_class_mission_request %> d-block">Modalità di Inserimento</label>
+      <label class="<%= form_label_class_mission_request %> d-block mb-3">Modalità di Inserimento</label>
       <div class="btn-group mb-3" role="group">
         <input type="radio" class="btn-check" name="input_mode" id="input_mode_stored" autocomplete="off" data-action="mission-request-mode#showStored" <%= "checked" if stored_mode_checked?(mission_request) %>>
         <label class="btn btn-outline-dark" for="input_mode_stored">Modelli Memorizzati</label>

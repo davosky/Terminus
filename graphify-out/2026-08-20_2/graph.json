@@ -454,24 +454,6 @@
       "norm_label": "transports_spec.rb"
     },
     {
-      "label": "sessions_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/requests/sessions_spec.rb",
-      "source_location": "L1",
-      "id": "spec_requests_sessions_spec_rb",
-      "community": 156,
-      "norm_label": "sessions_spec.rb"
-    },
-    {
-      "label": "attempt_login()",
-      "file_type": "code",
-      "source_file": "spec/requests/sessions_spec.rb",
-      "source_location": "L10",
-      "id": "requests_sessions_spec_attempt_login",
-      "community": 156,
-      "norm_label": "attempt_login()"
-    },
-    {
       "label": "places_spec.rb",
       "file_type": "code",
       "source_file": "spec/requests/places_spec.rb",
@@ -3961,33 +3943,6 @@
       "source_location": "L2",
       "id": "migrate_20260816102443_create_vehicles_createvehicles_change",
       "community": 40,
-      "norm_label": ".change()"
-    },
-    {
-      "label": "20260820104956_add_lockable_to_users.rb",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
-      "source_location": "L1",
-      "id": "db_migrate_20260820104956_add_lockable_to_users_rb",
-      "community": 155,
-      "norm_label": "20260820104956_add_lockable_to_users.rb"
-    },
-    {
-      "label": "AddLockableToUsers",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
-      "source_location": "L1",
-      "id": "migrate_20260820104956_add_lockable_to_users_addlockabletousers",
-      "community": 155,
-      "norm_label": "addlockabletousers"
-    },
-    {
-      "label": ".change()",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
-      "source_location": "L2",
-      "id": "migrate_20260820104956_add_lockable_to_users_addlockabletousers_change",
-      "community": 155,
       "norm_label": ".change()"
     },
     {
@@ -7775,7 +7730,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 124,
+      "community": 2,
       "norm_label": "admin::vehiclescontroller",
       "id": "admin_vehicles_controller_vehicles_controller"
     },
@@ -7840,7 +7795,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 124,
+      "community": 2,
       "norm_label": "admin::transportscontroller",
       "id": "admin_transports_controller_transports_controller"
     },
@@ -8867,9 +8822,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_package_dependencies",
-      "target": "terminus_package_dependencies_bootstrap_icons"
+      "target": "terminus_package_dependencies_bootstrap_icons",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -8927,9 +8882,9 @@
       "source_file": "config/application.rb",
       "source_location": "L22",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "config_application_rb",
-      "target": "config_application_application"
+      "target": "config_application_application",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8965,22 +8920,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "spec/requests/sessions_spec.rb",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "spec_requests_sessions_spec_rb",
-      "target": "requests_sessions_spec_attempt_login",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "spec/system/reasons_spec.rb",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_system_reasons_spec_rb",
-      "target": "system_reasons_spec_login_as"
+      "target": "system_reasons_spec_login_as",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9008,9 +8953,9 @@
       "source_file": "spec/system/vehicles_spec.rb",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_system_vehicles_spec_rb",
-      "target": "system_vehicles_spec_login_as"
+      "target": "system_vehicles_spec_login_as",
+      "confidence_score": 1.0
     },
     {
       "relation": "semantically_similar_to",
@@ -9048,9 +8993,9 @@
       "source_file": "spec/system/structures_spec.rb",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_system_structures_spec_rb",
-      "target": "system_structures_spec_login_as"
+      "target": "system_structures_spec_login_as",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9078,9 +9023,9 @@
       "source_file": "spec/system/transports_spec.rb",
       "source_location": "L58",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_system_transports_spec_rb",
-      "target": "system_transports_spec_login_as"
+      "target": "system_transports_spec_login_as",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9108,9 +9053,9 @@
       "source_file": "spec/system/places_spec.rb",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_system_places_spec_rb",
-      "target": "system_places_spec_login_as"
+      "target": "system_places_spec_login_as",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9128,9 +9073,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_transport_policy_rb",
-      "target": "policies_transport_policy_transportpolicy"
+      "target": "policies_transport_policy_transportpolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9138,9 +9083,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_transport_policy_rb",
-      "target": "policies_transport_policy_scope"
+      "target": "policies_transport_policy_scope",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9148,9 +9093,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_index"
+      "target": "policies_transport_policy_transportpolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9158,9 +9103,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_show"
+      "target": "policies_transport_policy_transportpolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9168,9 +9113,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_create"
+      "target": "policies_transport_policy_transportpolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9178,9 +9123,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_update"
+      "target": "policies_transport_policy_transportpolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9188,9 +9133,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_destroy"
+      "target": "policies_transport_policy_transportpolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9198,9 +9143,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_confirm_destroy"
+      "target": "policies_transport_policy_transportpolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9208,9 +9153,9 @@
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_owner"
+      "target": "policies_transport_policy_transportpolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9363,9 +9308,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_path_policy_rb",
-      "target": "policies_path_policy_pathpolicy"
+      "target": "policies_path_policy_pathpolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9473,9 +9418,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_index"
+      "target": "policies_path_policy_pathpolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9483,9 +9428,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_show"
+      "target": "policies_path_policy_pathpolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9493,9 +9438,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_create"
+      "target": "policies_path_policy_pathpolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9503,9 +9448,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_update"
+      "target": "policies_path_policy_pathpolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9513,9 +9458,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_destroy"
+      "target": "policies_path_policy_pathpolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9523,9 +9468,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_confirm_destroy"
+      "target": "policies_path_policy_pathpolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9533,9 +9478,9 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_path_policy_pathpolicy",
-      "target": "policies_path_policy_pathpolicy_owner"
+      "target": "policies_path_policy_pathpolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -9608,9 +9553,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_vehicle_policy_rb",
-      "target": "policies_vehicle_policy_vehiclepolicy"
+      "target": "policies_vehicle_policy_vehiclepolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9618,9 +9563,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_vehicle_policy_rb",
-      "target": "policies_vehicle_policy_scope"
+      "target": "policies_vehicle_policy_scope",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9628,9 +9573,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_index"
+      "target": "policies_vehicle_policy_vehiclepolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9638,9 +9583,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_show"
+      "target": "policies_vehicle_policy_vehiclepolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9648,9 +9593,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_create"
+      "target": "policies_vehicle_policy_vehiclepolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9658,9 +9603,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_update"
+      "target": "policies_vehicle_policy_vehiclepolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9668,9 +9613,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_destroy"
+      "target": "policies_vehicle_policy_vehiclepolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9678,9 +9623,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_confirm_destroy"
+      "target": "policies_vehicle_policy_vehiclepolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9688,9 +9633,9 @@
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_vehicle_policy_vehiclepolicy",
-      "target": "policies_vehicle_policy_vehiclepolicy_owner"
+      "target": "policies_vehicle_policy_vehiclepolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9843,9 +9788,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_application_policy_rb",
-      "target": "policies_application_policy_applicationpolicy"
+      "target": "policies_application_policy_applicationpolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9853,9 +9798,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L45",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_application_policy_rb",
-      "target": "policies_application_policy_scope"
+      "target": "policies_application_policy_scope",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9863,9 +9808,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_initialize"
+      "target": "policies_application_policy_applicationpolicy_initialize",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9873,9 +9818,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_index"
+      "target": "policies_application_policy_applicationpolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9883,9 +9828,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_show"
+      "target": "policies_application_policy_applicationpolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9893,9 +9838,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_create"
+      "target": "policies_application_policy_applicationpolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9903,9 +9848,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L23",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_new"
+      "target": "policies_application_policy_applicationpolicy_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9913,9 +9858,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_update"
+      "target": "policies_application_policy_applicationpolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9923,9 +9868,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L31",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_edit"
+      "target": "policies_application_policy_applicationpolicy_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9933,9 +9878,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L35",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_destroy"
+      "target": "policies_application_policy_applicationpolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -9943,9 +9888,9 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_application_policy_applicationpolicy",
-      "target": "policies_application_policy_applicationpolicy_admin"
+      "target": "policies_application_policy_applicationpolicy_admin",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -10182,9 +10127,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_place_policy_rb",
-      "target": "policies_place_policy_placepolicy"
+      "target": "policies_place_policy_placepolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10292,9 +10237,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_index"
+      "target": "policies_place_policy_placepolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10302,9 +10247,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_show"
+      "target": "policies_place_policy_placepolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10312,9 +10257,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_create"
+      "target": "policies_place_policy_placepolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10322,9 +10267,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_update"
+      "target": "policies_place_policy_placepolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10332,9 +10277,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_destroy"
+      "target": "policies_place_policy_placepolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10342,9 +10287,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_confirm_destroy"
+      "target": "policies_place_policy_placepolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10352,9 +10297,9 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_place_policy_placepolicy",
-      "target": "policies_place_policy_placepolicy_owner"
+      "target": "policies_place_policy_placepolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -10427,9 +10372,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_structure_policy_rb",
-      "target": "policies_structure_policy_structurepolicy"
+      "target": "policies_structure_policy_structurepolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10517,9 +10462,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_index"
+      "target": "policies_structure_policy_structurepolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10527,9 +10472,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_show"
+      "target": "policies_structure_policy_structurepolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10537,9 +10482,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_create"
+      "target": "policies_structure_policy_structurepolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10547,9 +10492,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_update"
+      "target": "policies_structure_policy_structurepolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10557,9 +10502,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_destroy"
+      "target": "policies_structure_policy_structurepolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10567,9 +10512,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_confirm_destroy"
+      "target": "policies_structure_policy_structurepolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10577,9 +10522,9 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_structure_policy_structurepolicy",
-      "target": "policies_structure_policy_structurepolicy_owner"
+      "target": "policies_structure_policy_structurepolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -10652,9 +10597,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_reason_policy_rb",
-      "target": "policies_reason_policy_reasonpolicy"
+      "target": "policies_reason_policy_reasonpolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10742,9 +10687,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_index"
+      "target": "policies_reason_policy_reasonpolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10752,9 +10697,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_show"
+      "target": "policies_reason_policy_reasonpolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10762,9 +10707,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_create"
+      "target": "policies_reason_policy_reasonpolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10772,9 +10717,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_update"
+      "target": "policies_reason_policy_reasonpolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10782,9 +10727,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_destroy"
+      "target": "policies_reason_policy_reasonpolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10792,9 +10737,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_confirm_destroy"
+      "target": "policies_reason_policy_reasonpolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10802,9 +10747,9 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_reason_policy_reasonpolicy",
-      "target": "policies_reason_policy_reasonpolicy_owner"
+      "target": "policies_reason_policy_reasonpolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -10877,9 +10822,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_policies_mission_request_policy_rb",
-      "target": "policies_mission_request_policy_missionrequestpolicy"
+      "target": "policies_mission_request_policy_missionrequestpolicy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10967,9 +10912,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_index"
+      "target": "policies_mission_request_policy_missionrequestpolicy_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10977,9 +10922,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_show"
+      "target": "policies_mission_request_policy_missionrequestpolicy_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10987,9 +10932,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_create"
+      "target": "policies_mission_request_policy_missionrequestpolicy_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -10997,9 +10942,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_update"
+      "target": "policies_mission_request_policy_missionrequestpolicy_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11007,9 +10952,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_destroy"
+      "target": "policies_mission_request_policy_missionrequestpolicy_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11017,9 +10962,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_confirm_destroy"
+      "target": "policies_mission_request_policy_missionrequestpolicy_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11027,9 +10972,9 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "policies_mission_request_policy_missionrequestpolicy",
-      "target": "policies_mission_request_policy_missionrequestpolicy_owner"
+      "target": "policies_mission_request_policy_missionrequestpolicy_owner",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -11102,9 +11047,9 @@
       "source_file": "app/services/mission_request_code_generator.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_services_mission_request_code_generator_rb",
-      "target": "services_mission_request_code_generator_missionrequestcodegenerator"
+      "target": "services_mission_request_code_generator_missionrequestcodegenerator",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11162,9 +11107,9 @@
       "source_file": "app/services/mission_request_code_generator.rb",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_mission_request_code_generator_missionrequestcodegenerator",
-      "target": "services_mission_request_code_generator_missionrequestcodegenerator_call"
+      "target": "services_mission_request_code_generator_missionrequestcodegenerator_call",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11172,9 +11117,9 @@
       "source_file": "app/services/mission_request_code_generator.rb",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_mission_request_code_generator_missionrequestcodegenerator",
-      "target": "services_mission_request_code_generator_missionrequestcodegenerator_initialize"
+      "target": "services_mission_request_code_generator_missionrequestcodegenerator_initialize",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11182,9 +11127,9 @@
       "source_file": "app/services/mission_request_code_generator.rb",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_mission_request_code_generator_missionrequestcodegenerator",
-      "target": "services_mission_request_code_generator_missionrequestcodegenerator_initials"
+      "target": "services_mission_request_code_generator_missionrequestcodegenerator_initials",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11192,9 +11137,9 @@
       "source_file": "app/services/mission_request_code_generator.rb",
       "source_location": "L22",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_mission_request_code_generator_missionrequestcodegenerator",
-      "target": "services_mission_request_code_generator_missionrequestcodegenerator_timestamp"
+      "target": "services_mission_request_code_generator_missionrequestcodegenerator_timestamp",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -11202,9 +11147,9 @@
       "source_file": "app/services/mission_request_code_generator.rb",
       "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_mission_request_code_generator_missionrequestcodegenerator",
-      "target": "services_mission_request_code_generator_missionrequestcodegenerator_sequence"
+      "target": "services_mission_request_code_generator_missionrequestcodegenerator_sequence",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -11255,9 +11200,9 @@
       "source_file": "app/helpers/reasons_helper.rb",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_reasons_helper_rb",
-      "target": "helpers_reasons_helper_form_submit_label_reason"
+      "target": "helpers_reasons_helper_form_submit_label_reason",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11265,9 +11210,9 @@
       "source_file": "app/helpers/reasons_helper.rb",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_reasons_helper_rb",
-      "target": "helpers_reasons_helper_form_submit_accent_reason"
+      "target": "helpers_reasons_helper_form_submit_accent_reason",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11315,9 +11260,9 @@
       "source_file": "app/helpers/places_helper.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_places_helper_rb",
-      "target": "helpers_places_helper_form_label_class_place"
+      "target": "helpers_places_helper_form_label_class_place",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11325,9 +11270,9 @@
       "source_file": "app/helpers/places_helper.rb",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_places_helper_rb",
-      "target": "helpers_places_helper_form_submit_label_place"
+      "target": "helpers_places_helper_form_submit_label_place",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11335,9 +11280,9 @@
       "source_file": "app/helpers/places_helper.rb",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_places_helper_rb",
-      "target": "helpers_places_helper_form_submit_accent_place"
+      "target": "helpers_places_helper_form_submit_accent_place",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11395,9 +11340,9 @@
       "source_file": "app/helpers/vehicles_helper.rb",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_vehicles_helper_rb",
-      "target": "helpers_vehicles_helper_form_submit_accent_vehicle"
+      "target": "helpers_vehicles_helper_form_submit_accent_vehicle",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11455,9 +11400,9 @@
       "source_file": "app/helpers/mission_requests_helper.rb",
       "source_location": "L32",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_mission_requests_helper_rb",
-      "target": "helpers_mission_requests_helper_form_hr_mission_request"
+      "target": "helpers_mission_requests_helper_form_hr_mission_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -11586,9 +11531,9 @@
       "source_file": "app/helpers/transports_helper.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_transports_helper_rb",
-      "target": "helpers_transports_helper_form_label_class_transport"
+      "target": "helpers_transports_helper_form_label_class_transport",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11596,9 +11541,9 @@
       "source_file": "app/helpers/transports_helper.rb",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_transports_helper_rb",
-      "target": "helpers_transports_helper_form_submit_label_transport"
+      "target": "helpers_transports_helper_form_submit_label_transport",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11606,9 +11551,9 @@
       "source_file": "app/helpers/transports_helper.rb",
       "source_location": "L18",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_transports_helper_rb",
-      "target": "helpers_transports_helper_form_submit_accent_transport"
+      "target": "helpers_transports_helper_form_submit_accent_transport",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -11617,9 +11562,9 @@
       "source_file": "app/javascript/application.js",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_javascript_application_js",
-      "target": "app_javascript_controllers_index_js"
+      "target": "app_javascript_controllers_index_js",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11699,9 +11644,9 @@
       "source_file": "app/javascript/controllers/application.js",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_javascript_controllers_application_js",
-      "target": "controllers_application_application"
+      "target": "controllers_application_application",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -11710,9 +11655,9 @@
       "source_file": "app/javascript/controllers/index.js",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_javascript_controllers_index_js",
-      "target": "app_javascript_controllers_application_js"
+      "target": "app_javascript_controllers_application_js",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -11721,9 +11666,9 @@
       "source_file": "app/javascript/controllers/index.js",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_javascript_controllers_index_js",
-      "target": "controllers_application_application"
+      "target": "controllers_application_application",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11731,9 +11676,9 @@
       "source_file": "app/models/application_record.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_models_application_record_rb",
-      "target": "models_application_record_applicationrecord"
+      "target": "models_application_record_applicationrecord",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12204,9 +12149,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_models_mission_request_rb",
-      "target": "models_mission_request_missionrequest"
+      "target": "models_mission_request_missionrequest",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12304,9 +12249,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_display_reason"
+      "target": "models_mission_request_missionrequest_display_reason",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12314,9 +12259,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_display_place"
+      "target": "models_mission_request_missionrequest_display_place",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12324,9 +12269,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_display_structure"
+      "target": "models_mission_request_missionrequest_display_structure",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12334,9 +12279,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L28",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_display_path"
+      "target": "models_mission_request_missionrequest_display_path",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12344,9 +12289,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L32",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_display_path_lenght"
+      "target": "models_mission_request_missionrequest_display_path_lenght",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12354,9 +12299,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L36",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_display_highway_cost"
+      "target": "models_mission_request_missionrequest_display_highway_cost",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12364,9 +12309,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L42",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_stored_or_free_fields_present"
+      "target": "models_mission_request_missionrequest_stored_or_free_fields_present",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12374,9 +12319,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_stored_fields_present"
+      "target": "models_mission_request_missionrequest_stored_fields_present",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12384,9 +12329,9 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L52",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest",
-      "target": "models_mission_request_missionrequest_free_fields_present"
+      "target": "models_mission_request_missionrequest_free_fields_present",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -12456,9 +12401,9 @@
       "source_file": "app/models/structure.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_models_structure_rb",
-      "target": "models_structure_structure"
+      "target": "models_structure_structure",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -12516,9 +12461,9 @@
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_home_controller_rb",
-      "target": "controllers_home_controller_homecontroller"
+      "target": "controllers_home_controller_homecontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12546,9 +12491,9 @@
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_home_controller_homecontroller",
-      "target": "controllers_home_controller_homecontroller_index"
+      "target": "controllers_home_controller_homecontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12556,9 +12501,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_paths_controller_rb",
-      "target": "controllers_paths_controller_pathscontroller"
+      "target": "controllers_paths_controller_pathscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12686,9 +12631,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_index"
+      "target": "controllers_paths_controller_pathscontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12696,9 +12641,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_show"
+      "target": "controllers_paths_controller_pathscontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12706,9 +12651,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_new"
+      "target": "controllers_paths_controller_pathscontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12716,9 +12661,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_create"
+      "target": "controllers_paths_controller_pathscontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12726,9 +12671,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_edit"
+      "target": "controllers_paths_controller_pathscontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12736,9 +12681,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_update"
+      "target": "controllers_paths_controller_pathscontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12746,9 +12691,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_confirm_destroy"
+      "target": "controllers_paths_controller_pathscontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12756,9 +12701,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_destroy"
+      "target": "controllers_paths_controller_pathscontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12766,9 +12711,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_set_path"
+      "target": "controllers_paths_controller_pathscontroller_set_path",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12776,9 +12721,9 @@
       "source_file": "app/controllers/paths_controller.rb",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_paths_controller_pathscontroller",
-      "target": "controllers_paths_controller_pathscontroller_path_params"
+      "target": "controllers_paths_controller_pathscontroller_path_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12786,9 +12731,9 @@
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_application_controller_rb",
-      "target": "controllers_application_controller_applicationcontroller"
+      "target": "controllers_application_controller_applicationcontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12826,9 +12771,9 @@
       "source_file": "app/controllers/application_controller.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_application_controller_applicationcontroller",
-      "target": "controllers_application_controller_applicationcontroller_user_not_authorized"
+      "target": "controllers_application_controller_applicationcontroller_user_not_authorized",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12836,9 +12781,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_places_controller_rb",
-      "target": "controllers_places_controller_placescontroller"
+      "target": "controllers_places_controller_placescontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12846,9 +12791,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_index"
+      "target": "controllers_places_controller_placescontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12856,9 +12801,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_show"
+      "target": "controllers_places_controller_placescontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12866,9 +12811,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_new"
+      "target": "controllers_places_controller_placescontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12876,9 +12821,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_create"
+      "target": "controllers_places_controller_placescontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12886,9 +12831,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_edit"
+      "target": "controllers_places_controller_placescontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12896,9 +12841,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_update"
+      "target": "controllers_places_controller_placescontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12906,9 +12851,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_confirm_destroy"
+      "target": "controllers_places_controller_placescontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12916,9 +12861,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_destroy"
+      "target": "controllers_places_controller_placescontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12926,9 +12871,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_set_place"
+      "target": "controllers_places_controller_placescontroller_set_place",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -12936,9 +12881,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_place_params"
+      "target": "controllers_places_controller_placescontroller_place_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13046,9 +12991,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_vehicles_controller_rb",
-      "target": "controllers_vehicles_controller_vehiclescontroller"
+      "target": "controllers_vehicles_controller_vehiclescontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13166,9 +13111,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_index"
+      "target": "controllers_vehicles_controller_vehiclescontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13176,9 +13121,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_show"
+      "target": "controllers_vehicles_controller_vehiclescontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13186,9 +13131,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_new"
+      "target": "controllers_vehicles_controller_vehiclescontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13196,9 +13141,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_create"
+      "target": "controllers_vehicles_controller_vehiclescontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13206,9 +13151,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_edit"
+      "target": "controllers_vehicles_controller_vehiclescontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13216,9 +13161,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_update"
+      "target": "controllers_vehicles_controller_vehiclescontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13226,9 +13171,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy"
+      "target": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13236,9 +13181,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_destroy"
+      "target": "controllers_vehicles_controller_vehiclescontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13246,9 +13191,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_set_vehicle"
+      "target": "controllers_vehicles_controller_vehiclescontroller_set_vehicle",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13256,9 +13201,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_vehicle_params"
+      "target": "controllers_vehicles_controller_vehiclescontroller_vehicle_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13266,9 +13211,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_structures_controller_rb",
-      "target": "controllers_structures_controller_structurescontroller"
+      "target": "controllers_structures_controller_structurescontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13396,9 +13341,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_index"
+      "target": "controllers_structures_controller_structurescontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13406,9 +13351,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_show"
+      "target": "controllers_structures_controller_structurescontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13416,9 +13361,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_new"
+      "target": "controllers_structures_controller_structurescontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13426,9 +13371,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_create"
+      "target": "controllers_structures_controller_structurescontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13436,9 +13381,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_edit"
+      "target": "controllers_structures_controller_structurescontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13446,9 +13391,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_update"
+      "target": "controllers_structures_controller_structurescontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13456,9 +13401,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_confirm_destroy"
+      "target": "controllers_structures_controller_structurescontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13466,9 +13411,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_destroy"
+      "target": "controllers_structures_controller_structurescontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13476,9 +13421,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_set_structure"
+      "target": "controllers_structures_controller_structurescontroller_set_structure",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13486,9 +13431,9 @@
       "source_file": "app/controllers/structures_controller.rb",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_structures_controller_structurescontroller",
-      "target": "controllers_structures_controller_structurescontroller_structure_params"
+      "target": "controllers_structures_controller_structurescontroller_structure_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13496,9 +13441,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_reasons_controller_rb",
-      "target": "controllers_reasons_controller_reasonscontroller"
+      "target": "controllers_reasons_controller_reasonscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "semantically_similar_to",
@@ -13626,9 +13571,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_index"
+      "target": "controllers_reasons_controller_reasonscontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13636,9 +13581,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_show"
+      "target": "controllers_reasons_controller_reasonscontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13646,9 +13591,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_new"
+      "target": "controllers_reasons_controller_reasonscontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13656,9 +13601,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_create"
+      "target": "controllers_reasons_controller_reasonscontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13666,9 +13611,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_edit"
+      "target": "controllers_reasons_controller_reasonscontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13676,9 +13621,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_update"
+      "target": "controllers_reasons_controller_reasonscontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13686,9 +13631,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_confirm_destroy"
+      "target": "controllers_reasons_controller_reasonscontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13696,9 +13641,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_destroy"
+      "target": "controllers_reasons_controller_reasonscontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13706,9 +13651,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_set_reason"
+      "target": "controllers_reasons_controller_reasonscontroller_set_reason",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13716,9 +13661,9 @@
       "source_file": "app/controllers/reasons_controller.rb",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_reasons_controller_reasonscontroller",
-      "target": "controllers_reasons_controller_reasonscontroller_reason_params"
+      "target": "controllers_reasons_controller_reasonscontroller_reason_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13726,9 +13671,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_mission_requests_controller_rb",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13846,9 +13791,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_index"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13856,9 +13801,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_show"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13866,9 +13811,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_new"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13876,9 +13821,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_create"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13886,9 +13831,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L28",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_edit"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13896,9 +13841,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L31",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_update"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13906,9 +13851,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L39",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_confirm_destroy"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13916,9 +13861,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L42",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_destroy"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13926,9 +13871,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L49",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_set_mission_request"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_set_mission_request",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -13936,9 +13881,9 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L54",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_mission_requests_controller_missionrequestscontroller",
-      "target": "controllers_mission_requests_controller_missionrequestscontroller_mission_request_params"
+      "target": "controllers_mission_requests_controller_missionrequestscontroller_mission_request_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13946,9 +13891,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_transports_controller_rb",
-      "target": "controllers_transports_controller_transportscontroller"
+      "target": "controllers_transports_controller_transportscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14066,9 +14011,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_index"
+      "target": "controllers_transports_controller_transportscontroller_index",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14076,9 +14021,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_show"
+      "target": "controllers_transports_controller_transportscontroller_show",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14086,9 +14031,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_new"
+      "target": "controllers_transports_controller_transportscontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14096,9 +14041,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_create"
+      "target": "controllers_transports_controller_transportscontroller_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14106,9 +14051,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_edit"
+      "target": "controllers_transports_controller_transportscontroller_edit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14116,9 +14061,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_update"
+      "target": "controllers_transports_controller_transportscontroller_update",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14126,9 +14071,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L43",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_confirm_destroy"
+      "target": "controllers_transports_controller_transportscontroller_confirm_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14136,9 +14081,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L46",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_destroy"
+      "target": "controllers_transports_controller_transportscontroller_destroy",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14146,9 +14091,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L58",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_set_transport"
+      "target": "controllers_transports_controller_transportscontroller_set_transport",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14156,9 +14101,9 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L63",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_transports_controller_transportscontroller",
-      "target": "controllers_transports_controller_transportscontroller_transport_params"
+      "target": "controllers_transports_controller_transportscontroller_transport_params",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14166,9 +14111,9 @@
       "source_file": "app/controllers/admin/paths_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_paths_controller_rb",
-      "target": "admin_paths_controller_pathscontroller"
+      "target": "admin_paths_controller_pathscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14176,9 +14121,9 @@
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_application_controller_rb",
-      "target": "admin_application_controller_applicationcontroller"
+      "target": "admin_application_controller_applicationcontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14186,9 +14131,9 @@
       "source_file": "app/controllers/admin/application_controller.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "admin_application_controller_applicationcontroller",
-      "target": "admin_application_controller_applicationcontroller_authenticate_admin"
+      "target": "admin_application_controller_applicationcontroller_authenticate_admin",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14196,9 +14141,9 @@
       "source_file": "app/controllers/admin/places_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_places_controller_rb",
-      "target": "admin_places_controller_placescontroller"
+      "target": "admin_places_controller_placescontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14206,9 +14151,9 @@
       "source_file": "app/controllers/admin/vehicles_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_vehicles_controller_rb",
-      "target": "admin_vehicles_controller_vehiclescontroller"
+      "target": "admin_vehicles_controller_vehiclescontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14216,9 +14161,9 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_users_controller_rb",
-      "target": "admin_users_controller_userscontroller"
+      "target": "admin_users_controller_userscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14309,9 +14254,9 @@
       "source_file": "app/controllers/admin/structures_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_structures_controller_rb",
-      "target": "admin_structures_controller_structurescontroller"
+      "target": "admin_structures_controller_structurescontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14319,9 +14264,9 @@
       "source_file": "app/controllers/admin/reasons_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_reasons_controller_rb",
-      "target": "admin_reasons_controller_reasonscontroller"
+      "target": "admin_reasons_controller_reasonscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14329,9 +14274,9 @@
       "source_file": "app/controllers/admin/mission_requests_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_mission_requests_controller_rb",
-      "target": "admin_mission_requests_controller_missionrequestscontroller"
+      "target": "admin_mission_requests_controller_missionrequestscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14339,9 +14284,9 @@
       "source_file": "app/controllers/admin/transports_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_controllers_admin_transports_controller_rb",
-      "target": "admin_transports_controller_transportscontroller"
+      "target": "admin_transports_controller_transportscontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14349,9 +14294,9 @@
       "source_file": "app/jobs/application_job.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_jobs_application_job_rb",
-      "target": "jobs_application_job_applicationjob"
+      "target": "jobs_application_job_applicationjob",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14359,9 +14304,9 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_transport_dashboard_rb",
-      "target": "dashboards_transport_dashboard_transportdashboard"
+      "target": "dashboards_transport_dashboard_transportdashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14389,9 +14334,9 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L65",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_transport_dashboard_transportdashboard",
-      "target": "dashboards_transport_dashboard_transportdashboard_display_resource"
+      "target": "dashboards_transport_dashboard_transportdashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14399,9 +14344,9 @@
       "source_file": "app/dashboards/reason_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_reason_dashboard_rb",
-      "target": "dashboards_reason_dashboard_reasondashboard"
+      "target": "dashboards_reason_dashboard_reasondashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14439,9 +14384,9 @@
       "source_file": "app/dashboards/reason_dashboard.rb",
       "source_location": "L65",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_reason_dashboard_reasondashboard",
-      "target": "dashboards_reason_dashboard_reasondashboard_display_resource"
+      "target": "dashboards_reason_dashboard_reasondashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14449,9 +14394,9 @@
       "source_file": "app/dashboards/mission_request_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_mission_request_dashboard_rb",
-      "target": "dashboards_mission_request_dashboard_missionrequestdashboard"
+      "target": "dashboards_mission_request_dashboard_missionrequestdashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14469,9 +14414,9 @@
       "source_file": "app/dashboards/mission_request_dashboard.rb",
       "source_location": "L101",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_mission_request_dashboard_missionrequestdashboard",
-      "target": "dashboards_mission_request_dashboard_missionrequestdashboard_display_resource"
+      "target": "dashboards_mission_request_dashboard_missionrequestdashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14479,9 +14424,9 @@
       "source_file": "app/dashboards/place_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_place_dashboard_rb",
-      "target": "dashboards_place_dashboard_placedashboard"
+      "target": "dashboards_place_dashboard_placedashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14519,9 +14464,9 @@
       "source_file": "app/dashboards/place_dashboard.rb",
       "source_location": "L65",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_place_dashboard_placedashboard",
-      "target": "dashboards_place_dashboard_placedashboard_display_resource"
+      "target": "dashboards_place_dashboard_placedashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14529,9 +14474,9 @@
       "source_file": "app/dashboards/user_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_user_dashboard_rb",
-      "target": "dashboards_user_dashboard_userdashboard"
+      "target": "dashboards_user_dashboard_userdashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14539,9 +14484,9 @@
       "source_file": "app/dashboards/user_dashboard.rb",
       "source_location": "L124",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_user_dashboard_userdashboard",
-      "target": "dashboards_user_dashboard_userdashboard_display_resource"
+      "target": "dashboards_user_dashboard_userdashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14559,9 +14504,9 @@
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_structure_dashboard_rb",
-      "target": "dashboards_structure_dashboard_structuredashboard"
+      "target": "dashboards_structure_dashboard_structuredashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14599,9 +14544,9 @@
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L65",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_structure_dashboard_structuredashboard",
-      "target": "dashboards_structure_dashboard_structuredashboard_display_resource"
+      "target": "dashboards_structure_dashboard_structuredashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14609,9 +14554,9 @@
       "source_file": "app/dashboards/vehicle_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_vehicle_dashboard_rb",
-      "target": "dashboards_vehicle_dashboard_vehicledashboard"
+      "target": "dashboards_vehicle_dashboard_vehicledashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14639,9 +14584,9 @@
       "source_file": "app/dashboards/vehicle_dashboard.rb",
       "source_location": "L75",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_vehicle_dashboard_vehicledashboard",
-      "target": "dashboards_vehicle_dashboard_vehicledashboard_display_resource"
+      "target": "dashboards_vehicle_dashboard_vehicledashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14649,9 +14594,9 @@
       "source_file": "app/dashboards/path_dashboard.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_dashboards_path_dashboard_rb",
-      "target": "dashboards_path_dashboard_pathdashboard"
+      "target": "dashboards_path_dashboard_pathdashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14679,9 +14624,9 @@
       "source_file": "app/dashboards/path_dashboard.rb",
       "source_location": "L72",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboards_path_dashboard_pathdashboard",
-      "target": "dashboards_path_dashboard_pathdashboard_display_resource"
+      "target": "dashboards_path_dashboard_pathdashboard_display_resource",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14689,9 +14634,9 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_fields_carrierwave_field_rb",
-      "target": "fields_carrierwave_field_carrierwavefield"
+      "target": "fields_carrierwave_field_carrierwavefield",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14699,9 +14644,9 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "fields_carrierwave_field_carrierwavefield",
-      "target": "fields_carrierwave_field_carrierwavefield_uploader"
+      "target": "fields_carrierwave_field_carrierwavefield_uploader",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14709,9 +14654,9 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "fields_carrierwave_field_carrierwavefield",
-      "target": "fields_carrierwave_field_carrierwavefield_url"
+      "target": "fields_carrierwave_field_carrierwavefield_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14719,9 +14664,9 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "fields_carrierwave_field_carrierwavefield",
-      "target": "fields_carrierwave_field_carrierwavefield_filename"
+      "target": "fields_carrierwave_field_carrierwavefield_filename",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14729,9 +14674,9 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "fields_carrierwave_field_carrierwavefield",
-      "target": "fields_carrierwave_field_carrierwavefield_image"
+      "target": "fields_carrierwave_field_carrierwavefield_image",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14739,9 +14684,9 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L29",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "fields_carrierwave_field_carrierwavefield",
-      "target": "fields_carrierwave_field_carrierwavefield_to_s"
+      "target": "fields_carrierwave_field_carrierwavefield_to_s",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14843,9 +14788,9 @@
       "source_file": "app/uploaders/validator_signature_uploader.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_uploaders_validator_signature_uploader_rb",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader"
+      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14933,9 +14878,9 @@
       "source_file": "app/uploaders/validator_signature_uploader.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_store_dir"
+      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_store_dir",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14943,9 +14888,9 @@
       "source_file": "app/uploaders/validator_signature_uploader.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_extension_allowlist"
+      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_extension_allowlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14953,9 +14898,9 @@
       "source_file": "app/uploaders/validator_signature_uploader.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_content_type_allowlist"
+      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_content_type_allowlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14963,9 +14908,9 @@
       "source_file": "app/uploaders/validator_signature_uploader.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_validator_signature_uploader_validatorsignatureuploader",
-      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_size_range"
+      "target": "uploaders_validator_signature_uploader_validatorsignatureuploader_size_range",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14973,9 +14918,9 @@
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_uploaders_confirmator_signature_uploader_rb",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader"
+      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15053,9 +14998,9 @@
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_store_dir"
+      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_store_dir",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15063,9 +15008,9 @@
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_extension_allowlist"
+      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_extension_allowlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15073,9 +15018,9 @@
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_content_type_allowlist"
+      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_content_type_allowlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15083,9 +15028,9 @@
       "source_file": "app/uploaders/confirmator_signature_uploader.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader",
-      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_size_range"
+      "target": "uploaders_confirmator_signature_uploader_confirmatorsignatureuploader_size_range",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15093,9 +15038,9 @@
       "source_file": "app/uploaders/user_signature_uploader.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_uploaders_user_signature_uploader_rb",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader"
+      "target": "uploaders_user_signature_uploader_usersignatureuploader",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15163,9 +15108,9 @@
       "source_file": "app/uploaders/user_signature_uploader.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_store_dir"
+      "target": "uploaders_user_signature_uploader_usersignatureuploader_store_dir",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15173,9 +15118,9 @@
       "source_file": "app/uploaders/user_signature_uploader.rb",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_extension_allowlist"
+      "target": "uploaders_user_signature_uploader_usersignatureuploader_extension_allowlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15183,9 +15128,9 @@
       "source_file": "app/uploaders/user_signature_uploader.rb",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_content_type_allowlist"
+      "target": "uploaders_user_signature_uploader_usersignatureuploader_content_type_allowlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15193,9 +15138,9 @@
       "source_file": "app/uploaders/user_signature_uploader.rb",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "uploaders_user_signature_uploader_usersignatureuploader",
-      "target": "uploaders_user_signature_uploader_usersignatureuploader_size_range"
+      "target": "uploaders_user_signature_uploader_usersignatureuploader_size_range",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15203,9 +15148,9 @@
       "source_file": "app/mailers/application_mailer.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_mailers_application_mailer_rb",
-      "target": "mailers_application_mailer_applicationmailer"
+      "target": "mailers_application_mailer_applicationmailer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15306,26 +15251,6 @@
       "confidence_score": 1.0,
       "source": "migrate_20260816102443_create_vehicles_createvehicles",
       "target": "migrate_20260816102443_create_vehicles_createvehicles_change"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "db_migrate_20260820104956_add_lockable_to_users_rb",
-      "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "db/migrate/20260820104956_add_lockable_to_users.rb",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "migrate_20260820104956_add_lockable_to_users_addlockabletousers",
-      "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers_change",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15493,9 +15418,9 @@
       "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "db_migrate_20260815173334_add_institute_and_office_to_users_rb",
-      "target": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers"
+      "target": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15513,9 +15438,9 @@
       "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers",
-      "target": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers_change"
+      "target": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers_change",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -15583,9 +15508,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "terminus_readme_terminus"
+      "target": "terminus_readme_terminus",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15593,9 +15518,9 @@
       "source_file": "README.md",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "terminus_readme_terminus_english"
+      "target": "terminus_readme_terminus_english",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15603,9 +15528,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_terminus",
-      "target": "terminus_readme_stack_tecnico"
+      "target": "terminus_readme_stack_tecnico",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15613,9 +15538,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_terminus",
-      "target": "terminus_readme_avvio_del_progetto"
+      "target": "terminus_readme_avvio_del_progetto",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15623,9 +15548,9 @@
       "source_file": "README.md",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_terminus",
-      "target": "terminus_readme_licenza"
+      "target": "terminus_readme_licenza",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15633,9 +15558,9 @@
       "source_file": "README.md",
       "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_avvio_del_progetto",
-      "target": "terminus_readme_codeblock_1"
+      "target": "terminus_readme_codeblock_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15643,9 +15568,9 @@
       "source_file": "README.md",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_terminus_english",
-      "target": "terminus_readme_tech_stack"
+      "target": "terminus_readme_tech_stack",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15653,9 +15578,9 @@
       "source_file": "README.md",
       "source_location": "L42",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_terminus_english",
-      "target": "terminus_readme_getting_started"
+      "target": "terminus_readme_getting_started",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15663,9 +15588,9 @@
       "source_file": "README.md",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_terminus_english",
-      "target": "terminus_readme_license"
+      "target": "terminus_readme_license",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15673,9 +15598,9 @@
       "source_file": "README.md",
       "source_location": "L44",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_readme_getting_started",
-      "target": "terminus_readme_codeblock_2"
+      "target": "terminus_readme_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15683,9 +15608,9 @@
       "source_file": "LICENCE.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "licence_md",
-      "target": "terminus_licence_copyright_c_2026"
+      "target": "terminus_licence_copyright_c_2026",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15693,9 +15618,9 @@
       "source_file": "LICENCE.md",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "licence_md",
-      "target": "terminus_licence_davo_davosky_the_davosky_connection"
+      "target": "terminus_licence_davo_davosky_the_davosky_connection",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15703,9 +15628,9 @@
       "source_file": "LICENCE.md",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_licence_davo_davosky_the_davosky_connection",
-      "target": "terminus_licence_italiano"
+      "target": "terminus_licence_italiano",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15713,9 +15638,9 @@
       "source_file": "LICENCE.md",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_licence_davo_davosky_the_davosky_connection",
-      "target": "terminus_licence_english"
+      "target": "terminus_licence_english",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15723,9 +15648,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_md",
-      "target": "terminus_claude_claude_md_guida_per_claude_code"
+      "target": "terminus_claude_claude_md_guida_per_claude_code",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15733,9 +15658,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_stack_tecnico"
+      "target": "terminus_claude_stack_tecnico",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15743,9 +15668,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_struttura_del_progetto"
+      "target": "terminus_claude_struttura_del_progetto",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15753,9 +15678,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_convenzioni_di_codice"
+      "target": "terminus_claude_convenzioni_di_codice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15763,9 +15688,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L66",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_testing"
+      "target": "terminus_claude_testing",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15773,9 +15698,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L105",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_database"
+      "target": "terminus_claude_database",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15783,9 +15708,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L122",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_sicurezza"
+      "target": "terminus_claude_sicurezza",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15793,9 +15718,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L143",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_performance"
+      "target": "terminus_claude_performance",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15803,9 +15728,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L153",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_workflow_con_claude_code"
+      "target": "terminus_claude_workflow_con_claude_code",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15813,9 +15738,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L189",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_gem_principali_personalizza"
+      "target": "terminus_claude_gem_principali_personalizza",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15823,9 +15748,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L228",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_variabili_d_ambiente_richieste"
+      "target": "terminus_claude_variabili_d_ambiente_richieste",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15833,9 +15758,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L239",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_comandi_utili"
+      "target": "terminus_claude_comandi_utili",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15843,9 +15768,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L263",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_anti_pattern_da_evitare"
+      "target": "terminus_claude_anti_pattern_da_evitare",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15853,9 +15778,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L275",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails"
+      "target": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15863,9 +15788,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L283",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_introduzione_e_contesto"
+      "target": "terminus_claude_introduzione_e_contesto",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15873,9 +15798,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L298",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails"
+      "target": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15883,9 +15808,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L733",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_approfondimento_brakeman"
+      "target": "terminus_claude_approfondimento_brakeman",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15893,9 +15818,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L789",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_approfondimento_bundler_audit"
+      "target": "terminus_claude_approfondimento_bundler_audit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15903,9 +15828,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L884",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_gem_librerie_e_strumenti_aggiuntivi"
+      "target": "terminus_claude_gem_librerie_e_strumenti_aggiuntivi",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15913,9 +15838,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L920",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_checklist_delle_best_practice_di_sicurezza"
+      "target": "terminus_claude_checklist_delle_best_practice_di_sicurezza",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15923,9 +15848,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L951",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_conclusione"
+      "target": "terminus_claude_conclusione",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15933,9 +15858,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L957",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_graphify"
+      "target": "terminus_claude_graphify",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15943,9 +15868,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L968",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_costruzione_dell_applicazione"
+      "target": "terminus_claude_costruzione_dell_applicazione",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15953,9 +15878,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_stack_tecnico",
-      "target": "terminus_claude_codeblock_1"
+      "target": "terminus_claude_codeblock_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15963,9 +15888,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_struttura_del_progetto",
-      "target": "terminus_claude_codeblock_2"
+      "target": "terminus_claude_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15973,9 +15898,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L36",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_convenzioni_di_codice",
-      "target": "terminus_claude_generale"
+      "target": "terminus_claude_generale",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15983,9 +15908,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L45",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_convenzioni_di_codice",
-      "target": "terminus_claude_modelli"
+      "target": "terminus_claude_modelli",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15993,9 +15918,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L51",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_convenzioni_di_codice",
-      "target": "terminus_claude_controller"
+      "target": "terminus_claude_controller",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16003,9 +15928,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L57",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_convenzioni_di_codice",
-      "target": "terminus_claude_naming"
+      "target": "terminus_claude_naming",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16013,9 +15938,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L68",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_testing",
-      "target": "terminus_claude_approccio_test_first_quando_possibile"
+      "target": "terminus_claude_approccio_test_first_quando_possibile",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16023,9 +15948,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L80",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_testing",
-      "target": "terminus_claude_regole_per_i_test"
+      "target": "terminus_claude_regole_per_i_test",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16033,9 +15958,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L70",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_approccio_test_first_quando_possibile",
-      "target": "terminus_claude_codeblock_3"
+      "target": "terminus_claude_codeblock_3",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16043,9 +15968,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L89",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_regole_per_i_test",
-      "target": "terminus_claude_codeblock_4"
+      "target": "terminus_claude_codeblock_4",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16053,9 +15978,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L113",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_database",
-      "target": "terminus_claude_codeblock_5"
+      "target": "terminus_claude_codeblock_5",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16063,9 +15988,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L133",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_sicurezza",
-      "target": "terminus_claude_codeblock_6"
+      "target": "terminus_claude_codeblock_6",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16073,9 +15998,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L155",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_workflow_con_claude_code",
-      "target": "terminus_claude_come_fare_una_richiesta_efficace"
+      "target": "terminus_claude_come_fare_una_richiesta_efficace",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16083,9 +16008,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L162",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_workflow_con_claude_code",
-      "target": "terminus_claude_esempio_di_prompt_efficace"
+      "target": "terminus_claude_esempio_di_prompt_efficace",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16093,9 +16018,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L172",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_workflow_con_claude_code",
-      "target": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente"
+      "target": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16103,9 +16028,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L180",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_workflow_con_claude_code",
-      "target": "terminus_claude_cose_su_cui_chiedere_conferma_prima"
+      "target": "terminus_claude_cose_su_cui_chiedere_conferma_prima",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16113,9 +16038,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L164",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_esempio_di_prompt_efficace",
-      "target": "terminus_claude_codeblock_7"
+      "target": "terminus_claude_codeblock_7",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16123,9 +16048,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L191",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_gem_principali_personalizza",
-      "target": "terminus_claude_codeblock_8"
+      "target": "terminus_claude_codeblock_8",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16133,9 +16058,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L230",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_variabili_d_ambiente_richieste",
-      "target": "terminus_claude_codeblock_9"
+      "target": "terminus_claude_codeblock_9",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16143,9 +16068,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L241",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_comandi_utili",
-      "target": "terminus_claude_codeblock_10"
+      "target": "terminus_claude_codeblock_10",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16153,9 +16078,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L300",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_1_protezione_dall_sql_injection"
+      "target": "terminus_claude_1_protezione_dall_sql_injection",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16163,9 +16088,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L336",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss"
+      "target": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16173,9 +16098,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L381",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili"
+      "target": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16183,9 +16108,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L439",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri"
+      "target": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16193,9 +16118,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L495",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf"
+      "target": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16203,9 +16128,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L537",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati"
+      "target": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16213,9 +16138,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L611",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_7_autenticazione_e_autorizzazione_robuste"
+      "target": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16223,9 +16148,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L707",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
-      "target": "terminus_claude_8_monitoraggio_e_audit_di_sicurezza_continui"
+      "target": "terminus_claude_8_monitoraggio_e_audit_di_sicurezza_continui",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16233,9 +16158,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L310",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_1_protezione_dall_sql_injection",
-      "target": "terminus_claude_codeblock_11"
+      "target": "terminus_claude_codeblock_11",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16243,9 +16168,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L322",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_1_protezione_dall_sql_injection",
-      "target": "terminus_claude_codeblock_12"
+      "target": "terminus_claude_codeblock_12",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16253,9 +16178,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L346",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
-      "target": "terminus_claude_codeblock_13"
+      "target": "terminus_claude_codeblock_13",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16263,9 +16188,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L357",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
-      "target": "terminus_claude_codeblock_14"
+      "target": "terminus_claude_codeblock_14",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16273,9 +16198,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L366",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
-      "target": "terminus_claude_codeblock_15"
+      "target": "terminus_claude_codeblock_15",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16283,9 +16208,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L391",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
-      "target": "terminus_claude_codeblock_16"
+      "target": "terminus_claude_codeblock_16",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16293,9 +16218,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L403",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
-      "target": "terminus_claude_codeblock_17"
+      "target": "terminus_claude_codeblock_17",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16303,9 +16228,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L412",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
-      "target": "terminus_claude_codeblock_18"
+      "target": "terminus_claude_codeblock_18",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16313,9 +16238,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L424",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
-      "target": "terminus_claude_codeblock_19"
+      "target": "terminus_claude_codeblock_19",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16323,9 +16248,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L449",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
-      "target": "terminus_claude_codeblock_20"
+      "target": "terminus_claude_codeblock_20",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16333,9 +16258,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L462",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
-      "target": "terminus_claude_codeblock_21"
+      "target": "terminus_claude_codeblock_21",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16343,9 +16268,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L478",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
-      "target": "terminus_claude_codeblock_22"
+      "target": "terminus_claude_codeblock_22",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16353,9 +16278,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L509",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
-      "target": "terminus_claude_codeblock_23"
+      "target": "terminus_claude_codeblock_23",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16363,9 +16288,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L520",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
-      "target": "terminus_claude_codeblock_24"
+      "target": "terminus_claude_codeblock_24",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16373,9 +16298,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L547",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
-      "target": "terminus_claude_codeblock_25"
+      "target": "terminus_claude_codeblock_25",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16383,9 +16308,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L566",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
-      "target": "terminus_claude_codeblock_26"
+      "target": "terminus_claude_codeblock_26",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16393,9 +16318,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L575",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
-      "target": "terminus_claude_codeblock_27"
+      "target": "terminus_claude_codeblock_27",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16403,9 +16328,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L585",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
-      "target": "terminus_claude_codeblock_28"
+      "target": "terminus_claude_codeblock_28",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16413,9 +16338,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L627",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "target": "terminus_claude_codeblock_29"
+      "target": "terminus_claude_codeblock_29",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16423,9 +16348,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L634",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "target": "terminus_claude_codeblock_30"
+      "target": "terminus_claude_codeblock_30",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16433,9 +16358,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L645",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "target": "terminus_claude_codeblock_31"
+      "target": "terminus_claude_codeblock_31",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16443,9 +16368,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L661",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "target": "terminus_claude_codeblock_32"
+      "target": "terminus_claude_codeblock_32",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16453,9 +16378,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L670",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "target": "terminus_claude_codeblock_33"
+      "target": "terminus_claude_codeblock_33",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16463,9 +16388,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L689",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "target": "terminus_claude_codeblock_34"
+      "target": "terminus_claude_codeblock_34",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16473,9 +16398,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L737",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_approfondimento_brakeman",
-      "target": "terminus_claude_installazione_e_utilizzo"
+      "target": "terminus_claude_installazione_e_utilizzo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16483,9 +16408,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L741",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo",
-      "target": "terminus_claude_codeblock_35"
+      "target": "terminus_claude_codeblock_35",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16493,9 +16418,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L749",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo",
-      "target": "terminus_claude_codeblock_36"
+      "target": "terminus_claude_codeblock_36",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16503,9 +16428,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L759",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo",
-      "target": "terminus_claude_codeblock_37"
+      "target": "terminus_claude_codeblock_37",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16513,9 +16438,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L793",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_approfondimento_bundler_audit",
-      "target": "terminus_claude_installazione_e_utilizzo_bundler_audit"
+      "target": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16523,9 +16448,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L797",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "target": "terminus_claude_codeblock_38"
+      "target": "terminus_claude_codeblock_38",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16533,9 +16458,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L805",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "target": "terminus_claude_codeblock_39"
+      "target": "terminus_claude_codeblock_39",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16543,9 +16468,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L819",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "target": "terminus_claude_codeblock_40"
+      "target": "terminus_claude_codeblock_40",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16553,9 +16478,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L851",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "target": "terminus_claude_codeblock_41"
+      "target": "terminus_claude_codeblock_41",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16563,9 +16488,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L858",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "target": "terminus_claude_codeblock_42"
+      "target": "terminus_claude_codeblock_42",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16573,9 +16498,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1001",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_costruzione_dell_applicazione",
-      "target": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_non_avvenuto"
+      "target": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_non_avvenuto",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16583,9 +16508,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1005",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "terminus_claude_costruzione_dell_applicazione",
-      "target": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto"
+      "target": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -19449,5 +19374,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "56a2fc46476df7765f9fd017acc69ef011753fce"
+  "built_at_commit": "c625d762039c106571c7e9e8e04f50c2008f06b8"
 }

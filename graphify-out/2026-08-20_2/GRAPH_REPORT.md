@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-20)
 
 ## Corpus Check
-- 147 files · ~234,820 words
+- 145 files · ~234,494 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 844 nodes · 1069 edges · 157 communities (93 shown, 64 thin omitted)
-- Extraction: 80% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 217 edges (avg confidence: 0.87)
+- 839 nodes · 1066 edges · 155 communities (92 shown, 63 thin omitted)
+- Extraction: 79% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 217 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `56a2fc46`
+- Built from commit: `c625d762`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -124,7 +124,6 @@
 - [[_COMMUNITY_Community 141|Community 141]]
 - [[_COMMUNITY_Community 142|Community 142]]
 - [[_COMMUNITY_Community 143|Community 143]]
-- [[_COMMUNITY_Community 155|Community 155]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `User` - 26 edges
@@ -150,7 +149,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (157 total, 64 thin omitted)
+## Communities (155 total, 63 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -161,8 +160,8 @@ Cohesion: 0.05
 Nodes (23): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, UsersController, PathDashboard, PlaceDashboard, ReasonDashboard (+15 more)
 
 ### Community 2 - "Admin User Signature Downloads"
-Cohesion: 0.15
-Nodes (5): TransportsController, TransportsController, TransportDashboard, CreateTransports migration, Transport
+Cohesion: 0.13
+Nodes (7): Admin::TransportsController, TransportsController, Admin::VehiclesController, TransportsController, TransportDashboard, CreateTransports migration, Transport
 
 ### Community 3 - "Terminus App Blueprint (Devise/Users/Setup)"
 Cohesion: 0.09
@@ -293,8 +292,8 @@ Cohesion: 0.67
 Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation Section
 
 ### Community 124 - "Community 124"
-Cohesion: 0.14
-Nodes (7): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, VehicleDashboard, CreateVehicles migration, Vehicle
+Cohesion: 0.16
+Nodes (5): VehiclesController, VehiclesController, VehicleDashboard, CreateVehicles migration, Vehicle
 
 ### Community 126 - "Community 126"
 Cohesion: 0.14
@@ -345,7 +344,7 @@ Nodes (3): 🖥️ Costruzione dell'applicazione, Disposizione dell'interfaccia 
 ## Knowledge Gaps
 - **215 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+210 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **64 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **63 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -359,7 +358,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `PlacesController` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Secure Headers & CSP Config`, `Community 125`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `ApplicationPolicy#admin?` connect `Application Auth Base` to `Paths Controller CRUD`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Are the 12 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
   _`User` has 12 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `PlacesController` (e.g. with `paths_controller.rb` and `reasons_controller.rb`) actually correct?**

@@ -19,6 +19,10 @@ RSpec.describe User, type: :model do
       create(:user, username: "mario")
       expect(build(:user, username: "MARIO")).not_to be_valid
     end
+
+    it "richiede una password di almeno 8 caratteri" do
+      expect(build(:user, password: "short1A", password_confirmation: "short1A")).not_to be_valid
+    end
   end
 
   describe "autenticazione" do

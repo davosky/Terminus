@@ -418,15 +418,6 @@
       "norm_label": "mission_requests_spec.rb"
     },
     {
-      "label": "reimbursements_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/requests/reimbursements_spec.rb",
-      "source_location": "L1",
-      "id": "spec_requests_reimbursements_spec_rb",
-      "community": 178,
-      "norm_label": "reimbursements_spec.rb"
-    },
-    {
       "label": "vehicles_spec.rb",
       "file_type": "code",
       "source_file": "spec/requests/vehicles_spec.rb",
@@ -508,15 +499,6 @@
       "norm_label": "vehicle_policy_spec.rb"
     },
     {
-      "label": "reimbursement_policy_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/policies/reimbursement_policy_spec.rb",
-      "source_location": "L1",
-      "id": "spec_policies_reimbursement_policy_spec_rb",
-      "community": 177,
-      "norm_label": "reimbursement_policy_spec.rb"
-    },
-    {
       "label": "reason_policy_spec.rb",
       "file_type": "code",
       "source_file": "spec/policies/reason_policy_spec.rb",
@@ -580,33 +562,6 @@
       "norm_label": "mission_request_code_generator_spec.rb"
     },
     {
-      "label": "reimbursement_date_generator_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/services/reimbursement_date_generator_spec.rb",
-      "source_location": "L1",
-      "id": "spec_services_reimbursement_date_generator_spec_rb",
-      "community": 180,
-      "norm_label": "reimbursement_date_generator_spec.rb"
-    },
-    {
-      "label": "reimbursement_code_generator_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/services/reimbursement_code_generator_spec.rb",
-      "source_location": "L1",
-      "id": "spec_services_reimbursement_code_generator_spec_rb",
-      "community": 179,
-      "norm_label": "reimbursement_code_generator_spec.rb"
-    },
-    {
-      "label": "reimbursement_total_calculator_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/services/reimbursement_total_calculator_spec.rb",
-      "source_location": "L1",
-      "id": "spec_services_reimbursement_total_calculator_spec_rb",
-      "community": 181,
-      "norm_label": "reimbursement_total_calculator_spec.rb"
-    },
-    {
       "label": "login_spec.rb",
       "file_type": "code",
       "source_file": "spec/system/login_spec.rb",
@@ -649,24 +604,6 @@
       "source_location": "L34",
       "id": "system_mission_requests_spec_login_as",
       "community": 56,
-      "norm_label": "login_as()"
-    },
-    {
-      "label": "reimbursements_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/system/reimbursements_spec.rb",
-      "source_location": "L1",
-      "id": "spec_system_reimbursements_spec_rb",
-      "community": 174,
-      "norm_label": "reimbursements_spec.rb"
-    },
-    {
-      "label": "login_as()",
-      "file_type": "code",
-      "source_file": "spec/system/reimbursements_spec.rb",
-      "source_location": "L34",
-      "id": "system_reimbursements_spec_login_as",
-      "community": 174,
       "norm_label": "login_as()"
     },
     {
@@ -785,15 +722,6 @@
       "id": "spec_system_admin_user_signature_upload_spec_rb",
       "community": 154,
       "norm_label": "user_signature_upload_spec.rb"
-    },
-    {
-      "label": "reimbursement_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/models/reimbursement_spec.rb",
-      "source_location": "L1",
-      "id": "spec_models_reimbursement_spec_rb",
-      "community": 176,
-      "norm_label": "reimbursement_spec.rb"
     },
     {
       "label": "reason_spec.rb",
@@ -922,15 +850,6 @@
       "norm_label": "reasons.rb"
     },
     {
-      "label": "reimbursements.rb",
-      "file_type": "code",
-      "source_file": "spec/factories/reimbursements.rb",
-      "source_location": "L1",
-      "id": "spec_factories_reimbursements_rb",
-      "community": 175,
-      "norm_label": "reimbursements.rb"
-    },
-    {
       "label": "places.rb",
       "file_type": "code",
       "source_file": "spec/factories/places.rb",
@@ -1054,105 +973,6 @@
       "source_location": "L35",
       "id": "policies_transport_policy_scope_resolve",
       "community": 127,
-      "norm_label": ".resolve()"
-    },
-    {
-      "label": "reimbursement_policy.rb",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L1",
-      "id": "app_policies_reimbursement_policy_rb",
-      "community": 4,
-      "norm_label": "reimbursement_policy.rb"
-    },
-    {
-      "label": "ReimbursementPolicy",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L3",
-      "id": "policies_reimbursement_policy_reimbursementpolicy",
-      "community": 4,
-      "norm_label": "reimbursementpolicy"
-    },
-    {
-      "label": ".index?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L4",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_index",
-      "community": 4,
-      "norm_label": ".index?()"
-    },
-    {
-      "label": ".show?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L8",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_show",
-      "community": 4,
-      "norm_label": ".show?()"
-    },
-    {
-      "label": ".create?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L12",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_create",
-      "community": 4,
-      "norm_label": ".create?()"
-    },
-    {
-      "label": ".update?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L16",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_update",
-      "community": 4,
-      "norm_label": ".update?()"
-    },
-    {
-      "label": ".destroy?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L20",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_destroy",
-      "community": 4,
-      "norm_label": ".destroy?()"
-    },
-    {
-      "label": ".confirm_destroy?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L24",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_confirm_destroy",
-      "community": 4,
-      "norm_label": ".confirm_destroy?()"
-    },
-    {
-      "label": ".owner?()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L30",
-      "id": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "community": 4,
-      "norm_label": ".owner?()"
-    },
-    {
-      "label": "Scope",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L34",
-      "id": "policies_reimbursement_policy_scope",
-      "community": 4,
-      "norm_label": "scope"
-    },
-    {
-      "label": ".resolve()",
-      "file_type": "code",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L35",
-      "id": "policies_reimbursement_policy_scope_resolve",
-      "community": 4,
       "norm_label": ".resolve()"
     },
     {
@@ -1584,7 +1404,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L1",
       "id": "app_policies_structure_policy_rb",
-      "community": 9,
+      "community": 157,
       "norm_label": "structure_policy.rb"
     },
     {
@@ -1593,7 +1413,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L3",
       "id": "policies_structure_policy_structurepolicy",
-      "community": 9,
+      "community": 157,
       "norm_label": "structurepolicy"
     },
     {
@@ -1602,7 +1422,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L4",
       "id": "policies_structure_policy_structurepolicy_index",
-      "community": 9,
+      "community": 157,
       "norm_label": ".index?()"
     },
     {
@@ -1611,7 +1431,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L8",
       "id": "policies_structure_policy_structurepolicy_show",
-      "community": 9,
+      "community": 157,
       "norm_label": ".show?()"
     },
     {
@@ -1620,7 +1440,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L12",
       "id": "policies_structure_policy_structurepolicy_create",
-      "community": 9,
+      "community": 157,
       "norm_label": ".create?()"
     },
     {
@@ -1629,7 +1449,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L16",
       "id": "policies_structure_policy_structurepolicy_update",
-      "community": 9,
+      "community": 157,
       "norm_label": ".update?()"
     },
     {
@@ -1638,7 +1458,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L20",
       "id": "policies_structure_policy_structurepolicy_destroy",
-      "community": 9,
+      "community": 157,
       "norm_label": ".destroy?()"
     },
     {
@@ -1647,7 +1467,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L24",
       "id": "policies_structure_policy_structurepolicy_confirm_destroy",
-      "community": 9,
+      "community": 157,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1656,7 +1476,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L30",
       "id": "policies_structure_policy_structurepolicy_owner",
-      "community": 9,
+      "community": 157,
       "norm_label": ".owner?()"
     },
     {
@@ -1665,7 +1485,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L34",
       "id": "policies_structure_policy_scope",
-      "community": 9,
+      "community": 157,
       "norm_label": "scope"
     },
     {
@@ -1674,7 +1494,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L35",
       "id": "policies_structure_policy_scope_resolve",
-      "community": 9,
+      "community": 157,
       "norm_label": ".resolve()"
     },
     {
@@ -1683,7 +1503,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L1",
       "id": "app_policies_reason_policy_rb",
-      "community": 10,
+      "community": 17,
       "norm_label": "reason_policy.rb"
     },
     {
@@ -1692,7 +1512,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L3",
       "id": "policies_reason_policy_reasonpolicy",
-      "community": 10,
+      "community": 17,
       "norm_label": "reasonpolicy"
     },
     {
@@ -1701,7 +1521,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L4",
       "id": "policies_reason_policy_reasonpolicy_index",
-      "community": 10,
+      "community": 17,
       "norm_label": ".index?()"
     },
     {
@@ -1710,7 +1530,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L8",
       "id": "policies_reason_policy_reasonpolicy_show",
-      "community": 10,
+      "community": 17,
       "norm_label": ".show?()"
     },
     {
@@ -1719,7 +1539,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L12",
       "id": "policies_reason_policy_reasonpolicy_create",
-      "community": 10,
+      "community": 17,
       "norm_label": ".create?()"
     },
     {
@@ -1728,7 +1548,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L16",
       "id": "policies_reason_policy_reasonpolicy_update",
-      "community": 10,
+      "community": 17,
       "norm_label": ".update?()"
     },
     {
@@ -1737,7 +1557,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L20",
       "id": "policies_reason_policy_reasonpolicy_destroy",
-      "community": 10,
+      "community": 17,
       "norm_label": ".destroy?()"
     },
     {
@@ -1746,7 +1566,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L24",
       "id": "policies_reason_policy_reasonpolicy_confirm_destroy",
-      "community": 10,
+      "community": 17,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1755,7 +1575,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L30",
       "id": "policies_reason_policy_reasonpolicy_owner",
-      "community": 10,
+      "community": 17,
       "norm_label": ".owner?()"
     },
     {
@@ -1764,7 +1584,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L34",
       "id": "policies_reason_policy_scope",
-      "community": 10,
+      "community": 17,
       "norm_label": "scope"
     },
     {
@@ -1773,7 +1593,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L35",
       "id": "policies_reason_policy_scope_resolve",
-      "community": 10,
+      "community": 17,
       "norm_label": ".resolve()"
     },
     {
@@ -1782,7 +1602,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L1",
       "id": "app_policies_mission_request_policy_rb",
-      "community": 168,
+      "community": 4,
       "norm_label": "mission_request_policy.rb"
     },
     {
@@ -1791,7 +1611,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L3",
       "id": "policies_mission_request_policy_missionrequestpolicy",
-      "community": 168,
+      "community": 4,
       "norm_label": "missionrequestpolicy"
     },
     {
@@ -1800,7 +1620,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L4",
       "id": "policies_mission_request_policy_missionrequestpolicy_index",
-      "community": 168,
+      "community": 4,
       "norm_label": ".index?()"
     },
     {
@@ -1809,7 +1629,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L8",
       "id": "policies_mission_request_policy_missionrequestpolicy_show",
-      "community": 168,
+      "community": 4,
       "norm_label": ".show?()"
     },
     {
@@ -1818,7 +1638,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L12",
       "id": "policies_mission_request_policy_missionrequestpolicy_create",
-      "community": 168,
+      "community": 4,
       "norm_label": ".create?()"
     },
     {
@@ -1827,7 +1647,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L16",
       "id": "policies_mission_request_policy_missionrequestpolicy_update",
-      "community": 168,
+      "community": 4,
       "norm_label": ".update?()"
     },
     {
@@ -1836,7 +1656,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L20",
       "id": "policies_mission_request_policy_missionrequestpolicy_destroy",
-      "community": 168,
+      "community": 4,
       "norm_label": ".destroy?()"
     },
     {
@@ -1845,7 +1665,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L24",
       "id": "policies_mission_request_policy_missionrequestpolicy_confirm_destroy",
-      "community": 168,
+      "community": 4,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1854,7 +1674,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L30",
       "id": "policies_mission_request_policy_missionrequestpolicy_owner",
-      "community": 168,
+      "community": 4,
       "norm_label": ".owner?()"
     },
     {
@@ -1863,7 +1683,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L34",
       "id": "policies_mission_request_policy_scope",
-      "community": 168,
+      "community": 4,
       "norm_label": "scope"
     },
     {
@@ -1872,7 +1692,7 @@
       "source_file": "app/policies/mission_request_policy.rb",
       "source_location": "L35",
       "id": "policies_mission_request_policy_scope_resolve",
-      "community": 168,
+      "community": 4,
       "norm_label": ".resolve()"
     },
     {
@@ -1936,177 +1756,6 @@
       "source_location": "L26",
       "id": "services_mission_request_code_generator_missionrequestcodegenerator_sequence",
       "community": 11,
-      "norm_label": ".sequence()"
-    },
-    {
-      "label": "reimbursement_total_calculator.rb",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L1",
-      "id": "app_services_reimbursement_total_calculator_rb",
-      "community": 124,
-      "norm_label": "reimbursement_total_calculator.rb"
-    },
-    {
-      "label": "ReimbursementTotalCalculator",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L1",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "community": 124,
-      "norm_label": "reimbursementtotalcalculator"
-    },
-    {
-      "label": ".call()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L5",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_call",
-      "community": 124,
-      "norm_label": ".call()"
-    },
-    {
-      "label": ".initialize()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L9",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_initialize",
-      "community": 124,
-      "norm_label": ".initialize()"
-    },
-    {
-      "label": ".stay_costs()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L21",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_stay_costs",
-      "community": 124,
-      "norm_label": ".stay_costs()"
-    },
-    {
-      "label": ".transport_costs()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L25",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_transport_costs",
-      "community": 124,
-      "norm_label": ".transport_costs()"
-    },
-    {
-      "label": ".path_distance_cost()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L36",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_distance_cost",
-      "community": 124,
-      "norm_label": ".path_distance_cost()"
-    },
-    {
-      "label": ".path_highway_cost()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L40",
-      "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_highway_cost",
-      "community": 124,
-      "norm_label": ".path_highway_cost()"
-    },
-    {
-      "label": "reimbursement_date_generator.rb",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L1",
-      "id": "app_services_reimbursement_date_generator_rb",
-      "community": 170,
-      "norm_label": "reimbursement_date_generator.rb"
-    },
-    {
-      "label": "ReimbursementDateGenerator",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L1",
-      "id": "services_reimbursement_date_generator_reimbursementdategenerator",
-      "community": 170,
-      "norm_label": "reimbursementdategenerator"
-    },
-    {
-      "label": ".call()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L2",
-      "id": "services_reimbursement_date_generator_reimbursementdategenerator_call",
-      "community": 170,
-      "norm_label": ".call()"
-    },
-    {
-      "label": ".initialize()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L6",
-      "id": "services_reimbursement_date_generator_reimbursementdategenerator_initialize",
-      "community": 170,
-      "norm_label": ".initialize()"
-    },
-    {
-      "label": "reimbursement_code_generator.rb",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L1",
-      "id": "app_services_reimbursement_code_generator_rb",
-      "community": 3,
-      "norm_label": "reimbursement_code_generator.rb"
-    },
-    {
-      "label": "ReimbursementCodeGenerator",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L1",
-      "id": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "community": 3,
-      "norm_label": "reimbursementcodegenerator"
-    },
-    {
-      "label": ".call()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L2",
-      "id": "services_reimbursement_code_generator_reimbursementcodegenerator_call",
-      "community": 3,
-      "norm_label": ".call()"
-    },
-    {
-      "label": ".initialize()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L6",
-      "id": "services_reimbursement_code_generator_reimbursementcodegenerator_initialize",
-      "community": 3,
-      "norm_label": ".initialize()"
-    },
-    {
-      "label": ".initials()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L18",
-      "id": "services_reimbursement_code_generator_reimbursementcodegenerator_initials",
-      "community": 3,
-      "norm_label": ".initials()"
-    },
-    {
-      "label": ".timestamp()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L22",
-      "id": "services_reimbursement_code_generator_reimbursementcodegenerator_timestamp",
-      "community": 3,
-      "norm_label": ".timestamp()"
-    },
-    {
-      "label": ".sequence()",
-      "file_type": "code",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L26",
-      "id": "services_reimbursement_code_generator_reimbursementcodegenerator_sequence",
-      "community": 3,
       "norm_label": ".sequence()"
     },
     {
@@ -2279,60 +1928,6 @@
       "id": "helpers_mission_requests_helper_form_hr_mission_request",
       "community": 1,
       "norm_label": "form_hr_mission_request()"
-    },
-    {
-      "label": "reimbursements_helper.rb",
-      "file_type": "code",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L1",
-      "id": "app_helpers_reimbursements_helper_rb",
-      "community": 1,
-      "norm_label": "reimbursements_helper.rb"
-    },
-    {
-      "label": "stored_mode_checked?()",
-      "file_type": "code",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L2",
-      "id": "helpers_reimbursements_helper_stored_mode_checked",
-      "community": 1,
-      "norm_label": "stored_mode_checked?()"
-    },
-    {
-      "label": "form_label_class_reimbursement()",
-      "file_type": "code",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L8",
-      "id": "helpers_reimbursements_helper_form_label_class_reimbursement",
-      "community": 1,
-      "norm_label": "form_label_class_reimbursement()"
-    },
-    {
-      "label": "form_submit_label_reimbursement()",
-      "file_type": "code",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L16",
-      "id": "helpers_reimbursements_helper_form_submit_label_reimbursement",
-      "community": 1,
-      "norm_label": "form_submit_label_reimbursement()"
-    },
-    {
-      "label": "form_submit_accent_reimbursement()",
-      "file_type": "code",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L24",
-      "id": "helpers_reimbursements_helper_form_submit_accent_reimbursement",
-      "community": 1,
-      "norm_label": "form_submit_accent_reimbursement()"
-    },
-    {
-      "label": "form_hr_reimbursement()",
-      "file_type": "code",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L32",
-      "id": "helpers_reimbursements_helper_form_hr_reimbursement",
-      "community": 1,
-      "norm_label": "form_hr_reimbursement()"
     },
     {
       "label": "paths_helper.rb",
@@ -2533,33 +2128,6 @@
       "norm_label": "application"
     },
     {
-      "label": "reimbursement_mode_controller.js",
-      "file_type": "code",
-      "source_file": "app/javascript/controllers/reimbursement_mode_controller.js",
-      "source_location": "L1",
-      "id": "app_javascript_controllers_reimbursement_mode_controller_js",
-      "community": 18,
-      "norm_label": "reimbursement_mode_controller.js"
-    },
-    {
-      "label": "showStored()",
-      "file_type": "code",
-      "source_file": "app/javascript/controllers/reimbursement_mode_controller.js",
-      "source_location": "L6",
-      "id": "controllers_reimbursement_mode_controller_showstored",
-      "community": 18,
-      "norm_label": "showstored()"
-    },
-    {
-      "label": "showFree()",
-      "file_type": "code",
-      "source_file": "app/javascript/controllers/reimbursement_mode_controller.js",
-      "source_location": "L11",
-      "id": "controllers_reimbursement_mode_controller_showfree",
-      "community": 18,
-      "norm_label": "showfree()"
-    },
-    {
       "label": "index.js",
       "file_type": "code",
       "source_file": "app/javascript/controllers/index.js",
@@ -2628,7 +2196,7 @@
       "source_file": "app/models/transport.rb",
       "source_location": "L1",
       "id": "app_models_transport_rb",
-      "community": 124,
+      "community": 2,
       "norm_label": "transport.rb"
     },
     {
@@ -2637,14 +2205,14 @@
       "source_file": "app/models/transport.rb",
       "source_location": "L1",
       "id": "models_transport_transport",
-      "community": 124,
+      "community": 2,
       "norm_label": "transport"
     },
     {
       "label": ".protected_record?()",
       "file_type": "code",
       "source_file": "app/models/transport.rb",
-      "source_location": "L11",
+      "source_location": "L10",
       "id": "models_transport_transport_protected_record",
       "community": 2,
       "norm_label": ".protected_record?()"
@@ -2671,7 +2239,7 @@
       "label": ".email_required?()",
       "file_type": "code",
       "source_file": "app/models/user.rb",
-      "source_location": "L23",
+      "source_location": "L22",
       "id": "models_user_user_email_required",
       "community": 8,
       "norm_label": ".email_required?()"
@@ -2680,7 +2248,7 @@
       "label": ".email_changed?()",
       "file_type": "code",
       "source_file": "app/models/user.rb",
-      "source_location": "L27",
+      "source_location": "L26",
       "id": "models_user_user_email_changed",
       "community": 8,
       "norm_label": ".email_changed?()"
@@ -2803,105 +2371,6 @@
       "norm_label": ".free_fields_present?()"
     },
     {
-      "label": "reimbursement.rb",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L1",
-      "id": "app_models_reimbursement_rb",
-      "community": 157,
-      "norm_label": "reimbursement.rb"
-    },
-    {
-      "label": "Reimbursement",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L1",
-      "id": "models_reimbursement_reimbursement",
-      "community": 157,
-      "norm_label": "reimbursement"
-    },
-    {
-      "label": ".display_reason()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L19",
-      "id": "models_reimbursement_reimbursement_display_reason",
-      "community": 157,
-      "norm_label": ".display_reason()"
-    },
-    {
-      "label": ".display_place()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L23",
-      "id": "models_reimbursement_reimbursement_display_place",
-      "community": 157,
-      "norm_label": ".display_place()"
-    },
-    {
-      "label": ".display_structure()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L27",
-      "id": "models_reimbursement_reimbursement_display_structure",
-      "community": 157,
-      "norm_label": ".display_structure()"
-    },
-    {
-      "label": ".display_path()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L31",
-      "id": "models_reimbursement_reimbursement_display_path",
-      "community": 157,
-      "norm_label": ".display_path()"
-    },
-    {
-      "label": ".display_path_lenght()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L35",
-      "id": "models_reimbursement_reimbursement_display_path_lenght",
-      "community": 157,
-      "norm_label": ".display_path_lenght()"
-    },
-    {
-      "label": ".display_highway_cost()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L39",
-      "id": "models_reimbursement_reimbursement_display_highway_cost",
-      "community": 157,
-      "norm_label": ".display_highway_cost()"
-    },
-    {
-      "label": ".stored_or_free_fields_present()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L45",
-      "id": "models_reimbursement_reimbursement_stored_or_free_fields_present",
-      "community": 157,
-      "norm_label": ".stored_or_free_fields_present()"
-    },
-    {
-      "label": ".stored_fields_present?()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L51",
-      "id": "models_reimbursement_reimbursement_stored_fields_present",
-      "community": 157,
-      "norm_label": ".stored_fields_present?()"
-    },
-    {
-      "label": ".free_fields_present?()",
-      "file_type": "code",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L55",
-      "id": "models_reimbursement_reimbursement_free_fields_present",
-      "community": 157,
-      "norm_label": ".free_fields_present?()"
-    },
-    {
       "label": "vehicle.rb",
       "file_type": "code",
       "source_file": "app/models/vehicle.rb",
@@ -2936,114 +2405,6 @@
       "id": "models_structure_structure",
       "community": 1,
       "norm_label": "structure"
-    },
-    {
-      "label": "reimbursements_controller.rb",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L1",
-      "id": "app_controllers_reimbursements_controller_rb",
-      "community": 17,
-      "norm_label": "reimbursements_controller.rb"
-    },
-    {
-      "label": "ReimbursementsController",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L1",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller",
-      "community": 17,
-      "norm_label": "reimbursementscontroller"
-    },
-    {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L4",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_index",
-      "community": 17,
-      "norm_label": ".index()"
-    },
-    {
-      "label": ".show()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L8",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_show",
-      "community": 17,
-      "norm_label": ".show()"
-    },
-    {
-      "label": ".new()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L11",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_new",
-      "community": 17,
-      "norm_label": ".new()"
-    },
-    {
-      "label": ".create()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L16",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_create",
-      "community": 17,
-      "norm_label": ".create()"
-    },
-    {
-      "label": ".edit()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L30",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_edit",
-      "community": 17,
-      "norm_label": ".edit()"
-    },
-    {
-      "label": ".update()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L33",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_update",
-      "community": 17,
-      "norm_label": ".update()"
-    },
-    {
-      "label": ".confirm_destroy()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L45",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_confirm_destroy",
-      "community": 17,
-      "norm_label": ".confirm_destroy()"
-    },
-    {
-      "label": ".destroy()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L48",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_destroy",
-      "community": 17,
-      "norm_label": ".destroy()"
-    },
-    {
-      "label": ".set_reimbursement()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L55",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_set_reimbursement",
-      "community": 17,
-      "norm_label": ".set_reimbursement()"
-    },
-    {
-      "label": ".reimbursement_params()",
-      "file_type": "code",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L60",
-      "id": "controllers_reimbursements_controller_reimbursementscontroller_reimbursement_params",
-      "community": 17,
-      "norm_label": ".reimbursement_params()"
     },
     {
       "label": "home_controller.rb",
@@ -3856,24 +3217,6 @@
       "norm_label": ".transport_params()"
     },
     {
-      "label": "reimbursements_controller.rb",
-      "file_type": "code",
-      "source_file": "app/controllers/admin/reimbursements_controller.rb",
-      "source_location": "L1",
-      "id": "app_controllers_admin_reimbursements_controller_rb",
-      "community": 173,
-      "norm_label": "reimbursements_controller.rb"
-    },
-    {
-      "label": "ReimbursementsController",
-      "file_type": "code",
-      "source_file": "app/controllers/admin/reimbursements_controller.rb",
-      "source_location": "L2",
-      "id": "admin_reimbursements_controller_reimbursementscontroller",
-      "community": 173,
-      "norm_label": "reimbursementscontroller"
-    },
-    {
       "label": "paths_controller.rb",
       "file_type": "code",
       "source_file": "app/controllers/admin/paths_controller.rb",
@@ -3960,7 +3303,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_admin_users_controller_rb",
-      "community": 169,
+      "community": 1,
       "norm_label": "users_controller.rb"
     },
     {
@@ -3969,7 +3312,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L2",
       "id": "admin_users_controller_userscontroller",
-      "community": 169,
+      "community": 1,
       "norm_label": "userscontroller"
     },
     {
@@ -3978,7 +3321,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L5",
       "id": "admin_users_controller_userscontroller_resource_params",
-      "community": 169,
+      "community": 1,
       "norm_label": ".resource_params()"
     },
     {
@@ -3987,7 +3330,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L11",
       "id": "admin_users_controller_userscontroller_download_signature",
-      "community": 169,
+      "community": 1,
       "norm_label": ".download_signature()"
     },
     {
@@ -3996,7 +3339,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L15",
       "id": "admin_users_controller_userscontroller_download_validator_signature",
-      "community": 169,
+      "community": 1,
       "norm_label": ".download_validator_signature()"
     },
     {
@@ -4005,7 +3348,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L19",
       "id": "admin_users_controller_userscontroller_download_confirmator_signature",
-      "community": 169,
+      "community": 1,
       "norm_label": ".download_confirmator_signature()"
     },
     {
@@ -4014,7 +3357,7 @@
       "source_file": "app/controllers/admin/users_controller.rb",
       "source_location": "L27",
       "id": "admin_users_controller_userscontroller_send_uploaded_file",
-      "community": 169,
+      "community": 1,
       "norm_label": ".send_uploaded_file()"
     },
     {
@@ -4113,7 +3456,7 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L1",
       "id": "app_dashboards_transport_dashboard_rb",
-      "community": 124,
+      "community": 2,
       "norm_label": "transport_dashboard.rb"
     },
     {
@@ -4122,7 +3465,7 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L3",
       "id": "dashboards_transport_dashboard_transportdashboard",
-      "community": 124,
+      "community": 2,
       "norm_label": "transportdashboard"
     },
     {
@@ -4131,7 +3474,7 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L65",
       "id": "dashboards_transport_dashboard_transportdashboard_display_resource",
-      "community": 124,
+      "community": 2,
       "norm_label": ".display_resource()"
     },
     {
@@ -4159,33 +3502,6 @@
       "source_location": "L65",
       "id": "dashboards_reason_dashboard_reasondashboard_display_resource",
       "community": 1,
-      "norm_label": ".display_resource()"
-    },
-    {
-      "label": "reimbursement_dashboard.rb",
-      "file_type": "code",
-      "source_file": "app/dashboards/reimbursement_dashboard.rb",
-      "source_location": "L1",
-      "id": "app_dashboards_reimbursement_dashboard_rb",
-      "community": 171,
-      "norm_label": "reimbursement_dashboard.rb"
-    },
-    {
-      "label": "ReimbursementDashboard",
-      "file_type": "code",
-      "source_file": "app/dashboards/reimbursement_dashboard.rb",
-      "source_location": "L3",
-      "id": "dashboards_reimbursement_dashboard_reimbursementdashboard",
-      "community": 171,
-      "norm_label": "reimbursementdashboard"
-    },
-    {
-      "label": ".display_resource()",
-      "file_type": "code",
-      "source_file": "app/dashboards/reimbursement_dashboard.rb",
-      "source_location": "L127",
-      "id": "dashboards_reimbursement_dashboard_reimbursementdashboard_display_resource",
-      "community": 171,
       "norm_label": ".display_resource()"
     },
     {
@@ -4744,33 +4060,6 @@
       "source_location": "L2",
       "id": "migrate_20260820104956_add_lockable_to_users_addlockabletousers_change",
       "community": 155,
-      "norm_label": ".change()"
-    },
-    {
-      "label": "20260820144520_create_reimbursements.rb",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820144520_create_reimbursements.rb",
-      "source_location": "L1",
-      "id": "db_migrate_20260820144520_create_reimbursements_rb",
-      "community": 172,
-      "norm_label": "20260820144520_create_reimbursements.rb"
-    },
-    {
-      "label": "CreateReimbursements",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820144520_create_reimbursements.rb",
-      "source_location": "L1",
-      "id": "migrate_20260820144520_create_reimbursements_createreimbursements",
-      "community": 172,
-      "norm_label": "createreimbursements"
-    },
-    {
-      "label": ".change()",
-      "file_type": "code",
-      "source_file": "db/migrate/20260820144520_create_reimbursements.rb",
-      "source_location": "L2",
-      "id": "migrate_20260820144520_create_reimbursements_createreimbursements_change",
-      "community": 172,
       "norm_label": ".change()"
     },
     {
@@ -8754,7 +8043,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 124,
+      "community": 2,
       "norm_label": "createtransports migration",
       "id": "migrate_20260817093656_create_transports_create_transports"
     },
@@ -9815,16 +9104,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "spec/system/reimbursements_spec.rb",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "spec_system_reimbursements_spec_rb",
-      "target": "system_reimbursements_spec_login_as",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "spec/system/vehicles_spec.rb",
       "source_location": "L34",
       "weight": 1.0,
@@ -10197,183 +9476,6 @@
       "source_location": "L36",
       "weight": 1.0,
       "source": "policies_transport_policy_scope_resolve",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "app_policies_reimbursement_policy_rb",
-      "target": "policies_reimbursement_policy_reimbursementpolicy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "app_policies_reimbursement_policy_rb",
-      "target": "policies_reimbursement_policy_scope",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_index",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_show",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_create",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_update",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_destroy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_confirm_destroy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy_show",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy_update",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy_destroy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy_confirm_destroy",
-      "target": "policies_reimbursement_policy_reimbursementpolicy_destroy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "target": "models_user_user"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_reimbursementpolicy_owner",
-      "target": "policies_application_policy_applicationpolicy_admin"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L35",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_scope",
-      "target": "policies_reimbursement_policy_scope_resolve",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/reimbursement_policy.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "policies_reimbursement_policy_scope_resolve",
       "target": "policies_application_policy_applicationpolicy_admin"
     },
     {
@@ -12393,199 +11495,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "app_services_reimbursement_total_calculator_rb",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator_call",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator_initialize",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator_stay_costs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator_transport_costs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_distance_cost",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "target": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_highway_cost",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator_transport_costs",
-      "target": "models_transport_transport"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/services/reimbursement_total_calculator.rb",
-      "source_location": "L37",
-      "weight": 1.0,
-      "source": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_distance_cost",
-      "target": "models_vehicle_vehicle"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "app_services_reimbursement_date_generator_rb",
-      "target": "services_reimbursement_date_generator_reimbursementdategenerator",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "services_reimbursement_date_generator_reimbursementdategenerator",
-      "target": "services_reimbursement_date_generator_reimbursementdategenerator_call",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_date_generator.rb",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "services_reimbursement_date_generator_reimbursementdategenerator",
-      "target": "services_reimbursement_date_generator_reimbursementdategenerator_initialize",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "app_services_reimbursement_code_generator_rb",
-      "target": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "target": "services_reimbursement_code_generator_reimbursementcodegenerator_call",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "target": "services_reimbursement_code_generator_reimbursementcodegenerator_initialize",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "target": "services_reimbursement_code_generator_reimbursementcodegenerator_initials",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "target": "services_reimbursement_code_generator_reimbursementcodegenerator_timestamp",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "services_reimbursement_code_generator_reimbursementcodegenerator",
-      "target": "services_reimbursement_code_generator_reimbursementcodegenerator_sequence",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/services/reimbursement_code_generator.rb",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "services_reimbursement_code_generator_reimbursementcodegenerator_initials",
-      "target": "fields_carrierwave_field_carrierwavefield_to_s"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "app/helpers/reasons_helper.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -12812,67 +11721,6 @@
       "source_location": "L5",
       "weight": 1.0,
       "source": "helpers_mission_requests_helper_stored_mode_checked",
-      "target": "models_reason_reason"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "app_helpers_reimbursements_helper_rb",
-      "target": "helpers_reimbursements_helper_stored_mode_checked",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "app_helpers_reimbursements_helper_rb",
-      "target": "helpers_reimbursements_helper_form_label_class_reimbursement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "app_helpers_reimbursements_helper_rb",
-      "target": "helpers_reimbursements_helper_form_submit_label_reimbursement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "app_helpers_reimbursements_helper_rb",
-      "target": "helpers_reimbursements_helper_form_submit_accent_reimbursement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "app_helpers_reimbursements_helper_rb",
-      "target": "helpers_reimbursements_helper_form_hr_reimbursement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/helpers/reimbursements_helper.rb",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "helpers_reimbursements_helper_stored_mode_checked",
       "target": "models_reason_reason"
     },
     {
@@ -13129,37 +11977,6 @@
       "confidence_score": 1.0,
       "source": "app_javascript_controllers_index_js",
       "target": "controllers_application_application"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/javascript/controllers/reimbursement_mode_controller.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "app_javascript_controllers_reimbursement_mode_controller_js",
-      "target": "controllers_reimbursement_mode_controller_showstored",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/javascript/controllers/reimbursement_mode_controller.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "app_javascript_controllers_reimbursement_mode_controller_js",
-      "target": "controllers_reimbursement_mode_controller_showfree",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/javascript/controllers/index.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "app_javascript_controllers_index_js",
-      "target": "app_javascript_controllers_reimbursement_mode_controller_js",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13849,128 +12666,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "app_models_reimbursement_rb",
-      "target": "models_reimbursement_reimbursement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_display_reason",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_display_place",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_display_structure",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_display_path",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L35",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_display_path_lenght",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_display_highway_cost",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_stored_or_free_fields_present",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L51",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_stored_fields_present",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement",
-      "target": "models_reimbursement_reimbursement_free_fields_present",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement_stored_or_free_fields_present",
-      "target": "models_reimbursement_reimbursement_stored_fields_present",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/models/reimbursement.rb",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "models_reimbursement_reimbursement_stored_or_free_fields_present",
-      "target": "models_reimbursement_reimbursement_free_fields_present",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "app/models/vehicle.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -14067,116 +12762,6 @@
       "weight": 1.0,
       "source": "migrate_20260817120521_create_structures_createstructures",
       "target": "app_models_structure_rb"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "app_controllers_reimbursements_controller_rb",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_index",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_show",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_new",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_create",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_edit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_update",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_confirm_destroy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_destroy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_set_reimbursement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/reimbursements_controller.rb",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "controllers_reimbursements_controller_reimbursementscontroller",
-      "target": "controllers_reimbursements_controller_reimbursementscontroller_reimbursement_params",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15831,16 +14416,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/controllers/admin/reimbursements_controller.rb",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "app_controllers_admin_reimbursements_controller_rb",
-      "target": "admin_reimbursements_controller_reimbursementscontroller",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "app/controllers/admin/paths_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -16120,26 +14695,6 @@
       "confidence_score": 1.0,
       "source": "dashboards_reason_dashboard_reasondashboard",
       "target": "dashboards_reason_dashboard_reasondashboard_display_resource"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/dashboards/reimbursement_dashboard.rb",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "app_dashboards_reimbursement_dashboard_rb",
-      "target": "dashboards_reimbursement_dashboard_reimbursementdashboard",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/dashboards/reimbursement_dashboard.rb",
-      "source_location": "L127",
-      "weight": 1.0,
-      "source": "dashboards_reimbursement_dashboard_reimbursementdashboard",
-      "target": "dashboards_reimbursement_dashboard_reimbursementdashboard_display_resource",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -17024,26 +15579,6 @@
       "confidence_score": 1.0,
       "source": "migrate_20260820104956_add_lockable_to_users_addlockabletousers",
       "target": "migrate_20260820104956_add_lockable_to_users_addlockabletousers_change"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "db/migrate/20260820144520_create_reimbursements.rb",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "db_migrate_20260820144520_create_reimbursements_rb",
-      "target": "migrate_20260820144520_create_reimbursements_createreimbursements",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "db/migrate/20260820144520_create_reimbursements.rb",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "migrate_20260820144520_create_reimbursements_createreimbursements",
-      "target": "migrate_20260820144520_create_reimbursements_createreimbursements_change",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21187,5 +19722,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e8e41894a1a5f9cdaca941f6135587b2d88bb8b9"
+  "built_at_commit": "5079856681bfc64efab7b3f4166bf78f2aa424c3"
 }

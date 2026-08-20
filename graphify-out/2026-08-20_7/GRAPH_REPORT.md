@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-20)
 
 ## Corpus Check
-- 175 files · ~1,352,823 words
+- 156 files · ~236,045 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 934 nodes · 1159 edges · 182 communities (109 shown, 73 thin omitted)
-- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 238 edges (avg confidence: 0.86)
+- 855 nodes · 1085 edges · 168 communities (100 shown, 68 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 231 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e8e41894`
+- Built from commit: `50798566`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -128,24 +128,18 @@
 - [[_COMMUNITY_Community 157|Community 157]]
 - [[_COMMUNITY_Community 158|Community 158]]
 - [[_COMMUNITY_Community 166|Community 166]]
-- [[_COMMUNITY_Community 168|Community 168]]
-- [[_COMMUNITY_Community 169|Community 169]]
-- [[_COMMUNITY_Community 170|Community 170]]
-- [[_COMMUNITY_Community 171|Community 171]]
-- [[_COMMUNITY_Community 172|Community 172]]
-- [[_COMMUNITY_Community 173|Community 173]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `User` - 27 edges
+1. `User` - 26 edges
 2. `CLAUDE.md — Guida per Claude Code` - 23 edges
 3. `PlacesController` - 15 edges
 4. `ApplicationPolicy#admin?` - 13 edges
-5. `Reason` - 11 edges
-6. `ReimbursementsController` - 11 edges
-7. `PathsController` - 11 edges
-8. `PlacesController` - 11 edges
-9. `VehiclesController` - 11 edges
-10. `StructuresController` - 11 edges
+5. `PathsController` - 11 edges
+6. `PlacesController` - 11 edges
+7. `VehiclesController` - 11 edges
+8. `StructuresController` - 11 edges
+9. `ReasonsController` - 11 edges
+10. `MissionRequestsController` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `README Terminus Overview (IT/EN)` --semantically_similar_to--> `Terminus (applicazione)`  [INFERRED] [semantically similar]
@@ -159,7 +153,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (182 total, 73 thin omitted)
+## Communities (168 total, 68 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -167,15 +161,19 @@ Nodes (51): ActiveStorage (upload sicuro), Autenticazione e Autorizzazione Robus
 
 ### Community 1 - "Admin Panel: Transports & Vehicles"
 Cohesion: 0.05
-Nodes (23): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, PathDashboard, PlaceDashboard, ReasonDashboard, StructureDashboard (+15 more)
+Nodes (23): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, UsersController, PathDashboard, PlaceDashboard, ReasonDashboard (+15 more)
+
+### Community 2 - "Admin User Signature Downloads"
+Cohesion: 0.15
+Nodes (5): TransportsController, TransportsController, TransportDashboard, CreateTransports migration, Transport
 
 ### Community 3 - "Terminus App Blueprint (Devise/Users/Setup)"
-Cohesion: 0.07
-Nodes (15): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader (+7 more)
+Cohesion: 0.09
+Nodes (14): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader (+6 more)
 
 ### Community 4 - "Application Auth Base"
-Cohesion: 0.14
-Nodes (6): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope, ReimbursementPolicy, Scope
+Cohesion: 0.16
+Nodes (6): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope, MissionRequestPolicy, Scope
 
 ### Community 5 - "Dev/Build Scripts"
 Cohesion: 0.19
@@ -188,14 +186,6 @@ Nodes (26): bin/dev Server Script, bin/docker-entrypoint Script, bin/rails CLI S
 ### Community 8 - "Paths Controller CRUD"
 Cohesion: 0.09
 Nodes (11): Admin::ApplicationController#authenticate_admin, PathsController, PathsController, PlacesController, PlacesController, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user (+3 more)
-
-### Community 9 - "Mission Request Controller & Code Generator"
-Cohesion: 0.19
-Nodes (4): PlacePolicy, Scope, Scope, StructurePolicy
-
-### Community 10 - "Path/Structure Authorization Policies"
-Cohesion: 0.19
-Nodes (4): PathPolicy, Scope, ReasonPolicy, Scope
 
 ### Community 11 - "Path/Place/Reason/Structure Test Suite"
 Cohesion: 0.17
@@ -298,8 +288,8 @@ Cohesion: 0.67
 Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation Section
 
 ### Community 124 - "Community 124"
-Cohesion: 0.08
-Nodes (11): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration (+3 more)
+Cohesion: 0.14
+Nodes (7): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, VehicleDashboard, CreateVehicles migration, Vehicle
 
 ### Community 126 - "Community 126"
 Cohesion: 0.14
@@ -352,9 +342,9 @@ Nodes (3): ApplicationController, ApplicationController, HomeController
   config/cable.yml · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **216 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+211 more)
+- **215 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+210 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **73 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **68 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -363,13 +353,13 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Community 125`, `Community 127`?**
-  _High betweenness centrality (0.048) - this node is a cross-community bridge._
+- **Why does `User` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Place CRUD Icon Set`, `Community 125`, `Community 157`, `Community 127`?**
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Why does `PlacesController` connect `Paths Controller CRUD` to `Admin Panel: Transports & Vehicles`, `Secure Headers & CSP Config`, `Community 125`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `Reason` connect `Admin Panel: Transports & Vehicles` to `Paths Controller CRUD`, `Community 125`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Are the 13 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
-  _`User` has 13 INFERRED edges - model-reasoned connections that need verification._
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `Path` connect `Admin Panel: Transports & Vehicles` to `Paths Controller CRUD`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Are the 12 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
+  _`User` has 12 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `PlacesController` (e.g. with `paths_controller.rb` and `reasons_controller.rb`) actually correct?**
   _`PlacesController` has 3 INFERRED edges - model-reasoned connections that need verification._

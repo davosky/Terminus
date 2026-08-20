@@ -10,9 +10,9 @@
     "semantic_hash": "590009f4b8daf822d34925fc6490b45c"
   },
   "/home/davo/Programmazione/Terminus/config/routes.rb": {
-    "mtime": 1787237190.7498124,
-    "ast_hash": "4eef83bf2b8af6b87d1278af8cb3bc3a",
-    "semantic_hash": ""
+    "mtime": 1787074496.9402812,
+    "ast_hash": "73df8320394fcc00d35ab2101389e78e",
+    "semantic_hash": "73df8320394fcc00d35ab2101389e78e"
   },
   "/home/davo/Programmazione/Terminus/config/ci.rb": {
     "mtime": 1786784555.834385,
@@ -175,9 +175,9 @@
     "semantic_hash": "e99511ba6b1056659bed1f0083cae290"
   },
   "/home/davo/Programmazione/Terminus/app/javascript/controllers/index.js": {
-    "mtime": 1787237228.2288435,
-    "ast_hash": "3f8df49d92b520f425b236d0830ee141",
-    "semantic_hash": ""
+    "mtime": 1787074378.8477607,
+    "ast_hash": "7b497babb8169c5f4e85214c6cf9eb4f",
+    "semantic_hash": "7b497babb8169c5f4e85214c6cf9eb4f"
   },
   "/home/davo/Programmazione/Terminus/app/models/application_record.rb": {
     "mtime": 1786784555.631911,
@@ -185,8 +185,8 @@
     "semantic_hash": "8061f2304feb5db0f90c9086b9c30377"
   },
   "/home/davo/Programmazione/Terminus/app/models/user.rb": {
-    "mtime": 1787237194.0619035,
-    "ast_hash": "6fcb79076a2e16bdb6667a0afe9699bf",
+    "mtime": 1787222993.2976236,
+    "ast_hash": "a9a1ef09effec4781cbfbcfd6151c6ac",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/controllers/home_controller.rb": {
@@ -230,8 +230,8 @@
     "semantic_hash": "521627c3c58b71b8fb20b271b0b1e884"
   },
   "/home/davo/Programmazione/Terminus/db/schema.rb": {
-    "mtime": 1787237294.7936785,
-    "ast_hash": "067105b1cbdf072e5cf123a4e0f52234",
+    "mtime": 1787224682.2798986,
+    "ast_hash": "b681223f8004587d0f46b7f95adaff4e",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/db/migrate/20260815090539_devise_create_users.rb": {
@@ -340,8 +340,8 @@
     "semantic_hash": "c6f033daa6ca3f933b7df5a40f18ff8c"
   },
   "/home/davo/Programmazione/Terminus/config/locales/it.yml": {
-    "mtime": 1787237286.5064497,
-    "ast_hash": "051b538ed2e9dbd43dbbf7d1c246e127",
+    "mtime": 1787224699.3351347,
+    "ast_hash": "c3df805fe4900678682ad123dac1a533",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/colors.svg": {
@@ -480,9 +480,9 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/models/vehicle.rb": {
-    "mtime": 1787237202.496351,
-    "ast_hash": "73ef82cd3a9e67525a937cae174f2245",
-    "semantic_hash": ""
+    "mtime": 1786875906.6781406,
+    "ast_hash": "938eeb8da41dfbf195c642b3cecad71e",
+    "semantic_hash": "938eeb8da41dfbf195c642b3cecad71e"
   },
   "/home/davo/Programmazione/Terminus/app/controllers/vehicles_controller.rb": {
     "mtime": 1786875923.0489886,
@@ -540,9 +540,9 @@
     "semantic_hash": "3305613107ebd3877bd39639ed781dce"
   },
   "/home/davo/Programmazione/Terminus/app/models/transport.rb": {
-    "mtime": 1787237201.3351035,
-    "ast_hash": "0fd6767a72bb58952a58dcfb9ad7ae27",
-    "semantic_hash": ""
+    "mtime": 1786960941.2737918,
+    "ast_hash": "35febb6b12ce8db89f5cf50c3f554e08",
+    "semantic_hash": "35febb6b12ce8db89f5cf50c3f554e08"
   },
   "/home/davo/Programmazione/Terminus/app/controllers/transports_controller.rb": {
     "mtime": 1786961327.6532614,
@@ -710,24 +710,24 @@
     "semantic_hash": "2b80e3ee9644043447cca4746381905f"
   },
   "/home/davo/Programmazione/Terminus/app/models/place.rb": {
-    "mtime": 1787237197.3767729,
-    "ast_hash": "737e5d0fb6a7db74741611034577b0bf",
-    "semantic_hash": ""
+    "mtime": 1787074342.6067357,
+    "ast_hash": "e4173b66e0ee604714ce79445b3f47c3",
+    "semantic_hash": "e4173b66e0ee604714ce79445b3f47c3"
   },
   "/home/davo/Programmazione/Terminus/app/models/path.rb": {
-    "mtime": 1787237200.1240702,
-    "ast_hash": "7ff6844a3a25db3fc4a2cce883f61676",
-    "semantic_hash": ""
+    "mtime": 1787074348.3469076,
+    "ast_hash": "0fc6987dd1ef24890215380410d2ba70",
+    "semantic_hash": "0fc6987dd1ef24890215380410d2ba70"
   },
   "/home/davo/Programmazione/Terminus/app/models/reason.rb": {
-    "mtime": 1787237196.2063892,
-    "ast_hash": "68537b409e8c98884e9f8c0f7e916447",
-    "semantic_hash": ""
+    "mtime": 1787074340.2335107,
+    "ast_hash": "783e23985d015c6761e1042f9174d52c",
+    "semantic_hash": "783e23985d015c6761e1042f9174d52c"
   },
   "/home/davo/Programmazione/Terminus/app/models/structure.rb": {
-    "mtime": 1787237198.5997305,
-    "ast_hash": "0eabdb8c33207e91f72239dfac24d793",
-    "semantic_hash": ""
+    "mtime": 1787074344.7145944,
+    "ast_hash": "e3d5e327f8d4911016ac8b9979235daa",
+    "semantic_hash": "e3d5e327f8d4911016ac8b9979235daa"
   },
   "/home/davo/Programmazione/Terminus/app/controllers/paths_controller.rb": {
     "mtime": 1786966129.0516026,
@@ -1197,186 +1197,6 @@
   "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/741/signature.png": {
     "mtime": 1787225672.3277087,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/requests/reimbursements_spec.rb": {
-    "mtime": 1787240100.3155715,
-    "ast_hash": "a3eb9a42b812f100e921588a5c00e81a",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/reimbursement_policy_spec.rb": {
-    "mtime": 1787237319.0907845,
-    "ast_hash": "f385c5277ad981b3808fa3ac1972a710",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/services/reimbursement_date_generator_spec.rb": {
-    "mtime": 1787237315.2167103,
-    "ast_hash": "b96a4ee39c0e355b1389e7f6f9224fc9",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/services/reimbursement_code_generator_spec.rb": {
-    "mtime": 1787237312.4731667,
-    "ast_hash": "06abd5e9e7bcd90753c4de42faa548cf",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/services/reimbursement_total_calculator_spec.rb": {
-    "mtime": 1787240061.236566,
-    "ast_hash": "cdbc2942e98a17699fcb1a6b92dbe38c",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/system/reimbursements_spec.rb": {
-    "mtime": 1787237346.475226,
-    "ast_hash": "97526fbe2f84af397c2580c28dd9443d",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/models/reimbursement_spec.rb": {
-    "mtime": 1787237310.7464595,
-    "ast_hash": "1fcb1b1b4d2ef70b06803efe5f73b0a7",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/factories/reimbursements.rb": {
-    "mtime": 1787237299.4567976,
-    "ast_hash": "4dad47f5dbabed6ea8882d12aee832e2",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/policies/reimbursement_policy.rb": {
-    "mtime": 1787237156.9893534,
-    "ast_hash": "1313927a9b78e039960d9696b93030ba",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/services/reimbursement_total_calculator.rb": {
-    "mtime": 1787240008.103127,
-    "ast_hash": "c29a74c1746918531a0ecc46d2ee428e",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/services/reimbursement_date_generator.rb": {
-    "mtime": 1787237146.5085957,
-    "ast_hash": "16ae7aa1957e711a3b99583dfcf4d8b7",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/services/reimbursement_code_generator.rb": {
-    "mtime": 1787237144.8771012,
-    "ast_hash": "9cdade03362e337e783ed259ba7bfe74",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/helpers/reimbursements_helper.rb": {
-    "mtime": 1787237219.1785944,
-    "ast_hash": "6ba4bfbe08456be2f8b920d8a66df300",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/javascript/controllers/reimbursement_mode_controller.js": {
-    "mtime": 1787237215.195337,
-    "ast_hash": "8e4b5d8ec9a905b9e7abb6a1829f1539",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/models/reimbursement.rb": {
-    "mtime": 1787237142.2724812,
-    "ast_hash": "a959907737d28c9bf1315d0eb44a4944",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/controllers/reimbursements_controller.rb": {
-    "mtime": 1787240026.9336252,
-    "ast_hash": "36c62693aedc881609e0570e1f599ce5",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/controllers/admin/reimbursements_controller.rb": {
-    "mtime": 1787237165.6263168,
-    "ast_hash": "8fdfc23a996ab6e2c9a275988c7956ae",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/dashboards/reimbursement_dashboard.rb": {
-    "mtime": 1787240045.7341232,
-    "ast_hash": "a3c717d630f48019595e577e0bb8a9ab",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/db/migrate/20260820144520_create_reimbursements.rb": {
-    "mtime": 1787237130.053807,
-    "ast_hash": "de9b2d6650064b5d04afd7e7098c3eb7",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/2479/signature.png": {
-    "mtime": 1787240281.7475176,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/3429/signature.png": {
-    "mtime": 1787240812.045142,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/826/signature.png": {
-    "mtime": 1787237363.736355,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/1770/signature.png": {
-    "mtime": 1787240117.7852006,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/1768/signature.png": {
-    "mtime": 1787240117.7341528,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/824/signature.png": {
-    "mtime": 1787237363.6860337,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/2477/signature.png": {
-    "mtime": 1787240281.6913981,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/3427/signature.png": {
-    "mtime": 1787240811.992471,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/3431/signature.png": {
-    "mtime": 1787240812.09467,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/2481/signature.png": {
-    "mtime": 1787240281.799825,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/1772/signature.png": {
-    "mtime": 1787240117.8339448,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/828/signature.png": {
-    "mtime": 1787237363.7899907,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_index.svg": {
-    "mtime": 1787235886.342995,
-    "ast_hash": "a106d3e7c9756faeab2b9c26118da3a9",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_new.svg": {
-    "mtime": 1787236174.4273784,
-    "ast_hash": "e037f56a69e0b5b1f1609f2819023531",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_show.svg": {
-    "mtime": 1787236229.3160353,
-    "ast_hash": "51c642f4d3fe2632d1780fc5ba6e9bf6",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_destroy.svg": {
-    "mtime": 1787235969.2867365,
-    "ast_hash": "3c4285807eaf5927e74dd62f624bfd34",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_edit.svg": {
-    "mtime": 1787236033.228413,
-    "ast_hash": "b1fa96de708d69c432f13df00e4a8494",
     "semantic_hash": ""
   }
 }

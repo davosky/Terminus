@@ -72,6 +72,28 @@ RSpec.describe "MissionRequests", type: :request do
     end
   end
 
+  describe "GET /mission_requests/:id/edit" do
+    it "nasconde la scelta della modalità di inserimento e mostra i campi memorizzati" do
+      get edit_mission_request_path(mission_request)
+
+      page = Nokogiri::HTML(response.body)
+      expect(page.at_css("#input_mode_stored")).to be_nil
+      expect(page.at_css('[data-mission-request-mode-target="stored"]')["class"]).not_to include("d-none")
+      expect(page.at_css('[data-mission-request-mode-target="free"]')["class"]).to include("d-none")
+    end
+
+    it "mostra i campi liberi quando la richiesta è stata creata in quella modalità" do
+      free_mission_request = create(:mission_request, :free_fields, user: user)
+
+      get edit_mission_request_path(free_mission_request)
+
+      page = Nokogiri::HTML(response.body)
+      expect(page.at_css("#input_mode_stored")).to be_nil
+      expect(page.at_css('[data-mission-request-mode-target="free"]')["class"]).not_to include("d-none")
+      expect(page.at_css('[data-mission-request-mode-target="stored"]')["class"]).to include("d-none")
+    end
+  end
+
   describe "PATCH /mission_requests/:id" do
     it "aggiorna una propria richiesta missione" do
       patch mission_request_path(mission_request), params: { mission_request: { departure_date: Date.current + 1.day } }

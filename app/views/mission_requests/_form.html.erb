@@ -21,15 +21,17 @@
     <%= f.date_field :request_date, class: "form-control" %>
   </div>
   <div data-controller="mission-request-mode" class="bg-secondary border-0 rounded pt-1 pb-1 ps-2 pe-2 mb-3">
-    <hr class="<%= form_hr_mission_request %>" />
-    <label class="<%= form_label_class_mission_request %> d-block">Modalità di Inserimento</label>
-    <div class="btn-group mb-3" role="group">
-      <input type="radio" class="btn-check" name="input_mode" id="input_mode_stored" autocomplete="off" data-action="mission-request-mode#showStored" <%= "checked" if stored_mode_checked?(mission_request) %>>
-      <label class="btn btn-outline-dark" for="input_mode_stored">Modelli Memorizzati</label>
-      <input type="radio" class="btn-check" name="input_mode" id="input_mode_free" autocomplete="off" data-action="mission-request-mode#showFree" <%= "checked" unless stored_mode_checked?(mission_request) %>>
-      <label class="btn btn-outline-dark" for="input_mode_free">Campi Liberi</label>
-    </div>
-    <hr class="<%= form_hr_mission_request %>" />
+    <% if mission_request.new_record? %>
+      <hr class="<%= form_hr_mission_request %>" />
+      <label class="<%= form_label_class_mission_request %> d-block">Modalità di Inserimento</label>
+      <div class="btn-group mb-3" role="group">
+        <input type="radio" class="btn-check" name="input_mode" id="input_mode_stored" autocomplete="off" data-action="mission-request-mode#showStored" <%= "checked" if stored_mode_checked?(mission_request) %>>
+        <label class="btn btn-outline-dark" for="input_mode_stored">Modelli Memorizzati</label>
+        <input type="radio" class="btn-check" name="input_mode" id="input_mode_free" autocomplete="off" data-action="mission-request-mode#showFree" <%= "checked" unless stored_mode_checked?(mission_request) %>>
+        <label class="btn btn-outline-dark" for="input_mode_free">Campi Liberi</label>
+      </div>
+      <hr class="<%= form_hr_mission_request %>" />
+    <% end %>
     <div data-mission-request-mode-target="stored" class="<%= "d-none" unless stored_mode_checked?(mission_request) %>">
       <div class="mb-3">
         <%= f.label :reason_id, MissionRequest.human_attribute_name(:reason), class: form_label_class_mission_request %>

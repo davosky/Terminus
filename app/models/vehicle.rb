@@ -1,5 +1,6 @@
 class Vehicle < ApplicationRecord
   belongs_to :user
+  has_many :reimbursements, dependent: :nullify
 
   validates :name, presence: true
   validates :producer, presence: true

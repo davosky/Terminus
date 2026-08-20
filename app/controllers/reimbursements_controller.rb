@@ -1,0 +1,70 @@
+class ReimbursementsController < ApplicationController
+  before_action :set_reimbursement, only: %i[show edit update destroy confirm_destroy]
+
+  def index
+    @reimbursements = policy_scope(Reimbursement).ordered
+  end
+
+  def show
+  end
+
+  def new
+    @reimbursement = current_user.reimbursements.build(request_date: Date.current)
+    authorize @reimbursement
+  end
+
+  def create
+    @reimbursement = current_user.reimbursements.build(reimbursement_params)
+    @reimbursement.name = ReimbursementCodeGenerator.call(user: current_user)
+    @reimbursement.reimbursement_date ||= ReimbursementDateGenerator.call(departure_date: @reimbursement.departure_date)
+    @reimbursement.total_amount = ReimbursementTotalCalculator.call(reimbursement: @reimbursement)
+    authorize @reimbursement
+
+    if @reimbursement.save
+      redirect_to reimbursements_path, notice: "Rimborso spese creato con successo."
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    @reimbursement.assign_attributes(reimbursement_params)
+    @reimbursement.reimbursement_date ||= ReimbursementDateGenerator.call(departure_date: @reimbursement.departure_date)
+    @reimbursement.total_amount = ReimbursementTotalCalculator.call(reimbursement: @reimbursement)
+
+    if @reimbursement.save
+      redirect_to reimbursements_path, notice: "Rimborso spese aggiornato con successo."
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def confirm_destroy
+  end
+
+  def destroy
+    @reimbursement.destroy
+    redirect_to reimbursements_path, notice: "Rimborso spese eliminato con successo.", status: :see_other
+  end
+
+  private
+
+  def set_reimbursement
+    @reimbursement = policy_scope(Reimbursement).find(params[:id])
+    authorize @reimbursement
+  end
+
+  def reimbursement_params
+    params.require(:reimbursement).permit(
+      :departure_date, :return_date, :request_date, :reimbursement_date,
+      :reason_id, :place_id, :structure_id, :path_id,
+      :reason_fr, :place_fr, :structure_fr, :path_fr,
+      :path_lenght_fr, :highway_cost_fr,
+      :transport_id, :vehicle_id,
+      :parking_cost, :food_cost, :room_cost, :ticket_cost, :generic_cost
+    )
+  end
+end

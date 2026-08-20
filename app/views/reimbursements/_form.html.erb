@@ -1,0 +1,123 @@
+<%= form_with model: reimbursement do |f| %>
+  <% if reimbursement.errors.any? %>
+    <div class="alert alert-danger">
+      <ul class="mb-0">
+        <% reimbursement.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="mb-3">
+    <%= f.label :departure_date, class: form_label_class_reimbursement %>
+    <%= f.date_field :departure_date, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :return_date, class: form_label_class_reimbursement %>
+    <%= f.date_field :return_date, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :request_date, class: form_label_class_reimbursement %>
+    <%= f.date_field :request_date, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :reimbursement_date, class: form_label_class_reimbursement %>
+    <%= f.date_field :reimbursement_date, class: "form-control" %>
+    <div class="form-text">Se lasciato vuoto viene impostato automaticamente all'ultimo venerdì del mese di partenza.</div>
+  </div>
+  <div data-controller="reimbursement-mode" class="bg-secondary border-0 rounded pt-1 pb-1 ps-2 pe-2 mb-3">
+    <% if reimbursement.new_record? %>
+      <label class="<%= form_label_class_reimbursement %> d-block mb-3">Modalità di Inserimento</label>
+      <div class="btn-group mb-3" role="group">
+        <input type="radio" class="btn-check" name="input_mode" id="input_mode_stored" autocomplete="off" data-action="reimbursement-mode#showStored" <%= "checked" if stored_mode_checked?(reimbursement) %>>
+        <label class="btn btn-outline-dark" for="input_mode_stored">Modelli Memorizzati</label>
+        <input type="radio" class="btn-check" name="input_mode" id="input_mode_free" autocomplete="off" data-action="reimbursement-mode#showFree" <%= "checked" unless stored_mode_checked?(reimbursement) %>>
+        <label class="btn btn-outline-dark" for="input_mode_free">Campi Liberi</label>
+      </div>
+      <hr class="<%= form_hr_reimbursement %>" />
+    <% end %>
+    <div data-reimbursement-mode-target="stored" class="<%= "d-none" unless stored_mode_checked?(reimbursement) %>">
+      <div class="mb-3">
+        <%= f.label :reason_id, Reimbursement.human_attribute_name(:reason), class: form_label_class_reimbursement %>
+        <%= f.collection_select :reason_id, current_user.reasons.ordered, :id, :name, { include_blank: "Seleziona un motivo" }, class: "form-select" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :place_id, Reimbursement.human_attribute_name(:place), class: form_label_class_reimbursement %>
+        <%= f.collection_select :place_id, current_user.places.ordered, :id, :name, { include_blank: "Seleziona un luogo" }, class: "form-select" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :structure_id, Reimbursement.human_attribute_name(:structure), class: form_label_class_reimbursement %>
+        <%= f.collection_select :structure_id, current_user.structures.ordered, :id, :name, { include_blank: "Seleziona una struttura" }, class: "form-select" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :path_id, Reimbursement.human_attribute_name(:path), class: form_label_class_reimbursement %>
+        <%= f.collection_select :path_id, current_user.paths.ordered, :id, :name, { include_blank: "Seleziona un percorso" }, class: "form-select" %>
+      </div>
+    </div>
+    <div data-reimbursement-mode-target="free" class="<%= "d-none" if stored_mode_checked?(reimbursement) %>">
+      <div class="mb-3">
+        <%= f.label :reason_fr, class: form_label_class_reimbursement %>
+        <%= f.text_field :reason_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :place_fr, class: form_label_class_reimbursement %>
+        <%= f.text_field :place_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :structure_fr, class: form_label_class_reimbursement %>
+        <%= f.text_field :structure_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :path_fr, class: form_label_class_reimbursement %>
+        <%= f.text_field :path_fr, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :path_lenght_fr, class: form_label_class_reimbursement %>
+        <%= f.number_field :path_lenght_fr, step: 0.01, min: 0, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :highway_cost_fr, class: form_label_class_reimbursement %>
+        <%= f.number_field :highway_cost_fr, step: 0.01, min: 0, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <%= f.label :transport_id, Reimbursement.human_attribute_name(:transport), class: form_label_class_reimbursement %>
+    <%= f.collection_select :transport_id, current_user.transports.ordered, :id, :name, { include_blank: "Seleziona un trasporto" }, class: "form-select" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :vehicle_id, Reimbursement.human_attribute_name(:vehicle), class: form_label_class_reimbursement %>
+    <%= f.collection_select :vehicle_id, current_user.vehicles.ordered, :id, :name, { include_blank: "Seleziona un veicolo" }, class: "form-select" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :parking_cost, class: form_label_class_reimbursement %>
+    <%= f.number_field :parking_cost, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :food_cost, class: form_label_class_reimbursement %>
+    <%= f.number_field :food_cost, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :room_cost, class: form_label_class_reimbursement %>
+    <%= f.number_field :room_cost, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :ticket_cost, class: form_label_class_reimbursement %>
+    <%= f.number_field :ticket_cost, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :generic_cost, class: form_label_class_reimbursement %>
+    <%= f.number_field :generic_cost, step: 0.01, min: 0, class: "form-control" %>
+    <div class="form-text">Il totale viene calcolato automaticamente in base al trasporto selezionato.</div>
+  </div>
+  <div class="d-flex gap-2">
+    <%= f.button class: form_submit_accent_reimbursement do %>
+      <i class="bi bi-cash-coin me-2"></i><%= form_submit_label_reimbursement %>
+    <% end %>
+    <%= link_to reimbursements_path, class: "btn btn-secondary" do %>
+      <i class="bi bi-arrow-counterclockwise"></i>
+      &emsp;
+      Annulla
+    <% end %>
+  </div>
+<% end %>

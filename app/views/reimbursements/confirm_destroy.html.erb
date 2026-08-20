@@ -1,0 +1,35 @@
+<% content_for :title, "Elimina Rimborso Spese" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2 class="text-danger">
+        <%= image_tag("reimbursements/reimbursements_destroy.svg", class: "img-fluid me-3", alt: "reimbursements_destroy") %>
+        <span class="text-danger">
+          <i>Elimina Rimborso Spese</i>
+        </span>
+      </h2>
+      <hr class="text-danger mt-3 mb-4"/>
+      <div class="card border-danger">
+        <div class="card-body">
+          <h5 class="card-title text-danger">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>Conferma eliminazione
+          </h5>
+          <p class="text-danger mt-3">
+            Stai per eliminare il rimborso spese&emsp;<strong><%= @reimbursement.name %></strong>
+          </p>
+          <p class="card-text text-danger">Questa operazione è irreversibile.</p>
+          <div class="d-flex gap-2 mt-4">
+            <%= button_to reimbursement_path(@reimbursement),
+                  method: :delete,
+                  class: "btn btn-danger" do %>
+              <i class="bi bi-trash"></i>&emsp;Elimina Definitivamente
+            <% end %>
+            <%= link_to reimbursements_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Annulla
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

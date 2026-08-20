@@ -1,0 +1,74 @@
+<% content_for :title, "#{@reimbursement.name} - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h3>
+        <%= image_tag("reimbursements/reimbursements_show.svg", class: "img-fluid me-3", alt: "reimbursements_show") %>
+        <span class="text-primary">
+          <i><%= @reimbursement.name %></i>
+        </span>
+      </h3>
+      <hr class="text-info mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <p class="fs-5">
+            Ho fatto richiesta di rimborso il giorno:
+            &nbsp;
+            <span class="fw-bold text-primary">
+              <%= l(@reimbursement.request_date, format: :long) if @reimbursement.request_date %>
+            </span>
+            <br/>
+            Per il seguente motivo:
+            &nbsp;
+            <span class="fw-bold text-primary">
+              <%= @reimbursement.display_reason %>
+            </span>
+            <br/>
+            Presso:
+            &nbsp;
+            <span class="fw-bold text-primary">
+              <%= @reimbursement.display_structure %>
+            </span>
+          </p>
+          <p class="fs-6">
+            Data partenza: <strong><%= l(@reimbursement.departure_date, format: :long) if @reimbursement.departure_date %></strong>, data di ritorno: <strong><%= l(@reimbursement.return_date, format: :long) if @reimbursement.return_date %></strong>.
+            <br/>
+            Data rimborso: <strong><%= l(@reimbursement.reimbursement_date, format: :long) if @reimbursement.reimbursement_date %></strong>.
+            <br/>
+            Luogo della missione: <strong><%= @reimbursement.display_place %></strong>.
+            <br/>
+            Percorso: <strong><%= @reimbursement.display_path %></strong>.
+            <br/>
+            In tutto percorrendo <strong><%= number_with_precision(@reimbursement.display_path_lenght, precision: 2) %></strong> km con un costo autostradale pari a <strong><%= number_to_currency(@reimbursement.display_highway_cost) %></strong>.
+            <% if @reimbursement.vehicle %>
+              <br/>
+              Costo percorso: <strong><%= number_with_precision(@reimbursement.display_path_lenght, precision: 2) %>Km</strong> per <strong><%= number_to_currency(@reimbursement.vehicle.cost_per_km) %></strong> | totale: <strong><%= number_to_currency(@reimbursement.display_path_lenght * @reimbursement.vehicle.cost_per_km) %></strong>
+            <% end %>
+            <br/>
+            Trasporto: <strong><%= @reimbursement.transport.name %></strong><% if @reimbursement.vehicle %>, veicolo: <strong><%= @reimbursement.vehicle.name %></strong><% end %>.
+          </p>
+          <p class="fs-6">
+            <%= "Parcheggio: #{number_to_currency(@reimbursement.parking_cost)}," if @reimbursement.parking_cost > 0.00 %>
+            <%= "vitto: #{number_to_currency(@reimbursement.food_cost)}," if @reimbursement.food_cost > 0.00 %>
+            <%= "alloggio: #{number_to_currency(@reimbursement.room_cost)}," if @reimbursement.room_cost > 0.00 %>
+            <%= "ticket: #{number_to_currency(@reimbursement.ticket_cost)}," if @reimbursement.ticket_cost > 0.00 %>
+            <% if @reimbursement.generic_cost > 0.00 %>
+              varie: <strong><%= number_to_currency(@reimbursement.generic_cost) %></strong>.
+            <% end %>
+            <br/>
+            Totale rimborso: <strong class="text-primary"><%= number_to_currency(@reimbursement.total_amount) %></strong>.
+          </p>
+          <hr class="text-info mt-3 mb-4"/>
+          <div class="d-flex gap-2 mt-3">
+            <%= link_to edit_reimbursement_path(@reimbursement), class: "btn btn-primary" do %>
+              <i class="bi bi-pencil"></i>&emsp;Modifica
+            <% end %>
+            <%= link_to reimbursements_path, class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

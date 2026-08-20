@@ -9,3 +9,6 @@ application.register("flash", FlashController)
 
 import MissionRequestModeController from "./mission_request_mode_controller"
 application.register("mission-request-mode", MissionRequestModeController)
+
+import ReimbursementModeController from "./reimbursement_mode_controller"
+application.register("reimbursement-mode", ReimbursementModeController)

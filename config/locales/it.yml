@@ -25,6 +25,9 @@ it:
       mission_request:
         one: Richiesta Missione
         other: Richieste Missione
+      reimbursement:
+        one: Rimborso Spese
+        other: Rimborsi Spese
     attributes:
       vehicle:
         name: Nome Modello
@@ -82,6 +85,33 @@ it:
         path_fr: Percorso
         path_lenght_fr: Lunghezza Percorso
         highway_cost_fr: Costo Autostrada
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
+      reimbursement:
+        name: Codice Rimborso
+        departure_date: Data Partenza
+        return_date: Data Ritorno
+        request_date: Data Richiesta
+        reimbursement_date: Data Rimborso
+        reason: Motivo Missione
+        place: Luogo
+        structure: Struttura
+        path: Percorso
+        reason_fr: Motivo Missione
+        place_fr: Luogo
+        structure_fr: Struttura
+        path_fr: Percorso
+        path_lenght_fr: Lunghezza Percorso
+        highway_cost_fr: Costo Autostrada
+        transport: Trasporto
+        vehicle: Veicolo
+        parking_cost: Parcheggio
+        food_cost: Vitto
+        room_cost: Alloggio
+        ticket_cost: Ticket
+        generic_cost: Varie
+        total_amount: Totale
         user: Utente
         created_at: Creato il
         updated_at: Aggiornato il

@@ -2,6 +2,7 @@ class Transport < ApplicationRecord
   PROTECTED_NAMES = [ "Veicolo Aziendale", "Veicolo Privato" ].freeze
 
   belongs_to :user
+  has_many :reimbursements, dependent: :restrict_with_error
 
   validates :name, presence: true
 

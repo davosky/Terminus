@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_20_111753) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_20_144520) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -67,6 +67,43 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_20_111753) do
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_reasons_on_user_id"
+  end
+
+  create_table "reimbursements", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.date "departure_date"
+    t.decimal "food_cost", precision: 8, scale: 2, default: "0.0"
+    t.decimal "generic_cost", precision: 8, scale: 2, default: "0.0"
+    t.decimal "highway_cost_fr", precision: 8, scale: 2, default: "0.0"
+    t.string "name"
+    t.decimal "parking_cost", precision: 8, scale: 2, default: "0.0"
+    t.string "path_fr"
+    t.bigint "path_id"
+    t.decimal "path_lenght_fr", precision: 8, scale: 2, default: "0.0"
+    t.string "place_fr"
+    t.bigint "place_id"
+    t.string "reason_fr"
+    t.bigint "reason_id"
+    t.date "reimbursement_date"
+    t.date "request_date"
+    t.date "return_date"
+    t.decimal "room_cost", precision: 8, scale: 2, default: "0.0"
+    t.string "structure_fr"
+    t.bigint "structure_id"
+    t.decimal "ticket_cost", precision: 8, scale: 2, default: "0.0"
+    t.decimal "total_amount", precision: 8, scale: 2, default: "0.0"
+    t.bigint "transport_id", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.bigint "vehicle_id"
+    t.index ["name"], name: "index_reimbursements_on_name", unique: true
+    t.index ["path_id"], name: "index_reimbursements_on_path_id"
+    t.index ["place_id"], name: "index_reimbursements_on_place_id"
+    t.index ["reason_id"], name: "index_reimbursements_on_reason_id"
+    t.index ["structure_id"], name: "index_reimbursements_on_structure_id"
+    t.index ["transport_id"], name: "index_reimbursements_on_transport_id"
+    t.index ["user_id"], name: "index_reimbursements_on_user_id"
+    t.index ["vehicle_id"], name: "index_reimbursements_on_vehicle_id"
   end
 
   create_table "structures", force: :cascade do |t|
@@ -142,6 +179,13 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_20_111753) do
   add_foreign_key "paths", "users"
   add_foreign_key "places", "users"
   add_foreign_key "reasons", "users"
+  add_foreign_key "reimbursements", "paths"
+  add_foreign_key "reimbursements", "places"
+  add_foreign_key "reimbursements", "reasons"
+  add_foreign_key "reimbursements", "structures"
+  add_foreign_key "reimbursements", "transports"
+  add_foreign_key "reimbursements", "users"
+  add_foreign_key "reimbursements", "vehicles"
   add_foreign_key "structures", "users"
   add_foreign_key "transports", "users"
   add_foreign_key "vehicles", "users"

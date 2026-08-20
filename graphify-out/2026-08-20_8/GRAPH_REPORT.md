@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-20)
 
 ## Corpus Check
-- 175 files · ~1,352,931 words
+- 175 files · ~1,352,823 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 935 nodes · 1160 edges · 183 communities (109 shown, 74 thin omitted)
+- 934 nodes · 1159 edges · 182 communities (109 shown, 73 thin omitted)
 - Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 238 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c3ce5cd4`
+- Built from commit: `e8e41894`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -134,7 +134,6 @@
 - [[_COMMUNITY_Community 171|Community 171]]
 - [[_COMMUNITY_Community 172|Community 172]]
 - [[_COMMUNITY_Community 173|Community 173]]
-- [[_COMMUNITY_Community 182|Community 182]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `User` - 27 edges
@@ -160,7 +159,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (183 total, 74 thin omitted)
+## Communities (182 total, 73 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -299,8 +298,8 @@ Cohesion: 0.67
 Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation Section
 
 ### Community 124 - "Community 124"
-Cohesion: 0.10
-Nodes (9): Admin::TransportsController, Admin::VehiclesController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration, Transport, Vehicle (+1 more)
+Cohesion: 0.08
+Nodes (11): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration (+3 more)
 
 ### Community 126 - "Community 126"
 Cohesion: 0.14
@@ -343,7 +342,7 @@ Cohesion: 0.67
 Nodes (3): 🖥️ Costruzione dell'applicazione, Disposizione dell'interfaccia principale ad accesso avvenuto, Disposizione dell'interfaccia principale ad accesso non avvenuto
 
 ### Community 158 - "Community 158"
-Cohesion: 0.27
+Cohesion: 0.31
 Nodes (3): ApplicationController, ApplicationController, HomeController
 
 ## Ambiguous Edges - Review These
@@ -355,7 +354,7 @@ Nodes (3): ApplicationController, ApplicationController, HomeController
 ## Knowledge Gaps
 - **216 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+211 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **74 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **73 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

@@ -11,8 +11,8 @@ RSpec.describe "MissionRequests", type: :system do
   it "mostra solo le richieste missione dell'utente corrente nell'elenco" do
     visit mission_requests_path
 
-    expect(page).to have_content("MR-MR-FVG-FVG-202608180925-0001")
-    expect(page).not_to have_content("MR-LL-FVG-FVG-202608180925-0002")
+    expect(page).to have_link(href: mission_request_path(mission_request))
+    expect(page).not_to have_link(href: mission_request_path(other_mission_request))
   end
 
   it "richiede conferma prima di eliminare una richiesta missione" do

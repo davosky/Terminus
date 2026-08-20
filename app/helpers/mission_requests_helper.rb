@@ -28,4 +28,12 @@ module MissionRequestsHelper
     else                       "btn btn-primary"
     end
   end
+
+  def form_hr_mission_request
+    case action_name
+    when "new", "create"  then "text-success"
+    when "edit", "update" then "text-warning"
+    else                       "text-primary"
+    end
+  end
 end

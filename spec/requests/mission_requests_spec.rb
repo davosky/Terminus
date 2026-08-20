@@ -12,8 +12,8 @@ RSpec.describe "MissionRequests", type: :request do
     it "mostra solo le richieste missione dell'utente corrente" do
       get mission_requests_path
 
-      expect(response.body).to include(mission_request.name)
-      expect(response.body).not_to include(other_mission_request.name)
+      expect(response.body).to include(mission_request_path(mission_request))
+      expect(response.body).not_to include(mission_request_path(other_mission_request))
     end
   end
 

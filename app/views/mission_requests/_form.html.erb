@@ -20,17 +20,16 @@
     <%= f.label :request_date, class: form_label_class_mission_request %>
     <%= f.date_field :request_date, class: "form-control" %>
   </div>
-
-  <div data-controller="mission-request-mode">
+  <div data-controller="mission-request-mode" class="bg-secondary border-0 rounded pt-1 pb-1 ps-2 pe-2 mb-3">
+    <hr class="<%= form_hr_mission_request %>" />
     <label class="<%= form_label_class_mission_request %> d-block">Modalità di Inserimento</label>
     <div class="btn-group mb-3" role="group">
       <input type="radio" class="btn-check" name="input_mode" id="input_mode_stored" autocomplete="off" data-action="mission-request-mode#showStored" <%= "checked" if stored_mode_checked?(mission_request) %>>
-      <label class="btn btn-outline-primary" for="input_mode_stored">Modelli Memorizzati</label>
-
+      <label class="btn btn-outline-dark" for="input_mode_stored">Modelli Memorizzati</label>
       <input type="radio" class="btn-check" name="input_mode" id="input_mode_free" autocomplete="off" data-action="mission-request-mode#showFree" <%= "checked" unless stored_mode_checked?(mission_request) %>>
-      <label class="btn btn-outline-primary" for="input_mode_free">Campi Liberi</label>
+      <label class="btn btn-outline-dark" for="input_mode_free">Campi Liberi</label>
     </div>
-
+    <hr class="<%= form_hr_mission_request %>" />
     <div data-mission-request-mode-target="stored" class="<%= "d-none" unless stored_mode_checked?(mission_request) %>">
       <div class="mb-3">
         <%= f.label :reason_id, MissionRequest.human_attribute_name(:reason), class: form_label_class_mission_request %>
@@ -49,7 +48,6 @@
         <%= f.collection_select :path_id, current_user.paths.ordered, :id, :name, { include_blank: "Seleziona un percorso" }, class: "form-select" %>
       </div>
     </div>
-
     <div data-mission-request-mode-target="free" class="<%= "d-none" if stored_mode_checked?(mission_request) %>">
       <div class="mb-3">
         <%= f.label :reason_fr, class: form_label_class_mission_request %>
@@ -77,7 +75,6 @@
       </div>
     </div>
   </div>
-
   <div class="d-flex gap-2">
     <%= f.button class: form_submit_accent_mission_request do %>
       <i class="bi bi-airplane me-2"></i><%= form_submit_label_mission_request %>

@@ -6,11 +6,11 @@
         <h2>
           <%= image_tag("mission_requests/mission_requests_index.svg", class: "img-fluid me-3", alt: "mission_requests_index") %>
           <span class="text-primary">
-            <i>Le mie Richieste Missione</i>
+            <i>Richieste Missione</i>
           </span>
         </h2>
         <%= link_to new_mission_request_path, class: "btn btn-primary" do %>
-          <i class="bi bi-plus-lg"></i><i class="bi bi-airplane me-2"></i>Nuova Richiesta Missione
+          <i class="bi bi-plus-lg"></i><i class="bi bi-airplane me-2"></i>Nuova Richiesta
         <% end %>
       </div>
       <hr class="text-primary mt-3 mb-4"/>
@@ -21,14 +21,28 @@
               <% @mission_requests.each do |mission_request| %>
                 <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2">
                   <div>
-                    <span class="fs-4 fw-bold">
-                      <%= mission_request.name %>
+                    <span class="ms-2 fs-6 fw-bold text-primary">
+                      <i class="bi bi-calendar-event me-1"></i>
+                      <%= l(mission_request.departure_date, format: :long) if mission_request.departure_date %>
+                      <span class="fs-6 fw-bold text-info">
+                        &rarr;
+                      </span>
+                      <%= l(mission_request.return_date, format: :long) if mission_request.return_date %>
                     </span>
-                    <span class="ms-3 fs-5 fw-normal">
-                      <%= l(mission_request.departure_date, format: :long) if mission_request.departure_date %> &rarr; <%= l(mission_request.return_date, format: :long) if mission_request.return_date %>
+                    <br/>
+                    <span class="ms-2 fs-6 fst-italic text-primary">
+                      <i class="bi bi-geo-alt text-primary me-1"></i>
+                      <%= mission_request.display_place %>
                     </span>
-                    <span class="ms-3 fs-6 fw-normal text-body-secondary">
+                    <br/>
+                    <span class="ms-2 fs-6 fst-italic text-primary">
+                      <i class="bi bi-file-text text-primary me-1"></i>
                       <%= mission_request.display_reason %>
+                    </span>
+                    <br/>
+                    <span class="ms-2 fs-6 fst-italic" style="color: #e83e8c;">
+                      <i class="bi bi-person text-primary me-1"></i>
+                      <%= "#{mission_request.user.first_name} #{mission_request.user.last_name}" %>
                     </span>
                   </div>
                   <div class="d-flex gap-2">

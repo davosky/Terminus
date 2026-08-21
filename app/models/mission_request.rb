@@ -4,14 +4,20 @@ class MissionRequest < ApplicationRecord
   belongs_to :place, optional: true
   belongs_to :structure, optional: true
   belongs_to :path, optional: true
+  belongs_to :transport
+  belongs_to :vehicle, optional: true
 
   validates :name, presence: true, uniqueness: true
   validates :departure_date, presence: true
   validates :return_date, presence: true
   validates :request_date, presence: true
+  validates :rejection_motivation, presence: true, if: -> { request_approved == false }
   validate :stored_or_free_fields_present
 
   scope :ordered, -> { order(request_date: :desc) }
+  scope :pending, -> { where(request_approved: nil) }
+  scope :approved, -> { where(request_approved: true) }
+  scope :rejected, -> { where(request_approved: false) }
 
   def display_reason
     reason&.name || reason_fr
@@ -35,6 +41,26 @@ class MissionRequest < ApplicationRecord
 
   def display_highway_cost
     path&.highway_cost || highway_cost_fr
+  end
+
+  def pending?
+    request_approved.nil?
+  end
+
+  def rejected?
+    request_approved == false
+  end
+
+  def locked?
+    !pending?
+  end
+
+  def decision_label
+    request_approved? ? "Approvata" : "Respinta"
+  end
+
+  def candidate_validators
+    User.where(manager: true, region: user.region, province: user.province, institute: user.institute)
   end
 
   private

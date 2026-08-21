@@ -19,6 +19,7 @@ class MissionRequestsController < ApplicationController
     authorize @mission_request
 
     if @mission_request.save
+      notify_candidate_validators
       redirect_to mission_requests_path, notice: "Richiesta missione creata con successo."
     else
       render :new, status: :unprocessable_entity
@@ -29,6 +30,11 @@ class MissionRequestsController < ApplicationController
   end
 
   def update
+    if @mission_request.locked?
+      redirect_to edit_mission_request_path(@mission_request), alert: "Richiesta #{@mission_request.decision_label} - Questo record non può essere modificato."
+      return
+    end
+
     if @mission_request.update(mission_request_params)
       redirect_to mission_requests_path, notice: "Richiesta missione aggiornata con successo."
     else
@@ -40,6 +46,11 @@ class MissionRequestsController < ApplicationController
   end
 
   def destroy
+    if @mission_request.locked?
+      redirect_to confirm_destroy_mission_request_path(@mission_request), alert: "Richiesta #{@mission_request.decision_label} - Questo record non può essere eliminato."
+      return
+    end
+
     @mission_request.destroy
     redirect_to mission_requests_path, notice: "Richiesta missione eliminata con successo.", status: :see_other
   end
@@ -56,7 +67,14 @@ class MissionRequestsController < ApplicationController
       :departure_date, :return_date, :request_date,
       :reason_id, :place_id, :structure_id, :path_id,
       :reason_fr, :place_fr, :structure_fr, :path_fr,
-      :path_lenght_fr, :highway_cost_fr
+      :path_lenght_fr, :highway_cost_fr,
+      :transport_id, :vehicle_id
     )
+  end
+
+  def notify_candidate_validators
+    @mission_request.candidate_validators.find_each do |validator|
+      MissionRequestMailer.validation_request(@mission_request, validator).deliver_later
+    end
   end
 end

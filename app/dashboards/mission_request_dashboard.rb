@@ -23,6 +23,10 @@ class MissionRequestDashboard < Administrate::BaseDashboard
     path_fr: Field::String,
     path_lenght_fr: Field::Number.with_options(decimals: 2),
     highway_cost_fr: Field::Number.with_options(decimals: 2),
+    transport: Field::BelongsTo,
+    vehicle: Field::BelongsTo,
+    request_approved: Field::Boolean,
+    rejection_motivation: Field::Text,
     user: Field::BelongsTo,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
@@ -59,6 +63,10 @@ class MissionRequestDashboard < Administrate::BaseDashboard
     path_fr
     path_lenght_fr
     highway_cost_fr
+    transport
+    vehicle
+    request_approved
+    rejection_motivation
     user
     created_at
     updated_at
@@ -81,6 +89,10 @@ class MissionRequestDashboard < Administrate::BaseDashboard
     path_fr
     path_lenght_fr
     highway_cost_fr
+    transport
+    vehicle
+    request_approved
+    rejection_motivation
     user
   ].freeze
 

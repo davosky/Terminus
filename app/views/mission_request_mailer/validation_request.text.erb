@@ -1,0 +1,13 @@
+Gentile <%= @validator.first_name %>,
+
+<%= @mission_request.user.first_name %> <%= @mission_request.user.last_name %> ha presentato una richiesta di missione che richiede la tua approvazione.
+
+Data richiesta: <%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %>
+Data partenza: <%= l(@mission_request.departure_date, format: :long) if @mission_request.departure_date %>
+Data ritorno: <%= l(@mission_request.return_date, format: :long) if @mission_request.return_date %>
+Motivo: <%= @mission_request.display_reason %>
+Luogo: <%= @mission_request.display_place %>
+Struttura: <%= @mission_request.display_structure %>
+
+Approva: <%= @approve_url %>
+Respingi: <%= @reject_url %>

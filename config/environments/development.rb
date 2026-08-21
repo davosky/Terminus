@@ -37,6 +37,13 @@ Rails.application.configure do
   # Make template changes take effect immediately.
   config.action_mailer.perform_caching = false
 
+  # Preview mail in the browser instead of sending it. letter_opener uses Launchy,
+  # which prefers $BROWSER when set — but .env sets BROWSER="chromium --headless"
+  # for headless-Chromium testing scripts, which would make letter_opener open
+  # mail previews invisibly. Ignore it here so Launchy falls back to xdg-open.
+  ENV.delete("BROWSER")
+  config.action_mailer.delivery_method = :letter_opener
+
   # Set localhost to be used by links generated in mailer templates.
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
 

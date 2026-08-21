@@ -32,11 +32,26 @@
             Luogo della missione <strong><%= @mission_request.display_place %></strong> presso <strong><%= @mission_request.display_structure %></strong>.
             <br/>
             In tutto percorrendo <strong><%= number_with_precision(@mission_request.display_path_lenght, precision: 2) %></strong> km con un costo autostradale pari a <strong><%= number_to_currency(@mission_request.display_highway_cost) %></strong>.
+            <br/>
+            Trasporto utilizzato <strong><%= @mission_request.transport.name %></strong><% if @mission_request.vehicle %> con il veicolo <strong><%= @mission_request.vehicle.name %></strong><% end %>.
+          </p>
+          <p class="fs-6">
+            <% if @mission_request.pending? %>
+              Stato della richiesta: <span class="badge text-bg-secondary">In attesa di approvazione</span>
+            <% elsif @mission_request.rejected? %>
+              Stato della richiesta: <span class="badge text-bg-danger">Respinta</span>
+              <br/>
+              Motivo: <%= @mission_request.rejection_motivation %>
+            <% else %>
+              Stato della richiesta: <span class="badge text-bg-success">Approvata</span>
+            <% end %>
           </p>
           <hr class="text-info mt-3 mb-4"/>
           <div class="d-flex gap-2 mt-3">
-            <%= link_to edit_mission_request_path(@mission_request), class: "btn btn-primary" do %>
-              <i class="bi bi-pencil"></i>&emsp;Modifica
+            <% unless @mission_request.locked? %>
+              <%= link_to edit_mission_request_path(@mission_request), class: "btn btn-primary" do %>
+                <i class="bi bi-pencil"></i>&emsp;Modifica
+              <% end %>
             <% end %>
             <%= link_to mission_requests_path, class: "btn btn-secondary" do %>
               <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco

@@ -9,9 +9,13 @@
         </span>
       </h2>
       <hr class="text-warning mt-3 mb-4"/>
-      <div class="card border-0">
+      <div class="card <%= @mission_request.locked? ? "border-danger" : "border-0" %>">
         <div class="card-body">
-          <%= render "form", mission_request: @mission_request %>
+          <% if @mission_request.locked? %>
+            <%= render "locked_warning", mission_request: @mission_request, action_label: "modificato" %>
+          <% else %>
+            <%= render "form", mission_request: @mission_request %>
+          <% end %>
         </div>
       </div>
     </div>

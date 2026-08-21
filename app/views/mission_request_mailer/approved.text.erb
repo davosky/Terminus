@@ -1,0 +1,5 @@
+Gentile <%= @mission_request.user.first_name %>,
+
+La tua richiesta di missione del <%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %> è stata approvata.
+
+È stato creato automaticamente il rimborso spese <%= @reimbursement.name %>, che trovi tra i tuoi rimborsi spese da completare.

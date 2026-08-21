@@ -3,6 +3,7 @@ class Transport < ApplicationRecord
 
   belongs_to :user
   has_many :reimbursements, dependent: :restrict_with_error
+  has_many :mission_requests, dependent: :restrict_with_error
 
   validates :name, presence: true
 

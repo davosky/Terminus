@@ -1,0 +1,32 @@
+<% content_for :title, "Respingi Richiesta Missione - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="card border-0">
+        <div class="card-body">
+          <h4 class="text-primary mb-3">Respingi Richiesta Missione</h4>
+          <p>
+            Richiesta di <strong><%= @mission_request.user.first_name %> <%= @mission_request.user.last_name %></strong>
+            del <strong><%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %></strong>.
+          </p>
+          <% if @mission_request.errors.any? %>
+            <div class="alert alert-danger">
+              <ul class="mb-0">
+                <% @mission_request.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <%= form_with url: reject_mission_request_validation_path(token: params[:token]), method: :post do %>
+            <div class="mb-3">
+              <label for="rejection_motivation" class="form-label"><%= MissionRequest.human_attribute_name(:rejection_motivation) %></label>
+              <textarea name="rejection_motivation" id="rejection_motivation" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Respingi</button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

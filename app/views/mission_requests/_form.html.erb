@@ -76,6 +76,14 @@
       </div>
     </div>
   </div>
+  <div class="mb-3">
+    <%= f.label :transport_id, MissionRequest.human_attribute_name(:transport), class: form_label_class_mission_request %>
+    <%= f.collection_select :transport_id, current_user.transports.ordered, :id, :name, { include_blank: "Seleziona un trasporto" }, class: "form-select" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :vehicle_id, MissionRequest.human_attribute_name(:vehicle), class: form_label_class_mission_request %>
+    <%= f.collection_select :vehicle_id, current_user.vehicles.ordered, :id, :name, { include_blank: "Seleziona un veicolo" }, class: "form-select" %>
+  </div>
   <div class="d-flex gap-2">
     <%= f.button class: form_submit_accent_mission_request do %>
       <i class="bi bi-airplane me-2"></i><%= form_submit_label_mission_request %>

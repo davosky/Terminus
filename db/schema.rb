@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_20_144520) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_090113) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -26,18 +26,24 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_20_144520) do
     t.bigint "place_id"
     t.string "reason_fr"
     t.bigint "reason_id"
+    t.text "rejection_motivation"
+    t.boolean "request_approved"
     t.date "request_date"
     t.date "return_date"
     t.string "structure_fr"
     t.bigint "structure_id"
+    t.bigint "transport_id", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
+    t.bigint "vehicle_id"
     t.index ["name"], name: "index_mission_requests_on_name", unique: true
     t.index ["path_id"], name: "index_mission_requests_on_path_id"
     t.index ["place_id"], name: "index_mission_requests_on_place_id"
     t.index ["reason_id"], name: "index_mission_requests_on_reason_id"
     t.index ["structure_id"], name: "index_mission_requests_on_structure_id"
+    t.index ["transport_id"], name: "index_mission_requests_on_transport_id"
     t.index ["user_id"], name: "index_mission_requests_on_user_id"
+    t.index ["vehicle_id"], name: "index_mission_requests_on_vehicle_id"
   end
 
   create_table "paths", force: :cascade do |t|
@@ -175,7 +181,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_20_144520) do
   add_foreign_key "mission_requests", "places"
   add_foreign_key "mission_requests", "reasons"
   add_foreign_key "mission_requests", "structures"
+  add_foreign_key "mission_requests", "transports"
   add_foreign_key "mission_requests", "users"
+  add_foreign_key "mission_requests", "vehicles"
   add_foreign_key "paths", "users"
   add_foreign_key "places", "users"
   add_foreign_key "reasons", "users"

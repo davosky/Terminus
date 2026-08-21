@@ -1,0 +1,52 @@
+<% content_for :title, "Richieste Approvate - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("mission_requests/mission_requests_index.svg", class: "img-fluid me-3", alt: "mission_requests_index") %>
+          <span class="text-primary">
+            <i>Richieste Approvate</i>
+          </span>
+        </h2>
+        <%= link_to validator_mission_requests_path, class: "btn btn-outline-primary" do %>
+          <i class="bi bi-hourglass-split me-2"></i>Richieste da Approvare
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <% if @mission_requests.any? %>
+            <div class="list-group">
+              <% @mission_requests.each do |mission_request| %>
+                <div class="list-group-item">
+                  <span class="ms-2 fs-6 fw-bold text-primary">
+                    <i class="bi bi-calendar-event me-1"></i>
+                    <%= l(mission_request.request_date, format: :long) if mission_request.request_date %>
+                  </span>
+                  <br/>
+                  <span class="ms-2 fs-6 fst-italic text-primary">
+                    <i class="bi bi-geo-alt text-primary me-1"></i>
+                    <%= mission_request.display_place %>
+                  </span>
+                  <br/>
+                  <span class="ms-2 fs-6 fst-italic text-primary">
+                    <i class="bi bi-file-text text-primary me-1"></i>
+                    <%= mission_request.display_reason %>
+                  </span>
+                  <br/>
+                  <span class="ms-2 fs-6 fst-italic" style="color: #e83e8c;">
+                    <i class="bi bi-person text-primary me-1"></i>
+                    <%= "#{mission_request.user.first_name} #{mission_request.user.last_name}" %>
+                  </span>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Non ci sono ancora richieste missione approvate.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

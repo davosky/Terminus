@@ -85,6 +85,10 @@ it:
         path_fr: Percorso
         path_lenght_fr: Lunghezza Percorso
         highway_cost_fr: Costo Autostrada
+        transport: Trasporto
+        vehicle: Veicolo
+        request_approved: Richiesta Approvata
+        rejection_motivation: Motivo Respinta
         user: Utente
         created_at: Creato il
         updated_at: Aggiornato il

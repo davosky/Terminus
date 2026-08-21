@@ -8,6 +8,7 @@ FactoryBot.define do
     place
     structure
     path
+    transport
     user
 
     trait :free_fields do

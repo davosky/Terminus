@@ -1,0 +1,21 @@
+<p>Gentile <%= @validator.first_name %>,</p>
+
+<p>
+  <strong><%= @mission_request.user.first_name %> <%= @mission_request.user.last_name %></strong>
+  ha presentato una richiesta di missione che richiede la tua approvazione.
+</p>
+
+<ul>
+  <li>Data richiesta: <%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %></li>
+  <li>Data partenza: <%= l(@mission_request.departure_date, format: :long) if @mission_request.departure_date %></li>
+  <li>Data ritorno: <%= l(@mission_request.return_date, format: :long) if @mission_request.return_date %></li>
+  <li>Motivo: <%= @mission_request.display_reason %></li>
+  <li>Luogo: <%= @mission_request.display_place %></li>
+  <li>Struttura: <%= @mission_request.display_structure %></li>
+</ul>
+
+<p>
+  <a href="<%= @approve_url %>" style="background-color:#198754;color:#fff;padding:10px 20px;text-decoration:none;border-radius:4px;">Approva</a>
+  &emsp;
+  <a href="<%= @reject_url %>" style="background-color:#dc3545;color:#fff;padding:10px 20px;text-decoration:none;border-radius:4px;">Respingi</a>
+</p>

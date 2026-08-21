@@ -1,0 +1,83 @@
+<% content_for :title, "Richieste da Approvare - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("mission_requests/mission_requests_index.svg", class: "img-fluid me-3", alt: "mission_requests_index") %>
+          <span class="text-primary">
+            <i>Richieste da Approvare</i>
+          </span>
+        </h2>
+        <%= link_to approved_validator_mission_requests_path, class: "btn btn-outline-primary" do %>
+          <i class="bi bi-check2-circle me-2"></i>Richieste Approvate
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <% if @mission_requests.any? %>
+            <div class="list-group">
+              <% @mission_requests.each do |mission_request| %>
+                <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2 <%= request_age_background_class(mission_request) %>">
+                  <div>
+                    <span class="ms-2 fs-6 fw-bold text-primary">
+                      <i class="bi bi-calendar-event me-1"></i>
+                      <%= l(mission_request.request_date, format: :long) if mission_request.request_date %>
+                    </span>
+                    <br/>
+                    <span class="ms-2 fs-6 fst-italic text-primary">
+                      <i class="bi bi-geo-alt text-primary me-1"></i>
+                      <%= mission_request.display_place %>
+                    </span>
+                    <br/>
+                    <span class="ms-2 fs-6 fst-italic text-primary">
+                      <i class="bi bi-file-text text-primary me-1"></i>
+                      <%= mission_request.display_reason %>
+                    </span>
+                    <br/>
+                    <span class="ms-2 fs-6 fst-italic" style="color: #e83e8c;">
+                      <i class="bi bi-person text-primary me-1"></i>
+                      <%= "#{mission_request.user.first_name} #{mission_request.user.last_name}" %>
+                    </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <%= button_to approve_validator_mission_request_path(mission_request), method: :patch, class: "btn btn-sm btn-success" do %>
+                      <i class="bi bi-check-lg"></i> Approva
+                    <% end %>
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#reject-modal-<%= mission_request.id %>">
+                      <i class="bi bi-x-lg"></i> Respingi
+                    </button>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="reject-modal-<%= mission_request.id %>" tabindex="-1" aria-labelledby="reject-modal-label-<%= mission_request.id %>" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <%= form_with url: reject_validator_mission_request_path(mission_request), method: :patch do %>
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="reject-modal-label-<%= mission_request.id %>">Respingi Richiesta Missione</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+                        </div>
+                        <div class="modal-body">
+                          <label for="rejection_motivation_<%= mission_request.id %>" class="form-label"><%= MissionRequest.human_attribute_name(:rejection_motivation) %></label>
+                          <textarea name="rejection_motivation" id="rejection_motivation_<%= mission_request.id %>" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                          <button type="submit" class="btn btn-danger">Respingi</button>
+                        </div>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Non ci sono richieste missione da approvare.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

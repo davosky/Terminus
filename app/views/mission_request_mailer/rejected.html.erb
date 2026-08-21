@@ -1,0 +1,9 @@
+<p>Gentile <%= @mission_request.user.first_name %>,</p>
+
+<p>
+  La tua richiesta di missione del
+  <strong><%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %></strong>
+  è stata <strong>respinta</strong>.
+</p>
+
+<p>Motivo: <%= @mission_request.rejection_motivation %></p>

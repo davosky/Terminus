@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-08-21)
 
 ## Corpus Check
-- 191 files · ~1,355,871 words
+- 191 files · ~1,355,561 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 998 nodes · 1233 edges · 191 communities (118 shown, 73 thin omitted)
-- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 257 edges (avg confidence: 0.86)
+- 997 nodes · 1230 edges · 191 communities (118 shown, 73 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 256 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `82427a06`
+- Built from commit: `06a8a42f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -368,13 +368,13 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `Application Auth Base` to `Admin Panel: Transports & Vehicles`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Path/Place/Reason/Structure Test Suite`, `Paths Controller CRUD`, `Transport Protected-Record Safeguard`?**
+- **Why does `User` connect `Application Auth Base` to `Admin Panel: Transports & Vehicles`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Path/Place/Reason/Structure Test Suite`, `Paths Controller CRUD`?**
   _High betweenness centrality (0.101) - this node is a cross-community bridge._
+- **Why does `MissionRequestsController` connect `Transport Protected-Record Safeguard` to `Application Auth Base`?**
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
 - **Are the 18 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
   _`User` has 18 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `PlacesController` (e.g. with `paths_controller.rb` and `reasons_controller.rb`) actually correct?**
   _`PlacesController` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `ApplicationController#user_not_authorized`) actually correct?**
   _`ApplicationPolicy#admin?` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `name`, `private`, `esbuild` to the rest of the system?**
-  _218 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -1789,7 +1789,7 @@
       "label": "Scope",
       "file_type": "code",
       "source_file": "app/policies/validator_mission_request_policy.rb",
-      "source_location": "L23",
+      "source_location": "L22",
       "id": "policies_validator_mission_request_policy_scope",
       "community": 168,
       "norm_label": "scope"
@@ -1798,7 +1798,7 @@
       "label": ".resolve()",
       "file_type": "code",
       "source_file": "app/policies/validator_mission_request_policy.rb",
-      "source_location": "L24",
+      "source_location": "L23",
       "id": "policies_validator_mission_request_policy_scope_resolve",
       "community": 168,
       "norm_label": ".resolve()"
@@ -3087,14 +3087,14 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L62",
       "id": "models_mission_request_missionrequest_candidate_validators",
-      "community": 16,
+      "community": 4,
       "norm_label": ".candidate_validators()"
     },
     {
       "label": ".stored_or_free_fields_present()",
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
-      "source_location": "L70",
+      "source_location": "L68",
       "id": "models_mission_request_missionrequest_stored_or_free_fields_present",
       "community": 16,
       "norm_label": ".stored_or_free_fields_present()"
@@ -3103,7 +3103,7 @@
       "label": ".stored_fields_present?()",
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
-      "source_location": "L76",
+      "source_location": "L74",
       "id": "models_mission_request_missionrequest_stored_fields_present",
       "community": 16,
       "norm_label": ".stored_fields_present?()"
@@ -3112,7 +3112,7 @@
       "label": ".free_fields_present?()",
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
-      "source_location": "L80",
+      "source_location": "L78",
       "id": "models_mission_request_missionrequest_free_fields_present",
       "community": 16,
       "norm_label": ".free_fields_present?()"
@@ -4077,7 +4077,7 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L75",
       "id": "controllers_mission_requests_controller_missionrequestscontroller_notify_candidate_validators",
-      "community": 16,
+      "community": 4,
       "norm_label": ".notify_candidate_validators()"
     },
     {
@@ -4099,19 +4099,10 @@
       "norm_label": "missionrequestvalidationscontroller"
     },
     {
-      "label": ".approve_form()",
-      "file_type": "code",
-      "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L11",
-      "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve_form",
-      "community": 168,
-      "norm_label": ".approve_form()"
-    },
-    {
       "label": ".approve()",
       "file_type": "code",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L19",
+      "source_location": "L7",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve",
       "community": 168,
       "norm_label": ".approve()"
@@ -4120,7 +4111,7 @@
       "label": ".reject_form()",
       "file_type": "code",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L30",
+      "source_location": "L18",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_reject_form",
       "community": 168,
       "norm_label": ".reject_form()"
@@ -4129,7 +4120,7 @@
       "label": ".reject()",
       "file_type": "code",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L38",
+      "source_location": "L26",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_reject",
       "community": 168,
       "norm_label": ".reject()"
@@ -4138,7 +4129,7 @@
       "label": ".set_mission_request()",
       "file_type": "code",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L58",
+      "source_location": "L46",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_set_mission_request",
       "community": 168,
       "norm_label": ".set_mission_request()"
@@ -4147,7 +4138,7 @@
       "label": ".render_result()",
       "file_type": "code",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L62",
+      "source_location": "L50",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_render_result",
       "community": 168,
       "norm_label": ".render_result()"
@@ -5094,7 +5085,7 @@
       "source_file": "app/mailers/mission_request_mailer.rb",
       "source_location": "L2",
       "id": "mailers_mission_request_mailer_missionrequestmailer_validation_request",
-      "community": 16,
+      "community": 4,
       "norm_label": ".validation_request()"
     },
     {
@@ -13622,9 +13613,9 @@
       "source_file": "app/helpers/mission_requests_helper.rb",
       "source_location": "L40",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_helpers_mission_requests_helper_rb",
-      "target": "helpers_mission_requests_helper_mission_request_index_border_class"
+      "target": "helpers_mission_requests_helper_mission_request_index_border_class",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -14760,17 +14751,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "models_mission_request_missionrequest_locked",
-      "target": "models_mission_request_missionrequest_pending"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve_form",
       "target": "models_mission_request_missionrequest_pending"
     },
     {
@@ -16690,16 +16670,6 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller",
-      "target": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve_form",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -16745,17 +16715,6 @@
       "confidence_score": 1.0,
       "source": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller",
       "target": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_render_result"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/controllers/mission_request_validations_controller.rb",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve_form",
-      "target": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_render_result",
-      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -22529,5 +22488,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "82427a06b10c51e78a3ce3be1f75c21cc2cd3299"
+  "built_at_commit": "06a8a42f760dafb81fddc95ce2af8767a0ec92ac"
 }

@@ -1,12 +1,12 @@
 # Graph Report - Terminus  (2026-08-21)
 
 ## Corpus Check
-- 191 files · ~1,355,561 words
+- 191 files · ~1,355,255 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 997 nodes · 1230 edges · 191 communities (118 shown, 73 thin omitted)
-- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 256 edges (avg confidence: 0.86)
+- 994 nodes · 1221 edges · 193 communities (119 shown, 74 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 251 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
@@ -106,7 +106,9 @@
 - [[_COMMUNITY_Community 122|Community 122]]
 - [[_COMMUNITY_Community 123|Community 123]]
 - [[_COMMUNITY_Community 124|Community 124]]
+- [[_COMMUNITY_Community 125|Community 125]]
 - [[_COMMUNITY_Community 126|Community 126]]
+- [[_COMMUNITY_Community 127|Community 127]]
 - [[_COMMUNITY_Community 128|Community 128]]
 - [[_COMMUNITY_Community 129|Community 129]]
 - [[_COMMUNITY_Community 130|Community 130]]
@@ -139,8 +141,8 @@
 ## God Nodes (most connected - your core abstractions)
 1. `User` - 32 edges
 2. `CLAUDE.md — Guida per Claude Code` - 23 edges
-3. `MissionRequest` - 15 edges
-4. `PlacesController` - 15 edges
+3. `PlacesController` - 15 edges
+4. `MissionRequest` - 13 edges
 5. `ApplicationPolicy#admin?` - 13 edges
 6. `MissionRequestsController` - 12 edges
 7. `Reason` - 11 edges
@@ -160,35 +162,31 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (191 total, 73 thin omitted)
+## Communities (193 total, 74 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
 Nodes (51): ActiveStorage (upload sicuro), Autenticazione e Autorizzazione Robuste, Disposizione Interfaccia Autenticata, Brakeman (analisi statica), bundler-audit (audit dipendenze), Protezione Cross-Site Request Forgery (CSRF), Devise (gem autenticazione), Due Utenti Database Separati (+43 more)
 
 ### Community 1 - "Admin Panel: Transports & Vehicles"
-Cohesion: 0.06
-Nodes (22): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, PathDashboard, PlaceDashboard, ReasonDashboard, StructureDashboard (+14 more)
+Cohesion: 0.05
+Nodes (23): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, PathDashboard, PlaceDashboard, ReasonDashboard, StructureDashboard (+15 more)
 
 ### Community 3 - "Terminus App Blueprint (Devise/Users/Setup)"
 Cohesion: 0.07
 Nodes (15): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader (+7 more)
 
 ### Community 4 - "Application Auth Base"
-Cohesion: 0.06
-Nodes (16): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, MissionRequestMailer, User model spec, User (+8 more)
+Cohesion: 0.10
+Nodes (8): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope, MissionRequestPolicy, Scope, ReimbursementPolicy, Scope
 
 ### Community 5 - "Dev/Build Scripts"
-Cohesion: 0.11
-Nodes (13): Transport Factory, Vehicle Factory, Vehicle Model Spec, Scope, TransportPolicy, TransportPolicy, Scope, VehiclePolicy (+5 more)
+Cohesion: 0.19
+Nodes (9): Transport Factory, Vehicle Factory, Vehicle Model Spec, Scope, VehiclePolicy, VehiclePolicy, Vehicles Request Spec, RSpec Rails Helper Configuration (+1 more)
 
 ### Community 6 - "Rails Security Best Practices Guide"
 Cohesion: 0.07
 Nodes (26): bin/dev Server Script, bin/docker-entrypoint Script, bin/rails CLI Script, bin/setup Script, browserslist, dependencies, autoprefixer, bootstrap (+18 more)
-
-### Community 7 - "Reasons/Structures Controllers CRUD"
-Cohesion: 0.12
-Nodes (4): ReasonsController, StructuresController, ReasonsController, StructuresController
 
 ### Community 8 - "Paths Controller CRUD"
 Cohesion: 0.13
@@ -196,11 +194,15 @@ Nodes (4): PathsController, PathsController, PlacesController, PlacesController
 
 ### Community 9 - "Mission Request Controller & Code Generator"
 Cohesion: 0.19
-Nodes (4): PathPolicy, Scope, ReasonPolicy, Scope
+Nodes (4): PlacePolicy, Scope, Scope, StructurePolicy
 
 ### Community 10 - "Path/Structure Authorization Policies"
 Cohesion: 0.19
-Nodes (4): PlacePolicy, Scope, Scope, StructurePolicy
+Nodes (4): PathPolicy, Scope, ReasonPolicy, Scope
+
+### Community 11 - "Path/Place/Reason/Structure Test Suite"
+Cohesion: 0.17
+Nodes (3): MissionRequestsController, MissionRequestsController, MissionRequestCodeGenerator
 
 ### Community 12 - "Self-Service Form Helpers"
 Cohesion: 0.26
@@ -219,8 +221,8 @@ Cohesion: 0.33
 Nodes (8): Mission Requests Destroy Icon (SVG), Mission Request Destroy Action Icon, MissionRequest Edit Action Icon, Mission Requests Index Icon (SVG), Mission Requests Index Semantic Icon, Mission Requests New Icon (SVG), Mission Request 'New' Action Icon, Mission Request Show Icon (mountain/nature illustration)
 
 ### Community 16 - "Transport Protected-Record Safeguard"
-Cohesion: 0.08
-Nodes (6): MissionRequestsController, MissionRequestsController, mission_request_index_border_class(), stored_mode_checked?(), MissionRequest, MissionRequestCodeGenerator
+Cohesion: 0.07
+Nodes (11): Admin::ApplicationController#authenticate_admin, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, MissionRequestMailer, MissionRequest, User model spec, User (+3 more)
 
 ### Community 19 - "Secure Headers & CSP Config"
 Cohesion: 0.83
@@ -310,6 +312,10 @@ Nodes (11): Admin::TransportsController, Admin::VehiclesController, VehiclesCont
 Cohesion: 0.14
 Nodes (13): ❌ Anti-Pattern da Evitare, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:bash (Ruby:        >= 4.0.1), code:ruby (# ✅ Sempre scoped all'utente), Conclusione, Gem, Librerie e Strumenti Aggiuntivi (+5 more)
 
+### Community 127 - "Community 127"
+Cohesion: 0.29
+Nodes (4): Scope, TransportPolicy, TransportPolicy, VehiclePolicy::Scope
+
 ### Community 128 - "Community 128"
 Cohesion: 0.18
 Nodes (10): Avvio del progetto, code:bash (bin/setup   # setup iniziale (dipendenze, database)), code:bash (bin/setup   # initial setup (dependencies, database)), Getting started, License, Licenza, Stack tecnico, Tech stack (+2 more)
@@ -359,7 +365,7 @@ Nodes (3): MissionRequestValidationsController, Scope, ValidatorMissionRequestPo
 ## Knowledge Gaps
 - **216 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+211 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **73 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **74 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -368,10 +374,10 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `Application Auth Base` to `Admin Panel: Transports & Vehicles`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Path/Place/Reason/Structure Test Suite`, `Paths Controller CRUD`?**
+- **Why does `User` connect `Transport Protected-Record Safeguard` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Paths Controller CRUD`, `Community 125`, `Community 127`?**
   _High betweenness centrality (0.101) - this node is a cross-community bridge._
-- **Why does `MissionRequestsController` connect `Transport Protected-Record Safeguard` to `Application Auth Base`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+- **Why does `MissionRequestsController` connect `Path/Place/Reason/Structure Test Suite` to `Transport Protected-Record Safeguard`?**
+  _High betweenness centrality (0.039) - this node is a cross-community bridge._
 - **Are the 18 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
   _`User` has 18 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `PlacesController` (e.g. with `paths_controller.rb` and `reasons_controller.rb`) actually correct?**

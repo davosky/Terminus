@@ -43,7 +43,7 @@ module Validator
     end
 
     def set_mission_request
-      @mission_request = MissionRequest.find(params[:id])
+      @mission_request = validator_scope.find(params[:id])
     end
   end
 end

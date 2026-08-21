@@ -59,9 +59,10 @@ Rails.application.routes.draw do
     end
   end
 
-  get  "validazione_missione/:token/approva",  to: "mission_request_validations#approve",     as: :approve_mission_request_validation
-  get  "validazione_missione/:token/respingi", to: "mission_request_validations#reject_form", as: :reject_form_mission_request_validation
-  post "validazione_missione/:token/respingi", to: "mission_request_validations#reject",       as: :reject_mission_request_validation
+  get  "validazione_missione/:token/approva",  to: "mission_request_validations#approve_form", as: :approve_form_mission_request_validation
+  post "validazione_missione/:token/approva",  to: "mission_request_validations#approve",      as: :approve_mission_request_validation
+  get  "validazione_missione/:token/respingi", to: "mission_request_validations#reject_form",  as: :reject_form_mission_request_validation
+  post "validazione_missione/:token/respingi", to: "mission_request_validations#reject",        as: :reject_mission_request_validation
 
   namespace :admin do
     resources :users do

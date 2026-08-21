@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "MissionRequests", type: :request do
   include ActiveJob::TestHelper
 
-  let!(:user) { create(:user, region: "FVG", province: "FVG") }
+  let!(:user) { create(:user, region: "FVG", province: "FVG", institute: "CGIL") }
   let!(:other_user) { create(:user) }
   let!(:mission_request) { create(:mission_request, user: user) }
   let!(:other_mission_request) { create(:mission_request, user: other_user) }

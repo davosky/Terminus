@@ -4,6 +4,18 @@ class MissionRequestValidationsController < ApplicationController
 
   before_action :set_mission_request
 
+  # GET: shows a confirmation page. Approving mutates state, so it must never
+  # happen on a bare GET - email link-scanners/prefetchers (corporate mail
+  # gateways, Outlook Safe Links, etc.) follow links automatically and would
+  # otherwise silently approve requests before a human ever opens the mail.
+  def approve_form
+    if @mission_request.nil?
+      render_result("Il link non è valido o è scaduto.")
+    elsif !@mission_request.pending?
+      render_result("Questa richiesta missione è già stata elaborata.")
+    end
+  end
+
   def approve
     if @mission_request.nil?
       render_result("Il link non è valido o è scaduto.")

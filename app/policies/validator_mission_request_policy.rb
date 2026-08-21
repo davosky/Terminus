@@ -13,6 +13,7 @@ class ValidatorMissionRequestPolicy < ApplicationPolicy
 
   def validator?
     return false unless user&.manager?
+    return false if user.region.blank? || user.province.blank? || user.institute.blank?
 
     record.user.region == user.region &&
       record.user.province == user.province &&
@@ -22,6 +23,7 @@ class ValidatorMissionRequestPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       return scope.none unless user&.manager?
+      return scope.none if user.region.blank? || user.province.blank? || user.institute.blank?
 
       scope.joins(:user).where(users: { region: user.region, province: user.province, institute: user.institute })
     end

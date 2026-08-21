@@ -5,7 +5,7 @@ class MissionRequestMailer < ApplicationMailer
     @mission_request = mission_request
     @validator = validator
     token = mission_request.signed_id(expires_in: 30.days, purpose: "mission_request_validation")
-    @approve_url = approve_mission_request_validation_url(token: token)
+    @approve_url = approve_form_mission_request_validation_url(token: token)
     @reject_url = reject_form_mission_request_validation_url(token: token)
 
     mail(

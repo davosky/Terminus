@@ -36,6 +36,16 @@ RSpec.describe ValidatorMissionRequestPolicy do
       expect(policy.approve?).to be false
       expect(policy.reject?).to be false
     end
+
+    it "negano se il manager non ha region/province/institute valorizzati, anche se il richiedente li ha vuoti allo stesso modo" do
+      blank_requester = create(:user, region: nil, province: nil, institute: nil)
+      blank_manager = create(:user, :manager, region: nil, province: nil, institute: nil)
+      blank_mission_request = create(:mission_request, user: blank_requester)
+      policy = described_class.new(blank_manager, blank_mission_request)
+
+      expect(policy.approve?).to be false
+      expect(policy.reject?).to be false
+    end
   end
 
   describe "Scope" do
@@ -51,6 +61,14 @@ RSpec.describe ValidatorMissionRequestPolicy do
 
     it "restituisce un scope vuoto per un utente non manager" do
       scope = described_class::Scope.new(regular_user, MissionRequest).resolve
+
+      expect(scope).to be_empty
+    end
+
+    it "restituisce un scope vuoto se il manager non ha region/province/institute valorizzati" do
+      blank_manager = create(:user, :manager, region: nil, province: nil, institute: nil)
+
+      scope = described_class::Scope.new(blank_manager, MissionRequest).resolve
 
       expect(scope).to be_empty
     end

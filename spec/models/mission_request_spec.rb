@@ -124,6 +124,14 @@ RSpec.describe MissionRequest, type: :model do
 
       expect(mission_request.candidate_validators).to contain_exactly(matching_manager)
     end
+
+    it "non trova nessun validatore se il richiedente non ha region/province/institute valorizzati" do
+      requester = create(:user, region: nil, province: nil, institute: nil)
+      create(:user, :manager, region: nil, province: nil, institute: nil)
+      mission_request = build(:mission_request, user: requester)
+
+      expect(mission_request.candidate_validators).to be_empty
+    end
   end
 
   describe "#display_reason" do

@@ -60,6 +60,8 @@ class MissionRequest < ApplicationRecord
   end
 
   def candidate_validators
+    return User.none unless user.region.present? && user.province.present? && user.institute.present?
+
     User.where(manager: true, region: user.region, province: user.province, institute: user.institute)
   end
 

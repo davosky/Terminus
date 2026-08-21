@@ -8,9 +8,26 @@ RSpec.describe "MissionRequestValidations", type: :request do
   let(:token) { mission_request.signed_id(purpose: "mission_request_validation") }
 
   describe "GET /validazione_missione/:token/approva" do
+    it "mostra la pagina di conferma senza approvare nulla" do
+      expect {
+        get approve_form_mission_request_validation_path(token: token)
+      }.not_to change { Reimbursement.count }
+
+      expect(response).to have_http_status(:ok)
+      expect(mission_request.reload.request_approved).to be_nil
+    end
+
+    it "mostra un messaggio se il token non è valido" do
+      get approve_form_mission_request_validation_path(token: "invalid")
+
+      expect(response.body).to include("non è valido")
+    end
+  end
+
+  describe "POST /validazione_missione/:token/approva" do
     it "approva la richiesta senza bisogno di login" do
       expect {
-        perform_enqueued_jobs { get approve_mission_request_validation_path(token: token) }
+        perform_enqueued_jobs { post approve_mission_request_validation_path(token: token) }
       }.to change { Reimbursement.count }.by(1)
 
       expect(response).to have_http_status(:ok)
@@ -21,14 +38,14 @@ RSpec.describe "MissionRequestValidations", type: :request do
       mission_request.update!(request_approved: true)
 
       expect {
-        get approve_mission_request_validation_path(token: token)
+        post approve_mission_request_validation_path(token: token)
       }.not_to change { Reimbursement.count }
 
       expect(response.body).to include("già stata elaborata")
     end
 
     it "mostra un messaggio se il token non è valido" do
-      get approve_mission_request_validation_path(token: "invalid")
+      post approve_mission_request_validation_path(token: "invalid")
 
       expect(response.body).to include("non è valido")
     end

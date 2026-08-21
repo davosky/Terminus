@@ -1,0 +1,21 @@
+<% content_for :title, "Approva Richiesta Missione - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="card border-0">
+        <div class="card-body">
+          <h4 class="text-primary mb-3">Approva Richiesta Missione</h4>
+          <p>
+            Richiesta di <strong><%= @mission_request.user.first_name %> <%= @mission_request.user.last_name %></strong>
+            del <strong><%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %></strong>.
+          </p>
+          <%= form_with url: approve_mission_request_validation_path(token: params[:token]), method: :post do %>
+            <button type="submit" class="btn btn-success">
+              <i class="bi bi-check-lg"></i>&emsp;Conferma Approvazione
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

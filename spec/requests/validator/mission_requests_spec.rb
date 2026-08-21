@@ -50,7 +50,7 @@ RSpec.describe "Validator::MissionRequests", type: :request do
 
       patch approve_validator_mission_request_path(pending_request)
 
-      expect(response).to have_http_status(:redirect)
+      expect(response).to have_http_status(:not_found)
       expect(pending_request.reload.request_approved).to be_nil
     end
   end

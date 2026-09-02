@@ -37,11 +37,13 @@ Rails.application.configure do
   # Make template changes take effect immediately.
   config.action_mailer.perform_caching = false
 
-  # Preview mail in the browser instead of sending it. letter_opener uses Launchy,
-  # which prefers $BROWSER when set — but .env sets BROWSER="chromium --headless"
-  # for headless-Chromium testing scripts, which would make letter_opener open
-  # mail previews invisibly. Ignore it here so Launchy falls back to xdg-open.
-  ENV.delete("BROWSER")
+  # Preview mail in the browser instead of sending it. letter_opener opens the
+  # rendered message through Launchy, which uses $BROWSER first; .env sets it to
+  # "chromium --headless" for the test scripts (opens invisibly), and without it
+  # Launchy falls back to `xdg-open <file>`, which on this box hands .html files
+  # to the text editor, not the browser. Point it straight at Firefox so a new
+  # tab pops open on every delivery.
+  ENV["BROWSER"] = "firefox"
   config.action_mailer.delivery_method = :letter_opener
 
   # Set localhost to be used by links generated in mailer templates.

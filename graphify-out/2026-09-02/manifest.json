@@ -10,8 +10,8 @@
     "semantic_hash": "590009f4b8daf822d34925fc6490b45c"
   },
   "/home/davo/Programmazione/Terminus/config/routes.rb": {
-    "mtime": 1788338474.26581,
-    "ast_hash": "a97d7d4c89c3e30f6943fd9768f5558b",
+    "mtime": 1788337388.1974123,
+    "ast_hash": "26f32303122b956f949384bd676fa40e",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/ci.rb": {
@@ -230,8 +230,8 @@
     "semantic_hash": "521627c3c58b71b8fb20b271b0b1e884"
   },
   "/home/davo/Programmazione/Terminus/db/schema.rb": {
-    "mtime": 1788338409.0569127,
-    "ast_hash": "8ba294f879c5b1fde938a93f7eab8351",
+    "mtime": 1787302893.6432233,
+    "ast_hash": "c5462cbeb0457ddbb301085bd4f7122a",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/db/migrate/20260815090539_devise_create_users.rb": {
@@ -1200,8 +1200,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/requests/reimbursements_spec.rb": {
-    "mtime": 1788338669.1590667,
-    "ast_hash": "0e894d2c444727b4499ed15aa4fd9a0f",
+    "mtime": 1787240100.3155715,
+    "ast_hash": "a3eb9a42b812f100e921588a5c00e81a",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/policies/reimbursement_policy_spec.rb": {
@@ -1230,13 +1230,13 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/models/reimbursement_spec.rb": {
-    "mtime": 1788338625.465378,
-    "ast_hash": "908d5c1b4d16401885098dee124e944e",
+    "mtime": 1787237310.7464595,
+    "ast_hash": "1fcb1b1b4d2ef70b06803efe5f73b0a7",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/factories/reimbursements.rb": {
-    "mtime": 1788338516.6962833,
-    "ast_hash": "618df2b66116357c5e4cd65635b5a6f6",
+    "mtime": 1787237299.4567976,
+    "ast_hash": "4dad47f5dbabed6ea8882d12aee832e2",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/policies/reimbursement_policy.rb": {
@@ -1270,13 +1270,13 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/models/reimbursement.rb": {
-    "mtime": 1788338416.0814753,
-    "ast_hash": "ca5443ccea5875c5a7dc4e647ba307c8",
+    "mtime": 1787237142.2724812,
+    "ast_hash": "a959907737d28c9bf1315d0eb44a4944",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/controllers/reimbursements_controller.rb": {
-    "mtime": 1788338426.1061566,
-    "ast_hash": "1d49960b334537ae8803f3f311345a32",
+    "mtime": 1787240026.9336252,
+    "ast_hash": "36c62693aedc881609e0570e1f599ce5",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/controllers/admin/reimbursements_controller.rb": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/services/reimbursement_from_mission_request_spec.rb": {
-    "mtime": 1788338530.2024832,
-    "ast_hash": "6332fe3971117db560a9f4b5b610982c",
+    "mtime": 1787303103.4805586,
+    "ast_hash": "3ad28f82ecf022be7dbe37a5ee0b91e5",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/services/mission_request_approval_spec.rb": {
@@ -1505,8 +1505,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/services/reimbursement_from_mission_request.rb": {
-    "mtime": 1788338419.1089566,
-    "ast_hash": "ba0612771882292b0ff98a3041366ad4",
+    "mtime": 1787302913.6377385,
+    "ast_hash": "a861674692207a94ee91ed2b5c336173",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/helpers/validator/mission_requests_helper.rb": {
@@ -1686,61 +1686,6 @@
   },
   "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/10090/signature.png": {
     "mtime": 1788337730.7958858,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/requests/director/mission_requests_spec.rb": {
-    "mtime": 1788338597.169407,
-    "ast_hash": "79971a4267bd9e5d35d6a4feea32db1e",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/spec/policies/director_mission_request_policy_spec.rb": {
-    "mtime": 1788338587.1986454,
-    "ast_hash": "61553239e1114d04c204187c068e1edc",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/policies/director_mission_request_policy.rb": {
-    "mtime": 1788338483.4692752,
-    "ast_hash": "99a9e2ff9d7376111b2d6068114af096",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/controllers/director/mission_requests_controller.rb": {
-    "mtime": 1788338478.284313,
-    "ast_hash": "0aea8912dfe10b0180f0ac0a1b1afa45",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/db/migrate/20260902104000_add_mission_request_to_reimbursements.rb": {
-    "mtime": 1788338404.3789012,
-    "ast_hash": "567723b93d2ac3a1b6ac298935279491",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/3065/signature.png": {
-    "mtime": 1788338651.5187478,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/1266/signature.png": {
-    "mtime": 1788338609.685385,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/3063/signature.png": {
-    "mtime": 1788338651.4593205,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/1264/signature.png": {
-    "mtime": 1788338609.627642,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/1268/signature.png": {
-    "mtime": 1788338609.7363374,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/3067/signature.png": {
-    "mtime": 1788338651.570334,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   }

@@ -65,6 +65,10 @@ Rails.application.routes.draw do
         get :approved
         get :rejected
       end
+      member do
+        patch :approve
+        patch :reject
+      end
     end
   end
 

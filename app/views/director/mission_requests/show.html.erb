@@ -49,7 +49,15 @@
             <% end %>
           </p>
           <hr class="text-info mt-3 mb-4"/>
-          <div class="d-flex gap-2 mt-3">
+          <div class="d-flex gap-2 mt-3 flex-wrap">
+            <% if @mission_request.pending? %>
+              <%= button_to approve_director_mission_request_path(@mission_request), method: :patch, class: "btn btn-success" do %>
+                <i class="bi bi-check-lg"></i>&emsp;Approva
+              <% end %>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#reject-modal">
+                <i class="bi bi-x-lg"></i>&emsp;Respingi
+              </button>
+            <% end %>
             <%= link_to director_mission_requests_path, class: "btn btn-secondary" do %>
               <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
             <% end %>
@@ -59,3 +67,26 @@
     </div>
   </div>
 </div>
+
+<% if @mission_request.pending? %>
+  <div class="modal fade" id="reject-modal" tabindex="-1" aria-labelledby="reject-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <%= form_with url: reject_director_mission_request_path(@mission_request), method: :patch do %>
+          <div class="modal-header">
+            <h5 class="modal-title" id="reject-modal-label">Respingi Richiesta Missione</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+          </div>
+          <div class="modal-body">
+            <label for="rejection_motivation" class="form-label"><%= MissionRequest.human_attribute_name(:rejection_motivation) %></label>
+            <textarea name="rejection_motivation" id="rejection_motivation" class="form-control" rows="3" required></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+            <button type="submit" class="btn btn-danger">Respingi</button>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

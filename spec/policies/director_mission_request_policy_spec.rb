@@ -29,6 +29,37 @@ RSpec.describe DirectorMissionRequestPolicy do
     end
   end
 
+  describe "#approve?, #reject?" do
+    it "consentono al manager della stessa sede su una richiesta in attesa" do
+      policy = described_class.new(matching_manager, mission_request)
+
+      expect(policy.approve?).to be true
+      expect(policy.reject?).to be true
+    end
+
+    it "negano a un manager di un'altra sede" do
+      policy = described_class.new(other_manager, mission_request)
+
+      expect(policy.approve?).to be false
+      expect(policy.reject?).to be false
+    end
+
+    it "negano a un utente non manager" do
+      policy = described_class.new(regular_user, mission_request)
+
+      expect(policy.approve?).to be false
+      expect(policy.reject?).to be false
+    end
+
+    it "negano se la richiesta è già stata decisa" do
+      mission_request.update!(request_approved: true)
+      policy = described_class.new(matching_manager, mission_request)
+
+      expect(policy.approve?).to be false
+      expect(policy.reject?).to be false
+    end
+  end
+
   describe "Scope" do
     it "restituisce solo le richieste dei dipendenti che condividono region/province/institute" do
       other_requester = create(:user, region: "FVG", province: "TS", institute: "CGIL Udine")

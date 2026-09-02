@@ -8,6 +8,14 @@ class DirectorMissionRequestPolicy < ApplicationPolicy
     same_organisational_scope?
   end
 
+  def approve?
+    same_organisational_scope? && record.pending?
+  end
+
+  def reject?
+    same_organisational_scope? && record.pending?
+  end
+
   private
 
   def same_organisational_scope?

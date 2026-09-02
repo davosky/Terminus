@@ -24,6 +24,20 @@ RSpec.describe MissionRequestApproval do
     expect(reimbursement).to be_persisted
   end
 
+  it "è idempotente: una seconda chiamata non crea un secondo rimborso" do
+    mission_request = create(:mission_request, request_approved: nil)
+
+    first = described_class.call(mission_request: mission_request)
+    second = nil
+
+    expect {
+      second = described_class.call(mission_request: mission_request)
+    }.not_to change { Reimbursement.count }
+
+    expect(second).to eq(first)
+    expect(mission_request.reload).to be_request_approved
+  end
+
   it "non approva la richiesta se la creazione del rimborso fallisce" do
     mission_request = create(:mission_request, request_approved: nil)
     allow(ReimbursementFromMissionRequest).to receive(:call).and_raise(ActiveRecord::RecordInvalid)

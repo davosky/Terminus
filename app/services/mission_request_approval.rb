@@ -10,10 +10,18 @@ class MissionRequestApproval
   def call
     reimbursement = nil
 
-    ActiveRecord::Base.transaction do
-      mission_request.update!(request_approved: true)
-      reimbursement = ReimbursementFromMissionRequest.call(mission_request: mission_request)
+    # Row lock + re-check inside the transaction: two concurrent approvals (or a
+    # double-submit before the redirect) can both pass the caller's pending?
+    # check, but only the one that wins the lock creates the reimbursement. The
+    # partial unique index on reimbursements.mission_request_id is the last line.
+    mission_request.with_lock do
+      if mission_request.pending?
+        mission_request.update!(request_approved: true)
+        reimbursement = ReimbursementFromMissionRequest.call(mission_request: mission_request)
+      end
     end
+
+    return Reimbursement.find_by(mission_request_id: mission_request.id) if reimbursement.nil?
 
     MissionRequestMailer.approved(mission_request, reimbursement).deliver_later
     reimbursement

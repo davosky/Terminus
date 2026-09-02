@@ -20,6 +20,7 @@ class Reimbursement < ApplicationRecord
   MISSION_REQUEST_EDITABLE_FIELDS = (%w[reimbursement_date] + MISSION_REQUEST_EDITABLE_COST_FIELDS).freeze
 
   validates :name, presence: true, uniqueness: true
+  validates :mission_request_id, uniqueness: true, allow_nil: true
   validates :departure_date, presence: true
   validates :return_date, presence: true
   validates :request_date, presence: true

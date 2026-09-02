@@ -62,6 +62,19 @@ RSpec.describe Reimbursement, type: :model do
     it "non richiede una richiesta missione di origine" do
       expect(build(:reimbursement, mission_request: nil)).to be_valid
     end
+
+    it "non consente due rimborsi per la stessa richiesta missione" do
+      mission_request = create(:mission_request)
+      create(:reimbursement, mission_request: mission_request)
+
+      expect(build(:reimbursement, mission_request: mission_request)).not_to be_valid
+    end
+
+    it "consente più rimborsi manuali senza richiesta missione" do
+      create(:reimbursement, mission_request: nil)
+
+      expect(build(:reimbursement, mission_request: nil)).to be_valid
+    end
   end
 
   describe "#from_mission_request?" do

@@ -17,6 +17,24 @@ RSpec.describe "Navbar", type: :system do
     end
   end
 
+  context "quando l'utente è direttore (manager)" do
+    let!(:manager) { create(:user, :manager, username: "direttore") }
+
+    it "sostituisce il link 'Richieste Missione' con un dropdown di quattro voci" do
+      login_as(manager)
+      visit root_path
+
+      within("nav .navbar-nav.me-auto") do
+        find("#missionRequestsDropdown").click
+
+        expect(page).to have_link("Le Mie Richieste Missione", href: mission_requests_path)
+        expect(page).to have_link("Richieste Missione Da Approvare", href: validator_mission_requests_path)
+        expect(page).to have_link("Richieste Missione Approvate", href: approved_director_mission_requests_path)
+        expect(page).to have_link("Richieste Missione Respinte", href: rejected_director_mission_requests_path)
+      end
+    end
+  end
+
   context "quando l'utente non è amministratore" do
     let!(:user) { create(:user, username: "regular") }
 

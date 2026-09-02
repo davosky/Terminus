@@ -7,6 +7,14 @@ module Director
       @mission_requests = director_scope.ordered
     end
 
+    def approved
+      @mission_requests = director_scope.approved.ordered
+    end
+
+    def rejected
+      @mission_requests = director_scope.rejected.ordered
+    end
+
     def show
     end
 
@@ -17,7 +25,7 @@ module Director
     end
 
     def verify_pundit_usage
-      action_name == "index" ? verify_policy_scoped : verify_authorized
+      %w[index approved rejected].include?(action_name) ? verify_policy_scoped : verify_authorized
     end
 
     def director_scope

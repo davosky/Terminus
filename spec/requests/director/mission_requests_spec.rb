@@ -5,6 +5,7 @@ RSpec.describe "Director::MissionRequests", type: :request do
   let!(:matching_manager) { create(:user, :manager, region: "FVG", province: "UD", institute: "CGIL Udine") }
   let!(:other_manager) { create(:user, :manager, region: "FVG", province: "TS", institute: "CGIL Udine") }
   let!(:pending_request) { create(:mission_request, user: requester, request_approved: nil) }
+  let!(:approved_request) { create(:mission_request, user: requester, request_approved: true) }
   let!(:rejected_request) { create(:mission_request, user: requester, request_approved: false, rejection_motivation: "Dati incompleti") }
 
   describe "GET /director/mission_requests" do
@@ -33,6 +34,40 @@ RSpec.describe "Director::MissionRequests", type: :request do
       get director_mission_requests_path
 
       expect(response).to redirect_to(root_path)
+    end
+  end
+
+  describe "GET /director/mission_requests/approved" do
+    it "elenca solo le richieste approvate dei dipendenti del direttore" do
+      sign_in matching_manager
+
+      get approved_director_mission_requests_path
+
+      expect(response).to have_http_status(:ok)
+      expect(response.body).to include(director_mission_request_path(approved_request))
+      expect(response.body).not_to include(director_mission_request_path(pending_request))
+      expect(response.body).not_to include(director_mission_request_path(rejected_request))
+    end
+
+    it "nega l'accesso a un utente non manager" do
+      sign_in requester
+
+      get approved_director_mission_requests_path
+
+      expect(response).to redirect_to(root_path)
+    end
+  end
+
+  describe "GET /director/mission_requests/rejected" do
+    it "elenca solo le richieste respinte dei dipendenti del direttore" do
+      sign_in matching_manager
+
+      get rejected_director_mission_requests_path
+
+      expect(response).to have_http_status(:ok)
+      expect(response.body).to include(director_mission_request_path(rejected_request))
+      expect(response.body).not_to include(director_mission_request_path(approved_request))
+      expect(response.body).not_to include(director_mission_request_path(pending_request))
     end
   end
 

@@ -35,11 +35,41 @@
                   <i class="bi bi-speedometer me-2"></i>Dashboard
                 <% end %>
               </li>
-              <li class="nav-item">
-                <%= link_to mission_requests_path, class: "nav-link" do %>
-                  <i class="bi bi-airplane me-2"></i>Richieste Missione
-                <% end %>
-              </li>
+              <% if current_user.manager? %>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="missionRequestsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-airplane me-2"></i>Richieste Missione
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="missionRequestsDropdown">
+                    <li>
+                      <%= link_to mission_requests_path, class: "dropdown-item" do %>
+                        <i class="bi bi-person me-2"></i>Le Mie Richieste Missione
+                      <% end %>
+                    </li>
+                    <li>
+                      <%= link_to validator_mission_requests_path, class: "dropdown-item" do %>
+                        <i class="bi bi-check2-circle me-2"></i>Richieste Missione Da Approvare
+                      <% end %>
+                    </li>
+                    <li>
+                      <%= link_to approved_director_mission_requests_path, class: "dropdown-item" do %>
+                        <i class="bi bi-check-circle-fill me-2"></i>Richieste Missione Approvate
+                      <% end %>
+                    </li>
+                    <li>
+                      <%= link_to rejected_director_mission_requests_path, class: "dropdown-item" do %>
+                        <i class="bi bi-x-circle-fill me-2"></i>Richieste Missione Respinte
+                      <% end %>
+                    </li>
+                  </ul>
+                </li>
+              <% else %>
+                <li class="nav-item">
+                  <%= link_to mission_requests_path, class: "nav-link" do %>
+                    <i class="bi bi-airplane me-2"></i>Richieste Missione
+                  <% end %>
+                </li>
+              <% end %>
               <li class="nav-item">
                 <%= link_to reimbursements_path, class: "nav-link" do %>
                   <i class="bi bi-cash-coin me-2"></i>Rimborsi Spese
@@ -84,18 +114,6 @@
                   </li>
                 </ul>
               </li>
-              <% if current_user.manager? %>
-                <li class="nav-item">
-                  <%= link_to validator_mission_requests_path, class: "nav-link" do %>
-                    <i class="bi bi-check2-circle me-2"></i>Da Approvare
-                  <% end %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to director_mission_requests_path, class: "nav-link" do %>
-                    <i class="bi bi-people me-2"></i>Richieste Dipendenti
-                  <% end %>
-                </li>
-              <% end %>
               <% if current_user.admin? %>
                 <li class="nav-item">
                   <%= link_to admin_root_path, class: "nav-link" do %>

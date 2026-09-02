@@ -1,0 +1,55 @@
+<div class="alert alert-info d-flex align-items-start gap-2" role="alert">
+  <i class="bi bi-lock-fill fs-5"></i>
+  <div>
+    Questo rimborso è stato generato dall'approvazione di una richiesta missione.
+    Puoi modificare solo <strong>Parcheggio</strong>, <strong>Vitto</strong>,
+    <strong>Alloggio</strong>, <strong>Ticket</strong> e <strong>Varie</strong>;
+    gli altri dati sono copiati dalla richiesta e non sono modificabili.
+  </div>
+</div>
+
+<dl class="row mb-4">
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:departure_date) %></dt>
+  <dd class="col-7 col-sm-8"><%= l(reimbursement.departure_date, format: :long) if reimbursement.departure_date %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:return_date) %></dt>
+  <dd class="col-7 col-sm-8"><%= l(reimbursement.return_date, format: :long) if reimbursement.return_date %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:request_date) %></dt>
+  <dd class="col-7 col-sm-8"><%= l(reimbursement.request_date, format: :long) if reimbursement.request_date %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:reimbursement_date) %></dt>
+  <dd class="col-7 col-sm-8"><%= l(reimbursement.reimbursement_date, format: :long) if reimbursement.reimbursement_date %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:reason) %></dt>
+  <dd class="col-7 col-sm-8"><%= reimbursement.display_reason %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:place) %></dt>
+  <dd class="col-7 col-sm-8"><%= reimbursement.display_place %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:structure) %></dt>
+  <dd class="col-7 col-sm-8"><%= reimbursement.display_structure %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:path) %></dt>
+  <dd class="col-7 col-sm-8"><%= reimbursement.display_path %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:path_lenght_fr) %></dt>
+  <dd class="col-7 col-sm-8"><%= number_with_precision(reimbursement.display_path_lenght, precision: 2) %> km</dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:highway_cost_fr) %></dt>
+  <dd class="col-7 col-sm-8"><%= number_to_currency(reimbursement.display_highway_cost) %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:transport) %></dt>
+  <dd class="col-7 col-sm-8"><%= reimbursement.transport&.name %></dd>
+
+  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:vehicle) %></dt>
+  <dd class="col-7 col-sm-8"><%= reimbursement.vehicle&.name || "—" %></dd>
+</dl>
+
+<% Reimbursement::MISSION_REQUEST_EDITABLE_FIELDS.each do |field| %>
+  <div class="mb-3">
+    <%= f.label field, class: form_label_class_reimbursement %>
+    <%= f.number_field field, step: 0.01, min: 0, class: "form-control" %>
+  </div>
+<% end %>
+<div class="form-text mb-3">Il totale viene ricalcolato automaticamente in base al trasporto selezionato.</div>

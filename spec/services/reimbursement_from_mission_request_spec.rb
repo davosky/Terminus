@@ -20,6 +20,15 @@ RSpec.describe ReimbursementFromMissionRequest do
     expect(reimbursement.reimbursement_date).to be_present
   end
 
+  it "collega il rimborso alla richiesta missione di origine" do
+    mission_request = create(:mission_request)
+
+    reimbursement = described_class.call(mission_request: mission_request)
+
+    expect(reimbursement.mission_request).to eq(mission_request)
+    expect(reimbursement).to be_from_mission_request
+  end
+
   it "crea un rimborso spese copiando i campi liberi" do
     mission_request = create(:mission_request, :free_fields)
 

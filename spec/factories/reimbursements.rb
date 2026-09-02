@@ -12,6 +12,10 @@ FactoryBot.define do
     transport
     user
 
+    trait :from_mission_request do
+      mission_request
+    end
+
     trait :free_fields do
       reason { nil }
       place { nil }

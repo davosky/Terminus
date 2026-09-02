@@ -58,6 +58,20 @@ RSpec.describe Reimbursement, type: :model do
     it "non richiede un veicolo" do
       expect(build(:reimbursement, vehicle: nil)).to be_valid
     end
+
+    it "non richiede una richiesta missione di origine" do
+      expect(build(:reimbursement, mission_request: nil)).to be_valid
+    end
+  end
+
+  describe "#from_mission_request?" do
+    it "è vero quando il rimborso è collegato a una richiesta missione" do
+      expect(create(:reimbursement, :from_mission_request)).to be_from_mission_request
+    end
+
+    it "è falso per un rimborso creato manualmente" do
+      expect(build(:reimbursement)).not_to be_from_mission_request
+    end
   end
 
   describe "#display_reason" do

@@ -8,6 +8,9 @@
       </ul>
     </div>
   <% end %>
+  <% if reimbursement.persisted? && reimbursement.from_mission_request? %>
+  <%= render "locked_fields", reimbursement: reimbursement, f: f %>
+  <% else %>
   <div class="mb-3">
     <%= f.label :departure_date, class: form_label_class_reimbursement %>
     <%= f.date_field :departure_date, class: "form-control" %>
@@ -110,6 +113,7 @@
     <%= f.number_field :generic_cost, step: 0.01, min: 0, class: "form-control" %>
     <div class="form-text">Il totale viene calcolato automaticamente in base al trasporto selezionato.</div>
   </div>
+  <% end %>
   <div class="d-flex gap-2">
     <%= f.button class: form_submit_accent_reimbursement do %>
       <i class="bi bi-cash-coin me-2"></i><%= form_submit_label_reimbursement %>

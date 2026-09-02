@@ -22,6 +22,7 @@ class ReimbursementFromMissionRequest
 
   def copied_attributes
     {
+      mission_request_id: mission_request.id,
       departure_date: mission_request.departure_date,
       return_date: mission_request.return_date,
       request_date: mission_request.request_date,

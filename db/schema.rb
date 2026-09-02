@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_090113) do
+ActiveRecord::Schema[8.1].define(version: 2026_09_02_104000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -81,6 +81,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_090113) do
     t.decimal "food_cost", precision: 8, scale: 2, default: "0.0"
     t.decimal "generic_cost", precision: 8, scale: 2, default: "0.0"
     t.decimal "highway_cost_fr", precision: 8, scale: 2, default: "0.0"
+    t.bigint "mission_request_id"
     t.string "name"
     t.decimal "parking_cost", precision: 8, scale: 2, default: "0.0"
     t.string "path_fr"
@@ -102,6 +103,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_090113) do
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
     t.bigint "vehicle_id"
+    t.index ["mission_request_id"], name: "index_reimbursements_on_mission_request_id"
     t.index ["name"], name: "index_reimbursements_on_name", unique: true
     t.index ["path_id"], name: "index_reimbursements_on_path_id"
     t.index ["place_id"], name: "index_reimbursements_on_place_id"
@@ -187,6 +189,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_090113) do
   add_foreign_key "paths", "users"
   add_foreign_key "places", "users"
   add_foreign_key "reasons", "users"
+  add_foreign_key "reimbursements", "mission_requests", on_delete: :nullify
   add_foreign_key "reimbursements", "paths"
   add_foreign_key "reimbursements", "places"
   add_foreign_key "reimbursements", "reasons"

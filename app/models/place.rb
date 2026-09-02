@@ -1,7 +1,7 @@
 class Place < ApplicationRecord
   belongs_to :user
-  has_many :mission_requests, dependent: :nullify
-  has_many :reimbursements, dependent: :nullify
+  has_many :mission_requests
+  has_many :reimbursements
 
   validates :name, presence: true
 

@@ -3,14 +3,14 @@ class User < ApplicationRecord
   # :confirmable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :rememberable, :validatable, :lockable
 
-  has_many :vehicles, dependent: :destroy
-  has_many :transports, dependent: :destroy
-  has_many :reasons, dependent: :destroy
-  has_many :paths, dependent: :destroy
-  has_many :places, dependent: :destroy
-  has_many :structures, dependent: :destroy
-  has_many :mission_requests, dependent: :destroy
-  has_many :reimbursements, dependent: :destroy
+  has_many :vehicles
+  has_many :transports
+  has_many :reasons
+  has_many :paths
+  has_many :places
+  has_many :structures
+  has_many :mission_requests
+  has_many :reimbursements
 
   mount_uploader :user_signature, UserSignatureUploader
   mount_uploader :validator_signature, ValidatorSignatureUploader

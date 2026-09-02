@@ -23,4 +23,16 @@ RSpec.describe MissionRequestApproval do
     expect(reimbursement).to be_a(Reimbursement)
     expect(reimbursement).to be_persisted
   end
+
+  it "non approva la richiesta se la creazione del rimborso fallisce" do
+    mission_request = create(:mission_request, request_approved: nil)
+    allow(ReimbursementFromMissionRequest).to receive(:call).and_raise(ActiveRecord::RecordInvalid)
+
+    expect {
+      expect { described_class.call(mission_request: mission_request) }.to raise_error(ActiveRecord::RecordInvalid)
+    }.not_to change { Reimbursement.count }
+
+    expect(mission_request.reload).to be_pending
+    expect(ActionMailer::Base.deliveries).to be_empty
+  end
 end

@@ -8,8 +8,13 @@ class MissionRequestApproval
   end
 
   def call
-    mission_request.update!(request_approved: true)
-    reimbursement = ReimbursementFromMissionRequest.call(mission_request: mission_request)
+    reimbursement = nil
+
+    ActiveRecord::Base.transaction do
+      mission_request.update!(request_approved: true)
+      reimbursement = ReimbursementFromMissionRequest.call(mission_request: mission_request)
+    end
+
     MissionRequestMailer.approved(mission_request, reimbursement).deliver_later
     reimbursement
   end

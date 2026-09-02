@@ -39,6 +39,9 @@
 
 /node_modules
 
+# Yarn (node-modules linker): regeneratable local install state.
+/.yarn/install-state.gz
+
 # Claude Code local runtime state (machine-specific, not shared)
 /.claude/settings.local.json
 /.claude/scheduled_tasks.lock

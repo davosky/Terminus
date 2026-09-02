@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-09-02)
 
 ## Corpus Check
-- 197 files · ~1,358,077 words
+- 196 files · ~1,357,812 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1028 nodes · 1265 edges · 195 communities (121 shown, 74 thin omitted)
-- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 262 edges (avg confidence: 0.86)
+- 1024 nodes · 1261 edges · 196 communities (122 shown, 74 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 261 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e0d4f34a`
+- Built from commit: `83af3b95`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -135,6 +135,7 @@
 - [[_COMMUNITY_Community 172|Community 172]]
 - [[_COMMUNITY_Community 173|Community 173]]
 - [[_COMMUNITY_Community 182|Community 182]]
+- [[_COMMUNITY_Community 183|Community 183]]
 - [[_COMMUNITY_Community 184|Community 184]]
 - [[_COMMUNITY_Community 193|Community 193]]
 
@@ -162,7 +163,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (195 total, 74 thin omitted)
+## Communities (196 total, 74 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -172,13 +173,17 @@ Nodes (51): ActiveStorage (upload sicuro), Autenticazione e Autorizzazione Robus
 Cohesion: 0.06
 Nodes (22): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, PathDashboard, PlaceDashboard, ReasonDashboard, StructureDashboard (+14 more)
 
+### Community 2 - "Admin User Signature Downloads"
+Cohesion: 0.17
+Nodes (3): mission_request_index_border_class(), stored_mode_checked?(), MissionRequest
+
 ### Community 3 - "Terminus App Blueprint (Devise/Users/Setup)"
 Cohesion: 0.07
 Nodes (15): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader (+7 more)
 
 ### Community 4 - "Application Auth Base"
-Cohesion: 0.14
-Nodes (6): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope, ReimbursementPolicy, Scope
+Cohesion: 0.06
+Nodes (16): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, MissionRequestMailer, User model spec, User (+8 more)
 
 ### Community 5 - "Dev/Build Scripts"
 Cohesion: 0.19
@@ -198,11 +203,11 @@ Nodes (4): PathsController, PathsController, PlacesController, PlacesController
 
 ### Community 9 - "Mission Request Controller & Code Generator"
 Cohesion: 0.19
-Nodes (4): PlacePolicy, Scope, Scope, StructurePolicy
+Nodes (4): PathPolicy, Scope, Scope, StructurePolicy
 
 ### Community 10 - "Path/Structure Authorization Policies"
 Cohesion: 0.19
-Nodes (4): PathPolicy, Scope, ReasonPolicy, Scope
+Nodes (4): PlacePolicy, Scope, ReasonPolicy, Scope
 
 ### Community 12 - "Self-Service Form Helpers"
 Cohesion: 0.26
@@ -221,8 +226,8 @@ Cohesion: 0.33
 Nodes (8): Mission Requests Destroy Icon (SVG), Mission Request Destroy Action Icon, MissionRequest Edit Action Icon, Mission Requests Index Icon (SVG), Mission Requests Index Semantic Icon, Mission Requests New Icon (SVG), Mission Request 'New' Action Icon, Mission Request Show Icon (mountain/nature illustration)
 
 ### Community 16 - "Transport Protected-Record Safeguard"
-Cohesion: 0.08
-Nodes (6): MissionRequestsController, MissionRequestsController, mission_request_index_border_class(), stored_mode_checked?(), MissionRequest, MissionRequestCodeGenerator
+Cohesion: 0.16
+Nodes (3): MissionRequestsController, MissionRequestsController, MissionRequestCodeGenerator
 
 ### Community 19 - "Secure Headers & CSP Config"
 Cohesion: 0.83
@@ -306,7 +311,7 @@ Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation S
 
 ### Community 124 - "Community 124"
 Cohesion: 0.08
-Nodes (11): Admin::TransportsController, TransportsController, Admin::VehiclesController, TransportsController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration (+3 more)
+Nodes (11): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration (+3 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.29
@@ -353,8 +358,8 @@ Cohesion: 0.27
 Nodes (3): ApplicationController, ApplicationController, HomeController
 
 ### Community 168 - "Community 168"
-Cohesion: 0.05
-Nodes (16): Admin::ApplicationController#authenticate_admin, MissionRequestValidationsController, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, MissionRequestMailer, User model spec, User (+8 more)
+Cohesion: 0.13
+Nodes (5): MissionRequestValidationsController, DirectorMissionRequestPolicy, Scope, Scope, ValidatorMissionRequestPolicy
 
 ## Ambiguous Edges - Review These
 - `App Favicon Icon (SVG)` → `Navbar Brand Logo (Terminus wordmark, compact)`  [AMBIGUOUS]
@@ -374,12 +379,12 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `Community 168` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Paths Controller CRUD`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Path/Place/Reason/Structure Test Suite`, `Community 125`?**
-  _High betweenness centrality (0.104) - this node is a cross-community bridge._
-- **Why does `MissionRequestsController` connect `Transport Protected-Record Safeguard` to `Community 168`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **Why does `Path` connect `Admin Panel: Transports & Vehicles` to `Community 168`, `Community 169`, `Paths Controller CRUD`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `User` connect `Application Auth Base` to `Admin Panel: Transports & Vehicles`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Path/Place/Reason/Structure Test Suite`, `Paths Controller CRUD`, `Community 125`?**
+  _High betweenness centrality (0.102) - this node is a cross-community bridge._
+- **Why does `MissionRequestsController` connect `Transport Protected-Record Safeguard` to `Application Auth Base`?**
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
+- **Why does `Reason` connect `Admin Panel: Transports & Vehicles` to `Admin User Signature Downloads`, `Application Auth Base`, `Reasons/Structures Controllers CRUD`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **Are the 19 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
   _`User` has 19 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `PlacesController` (e.g. with `paths_controller.rb` and `reasons_controller.rb`) actually correct?**

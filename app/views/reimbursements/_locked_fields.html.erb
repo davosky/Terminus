@@ -2,9 +2,9 @@
   <i class="bi bi-lock-fill fs-5"></i>
   <div>
     Questo rimborso è stato generato dall'approvazione di una richiesta missione.
-    Puoi modificare solo <strong>Parcheggio</strong>, <strong>Vitto</strong>,
-    <strong>Alloggio</strong>, <strong>Ticket</strong> e <strong>Varie</strong>;
-    gli altri dati sono copiati dalla richiesta e non sono modificabili.
+    Puoi modificare solo <strong>Data Rimborso</strong>, <strong>Parcheggio</strong>,
+    <strong>Vitto</strong>, <strong>Alloggio</strong>, <strong>Ticket</strong> e
+    <strong>Varie</strong>; gli altri dati sono copiati dalla richiesta e non sono modificabili.
   </div>
 </div>
 
@@ -17,9 +17,6 @@
 
   <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:request_date) %></dt>
   <dd class="col-7 col-sm-8"><%= l(reimbursement.request_date, format: :long) if reimbursement.request_date %></dd>
-
-  <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:reimbursement_date) %></dt>
-  <dd class="col-7 col-sm-8"><%= l(reimbursement.reimbursement_date, format: :long) if reimbursement.reimbursement_date %></dd>
 
   <dt class="col-5 col-sm-4"><%= Reimbursement.human_attribute_name(:reason) %></dt>
   <dd class="col-7 col-sm-8"><%= reimbursement.display_reason %></dd>
@@ -46,7 +43,12 @@
   <dd class="col-7 col-sm-8"><%= reimbursement.vehicle&.name || "—" %></dd>
 </dl>
 
-<% Reimbursement::MISSION_REQUEST_EDITABLE_FIELDS.each do |field| %>
+<div class="mb-3">
+  <%= f.label :reimbursement_date, class: form_label_class_reimbursement %>
+  <%= f.date_field :reimbursement_date, class: "form-control" %>
+  <div class="form-text">Se lasciato vuoto viene reimpostato automaticamente all'ultimo venerdì del mese di partenza.</div>
+</div>
+<% Reimbursement::MISSION_REQUEST_EDITABLE_COST_FIELDS.each do |field| %>
   <div class="mb-3">
     <%= f.label field, class: form_label_class_reimbursement %>
     <%= f.number_field field, step: 0.01, min: 0, class: "form-control" %>

@@ -182,22 +182,27 @@ RSpec.describe "Reimbursements", type: :request do
     let(:mission_request) { create(:mission_request, user: user) }
     let!(:generated) { create(:reimbursement, user: user, mission_request: mission_request) }
 
-    it "la pagina di modifica mostra solo i cinque campi spesa modificabili" do
+    it "la pagina di modifica mostra solo la data rimborso e i cinque campi spesa" do
       get edit_reimbursement_path(generated)
 
       page = Nokogiri::HTML(response.body)
+      expect(page.at_css("input[name='reimbursement[reimbursement_date]']")).to be_present
       expect(page.at_css("input[name='reimbursement[generic_cost]']")).to be_present
       expect(page.at_css("input[name='reimbursement[departure_date]']")).to be_nil
       expect(page.at_css("select[name='reimbursement[transport_id]']")).to be_nil
       expect(response.body).to include("generato dall'approvazione")
     end
 
-    it "aggiorna i cinque campi spesa consentiti e ricalcola il totale" do
+    it "aggiorna la data rimborso e i cinque campi spesa consentiti e ricalcola il totale" do
       patch reimbursement_path(generated), params: {
-        reimbursement: { parking_cost: 5, food_cost: 40, room_cost: 60, ticket_cost: 3, generic_cost: 2 }
+        reimbursement: {
+          reimbursement_date: Date.current + 10.days,
+          parking_cost: 5, food_cost: 40, room_cost: 60, ticket_cost: 3, generic_cost: 2
+        }
       }
 
       generated.reload
+      expect(generated.reimbursement_date).to eq(Date.current + 10.days)
       expect([ generated.parking_cost, generated.food_cost, generated.room_cost, generated.ticket_cost, generated.generic_cost ])
         .to eq([ 5, 40, 60, 3, 2 ])
       # Il trasporto della factory non è "Veicolo Privato"/"Aziendale", quindi il
@@ -229,6 +234,25 @@ RSpec.describe "Reimbursements", type: :request do
       expect(generated.reason_fr).to be_nil
       expect(generated.transport_id).to eq(original_transport_id)
       expect(generated).to be_from_mission_request
+    end
+  end
+
+  describe "il direttore (manager) non ha alcun accesso privilegiato ai rimborsi" do
+    let(:director) { create(:user, :manager, region: "FVG", province: "FVG") }
+
+    before { sign_in director }
+
+    it "in elenco vede solo i propri rimborsi, non quelli dei dipendenti" do
+      get reimbursements_path
+
+      expect(response.body).not_to include(reimbursement_path(reimbursement))
+      expect(response.body).not_to include(reimbursement_path(other_reimbursement))
+    end
+
+    it "non può aprire il rimborso di un altro utente" do
+      get reimbursement_path(reimbursement)
+
+      expect(response).to have_http_status(:not_found)
     end
   end
 

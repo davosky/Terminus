@@ -59,6 +59,10 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :director do
+    resources :mission_requests, only: [ :index, :show ]
+  end
+
   get  "validazione_missione/:token/approva",  to: "mission_request_validations#approve_form", as: :approve_form_mission_request_validation
   post "validazione_missione/:token/approva",  to: "mission_request_validations#approve",      as: :approve_mission_request_validation
   get  "validazione_missione/:token/respingi", to: "mission_request_validations#reject_form",  as: :reject_form_mission_request_validation

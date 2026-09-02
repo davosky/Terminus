@@ -90,6 +90,11 @@
                     <i class="bi bi-check2-circle me-2"></i>Da Approvare
                   <% end %>
                 </li>
+                <li class="nav-item">
+                  <%= link_to director_mission_requests_path, class: "nav-link" do %>
+                    <i class="bi bi-people me-2"></i>Richieste Dipendenti
+                  <% end %>
+                </li>
               <% end %>
               <% if current_user.admin? %>
                 <li class="nav-item">

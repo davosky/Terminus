@@ -1512,7 +1512,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L1",
       "id": "app_policies_application_policy_rb",
-      "community": 10,
+      "community": 4,
       "norm_label": "application_policy.rb"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L3",
       "id": "policies_application_policy_applicationpolicy",
-      "community": 10,
+      "community": 4,
       "norm_label": "applicationpolicy"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L6",
       "id": "policies_application_policy_applicationpolicy_initialize",
-      "community": 10,
+      "community": 4,
       "norm_label": ".initialize()"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L11",
       "id": "policies_application_policy_applicationpolicy_index",
-      "community": 10,
+      "community": 4,
       "norm_label": ".index?()"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L15",
       "id": "policies_application_policy_applicationpolicy_show",
-      "community": 10,
+      "community": 4,
       "norm_label": ".show?()"
     },
     {
@@ -1557,7 +1557,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L19",
       "id": "policies_application_policy_applicationpolicy_create",
-      "community": 10,
+      "community": 4,
       "norm_label": ".create?()"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L23",
       "id": "policies_application_policy_applicationpolicy_new",
-      "community": 10,
+      "community": 4,
       "norm_label": ".new?()"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L27",
       "id": "policies_application_policy_applicationpolicy_update",
-      "community": 10,
+      "community": 4,
       "norm_label": ".update?()"
     },
     {
@@ -1584,7 +1584,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L31",
       "id": "policies_application_policy_applicationpolicy_edit",
-      "community": 10,
+      "community": 4,
       "norm_label": ".edit?()"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L35",
       "id": "policies_application_policy_applicationpolicy_destroy",
-      "community": 10,
+      "community": 4,
       "norm_label": ".destroy?()"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L41",
       "id": "policies_application_policy_applicationpolicy_admin",
-      "community": 10,
+      "community": 4,
       "norm_label": ".admin?()"
     },
     {
@@ -1611,7 +1611,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L45",
       "id": "policies_application_policy_scope",
-      "community": 10,
+      "community": 4,
       "norm_label": "scope"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L46",
       "id": "policies_application_policy_scope_initialize",
-      "community": 10,
+      "community": 4,
       "norm_label": ".initialize()"
     },
     {
@@ -1629,7 +1629,7 @@
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L51",
       "id": "policies_application_policy_scope_resolve",
-      "community": 10,
+      "community": 4,
       "norm_label": ".resolve()"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L1",
       "id": "app_services_mission_request_rejection_rb",
-      "community": 10,
+      "community": 168,
       "norm_label": "mission_request_rejection.rb"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L1",
       "id": "services_mission_request_rejection_missionrequestrejection",
-      "community": 10,
+      "community": 168,
       "norm_label": "missionrequestrejection"
     },
     {
@@ -2115,7 +2115,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L2",
       "id": "services_mission_request_rejection_missionrequestrejection_call",
-      "community": 10,
+      "community": 168,
       "norm_label": ".call()"
     },
     {
@@ -2124,7 +2124,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L6",
       "id": "services_mission_request_rejection_missionrequestrejection_initialize",
-      "community": 10,
+      "community": 168,
       "norm_label": ".initialize()"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "app/services/reimbursement_from_mission_request.rb",
       "source_location": "L1",
       "id": "app_services_reimbursement_from_mission_request_rb",
-      "community": 10,
+      "community": 168,
       "norm_label": "reimbursement_from_mission_request.rb"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "app/services/reimbursement_from_mission_request.rb",
       "source_location": "L1",
       "id": "services_reimbursement_from_mission_request_reimbursementfrommissionrequest",
-      "community": 10,
+      "community": 168,
       "norm_label": "reimbursementfrommissionrequest"
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "app/services/reimbursement_from_mission_request.rb",
       "source_location": "L2",
       "id": "services_reimbursement_from_mission_request_reimbursementfrommissionrequest_call",
-      "community": 10,
+      "community": 168,
       "norm_label": ".call()"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_file": "app/services/reimbursement_from_mission_request.rb",
       "source_location": "L6",
       "id": "services_reimbursement_from_mission_request_reimbursementfrommissionrequest_initialize",
-      "community": 10,
+      "community": 168,
       "norm_label": ".initialize()"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "app/services/reimbursement_from_mission_request.rb",
       "source_location": "L23",
       "id": "services_reimbursement_from_mission_request_reimbursementfrommissionrequest_copied_attributes",
-      "community": 10,
+      "community": 168,
       "norm_label": ".copied_attributes()"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "app/models/transport.rb",
       "source_location": "L12",
       "id": "models_transport_transport_protected_record",
-      "community": 2,
+      "community": 124,
       "norm_label": ".protected_record?()"
     },
     {
@@ -3015,7 +3015,7 @@
       "source_file": "app/models/user.rb",
       "source_location": "L1",
       "id": "app_models_user_rb",
-      "community": 10,
+      "community": 168,
       "norm_label": "user.rb"
     },
     {
@@ -3024,7 +3024,7 @@
       "source_file": "app/models/user.rb",
       "source_location": "L1",
       "id": "models_user_user",
-      "community": 10,
+      "community": 168,
       "norm_label": "user"
     },
     {
@@ -3033,7 +3033,7 @@
       "source_file": "app/models/user.rb",
       "source_location": "L23",
       "id": "models_user_user_email_required",
-      "community": 10,
+      "community": 168,
       "norm_label": ".email_required?()"
     },
     {
@@ -3042,7 +3042,7 @@
       "source_file": "app/models/user.rb",
       "source_location": "L27",
       "id": "models_user_user_email_changed",
-      "community": 10,
+      "community": 168,
       "norm_label": ".email_changed?()"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L62",
       "id": "models_mission_request_missionrequest_candidate_validators",
-      "community": 16,
+      "community": 168,
       "norm_label": ".candidate_validators()"
     },
     {
@@ -3744,7 +3744,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_vehicles_controller_rb",
-      "community": 124,
+      "community": 2,
       "norm_label": "vehicles_controller.rb"
     },
     {
@@ -3753,7 +3753,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L1",
       "id": "controllers_vehicles_controller_vehiclescontroller",
-      "community": 124,
+      "community": 2,
       "norm_label": "vehiclescontroller"
     },
     {
@@ -3762,7 +3762,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L4",
       "id": "controllers_vehicles_controller_vehiclescontroller_index",
-      "community": 124,
+      "community": 2,
       "norm_label": ".index()"
     },
     {
@@ -3771,7 +3771,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L8",
       "id": "controllers_vehicles_controller_vehiclescontroller_show",
-      "community": 124,
+      "community": 2,
       "norm_label": ".show()"
     },
     {
@@ -3780,7 +3780,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L11",
       "id": "controllers_vehicles_controller_vehiclescontroller_new",
-      "community": 124,
+      "community": 2,
       "norm_label": ".new()"
     },
     {
@@ -3789,7 +3789,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L16",
       "id": "controllers_vehicles_controller_vehiclescontroller_create",
-      "community": 124,
+      "community": 2,
       "norm_label": ".create()"
     },
     {
@@ -3798,7 +3798,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L27",
       "id": "controllers_vehicles_controller_vehiclescontroller_edit",
-      "community": 124,
+      "community": 2,
       "norm_label": ".edit()"
     },
     {
@@ -3807,7 +3807,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L30",
       "id": "controllers_vehicles_controller_vehiclescontroller_update",
-      "community": 124,
+      "community": 2,
       "norm_label": ".update()"
     },
     {
@@ -3816,7 +3816,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L38",
       "id": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy",
-      "community": 124,
+      "community": 2,
       "norm_label": ".confirm_destroy()"
     },
     {
@@ -3825,7 +3825,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L41",
       "id": "controllers_vehicles_controller_vehiclescontroller_destroy",
-      "community": 124,
+      "community": 2,
       "norm_label": ".destroy()"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L48",
       "id": "controllers_vehicles_controller_vehiclescontroller_set_vehicle",
-      "community": 124,
+      "community": 2,
       "norm_label": ".set_vehicle()"
     },
     {
@@ -3843,7 +3843,7 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L53",
       "id": "controllers_vehicles_controller_vehiclescontroller_vehicle_params",
-      "community": 124,
+      "community": 2,
       "norm_label": ".vehicle_params()"
     },
     {
@@ -4176,7 +4176,7 @@
       "source_file": "app/controllers/mission_requests_controller.rb",
       "source_location": "L75",
       "id": "controllers_mission_requests_controller_missionrequestscontroller_notify_candidate_validators",
-      "community": 16,
+      "community": 168,
       "norm_label": ".notify_candidate_validators()"
     },
     {
@@ -4257,7 +4257,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_transports_controller_rb",
-      "community": 2,
+      "community": 124,
       "norm_label": "transports_controller.rb"
     },
     {
@@ -4266,7 +4266,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L1",
       "id": "controllers_transports_controller_transportscontroller",
-      "community": 2,
+      "community": 124,
       "norm_label": "transportscontroller"
     },
     {
@@ -4275,7 +4275,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L4",
       "id": "controllers_transports_controller_transportscontroller_index",
-      "community": 2,
+      "community": 124,
       "norm_label": ".index()"
     },
     {
@@ -4284,7 +4284,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L8",
       "id": "controllers_transports_controller_transportscontroller_show",
-      "community": 2,
+      "community": 124,
       "norm_label": ".show()"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L11",
       "id": "controllers_transports_controller_transportscontroller_new",
-      "community": 2,
+      "community": 124,
       "norm_label": ".new()"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L16",
       "id": "controllers_transports_controller_transportscontroller_create",
-      "community": 2,
+      "community": 124,
       "norm_label": ".create()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L27",
       "id": "controllers_transports_controller_transportscontroller_edit",
-      "community": 2,
+      "community": 124,
       "norm_label": ".edit()"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L30",
       "id": "controllers_transports_controller_transportscontroller_update",
-      "community": 2,
+      "community": 124,
       "norm_label": ".update()"
     },
     {
@@ -4329,7 +4329,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L43",
       "id": "controllers_transports_controller_transportscontroller_confirm_destroy",
-      "community": 2,
+      "community": 124,
       "norm_label": ".confirm_destroy()"
     },
     {
@@ -4338,7 +4338,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L46",
       "id": "controllers_transports_controller_transportscontroller_destroy",
-      "community": 2,
+      "community": 124,
       "norm_label": ".destroy()"
     },
     {
@@ -4347,7 +4347,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L58",
       "id": "controllers_transports_controller_transportscontroller_set_transport",
-      "community": 2,
+      "community": 124,
       "norm_label": ".set_transport()"
     },
     {
@@ -4356,7 +4356,7 @@
       "source_file": "app/controllers/transports_controller.rb",
       "source_location": "L63",
       "id": "controllers_transports_controller_transportscontroller_transport_params",
-      "community": 2,
+      "community": 124,
       "norm_label": ".transport_params()"
     },
     {
@@ -4446,7 +4446,7 @@
       "source_file": "app/controllers/admin/vehicles_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_admin_vehicles_controller_rb",
-      "community": 124,
+      "community": 2,
       "norm_label": "vehicles_controller.rb"
     },
     {
@@ -4455,7 +4455,7 @@
       "source_file": "app/controllers/admin/vehicles_controller.rb",
       "source_location": "L2",
       "id": "admin_vehicles_controller_vehiclescontroller",
-      "community": 124,
+      "community": 2,
       "norm_label": "vehiclescontroller"
     },
     {
@@ -4581,7 +4581,7 @@
       "source_file": "app/controllers/admin/transports_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_admin_transports_controller_rb",
-      "community": 2,
+      "community": 124,
       "norm_label": "transports_controller.rb"
     },
     {
@@ -4590,7 +4590,7 @@
       "source_file": "app/controllers/admin/transports_controller.rb",
       "source_location": "L2",
       "id": "admin_transports_controller_transportscontroller",
-      "community": 2,
+      "community": 124,
       "norm_label": "transportscontroller"
     },
     {
@@ -5283,7 +5283,7 @@
       "source_file": "app/mailers/mission_request_mailer.rb",
       "source_location": "L1",
       "id": "app_mailers_mission_request_mailer_rb",
-      "community": 10,
+      "community": 168,
       "norm_label": "mission_request_mailer.rb"
     },
     {
@@ -5292,7 +5292,7 @@
       "source_file": "app/mailers/mission_request_mailer.rb",
       "source_location": "L1",
       "id": "mailers_mission_request_mailer_missionrequestmailer",
-      "community": 10,
+      "community": 168,
       "norm_label": "missionrequestmailer"
     },
     {
@@ -5301,7 +5301,7 @@
       "source_file": "app/mailers/mission_request_mailer.rb",
       "source_location": "L2",
       "id": "mailers_mission_request_mailer_missionrequestmailer_validation_request",
-      "community": 16,
+      "community": 168,
       "norm_label": ".validation_request()"
     },
     {
@@ -5310,7 +5310,7 @@
       "source_file": "app/mailers/mission_request_mailer.rb",
       "source_location": "L17",
       "id": "mailers_mission_request_mailer_missionrequestmailer_approved",
-      "community": 10,
+      "community": 168,
       "norm_label": ".approved()"
     },
     {
@@ -5319,7 +5319,7 @@
       "source_file": "app/mailers/mission_request_mailer.rb",
       "source_location": "L26",
       "id": "mailers_mission_request_mailer_missionrequestmailer_rejected",
-      "community": 10,
+      "community": 168,
       "norm_label": ".rejected()"
     },
     {
@@ -6052,73 +6052,28 @@
       "norm_label": "claude.md \u2014 guida per claude code"
     },
     {
-      "label": "1. Pensare prima di scrivere codice",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L7",
-      "id": "terminus_claude_1_pensare_prima_di_scrivere_codice",
-      "community": 126,
-      "norm_label": "1. pensare prima di scrivere codice"
-    },
-    {
-      "label": "2. Prima la semplicit\u00e0",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L18",
-      "id": "terminus_claude_2_prima_la_semplicit\u00e0",
-      "community": 126,
-      "norm_label": "2. prima la semplicita"
-    },
-    {
-      "label": "3. Modifiche chirurgiche",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L30",
-      "id": "terminus_claude_3_modifiche_chirurgiche",
-      "community": 126,
-      "norm_label": "3. modifiche chirurgiche"
-    },
-    {
-      "label": "4. Esecuzione orientata all'obiettivo",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L48",
-      "id": "terminus_claude_4_esecuzione_orientata_all_obiettivo",
-      "community": 140,
-      "norm_label": "4. esecuzione orientata all'obiettivo"
-    },
-    {
-      "label": "code:txt (1. [Passo] \u2192 verifica: [controllo])",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L60",
-      "id": "terminus_claude_codeblock_1",
-      "community": 140,
-      "norm_label": "code:txt (1. [passo] \u2192 verifica: [controllo])"
-    },
-    {
       "label": "\ud83c\udfd7\ufe0f Stack Tecnico",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L72",
+      "source_location": "L5",
       "id": "terminus_claude_stack_tecnico",
-      "community": 140,
+      "community": 126,
       "norm_label": "\ud83c\udfd7\ufe0f stack tecnico"
     },
     {
       "label": "code:bash (Ruby:        >= 4.0.1)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L74",
-      "id": "terminus_claude_codeblock_2",
-      "community": 140,
+      "source_location": "L7",
+      "id": "terminus_claude_codeblock_1",
+      "community": 126,
       "norm_label": "code:bash (ruby:        >= 4.0.1)"
     },
     {
       "label": "\ud83d\udcc1 Struttura del Progetto",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L86",
+      "source_location": "L19",
       "id": "terminus_claude_struttura_del_progetto",
       "community": 140,
       "norm_label": "\ud83d\udcc1 struttura del progetto"
@@ -6127,16 +6082,16 @@
       "label": "code:bash (app/)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L88",
-      "id": "terminus_claude_codeblock_3",
-      "community": 132,
+      "source_location": "L21",
+      "id": "terminus_claude_codeblock_2",
+      "community": 140,
       "norm_label": "code:bash (app/)"
     },
     {
       "label": "\ud83e\udd1d Convenzioni di Codice",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L101",
+      "source_location": "L34",
       "id": "terminus_claude_convenzioni_di_codice",
       "community": 134,
       "norm_label": "\ud83e\udd1d convenzioni di codice"
@@ -6145,7 +6100,7 @@
       "label": "Generale",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L103",
+      "source_location": "L36",
       "id": "terminus_claude_generale",
       "community": 134,
       "norm_label": "generale"
@@ -6154,7 +6109,7 @@
       "label": "Modelli",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L112",
+      "source_location": "L45",
       "id": "terminus_claude_modelli",
       "community": 134,
       "norm_label": "modelli"
@@ -6163,7 +6118,7 @@
       "label": "Controller",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L118",
+      "source_location": "L51",
       "id": "terminus_claude_controller",
       "community": 134,
       "norm_label": "controller"
@@ -6172,7 +6127,7 @@
       "label": "Naming",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L124",
+      "source_location": "L57",
       "id": "terminus_claude_naming",
       "community": 134,
       "norm_label": "naming"
@@ -6181,7 +6136,7 @@
       "label": "\ud83e\uddea Testing",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L133",
+      "source_location": "L66",
       "id": "terminus_claude_testing",
       "community": 132,
       "norm_label": "\ud83e\uddea testing"
@@ -6190,7 +6145,7 @@
       "label": "Approccio: Test-first quando possibile",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L135",
+      "source_location": "L68",
       "id": "terminus_claude_approccio_test_first_quando_possibile",
       "community": 132,
       "norm_label": "approccio: test-first quando possibile"
@@ -6199,8 +6154,8 @@
       "label": "code:bash (spec/)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L137",
-      "id": "terminus_claude_codeblock_4",
+      "source_location": "L70",
+      "id": "terminus_claude_codeblock_3",
       "community": 132,
       "norm_label": "code:bash (spec/)"
     },
@@ -6208,7 +6163,7 @@
       "label": "Regole per i Test",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L147",
+      "source_location": "L80",
       "id": "terminus_claude_regole_per_i_test",
       "community": 132,
       "norm_label": "regole per i test"
@@ -6217,52 +6172,52 @@
       "label": "code:ruby (# Esempio factory minima)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L156",
-      "id": "terminus_claude_codeblock_5",
-      "community": 130,
+      "source_location": "L89",
+      "id": "terminus_claude_codeblock_4",
+      "community": 132,
       "norm_label": "code:ruby (# esempio factory minima)"
     },
     {
       "label": "\ud83d\uddc4\ufe0f Database",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L172",
+      "source_location": "L105",
       "id": "terminus_claude_database",
-      "community": 130,
+      "community": 141,
       "norm_label": "\ud83d\uddc4\ufe0f database"
     },
     {
       "label": "code:ruby (# \u2705 Migrazione con indice)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L180",
-      "id": "terminus_claude_codeblock_6",
-      "community": 130,
+      "source_location": "L113",
+      "id": "terminus_claude_codeblock_5",
+      "community": 141,
       "norm_label": "code:ruby (# \u2705 migrazione con indice)"
     },
     {
       "label": "\ud83d\udd12 Sicurezza",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L189",
+      "source_location": "L122",
       "id": "terminus_claude_sicurezza",
-      "community": 130,
+      "community": 126,
       "norm_label": "\ud83d\udd12 sicurezza"
     },
     {
       "label": "code:ruby (# \u2705 Sempre scoped all'utente)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L200",
-      "id": "terminus_claude_codeblock_7",
-      "community": 130,
+      "source_location": "L133",
+      "id": "terminus_claude_codeblock_6",
+      "community": 126,
       "norm_label": "code:ruby (# \u2705 sempre scoped all'utente)"
     },
     {
       "label": "\u26a1 Performance",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L210",
+      "source_location": "L143",
       "id": "terminus_claude_performance",
       "community": 126,
       "norm_label": "\u26a1 performance"
@@ -6271,16 +6226,43 @@
       "label": "\ud83d\ude80 Workflow con Claude Code",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L220",
+      "source_location": "L153",
       "id": "terminus_claude_workflow_con_claude_code",
       "community": 130,
       "norm_label": "\ud83d\ude80 workflow con claude code"
     },
     {
+      "label": "Come fare una richiesta efficace",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L155",
+      "id": "terminus_claude_come_fare_una_richiesta_efficace",
+      "community": 130,
+      "norm_label": "come fare una richiesta efficace"
+    },
+    {
+      "label": "Esempio di prompt efficace",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L162",
+      "id": "terminus_claude_esempio_di_prompt_efficace",
+      "community": 130,
+      "norm_label": "esempio di prompt efficace"
+    },
+    {
+      "label": "code:text (Aggiungi la possibilit\u00e0 per gli utenti di commentare i Post.)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L164",
+      "id": "terminus_claude_codeblock_7",
+      "community": 130,
+      "norm_label": "code:text (aggiungi la possibilita per gli utenti di commentare i post.)"
+    },
+    {
       "label": "Cose che Claude Code pu\u00f2 fare autonomamente",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L224",
+      "source_location": "L172",
       "id": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente",
       "community": 130,
       "norm_label": "cose che claude code puo fare autonomamente"
@@ -6289,52 +6271,52 @@
       "label": "Cose su cui chiedere conferma prima",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L232",
+      "source_location": "L180",
       "id": "terminus_claude_cose_su_cui_chiedere_conferma_prima",
       "community": 130,
       "norm_label": "cose su cui chiedere conferma prima"
     },
     {
-      "label": "\ud83d\udce6 Gem Principali",
+      "label": "\ud83d\udce6 Gem Principali (personalizza)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L241",
-      "id": "terminus_claude_gem_principali",
-      "community": 126,
-      "norm_label": "\ud83d\udce6 gem principali"
+      "source_location": "L189",
+      "id": "terminus_claude_gem_principali_personalizza",
+      "community": 142,
+      "norm_label": "\ud83d\udce6 gem principali (personalizza)"
     },
     {
       "label": "code:ruby (# Gemfile \u2014 gem comuni in questo progetto)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L243",
+      "source_location": "L191",
       "id": "terminus_claude_codeblock_8",
-      "community": 126,
+      "community": 142,
       "norm_label": "code:ruby (# gemfile \u2014 gem comuni in questo progetto)"
     },
     {
       "label": "\ud83c\udf0d Variabili d'Ambiente Richieste",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L280",
+      "source_location": "L228",
       "id": "terminus_claude_variabili_d_ambiente_richieste",
-      "community": 126,
+      "community": 143,
       "norm_label": "\ud83c\udf0d variabili d'ambiente richieste"
     },
     {
-      "label": "code:ruby (DATABASE_HOST=         # PostgreSQL host es. localhost)",
+      "label": "code:bash (DATABASE_HOST=         # PostgreSQL host es. localhost)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L282",
+      "source_location": "L230",
       "id": "terminus_claude_codeblock_9",
-      "community": 126,
-      "norm_label": "code:ruby (database_host=         # postgresql host es. localhost)"
+      "community": 143,
+      "norm_label": "code:bash (database_host=         # postgresql host es. localhost)"
     },
     {
       "label": "\ud83d\udccb Comandi Utili",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L291",
+      "source_location": "L239",
       "id": "terminus_claude_comandi_utili",
       "community": 139,
       "norm_label": "\ud83d\udccb comandi utili"
@@ -6343,7 +6325,7 @@
       "label": "code:bash (# Setup)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L293",
+      "source_location": "L241",
       "id": "terminus_claude_codeblock_10",
       "community": 139,
       "norm_label": "code:bash (# setup)"
@@ -6352,7 +6334,7 @@
       "label": "\u274c Anti-Pattern da Evitare",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L313",
+      "source_location": "L263",
       "id": "terminus_claude_anti_pattern_da_evitare",
       "community": 126,
       "norm_label": "\u274c anti-pattern da evitare"
@@ -6361,7 +6343,7 @@
       "label": "\ud83d\udd11 Best Practice Essenziali di Sicurezza per Ruby on Rails",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L325",
+      "source_location": "L275",
       "id": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails",
       "community": 126,
       "norm_label": "\ud83d\udd11 best practice essenziali di sicurezza per ruby on rails"
@@ -6370,7 +6352,7 @@
       "label": "Introduzione e Contesto",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L327",
+      "source_location": "L283",
       "id": "terminus_claude_introduzione_e_contesto",
       "community": 126,
       "norm_label": "introduzione e contesto"
@@ -6379,7 +6361,7 @@
       "label": "Best Practice di Sicurezza Chiave in Ruby on Rails",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L342",
+      "source_location": "L298",
       "id": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
       "community": 24,
       "norm_label": "best practice di sicurezza chiave in ruby on rails"
@@ -6388,7 +6370,7 @@
       "label": "1. Protezione dall'SQL Injection",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L344",
+      "source_location": "L300",
       "id": "terminus_claude_1_protezione_dall_sql_injection",
       "community": 24,
       "norm_label": "1. protezione dall'sql injection"
@@ -6397,7 +6379,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L354",
+      "source_location": "L310",
       "id": "terminus_claude_codeblock_11",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6406,7 +6388,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L366",
+      "source_location": "L322",
       "id": "terminus_claude_codeblock_12",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6415,7 +6397,7 @@
       "label": "2. Mitigazione del Cross-Site Scripting (XSS)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L380",
+      "source_location": "L336",
       "id": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
       "community": 24,
       "norm_label": "2. mitigazione del cross-site scripting (xss)"
@@ -6424,7 +6406,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L390",
+      "source_location": "L346",
       "id": "terminus_claude_codeblock_13",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6433,7 +6415,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L401",
+      "source_location": "L357",
       "id": "terminus_claude_codeblock_14",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6442,7 +6424,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L410",
+      "source_location": "L366",
       "id": "terminus_claude_codeblock_15",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6451,7 +6433,7 @@
       "label": "3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L425",
+      "source_location": "L381",
       "id": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
       "community": 24,
       "norm_label": "3. gestione sicura di segreti, credenziali e dati di configurazione sensibili"
@@ -6460,7 +6442,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L435",
+      "source_location": "L391",
       "id": "terminus_claude_codeblock_16",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6469,7 +6451,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L447",
+      "source_location": "L403",
       "id": "terminus_claude_codeblock_17",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6478,7 +6460,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L456",
+      "source_location": "L412",
       "id": "terminus_claude_codeblock_18",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6487,7 +6469,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L468",
+      "source_location": "L424",
       "id": "terminus_claude_codeblock_19",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6496,7 +6478,7 @@
       "label": "4. Corretta Gestione delle Sessioni e Cookie Sicuri",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L483",
+      "source_location": "L439",
       "id": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
       "community": 24,
       "norm_label": "4. corretta gestione delle sessioni e cookie sicuri"
@@ -6505,7 +6487,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L493",
+      "source_location": "L449",
       "id": "terminus_claude_codeblock_20",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6514,7 +6496,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L506",
+      "source_location": "L462",
       "id": "terminus_claude_codeblock_21",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6523,7 +6505,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L522",
+      "source_location": "L478",
       "id": "terminus_claude_codeblock_22",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6532,7 +6514,7 @@
       "label": "5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L539",
+      "source_location": "L495",
       "id": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
       "community": 24,
       "norm_label": "5. strategie di protezione contro il cross-site request forgery (csrf)"
@@ -6541,7 +6523,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L553",
+      "source_location": "L509",
       "id": "terminus_claude_codeblock_23",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6550,7 +6532,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L564",
+      "source_location": "L520",
       "id": "terminus_claude_codeblock_24",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6559,7 +6541,7 @@
       "label": "6. Upload di File Sicuri e Gestione degli Allegati",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L581",
+      "source_location": "L537",
       "id": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
       "community": 24,
       "norm_label": "6. upload di file sicuri e gestione degli allegati"
@@ -6568,7 +6550,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L591",
+      "source_location": "L547",
       "id": "terminus_claude_codeblock_25",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6577,7 +6559,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L610",
+      "source_location": "L566",
       "id": "terminus_claude_codeblock_26",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6586,7 +6568,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L619",
+      "source_location": "L575",
       "id": "terminus_claude_codeblock_27",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6595,7 +6577,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L629",
+      "source_location": "L585",
       "id": "terminus_claude_codeblock_28",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6604,7 +6586,7 @@
       "label": "7. Autenticazione e Autorizzazione Robuste",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L655",
+      "source_location": "L611",
       "id": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
       "community": 24,
       "norm_label": "7. autenticazione e autorizzazione robuste"
@@ -6613,7 +6595,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L671",
+      "source_location": "L627",
       "id": "terminus_claude_codeblock_29",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6622,7 +6604,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L678",
+      "source_location": "L634",
       "id": "terminus_claude_codeblock_30",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6631,7 +6613,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L689",
+      "source_location": "L645",
       "id": "terminus_claude_codeblock_31",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6640,7 +6622,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L705",
+      "source_location": "L661",
       "id": "terminus_claude_codeblock_32",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6649,7 +6631,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L714",
+      "source_location": "L670",
       "id": "terminus_claude_codeblock_33",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6658,7 +6640,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L733",
+      "source_location": "L689",
       "id": "terminus_claude_codeblock_34",
       "community": 24,
       "norm_label": "code:ruby"
@@ -6667,7 +6649,7 @@
       "label": "8. Monitoraggio e Audit di Sicurezza Continui",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L751",
+      "source_location": "L707",
       "id": "terminus_claude_8_monitoraggio_e_audit_di_sicurezza_continui",
       "community": 24,
       "norm_label": "8. monitoraggio e audit di sicurezza continui"
@@ -6676,7 +6658,7 @@
       "label": "Approfondimento: Brakeman",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L777",
+      "source_location": "L733",
       "id": "terminus_claude_approfondimento_brakeman",
       "community": 133,
       "norm_label": "approfondimento: brakeman"
@@ -6685,7 +6667,7 @@
       "label": "Installazione e Utilizzo",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L781",
+      "source_location": "L737",
       "id": "terminus_claude_installazione_e_utilizzo",
       "community": 133,
       "norm_label": "installazione e utilizzo"
@@ -6694,7 +6676,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L785",
+      "source_location": "L741",
       "id": "terminus_claude_codeblock_35",
       "community": 133,
       "norm_label": "code:ruby"
@@ -6703,7 +6685,7 @@
       "label": "code:bash",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L793",
+      "source_location": "L749",
       "id": "terminus_claude_codeblock_36",
       "community": 133,
       "norm_label": "code:bash"
@@ -6712,7 +6694,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L803",
+      "source_location": "L759",
       "id": "terminus_claude_codeblock_37",
       "community": 133,
       "norm_label": "code:ruby"
@@ -6721,7 +6703,7 @@
       "label": "Approfondimento: bundler-audit",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L833",
+      "source_location": "L789",
       "id": "terminus_claude_approfondimento_bundler_audit",
       "community": 129,
       "norm_label": "approfondimento: bundler-audit"
@@ -6730,7 +6712,7 @@
       "label": "Installazione e Utilizzo bundler-audit",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L837",
+      "source_location": "L793",
       "id": "terminus_claude_installazione_e_utilizzo_bundler_audit",
       "community": 129,
       "norm_label": "installazione e utilizzo bundler-audit"
@@ -6739,7 +6721,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L841",
+      "source_location": "L797",
       "id": "terminus_claude_codeblock_38",
       "community": 129,
       "norm_label": "code:ruby"
@@ -6748,7 +6730,7 @@
       "label": "code:bash",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L849",
+      "source_location": "L805",
       "id": "terminus_claude_codeblock_39",
       "community": 129,
       "norm_label": "code:bash"
@@ -6757,7 +6739,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L863",
+      "source_location": "L819",
       "id": "terminus_claude_codeblock_40",
       "community": 129,
       "norm_label": "code:ruby"
@@ -6766,7 +6748,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L895",
+      "source_location": "L851",
       "id": "terminus_claude_codeblock_41",
       "community": 129,
       "norm_label": "code:ruby"
@@ -6775,7 +6757,7 @@
       "label": "code:ruby",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L902",
+      "source_location": "L858",
       "id": "terminus_claude_codeblock_42",
       "community": 129,
       "norm_label": "code:ruby"
@@ -6784,7 +6766,7 @@
       "label": "Gem, Librerie e Strumenti Aggiuntivi",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L928",
+      "source_location": "L884",
       "id": "terminus_claude_gem_librerie_e_strumenti_aggiuntivi",
       "community": 126,
       "norm_label": "gem, librerie e strumenti aggiuntivi"
@@ -6793,127 +6775,55 @@
       "label": "Checklist delle Best Practice di Sicurezza",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L964",
+      "source_location": "L920",
       "id": "terminus_claude_checklist_delle_best_practice_di_sicurezza",
       "community": 126,
       "norm_label": "checklist delle best practice di sicurezza"
-    },
-    {
-      "label": "\ud83d\udcc8 Graphify",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L995",
-      "id": "terminus_claude_graphify",
-      "community": 126,
-      "norm_label": "\ud83d\udcc8 graphify"
-    },
-    {
-      "label": "TERMINUS.md",
-      "file_type": "document",
-      "source_file": "TERMINUS.md",
-      "source_location": "L1",
-      "id": "terminus_md",
-      "community": 141,
-      "norm_label": "terminus.md"
-    },
-    {
-      "label": "Terminus",
-      "file_type": "document",
-      "source_file": "TERMINUS.md",
-      "source_location": "L1",
-      "id": "terminus_terminus_terminus",
-      "community": 141,
-      "norm_label": "terminus"
-    },
-    {
-      "label": "Disposizione dell'interfaccia principale ad accesso non avvenuto",
-      "file_type": "document",
-      "source_file": "TERMINUS.md",
-      "source_location": "L32",
-      "id": "terminus_terminus_disposizione_dell_interfaccia_principale_ad_accesso_non_avvenuto",
-      "community": 141,
-      "norm_label": "disposizione dell'interfaccia principale ad accesso non avvenuto"
-    },
-    {
-      "label": "Disposizione dell'interfaccia principale ad accesso avvenuto",
-      "file_type": "document",
-      "source_file": "TERMINUS.md",
-      "source_location": "L36",
-      "id": "terminus_terminus_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto",
-      "community": 141,
-      "norm_label": "disposizione dell'interfaccia principale ad accesso avvenuto"
-    },
-    {
-      "label": "NOTA BENE",
-      "file_type": "document",
-      "source_file": "TERMINUS.md",
-      "source_location": "L68",
-      "id": "terminus_terminus_nota_bene",
-      "community": 141,
-      "norm_label": "nota bene"
-    },
-    {
-      "label": "Come fare una richiesta efficace",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L155",
-      "community": 130,
-      "norm_label": "come fare una richiesta efficace",
-      "id": "terminus_claude_come_fare_una_richiesta_efficace"
-    },
-    {
-      "label": "Esempio di prompt efficace",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L162",
-      "community": 130,
-      "norm_label": "esempio di prompt efficace",
-      "id": "terminus_claude_esempio_di_prompt_efficace"
-    },
-    {
-      "label": "\ud83d\udce6 Gem Principali (personalizza)",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": "L189",
-      "community": 126,
-      "norm_label": "\ud83d\udce6 gem principali (personalizza)",
-      "id": "terminus_claude_gem_principali_personalizza"
     },
     {
       "label": "Conclusione",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L951",
+      "id": "terminus_claude_conclusione",
       "community": 126,
-      "norm_label": "conclusione",
-      "id": "terminus_claude_conclusione"
+      "norm_label": "conclusione"
+    },
+    {
+      "label": "\ud83d\udcc8 Graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L957",
+      "id": "terminus_claude_graphify",
+      "community": 126,
+      "norm_label": "\ud83d\udcc8 graphify"
     },
     {
       "label": "\ud83d\udda5\ufe0f Costruzione dell'applicazione",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L968",
+      "id": "terminus_claude_costruzione_dell_applicazione",
       "community": 136,
-      "norm_label": "\ud83d\udda5\ufe0f costruzione dell'applicazione",
-      "id": "terminus_claude_costruzione_dell_applicazione"
+      "norm_label": "\ud83d\udda5\ufe0f costruzione dell'applicazione"
     },
     {
       "label": "Disposizione dell'interfaccia principale ad accesso non avvenuto",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1001",
+      "id": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_non_avvenuto",
       "community": 136,
-      "norm_label": "disposizione dell'interfaccia principale ad accesso non avvenuto",
-      "id": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_non_avvenuto"
+      "norm_label": "disposizione dell'interfaccia principale ad accesso non avvenuto"
     },
     {
       "label": "Disposizione dell'interfaccia principale ad accesso avvenuto",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1005",
+      "id": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto",
       "community": 136,
-      "norm_label": "disposizione dell'interfaccia principale ad accesso avvenuto",
-      "id": "terminus_claude_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto"
+      "norm_label": "disposizione dell'interfaccia principale ad accesso avvenuto"
     },
     {
       "label": "Application Routes (routes.rb)",
@@ -7275,7 +7185,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 168,
       "norm_label": "it locale: user",
       "id": "locales_it_userlocale"
     },
@@ -9131,7 +9041,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 168,
       "norm_label": "login system spec",
       "id": "system_login_spec_login_spec"
     },
@@ -9170,7 +9080,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 168,
       "norm_label": "user model spec",
       "id": "models_user_spec_user_spec"
     },
@@ -9196,7 +9106,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 168,
       "norm_label": ":user factorybot factory",
       "id": "factories_users_user_factory"
     },
@@ -9417,7 +9327,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "applicationpolicy#admin?",
       "id": "policies_application_policy_admin"
     },
@@ -9495,7 +9405,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "applicationcontroller#user_not_authorized",
       "id": "controllers_application_controller_user_not_authorized"
     },
@@ -9508,7 +9418,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 168,
       "norm_label": "admin::applicationcontroller#authenticate_admin",
       "id": "admin_application_controller_authenticate_admin"
     },
@@ -9677,7 +9587,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 168,
       "norm_label": "db/seeds.rb admin user seed",
       "id": "db_seeds_seed"
     },
@@ -19231,9 +19141,9 @@
       "source_file": "db/migrate/20260902122742_add_unique_index_to_reimbursements_mission_request.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "db_migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_rb",
-      "target": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest"
+      "target": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -19241,9 +19151,9 @@
       "source_file": "db/migrate/20260902122742_add_unique_index_to_reimbursements_mission_request.rb",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest",
-      "target": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest_up"
+      "target": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest_up",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -19251,9 +19161,9 @@
       "source_file": "db/migrate/20260902122742_add_unique_index_to_reimbursements_mission_request.rb",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest",
-      "target": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest_down"
+      "target": "migrate_20260902122742_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest_down",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -19499,46 +19409,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_1_pensare_prima_di_scrivere_codice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_2_prima_la_semplicit\u00e0",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_3_modifiche_chirurgiche",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_4_esecuzione_orientata_all_obiettivo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -19619,11 +19489,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L241",
+      "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_gem_principali",
-      "confidence_score": 1.0
+      "target": "terminus_claude_gem_principali_personalizza"
     },
     {
       "relation": "contains",
@@ -19664,6 +19534,16 @@
       "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
       "target": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L283",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_introduzione_e_contesto"
     },
     {
       "relation": "contains",
@@ -19719,41 +19599,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L957",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_graphify"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L189",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_gem_principali_personalizza"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L283",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_claude_md_guida_per_claude_code",
-      "target": "terminus_claude_introduzione_e_contesto"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
       "source_location": "L951",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "terminus_claude_claude_md_guida_per_claude_code",
       "target": "terminus_claude_conclusione"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L957",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_graphify"
     },
     {
       "relation": "contains",
@@ -19769,16 +19629,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "terminus_claude_4_esecuzione_orientata_all_obiettivo",
-      "target": "terminus_claude_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -19789,41 +19639,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "terminus_claude_stack_tecnico",
-      "target": "terminus_claude_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
       "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "terminus_claude_struttura_del_progetto",
       "target": "terminus_claude_codeblock_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L88",
-      "weight": 1.0,
-      "source": "terminus_claude_struttura_del_progetto",
-      "target": "terminus_claude_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_approccio_test_first_quando_possibile",
-      "target": "terminus_claude_codeblock_3"
     },
     {
       "relation": "contains",
@@ -19889,11 +19709,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L137",
+      "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "terminus_claude_approccio_test_first_quando_possibile",
-      "target": "terminus_claude_codeblock_4",
-      "confidence_score": 1.0
+      "target": "terminus_claude_codeblock_3"
     },
     {
       "relation": "contains",
@@ -19909,16 +19729,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L156",
-      "weight": 1.0,
-      "source": "terminus_claude_regole_per_i_test",
-      "target": "terminus_claude_codeblock_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
       "source_location": "L113",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -19929,61 +19739,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L180",
-      "weight": 1.0,
-      "source": "terminus_claude_database",
-      "target": "terminus_claude_codeblock_6",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
       "source_location": "L133",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "terminus_claude_sicurezza",
       "target": "terminus_claude_codeblock_6"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L200",
-      "weight": 1.0,
-      "source": "terminus_claude_sicurezza",
-      "target": "terminus_claude_codeblock_7",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L164",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_esempio_di_prompt_efficace",
-      "target": "terminus_claude_codeblock_7"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L172",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_workflow_con_claude_code",
-      "target": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L180",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "terminus_claude_workflow_con_claude_code",
-      "target": "terminus_claude_cose_su_cui_chiedere_conferma_prima"
     },
     {
       "relation": "contains",
@@ -20009,11 +19769,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L243",
+      "source_location": "L172",
       "weight": 1.0,
-      "source": "terminus_claude_gem_principali",
-      "target": "terminus_claude_codeblock_8",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "terminus_claude_workflow_con_claude_code",
+      "target": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_workflow_con_claude_code",
+      "target": "terminus_claude_cose_su_cui_chiedere_conferma_prima"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_esempio_di_prompt_efficace",
+      "target": "terminus_claude_codeblock_7"
     },
     {
       "relation": "contains",
@@ -20044,16 +19824,6 @@
       "confidence_score": 1.0,
       "source": "terminus_claude_comandi_utili",
       "target": "terminus_claude_codeblock_10"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L327",
-      "weight": 1.0,
-      "source": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails",
-      "target": "terminus_claude_introduzione_e_contesto",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -20474,46 +20244,6 @@
       "confidence_score": 1.0,
       "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
       "target": "terminus_claude_codeblock_42"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "TERMINUS.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "terminus_md",
-      "target": "terminus_terminus_terminus",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "TERMINUS.md",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "terminus_terminus_terminus",
-      "target": "terminus_terminus_disposizione_dell_interfaccia_principale_ad_accesso_non_avvenuto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "TERMINUS.md",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "terminus_terminus_terminus",
-      "target": "terminus_terminus_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "TERMINUS.md",
-      "source_location": "L68",
-      "weight": 1.0,
-      "source": "terminus_terminus_disposizione_dell_interfaccia_principale_ad_accesso_avvenuto",
-      "target": "terminus_terminus_nota_bene",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -23397,5 +23127,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b06adfb25adba894ad7622a892b50b36d3629fb1"
+  "built_at_commit": "e0d4f34a3c7c6bea6f9b71ad2cc9975483ade698"
 }

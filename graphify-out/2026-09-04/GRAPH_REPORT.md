@@ -1,16 +1,16 @@
-# Graph Report - Terminus  (2026-09-04)
+# Graph Report - Terminus  (2026-09-02)
 
 ## Corpus Check
-- 198 files · ~1,358,193 words
+- 197 files · ~1,358,077 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1038 nodes · 1283 edges · 193 communities (122 shown, 71 thin omitted)
-- Extraction: 79% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 262 edges (avg confidence: 0.86)
+- 1028 nodes · 1265 edges · 195 communities (121 shown, 74 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 262 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b06adfb2`
+- Built from commit: `e0d4f34a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -122,6 +122,8 @@
 - [[_COMMUNITY_Community 139|Community 139]]
 - [[_COMMUNITY_Community 140|Community 140]]
 - [[_COMMUNITY_Community 141|Community 141]]
+- [[_COMMUNITY_Community 142|Community 142]]
+- [[_COMMUNITY_Community 143|Community 143]]
 - [[_COMMUNITY_Community 155|Community 155]]
 - [[_COMMUNITY_Community 157|Community 157]]
 - [[_COMMUNITY_Community 158|Community 158]]
@@ -138,7 +140,7 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `User` - 33 edges
-2. `CLAUDE.md — Guida per Claude Code` - 28 edges
+2. `CLAUDE.md — Guida per Claude Code` - 23 edges
 3. `MissionRequest` - 15 edges
 4. `PlacesController` - 15 edges
 5. `ApplicationPolicy#admin?` - 13 edges
@@ -160,7 +162,7 @@
 - `IT locale: reason` --references--> `Reason`  [EXTRACTED]
   config/locales/it.yml → app/models/reason.rb
 
-## Communities (193 total, 71 thin omitted)
+## Communities (195 total, 74 thin omitted)
 
 ### Community 0 - "Admin Panel: Destinations & Facilities"
 Cohesion: 0.05
@@ -173,6 +175,10 @@ Nodes (22): Admin::PathsController, Admin::PlacesController, Admin::ReasonsContr
 ### Community 3 - "Terminus App Blueprint (Devise/Users/Setup)"
 Cohesion: 0.07
 Nodes (15): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader (+7 more)
+
+### Community 4 - "Application Auth Base"
+Cohesion: 0.14
+Nodes (6): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope, ReimbursementPolicy, Scope
 
 ### Community 5 - "Dev/Build Scripts"
 Cohesion: 0.19
@@ -195,8 +201,8 @@ Cohesion: 0.19
 Nodes (4): PlacePolicy, Scope, Scope, StructurePolicy
 
 ### Community 10 - "Path/Structure Authorization Policies"
-Cohesion: 0.06
-Nodes (18): Admin::ApplicationController#authenticate_admin, ApplicationController#user_not_authorized, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, MissionRequestMailer, User model spec, User (+10 more)
+Cohesion: 0.19
+Nodes (4): PathPolicy, Scope, ReasonPolicy, Scope
 
 ### Community 12 - "Self-Service Form Helpers"
 Cohesion: 0.26
@@ -300,15 +306,15 @@ Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation S
 
 ### Community 124 - "Community 124"
 Cohesion: 0.08
-Nodes (11): Admin::TransportsController, Admin::VehiclesController, VehiclesController, VehiclesController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration (+3 more)
+Nodes (11): Admin::TransportsController, TransportsController, Admin::VehiclesController, TransportsController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateTransports migration (+3 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.29
 Nodes (4): Scope, TransportPolicy, TransportPolicy, VehiclePolicy::Scope
 
 ### Community 126 - "Community 126"
-Cohesion: 0.12
-Nodes (17): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Modifiche chirurgiche, ❌ Anti-Pattern da Evitare, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:ruby (# Gemfile — gem comuni in questo progetto) (+9 more)
+Cohesion: 0.14
+Nodes (13): ❌ Anti-Pattern da Evitare, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza, CLAUDE.md — Guida per Claude Code, code:bash (Ruby:        >= 4.0.1), code:ruby (# ✅ Sempre scoped all'utente), Conclusione, Gem, Librerie e Strumenti Aggiuntivi (+5 more)
 
 ### Community 128 - "Community 128"
 Cohesion: 0.18
@@ -319,16 +325,16 @@ Cohesion: 0.29
 Nodes (7): Approfondimento: bundler-audit, code:ruby, code:bash, code:ruby, code:ruby, code:ruby, Installazione e Utilizzo bundler-audit
 
 ### Community 130 - "Community 130"
-Cohesion: 0.20
-Nodes (10): code:ruby (# Esempio factory minima), code:ruby (# ✅ Migrazione con indice), code:ruby (# ✅ Sempre scoped all'utente), Come fare una richiesta efficace, Cose che Claude Code può fare autonomamente, Cose su cui chiedere conferma prima, 🗄️ Database, Esempio di prompt efficace (+2 more)
+Cohesion: 0.33
+Nodes (6): code:text (Aggiungi la possibilità per gli utenti di commentare i Post.), Come fare una richiesta efficace, Cose che Claude Code può fare autonomamente, Cose su cui chiedere conferma prima, Esempio di prompt efficace, 🚀 Workflow con Claude Code
 
 ### Community 131 - "Community 131"
 Cohesion: 0.40
 Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, Italiano
 
 ### Community 132 - "Community 132"
-Cohesion: 0.50
-Nodes (5): Approccio: Test-first quando possibile, code:bash (app/), code:bash (spec/), Regole per i Test, 🧪 Testing
+Cohesion: 0.40
+Nodes (5): Approccio: Test-first quando possibile, code:bash (spec/), code:ruby (# Esempio factory minima), Regole per i Test, 🧪 Testing
 
 ### Community 133 - "Community 133"
 Cohesion: 0.40
@@ -342,21 +348,13 @@ Nodes (5): Controller, 🤝 Convenzioni di Codice, Generale, Modelli, Naming
 Cohesion: 0.67
 Nodes (3): 🖥️ Costruzione dell'applicazione, Disposizione dell'interfaccia principale ad accesso avvenuto, Disposizione dell'interfaccia principale ad accesso non avvenuto
 
-### Community 140 - "Community 140"
-Cohesion: 0.40
-Nodes (5): 4. Esecuzione orientata all'obiettivo, code:txt (1. [Passo] → verifica: [controllo]), code:bash (Ruby:        >= 4.0.1), 🏗️ Stack Tecnico, 📁 Struttura del Progetto
-
-### Community 141 - "Community 141"
-Cohesion: 0.40
-Nodes (4): Disposizione dell'interfaccia principale ad accesso avvenuto, Disposizione dell'interfaccia principale ad accesso non avvenuto, NOTA BENE, Terminus
-
 ### Community 158 - "Community 158"
 Cohesion: 0.27
 Nodes (3): ApplicationController, ApplicationController, HomeController
 
 ### Community 168 - "Community 168"
-Cohesion: 0.11
-Nodes (6): MissionRequestValidationsController, DirectorMissionRequestPolicy, Scope, Scope, ValidatorMissionRequestPolicy, MissionRequestApproval
+Cohesion: 0.05
+Nodes (16): Admin::ApplicationController#authenticate_admin, MissionRequestValidationsController, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, MissionRequestMailer, User model spec, User (+8 more)
 
 ## Ambiguous Edges - Review These
 - `App Favicon Icon (SVG)` → `Navbar Brand Logo (Terminus wordmark, compact)`  [AMBIGUOUS]
@@ -365,9 +363,9 @@ Nodes (6): MissionRequestValidationsController, DirectorMissionRequestPolicy, Sc
   config/cable.yml · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **211 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+206 more)
+- **216 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+211 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **71 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **74 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -376,13 +374,13 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `Path/Structure Authorization Policies` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Community 168`, `Mission Request Controller & Code Generator`, `Paths Controller CRUD`, `Path/Place/Reason/Structure Test Suite`, `Transport Protected-Record Safeguard`, `Community 125`?**
-  _High betweenness centrality (0.114) - this node is a cross-community bridge._
-- **Why does `Reason` connect `Admin Panel: Transports & Vehicles` to `Transport Protected-Record Safeguard`, `Path/Structure Authorization Policies`, `Reasons/Structures Controllers CRUD`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `User` connect `Community 168` to `Admin Panel: Transports & Vehicles`, `Application Auth Base`, `Dev/Build Scripts`, `Reasons/Structures Controllers CRUD`, `Paths Controller CRUD`, `Mission Request Controller & Code Generator`, `Path/Structure Authorization Policies`, `Path/Place/Reason/Structure Test Suite`, `Community 125`?**
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
+- **Why does `MissionRequestsController` connect `Transport Protected-Record Safeguard` to `Community 168`?**
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **Why does `Path` connect `Admin Panel: Transports & Vehicles` to `Community 168`, `Community 169`, `Paths Controller CRUD`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Are the 19 inferred relationships involving `User` (e.g. with `.owner?()` and `.owner?()`) actually correct?**
   _`User` has 19 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `PlacesController` (e.g. with `paths_controller.rb` and `reasons_controller.rb`) actually correct?**
   _`PlacesController` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 3 inferred relationships involving `ApplicationPolicy#admin?` (e.g. with `User` and `ApplicationController#user_not_authorized`) actually correct?**
-  _`ApplicationPolicy#admin?` has 3 INFERRED edges - model-reasoned connections that need verification._

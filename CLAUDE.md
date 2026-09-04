@@ -1,5 +1,72 @@
 # CLAUDE.md — Guida per Claude Code
 
+Linee guida comportamentali per ridurre gli errori più comuni degli LLM nella scrittura di codice. Da integrare con le istruzioni specifiche del progetto, se necessario.
+
+Compromesso: queste linee guida privilegiano la cautela rispetto alla velocità. Per compiti banali, usa il buon senso.
+
+## 1. Pensare prima di scrivere codice
+
+Non dare nulla per scontato. Non nascondere l'incertezza. Fai emergere i compromessi.
+
+Prima di implementare:
+
+- Dichiara esplicitamente le tue assunzioni. In caso di dubbio, chiedi.
+- Se esistono più interpretazioni, presentale tutte — non sceglierne una in silenzio.
+- Se esiste un approccio più semplice, dillo. Fai presente le tue obiezioni quando è opportuno.
+- Se qualcosa non è chiaro, fermati. Indica cosa ti confonde. Chiedi.
+
+## 2. Prima la semplicità
+
+Il codice minimo che risolve il problema. Niente di speculativo.
+
+- Nessuna funzionalità oltre a quanto richiesto.
+- Nessuna astrazione per codice a uso singolo.
+- Nessuna "flessibilità" o "configurabilità" non richiesta.
+- Nessuna gestione degli errori per scenari impossibili.
+- Se scrivi 200 righe e potrebbero essere 50, riscrivi.
+
+Chiediti: "Un ingegnere senior direbbe che questo è overcomplicato?" Se sì, semplifica.
+
+## 3. Modifiche chirurgiche
+
+Tocca solo ciò che è necessario. Ripulisci solo il tuo stesso disordine.
+
+Quando modifichi codice esistente:
+
+- Non "migliorare" codice, commenti o formattazione adiacenti.
+- Non rifattorizzare ciò che non è rotto.
+- Rispetta lo stile esistente, anche se tu lo faresti diversamente.
+- Se noti codice morto non correlato, segnalalo — non eliminarlo.
+
+Quando le tue modifiche creano elementi orfani:
+
+- Rimuovi import/variabili/funzioni diventati inutilizzati a causa delle TUE modifiche.
+- Non rimuovere codice morto preesistente, a meno che non venga richiesto.
+
+Il test: ogni riga modificata dovrebbe essere direttamente riconducibile alla richiesta dell'utente.
+
+## 4. Esecuzione orientata all'obiettivo
+
+Definisci i criteri di successo. Itera finché non sono verificati.
+
+Trasforma i compiti in obiettivi verificabili:
+
+- "Aggiungi la validazione" → "Scrivi test per input non validi, poi falli passare"
+- "Correggi il bug" → "Scrivi un test che lo riproduce, poi fallo passare"
+- "Rifattorizza X" → "Assicurati che i test passino prima e dopo"
+
+Per compiti multi-step, indica un breve piano:
+
+```txt
+1. [Passo] → verifica: [controllo]
+2. [Passo] → verifica: [controllo]
+3. [Passo] → verifica: [controllo]
+```
+
+Criteri di successo solidi ti permettono di iterare in autonomia. Criteri deboli (tipo "fallo funzionare") richiedono chiarimenti continui.
+
+Queste linee guida funzionano se: ci sono meno modifiche superflue nei diff, meno riscritture dovute a overengineering, e le domande di chiarimento arrivano prima dell'implementazione anziché dopo gli errori.
+
 ---
 
 ## 🏗️ Stack Tecnico
@@ -152,22 +219,7 @@ end
 
 ## 🚀 Workflow con Claude Code
 
-### Come fare una richiesta efficace
-
-1. Descrivi la **feature** dal punto di vista dell'utente
-2. Specifica i **model coinvolti**
-3. Indica se vuoi **test inclusi** (di default: sì)
-4. Segnala **vincoli** (performance, sicurezza, backward compat)
-
-### Esempio di prompt efficace
-
-```text
-Aggiungi la possibilità per gli utenti di commentare i Post.
-Un commento ha: testo (max 500 chars), autore (User), e può
-essere risposta ad altro commento (thread a un livello).
-Include validazioni, migration, RSpec specs e il partial Turbo
-per aggiungere commenti senza reload della pagina.
-```
+---
 
 ### Cose che Claude Code può fare autonomamente
 
@@ -186,7 +238,7 @@ per aggiungere commenti senza reload della pagina.
 
 ---
 
-## 📦 Gem Principali (personalizza)
+## 📦 Gem Principali
 
 ```ruby
 # Gemfile — gem comuni in questo progetto
@@ -227,7 +279,7 @@ gem "view_component"
 
 ## 🌍 Variabili d'Ambiente Richieste
 
-```bash
+```ruby
 DATABASE_HOST=         # PostgreSQL host es. localhost
 DATABASE_USER=         # db username
 DATABASE_PASSWORD=     # db password
@@ -258,8 +310,6 @@ bundle exec rails console          # console interattiva
 bundle exec rails routes | grep X  # cerca routes
 ```
 
----
-
 ## ❌ Anti-Pattern da Evitare
 
 - ❌ Logica nei controller oltre `set_`, `require_`, `redirect`
@@ -274,13 +324,7 @@ bundle exec rails routes | grep X  # cerca routes
 
 ## 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails
 
-**Di [Harsh Patel](https://www.linkedin.com/in/harsh-patel-072379142/), Cyber Security Enthusiast & Senior Ruby on Rails Dev**
-
-Ruby on Rails ha permesso a innumerevoli sviluppatori di creare applicazioni web in modo rapido ed elegante. Tuttavia, a un grande potere corrisponde una grande responsabilità. Nel panorama delle minacce odierno, mettere in sicurezza la propria applicazione Rails non è opzionale: è una necessità assoluta. In questa guida completa, ti accompagnerò attraverso le best practice di sicurezza essenziali che ogni sviluppatore Rails, dal livello intermedio all'avanzato, dovrebbe conoscere e implementare immediatamente per proteggere le proprie applicazioni dalle vulnerabilità più comuni e dalle minacce emergenti.
-
----
-
-## Introduzione e Contesto
+### Introduzione e Contesto
 
 Nel mondo dello sviluppo web, la sicurezza è un pilastro fondamentale per un software sostenibile e affidabile. Con la filosofia di Rails "convention over configuration", molte funzionalità di sicurezza sono già integrate, ma questo non significa che ci si possa permettere di abbassare la guardia. Le applicazioni web sono costantemente prese di mira da attaccanti che sfruttano debolezze come:
 
@@ -948,12 +992,6 @@ Prima di distribuire o effettuare l'audit della tua applicazione Rails, assicura
 
 ---
 
-## Conclusione
-
-Mettere in sicurezza la tua applicazione Ruby on Rails è un processo continuo, a più livelli, che richiede diligenza, gli strumenti giusti e una mentalità proattiva. Implementando queste best practice, dalla difesa contro SQL injection e XSS alla gestione sicura delle sessioni fino alla protezione dei tuoi segreti, non solo proteggi i dati dei tuoi utenti, ma migliori anche l'affidabilità e la fiducia nella tua applicazione.
-
-Ricorda, la sicurezza non è una casella da spuntare una tantum: è un impegno continuo. Rimani informato sugli sviluppi più recenti in materia di sicurezza, effettua audit regolari del tuo codice base e integra costantemente pratiche di sicurezza moderne nel tuo workflow di sviluppo. Il tuo io futuro, e i tuoi utenti, ti ringrazieranno.
-
 ## 📈 Graphify
 
 Questo progetto deve disporre di un grafo della conoscenza situato in `graphify-out/`, contenente nodi principali ("god nodes"), struttura delle comunità e relazioni tra i file. Pertanto si richiede l'installazione e la configurazione di graphify.
@@ -964,76 +1002,3 @@ Regole:
 - Se esiste il file `graphify-out/wiki/index.md`, utilizzalo per una navigazione generale anziché esplorare direttamente il codice sorgente.
 - Consulta `graphify-out/GRAPH_REPORT.md` solo per una panoramica dell'architettura o quando i comandi `query`, `path` o `explain` non forniscono un contesto sufficiente.
 - Dopo aver modificato il codice, esegui `graphify update .` per mantenere aggiornato il grafo (operazione basata solo sull'AST, senza costi API).
-
-## 🖥️ Costruzione dell'applicazione
-
----
-
-*Nome dell'applicazione:* **Terminus**, gestione rimborsi spese ed assenze.
-
-*Scopo dell'applicazione:* Gestire i rimborsi spese ed assenze dei dipendenti.
-
-**Per incominciare costruiamo l'ossatura della applicazione:**
-
-- database:
-  - RDBMS: Postgresql >= 18
-  - database development: terminus_development
-  - database test: terminus_test
-  - usa dotenv-rails per gestire gli accessi ai database
-- interfaccia grafica:
-  - framework front-end: Bootstrap >= 5.2 (https://getbootstrap.com/docs/5.2/getting-started/introduction/)
-  - personalizzazione:  Bootswatch  con un tema chiaro (https://bootswatch.com/lumen/)
-  - interfaccia mobile first ( **gli utenti devono poter operare comodamente da telefonino** )
-- javascript
-  - bundler: ESbuild
-  - preferire la creazione di controller Stimulus per qualsiasi codice javascript
-- autenticazione
-  - autenticazione usando la gemma Devise
-  - il campo principale per l'autenticazione deve essere **username** e non email
-  - ottimizzare Devise in modo che sia compatibile con tutbo-rails
-- amministrazione
-  - usare la gemma Administrate
-  - per ogni modello creato viene creato automaticamente un pannello corrispondente in Administrate
-- autorizzazione
-  - utillizzare la gemma Pundit per gestire le autorizzazioni degli utenti
-  - l'utente con il flag **admin = true** può fare qualsiasi cosa ed ha i permessi più alti
-
-### Disposizione dell'interfaccia principale ad accesso non avvenuto
-
-Una pagina unica con al centro il logo dell'applicazione e una card dove sono presenti l'inserimento del nome-utente e della password.
-
-### Disposizione dell'interfaccia principale ad accesso avvenuto
-
-1. Ottimizzare la vista per le device mobili prima e poi per schermi da desktop pc
-2. creazione degli utenti
-   - creare un modello User con devise con i seguenti campi:
-     - username: string (campo principale per l'autenticazione che deve essere indicizzato)
-     - first_name:string
-     - last_name:string
-     - gender:string
-     - region:string
-     - province:string
-     - category:string
-     - admin:boolean
-     - manager:boolean
-     - regular:boolean
-   - creare un primo utente amministratore con i seguenti dati
-     - username:
-     - password:
-     - password_confirmation:
-     - first_name:Davo
-     - last_name:Davosky
-     - gender:M
-     - region:FVG
-     - province:FVG
-     - category:CGIL
-     - admin:true
-     - manager:false
-     - regular:false
-   - creare le views di devise
-
----
-
-**NOTA BENE:**
-
-i database **terminus_development** e **terminus_test** sono già stati creati e sono subito utilizzabili,

@@ -45,12 +45,42 @@ class ReimbursementsController < ApplicationController
   def confirm_destroy
   end
 
+  def print
+    authorize Reimbursement, :print?
+    @q = current_user.reimbursements.ransack(search_params)
+    @reimbursements = @q.result(distinct: true)
+      .includes(:user, :transport, :vehicle, :reason, :place, :structure, :path)
+      .order(id: :desc)
+
+    respond_to do |format|
+      format.html
+      format.pdf { send_reimbursements_pdf }
+    end
+  end
+
   def destroy
     @reimbursement.destroy
     redirect_to reimbursements_path, notice: "Rimborso spese eliminato con successo.", status: :see_other
   end
 
   private
+
+  # Ransack refuses unpermitted parameters, so the print form's two date bounds
+  # are the only search keys that ever reach it.
+  def search_params
+    return {} unless params[:q].is_a?(ActionController::Parameters)
+
+    params[:q].permit(:departure_date_gteq, :departure_date_lteq)
+  end
+
+  def send_reimbursements_pdf
+    if @reimbursements.empty?
+      redirect_to print_reimbursements_path(q: search_params), alert: "Nessun rimborso spese da stampare per il periodo selezionato."
+    else
+      send_data ReimbursementsPdf.new(@reimbursements).render,
+        filename: "rimborsi-spese.pdf", type: "application/pdf", disposition: "inline"
+    end
+  end
 
   def set_reimbursement
     @reimbursement = policy_scope(Reimbursement).find(params[:id])

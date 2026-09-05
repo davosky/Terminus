@@ -44,6 +44,10 @@ Rails.application.routes.draw do
   end
 
   resources :reimbursements do
+    collection do
+      get :print
+    end
+
     member do
       get :confirm_destroy
     end

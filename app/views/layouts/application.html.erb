@@ -70,10 +70,22 @@
                   <% end %>
                 </li>
               <% end %>
-              <li class="nav-item">
-                <%= link_to reimbursements_path, class: "nav-link" do %>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="reimbursementsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-cash-coin me-2"></i>Rimborsi Spese
-                <% end %>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reimbursementsDropdown">
+                  <li>
+                    <%= link_to reimbursements_path, class: "dropdown-item" do %>
+                      <i class="bi bi-person me-2"></i>I Miei Rimborsi Spese
+                    <% end %>
+                  </li>
+                  <li>
+                    <%= link_to print_reimbursements_path, class: "dropdown-item" do %>
+                      <i class="bi bi-printer me-2"></i>Stampa Rimborsi Spese
+                    <% end %>
+                  </li>
+                </ul>
               </li>
             </ul>
             <ul class="navbar-nav">

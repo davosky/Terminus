@@ -1,0 +1,74 @@
+<% content_for :title, "Stampa Rimborsi Spese - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("reimbursements/reimbursements_print.svg", class: "img-fluid me-3", style: "height: 4rem;", alt: "reimbursements_print") %>
+          <span class="text-primary">
+            <i>Stampa Rimborsi Spese</i>
+          </span>
+        </h2>
+        <%= link_to reimbursements_path, class: "btn btn-secondary" do %>
+          <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna all'elenco
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <%= search_form_for @q, url: print_reimbursements_path, method: :get, html: { class: "row g-3 align-items-end mb-4" } do |f| %>
+            <div class="col-md-4">
+              <%= f.label :departure_date_gteq, "Data Partenza Da", class: "form-label" %>
+              <%= f.date_field :departure_date_gteq, class: "form-control" %>
+            </div>
+            <div class="col-md-4">
+              <%= f.label :departure_date_lteq, "Data Partenza A", class: "form-label" %>
+              <%= f.date_field :departure_date_lteq, class: "form-control" %>
+            </div>
+            <div class="col-md-4 d-flex gap-2">
+              <%= f.submit "Cerca", class: "btn btn-primary" %>
+              <%= link_to "Azzera", print_reimbursements_path, class: "btn btn-outline-secondary" %>
+            </div>
+          <% end %>
+          <hr class="text-info mt-3 mb-4"/>
+          <% if @reimbursements.any? %>
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+              <span class="fs-6 text-body-secondary">
+                <%= pluralize(@reimbursements.size, "rimborso spese trovato", plural: "rimborsi spese trovati") %>
+              </span>
+              <%= link_to print_reimbursements_path(format: :pdf, q: params[:q]&.permit(:departure_date_gteq, :departure_date_lteq)), class: "btn btn-danger", target: "_blank", rel: "noopener", data: { turbo: false } do %>
+                <i class="bi bi-file-earmark-pdf me-2"></i>Genera PDF
+              <% end %>
+            </div>
+            <div class="list-group">
+              <% @reimbursements.each do |reimbursement| %>
+                <div class="list-group-item">
+                  <span class="ms-2 fs-6 fw-bold text-primary">
+                    <i class="bi bi-calendar-event me-1"></i>
+                    <%= l(reimbursement.departure_date, format: :long) if reimbursement.departure_date %>
+                    <span class="fs-6 fw-bold text-info">
+                      &rarr;
+                    </span>
+                    <%= l(reimbursement.return_date, format: :long) if reimbursement.return_date %>
+                  </span>
+                  <br/>
+                  <span class="ms-2 fs-6 fst-italic text-primary">
+                    <i class="bi bi-geo-alt text-primary me-1"></i>
+                    <%= reimbursement.display_place %>
+                  </span>
+                  <br/>
+                  <span class="ms-2 fs-6 fst-italic" style="color: #e83e8c;">
+                    <i class="bi bi-cash-coin text-primary me-1"></i>
+                    <%= number_to_currency(reimbursement.total_amount) %>
+                  </span>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <p class="card-text text-body-secondary mb-0">Nessun rimborso spese trovato per il periodo selezionato.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

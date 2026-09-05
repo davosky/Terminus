@@ -29,6 +29,16 @@ class Reimbursement < ApplicationRecord
 
   scope :ordered, -> { order(request_date: :desc) }
 
+  # Ransack only ever needs the departure date: the print form filters on it and
+  # nothing else is exposed to user-supplied search params.
+  def self.ransackable_attributes(_auth_object = nil)
+    %w[departure_date]
+  end
+
+  def self.ransackable_associations(_auth_object = nil)
+    []
+  end
+
   def display_reason
     reason&.name || reason_fr
   end

@@ -25,15 +25,21 @@ class ReimbursementPolicy < ApplicationPolicy
     destroy?
   end
 
+  def print?
+    true
+  end
+
   private
 
+  # A reimbursement is strictly personal: not even an administrator reaches the
+  # ones belonging to somebody else through the front office.
   def owner?
-    record.user == user || admin?
+    record.user == user
   end
 
   class Scope < Scope
     def resolve
-      user&.admin? ? scope.all : scope.where(user: user)
+      scope.where(user: user)
     end
   end
 end

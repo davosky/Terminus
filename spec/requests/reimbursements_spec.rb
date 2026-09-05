@@ -142,6 +142,41 @@ RSpec.describe "Reimbursements", type: :request do
     end
   end
 
+  describe "quando l'utente corrente è amministratore" do
+    let!(:admin) { create(:user, :admin) }
+    let!(:admin_reimbursement) { create(:reimbursement, user: admin) }
+
+    before { sign_in admin }
+
+    it "elenca solo i propri rimborsi spese" do
+      get reimbursements_path
+
+      expect(response.body).to include(reimbursement_path(admin_reimbursement))
+      expect(response.body).not_to include(reimbursement_path(reimbursement))
+    end
+
+    it "non consente di vedere il rimborso spese di un altro utente" do
+      get reimbursement_path(reimbursement)
+
+      expect(response).to have_http_status(:not_found)
+    end
+
+    it "non consente di modificare il rimborso spese di un altro utente" do
+      patch reimbursement_path(reimbursement), params: { reimbursement: { food_cost: 99 } }
+
+      expect(response).to have_http_status(:not_found)
+      expect(reimbursement.reload.food_cost).not_to eq(99)
+    end
+
+    it "non consente di eliminare il rimborso spese di un altro utente" do
+      expect {
+        delete reimbursement_path(reimbursement)
+      }.not_to change(Reimbursement, :count)
+
+      expect(response).to have_http_status(:not_found)
+    end
+  end
+
   describe "GET /reimbursements/:id/edit" do
     it "nasconde la scelta della modalità di inserimento e mostra i campi memorizzati" do
       get edit_reimbursement_path(reimbursement)

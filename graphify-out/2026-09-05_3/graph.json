@@ -810,24 +810,6 @@
       "norm_label": "director_mission_request_policy_spec.rb"
     },
     {
-      "label": "reimbursements_pdf_spec.rb",
-      "file_type": "code",
-      "source_file": "spec/pdfs/reimbursements_pdf_spec.rb",
-      "source_location": "L1",
-      "id": "spec_pdfs_reimbursements_pdf_spec_rb",
-      "community": 33,
-      "norm_label": "reimbursements_pdf_spec.rb"
-    },
-    {
-      "label": "page_count()",
-      "file_type": "code",
-      "source_file": "spec/pdfs/reimbursements_pdf_spec.rb",
-      "source_location": "L4",
-      "id": "pdfs_reimbursements_pdf_spec_page_count",
-      "community": 33,
-      "norm_label": "page_count()"
-    },
-    {
       "label": "mission_request_rejection_spec.rb",
       "file_type": "code",
       "source_file": "spec/services/mission_request_rejection_spec.rb",
@@ -2732,7 +2714,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L1",
       "id": "app_services_mission_request_rejection_rb",
-      "community": 11,
+      "community": 43,
       "norm_label": "mission_request_rejection.rb"
     },
     {
@@ -2741,7 +2723,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L1",
       "id": "services_mission_request_rejection_missionrequestrejection",
-      "community": 11,
+      "community": 43,
       "norm_label": "missionrequestrejection"
     },
     {
@@ -2750,7 +2732,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L2",
       "id": "services_mission_request_rejection_missionrequestrejection_call",
-      "community": 11,
+      "community": 43,
       "norm_label": ".call()"
     },
     {
@@ -2759,7 +2741,7 @@
       "source_file": "app/services/mission_request_rejection.rb",
       "source_location": "L6",
       "id": "services_mission_request_rejection_missionrequestrejection_initialize",
-      "community": 11,
+      "community": 43,
       "norm_label": ".initialize()"
     },
     {
@@ -2768,7 +2750,7 @@
       "source_file": "app/services/mission_request_approval.rb",
       "source_location": "L1",
       "id": "app_services_mission_request_approval_rb",
-      "community": 11,
+      "community": 176,
       "norm_label": "mission_request_approval.rb"
     },
     {
@@ -2777,7 +2759,7 @@
       "source_file": "app/services/mission_request_approval.rb",
       "source_location": "L1",
       "id": "services_mission_request_approval_missionrequestapproval",
-      "community": 11,
+      "community": 176,
       "norm_label": "missionrequestapproval"
     },
     {
@@ -2786,7 +2768,7 @@
       "source_file": "app/services/mission_request_approval.rb",
       "source_location": "L2",
       "id": "services_mission_request_approval_missionrequestapproval_call",
-      "community": 11,
+      "community": 176,
       "norm_label": ".call()"
     },
     {
@@ -2795,7 +2777,7 @@
       "source_file": "app/services/mission_request_approval.rb",
       "source_location": "L6",
       "id": "services_mission_request_approval_missionrequestapproval_initialize",
-      "community": 11,
+      "community": 176,
       "norm_label": ".initialize()"
     },
     {
@@ -3587,7 +3569,7 @@
       "source_file": "app/models/place.rb",
       "source_location": "L1",
       "id": "app_models_place_rb",
-      "community": 17,
+      "community": 175,
       "norm_label": "place.rb"
     },
     {
@@ -3596,7 +3578,7 @@
       "source_file": "app/models/place.rb",
       "source_location": "L1",
       "id": "models_place_place",
-      "community": 17,
+      "community": 175,
       "norm_label": "place"
     },
     {
@@ -3776,7 +3758,7 @@
       "source_file": "app/models/mission_request.rb",
       "source_location": "L46",
       "id": "models_mission_request_missionrequest_pending",
-      "community": 11,
+      "community": 33,
       "norm_label": ".pending?()"
     },
     {
@@ -4865,7 +4847,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L1",
       "id": "app_controllers_mission_request_validations_controller_rb",
-      "community": 11,
+      "community": 33,
       "norm_label": "mission_request_validations_controller.rb"
     },
     {
@@ -4874,7 +4856,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L1",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller",
-      "community": 11,
+      "community": 33,
       "norm_label": "missionrequestvalidationscontroller"
     },
     {
@@ -4883,7 +4865,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L11",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve_form",
-      "community": 11,
+      "community": 33,
       "norm_label": ".approve_form()"
     },
     {
@@ -4892,7 +4874,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L19",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_approve",
-      "community": 11,
+      "community": 33,
       "norm_label": ".approve()"
     },
     {
@@ -4901,7 +4883,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L30",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_reject_form",
-      "community": 11,
+      "community": 33,
       "norm_label": ".reject_form()"
     },
     {
@@ -4910,7 +4892,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L38",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_reject",
-      "community": 11,
+      "community": 33,
       "norm_label": ".reject()"
     },
     {
@@ -4919,7 +4901,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L58",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_set_mission_request",
-      "community": 11,
+      "community": 33,
       "norm_label": ".set_mission_request()"
     },
     {
@@ -4928,7 +4910,7 @@
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L62",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_render_result",
-      "community": 11,
+      "community": 33,
       "norm_label": ".render_result()"
     },
     {
@@ -6800,7 +6782,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L86",
       "id": "terminus_claude_struttura_del_progetto",
-      "community": 46,
+      "community": 28,
       "norm_label": "\ud83d\udcc1 struttura del progetto"
     },
     {
@@ -6809,7 +6791,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L88",
       "id": "terminus_claude_codeblock_3",
-      "community": 46,
+      "community": 28,
       "norm_label": "code:bash (app/)"
     },
     {
@@ -6917,7 +6899,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L180",
       "id": "terminus_claude_codeblock_6",
-      "community": 29,
+      "community": 28,
       "norm_label": "code:ruby (# \u2705 migrazione con indice)"
     },
     {
@@ -10377,7 +10359,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 175,
       "norm_label": "it locale: place",
       "id": "locales_it_placelocale"
     },
@@ -10990,7 +10972,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Separare le credenziali dev (reali, mai pubblicate) da quelle di test/seed (fittizie, sicure nel repo pubblico) previene l'esposizione accidentale di dati sensibili nel controllo di versione.",
-      "community": 1,
+      "community": 28,
       "norm_label": "due utenti database separati",
       "id": "claude_dual_credentials_rule"
     },
@@ -13988,7 +13970,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 43,
       "norm_label": "missionrequestrejection service",
       "id": "services_mission_request_rejection"
     },
@@ -14027,7 +14009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 176,
       "norm_label": "missionrequestapproval service",
       "id": "services_mission_request_approval"
     },
@@ -14287,7 +14269,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 43,
       "norm_label": "service object pattern (nomeservizio.call)",
       "id": "claude_serviceobjectpattern"
     },
@@ -14781,16 +14763,6 @@
       "confidence_score": 1.0,
       "source": "spec_requests_sessions_spec_rb",
       "target": "requests_sessions_spec_attempt_login"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "spec/pdfs/reimbursements_pdf_spec.rb",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "spec_pdfs_reimbursements_pdf_spec_rb",
-      "target": "pdfs_reimbursements_pdf_spec_page_count",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -33788,5 +33760,5 @@
       "source_file": "db/migrate/20260902104000_add_mission_request_to_reimbursements.rb"
     }
   ],
-  "built_at_commit": "b9c3a4eda3e0394d9c59161cd7a17c4296e23ec2"
+  "built_at_commit": "e17da976712a8874f0bf40252a6890ae9d3fe785"
 }

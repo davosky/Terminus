@@ -54,3 +54,8 @@
 
 # AI prompts
 /.AI
+
+# ClaudeOnRails
+.claude-on-rails/sessions/
+.claude-swarm/
+claude-swarm.log

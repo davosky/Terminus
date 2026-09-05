@@ -1002,3 +1002,5 @@ Regole:
 - Se esiste il file `graphify-out/wiki/index.md`, utilizzalo per una navigazione generale anziché esplorare direttamente il codice sorgente.
 - Consulta `graphify-out/GRAPH_REPORT.md` solo per una panoramica dell'architettura o quando i comandi `query`, `path` o `explain` non forniscono un contesto sufficiente.
 - Dopo aver modificato il codice, esegui `graphify update .` per mantenere aggiornato il grafo (operazione basata solo sull'AST, senza costi API).
+
+/file:.claude-on-rails/context.md

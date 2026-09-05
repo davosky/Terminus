@@ -64,6 +64,13 @@ gem "administrate"
 # Pagination
 gem "pagy"
 
+# Search and filter forms
+gem "ransack"
+
+# PDF generation
+gem "prawn"
+gem "prawn-svg"
+
 # View components
 gem "view_component"
 
@@ -102,6 +109,9 @@ group :development do
 
   # Preview mail in the browser instead of sending it [https://github.com/ryanb/letter_opener]
   gem "letter_opener"
+
+  # Claude Code Swarm
+  gem "claude-on-rails"
 end
 
 group :test do

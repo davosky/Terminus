@@ -1,26 +1,34 @@
 # Right panel of a printed reimbursement: the expense breakdown, signed by the
 # claimant and countersigned by the confirmator who authorises the payment.
 class ExpenseSheetPanel < ReimbursementPanel
-  INSTITUTE_TOP = 54.5
-  SUMMARY_TOP = 62.3
-  DISTANCE_TOP = 75.3
-  DISTANCE_RULE_TOP = 81.5
-  TABLE_TOP = 85.5
-  ROW_HEIGHT = 5.25
-  TABLE_WIDTH = 64
-  DIVIDER_X = 26
-  VALUE_X = 32
-  TABLE_RULE_TOP = 129.0
-  CLAIMANT_LABEL_TOP = 137.5
-  CLAIMANT_SIGNATURE_TOP = 145.0
-  CLAIMANT_RULE_TOP = 158.0
-  PAYMENT_LABEL_TOP = 164.5
-  PAYMENT_SIGNATURE_TOP = 172.5
-  PAYMENT_RULE_TOP = 187.5
-  FOOTER_RULE_LENGTH = 100
+  CARD_TOP = 35.73
+  CARD_HEIGHT = 83.82
+  CONTENT_X = 7.8
+  INSTITUTE_TOP = 41.39
+  SUMMARY_TOP = 49.18
+  DISTANCE_TOP = 65.56
+  DISTANCE_RULE_TOP = 72.88
+  RULE_LENGTH = 100.81
+  TABLE_TOP = 74.93
+  ROW_HEIGHT = 5.14
+  TABLE_WIDTH = 61.91
+  DIVIDER_X = 23.6
+  VALUE_X = 30.2
+  SIGNATURE_CARD_TOP = 128.05
+  SIGNATURE_CARD_HEIGHT = 70.02
+  SIGNATURE_X = 5.01
+  CLAIMANT_LABEL_TOP = 130.33
+  CLAIMANT_SIGNATURE_TOP = 140.78
+  DATE_TOP = 155.71
+  DATE_X = 16.44
+  CLAIMANT_RULE_TOP = 164.56
+  PAYMENT_LABEL_TOP = 167.33
+  PAYMENT_SIGNATURE_TOP = 181.98
 
   def draw
-    line(INSTITUTE_TOP, [ bold(user.institute) ], size: HEADING_SIZE)
+    card(CARD_TOP, CARD_HEIGHT)
+    card(SIGNATURE_CARD_TOP, SIGNATURE_CARD_HEIGHT)
+    line(INSTITUTE_TOP, [ institute ], size: HEADING_SIZE, indent: CONTENT_X)
     draw_summary
     draw_table
     draw_signatures
@@ -28,11 +36,13 @@ class ExpenseSheetPanel < ReimbursementPanel
 
   private
 
+  # The path goes on a line of its own: it is the longest value of the sheet.
   def draw_summary
-    line(SUMMARY_TOP, [ plain("Rimborso spese di:    "), bold(full_name) ])
-    line(SUMMARY_TOP + LINE_HEIGHT, [ plain("Percorso:    "), bold(reimbursement.display_path) ])
-    line(DISTANCE_TOP, distance_segments)
-    dashed_line(DISTANCE_RULE_TOP, FOOTER_RULE_LENGTH)
+    line(SUMMARY_TOP, [ italic("Rimborso spese di:    "), bold(full_name) ], indent: CONTENT_X)
+    line(SUMMARY_TOP + LINE_HEIGHT, [ italic("Percorso:") ], indent: CONTENT_X)
+    line(SUMMARY_TOP + 2 * LINE_HEIGHT, [ bold(reimbursement.display_path) ], indent: CONTENT_X)
+    line(DISTANCE_TOP, distance_segments, indent: CONTENT_X)
+    dashed_line(DISTANCE_RULE_TOP, RULE_LENGTH, indent: CONTENT_X)
   end
 
   def distance_segments
@@ -43,11 +53,13 @@ class ExpenseSheetPanel < ReimbursementPanel
 
   def draw_table
     top = TABLE_TOP
+    pdf.line_width 0.1.mm
     expense_rows.each do |label, amount|
       draw_row(top, label, amount)
       top += ROW_HEIGHT
     end
-    pdf.stroke_vertical_line(y(TABLE_TOP), y(top), at: x(DIVIDER_X))
+    pdf.stroke_vertical_line(y(TABLE_TOP), y(top), at: x(CONTENT_X + DIVIDER_X))
+    pdf.line_width 0.2.mm
     draw_total(top)
   end
 
@@ -59,25 +71,24 @@ class ExpenseSheetPanel < ReimbursementPanel
   end
 
   def draw_row(top, label, amount)
-    line(top + 0.6, [ plain(label) ])
-    line(top + 0.6, [ plain(euro(amount)) ], indent: VALUE_X) unless amount.to_d.zero?
-    pdf.stroke_horizontal_line(x(0), x(TABLE_WIDTH), at: y(top + ROW_HEIGHT))
+    line(top + 0.6, [ italic(label) ], indent: CONTENT_X)
+    line(top + 0.6, [ plain(euro(amount)) ], indent: CONTENT_X + VALUE_X) unless amount.to_d.zero?
+    pdf.stroke_horizontal_line(x(CONTENT_X), x(CONTENT_X + TABLE_WIDTH), at: y(top + ROW_HEIGHT))
   end
 
   def draw_total(top)
-    line(top + 0.6, [ bold("Totale:") ])
-    line(top + 0.6, [ bold(euro(reimbursement.total_amount)) ], indent: VALUE_X)
+    line(top + 0.6, [ bold("Totale:") ], indent: CONTENT_X)
+    line(top + 0.6, [ bold(euro(reimbursement.total_amount)) ], indent: CONTENT_X + VALUE_X)
   end
 
   def draw_signatures
-    dashed_line(TABLE_RULE_TOP, WIDTH)
-    line(CLAIMANT_LABEL_TOP, [ plain("Firma del richiedente"), plain("            Data    "),
-                               bold(date(reimbursement.reimbursement_date)) ])
-    signature(CLAIMANT_SIGNATURE_TOP, user.user_signature)
-    dashed_line(CLAIMANT_RULE_TOP, FOOTER_RULE_LENGTH)
-    line(PAYMENT_LABEL_TOP, [ bold(user.confirmator_presentation), plain(" autorizza il pagamento:") ])
-    signature(PAYMENT_SIGNATURE_TOP, user.confirmator_signature)
-    dashed_line(PAYMENT_RULE_TOP, FOOTER_RULE_LENGTH)
+    line(CLAIMANT_LABEL_TOP, [ italic("Firma del richiedente") ], indent: SIGNATURE_X)
+    signature(CLAIMANT_SIGNATURE_TOP, user.user_signature, indent: SIGNATURE_X)
+    date_column(DATE_TOP, reimbursement.reimbursement_date, label_x: SIGNATURE_X, value_x: DATE_X)
+    dashed_line(CLAIMANT_RULE_TOP, RULE_LENGTH, indent: SIGNATURE_X)
+    line(PAYMENT_LABEL_TOP, [ bold(user.confirmator_presentation) ], indent: SIGNATURE_X)
+    line(PAYMENT_LABEL_TOP + LINE_HEIGHT, [ italic("autorizza il pagamento:") ], indent: SIGNATURE_X)
+    signature(PAYMENT_SIGNATURE_TOP, user.confirmator_signature, indent: SIGNATURE_X)
   end
 
   # Mirrors ReimbursementTotalCalculator: only a private vehicle is reimbursed

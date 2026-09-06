@@ -1304,6 +1304,11 @@
     "ast_hash": "0beaad8bb438094015b4fd6a41063df5",
     "semantic_hash": "0beaad8bb438094015b4fd6a41063df5"
   },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese.svg": {
+    "mtime": 1788688884.7921991,
+    "ast_hash": "81b036905f5b96463bfcc969b5b7e2c4",
+    "semantic_hash": ""
+  },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print.svg": {
     "mtime": 1788625284.6638486,
     "ast_hash": "1c692444ffbb2abeb0ef77413b9a3cdf",
@@ -1313,6 +1318,11 @@
     "mtime": 1788625328.7463875,
     "ast_hash": "d57faadc022fcd80920d679c02b8dfe3",
     "semantic_hash": "d57faadc022fcd80920d679c02b8dfe3"
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese.png": {
+    "mtime": 1788624199.2145505,
+    "ast_hash": "83c7d7e6b84553f4d991903052a7b2ec",
+    "semantic_hash": "83c7d7e6b84553f4d991903052a7b2ec"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-specifiche.svg": {
     "mtime": 1788624291.6112347,
@@ -1340,8 +1350,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/reimbursement_panel.rb": {
-    "mtime": 1788693416.3056505,
-    "ast_hash": "07732c504f9e2f72b0c8d73bee087ca6",
+    "mtime": 1788692368.8913834,
+    "ast_hash": "0db5df15664af676a5b407596583dda2",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/mission_sheet_panel.rb": {
@@ -1524,6 +1534,11 @@
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-v2.png": {
+    "mtime": 1788688841.145595,
+    "ast_hash": "6e08abbf5846a43b4f7644440d8c4352",
+    "semantic_hash": ""
+  },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_expense_sheet.svg": {
     "mtime": 1788690072.3974957,
     "ast_hash": "b9ad64ba62c5baa24544f7139fc31de1",
@@ -1532,6 +1547,11 @@
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_mission_sheet.svg": {
     "mtime": 1788690072.397484,
     "ast_hash": "169eae56a7d80998024d8e648d58ebc0",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-v2.svg": {
+    "mtime": 1788691913.0992448,
+    "ast_hash": "c1f650f0c70972e3dddad1c61e49ca7e",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_icon.svg": {
@@ -1569,34 +1589,9 @@
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/26781/signature.png": {
-    "mtime": 1788693446.5892036,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/25076/signature.png": {
-    "mtime": 1788693436.5200136,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/26779/signature.png": {
-    "mtime": 1788693446.5399368,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/25076/signature.png": {
-    "mtime": 1788693436.5197237,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/26783/signature.png": {
-    "mtime": 1788693446.6346548,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/25076/signature.png": {
-    "mtime": 1788693436.5202544,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-v3.png": {
+    "mtime": 1788691904.3446665,
+    "ast_hash": "301aca369e0f5e29fbdf1d0e7a6f13d2",
     "semantic_hash": ""
   }
 }

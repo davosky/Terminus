@@ -345,9 +345,9 @@
     "semantic_hash": "90fa5a588c00c4c5f640725c65f7dfa8"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/colors.svg": {
-    "mtime": 1788685849.37347,
-    "ast_hash": "4a6e7729238d00db1644f97931665417",
-    "semantic_hash": ""
+    "mtime": 1784889687.946187,
+    "ast_hash": "a8454624e1f2b42d0abcaa8ad90678b5",
+    "semantic_hash": "a8454624e1f2b42d0abcaa8ad90678b5"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/navbar/navbar-logo.svg": {
     "mtime": 1786789465.1298938,
@@ -1304,6 +1304,11 @@
     "ast_hash": "0beaad8bb438094015b4fd6a41063df5",
     "semantic_hash": "0beaad8bb438094015b4fd6a41063df5"
   },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese.svg": {
+    "mtime": 1788624155.8102891,
+    "ast_hash": "ae1736642e5d1f5f97f36b076c371c48",
+    "semantic_hash": "ae1736642e5d1f5f97f36b076c371c48"
+  },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print.svg": {
     "mtime": 1788625284.6638486,
     "ast_hash": "1c692444ffbb2abeb0ef77413b9a3cdf",
@@ -1313,6 +1318,11 @@
     "mtime": 1788625328.7463875,
     "ast_hash": "d57faadc022fcd80920d679c02b8dfe3",
     "semantic_hash": "d57faadc022fcd80920d679c02b8dfe3"
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese.png": {
+    "mtime": 1788624199.2145505,
+    "ast_hash": "83c7d7e6b84553f4d991903052a7b2ec",
+    "semantic_hash": "83c7d7e6b84553f4d991903052a7b2ec"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-specifiche.svg": {
     "mtime": 1788624291.6112347,
@@ -1330,23 +1340,23 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/reimbursements_pdf.rb": {
-    "mtime": 1788692360.3830457,
-    "ast_hash": "90e77b2f7a82e6e4f837355b1c16476d",
+    "mtime": 1788629289.5216155,
+    "ast_hash": "4a559f6bf0d05627b40ebede2ed98790",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/expense_sheet_panel.rb": {
-    "mtime": 1788692405.2441614,
-    "ast_hash": "f3305162d52f2b635dc9fbeb4d9cec3b",
+    "mtime": 1788629325.6343405,
+    "ast_hash": "04d79f98252cbdd0d3ea2b2cbc4c4a8c",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/reimbursement_panel.rb": {
-    "mtime": 1788693416.3056505,
-    "ast_hash": "07732c504f9e2f72b0c8d73bee087ca6",
+    "mtime": 1788629289.5214953,
+    "ast_hash": "200c81cf61c47958b248690ff22d225e",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/mission_sheet_panel.rb": {
-    "mtime": 1788692383.3573766,
-    "ast_hash": "ef6470ccb48cbae1399bb7c5e1fbe5eb",
+    "mtime": 1788629132.7527182,
+    "ast_hash": "8544e54960f07cfa6be904bfa54eeb2f",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/claude-swarm.yml": {
@@ -1419,183 +1429,33 @@
     "ast_hash": "a9253274c8b2cc206bd4b639a8df7219",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/21138/signature.png": {
-    "mtime": 1788690386.3457131,
+  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/15050/signature.png": {
+    "mtime": 1788630919.566192,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/19169/signature.png": {
-    "mtime": 1788690310.116872,
+  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/16755/signature.png": {
+    "mtime": 1788630928.8906016,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/18724/signature.png": {
-    "mtime": 1788631159.50217,
+  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/15050/signature.png": {
+    "mtime": 1788630919.566011,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/18869/signature.png": {
-    "mtime": 1788690303.531799,
+  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/16753/signature.png": {
+    "mtime": 1788630928.8406765,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/17019/signature.png": {
-    "mtime": 1788631150.159815,
+  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/15050/signature.png": {
+    "mtime": 1788630919.566321,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/20874/signature.png": {
-    "mtime": 1788690319.7554462,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/22843/signature.png": {
-    "mtime": 1788690395.908303,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/21138/signature.png": {
-    "mtime": 1788690386.345117,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/20872/signature.png": {
-    "mtime": 1788690319.6973085,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/19169/signature.png": {
-    "mtime": 1788690310.1166413,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/18722/signature.png": {
-    "mtime": 1788631159.4458616,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/18869/signature.png": {
-    "mtime": 1788690303.5315926,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/17019/signature.png": {
-    "mtime": 1788631150.1596422,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/22841/signature.png": {
-    "mtime": 1788690395.8539677,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/21138/signature.png": {
-    "mtime": 1788690386.34587,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/19169/signature.png": {
-    "mtime": 1788690310.117026,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/22845/signature.png": {
-    "mtime": 1788690395.958192,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/20876/signature.png": {
-    "mtime": 1788690319.807196,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/18726/signature.png": {
-    "mtime": 1788631159.5537999,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/18869/signature.png": {
-    "mtime": 1788690303.5319371,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/17019/signature.png": {
-    "mtime": 1788631150.1599402,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_expense_sheet.svg": {
-    "mtime": 1788690072.3974957,
-    "ast_hash": "b9ad64ba62c5baa24544f7139fc31de1",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_mission_sheet.svg": {
-    "mtime": 1788690072.397484,
-    "ast_hash": "169eae56a7d80998024d8e648d58ebc0",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_icon.svg": {
-    "mtime": 1788690072.3974442,
-    "ast_hash": "70bc93561f9ee4a9e8dd975382a4da14",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/24812/signature.png": {
-    "mtime": 1788692476.0411155,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/23107/signature.png": {
-    "mtime": 1788692466.49887,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/23107/signature.png": {
-    "mtime": 1788692466.4986622,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/24810/signature.png": {
-    "mtime": 1788692475.9887023,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/23107/signature.png": {
-    "mtime": 1788692466.4990108,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/24814/signature.png": {
-    "mtime": 1788692476.0948524,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/26781/signature.png": {
-    "mtime": 1788693446.5892036,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/25076/signature.png": {
-    "mtime": 1788693436.5200136,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/26779/signature.png": {
-    "mtime": 1788693446.5399368,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/25076/signature.png": {
-    "mtime": 1788693436.5197237,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/26783/signature.png": {
-    "mtime": 1788693446.6346548,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/25076/signature.png": {
-    "mtime": 1788693436.5202544,
+  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/16757/signature.png": {
+    "mtime": 1788630928.9377184,
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   }

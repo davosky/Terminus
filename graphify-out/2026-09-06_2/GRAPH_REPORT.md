@@ -1,12 +1,12 @@
 # Graph Report - Terminus  (2026-09-06)
 
 ## Corpus Check
-- 217 files · ~1,552,046 words
+- 217 files · ~1,750,461 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1445 nodes · 1934 edges · 208 communities (143 shown, 65 thin omitted)
-- Extraction: 80% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 390 edges (avg confidence: 0.85)
+- 1444 nodes · 1923 edges · 212 communities (146 shown, 66 thin omitted)
+- Extraction: 80% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 381 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
@@ -140,6 +140,10 @@
 - [[_COMMUNITY_Community 166|Community 166]]
 - [[_COMMUNITY_Community 167|Community 167]]
 - [[_COMMUNITY_Community 168|Community 168]]
+- [[_COMMUNITY_Community 169|Community 169]]
+- [[_COMMUNITY_Community 170|Community 170]]
+- [[_COMMUNITY_Community 171|Community 171]]
+- [[_COMMUNITY_Community 172|Community 172]]
 - [[_COMMUNITY_Community 173|Community 173]]
 - [[_COMMUNITY_Community 174|Community 174]]
 - [[_COMMUNITY_Community 175|Community 175]]
@@ -153,7 +157,7 @@
 1. `User` - 35 edges
 2. `CLAUDE.md — Guida per Claude Code` - 35 edges
 3. `Reimbursement Model` - 28 edges
-4. `ReimbursementPanel` - 19 edges
+4. `ReimbursementPanel` - 18 edges
 5. `MissionRequest` - 15 edges
 6. `MissionRequestsController` - 15 edges
 7. `PlacesController` - 15 edges
@@ -187,31 +191,31 @@
 - **Administrate Dashboard/Controller Pairing** — dashboards_reimbursement_dashboard_reimbursementdashboard, dashboards_mission_request_dashboard_missionrequestdashboard, dashboards_user_dashboard_userdashboard, admin_reimbursements_controller_reimbursementscontroller [INFERRED 0.85]
 - **Auto-Generated Reimbursement from Approved Mission Request** — db_schema_reimbursementstable, db_schema_missionrequeststable, migrate_add_mission_request_to_reimbursements_addmissionrequesttoreimbursements, migrate_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest [INFERRED 0.85]
 
-## Communities (208 total, 65 thin omitted)
+## Communities (212 total, 66 thin omitted)
 
 ### Community 0 - "Pundit Ownership Policies"
-Cohesion: 0.07
-Nodes (16): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope, PathPolicy, PathPolicy, Scope, PlacePolicy (+8 more)
+Cohesion: 0.27
+Nodes (4): ApplicationController#user_not_authorized, ApplicationPolicy#admin?, ApplicationPolicy, Scope
 
 ### Community 1 - "Security & Setup Guidelines"
 Cohesion: 0.06
 Nodes (47): ActiveStorage (upload sicuro), Autenticazione e Autorizzazione Robuste, Disposizione Interfaccia Autenticata, Brakeman (analisi statica), bundler-audit (audit dipendenze), Protezione Cross-Site Request Forgery (CSRF), Devise (gem autenticazione), Due Utenti Database Separati (+39 more)
 
 ### Community 2 - "Transport/Vehicle Admin CRUD"
-Cohesion: 0.07
-Nodes (16): UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader, CarrierwaveField#url, AddInstituteAndOfficeToUsers, CreateVehicles migration, CreateVehicles (+8 more)
+Cohesion: 0.06
+Nodes (17): Admin::TransportsController, Admin::VehiclesController, TransportDashboard, VehicleDashboard, CreateVehicles migration, CreateVehicles, CreateTransports migration, CreateMissionRequests (+9 more)
 
 ### Community 3 - "Reimbursements Controller CRUD"
 Cohesion: 0.06
-Nodes (11): ReimbursementsController, Reimbursement Model, Reimbursement, ReimbursementPolicy, Scope, ReimbursementCodeGenerator, ReimbursementDateGenerator Service, ReimbursementDateGenerator (+3 more)
+Nodes (9): ReimbursementsController, Reimbursement Model, Reimbursement, ReimbursementPolicy, Scope, ReimbursementCodeGenerator, ReimbursementDateGenerator Service, ReimbursementDateGenerator (+1 more)
 
 ### Community 4 - "Owner-Policy Specs & Factories"
 Cohesion: 0.09
 Nodes (19): Owner-or-admin Pundit policy pattern, Transport Factory, Vehicle Factory, Vehicle Model Spec, MissionRequestPolicy spec, PathPolicy spec, PlacePolicy spec, ReasonPolicy spec (+11 more)
 
 ### Community 5 - "Signature Upload Handling"
-Cohesion: 0.16
-Nodes (7): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, ConfirmatorSignatureUploader, UserSignatureUploader, ValidatorSignatureUploader
+Cohesion: 0.07
+Nodes (15): Admin::UsersController#download_signature, Admin::UsersController#resource_params, Admin::UsersController#send_uploaded_file, Admin::UsersController, UserDashboard::ATTRIBUTE_TYPES, CarrierwaveField, CarrierwaveField#filename, CarrierwaveField#uploader (+7 more)
 
 ### Community 6 - "Reimbursement/MissionRequest Dashboards"
 Cohesion: 0.06
@@ -254,8 +258,8 @@ Cohesion: 0.24
 Nodes (7): Admin::ApplicationController#authenticate_admin, db/seeds.rb admin user seed, :user FactoryBot factory, IT locale: user, User Model Spec, User, Login system spec
 
 ### Community 17 - "Reference-Data Migrations"
-Cohesion: 0.19
-Nodes (5): db/schema.rb, CreateReasons, CreatePaths, CreatePlaces, CreateStructures
+Cohesion: 0.15
+Nodes (7): db/schema.rb, IT locale: place, CreateReasons, CreatePaths, CreatePlaces, CreateStructures, Place
 
 ### Community 18 - "Mission Approval Workflow Rationale"
 Cohesion: 0.24
@@ -265,9 +269,13 @@ Nodes (11): Admin authorization request spec, Mission request approval auto-gene
 Cohesion: 0.17
 Nodes (12): mission_request Locale Entry (Richiesta Missione / Richieste Missione), mission_request.departure_date Locale Attribute (Data Partenza), mission_request.highway_cost_fr Locale Attribute (Costo Autostrada), mission_request.name Locale Attribute (Codice Richiesta Missione), mission_request.path Locale Attribute (Percorso), mission_request.path_lenght_fr Locale Attribute (Lunghezza Percorso), mission_request.place Locale Attribute (Luogo), mission_request.reason Locale Attribute (Motivo Missione) (+4 more)
 
+### Community 21 - "Path/Place Admin & Locale"
+Cohesion: 0.32
+Nodes (5): Admin::PathsController, Admin::PlacesController, PathDashboard, IT locale: path, Path
+
 ### Community 22 - "Reason/Structure Admin & Locale"
-Cohesion: 0.16
-Nodes (11): Admin::PathsController, Admin::PlacesController, Admin::ReasonsController, Admin::StructuresController, stored_mode_checked?(), IT locale: place, IT locale: reason, IT locale: structure (+3 more)
+Cohesion: 0.21
+Nodes (8): Admin::ReasonsController, Admin::StructuresController, StructureDashboard, stored_mode_checked?(), IT locale: reason, IT locale: structure, Reason, Structure
 
 ### Community 24 - "Reimbursement Generator Services"
 Cohesion: 0.06
@@ -306,7 +314,7 @@ Cohesion: 0.25
 Nodes (9): Devise failed-attempts account lockout (3 tries / 1 hour), Terminus::Application, Boot Configuration, Environment Loader, Devise Initializer, Filter Parameter Logging Initializer, Devise English Locale, English Locale (+1 more)
 
 ### Community 34 - "Validator Mission Request Policy"
-Cohesion: 0.31
+Cohesion: 0.29
 Nodes (5): User Model, ValidatorMissionRequestPolicy, Scope, ValidatorMissionRequestPolicy, Navbar System Spec
 
 ### Community 35 - "Transport Protected Record"
@@ -340,10 +348,6 @@ Nodes (7): force_ssl / ssl_options Configuration, Rationale: Rails HSTS emission
 ### Community 42 - "TERMINUS.md Product Spec"
 Cohesion: 0.22
 Nodes (7): 🖥️ Costruzione dell'applicazione, Disposizione dell'interfaccia principale ad accesso avvenuto, Disposizione dell'interfaccia principale ad accesso non avvenuto, Disposizione dell'interfaccia principale ad accesso avvenuto, Disposizione dell'interfaccia principale ad accesso non avvenuto, NOTA BENE, Terminus
-
-### Community 44 - "Admin Signature Downloads"
-Cohesion: 0.27
-Nodes (3): UsersController, IT locale: path, Path
 
 ### Community 45 - "Reimbursement Form Helpers"
 Cohesion: 0.06
@@ -425,10 +429,6 @@ Nodes (19): Arrange-Act-Assert, code:ruby (RSpec.describe User, type: :model do)
 Cohesion: 0.12
 Nodes (16): API Controllers, Before Actions, code:ruby (def user_params), code:ruby (respond_to do |format|), code:ruby (rescue_from ActiveRecord::RecordNotFound do |exception|), code:ruby (resources :users do), Controller Best Practices, Core Responsibilities (+8 more)
 
-### Community 165 - "Community 165"
-Cohesion: 0.09
-Nodes (10): Admin::TransportsController, TransportsController, Admin::VehiclesController, TransportsController, TransportDashboard, VehicleDashboard, CreateTransports migration, Transport (+2 more)
-
 ### Community 167 - "Community 167"
 Cohesion: 0.15
 Nodes (12): Associations, Callbacks, Code Examples You Follow, code:ruby (class User < ApplicationRecord), Core Responsibilities, MCP-Enhanced Capabilities, Migration Guidelines, Performance Considerations (+4 more)
@@ -436,6 +436,22 @@ Nodes (12): Associations, Callbacks, Code Examples You Follow, code:ruby (class 
 ### Community 168 - "Community 168"
 Cohesion: 0.33
 Nodes (3): MissionRequestPolicy, MissionRequestPolicy, Scope
+
+### Community 169 - "Community 169"
+Cohesion: 0.33
+Nodes (3): PathPolicy, PathPolicy, Scope
+
+### Community 170 - "Community 170"
+Cohesion: 0.33
+Nodes (3): PlacePolicy, PlacePolicy, Scope
+
+### Community 171 - "Community 171"
+Cohesion: 0.33
+Nodes (3): ReasonPolicy, ReasonPolicy, Scope
+
+### Community 172 - "Community 172"
+Cohesion: 0.33
+Nodes (3): StructurePolicy, Scope, StructurePolicy
 
 ### Community 173 - "Community 173"
 Cohesion: 0.25
@@ -474,7 +490,7 @@ Nodes (3): Cose che Claude Code può fare autonomamente, Cose su cui chiedere co
 ## Knowledge Gaps
 - **349 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+344 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **65 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **66 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -487,9 +503,9 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `User Model & Admin Auth` to `Pundit Ownership Policies`, `Validator Mission Request Policy`, `Reimbursements Controller CRUD`, `Owner-Policy Specs & Factories`, `Reasons/Structures Controllers`, `Community 168`, `Paths Controller CRUD`, `MissionRequests Controller CRUD`, `Admin Signature Downloads`, `Reason/Structure Admin & Locale`, `Director Mission Request Policy`?**
-  _High betweenness centrality (0.132) - this node is a cross-community bridge._
-- **Why does `Reimbursement Model` connect `Reimbursements Controller CRUD` to `Owner-Policy Specs & Factories`, `Community 165`, `Community 168`, `MissionRequests Controller CRUD`, `Community 180`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
-- **Why does `ReimbursementDateGenerator Service` connect `Reimbursements Controller CRUD` to `User Model & Admin Auth`, `Validator Mission Request Policy`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `User` connect `User Model & Admin Auth` to `Pundit Ownership Policies`, `Validator Mission Request Policy`, `Reimbursements Controller CRUD`, `Owner-Policy Specs & Factories`, `Reasons/Structures Controllers`, `Community 168`, `Community 169`, `Community 170`, `Community 171`, `Community 172`, `Community 43`, `MissionRequests Controller CRUD`, `Paths Controller CRUD`, `Reference-Data Migrations`, `Path/Place Admin & Locale`, `Reason/Structure Admin & Locale`, `Director Mission Request Policy`?**
+  _High betweenness centrality (0.124) - this node is a cross-community bridge._
+- **Why does `Reimbursement Model` connect `Reimbursements Controller CRUD` to `Transport/Vehicle Admin CRUD`, `Owner-Policy Specs & Factories`, `Community 168`, `Community 43`, `MissionRequests Controller CRUD`, `Community 180`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `ReimbursementDateGenerator Service` connect `Reimbursements Controller CRUD` to `User Model & Admin Auth`, `Validator Mission Request Policy`, `Community 43`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._

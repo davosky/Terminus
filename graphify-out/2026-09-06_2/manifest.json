@@ -1304,6 +1304,11 @@
     "ast_hash": "0beaad8bb438094015b4fd6a41063df5",
     "semantic_hash": "0beaad8bb438094015b4fd6a41063df5"
   },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese.svg": {
+    "mtime": 1788688884.7921991,
+    "ast_hash": "81b036905f5b96463bfcc969b5b7e2c4",
+    "semantic_hash": ""
+  },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print.svg": {
     "mtime": 1788625284.6638486,
     "ast_hash": "1c692444ffbb2abeb0ef77413b9a3cdf",
@@ -1313,6 +1318,11 @@
     "mtime": 1788625328.7463875,
     "ast_hash": "d57faadc022fcd80920d679c02b8dfe3",
     "semantic_hash": "d57faadc022fcd80920d679c02b8dfe3"
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese.png": {
+    "mtime": 1788624199.2145505,
+    "ast_hash": "83c7d7e6b84553f4d991903052a7b2ec",
+    "semantic_hash": "83c7d7e6b84553f4d991903052a7b2ec"
   },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-specifiche.svg": {
     "mtime": 1788624291.6112347,
@@ -1330,23 +1340,23 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/reimbursements_pdf.rb": {
-    "mtime": 1788692360.3830457,
-    "ast_hash": "90e77b2f7a82e6e4f837355b1c16476d",
+    "mtime": 1788690174.3516269,
+    "ast_hash": "c9f935a06bf743a58ad24c9dc0ac0059",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/expense_sheet_panel.rb": {
-    "mtime": 1788692405.2441614,
-    "ast_hash": "f3305162d52f2b635dc9fbeb4d9cec3b",
+    "mtime": 1788690360.3929932,
+    "ast_hash": "61f00d71dbbe75ee336659990406436c",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/reimbursement_panel.rb": {
-    "mtime": 1788693416.3056505,
-    "ast_hash": "07732c504f9e2f72b0c8d73bee087ca6",
+    "mtime": 1788690360.3928833,
+    "ast_hash": "1452e05a9b2b69033c481eed81219132",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/pdfs/mission_sheet_panel.rb": {
-    "mtime": 1788692383.3573766,
-    "ast_hash": "ef6470ccb48cbae1399bb7c5e1fbe5eb",
+    "mtime": 1788690360.3929493,
+    "ast_hash": "88333f1379798df9a94c41bcb0f7e39a",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/claude-swarm.yml": {
@@ -1524,6 +1534,11 @@
     "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-v2.png": {
+    "mtime": 1788688841.145595,
+    "ast_hash": "6e08abbf5846a43b4f7644440d8c4352",
+    "semantic_hash": ""
+  },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_expense_sheet.svg": {
     "mtime": 1788690072.3974957,
     "ast_hash": "b9ad64ba62c5baa24544f7139fc31de1",
@@ -1534,69 +1549,19 @@
     "ast_hash": "169eae56a7d80998024d8e648d58ebc0",
     "semantic_hash": ""
   },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_logo.svg": {
+    "mtime": 1788690072.39747,
+    "ast_hash": "1692951276e5474362f0447237cd2cb4",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/rimborsi-spese-v2.svg": {
+    "mtime": 1788688338.8185964,
+    "ast_hash": "a11a3588b44ac8e3ba4db33420aea23a",
+    "semantic_hash": ""
+  },
   "/home/davo/Programmazione/Terminus/app/assets/images/reimbursements/reimbursements_print_icon.svg": {
     "mtime": 1788690072.3974442,
     "ast_hash": "70bc93561f9ee4a9e8dd975382a4da14",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/24812/signature.png": {
-    "mtime": 1788692476.0411155,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/23107/signature.png": {
-    "mtime": 1788692466.49887,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/23107/signature.png": {
-    "mtime": 1788692466.4986622,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/24810/signature.png": {
-    "mtime": 1788692475.9887023,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/23107/signature.png": {
-    "mtime": 1788692466.4990108,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/24814/signature.png": {
-    "mtime": 1788692476.0948524,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/26781/signature.png": {
-    "mtime": 1788693446.5892036,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/validator_signature/25076/signature.png": {
-    "mtime": 1788693436.5200136,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/26779/signature.png": {
-    "mtime": 1788693446.5399368,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/user_signature/25076/signature.png": {
-    "mtime": 1788693436.5197237,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/26783/signature.png": {
-    "mtime": 1788693446.6346548,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
-    "semantic_hash": ""
-  },
-  "/home/davo/Programmazione/Terminus/tmp/storage/uploads/user/confirmator_signature/25076/signature.png": {
-    "mtime": 1788693436.5202544,
-    "ast_hash": "e44e7ecfec99356632c13cd3eaa3e250",
     "semantic_hash": ""
   }
 }

@@ -2550,7 +2550,7 @@
       "label": ".initialize()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_initialize",
       "community": 2,
       "norm_label": ".initialize()"
@@ -2559,7 +2559,7 @@
       "label": ".user()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_user",
       "community": 2,
       "norm_label": ".user()"
@@ -2568,7 +2568,7 @@
       "label": ".full_name()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_full_name",
       "community": 2,
       "norm_label": ".full_name()"
@@ -2586,7 +2586,7 @@
       "label": ".draw_accent_bar()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L46",
+      "source_location": "L47",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_draw_accent_bar",
       "community": 2,
       "norm_label": ".draw_accent_bar()"
@@ -2595,7 +2595,7 @@
       "label": ".line()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L61",
+      "source_location": "L62",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_line",
       "community": 2,
       "norm_label": ".line()"
@@ -2604,7 +2604,7 @@
       "label": ".dashed_line()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L66",
+      "source_location": "L67",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_dashed_line",
       "community": 2,
       "norm_label": ".dashed_line()"
@@ -2613,7 +2613,7 @@
       "label": ".date_column()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L73",
+      "source_location": "L74",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
       "community": 2,
       "norm_label": ".date_column()"
@@ -2622,7 +2622,7 @@
       "label": ".signature()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L78",
+      "source_location": "L79",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_signature",
       "community": 2,
       "norm_label": ".signature()"
@@ -2631,7 +2631,7 @@
       "label": ".x()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L84",
+      "source_location": "L85",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_x",
       "community": 2,
       "norm_label": ".x()"
@@ -2640,7 +2640,7 @@
       "label": ".y()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L88",
+      "source_location": "L89",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_y",
       "community": 2,
       "norm_label": ".y()"
@@ -2649,7 +2649,7 @@
       "label": ".euro()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L92",
+      "source_location": "L93",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_euro",
       "community": 2,
       "norm_label": ".euro()"
@@ -2658,7 +2658,7 @@
       "label": ".decimal()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L96",
+      "source_location": "L97",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_decimal",
       "community": 2,
       "norm_label": ".decimal()"
@@ -2667,7 +2667,7 @@
       "label": ".date()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L100",
+      "source_location": "L101",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_date",
       "community": 2,
       "norm_label": ".date()"
@@ -2676,7 +2676,7 @@
       "label": ".institute()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L104",
+      "source_location": "L105",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_institute",
       "community": 2,
       "norm_label": ".institute()"
@@ -2685,7 +2685,7 @@
       "label": ".bold()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L108",
+      "source_location": "L109",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_bold",
       "community": 2,
       "norm_label": ".bold()"
@@ -2694,7 +2694,7 @@
       "label": ".italic()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L114",
+      "source_location": "L115",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_italic",
       "community": 2,
       "norm_label": ".italic()"
@@ -2703,7 +2703,7 @@
       "label": ".plain()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L118",
+      "source_location": "L119",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_plain",
       "community": 2,
       "norm_label": ".plain()"
@@ -18705,9 +18705,9 @@
       "source_file": "app/pdfs/reimbursement_panel.rb",
       "source_location": "L115",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "pdfs_reimbursement_panel_reimbursementpanel",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -18891,9 +18891,9 @@
       "source_file": "app/pdfs/reimbursement_panel.rb",
       "source_location": "L75",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",

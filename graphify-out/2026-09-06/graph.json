@@ -1481,7 +1481,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L1",
       "id": "app_policies_path_policy_rb",
-      "community": 0,
+      "community": 169,
       "norm_label": "path_policy.rb"
     },
     {
@@ -1490,7 +1490,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L3",
       "id": "policies_path_policy_pathpolicy",
-      "community": 0,
+      "community": 169,
       "norm_label": "pathpolicy"
     },
     {
@@ -1499,7 +1499,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L4",
       "id": "policies_path_policy_pathpolicy_index",
-      "community": 0,
+      "community": 169,
       "norm_label": ".index?()"
     },
     {
@@ -1508,7 +1508,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L8",
       "id": "policies_path_policy_pathpolicy_show",
-      "community": 0,
+      "community": 169,
       "norm_label": ".show?()"
     },
     {
@@ -1517,7 +1517,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L12",
       "id": "policies_path_policy_pathpolicy_create",
-      "community": 0,
+      "community": 169,
       "norm_label": ".create?()"
     },
     {
@@ -1526,7 +1526,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L16",
       "id": "policies_path_policy_pathpolicy_update",
-      "community": 0,
+      "community": 169,
       "norm_label": ".update?()"
     },
     {
@@ -1535,7 +1535,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L20",
       "id": "policies_path_policy_pathpolicy_destroy",
-      "community": 0,
+      "community": 169,
       "norm_label": ".destroy?()"
     },
     {
@@ -1544,7 +1544,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L24",
       "id": "policies_path_policy_pathpolicy_confirm_destroy",
-      "community": 0,
+      "community": 169,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1553,7 +1553,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L30",
       "id": "policies_path_policy_pathpolicy_owner",
-      "community": 0,
+      "community": 169,
       "norm_label": ".owner?()"
     },
     {
@@ -1562,7 +1562,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L34",
       "id": "policies_path_policy_scope",
-      "community": 0,
+      "community": 169,
       "norm_label": "scope"
     },
     {
@@ -1571,7 +1571,7 @@
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L35",
       "id": "policies_path_policy_scope_resolve",
-      "community": 0,
+      "community": 169,
       "norm_label": ".resolve()"
     },
     {
@@ -1877,7 +1877,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L1",
       "id": "app_policies_place_policy_rb",
-      "community": 0,
+      "community": 170,
       "norm_label": "place_policy.rb"
     },
     {
@@ -1886,7 +1886,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L3",
       "id": "policies_place_policy_placepolicy",
-      "community": 0,
+      "community": 170,
       "norm_label": "placepolicy"
     },
     {
@@ -1895,7 +1895,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L4",
       "id": "policies_place_policy_placepolicy_index",
-      "community": 0,
+      "community": 170,
       "norm_label": ".index?()"
     },
     {
@@ -1904,7 +1904,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L8",
       "id": "policies_place_policy_placepolicy_show",
-      "community": 0,
+      "community": 170,
       "norm_label": ".show?()"
     },
     {
@@ -1913,7 +1913,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L12",
       "id": "policies_place_policy_placepolicy_create",
-      "community": 0,
+      "community": 170,
       "norm_label": ".create?()"
     },
     {
@@ -1922,7 +1922,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L16",
       "id": "policies_place_policy_placepolicy_update",
-      "community": 0,
+      "community": 170,
       "norm_label": ".update?()"
     },
     {
@@ -1931,7 +1931,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L20",
       "id": "policies_place_policy_placepolicy_destroy",
-      "community": 0,
+      "community": 170,
       "norm_label": ".destroy?()"
     },
     {
@@ -1940,7 +1940,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L24",
       "id": "policies_place_policy_placepolicy_confirm_destroy",
-      "community": 0,
+      "community": 170,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -1949,7 +1949,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L30",
       "id": "policies_place_policy_placepolicy_owner",
-      "community": 0,
+      "community": 170,
       "norm_label": ".owner?()"
     },
     {
@@ -1958,7 +1958,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L34",
       "id": "policies_place_policy_scope",
-      "community": 0,
+      "community": 170,
       "norm_label": "scope"
     },
     {
@@ -1967,7 +1967,7 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L35",
       "id": "policies_place_policy_scope_resolve",
-      "community": 0,
+      "community": 170,
       "norm_label": ".resolve()"
     },
     {
@@ -1976,7 +1976,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L1",
       "id": "app_policies_structure_policy_rb",
-      "community": 0,
+      "community": 172,
       "norm_label": "structure_policy.rb"
     },
     {
@@ -1985,7 +1985,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L3",
       "id": "policies_structure_policy_structurepolicy",
-      "community": 0,
+      "community": 172,
       "norm_label": "structurepolicy"
     },
     {
@@ -1994,7 +1994,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L4",
       "id": "policies_structure_policy_structurepolicy_index",
-      "community": 0,
+      "community": 172,
       "norm_label": ".index?()"
     },
     {
@@ -2003,7 +2003,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L8",
       "id": "policies_structure_policy_structurepolicy_show",
-      "community": 0,
+      "community": 172,
       "norm_label": ".show?()"
     },
     {
@@ -2012,7 +2012,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L12",
       "id": "policies_structure_policy_structurepolicy_create",
-      "community": 0,
+      "community": 172,
       "norm_label": ".create?()"
     },
     {
@@ -2021,7 +2021,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L16",
       "id": "policies_structure_policy_structurepolicy_update",
-      "community": 0,
+      "community": 172,
       "norm_label": ".update?()"
     },
     {
@@ -2030,7 +2030,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L20",
       "id": "policies_structure_policy_structurepolicy_destroy",
-      "community": 0,
+      "community": 172,
       "norm_label": ".destroy?()"
     },
     {
@@ -2039,7 +2039,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L24",
       "id": "policies_structure_policy_structurepolicy_confirm_destroy",
-      "community": 0,
+      "community": 172,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -2048,7 +2048,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L30",
       "id": "policies_structure_policy_structurepolicy_owner",
-      "community": 0,
+      "community": 172,
       "norm_label": ".owner?()"
     },
     {
@@ -2057,7 +2057,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L34",
       "id": "policies_structure_policy_scope",
-      "community": 0,
+      "community": 172,
       "norm_label": "scope"
     },
     {
@@ -2066,7 +2066,7 @@
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L35",
       "id": "policies_structure_policy_scope_resolve",
-      "community": 0,
+      "community": 172,
       "norm_label": ".resolve()"
     },
     {
@@ -2138,7 +2138,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L1",
       "id": "app_policies_reason_policy_rb",
-      "community": 0,
+      "community": 171,
       "norm_label": "reason_policy.rb"
     },
     {
@@ -2147,7 +2147,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L3",
       "id": "policies_reason_policy_reasonpolicy",
-      "community": 0,
+      "community": 171,
       "norm_label": "reasonpolicy"
     },
     {
@@ -2156,7 +2156,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L4",
       "id": "policies_reason_policy_reasonpolicy_index",
-      "community": 0,
+      "community": 171,
       "norm_label": ".index?()"
     },
     {
@@ -2165,7 +2165,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L8",
       "id": "policies_reason_policy_reasonpolicy_show",
-      "community": 0,
+      "community": 171,
       "norm_label": ".show?()"
     },
     {
@@ -2174,7 +2174,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L12",
       "id": "policies_reason_policy_reasonpolicy_create",
-      "community": 0,
+      "community": 171,
       "norm_label": ".create?()"
     },
     {
@@ -2183,7 +2183,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L16",
       "id": "policies_reason_policy_reasonpolicy_update",
-      "community": 0,
+      "community": 171,
       "norm_label": ".update?()"
     },
     {
@@ -2192,7 +2192,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L20",
       "id": "policies_reason_policy_reasonpolicy_destroy",
-      "community": 0,
+      "community": 171,
       "norm_label": ".destroy?()"
     },
     {
@@ -2201,7 +2201,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L24",
       "id": "policies_reason_policy_reasonpolicy_confirm_destroy",
-      "community": 0,
+      "community": 171,
       "norm_label": ".confirm_destroy?()"
     },
     {
@@ -2210,7 +2210,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L30",
       "id": "policies_reason_policy_reasonpolicy_owner",
-      "community": 0,
+      "community": 171,
       "norm_label": ".owner?()"
     },
     {
@@ -2219,7 +2219,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L34",
       "id": "policies_reason_policy_scope",
-      "community": 0,
+      "community": 171,
       "norm_label": "scope"
     },
     {
@@ -2228,7 +2228,7 @@
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L35",
       "id": "policies_reason_policy_scope_resolve",
-      "community": 0,
+      "community": 171,
       "norm_label": ".resolve()"
     },
     {
@@ -2336,7 +2336,7 @@
       "source_file": "app/pdfs/reimbursements_pdf.rb",
       "source_location": "L1",
       "id": "app_pdfs_reimbursements_pdf_rb",
-      "community": 43,
+      "community": 5,
       "norm_label": "reimbursements_pdf.rb"
     },
     {
@@ -2345,88 +2345,70 @@
       "source_file": "app/pdfs/reimbursements_pdf.rb",
       "source_location": "L6",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf",
-      "community": 43,
+      "community": 5,
       "norm_label": "reimbursementspdf"
     },
     {
       "label": ".initialize()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L23",
+      "source_location": "L17",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf_initialize",
-      "community": 43,
+      "community": 5,
       "norm_label": ".initialize()"
     },
     {
       "label": ".register_fonts()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L36",
+      "source_location": "L30",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf_register_fonts",
-      "community": 43,
+      "community": 5,
       "norm_label": ".register_fonts()"
     },
     {
       "label": ".draw_page()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L46",
+      "source_location": "L40",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf_draw_page",
-      "community": 43,
+      "community": 5,
       "norm_label": ".draw_page()"
     },
     {
       "label": ".draw_fold_line()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L53",
+      "source_location": "L47",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf_draw_fold_line",
-      "community": 43,
+      "community": 5,
       "norm_label": ".draw_fold_line()"
     },
     {
       "label": ".draw_panel_header()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L59",
+      "source_location": "L53",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_header",
-      "community": 43,
+      "community": 5,
       "norm_label": ".draw_panel_header()"
     },
     {
-      "label": ".draw_panel_label()",
+      "label": ".header_svg()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L67",
-      "id": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_label",
-      "community": 43,
-      "norm_label": ".draw_panel_label()"
-    },
-    {
-      "label": ".draw_asset()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L76",
-      "id": "pdfs_reimbursements_pdf_reimbursementspdf_draw_asset",
-      "community": 43,
-      "norm_label": ".draw_asset()"
-    },
-    {
-      "label": ".asset()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L80",
-      "id": "pdfs_reimbursements_pdf_reimbursementspdf_asset",
-      "community": 43,
-      "norm_label": ".asset()"
+      "source_location": "L62",
+      "id": "pdfs_reimbursements_pdf_reimbursementspdf_header_svg",
+      "community": 5,
+      "norm_label": ".header_svg()"
     },
     {
       "label": ".top_at()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L85",
+      "source_location": "L66",
       "id": "pdfs_reimbursements_pdf_reimbursementspdf_top_at",
-      "community": 43,
+      "community": 5,
       "norm_label": ".top_at()"
     },
     {
@@ -2451,7 +2433,7 @@
       "label": ".draw()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L28",
+      "source_location": "L22",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_draw",
       "community": 2,
       "norm_label": ".draw()"
@@ -2460,7 +2442,7 @@
       "label": ".draw_summary()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L40",
+      "source_location": "L31",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_draw_summary",
       "community": 2,
       "norm_label": ".draw_summary()"
@@ -2469,7 +2451,7 @@
       "label": ".distance_segments()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L48",
+      "source_location": "L38",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_distance_segments",
       "community": 2,
       "norm_label": ".distance_segments()"
@@ -2478,7 +2460,7 @@
       "label": ".draw_table()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L54",
+      "source_location": "L44",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_draw_table",
       "community": 2,
       "norm_label": ".draw_table()"
@@ -2487,7 +2469,7 @@
       "label": ".expense_rows()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L66",
+      "source_location": "L54",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_expense_rows",
       "community": 2,
       "norm_label": ".expense_rows()"
@@ -2496,7 +2478,7 @@
       "label": ".draw_row()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L73",
+      "source_location": "L61",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_draw_row",
       "community": 2,
       "norm_label": ".draw_row()"
@@ -2505,7 +2487,7 @@
       "label": ".draw_total()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L79",
+      "source_location": "L67",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_draw_total",
       "community": 2,
       "norm_label": ".draw_total()"
@@ -2514,7 +2496,7 @@
       "label": ".draw_signatures()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L84",
+      "source_location": "L72",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
       "community": 2,
       "norm_label": ".draw_signatures()"
@@ -2523,7 +2505,7 @@
       "label": ".km_cost()",
       "file_type": "code",
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L96",
+      "source_location": "L85",
       "id": "pdfs_expense_sheet_panel_expensesheetpanel_km_cost",
       "community": 2,
       "norm_label": ".km_cost()"
@@ -2550,7 +2532,7 @@
       "label": ".initialize()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L16",
+      "source_location": "L11",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_initialize",
       "community": 2,
       "norm_label": ".initialize()"
@@ -2559,7 +2541,7 @@
       "label": ".user()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L26",
+      "source_location": "L21",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_user",
       "community": 2,
       "norm_label": ".user()"
@@ -2568,34 +2550,16 @@
       "label": ".full_name()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L30",
+      "source_location": "L25",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_full_name",
       "community": 2,
       "norm_label": ".full_name()"
     },
     {
-      "label": ".card()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L37",
-      "id": "pdfs_reimbursement_panel_reimbursementpanel_card",
-      "community": 2,
-      "norm_label": ".card()"
-    },
-    {
-      "label": ".draw_accent_bar()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L46",
-      "id": "pdfs_reimbursement_panel_reimbursementpanel_draw_accent_bar",
-      "community": 2,
-      "norm_label": ".draw_accent_bar()"
-    },
-    {
       "label": ".line()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L61",
+      "source_location": "L29",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_line",
       "community": 2,
       "norm_label": ".line()"
@@ -2604,25 +2568,16 @@
       "label": ".dashed_line()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L66",
+      "source_location": "L34",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_dashed_line",
       "community": 2,
       "norm_label": ".dashed_line()"
     },
     {
-      "label": ".date_column()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L73",
-      "id": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "community": 2,
-      "norm_label": ".date_column()"
-    },
-    {
       "label": ".signature()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L78",
+      "source_location": "L40",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_signature",
       "community": 2,
       "norm_label": ".signature()"
@@ -2631,7 +2586,7 @@
       "label": ".x()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L84",
+      "source_location": "L46",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_x",
       "community": 2,
       "norm_label": ".x()"
@@ -2640,7 +2595,7 @@
       "label": ".y()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L88",
+      "source_location": "L50",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_y",
       "community": 2,
       "norm_label": ".y()"
@@ -2649,7 +2604,7 @@
       "label": ".euro()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L92",
+      "source_location": "L54",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_euro",
       "community": 2,
       "norm_label": ".euro()"
@@ -2658,7 +2613,7 @@
       "label": ".decimal()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L96",
+      "source_location": "L58",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_decimal",
       "community": 2,
       "norm_label": ".decimal()"
@@ -2667,43 +2622,25 @@
       "label": ".date()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L100",
+      "source_location": "L62",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_date",
       "community": 2,
       "norm_label": ".date()"
     },
     {
-      "label": ".institute()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L104",
-      "id": "pdfs_reimbursement_panel_reimbursementpanel_institute",
-      "community": 2,
-      "norm_label": ".institute()"
-    },
-    {
       "label": ".bold()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L108",
+      "source_location": "L66",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_bold",
       "community": 2,
       "norm_label": ".bold()"
     },
     {
-      "label": ".italic()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L114",
-      "id": "pdfs_reimbursement_panel_reimbursementpanel_italic",
-      "community": 2,
-      "norm_label": ".italic()"
-    },
-    {
       "label": ".plain()",
       "file_type": "code",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L118",
+      "source_location": "L70",
       "id": "pdfs_reimbursement_panel_reimbursementpanel_plain",
       "community": 2,
       "norm_label": ".plain()"
@@ -2730,7 +2667,7 @@
       "label": ".draw()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L19",
+      "source_location": "L12",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_draw",
       "community": 2,
       "norm_label": ".draw()"
@@ -2739,7 +2676,7 @@
       "label": ".draw_authorisation()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L32",
+      "source_location": "L21",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_draw_authorisation",
       "community": 2,
       "norm_label": ".draw_authorisation()"
@@ -2748,7 +2685,7 @@
       "label": ".draw_transport()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L41",
+      "source_location": "L28",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_draw_transport",
       "community": 2,
       "norm_label": ".draw_transport()"
@@ -2757,7 +2694,7 @@
       "label": ".vehicle_segments()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L52",
+      "source_location": "L37",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_vehicle_segments",
       "community": 2,
       "norm_label": ".vehicle_segments()"
@@ -2766,7 +2703,7 @@
       "label": ".travel_dates_segments()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L57",
+      "source_location": "L42",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_travel_dates_segments",
       "community": 2,
       "norm_label": ".travel_dates_segments()"
@@ -2775,7 +2712,7 @@
       "label": ".draw_signature()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L62",
+      "source_location": "L47",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
       "community": 2,
       "norm_label": ".draw_signature()"
@@ -2784,7 +2721,7 @@
       "label": ".advance()",
       "file_type": "code",
       "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L70",
+      "source_location": "L54",
       "id": "pdfs_mission_sheet_panel_missionsheetpanel_advance",
       "community": 2,
       "norm_label": ".advance()"
@@ -2930,7 +2867,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L1",
       "id": "app_services_reimbursement_total_calculator_rb",
-      "community": 165,
+      "community": 2,
       "norm_label": "reimbursement_total_calculator.rb"
     },
     {
@@ -2939,7 +2876,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L1",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator",
-      "community": 165,
+      "community": 2,
       "norm_label": "reimbursementtotalcalculator"
     },
     {
@@ -2948,7 +2885,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L5",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_call",
-      "community": 165,
+      "community": 2,
       "norm_label": ".call()"
     },
     {
@@ -2957,7 +2894,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L9",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_initialize",
-      "community": 165,
+      "community": 2,
       "norm_label": ".initialize()"
     },
     {
@@ -2966,7 +2903,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L21",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_stay_costs",
-      "community": 165,
+      "community": 2,
       "norm_label": ".stay_costs()"
     },
     {
@@ -2975,7 +2912,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L25",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_transport_costs",
-      "community": 165,
+      "community": 2,
       "norm_label": ".transport_costs()"
     },
     {
@@ -2984,7 +2921,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L36",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_distance_cost",
-      "community": 165,
+      "community": 2,
       "norm_label": ".path_distance_cost()"
     },
     {
@@ -2993,7 +2930,7 @@
       "source_file": "app/services/reimbursement_total_calculator.rb",
       "source_location": "L40",
       "id": "services_reimbursement_total_calculator_reimbursementtotalcalculator_path_highway_cost",
-      "community": 165,
+      "community": 2,
       "norm_label": ".path_highway_cost()"
     },
     {
@@ -3650,7 +3587,7 @@
       "source_file": "app/models/place.rb",
       "source_location": "L1",
       "id": "app_models_place_rb",
-      "community": 22,
+      "community": 17,
       "norm_label": "place.rb"
     },
     {
@@ -3659,7 +3596,7 @@
       "source_file": "app/models/place.rb",
       "source_location": "L1",
       "id": "models_place_place",
-      "community": 22,
+      "community": 17,
       "norm_label": "place"
     },
     {
@@ -3668,7 +3605,7 @@
       "source_file": "app/models/path.rb",
       "source_location": "L1",
       "id": "app_models_path_rb",
-      "community": 44,
+      "community": 21,
       "norm_label": "path.rb"
     },
     {
@@ -3677,7 +3614,7 @@
       "source_file": "app/models/path.rb",
       "source_location": "L1",
       "id": "models_path_path",
-      "community": 44,
+      "community": 21,
       "norm_label": "path"
     },
     {
@@ -3686,7 +3623,7 @@
       "source_file": "app/models/transport.rb",
       "source_location": "L1",
       "id": "app_models_transport_rb",
-      "community": 165,
+      "community": 2,
       "norm_label": "transport.rb"
     },
     {
@@ -3695,7 +3632,7 @@
       "source_file": "app/models/transport.rb",
       "source_location": "L1",
       "id": "models_transport_transport",
-      "community": 165,
+      "community": 2,
       "norm_label": "transport"
     },
     {
@@ -5558,7 +5495,7 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L1",
       "id": "app_dashboards_transport_dashboard_rb",
-      "community": 165,
+      "community": 2,
       "norm_label": "transport_dashboard.rb"
     },
     {
@@ -5567,7 +5504,7 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L3",
       "id": "dashboards_transport_dashboard_transportdashboard",
-      "community": 165,
+      "community": 2,
       "norm_label": "transportdashboard"
     },
     {
@@ -5576,7 +5513,7 @@
       "source_file": "app/dashboards/transport_dashboard.rb",
       "source_location": "L65",
       "id": "dashboards_transport_dashboard_transportdashboard_display_resource",
-      "community": 165,
+      "community": 2,
       "norm_label": ".display_resource()"
     },
     {
@@ -5720,7 +5657,7 @@
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L1",
       "id": "app_dashboards_structure_dashboard_rb",
-      "community": 21,
+      "community": 22,
       "norm_label": "structure_dashboard.rb"
     },
     {
@@ -5729,7 +5666,7 @@
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L3",
       "id": "dashboards_structure_dashboard_structuredashboard",
-      "community": 21,
+      "community": 22,
       "norm_label": "structuredashboard"
     },
     {
@@ -5738,7 +5675,7 @@
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L65",
       "id": "dashboards_structure_dashboard_structuredashboard_display_resource",
-      "community": 21,
+      "community": 22,
       "norm_label": ".display_resource()"
     },
     {
@@ -5747,7 +5684,7 @@
       "source_file": "app/dashboards/vehicle_dashboard.rb",
       "source_location": "L1",
       "id": "app_dashboards_vehicle_dashboard_rb",
-      "community": 165,
+      "community": 2,
       "norm_label": "vehicle_dashboard.rb"
     },
     {
@@ -5756,7 +5693,7 @@
       "source_file": "app/dashboards/vehicle_dashboard.rb",
       "source_location": "L3",
       "id": "dashboards_vehicle_dashboard_vehicledashboard",
-      "community": 165,
+      "community": 2,
       "norm_label": "vehicledashboard"
     },
     {
@@ -5765,7 +5702,7 @@
       "source_file": "app/dashboards/vehicle_dashboard.rb",
       "source_location": "L75",
       "id": "dashboards_vehicle_dashboard_vehicledashboard_display_resource",
-      "community": 165,
+      "community": 2,
       "norm_label": ".display_resource()"
     },
     {
@@ -5801,7 +5738,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L1",
       "id": "app_fields_carrierwave_field_rb",
-      "community": 2,
+      "community": 5,
       "norm_label": "carrierwave_field.rb"
     },
     {
@@ -5810,7 +5747,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L3",
       "id": "fields_carrierwave_field_carrierwavefield",
-      "community": 2,
+      "community": 5,
       "norm_label": "carrierwavefield"
     },
     {
@@ -5819,7 +5756,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L4",
       "id": "fields_carrierwave_field_carrierwavefield_uploader",
-      "community": 2,
+      "community": 5,
       "norm_label": ".uploader()"
     },
     {
@@ -5828,7 +5765,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L14",
       "id": "fields_carrierwave_field_carrierwavefield_url",
-      "community": 2,
+      "community": 5,
       "norm_label": ".url()"
     },
     {
@@ -5837,7 +5774,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L21",
       "id": "fields_carrierwave_field_carrierwavefield_filename",
-      "community": 2,
+      "community": 5,
       "norm_label": ".filename()"
     },
     {
@@ -5846,7 +5783,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L25",
       "id": "fields_carrierwave_field_carrierwavefield_image",
-      "community": 2,
+      "community": 5,
       "norm_label": ".image?()"
     },
     {
@@ -5855,7 +5792,7 @@
       "source_file": "app/fields/carrierwave_field.rb",
       "source_location": "L29",
       "id": "fields_carrierwave_field_carrierwavefield_to_s",
-      "community": 2,
+      "community": 5,
       "norm_label": ".to_s()"
     },
     {
@@ -6557,7 +6494,7 @@
       "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
       "source_location": "L1",
       "id": "db_migrate_20260815173334_add_institute_and_office_to_users_rb",
-      "community": 2,
+      "community": 5,
       "norm_label": "20260815173334_add_institute_and_office_to_users.rb"
     },
     {
@@ -6566,7 +6503,7 @@
       "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
       "source_location": "L1",
       "id": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers",
-      "community": 2,
+      "community": 5,
       "norm_label": "addinstituteandofficetousers"
     },
     {
@@ -6575,7 +6512,7 @@
       "source_file": "db/migrate/20260815173334_add_institute_and_office_to_users.rb",
       "source_location": "L2",
       "id": "migrate_20260815173334_add_institute_and_office_to_users_addinstituteandofficetousers_change",
-      "community": 2,
+      "community": 5,
       "norm_label": ".change()"
     },
     {
@@ -6863,7 +6800,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L86",
       "id": "terminus_claude_struttura_del_progetto",
-      "community": 28,
+      "community": 46,
       "norm_label": "\ud83d\udcc1 struttura del progetto"
     },
     {
@@ -6872,7 +6809,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L88",
       "id": "terminus_claude_codeblock_3",
-      "community": 28,
+      "community": 46,
       "norm_label": "code:bash (app/)"
     },
     {
@@ -7421,7 +7358,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L777",
       "id": "terminus_claude_approfondimento_brakeman",
-      "community": 28,
+      "community": 178,
       "norm_label": "approfondimento: brakeman"
     },
     {
@@ -7430,7 +7367,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L781",
       "id": "terminus_claude_installazione_e_utilizzo",
-      "community": 28,
+      "community": 178,
       "norm_label": "installazione e utilizzo"
     },
     {
@@ -7439,7 +7376,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L785",
       "id": "terminus_claude_codeblock_35",
-      "community": 28,
+      "community": 178,
       "norm_label": "code:ruby"
     },
     {
@@ -7448,7 +7385,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L793",
       "id": "terminus_claude_codeblock_36",
-      "community": 28,
+      "community": 178,
       "norm_label": "code:bash"
     },
     {
@@ -7457,7 +7394,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L803",
       "id": "terminus_claude_codeblock_37",
-      "community": 28,
+      "community": 178,
       "norm_label": "code:ruby"
     },
     {
@@ -10044,15 +9981,6 @@
       "norm_label": "communication style"
     },
     {
-      "label": ".header_svg()",
-      "file_type": "code",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L62",
-      "community": 43,
-      "norm_label": ".header_svg()",
-      "id": "pdfs_reimbursements_pdf_reimbursementspdf_header_svg"
-    },
-    {
       "label": "Come fare una richiesta efficace",
       "file_type": "document",
       "source_file": "CLAUDE.md",
@@ -10358,7 +10286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 21,
       "norm_label": "admin::pathscontroller",
       "id": "admin_paths_controller_adminpathscontroller"
     },
@@ -10371,7 +10299,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 21,
       "norm_label": "admin::placescontroller",
       "id": "admin_places_controller_adminplacescontroller"
     },
@@ -10436,7 +10364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 21,
       "norm_label": "it locale: path",
       "id": "locales_it_pathlocale"
     },
@@ -10449,7 +10377,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 17,
       "norm_label": "it locale: place",
       "id": "locales_it_placelocale"
     },
@@ -12708,7 +12636,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 165,
+      "community": 2,
       "norm_label": "admin::vehiclescontroller",
       "id": "admin_vehicles_controller_vehicles_controller"
     },
@@ -12773,7 +12701,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 165,
+      "community": 2,
       "norm_label": "admin::transportscontroller",
       "id": "admin_transports_controller_transports_controller"
     },
@@ -12799,7 +12727,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "userdashboard::attribute_types",
       "id": "dashboards_user_dashboard_attribute_types"
     },
@@ -12825,7 +12753,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "carrierwavefield#url",
       "id": "fields_carrierwave_field_url"
     },
@@ -12838,7 +12766,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "carrierwavefield#uploader",
       "id": "fields_carrierwave_field_uploader"
     },
@@ -12851,7 +12779,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "carrierwavefield#filename",
       "id": "fields_carrierwave_field_filename"
     },
@@ -12877,7 +12805,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 165,
+      "community": 2,
       "norm_label": "createtransports migration",
       "id": "migrate_20260817093656_create_transports_create_transports"
     },
@@ -12942,7 +12870,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "addinstituteandofficetousers migration",
       "id": "migrate_add_institute_and_office_to_users_class"
     },
@@ -13969,7 +13897,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 169,
       "norm_label": "pathpolicy",
       "id": "policies_path_policy"
     },
@@ -13995,7 +13923,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 170,
       "norm_label": "placepolicy",
       "id": "policies_place_policy"
     },
@@ -14008,7 +13936,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 172,
       "norm_label": "structurepolicy",
       "id": "policies_structure_policy"
     },
@@ -14034,7 +13962,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 171,
       "norm_label": "reasonpolicy",
       "id": "policies_reason_policy"
     },
@@ -14112,7 +14040,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 165,
+      "community": 2,
       "norm_label": "reimbursementtotalcalculator service",
       "id": "services_reimbursement_total_calculator"
     },
@@ -14860,9 +14788,9 @@
       "source_file": "spec/pdfs/reimbursements_pdf_spec.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "spec_pdfs_reimbursements_pdf_spec_rb",
-      "target": "pdfs_reimbursements_pdf_spec_page_count"
+      "target": "pdfs_reimbursements_pdf_spec_page_count",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15961,17 +15889,6 @@
       "target": "policies_director_mission_request_policy_directormissionrequestpolicy_reject"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/director_mission_request_policy.rb",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "policies_director_mission_request_policy_directormissionrequestpolicy_same_organisational_scope",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
-    },
-    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/director_mission_request_policy.rb",
@@ -16011,17 +15928,6 @@
       "confidence_score": 1.0,
       "source": "policies_director_mission_request_policy",
       "target": "policies_director_mission_request_policy_scope"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/director_mission_request_policy.rb",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "policies_director_mission_request_policy_scope_resolve",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
     },
     {
       "relation": "contains",
@@ -17292,17 +17198,6 @@
       "target": "policies_validator_mission_request_policy_validatormissionrequestpolicy_reject"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/validator_mission_request_policy.rb",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "policies_validator_mission_request_policy_validatormissionrequestpolicy_validator",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
-    },
-    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/validator_mission_request_policy.rb",
@@ -17342,17 +17237,6 @@
       "confidence_score": 1.0,
       "source": "policies_validator_mission_request_policy",
       "target": "policies_validator_mission_request_policy_scope"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/policies/validator_mission_request_policy.rb",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "policies_validator_mission_request_policy_scope_resolve",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
     },
     {
       "relation": "contains",
@@ -17888,31 +17772,11 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L70",
+      "source_location": "L62",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pdfs_reimbursements_pdf_reimbursementspdf",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_label"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L79",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_draw_asset"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_asset"
+      "target": "pdfs_reimbursements_pdf_reimbursementspdf_header_svg"
     },
     {
       "relation": "method",
@@ -17923,16 +17787,6 @@
       "confidence_score": 1.0,
       "source": "pdfs_reimbursements_pdf_reimbursementspdf",
       "target": "pdfs_reimbursements_pdf_reimbursementspdf_top_at"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_header_svg"
     },
     {
       "relation": "calls",
@@ -17972,76 +17826,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_header",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_draw_asset"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
       "source_location": "L54",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_header",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_top_at"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_header",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_label"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L72",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_label",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_top_at"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L76",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_panel_label",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_draw_asset"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L80",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_asset",
-      "target": "pdfs_reimbursements_pdf_reimbursementspdf_asset"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursements_pdf.rb",
-      "source_location": "L80",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursements_pdf_reimbursementspdf_draw_asset",
       "target": "pdfs_reimbursements_pdf_reimbursementspdf_top_at"
     },
     {
@@ -18150,17 +17938,6 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_card"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
       "source_location": "L23",
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw",
@@ -18194,10 +17971,10 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L41",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_summary",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_plain"
     },
     {
       "relation": "calls",
@@ -18220,17 +17997,6 @@
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_summary",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_dashed_line"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_summary",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_plain"
     },
     {
       "relation": "calls",
@@ -18337,17 +18103,6 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_row",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
       "source_location": "L62",
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_row",
@@ -18425,50 +18180,6 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_line"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L85",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L76",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_signature"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_date_column"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/expense_sheet_panel.rb",
       "source_location": "L73",
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
@@ -18480,10 +18191,10 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "app/pdfs/expense_sheet_panel.rb",
-      "source_location": "L75",
+      "source_location": "L74",
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_line"
     },
     {
       "relation": "calls",
@@ -18505,7 +18216,29 @@
       "source_location": "L75",
       "weight": 1.0,
       "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/pdfs/expense_sheet_panel.rb",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_date"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/pdfs/expense_sheet_panel.rb",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "pdfs_expense_sheet_panel_expensesheetpanel_draw_signatures",
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_signature"
     },
     {
       "relation": "calls",
@@ -18573,26 +18306,6 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_card"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_draw_accent_bar"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
       "source_location": "L29",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -18608,16 +18321,6 @@
       "confidence_score": 1.0,
       "source": "pdfs_reimbursement_panel_reimbursementpanel",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_dashed_line"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_date_column"
     },
     {
       "relation": "method",
@@ -18683,31 +18386,11 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L105",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
       "source_location": "L66",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pdfs_reimbursement_panel_reimbursementpanel",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L115",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
     },
     {
       "relation": "method",
@@ -18724,72 +18407,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_card",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_x"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_card",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_y"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_card",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_draw_accent_bar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_card"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L48",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_draw_accent_bar",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_x"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_draw_accent_bar",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_y"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
       "source_location": "L30",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -18806,17 +18423,6 @@
       "confidence_score": 1.0,
       "source": "pdfs_reimbursement_panel_reimbursementpanel_line",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_y"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L75",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_line"
     },
     {
       "relation": "calls",
@@ -18883,61 +18489,6 @@
       "weight": 1.0,
       "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_dashed_line"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L75",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L76",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L76",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_date"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_date_column"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L75",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_date_column",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_plain"
     },
     {
       "relation": "calls",
@@ -19054,6 +18605,17 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "app/pdfs/mission_sheet_panel.rb",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_date"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "db/migrate/20260818173157_create_mission_requests.rb",
       "source_location": "L5",
       "weight": 1.0,
@@ -19076,55 +18638,22 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L49",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_date"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L106",
-      "weight": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_institute",
-      "target": "fields_carrierwave_field_carrierwavefield_to_s"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_authorisation",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/models/mission_request.rb",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "models_mission_request_missionrequest_candidate_validators",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_institute"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "app/pdfs/reimbursement_panel.rb",
       "source_location": "L67",
       "weight": 1.0,
       "source": "pdfs_reimbursement_panel_reimbursementpanel_bold",
       "target": "fields_carrierwave_field_carrierwavefield_to_s"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/pdfs/mission_sheet_panel.rb",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw",
+      "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
     },
     {
       "relation": "calls",
@@ -19180,83 +18709,6 @@
       "weight": 1.0,
       "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
       "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_bold"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/reimbursement_panel.rb",
-      "source_location": "L116",
-      "weight": 1.0,
-      "source": "pdfs_reimbursement_panel_reimbursementpanel_italic",
-      "target": "fields_carrierwave_field_carrierwavefield_to_s"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_authorisation",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_transport",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_vehicle_segments",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L58",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_travel_dates_segments",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/pdfs/mission_sheet_panel.rb",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "pdfs_mission_sheet_panel_missionsheetpanel_draw_signature",
-      "target": "pdfs_reimbursement_panel_reimbursementpanel_italic"
     },
     {
       "relation": "calls",
@@ -34336,5 +33788,5 @@
       "source_file": "db/migrate/20260902104000_add_mission_request_to_reimbursements.rb"
     }
   ],
-  "built_at_commit": "553d162e80d34abe323a7ea183354a719a05a6c5"
+  "built_at_commit": "b9c3a4eda3e0394d9c59161cd7a17c4296e23ec2"
 }

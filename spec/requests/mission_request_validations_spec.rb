@@ -2,10 +2,45 @@ require 'rails_helper'
 
 RSpec.describe "MissionRequestValidations", type: :request do
   include ActiveJob::TestHelper
+  include ActiveSupport::Testing::TimeHelpers
 
   let!(:requester) { create(:user, email: "richiedente@example.com") }
   let!(:mission_request) { create(:mission_request, user: requester, request_approved: nil) }
-  let(:token) { mission_request.signed_id(purpose: "mission_request_validation") }
+  # Lo stesso token che genera MissionRequestMailer#validation_request.
+  let(:token) { mission_request.signed_id(expires_in: 30.days, purpose: "mission_request_validation") }
+
+  describe "scadenza del link" do
+    # Il token va generato prima del salto temporale, altrimenti nascerebbe
+    # con la data futura e non scadrebbe mai.
+    let!(:emitted_token) { token }
+
+    it "resta valido entro i 30 giorni" do
+      travel_to 29.days.from_now do
+        get approve_form_mission_request_validation_path(token: emitted_token)
+
+        expect(response).to have_http_status(:ok)
+        expect(response.body).not_to include("non è valido")
+      end
+    end
+
+    it "non è più utilizzabile dopo 30 giorni" do
+      travel_to 31.days.from_now do
+        get approve_form_mission_request_validation_path(token: emitted_token)
+
+        expect(response.body).to include("non è valido")
+      end
+    end
+
+    it "non approva nulla con un token scaduto" do
+      travel_to 31.days.from_now do
+        expect {
+          post approve_mission_request_validation_path(token: emitted_token)
+        }.not_to change { Reimbursement.count }
+
+        expect(mission_request.reload.request_approved).to be_nil
+      end
+    end
+  end
 
   describe "GET /validazione_missione/:token/approva" do
     it "mostra la pagina di conferma senza approvare nulla" do

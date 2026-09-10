@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "MissionRequests", type: :system do
-  let!(:user) { create(:user, username: "mario", region: "FVG", province: "FVG") }
+  let!(:user) { create(:user, :mission_requesting, username: "mario", region: "FVG", province: "FVG") }
   let!(:other_user) { create(:user, username: "luigi") }
   let!(:mission_request) { create(:mission_request, user: user, name: "MR-MR-FVG-FVG-202608180925-0001") }
   let!(:other_mission_request) { create(:mission_request, user: other_user, name: "MR-LL-FVG-FVG-202608180925-0002") }

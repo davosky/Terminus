@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe ReasonPolicy do
   let(:owner) { create(:user) }
   let(:other_user) { create(:user) }
-  let(:admin) { create(:user, :admin) }
   let!(:reason) { create(:reason, user: owner) }
 
   describe "#show?, #update?, #destroy?" do
@@ -23,12 +22,14 @@ RSpec.describe ReasonPolicy do
       expect(policy.destroy?).to be false
     end
 
-    it "consentono all'amministratore anche su un record altrui" do
-      policy = described_class.new(admin, reason)
+    it "negano ai ruoli privilegiati su un record altrui" do
+      %i[admin manager payroll].each do |role|
+        policy = described_class.new(create(:user, role), reason)
 
-      expect(policy.show?).to be true
-      expect(policy.update?).to be true
-      expect(policy.destroy?).to be true
+        expect(policy.show?).to be false
+        expect(policy.update?).to be false
+        expect(policy.destroy?).to be false
+      end
     end
   end
 
@@ -41,10 +42,13 @@ RSpec.describe ReasonPolicy do
       expect(scope).to contain_exactly(reason)
     end
 
-    it "restituisce tutti i record per l'amministratore" do
-      scope = described_class::Scope.new(admin, Reason).resolve
+    it "restituisce solo i propri record ai ruoli privilegiati" do
+      %i[admin manager payroll].each do |role|
+        privileged = create(:user, role)
+        own = create(:reason, user: privileged)
 
-      expect(scope).to contain_exactly(reason, other_reason)
+        expect(described_class::Scope.new(privileged, Reason).resolve).to contain_exactly(own)
+      end
     end
   end
 end

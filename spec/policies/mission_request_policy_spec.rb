@@ -1,9 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe MissionRequestPolicy do
-  let(:owner) { create(:user) }
-  let(:other_user) { create(:user) }
-  let(:admin) { create(:user, :admin) }
+  let(:owner) { create(:user, :mission_requesting) }
+  let(:other_user) { create(:user, :mission_requesting) }
   let!(:mission_request) { create(:mission_request, user: owner) }
 
   describe "#show?, #update?, #destroy?" do
@@ -23,12 +22,34 @@ RSpec.describe MissionRequestPolicy do
       expect(policy.destroy?).to be false
     end
 
-    it "consentono all'amministratore anche su un record altrui" do
-      policy = described_class.new(admin, mission_request)
+    it "negano ad amministratore e amministrazione su un record altrui" do
+      %i[admin payroll].each do |role|
+        policy = described_class.new(create(:user, role, :mission_requesting), mission_request)
 
-      expect(policy.show?).to be true
-      expect(policy.update?).to be true
-      expect(policy.destroy?).to be true
+        expect(policy.show?).to be false
+        expect(policy.update?).to be false
+        expect(policy.destroy?).to be false
+      end
+    end
+  end
+
+  describe "senza il flag Richiede Missione" do
+    let(:without_flag) { create(:user) }
+
+    it "nega elenco, creazione e accesso ai propri record" do
+      policy = described_class.new(without_flag, create(:mission_request, user: without_flag))
+
+      expect(policy.index?).to be false
+      expect(policy.create?).to be false
+      expect(policy.show?).to be false
+      expect(policy.update?).to be false
+      expect(policy.destroy?).to be false
+    end
+
+    it "restituisce uno scope vuoto" do
+      create(:mission_request, user: without_flag)
+
+      expect(described_class::Scope.new(without_flag, MissionRequest).resolve).to be_empty
     end
   end
 
@@ -41,10 +62,13 @@ RSpec.describe MissionRequestPolicy do
       expect(scope).to contain_exactly(mission_request)
     end
 
-    it "restituisce tutti i record per l'amministratore" do
-      scope = described_class::Scope.new(admin, MissionRequest).resolve
+    it "restituisce solo i propri record ad amministratore e amministrazione" do
+      %i[admin payroll].each do |role|
+        privileged = create(:user, role, :mission_requesting)
+        own = create(:mission_request, user: privileged)
 
-      expect(scope).to contain_exactly(mission_request, other_mission_request)
+        expect(described_class::Scope.new(privileged, MissionRequest).resolve).to contain_exactly(own)
+      end
     end
   end
 end

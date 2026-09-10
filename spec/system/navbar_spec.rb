@@ -18,7 +18,7 @@ RSpec.describe "Navbar", type: :system do
   end
 
   context "quando l'utente è direttore (manager)" do
-    let!(:manager) { create(:user, :manager, username: "direttore") }
+    let!(:manager) { create(:user, :manager, username: "direttore", mission_requesting_user: true) }
 
     it "sostituisce il link 'Richieste Missione' con un dropdown di quattro voci" do
       login_as(manager)
@@ -31,6 +31,30 @@ RSpec.describe "Navbar", type: :system do
         expect(page).to have_link("Richieste Missione Da Approvare", href: validator_mission_requests_path)
         expect(page).to have_link("Richieste Missione Approvate", href: approved_director_mission_requests_path)
         expect(page).to have_link("Richieste Missione Respinte", href: rejected_director_mission_requests_path)
+      end
+    end
+  end
+
+  context "quando l'utente non ha il flag Richiede Missione" do
+    let!(:user) { create(:user, username: "senza-missioni") }
+    let!(:manager) { create(:user, :manager, username: "direttore-senza-missioni") }
+
+    it "non mostra la voce 'Richieste Missione'" do
+      login_as(user)
+      visit root_path
+
+      expect(page).not_to have_link("Richieste Missione")
+    end
+
+    it "lascia al direttore il dropdown senza la voce personale" do
+      login_as(manager)
+      visit root_path
+
+      within("nav .navbar-nav.me-auto") do
+        find("#missionRequestsDropdown").click
+
+        expect(page).not_to have_link("Le Mie Richieste Missione")
+        expect(page).to have_link("Richieste Missione Da Approvare", href: validator_mission_requests_path)
       end
     end
   end

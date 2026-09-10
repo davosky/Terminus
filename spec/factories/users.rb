@@ -18,5 +18,14 @@ FactoryBot.define do
       manager { true }
       regular { false }
     end
+
+    trait :mission_requesting do
+      mission_requesting_user { true }
+    end
+
+    trait :payroll do
+      payroll { true }
+      regular { false }
+    end
   end
 end

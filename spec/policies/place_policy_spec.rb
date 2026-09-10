@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe PlacePolicy do
   let(:owner) { create(:user) }
   let(:other_user) { create(:user) }
-  let(:admin) { create(:user, :admin) }
   let!(:place) { create(:place, user: owner) }
 
   describe "#show?, #update?, #destroy?" do
@@ -23,12 +22,14 @@ RSpec.describe PlacePolicy do
       expect(policy.destroy?).to be false
     end
 
-    it "consentono all'amministratore anche su un record altrui" do
-      policy = described_class.new(admin, place)
+    it "negano ai ruoli privilegiati su un record altrui" do
+      %i[admin manager payroll].each do |role|
+        policy = described_class.new(create(:user, role), place)
 
-      expect(policy.show?).to be true
-      expect(policy.update?).to be true
-      expect(policy.destroy?).to be true
+        expect(policy.show?).to be false
+        expect(policy.update?).to be false
+        expect(policy.destroy?).to be false
+      end
     end
   end
 
@@ -41,10 +42,13 @@ RSpec.describe PlacePolicy do
       expect(scope).to contain_exactly(place)
     end
 
-    it "restituisce tutti i record per l'amministratore" do
-      scope = described_class::Scope.new(admin, Place).resolve
+    it "restituisce solo i propri record ai ruoli privilegiati" do
+      %i[admin manager payroll].each do |role|
+        privileged = create(:user, role)
+        own = create(:place, user: privileged)
 
-      expect(scope).to contain_exactly(place, other_place)
+        expect(described_class::Scope.new(privileged, Place).resolve).to contain_exactly(own)
+      end
     end
   end
 end

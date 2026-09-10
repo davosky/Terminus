@@ -2,6 +2,7 @@ class MissionRequestsController < ApplicationController
   before_action :set_mission_request, only: %i[show edit update destroy confirm_destroy]
 
   def index
+    authorize MissionRequest
     @mission_requests = policy_scope(MissionRequest).ordered
   end
 

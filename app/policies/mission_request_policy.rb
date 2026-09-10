@@ -1,39 +1,31 @@
 # frozen_string_literal: true
 
-class MissionRequestPolicy < ApplicationPolicy
+# Same ownership rules as the other personal records, gated behind the
+# "Richiede Missione" flag: without it the resource is unreachable.
+class MissionRequestPolicy < OwnedRecordPolicy
   def index?
-    true
-  end
-
-  def show?
-    owner?
+    mission_requesting_user?
   end
 
   def create?
-    true
-  end
-
-  def update?
-    owner?
-  end
-
-  def destroy?
-    owner?
-  end
-
-  def confirm_destroy?
-    destroy?
+    mission_requesting_user?
   end
 
   private
 
   def owner?
-    record.user == user || admin?
+    mission_requesting_user? && super
   end
 
-  class Scope < Scope
+  def mission_requesting_user?
+    user&.mission_requesting_user?
+  end
+
+  class Scope < OwnedRecordPolicy::Scope
     def resolve
-      user&.admin? ? scope.all : scope.where(user: user)
+      return scope.none unless user&.mission_requesting_user?
+
+      super
     end
   end
 end

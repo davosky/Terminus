@@ -1,7 +1,9 @@
+@use "sass:color";
+
 @import "fonts";
 
 $font-family-sans-serif:
-  "Asap Condensed",
+  "Barlow Condensed",
   -apple-system,
   BlinkMacSystemFont,
   "Segoe UI",
@@ -13,19 +15,84 @@ $font-family-sans-serif:
   "Segoe UI Emoji",
   "Segoe UI Symbol";
 
-@import "bootswatch/dist/lumen/variables";
+$font-size-base: 1.15rem;
+
+// Nordic Minimal palette
+$gray-100: #f9f9f9;
+$gray-200: #f2f2f2;
+$gray-300: #ececec;
+$gray-400: #e6e6e6;
+$gray-500: #cccccc;
+$gray-600: #b3b3b3;
+$gray-700: #999999;
+$gray-800: #666666;
+$gray-900: #4d4d4d;
+
+$primary: #53718d;
+$secondary: #b3b7b7;
+$tertiary: #bdc3c7;
+$success: #27ae60;
+$info: #2980b9;
+$warning: #f39c12;
+$danger: #c0392b;
+$light: #dbe5e6;
+$dark: #1a252f;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, ("tertiary": $tertiary));
+
+$body-bg: $gray-100;
+$body-color: $dark;
+$border-radius: .25rem;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, .75);
+
+$dropdown-bg: $primary;
+$dropdown-border-width: 1px;
+$dropdown-border-color: $white;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: shade-color($primary, 15%);
+$dropdown-link-active-bg: shade-color($primary, 25%);
+$dropdown-divider-bg: rgba($white, .35);
+
 @import "bootstrap/scss/bootstrap";
-@import "bootswatch/dist/lumen/bootswatch";
 @import "bootstrap-icons/font/bootstrap-icons";
+
+// Bordo inferiore di 3px, 9% più scuro del corpo del bottone
+@each $name, $color in $theme-colors {
+  $shade: color.adjust($color, $lightness: -9%);
+
+  .btn-#{$name} {
+    --#{$prefix}btn-border-color: #{$shade};
+    --#{$prefix}btn-hover-border-color: #{$shade};
+    --#{$prefix}btn-active-border-color: #{$shade};
+    --#{$prefix}btn-disabled-border-color: #{$shade};
+
+    border-width: 0 0 3px;
+  }
+}
+
+// color-contrast() sceglie il nero su $info e $warning: troppo poco leggibile
+.btn-info,
+.btn-warning {
+  --#{$prefix}btn-color: #{$white};
+  --#{$prefix}btn-hover-color: #{$white};
+  --#{$prefix}btn-active-color: #{$white};
+  --#{$prefix}btn-disabled-color: #{$white};
+}
+
+.navbar {
+  border-bottom: 3px solid color.adjust($primary, $lightness: -9%);
+}
+
+.dropdown-menu {
+  box-shadow: 0 .25rem .75rem rgba($black, .15);
+}
 
 .login-card {
   max-width: 24rem;
-}
-
-.nav-link {
-  color: $white !important;
-
-  &:hover {
-    color: $black !important;
-  }
 }

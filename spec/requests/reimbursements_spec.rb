@@ -183,8 +183,8 @@ RSpec.describe "Reimbursements", type: :request do
 
       page = Nokogiri::HTML(response.body)
       expect(page.at_css("#input_mode_stored")).to be_nil
-      expect(page.at_css('[data-reimbursement-mode-target="stored"]')["class"]).not_to include("d-none")
-      expect(page.at_css('[data-reimbursement-mode-target="free"]')["class"]).to include("d-none")
+      expect(page.at_css('[data-mode-target="stored"]')["class"]).not_to include("d-none")
+      expect(page.at_css('[data-mode-target="free"]')["class"]).to include("d-none")
     end
 
     it "mostra i campi liberi quando il rimborso è stato creato in quella modalità" do
@@ -194,8 +194,8 @@ RSpec.describe "Reimbursements", type: :request do
 
       page = Nokogiri::HTML(response.body)
       expect(page.at_css("#input_mode_stored")).to be_nil
-      expect(page.at_css('[data-reimbursement-mode-target="free"]')["class"]).not_to include("d-none")
-      expect(page.at_css('[data-reimbursement-mode-target="stored"]')["class"]).to include("d-none")
+      expect(page.at_css('[data-mode-target="free"]')["class"]).not_to include("d-none")
+      expect(page.at_css('[data-mode-target="stored"]')["class"]).to include("d-none")
     end
   end
 

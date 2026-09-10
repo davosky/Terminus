@@ -44,13 +44,13 @@
 </dl>
 
 <div class="mb-3">
-  <%= f.label :reimbursement_date, class: form_label_class_reimbursement %>
+  <%= f.label :reimbursement_date, class: form_label_class %>
   <%= f.date_field :reimbursement_date, class: "form-control" %>
   <div class="form-text">Se lasciato vuoto viene reimpostato automaticamente all'ultimo venerdì del mese di partenza.</div>
 </div>
 <% Reimbursement::MISSION_REQUEST_EDITABLE_COST_FIELDS.each do |field| %>
   <div class="mb-3">
-    <%= f.label field, class: form_label_class_reimbursement %>
+    <%= f.label field, class: form_label_class %>
     <%= f.number_field field, step: 0.01, min: 0, class: "form-control" %>
   </div>
 <% end %>

@@ -7,8 +7,5 @@ import { application } from "./application"
 import FlashController from "./flash_controller"
 application.register("flash", FlashController)
 
-import MissionRequestModeController from "./mission_request_mode_controller"
-application.register("mission-request-mode", MissionRequestModeController)
-
-import ReimbursementModeController from "./reimbursement_mode_controller"
-application.register("reimbursement-mode", ReimbursementModeController)
+import ModeController from "./mode_controller"
+application.register("mode", ModeController)

@@ -140,8 +140,8 @@ RSpec.describe "MissionRequests", type: :request do
 
       page = Nokogiri::HTML(response.body)
       expect(page.at_css("#input_mode_stored")).to be_nil
-      expect(page.at_css('[data-mission-request-mode-target="stored"]')["class"]).not_to include("d-none")
-      expect(page.at_css('[data-mission-request-mode-target="free"]')["class"]).to include("d-none")
+      expect(page.at_css('[data-mode-target="stored"]')["class"]).not_to include("d-none")
+      expect(page.at_css('[data-mode-target="free"]')["class"]).to include("d-none")
     end
 
     it "mostra i campi liberi quando la richiesta è stata creata in quella modalità" do
@@ -151,8 +151,8 @@ RSpec.describe "MissionRequests", type: :request do
 
       page = Nokogiri::HTML(response.body)
       expect(page.at_css("#input_mode_stored")).to be_nil
-      expect(page.at_css('[data-mission-request-mode-target="free"]')["class"]).not_to include("d-none")
-      expect(page.at_css('[data-mission-request-mode-target="stored"]')["class"]).to include("d-none")
+      expect(page.at_css('[data-mode-target="free"]')["class"]).not_to include("d-none")
+      expect(page.at_css('[data-mode-target="stored"]')["class"]).to include("d-none")
     end
   end
 

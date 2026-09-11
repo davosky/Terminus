@@ -48,6 +48,7 @@ RSpec.describe "Director::MissionRequests", type: :request do
 
       expect(response).to have_http_status(:ok)
       expect(response.body).to include(director_mission_request_path(approved_request))
+      expect(response.body).to include("turbo-cable-stream-source")
       expect(response.body).not_to include(director_mission_request_path(pending_request))
       expect(response.body).not_to include(director_mission_request_path(rejected_request))
     end
@@ -69,6 +70,7 @@ RSpec.describe "Director::MissionRequests", type: :request do
 
       expect(response).to have_http_status(:ok)
       expect(response.body).to include(director_mission_request_path(rejected_request))
+      expect(response.body).to include("turbo-cable-stream-source")
       expect(response.body).not_to include(director_mission_request_path(approved_request))
       expect(response.body).not_to include(director_mission_request_path(pending_request))
     end

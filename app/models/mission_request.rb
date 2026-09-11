@@ -65,6 +65,12 @@ class MissionRequest < ApplicationRecord
     User.where(manager: true, region: user.region, province: user.province, institute: user.institute)
   end
 
+  # Tells every director who can see this request to reload their open lists;
+  # the broadcast carries no data, each page re-fetches through its controller.
+  def refresh_director_pages
+    candidate_validators.find_each { |validator| Turbo::StreamsChannel.broadcast_refresh_to(validator, :mission_requests) }
+  end
+
   private
 
   def stored_or_free_fields_present

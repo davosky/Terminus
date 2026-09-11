@@ -76,6 +76,7 @@ RSpec.describe "Validator::MissionRequests", type: :request do
       get approved_validator_mission_requests_path
 
       expect(response.body).to include(approved_request.user.first_name)
+      expect(response.body).to include("turbo-cable-stream-source")
     end
   end
 end

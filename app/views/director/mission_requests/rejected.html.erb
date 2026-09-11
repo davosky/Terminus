@@ -1,4 +1,6 @@
 <% content_for :title, "Richieste Missione Respinte - Terminus" %>
+<% turbo_refreshes_with method: :morph, scroll: :preserve %>
+<%= turbo_stream_from current_user, :mission_requests %>
 <%= render "list",
            mission_requests: @mission_requests,
            heading: "Richieste Missione Respinte",

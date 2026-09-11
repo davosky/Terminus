@@ -76,7 +76,7 @@ class MissionRequestsController < ApplicationController
   def notify_candidate_validators
     @mission_request.candidate_validators.find_each do |validator|
       MissionRequestMailer.validation_request(@mission_request, validator).deliver_later
-      Turbo::StreamsChannel.broadcast_refresh_to(validator, :mission_requests)
     end
+    @mission_request.refresh_director_pages
   end
 end

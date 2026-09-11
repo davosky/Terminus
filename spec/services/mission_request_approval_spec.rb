@@ -1,7 +1,9 @@
 require 'rails_helper'
+require 'turbo/broadcastable/test_helper'
 
 RSpec.describe MissionRequestApproval do
   include ActiveJob::TestHelper
+  include Turbo::Broadcastable::TestHelper
 
   it "approva la richiesta, crea il rimborso e invia la mail di conferma" do
     requester = create(:user, email: "richiedente@example.com")
@@ -48,5 +50,16 @@ RSpec.describe MissionRequestApproval do
 
     expect(mission_request.reload).to be_pending
     expect(ActionMailer::Base.deliveries).to be_empty
+  end
+
+  it "aggiorna in tempo reale le pagine dei direttori competenti, una volta sola" do
+    requester = create(:user, region: "FVG", province: "UD", institute: "CGIL Udine")
+    manager = create(:user, :manager, region: "FVG", province: "UD", institute: "CGIL Udine")
+    mission_request = create(:mission_request, user: requester, request_approved: nil)
+
+    assert_turbo_stream_broadcasts [ manager, :mission_requests ], count: 1 do
+      described_class.call(mission_request: mission_request)
+      described_class.call(mission_request: mission_request)
+    end
   end
 end

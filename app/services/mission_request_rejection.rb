@@ -10,6 +10,7 @@ class MissionRequestRejection
 
   def call
     if mission_request.update(request_approved: false, rejection_motivation: rejection_motivation)
+      mission_request.refresh_director_pages
       MissionRequestMailer.rejected(mission_request).deliver_later
     end
     mission_request

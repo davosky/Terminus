@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_09_02_122742) do
+ActiveRecord::Schema[8.1].define(version: 2026_09_11_160000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "holidays", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.date "end_date", null: false
+    t.string "reason"
+    t.text "rejection_motivation"
+    t.boolean "request_approved"
+    t.boolean "requested", default: false, null: false
+    t.date "start_date", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["request_approved"], name: "index_holidays_on_request_approved"
+    t.index ["user_id"], name: "index_holidays_on_user_id"
+  end
 
   create_table "mission_requests", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -144,6 +158,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_09_02_122742) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "first_name"
     t.string "gender"
+    t.boolean "holiday_requesting_user", default: false, null: false
     t.string "institute"
     t.string "last_name"
     t.datetime "locked_at"
@@ -179,6 +194,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_09_02_122742) do
     t.index ["user_id"], name: "index_vehicles_on_user_id"
   end
 
+  add_foreign_key "holidays", "users"
   add_foreign_key "mission_requests", "paths"
   add_foreign_key "mission_requests", "places"
   add_foreign_key "mission_requests", "reasons"

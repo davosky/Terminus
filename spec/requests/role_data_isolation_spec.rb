@@ -1,14 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe "Isolamento dei dati per ruolo", type: :request do
-  # Ogni risorsa con l'attributo che la rende riconoscibile nella pagina indice.
+  # Ogni risorsa con l'attributo che la rende riconoscibile nella pagina indice
+  # (e gli eventuali trait: nel calendario compaiono solo le ferie approvate).
   resources = {
     vehicle: :licence_plate,
     transport: :name,
     reason: :name,
     path: :name,
     place: :name,
-    structure: :name
+    structure: :name,
+    holiday: [ :reason, :approved ]
   }
 
   %i[admin manager payroll].each do |role|
@@ -18,10 +20,10 @@ RSpec.describe "Isolamento dei dati per ruolo", type: :request do
 
       before { sign_in privileged }
 
-      resources.each do |factory, attribute|
+      resources.each do |factory, (attribute, *traits)|
         describe "GET /#{factory}s" do
-          let!(:own) { create(factory, user: privileged) }
-          let!(:other) { create(factory, user: other_user) }
+          let!(:own) { create(factory, *traits, user: privileged) }
+          let!(:other) { create(factory, *traits, user: other_user) }
 
           it "elenca solo i propri record" do
             get send("#{factory}s_path")

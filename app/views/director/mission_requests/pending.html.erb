@@ -11,7 +11,7 @@
             <i>Richieste da Approvare</i>
           </span>
         </h2>
-        <%= link_to approved_validator_mission_requests_path, class: "btn btn-outline-primary" do %>
+        <%= link_to approved_director_mission_requests_path, class: "btn btn-outline-primary" do %>
           <i class="bi bi-check2-circle me-2"></i>Richieste Approvate
         <% end %>
       </div>
@@ -40,14 +40,14 @@
                     <br/>
                     <span class="ms-2 fs-6 fst-italic" style="color: #e83e8c;">
                       <i class="bi bi-person text-primary me-1"></i>
-                      <%= "#{mission_request.user.first_name} #{mission_request.user.last_name}" %>
+                      <%= mission_request.user.full_name %>
                     </span>
                   </div>
                   <div class="d-flex gap-2">
                     <%= link_to director_mission_request_path(mission_request), class: "btn btn-sm btn-info", data: { bs_toggle: "tooltip", bs_placement: "bottom" }, title: "Visualizza il Dettaglio" do %>
                       <i class="bi bi-eye"></i>
                     <% end %>
-                    <%= button_to approve_validator_mission_request_path(mission_request), method: :patch, class: "btn btn-sm btn-success" do %>
+                    <%= button_to approve_director_mission_request_path(mission_request), method: :patch, class: "btn btn-sm btn-success" do %>
                       <i class="bi bi-check-lg"></i> Approva
                     <% end %>
                     <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#reject-modal-<%= mission_request.id %>">
@@ -59,7 +59,7 @@
                 <div class="modal fade" id="reject-modal-<%= mission_request.id %>" tabindex="-1" aria-labelledby="reject-modal-label-<%= mission_request.id %>" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
-                      <%= form_with url: reject_validator_mission_request_path(mission_request), method: :patch do %>
+                      <%= form_with url: reject_director_mission_request_path(mission_request), method: :patch do %>
                         <div class="modal-header">
                           <h5 class="modal-title" id="reject-modal-label-<%= mission_request.id %>">Respingi Richiesta Missione</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>

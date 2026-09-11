@@ -23,6 +23,10 @@ FactoryBot.define do
       mission_requesting_user { true }
     end
 
+    trait :holiday_requesting do
+      holiday_requesting_user { true }
+    end
+
     trait :payroll do
       payroll { true }
       regular { false }

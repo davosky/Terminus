@@ -6,7 +6,7 @@
         <div class="card-body">
           <h4 class="text-primary mb-3">Approva Richiesta Missione</h4>
           <p>
-            Richiesta di <strong><%= @mission_request.user.first_name %> <%= @mission_request.user.last_name %></strong>
+            Richiesta di <strong><%= @mission_request.user.full_name %></strong>
             del <strong><%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %></strong>.
           </p>
           <%= form_with url: approve_mission_request_validation_path(token: params[:token]), method: :post do %>

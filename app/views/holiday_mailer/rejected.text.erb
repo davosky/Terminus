@@ -1,0 +1,5 @@
+Gentile <%= @holiday.user.first_name %>,
+
+la tua richiesta di ferie dal <%= l(@holiday.start_date, format: :long) %> al <%= l(@holiday.end_date, format: :long) %> è stata respinta.
+
+Motivo: <%= @holiday.rejection_motivation %>

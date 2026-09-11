@@ -15,7 +15,8 @@ RSpec.describe "Errori di validazione dei form", type: :request do
     structure: { name: "" },
     transport: { name: "" },
     reimbursement: { departure_date: "" },
-    mission_request: { departure_date: "" }
+    mission_request: { departure_date: "" },
+    holiday: { start_date: "" }
   }.each do |resource, invalid_params|
     context "per #{resource}" do
       let!(:record) { create(resource, user: user) }

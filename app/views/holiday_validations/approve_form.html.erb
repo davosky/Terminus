@@ -1,0 +1,22 @@
+<% content_for :title, "Approva Richiesta Ferie - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="card border-0">
+        <div class="card-body">
+          <h4 class="text-primary mb-3">Approva Richiesta Ferie</h4>
+          <p>
+            Richiesta di <strong><%= @holiday.user.full_name %></strong>
+            dal <strong><%= l(@holiday.start_date, format: :long) %></strong>
+            al <strong><%= l(@holiday.end_date, format: :long) %></strong>.
+          </p>
+          <%= form_with url: approve_holiday_validation_path(token: params[:token]), method: :post do %>
+            <button type="submit" class="btn btn-success">
+              <i class="bi bi-check-lg"></i>&emsp;Conferma Approvazione
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

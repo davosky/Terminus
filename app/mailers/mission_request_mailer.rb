@@ -10,7 +10,7 @@ class MissionRequestMailer < ApplicationMailer
 
     mail(
       to: validator.email,
-      subject: "Richiesta di approvazione missione - #{mission_request.user.first_name} #{mission_request.user.last_name}"
+      subject: "Richiesta di approvazione missione - #{mission_request.user.full_name}"
     )
   end
 

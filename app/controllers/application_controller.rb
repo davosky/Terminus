@@ -15,6 +15,11 @@ class ApplicationController < ActionController::Base
     action_name == "index" ? verify_policy_scoped : verify_authorized
   end
 
+  # Guard for the director pages; which records they show is left to the policies.
+  def authenticate_manager
+    redirect_to root_path, alert: "Non sei autorizzato a eseguire questa azione." unless current_user.manager?
+  end
+
   def user_not_authorized
     flash[:alert] = "Non sei autorizzato a eseguire questa azione."
     redirect_to(request.referrer || root_path)

@@ -1,0 +1,33 @@
+<% content_for :title, "Respingi Richiesta Ferie - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 p-2 m-2">
+      <div class="card border-0">
+        <div class="card-body">
+          <h4 class="text-primary mb-3">Respingi Richiesta Ferie</h4>
+          <p>
+            Richiesta di <strong><%= @holiday.user.full_name %></strong>
+            dal <strong><%= l(@holiday.start_date, format: :long) %></strong>
+            al <strong><%= l(@holiday.end_date, format: :long) %></strong>.
+          </p>
+          <% if @holiday.errors.any? %>
+            <div class="alert alert-danger">
+              <ul class="mb-0">
+                <% @holiday.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <%= form_with url: reject_holiday_validation_path(token: params[:token]), method: :post do %>
+            <div class="mb-3">
+              <label for="rejection_motivation" class="form-label"><%= Holiday.human_attribute_name(:rejection_motivation) %></label>
+              <textarea name="rejection_motivation" id="rejection_motivation" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Respingi</button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

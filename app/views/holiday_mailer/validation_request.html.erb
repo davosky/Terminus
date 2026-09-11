@@ -1,0 +1,18 @@
+<p>Gentile <%= @director.first_name %>,</p>
+
+<p>
+  <strong><%= @holiday.user.full_name %></strong>
+  ha presentato una richiesta di ferie che richiede la tua approvazione.
+</p>
+
+<ul>
+  <li>Dal: <%= l(@holiday.start_date, format: :long) %></li>
+  <li>Al: <%= l(@holiday.end_date, format: :long) %></li>
+  <li>Motivo: <%= @holiday.display_reason %></li>
+</ul>
+
+<p>
+  <a href="<%= @approve_url %>" style="background-color:#198754;color:#fff;padding:10px 20px;text-decoration:none;border-radius:4px;">Approva</a>
+  &emsp;
+  <a href="<%= @reject_url %>" style="background-color:#dc3545;color:#fff;padding:10px 20px;text-decoration:none;border-radius:4px;">Respingi</a>
+</p>

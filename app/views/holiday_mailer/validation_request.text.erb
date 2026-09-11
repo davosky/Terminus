@@ -1,0 +1,10 @@
+Gentile <%= @director.first_name %>,
+
+<%= @holiday.user.full_name %> ha presentato una richiesta di ferie che richiede la tua approvazione.
+
+Dal: <%= l(@holiday.start_date, format: :long) %>
+Al: <%= l(@holiday.end_date, format: :long) %>
+Motivo: <%= @holiday.display_reason %>
+
+Approva: <%= @approve_url %>
+Respingi: <%= @reject_url %>

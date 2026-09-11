@@ -55,4 +55,61 @@ RSpec.describe User, type: :model do
       expect(build(:user, payroll: true).payroll).to be(true)
     end
   end
+
+  describe "#short_name" do
+    it "abbrevia il nome all'iniziale e tiene il cognome per intero" do
+      expect(build(:user, first_name: "Mario", last_name: "Rossi").short_name).to eq("M. Rossi")
+    end
+
+    it "senza nome mostra solo il cognome" do
+      expect(build(:user, first_name: nil, last_name: "Rossi").short_name).to eq("Rossi")
+    end
+
+    it "senza nome né cognome ripiega sullo username" do
+      expect(build(:user, username: "mrossi", first_name: "", last_name: nil).short_name).to eq("mrossi")
+    end
+  end
+
+  describe "ferie" do
+    let(:org) { { region: "FVG", province: "UD", institute: "CGIL Udine" } }
+
+    it "non richiede le ferie di default" do
+      expect(build(:user).holiday_requesting_user).to be(false)
+    end
+
+    it "#colleagues restituisce chi condivide regione, provincia e istituto, sé compreso" do
+      me = create(:user, **org)
+      colleague = create(:user, **org)
+      create(:user, **org, province: "TS")
+
+      expect(me.colleagues).to contain_exactly(me, colleague)
+    end
+
+    it "#colleagues è vuoto se manca uno dei tre campi" do
+      create(:user, **org)
+
+      expect(create(:user, **org, institute: nil).colleagues).to be_empty
+    end
+
+    it "#directors restituisce solo i manager tra i colleghi" do
+      me = create(:user, **org)
+      director = create(:user, :manager, **org)
+
+      expect(me.directors).to contain_exactly(director)
+    end
+
+    it "#holiday_team: sé stesso per un dipendente, sé e i colleghi per un direttore" do
+      employee = create(:user, **org)
+      director = create(:user, :manager, **org)
+
+      expect(employee.holiday_team).to contain_exactly(employee)
+      expect(director.holiday_team).to contain_exactly(director, employee)
+    end
+
+    it "#requires_holiday_approval? vale solo per un dipendente con il flag" do
+      expect(build(:user, :holiday_requesting).requires_holiday_approval?).to be(true)
+      expect(build(:user).requires_holiday_approval?).to be(false)
+      expect(build(:user, :manager, :holiday_requesting).requires_holiday_approval?).to be(false)
+    end
+  end
 end

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Validator::MissionRequestsHelper, type: :helper do
+RSpec.describe MissionRequestsHelper, type: :helper do
   describe "#request_age_background_class" do
     def age_class(days_ago)
       helper.request_age_background_class(build(:mission_request, request_date: Date.current - days_ago))

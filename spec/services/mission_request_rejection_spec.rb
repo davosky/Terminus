@@ -1,9 +1,7 @@
 require 'rails_helper'
-require 'turbo/broadcastable/test_helper'
 
 RSpec.describe MissionRequestRejection do
   include ActiveJob::TestHelper
-  include Turbo::Broadcastable::TestHelper
 
   it "respinge la richiesta con il motivo e invia la mail di avviso" do
     requester = create(:user, email: "richiedente@example.com")

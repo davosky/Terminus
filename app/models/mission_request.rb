@@ -1,4 +1,6 @@
 class MissionRequest < ApplicationRecord
+  include ApprovalDecision
+
   belongs_to :user
   belongs_to :reason, optional: true
   belongs_to :place, optional: true
@@ -11,13 +13,9 @@ class MissionRequest < ApplicationRecord
   validates :departure_date, presence: true
   validates :return_date, presence: true
   validates :request_date, presence: true
-  validates :rejection_motivation, presence: true, if: -> { request_approved == false }
   validate :stored_or_free_fields_present
 
   scope :ordered, -> { order(request_date: :desc) }
-  scope :pending, -> { where(request_approved: nil) }
-  scope :approved, -> { where(request_approved: true) }
-  scope :rejected, -> { where(request_approved: false) }
 
   def display_reason
     reason&.name || reason_fr
@@ -43,32 +41,8 @@ class MissionRequest < ApplicationRecord
     path&.highway_cost || highway_cost_fr
   end
 
-  def pending?
-    request_approved.nil?
-  end
-
-  def rejected?
-    request_approved == false
-  end
-
   def locked?
     !pending?
-  end
-
-  def decision_label
-    request_approved? ? "Approvata" : "Respinta"
-  end
-
-  def candidate_validators
-    return User.none unless user.region.present? && user.province.present? && user.institute.present?
-
-    User.where(manager: true, region: user.region, province: user.province, institute: user.institute)
-  end
-
-  # Tells every director who can see this request to reload their open lists;
-  # the broadcast carries no data, each page re-fetches through its controller.
-  def refresh_director_pages
-    candidate_validators.find_each { |validator| Turbo::StreamsChannel.broadcast_refresh_to(validator, :mission_requests) }
   end
 
   private

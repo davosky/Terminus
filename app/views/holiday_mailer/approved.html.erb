@@ -1,0 +1,9 @@
+<p>Gentile <%= @holiday.user.first_name %>,</p>
+
+<p>
+  la tua richiesta di ferie dal
+  <strong><%= l(@holiday.start_date, format: :long) %></strong>
+  al
+  <strong><%= l(@holiday.end_date, format: :long) %></strong>
+  è stata <strong>approvata</strong>: la trovi nel calendario ferie.
+</p>

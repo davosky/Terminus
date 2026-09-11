@@ -1,0 +1,42 @@
+<% content_for :title, "Ferie - Terminus" %>
+<% if current_user.manager? %>
+  <% turbo_refreshes_with method: :morph, scroll: :preserve %>
+  <%= turbo_stream_from current_user, :holidays %>
+<% end %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <h2>
+          <%= image_tag("holidays/holidays_index.svg", class: "img-fluid me-3", alt: "holidays_index") %>
+          <span class="text-primary">
+            <i><%= current_user.manager? ? "Calendario Ferie" : "Le mie Ferie" %></i>
+          </span>
+        </h2>
+        <%= link_to new_holiday_path, class: "btn btn-primary" do %>
+          <i class="bi bi-plus-lg"></i><i class="bi bi-sun me-2"></i><%= current_user.requires_holiday_approval? ? "Richiedi Ferie" : "Nuove Ferie" %>
+        <% end %>
+      </div>
+      <hr class="text-primary mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <% if @calendar_users.size > 1 %>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <% @calendar_users.each do |user| %>
+                <span class="badge <%= holiday_badge_class(user, @calendar_users) %>"><%= user.short_name %></span>
+              <% end %>
+            </div>
+          <% end %>
+          <%= month_calendar(events: @holidays, attribute: :start_date, end_attribute: :end_date) do |date, holidays| %>
+            <div class="fw-bold mb-1"><%= date.day %></div>
+            <% holidays.each do |holiday| %>
+              <%= link_to holiday.user.short_name, holiday_path(holiday),
+                    class: "badge #{holiday_badge_class(holiday.user, @calendar_users)} d-block text-truncate text-decoration-none mb-1",
+                    title: holiday.display_reason %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

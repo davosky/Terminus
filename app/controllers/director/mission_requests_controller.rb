@@ -7,6 +7,10 @@ module Director
       @mission_requests = director_scope.ordered
     end
 
+    def pending
+      @mission_requests = director_scope.pending.ordered
+    end
+
     def approved
       @mission_requests = director_scope.approved.ordered
     end
@@ -18,29 +22,26 @@ module Director
     def show
     end
 
+    # Both the detail page and the "Da Approvare" list post here; go back to whichever it was.
     def approve
       MissionRequestApproval.call(mission_request: @mission_request)
-      redirect_to director_mission_request_path(@mission_request), notice: "Richiesta missione approvata con successo."
+      redirect_back_or_to director_mission_request_path(@mission_request), notice: "Richiesta missione approvata con successo."
     end
 
     def reject
       @mission_request = MissionRequestRejection.call(mission_request: @mission_request, rejection_motivation: params[:rejection_motivation])
 
       if @mission_request.errors.any?
-        redirect_to director_mission_request_path(@mission_request), alert: @mission_request.errors.full_messages.to_sentence
+        redirect_back_or_to director_mission_request_path(@mission_request), alert: @mission_request.errors.full_messages.to_sentence
       else
-        redirect_to director_mission_request_path(@mission_request), notice: "Richiesta missione respinta con successo."
+        redirect_back_or_to director_mission_request_path(@mission_request), notice: "Richiesta missione respinta con successo."
       end
     end
 
     private
 
-    def authenticate_manager
-      redirect_to root_path, alert: "Non sei autorizzato a eseguire questa azione." unless current_user.manager?
-    end
-
     def verify_pundit_usage
-      %w[index approved rejected].include?(action_name) ? verify_policy_scoped : verify_authorized
+      %w[index pending approved rejected].include?(action_name) ? verify_policy_scoped : verify_authorized
     end
 
     def director_scope

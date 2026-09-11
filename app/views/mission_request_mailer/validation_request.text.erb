@@ -1,6 +1,6 @@
 Gentile <%= @validator.first_name %>,
 
-<%= @mission_request.user.first_name %> <%= @mission_request.user.last_name %> ha presentato una richiesta di missione che richiede la tua approvazione.
+<%= @mission_request.user.full_name %> ha presentato una richiesta di missione che richiede la tua approvazione.
 
 Data richiesta: <%= l(@mission_request.request_date, format: :long) if @mission_request.request_date %>
 Data partenza: <%= l(@mission_request.departure_date, format: :long) if @mission_request.departure_date %>

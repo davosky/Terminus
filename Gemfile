@@ -118,3 +118,5 @@ group :test do
   # Acceptance test framework
   gem "capybara"
 end
+
+gem "simple_calendar", "~> 3.1"

@@ -5,7 +5,7 @@ RSpec.describe "Navbar", type: :system do
     let!(:admin) { create(:user, :admin, username: "admin") }
 
     it "mostra 'Utility', poi 'Amministrazione', poi 'Esci' allineati a destra" do
-      login_as(admin)
+      sign_in(admin)
       visit root_path
 
       right_nav = find("nav .navbar-nav:not(.me-auto)")
@@ -21,14 +21,14 @@ RSpec.describe "Navbar", type: :system do
     let!(:manager) { create(:user, :manager, username: "direttore", mission_requesting_user: true) }
 
     it "sostituisce il link 'Richieste Missione' con un dropdown di quattro voci" do
-      login_as(manager)
+      sign_in(manager)
       visit root_path
 
       within("nav .navbar-nav.me-auto") do
         find("#missionRequestsDropdown").click
 
         expect(page).to have_link("Le Mie Richieste Missione", href: mission_requests_path)
-        expect(page).to have_link("Richieste Missione Da Approvare", href: validator_mission_requests_path)
+        expect(page).to have_link("Richieste Missione Da Approvare", href: pending_director_mission_requests_path)
         expect(page).to have_link("Richieste Missione Approvate", href: approved_director_mission_requests_path)
         expect(page).to have_link("Richieste Missione Respinte", href: rejected_director_mission_requests_path)
       end
@@ -40,21 +40,21 @@ RSpec.describe "Navbar", type: :system do
     let!(:manager) { create(:user, :manager, username: "direttore-senza-missioni") }
 
     it "non mostra la voce 'Richieste Missione'" do
-      login_as(user)
+      sign_in(user)
       visit root_path
 
       expect(page).not_to have_link("Richieste Missione")
     end
 
     it "lascia al direttore il dropdown senza la voce personale" do
-      login_as(manager)
+      sign_in(manager)
       visit root_path
 
       within("nav .navbar-nav.me-auto") do
         find("#missionRequestsDropdown").click
 
         expect(page).not_to have_link("Le Mie Richieste Missione")
-        expect(page).to have_link("Richieste Missione Da Approvare", href: validator_mission_requests_path)
+        expect(page).to have_link("Richieste Missione Da Approvare", href: pending_director_mission_requests_path)
       end
     end
   end
@@ -63,14 +63,14 @@ RSpec.describe "Navbar", type: :system do
     let!(:user) { create(:user, username: "regular") }
 
     it "non mostra il link 'Amministrazione'" do
-      login_as(user)
+      sign_in(user)
       visit root_path
 
       expect(page).not_to have_link("Amministrazione")
     end
 
     it "mostra comunque il dropdown 'Utility' allineato a destra, prima di 'Esci'" do
-      login_as(user)
+      sign_in(user)
       visit root_path
 
       right_nav = find("nav .navbar-nav:not(.me-auto)")
@@ -81,12 +81,31 @@ RSpec.describe "Navbar", type: :system do
     end
   end
 
-  private
+  context "voce Ferie" do
+    it "è un semplice link per chi non deve richiederle e non è direttore" do
+      sign_in(create(:user, username: "ferie-semplice"))
+      visit root_path
 
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
+      expect(page).to have_link("Ferie", href: holidays_path)
+      expect(page).not_to have_link("Le Mie Richieste Ferie")
+      expect(page).not_to have_link("Ferie Da Approvare")
+    end
+
+    it "offre calendario e richieste a chi deve richiedere le ferie" do
+      sign_in(create(:user, :holiday_requesting, username: "ferie-richiedente"))
+      visit root_path
+
+      expect(page).to have_link("Calendario Ferie", href: holidays_path)
+      expect(page).to have_link("Le Mie Richieste Ferie", href: requests_holidays_path)
+      expect(page).not_to have_link("Ferie Da Approvare")
+    end
+
+    it "offre al direttore calendario e ferie da approvare" do
+      sign_in(create(:user, :manager, username: "ferie-direttore"))
+      visit root_path
+
+      expect(page).to have_link("Calendario Ferie", href: holidays_path)
+      expect(page).to have_link("Ferie Da Approvare", href: director_holidays_path)
+    end
   end
 end

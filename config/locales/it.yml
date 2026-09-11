@@ -28,6 +28,9 @@ it:
       reimbursement:
         one: Rimborso Spese
         other: Rimborsi Spese
+      holiday:
+        one: Ferie
+        other: Ferie
     attributes:
       vehicle:
         name: Nome Modello
@@ -119,6 +122,16 @@ it:
         user: Utente
         created_at: Creato il
         updated_at: Aggiornato il
+      holiday:
+        start_date: Data Inizio
+        end_date: Data Fine
+        reason: Motivo
+        requested: Richiesta con Approvazione
+        request_approved: Richiesta Approvata
+        rejection_motivation: Motivo Respinta
+        user: Utente
+        created_at: Creato il
+        updated_at: Aggiornato il
       user:
         username: Nome utente
         email: Email
@@ -134,6 +147,7 @@ it:
         manager: Responsabile
         regular: Dipendente
         mission_requesting_user: Richiede Missione
+        holiday_requesting_user: Richiede Ferie
         payroll: Amministrazione
         user_signature: Firma Utente
         validator: Validatore
@@ -146,3 +160,7 @@ it:
         password_confirmation: Conferma password
         created_at: Creato il
         updated_at: Aggiornato il
+  simple_calendar:
+    previous: Mese precedente
+    next: Mese successivo
+    today: Oggi

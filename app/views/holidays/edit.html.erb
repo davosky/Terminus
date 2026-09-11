@@ -1,0 +1,23 @@
+<% content_for :title, "Modifica Ferie - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("holidays/holidays_edit.svg", class: "img-fluid me-3", alt: "holidays_edit") %>
+        <span class="text-warning">
+          <i>Modifica Ferie</i>
+        </span>
+      </h2>
+      <hr class="text-warning mt-3 mb-4"/>
+      <div class="card <%= @holiday.locked? ? "border-danger" : "border-0" %>">
+        <div class="card-body">
+          <% if @holiday.locked? %>
+            <%= render "locked_warning", holiday: @holiday, action_label: "modificato" %>
+          <% else %>
+            <%= render "form", holiday: @holiday %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

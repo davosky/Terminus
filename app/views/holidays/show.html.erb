@@ -1,0 +1,90 @@
+<% content_for :title, "#{@holiday.display_reason} - Terminus" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col col-lg-8 p-2 m-2">
+      <h2>
+        <%= image_tag("holidays/holidays_show.svg", class: "img-fluid me-3", alt: "holidays_show") %>
+        <span class="text-info">
+          <i><%= @holiday.display_reason %></i>
+        </span>
+      </h2>
+      <hr class="text-info mt-3 mb-4"/>
+      <div class="card border-0">
+        <div class="card-body">
+          <dl class="row mb-0 mt-3">
+            <% unless @holiday.user == current_user %>
+              <dt class="col-sm-3"><%= Holiday.human_attribute_name(:user) %></dt>
+              <dd class="col-sm-9 fst-italic fw-bold fs-5" style="color: #e83e8c;"><%= @holiday.user.full_name %></dd>
+            <% end %>
+            <dt class="col-sm-3"><%= Holiday.human_attribute_name(:start_date) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= l(@holiday.start_date, format: :long) %></dd>
+            <dt class="col-sm-3"><%= Holiday.human_attribute_name(:end_date) %></dt>
+            <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= l(@holiday.end_date, format: :long) %></dd>
+            <% if @holiday.reason.present? %>
+              <dt class="col-sm-3"><%= Holiday.human_attribute_name(:reason) %></dt>
+              <dd class="col-sm-9 fst-italic fw-bold fs-5 text-primary"><%= @holiday.reason %></dd>
+            <% end %>
+            <dt class="col-sm-3">Stato</dt>
+            <dd class="col-sm-9">
+              <% if @holiday.pending? %>
+                <span class="fs-5 badge text-bg-secondary">In attesa di approvazione</span>
+              <% elsif @holiday.rejected? %>
+                <span class="fs-5 badge text-bg-danger">Respinta</span>
+              <% else %>
+                <span class="fs-5 badge text-bg-success">Approvata</span>
+              <% end %>
+            </dd>
+            <% if @holiday.rejected? %>
+              <dt class="col-sm-3"><%= Holiday.human_attribute_name(:rejection_motivation) %></dt>
+              <dd class="col-sm-9 fst-italic"><%= @holiday.rejection_motivation %></dd>
+            <% end %>
+          </dl>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <% if policy(@holiday).approve? %>
+              <%= button_to approve_director_holiday_path(@holiday), method: :patch, class: "btn btn-success" do %>
+                <i class="bi bi-check-lg"></i>&emsp;Approva
+              <% end %>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#reject-modal">
+                <i class="bi bi-x-lg"></i>&emsp;Respingi
+              </button>
+            <% end %>
+            <% if policy(@holiday).update? && !@holiday.locked? %>
+              <%= link_to edit_holiday_path(@holiday), class: "btn btn-primary" do %>
+                <i class="bi bi-pencil"></i>&emsp;Modifica
+              <% end %>
+              <%= link_to confirm_destroy_holiday_path(@holiday), class: "btn btn-danger" do %>
+                <i class="bi bi-trash"></i>&emsp;Elimina
+              <% end %>
+            <% end %>
+            <%= link_to holidays_path(start_date: @holiday.start_date), class: "btn btn-secondary" do %>
+              <i class="bi bi-arrow-counterclockwise"></i>&emsp;Torna al calendario
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if policy(@holiday).approve? %>
+  <div class="modal fade" id="reject-modal" tabindex="-1" aria-labelledby="reject-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <%= form_with url: reject_director_holiday_path(@holiday), method: :patch do %>
+          <div class="modal-header">
+            <h5 class="modal-title" id="reject-modal-label">Respingi Richiesta Ferie</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+          </div>
+          <div class="modal-body">
+            <label for="rejection_motivation" class="form-label"><%= Holiday.human_attribute_name(:rejection_motivation) %></label>
+            <textarea name="rejection_motivation" id="rejection_motivation" class="form-control" rows="3" required></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+            <button type="submit" class="btn btn-danger">Respingi</button>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

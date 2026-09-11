@@ -4,10 +4,6 @@
 # places, structures): everyone manages their own records and nobody — admins
 # included — sees anyone else's.
 class OwnedRecordPolicy < ApplicationPolicy
-  def index?
-    true
-  end
-
   def show?
     owner?
   end

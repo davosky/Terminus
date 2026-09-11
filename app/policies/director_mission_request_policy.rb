@@ -5,34 +5,26 @@
 # exposed here — they stay personal to each user (see ReimbursementPolicy::Scope).
 class DirectorMissionRequestPolicy < ApplicationPolicy
   def show?
-    same_organisational_scope?
+    director?
   end
 
   def approve?
-    same_organisational_scope? && record.pending?
+    director? && record.pending?
   end
 
   def reject?
-    same_organisational_scope? && record.pending?
+    approve?
   end
 
   private
 
-  def same_organisational_scope?
-    return false unless user&.manager?
-    return false if user.region.blank? || user.province.blank? || user.institute.blank?
-
-    record.user.region == user.region &&
-      record.user.province == user.province &&
-      record.user.institute == user.institute
+  def director?
+    user&.manager? && user.colleagues.exists?(record.user_id)
   end
 
   class Scope < Scope
     def resolve
-      return scope.none unless user&.manager?
-      return scope.none if user.region.blank? || user.province.blank? || user.institute.blank?
-
-      scope.joins(:user).where(users: { region: user.region, province: user.province, institute: user.institute })
+      user&.manager? ? scope.where(user: user.colleagues) : scope.none
     end
   end
 end

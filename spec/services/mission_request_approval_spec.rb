@@ -1,9 +1,7 @@
 require 'rails_helper'
-require 'turbo/broadcastable/test_helper'
 
 RSpec.describe MissionRequestApproval do
   include ActiveJob::TestHelper
-  include Turbo::Broadcastable::TestHelper
 
   it "approva la richiesta, crea il rimborso e invia la mail di conferma" do
     requester = create(:user, email: "richiedente@example.com")

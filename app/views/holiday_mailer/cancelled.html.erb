@@ -1,0 +1,14 @@
+<p>Gentile <%= @director.first_name %>,</p>
+
+<p>
+  <strong><%= @details[:requester] %></strong>
+  ha annullato la richiesta di ferie che ti era stata inviata:
+</p>
+
+<ul>
+  <li>Dal: <%= l(@details[:start_date], format: :long) %></li>
+  <li>Al: <%= l(@details[:end_date], format: :long) %></li>
+  <li>Motivo: <%= @details[:reason] %></li>
+</ul>
+
+<p>Non è più necessario approvarla o respingerla: i link della mail precedente non sono più validi.</p>

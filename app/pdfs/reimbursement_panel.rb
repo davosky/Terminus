@@ -23,13 +23,8 @@ class ReimbursementPanel
 
   attr_reader :pdf, :reimbursement, :origin
 
-  def user
-    reimbursement.user
-  end
-
-  def full_name
-    "#{user.first_name} #{user.last_name}"
-  end
+  delegate :user, to: :reimbursement, private: true
+  delegate :full_name, to: :user, private: true
 
   # Rounded outline of a printed sheet, with the accent bar running along its
   # rounded left edge. Left unfilled, so that a signature written across it stays

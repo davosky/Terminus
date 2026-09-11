@@ -113,3 +113,25 @@ $dropdown-divider-bg: rgba($white, .35);
 .login-card {
   max-width: 24rem;
 }
+
+// Calendario mensile delle ferie (simple_calendar)
+.simple-calendar {
+  table {
+    table-layout: fixed;
+  }
+
+  td {
+    height: 6rem;
+    vertical-align: top;
+  }
+
+  .today {
+    background-color: rgba($primary, .12);
+  }
+
+  .prev-month,
+  .next-month {
+    color: $gray-600;
+    background-color: $gray-200;
+  }
+}

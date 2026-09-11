@@ -1,0 +1,38 @@
+<div class="simple-calendar">
+  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+    <time datetime="<%= start_date.strftime('%Y-%m') %>" class="fs-4 fw-bold fst-italic text-primary">
+      <%= t("date.month_names")[start_date.month].capitalize %> <%= start_date.year %>
+    </time>
+    <nav class="btn-group" aria-label="Navigazione calendario">
+      <%= link_to calendar.url_for_previous_view, class: "btn btn-sm btn-outline-primary", title: t("simple_calendar.previous"), aria: { label: t("simple_calendar.previous") } do %>
+        <i class="bi bi-chevron-left"></i>
+      <% end %>
+      <%= link_to t("simple_calendar.today"), calendar.url_for_today_view, class: "btn btn-sm btn-outline-primary" %>
+      <%= link_to calendar.url_for_next_view, class: "btn btn-sm btn-outline-primary", title: t("simple_calendar.next"), aria: { label: t("simple_calendar.next") } do %>
+        <i class="bi bi-chevron-right"></i>
+      <% end %>
+    </nav>
+  </div>
+
+  <table class="table table-bordered mb-0">
+    <thead>
+      <tr>
+        <% date_range.slice(0, 7).each do |day| %>
+          <th class="text-center text-primary"><%= t("date.abbr_day_names")[day.wday].capitalize %></th>
+        <% end %>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% date_range.each_slice(7) do |week| %>
+        <tr>
+          <% week.each do |day| %>
+            <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+              <% instance_exec(day, calendar.sorted_events_for(day), &passed_block) %>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

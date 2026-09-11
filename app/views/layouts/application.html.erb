@@ -49,7 +49,7 @@
                       </li>
                     <% end %>
                     <li>
-                      <%= link_to validator_mission_requests_path, class: "dropdown-item" do %>
+                      <%= link_to pending_director_mission_requests_path, class: "dropdown-item" do %>
                         <i class="bi bi-check2-circle me-2"></i>Richieste Missione Da Approvare
                       <% end %>
                     </li>
@@ -89,6 +89,40 @@
                   </li>
                 </ul>
               </li>
+              <% if current_user.manager? || current_user.holiday_requesting_user? %>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown" href="#" id="holidaysDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-sun me-2"></i>Ferie
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="holidaysDropdown">
+                    <li>
+                      <%= link_to holidays_path, class: "dropdown-item" do %>
+                        <i class="bi bi-calendar3 me-2"></i>Calendario Ferie
+                      <% end %>
+                    </li>
+                    <% if current_user.holiday_requesting_user? %>
+                      <li>
+                        <%= link_to requests_holidays_path, class: "dropdown-item" do %>
+                          <i class="bi bi-person me-2"></i>Le Mie Richieste Ferie
+                        <% end %>
+                      </li>
+                    <% end %>
+                    <% if current_user.manager? %>
+                      <li>
+                        <%= link_to director_holidays_path, class: "dropdown-item" do %>
+                          <i class="bi bi-check2-circle me-2"></i>Ferie Da Approvare
+                        <% end %>
+                      </li>
+                    <% end %>
+                  </ul>
+                </li>
+              <% else %>
+                <li class="nav-item">
+                  <%= link_to holidays_path, class: "nav-link" do %>
+                    <i class="bi bi-sun me-2"></i>Ferie
+                  <% end %>
+                </li>
+              <% end %>
             </ul>
             <ul class="navbar-nav">
               <li class="nav-item dropdown">

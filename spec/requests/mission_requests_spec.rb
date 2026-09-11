@@ -1,9 +1,7 @@
 require 'rails_helper'
-require 'turbo/broadcastable/test_helper'
 
 RSpec.describe "MissionRequests", type: :request do
   include ActiveJob::TestHelper
-  include Turbo::Broadcastable::TestHelper
 
   let!(:user) { create(:user, :mission_requesting, region: "FVG", province: "FVG", institute: "CGIL") }
   let!(:other_user) { create(:user) }

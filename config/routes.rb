@@ -53,22 +53,30 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :validator do
-    resources :mission_requests, only: [ :index ] do
-      collection { get :approved }
-      member do
-        patch :approve
-        patch :reject
-      end
+  resources :holidays do
+    collection do
+      get :requests
+    end
+
+    member do
+      get :confirm_destroy
     end
   end
 
   namespace :director do
     resources :mission_requests, only: [ :index, :show ] do
       collection do
+        get :pending
         get :approved
         get :rejected
       end
+      member do
+        patch :approve
+        patch :reject
+      end
+    end
+
+    resources :holidays, only: [ :index ] do
       member do
         patch :approve
         patch :reject
@@ -80,6 +88,11 @@ Rails.application.routes.draw do
   post "validazione_missione/:token/approva",  to: "mission_request_validations#approve",      as: :approve_mission_request_validation
   get  "validazione_missione/:token/respingi", to: "mission_request_validations#reject_form",  as: :reject_form_mission_request_validation
   post "validazione_missione/:token/respingi", to: "mission_request_validations#reject",        as: :reject_mission_request_validation
+
+  get  "validazione_ferie/:token/approva",  to: "holiday_validations#approve_form", as: :approve_form_holiday_validation
+  post "validazione_ferie/:token/approva",  to: "holiday_validations#approve",      as: :approve_holiday_validation
+  get  "validazione_ferie/:token/respingi", to: "holiday_validations#reject_form",  as: :reject_form_holiday_validation
+  post "validazione_ferie/:token/respingi", to: "holiday_validations#reject",        as: :reject_holiday_validation
 
   namespace :admin do
     resources :users do
@@ -97,6 +110,7 @@ Rails.application.routes.draw do
     resources :structures
     resources :mission_requests
     resources :reimbursements
+    resources :holidays
     root to: "users#index"
   end
 

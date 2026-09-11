@@ -43,7 +43,7 @@ gem "thruster", require: false
 gem "image_processing", "~> 1.2"
 
 # File uploads (PNG images, PDF documents) stored on local filesystem
-gem "carrierwave", "~> 3.0"
+gem "carrierwave", "~> 3.1"
 
 # CSV parsing and writing
 gem "csv"

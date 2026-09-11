@@ -47,6 +47,11 @@ $body-bg: $gray-100;
 $body-color: $dark;
 $border-radius: .25rem;
 
+// Bordo di input e select 10% più scuro del bordo standard
+$input-border-color: color.adjust($gray-300, $lightness: -10%);
+$form-select-border-color: $input-border-color;
+$form-check-input-border: var(--#{$prefix}border-width) solid $input-border-color;
+
 $navbar-dark-color: $white;
 $navbar-dark-hover-color: rgba($white, .75);
 
@@ -73,6 +78,18 @@ $dropdown-divider-bg: rgba($white, .35);
     --#{$prefix}btn-disabled-border-color: #{$shade};
 
     border-width: 0 0 3px;
+  }
+}
+
+// Bordo dei bottoni outline 10% più scuro del loro colore
+@each $name, $color in $theme-colors {
+  $shade: color.adjust($color, $lightness: -10%);
+
+  .btn-outline-#{$name} {
+    --#{$prefix}btn-border-color: #{$shade};
+    --#{$prefix}btn-hover-border-color: #{$shade};
+    --#{$prefix}btn-active-border-color: #{$shade};
+    --#{$prefix}btn-disabled-border-color: #{$shade};
   }
 }
 

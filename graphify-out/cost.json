@@ -90,6 +90,12 @@
       "output_tokens": 0,
       "files": 99,
       "note": "subagent_total_tokens_969646_not_split_input_output"
+    },
+    {
+      "date": "2026-09-11T09:00:10.713094+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 64
     }
   ],
   "total_input_tokens": 1480587,

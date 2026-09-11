@@ -1,11 +1,11 @@
 # Graph Report - .  (2026-09-11)
 
 ## Corpus Check
-- 10 files · ~1,602,520 words
+- 2 files · ~1,602,476 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1494 nodes · 1885 edges · 248 communities (168 shown, 80 thin omitted)
+- 1494 nodes · 1885 edges · 249 communities (168 shown, 81 thin omitted)
 - Extraction: 78% EXTRACTED · 22% INFERRED · 0% AMBIGUOUS · INFERRED: 419 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -18,7 +18,7 @@
 - [[_COMMUNITY_ApplicationController & Pundit Base|ApplicationController & Pundit Base]]
 - [[_COMMUNITY_MissionRequest Model Display Logic|MissionRequest Model Display Logic]]
 - [[_COMMUNITY_Reimbursement Generator Services|Reimbursement Generator Services]]
-- [[_COMMUNITY_Holidays Controller|Holidays Controller]]
+- [[_COMMUNITY_MissionRequestsController Cluster|MissionRequestsController Cluster]]
 - [[_COMMUNITY_Reimbursement Form Helpers|Reimbursement Form Helpers]]
 - [[_COMMUNITY_Security Best Practices Doc|Security Best Practices Doc]]
 - [[_COMMUNITY_Mission Request Decision Helpers|Mission Request Decision Helpers]]
@@ -40,14 +40,14 @@
 - [[_COMMUNITY_Community 165|Community 165]]
 - [[_COMMUNITY_Owner-Policy Specs & Factories|Owner-Policy Specs & Factories]]
 - [[_COMMUNITY_Community 166|Community 166]]
-- [[_COMMUNITY_ReasonStructure Admin & Locale|Reason/Structure Admin & Locale]]
 - [[_COMMUNITY_Approval Decision Concern|Approval Decision Concern]]
 - [[_COMMUNITY_Community 167|Community 167]]
 - [[_COMMUNITY_Reference-Data Migrations|Reference-Data Migrations]]
-- [[_COMMUNITY_Holidays Controller|Holidays Controller]]
+- [[_COMMUNITY_HolidaysController Cluster|HolidaysController Cluster]]
 - [[_COMMUNITY_MissionRequest Italian Locale|MissionRequest Italian Locale]]
 - [[_COMMUNITY_Mission Request Form Helpers|Mission Request Form Helpers]]
 - [[_COMMUNITY_mission_request.rb Cluster|mission_request.rb Cluster]]
+- [[_COMMUNITY_Reason Cluster|Reason Cluster]]
 - [[_COMMUNITY_MissionRequestApproval Service Cluster|MissionRequestApproval Service Cluster]]
 - [[_COMMUNITY_Holiday Cancellation|Holiday Cancellation]]
 - [[_COMMUNITY_README Project Overview|README Project Overview]]
@@ -63,7 +63,7 @@
 - [[_COMMUNITY_TransportVehicle Admin CRUD|Transport/Vehicle Admin CRUD]]
 - [[_COMMUNITY_Emailed Holiday Validation Links|Emailed Holiday Validation Links]]
 - [[_COMMUNITY_Transport Protected Record|Transport Protected Record]]
-- [[_COMMUNITY_Path Admin & Locale|Path Admin & Locale]]
+- [[_COMMUNITY_Place Admin & Locale|Place Admin & Locale]]
 - [[_COMMUNITY_Emailed Validation Links|Emailed Validation Links]]
 - [[_COMMUNITY_Community 173|Community 173]]
 - [[_COMMUNITY_Holiday Locale|Holiday Locale]]
@@ -75,7 +75,7 @@
 - [[_COMMUNITY_Testing Guidelines Doc|Testing Guidelines Doc]]
 - [[_COMMUNITY_Community 174|Community 174]]
 - [[_COMMUNITY_CI & Linting Scripts|CI & Linting Scripts]]
-- [[_COMMUNITY_Place Admin & Locale|Place Admin & Locale]]
+- [[_COMMUNITY_Path Admin & Locale|Path Admin & Locale]]
 - [[_COMMUNITY_Community 177|Community 177]]
 - [[_COMMUNITY_Holidays CRUD Icon Set|Holidays CRUD Icon Set]]
 - [[_COMMUNITY_AddTransportVehicleAndApprovalFieldsToMissionRequests Cluster|AddTransportVehicleAndApprovalFieldsToMissionRequests Cluster]]
@@ -103,12 +103,13 @@
 - [[_COMMUNITY_Validator Fields Migration|Validator Fields Migration]]
 - [[_COMMUNITY_Confirmator Fields Migration|Confirmator Fields Migration]]
 - [[_COMMUNITY_Transports Migration|Transports Migration]]
+- [[_COMMUNITY_structure_dashboard.rb Cluster|structure_dashboard.rb Cluster]]
 - [[_COMMUNITY_Mission Requesting User Migration|Mission Requesting User Migration]]
 - [[_COMMUNITY_Community 215|Community 215]]
 - [[_COMMUNITY_README License Section|README License Section]]
 - [[_COMMUNITY_Community 181|Community 181]]
 - [[_COMMUNITY_Places Controller|Places Controller]]
-- [[_COMMUNITY_Holidays Controller|Holidays Controller]]
+- [[_COMMUNITY_HolidaysController Cluster|HolidaysController Cluster]]
 - [[_COMMUNITY_Community 182|Community 182]]
 - [[_COMMUNITY_PathPolicy File|PathPolicy File]]
 - [[_COMMUNITY_ReasonPolicy File|ReasonPolicy File]]
@@ -202,7 +203,7 @@
 - **Auto-Generated Reimbursement from Approved Mission Request** — db_schema_reimbursementstable, db_schema_missionrequeststable, migrate_add_mission_request_to_reimbursements_addmissionrequesttoreimbursements, migrate_add_unique_index_to_reimbursements_mission_request_adduniqueindextoreimbursementsmissionrequest [INFERRED 0.85]
 - **Terminus Brand Logo Family (navbar, login, PDF)** — navbar_navbar_logo, login_login_logo, reimbursements_pdf_logo [INFERRED 0.95]
 
-## Communities (248 total, 80 thin omitted)
+## Communities (249 total, 81 thin omitted)
 
 ### Community 0 - "Reimbursement Domain & Services"
 Cohesion: 0.05
@@ -236,7 +237,7 @@ Nodes (35): Application Monitoring, Backup Configuration, CDN Configuration, Cen
 Cohesion: 0.06
 Nodes (35): ActionCable Integration, Auto-Submit Forms, Basic Controller Structure, Broadcast Updates, code:javascript (// app/javascript/controllers/dropdown_controller.js), code:javascript (// app/javascript/controllers/lazy_load_controller.js), code:javascript (// app/javascript/utils/debounce.js), code:erb (<!-- Stimulus data attributes -->) (+27 more)
 
-### Community 8 - "Holidays Controller"
+### Community 8 - "MissionRequestsController Cluster"
 Cohesion: 0.07
 Nodes (10): Pundit Authorization Guideline, HolidaysController, MissionRequestsController, MissionRequest Factory, Reimbursement Factory, MissionRequest Model, DirectorMissionRequestPolicy, DirectorMissionRequestPolicy (+2 more)
 
@@ -308,29 +309,29 @@ Nodes (15): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Mod
 Cohesion: 0.15
 Nodes (15): Owner-or-admin Pundit policy pattern, Transport Factory, Vehicle Factory, Vehicle Model Spec, MissionRequestPolicy spec, PathPolicy spec, PlacePolicy spec, ReasonPolicy spec (+7 more)
 
-### Community 30 - "Reason/Structure Admin & Locale"
-Cohesion: 0.20
-Nodes (8): Admin::ReasonsController, Admin::StructuresController, ReasonDashboard, StructureDashboard, IT locale: reason, IT locale: structure, Reason, Structure
-
-### Community 31 - "Approval Decision Concern"
+### Community 30 - "Approval Decision Concern"
 Cohesion: 0.18
 Nodes (4): candidate_validators(), pending?(), refresh_live_pages(), HolidayApproval
 
-### Community 32 - "Community 167"
+### Community 31 - "Community 167"
 Cohesion: 0.15
 Nodes (12): Associations, Callbacks, Code Examples You Follow, code:ruby (class User < ApplicationRecord), Core Responsibilities, MCP-Enhanced Capabilities, Migration Guidelines, Performance Considerations (+4 more)
 
-### Community 33 - "Reference-Data Migrations"
+### Community 32 - "Reference-Data Migrations"
 Cohesion: 0.19
 Nodes (5): db/schema.rb, CreateReasons, CreatePaths, CreatePlaces, CreateStructures
 
-### Community 35 - "MissionRequest Italian Locale"
+### Community 34 - "MissionRequest Italian Locale"
 Cohesion: 0.17
 Nodes (12): mission_request Locale Entry (Richiesta Missione / Richieste Missione), mission_request.departure_date Locale Attribute (Data Partenza), mission_request.highway_cost_fr Locale Attribute (Costo Autostrada), mission_request.name Locale Attribute (Codice Richiesta Missione), mission_request.path Locale Attribute (Percorso), mission_request.path_lenght_fr Locale Attribute (Lunghezza Percorso), mission_request.place Locale Attribute (Luogo), mission_request.reason Locale Attribute (Motivo Missione) (+4 more)
 
-### Community 36 - "Mission Request Form Helpers"
+### Community 35 - "Mission Request Form Helpers"
 Cohesion: 0.17
 Nodes (5): rejected?(), mission_request_index_border_class(), request_age_background_class(), age_class(), stored_mode_checked?()
+
+### Community 37 - "Reason Cluster"
+Cohesion: 0.24
+Nodes (7): Admin::ReasonsController, Admin::StructuresController, ReasonDashboard, IT locale: reason, IT locale: structure, Reason, Structure
 
 ### Community 38 - "MissionRequestApproval Service Cluster"
 Cohesion: 0.22
@@ -384,9 +385,9 @@ Nodes (4): Admin::TransportsController, Admin::VehiclesController, TransportDash
 Cohesion: 0.39
 Nodes (8): TransportsController#destroy, TransportsController#update, Transport::PROTECTED_NAMES, Transport#protected_record?, model spec: #protected_record?, request spec: impedisce di modificare un record di sistema, system spec: impedisce l'eliminazione di un record di sistema, system spec: impedisce la modifica di un record di sistema
 
-### Community 53 - "Path Admin & Locale"
+### Community 53 - "Place Admin & Locale"
 Cohesion: 0.32
-Nodes (5): Admin::PathsController, Admin::PlacesController, PathDashboard, IT locale: path, Path
+Nodes (5): Admin::PathsController, Admin::PlacesController, PlaceDashboard, IT locale: place, Place
 
 ### Community 55 - "Community 173"
 Cohesion: 0.25
@@ -412,9 +413,9 @@ Nodes (7): Approfondimento: bundler-audit, code:ruby, code:bash, code:ruby, code
 Cohesion: 0.29
 Nodes (7): bin/brakeman Runner Script, bin/bundler-audit Runner Script, bin/ci Runner Script, bin/rubocop Runner Script, Dependabot Configuration, Rubocop Configuration, GitHub Actions CI Workflow
 
-### Community 65 - "Place Admin & Locale"
+### Community 65 - "Path Admin & Locale"
 Cohesion: 0.40
-Nodes (3): PlaceDashboard, IT locale: place, Place
+Nodes (3): PathDashboard, IT locale: path, Path
 
 ### Community 66 - "Community 177"
 Cohesion: 0.40
@@ -484,11 +485,11 @@ Nodes (3): Action Cable Config, Database Config, Puma Server Config
 Cohesion: 0.67
 Nodes (3): user Locale Entry (Utente / Utenti), user.holiday_requesting_user Locale Attribute (Richiede Ferie), user.mission_requesting_user Locale Attribute (Richiede Missione)
 
-### Community 96 - "README License Section"
+### Community 97 - "README License Section"
 Cohesion: 0.67
 Nodes (3): LICENCE (Bilingual MIT License), README, README English Translation Section
 
-### Community 97 - "Community 181"
+### Community 98 - "Community 181"
 Cohesion: 0.67
 Nodes (3): Cose che Claude Code può fare autonomamente, Cose su cui chiedere conferma prima, 🚀 Workflow con Claude Code
 
@@ -503,7 +504,7 @@ Nodes (3): Cose che Claude Code può fare autonomamente, Cose su cui chiedere co
 ## Knowledge Gaps
 - **371 isolated node(s):** `name`, `private`, `esbuild`, `build`, `build:css:compile` (+366 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **80 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **81 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -514,9 +515,9 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Database Config` and `Action Cable Config`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `User` connect `User Cluster` to `Reimbursement Domain & Services`, `Place Admin & Locale`, `ApplicationController & Pundit Base`, `mission_request.rb Cluster`, `Holidays Controller`, `Community 176`, `Reasons/Structures Controllers`, `Self-Service Resource Controllers`, `Path Admin & Locale`, `HolidayPolicy Cluster`, `pending? Cluster`, `Reason/Structure Admin & Locale`, `Approval Decision Concern`?**
+- **Why does `User` connect `User Cluster` to `Reimbursement Domain & Services`, `Path Admin & Locale`, `mission_request.rb Cluster`, `ApplicationController & Pundit Base`, `Reason Cluster`, `MissionRequestsController Cluster`, `Community 176`, `Reasons/Structures Controllers`, `Self-Service Resource Controllers`, `Place Admin & Locale`, `HolidayPolicy Cluster`, `pending? Cluster`, `Approval Decision Concern`?**
   _High betweenness centrality (0.118) - this node is a cross-community bridge._
-- **Why does `Reimbursement Model` connect `Reimbursement Domain & Services` to `ApplicationController & Pundit Base`, `mission_request.rb Cluster`, `MissionRequestApproval Service Cluster`, `Holidays Controller`, `Owner-Policy Specs & Factories`?**
+- **Why does `Reimbursement Model` connect `Reimbursement Domain & Services` to `mission_request.rb Cluster`, `ApplicationController & Pundit Base`, `MissionRequestApproval Service Cluster`, `MissionRequestsController Cluster`, `Owner-Policy Specs & Factories`?**
   _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Why does `ReimbursementDateGenerator Service` connect `Reimbursement Domain & Services` to `User Cluster`?**
   _High betweenness centrality (0.040) - this node is a cross-community bridge._

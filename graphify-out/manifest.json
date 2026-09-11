@@ -25,9 +25,9 @@
     "semantic_hash": "57710249dabbe1ea548ccdd50da08335"
   },
   "/home/davo/Programmazione/Terminus/config/application.rb": {
-    "mtime": 1786785276.6691477,
-    "ast_hash": "4c91cd03240f508da083978ae0fa4fb9",
-    "semantic_hash": "4c91cd03240f508da083978ae0fa4fb9"
+    "mtime": 1789138006.7587442,
+    "ast_hash": "0785d63192d0d5f60784aa490e23106f",
+    "semantic_hash": "0785d63192d0d5f60784aa490e23106f"
   },
   "/home/davo/Programmazione/Terminus/config/puma.rb": {
     "mtime": 1786784555.8346174,
@@ -315,9 +315,9 @@
     "semantic_hash": "c468aa7e4680dfc25add09c17796fe0f"
   },
   "/home/davo/Programmazione/Terminus/.github/workflows/ci.yml": {
-    "mtime": 1786784555.8322701,
-    "ast_hash": "08d9187eba04b8b2276d6a1477cd144d",
-    "semantic_hash": "08d9187eba04b8b2276d6a1477cd144d"
+    "mtime": 1789137598.729372,
+    "ast_hash": "d6a6b51774de6a0611239a26bd8e32eb",
+    "semantic_hash": "d6a6b51774de6a0611239a26bd8e32eb"
   },
   "/home/davo/Programmazione/Terminus/public/icon.svg": {
     "mtime": 1786784555.931258,

@@ -404,7 +404,7 @@
       "file_type": "code",
       "source_file": "config/boot.rb",
       "source_location": "L1",
-      "community": 117,
+      "community": 118,
       "norm_label": "boot.rb",
       "id": "config_boot_rb"
     },
@@ -413,7 +413,7 @@
       "file_type": "code",
       "source_file": "config/routes.rb",
       "source_location": "L1",
-      "community": 118,
+      "community": 119,
       "norm_label": "routes.rb",
       "id": "config_routes_rb"
     },
@@ -422,7 +422,7 @@
       "file_type": "code",
       "source_file": "config/ci.rb",
       "source_location": "L1",
-      "community": 119,
+      "community": 120,
       "norm_label": "ci.rb",
       "id": "config_ci_rb"
     },
@@ -431,7 +431,7 @@
       "file_type": "code",
       "source_file": "config/environment.rb",
       "source_location": "L1",
-      "community": 120,
+      "community": 121,
       "norm_label": "environment.rb",
       "id": "config_environment_rb"
     },
@@ -458,7 +458,7 @@
       "file_type": "code",
       "source_file": "config/puma.rb",
       "source_location": "L1",
-      "community": 121,
+      "community": 122,
       "norm_label": "puma.rb",
       "id": "config_puma_rb"
     },
@@ -467,7 +467,7 @@
       "file_type": "code",
       "source_file": "config/environments/production.rb",
       "source_location": "L1",
-      "community": 122,
+      "community": 123,
       "norm_label": "production.rb",
       "id": "config_environments_production_rb"
     },
@@ -476,7 +476,7 @@
       "file_type": "code",
       "source_file": "config/environments/test.rb",
       "source_location": "L1",
-      "community": 123,
+      "community": 124,
       "norm_label": "test.rb",
       "id": "config_environments_test_rb"
     },
@@ -485,7 +485,7 @@
       "file_type": "code",
       "source_file": "config/environments/development.rb",
       "source_location": "L1",
-      "community": 124,
+      "community": 125,
       "norm_label": "development.rb",
       "id": "config_environments_development_rb"
     },
@@ -494,7 +494,7 @@
       "file_type": "code",
       "source_file": "config/initializers/devise.rb",
       "source_location": "L1",
-      "community": 125,
+      "community": 126,
       "norm_label": "devise.rb",
       "id": "config_initializers_devise_rb"
     },
@@ -530,7 +530,7 @@
       "file_type": "code",
       "source_file": "config/initializers/secure_headers.rb",
       "source_location": "L1",
-      "community": 126,
+      "community": 127,
       "norm_label": "secure_headers.rb",
       "id": "config_initializers_secure_headers_rb"
     },
@@ -539,7 +539,7 @@
       "file_type": "code",
       "source_file": "config/initializers/filter_parameter_logging.rb",
       "source_location": "L1",
-      "community": 127,
+      "community": 128,
       "norm_label": "filter_parameter_logging.rb",
       "id": "config_initializers_filter_parameter_logging_rb"
     },
@@ -548,7 +548,7 @@
       "file_type": "code",
       "source_file": "config/initializers/assets.rb",
       "source_location": "L1",
-      "community": 128,
+      "community": 129,
       "norm_label": "assets.rb",
       "id": "config_initializers_assets_rb"
     },
@@ -557,7 +557,7 @@
       "file_type": "code",
       "source_file": "config/initializers/inflections.rb",
       "source_location": "L1",
-      "community": 129,
+      "community": 130,
       "norm_label": "inflections.rb",
       "id": "config_initializers_inflections_rb"
     },
@@ -566,7 +566,7 @@
       "file_type": "code",
       "source_file": "spec/spec_helper.rb",
       "source_location": "L1",
-      "community": 130,
+      "community": 131,
       "norm_label": "spec_helper.rb",
       "id": "spec_spec_helper_rb"
     },
@@ -575,7 +575,7 @@
       "file_type": "code",
       "source_file": "spec/rails_helper.rb",
       "source_location": "L1",
-      "community": 131,
+      "community": 132,
       "norm_label": "rails_helper.rb",
       "id": "spec_rails_helper_rb"
     },
@@ -584,7 +584,7 @@
       "file_type": "code",
       "source_file": "spec/requests/reimbursement_prints_spec.rb",
       "source_location": "L1",
-      "community": 132,
+      "community": 133,
       "norm_label": "reimbursement_prints_spec.rb",
       "id": "spec_requests_reimbursement_prints_spec_rb"
     },
@@ -593,7 +593,7 @@
       "file_type": "code",
       "source_file": "spec/requests/reasons_spec.rb",
       "source_location": "L1",
-      "community": 133,
+      "community": 134,
       "norm_label": "reasons_spec.rb",
       "id": "spec_requests_reasons_spec_rb"
     },
@@ -602,7 +602,7 @@
       "file_type": "code",
       "source_file": "spec/requests/mission_requests_spec.rb",
       "source_location": "L1",
-      "community": 134,
+      "community": 135,
       "norm_label": "mission_requests_spec.rb",
       "id": "spec_requests_mission_requests_spec_rb"
     },
@@ -611,7 +611,7 @@
       "file_type": "code",
       "source_file": "spec/requests/reimbursements_spec.rb",
       "source_location": "L1",
-      "community": 135,
+      "community": 136,
       "norm_label": "reimbursements_spec.rb",
       "id": "spec_requests_reimbursements_spec_rb"
     },
@@ -620,7 +620,7 @@
       "file_type": "code",
       "source_file": "spec/requests/vehicles_spec.rb",
       "source_location": "L1",
-      "community": 136,
+      "community": 137,
       "norm_label": "vehicles_spec.rb",
       "id": "spec_requests_vehicles_spec_rb"
     },
@@ -629,7 +629,7 @@
       "file_type": "code",
       "source_file": "spec/requests/mission_request_validations_spec.rb",
       "source_location": "L1",
-      "community": 137,
+      "community": 138,
       "norm_label": "mission_request_validations_spec.rb",
       "id": "spec_requests_mission_request_validations_spec_rb"
     },
@@ -638,7 +638,7 @@
       "file_type": "code",
       "source_file": "spec/requests/structures_spec.rb",
       "source_location": "L1",
-      "community": 138,
+      "community": 139,
       "norm_label": "structures_spec.rb",
       "id": "spec_requests_structures_spec_rb"
     },
@@ -647,7 +647,7 @@
       "file_type": "code",
       "source_file": "spec/requests/paths_spec.rb",
       "source_location": "L1",
-      "community": 139,
+      "community": 140,
       "norm_label": "paths_spec.rb",
       "id": "spec_requests_paths_spec_rb"
     },
@@ -656,7 +656,7 @@
       "file_type": "code",
       "source_file": "spec/requests/transports_spec.rb",
       "source_location": "L1",
-      "community": 140,
+      "community": 141,
       "norm_label": "transports_spec.rb",
       "id": "spec_requests_transports_spec_rb"
     },
@@ -665,7 +665,7 @@
       "file_type": "code",
       "source_file": "spec/requests/role_data_isolation_spec.rb",
       "source_location": "L1",
-      "community": 141,
+      "community": 142,
       "norm_label": "role_data_isolation_spec.rb",
       "id": "spec_requests_role_data_isolation_spec_rb"
     },
@@ -674,7 +674,7 @@
       "file_type": "code",
       "source_file": "spec/requests/sessions_spec.rb",
       "source_location": "L1",
-      "community": 115,
+      "community": 116,
       "norm_label": "sessions_spec.rb",
       "id": "spec_requests_sessions_spec_rb"
     },
@@ -683,7 +683,7 @@
       "file_type": "code",
       "source_file": "spec/requests/sessions_spec.rb",
       "source_location": "L10",
-      "community": 115,
+      "community": 116,
       "norm_label": "attempt_login()",
       "id": "requests_sessions_spec_attempt_login"
     },
@@ -692,7 +692,7 @@
       "file_type": "code",
       "source_file": "spec/requests/places_spec.rb",
       "source_location": "L1",
-      "community": 142,
+      "community": 143,
       "norm_label": "places_spec.rb",
       "id": "spec_requests_places_spec_rb"
     },
@@ -701,7 +701,7 @@
       "file_type": "code",
       "source_file": "spec/requests/admin/authorization_spec.rb",
       "source_location": "L1",
-      "community": 143,
+      "community": 144,
       "norm_label": "authorization_spec.rb",
       "id": "spec_requests_admin_authorization_spec_rb"
     },
@@ -710,7 +710,7 @@
       "file_type": "code",
       "source_file": "spec/requests/director/mission_requests_spec.rb",
       "source_location": "L1",
-      "community": 144,
+      "community": 145,
       "norm_label": "mission_requests_spec.rb",
       "id": "spec_requests_director_mission_requests_spec_rb"
     },
@@ -719,7 +719,7 @@
       "file_type": "code",
       "source_file": "spec/policies/vehicle_policy_spec.rb",
       "source_location": "L1",
-      "community": 145,
+      "community": 146,
       "norm_label": "vehicle_policy_spec.rb",
       "id": "spec_policies_vehicle_policy_spec_rb"
     },
@@ -728,7 +728,7 @@
       "file_type": "code",
       "source_file": "spec/policies/reimbursement_policy_spec.rb",
       "source_location": "L1",
-      "community": 146,
+      "community": 147,
       "norm_label": "reimbursement_policy_spec.rb",
       "id": "spec_policies_reimbursement_policy_spec_rb"
     },
@@ -737,7 +737,7 @@
       "file_type": "code",
       "source_file": "spec/policies/reason_policy_spec.rb",
       "source_location": "L1",
-      "community": 147,
+      "community": 148,
       "norm_label": "reason_policy_spec.rb",
       "id": "spec_policies_reason_policy_spec_rb"
     },
@@ -746,7 +746,7 @@
       "file_type": "code",
       "source_file": "spec/policies/place_policy_spec.rb",
       "source_location": "L1",
-      "community": 148,
+      "community": 149,
       "norm_label": "place_policy_spec.rb",
       "id": "spec_policies_place_policy_spec_rb"
     },
@@ -755,7 +755,7 @@
       "file_type": "code",
       "source_file": "spec/policies/transport_policy_spec.rb",
       "source_location": "L1",
-      "community": 149,
+      "community": 150,
       "norm_label": "transport_policy_spec.rb",
       "id": "spec_policies_transport_policy_spec_rb"
     },
@@ -764,7 +764,7 @@
       "file_type": "code",
       "source_file": "spec/policies/path_policy_spec.rb",
       "source_location": "L1",
-      "community": 150,
+      "community": 151,
       "norm_label": "path_policy_spec.rb",
       "id": "spec_policies_path_policy_spec_rb"
     },
@@ -773,7 +773,7 @@
       "file_type": "code",
       "source_file": "spec/policies/structure_policy_spec.rb",
       "source_location": "L1",
-      "community": 151,
+      "community": 152,
       "norm_label": "structure_policy_spec.rb",
       "id": "spec_policies_structure_policy_spec_rb"
     },
@@ -782,7 +782,7 @@
       "file_type": "code",
       "source_file": "spec/policies/mission_request_policy_spec.rb",
       "source_location": "L1",
-      "community": 152,
+      "community": 153,
       "norm_label": "mission_request_policy_spec.rb",
       "id": "spec_policies_mission_request_policy_spec_rb"
     },
@@ -791,7 +791,7 @@
       "file_type": "code",
       "source_file": "spec/policies/director_mission_request_policy_spec.rb",
       "source_location": "L1",
-      "community": 153,
+      "community": 154,
       "norm_label": "director_mission_request_policy_spec.rb",
       "id": "spec_policies_director_mission_request_policy_spec_rb"
     },
@@ -800,7 +800,7 @@
       "file_type": "code",
       "source_file": "spec/pdfs/reimbursements_pdf_spec.rb",
       "source_location": "L1",
-      "community": 116,
+      "community": 117,
       "norm_label": "reimbursements_pdf_spec.rb",
       "id": "spec_pdfs_reimbursements_pdf_spec_rb"
     },
@@ -809,7 +809,7 @@
       "file_type": "code",
       "source_file": "spec/pdfs/reimbursements_pdf_spec.rb",
       "source_location": "L4",
-      "community": 116,
+      "community": 117,
       "norm_label": "page_count()",
       "id": "pdfs_reimbursements_pdf_spec_page_count"
     },
@@ -818,7 +818,7 @@
       "file_type": "code",
       "source_file": "spec/services/mission_request_rejection_spec.rb",
       "source_location": "L1",
-      "community": 154,
+      "community": 155,
       "norm_label": "mission_request_rejection_spec.rb",
       "id": "spec_services_mission_request_rejection_spec_rb"
     },
@@ -827,7 +827,7 @@
       "file_type": "code",
       "source_file": "spec/services/reimbursement_from_mission_request_spec.rb",
       "source_location": "L1",
-      "community": 155,
+      "community": 156,
       "norm_label": "reimbursement_from_mission_request_spec.rb",
       "id": "spec_services_reimbursement_from_mission_request_spec_rb"
     },
@@ -836,7 +836,7 @@
       "file_type": "code",
       "source_file": "spec/services/mission_request_code_generator_spec.rb",
       "source_location": "L1",
-      "community": 156,
+      "community": 157,
       "norm_label": "mission_request_code_generator_spec.rb",
       "id": "spec_services_mission_request_code_generator_spec_rb"
     },
@@ -845,7 +845,7 @@
       "file_type": "code",
       "source_file": "spec/services/reimbursement_date_generator_spec.rb",
       "source_location": "L1",
-      "community": 157,
+      "community": 158,
       "norm_label": "reimbursement_date_generator_spec.rb",
       "id": "spec_services_reimbursement_date_generator_spec_rb"
     },
@@ -854,7 +854,7 @@
       "file_type": "code",
       "source_file": "spec/services/mission_request_approval_spec.rb",
       "source_location": "L1",
-      "community": 158,
+      "community": 159,
       "norm_label": "mission_request_approval_spec.rb",
       "id": "spec_services_mission_request_approval_spec_rb"
     },
@@ -863,7 +863,7 @@
       "file_type": "code",
       "source_file": "spec/services/reimbursement_code_generator_spec.rb",
       "source_location": "L1",
-      "community": 159,
+      "community": 160,
       "norm_label": "reimbursement_code_generator_spec.rb",
       "id": "spec_services_reimbursement_code_generator_spec_rb"
     },
@@ -872,7 +872,7 @@
       "file_type": "code",
       "source_file": "spec/services/reimbursement_total_calculator_spec.rb",
       "source_location": "L1",
-      "community": 160,
+      "community": 161,
       "norm_label": "reimbursement_total_calculator_spec.rb",
       "id": "spec_services_reimbursement_total_calculator_spec_rb"
     },
@@ -881,7 +881,7 @@
       "file_type": "code",
       "source_file": "spec/helpers/application_helper_spec.rb",
       "source_location": "L1",
-      "community": 161,
+      "community": 162,
       "norm_label": "application_helper_spec.rb",
       "id": "spec_helpers_application_helper_spec_rb"
     },
@@ -890,7 +890,7 @@
       "file_type": "code",
       "source_file": "spec/system/reimbursement_prints_spec.rb",
       "source_location": "L1",
-      "community": 162,
+      "community": 163,
       "norm_label": "reimbursement_prints_spec.rb",
       "id": "spec_system_reimbursement_prints_spec_rb"
     },
@@ -899,7 +899,7 @@
       "file_type": "code",
       "source_file": "spec/system/login_spec.rb",
       "source_location": "L1",
-      "community": 163,
+      "community": 164,
       "norm_label": "login_spec.rb",
       "id": "spec_system_login_spec_rb"
     },
@@ -908,7 +908,7 @@
       "file_type": "code",
       "source_file": "spec/system/reasons_spec.rb",
       "source_location": "L1",
-      "community": 164,
+      "community": 165,
       "norm_label": "reasons_spec.rb",
       "id": "spec_system_reasons_spec_rb"
     },
@@ -917,7 +917,7 @@
       "file_type": "code",
       "source_file": "spec/system/mission_requests_spec.rb",
       "source_location": "L1",
-      "community": 165,
+      "community": 166,
       "norm_label": "mission_requests_spec.rb",
       "id": "spec_system_mission_requests_spec_rb"
     },
@@ -926,7 +926,7 @@
       "file_type": "code",
       "source_file": "spec/system/reimbursements_spec.rb",
       "source_location": "L1",
-      "community": 166,
+      "community": 167,
       "norm_label": "reimbursements_spec.rb",
       "id": "spec_system_reimbursements_spec_rb"
     },
@@ -935,7 +935,7 @@
       "file_type": "code",
       "source_file": "spec/system/vehicles_spec.rb",
       "source_location": "L1",
-      "community": 167,
+      "community": 168,
       "norm_label": "vehicles_spec.rb",
       "id": "spec_system_vehicles_spec_rb"
     },
@@ -944,7 +944,7 @@
       "file_type": "code",
       "source_file": "spec/system/structures_spec.rb",
       "source_location": "L1",
-      "community": 168,
+      "community": 169,
       "norm_label": "structures_spec.rb",
       "id": "spec_system_structures_spec_rb"
     },
@@ -953,7 +953,7 @@
       "file_type": "code",
       "source_file": "spec/system/paths_spec.rb",
       "source_location": "L1",
-      "community": 169,
+      "community": 170,
       "norm_label": "paths_spec.rb",
       "id": "spec_system_paths_spec_rb"
     },
@@ -962,7 +962,7 @@
       "file_type": "code",
       "source_file": "spec/system/transports_spec.rb",
       "source_location": "L1",
-      "community": 170,
+      "community": 171,
       "norm_label": "transports_spec.rb",
       "id": "spec_system_transports_spec_rb"
     },
@@ -971,7 +971,7 @@
       "file_type": "code",
       "source_file": "spec/system/navbar_spec.rb",
       "source_location": "L1",
-      "community": 171,
+      "community": 172,
       "norm_label": "navbar_spec.rb",
       "id": "spec_system_navbar_spec_rb"
     },
@@ -980,7 +980,7 @@
       "file_type": "code",
       "source_file": "spec/system/places_spec.rb",
       "source_location": "L1",
-      "community": 172,
+      "community": 173,
       "norm_label": "places_spec.rb",
       "id": "spec_system_places_spec_rb"
     },
@@ -989,7 +989,7 @@
       "file_type": "code",
       "source_file": "spec/system/admin/user_signature_upload_spec.rb",
       "source_location": "L1",
-      "community": 173,
+      "community": 174,
       "norm_label": "user_signature_upload_spec.rb",
       "id": "spec_system_admin_user_signature_upload_spec_rb"
     },
@@ -998,7 +998,7 @@
       "file_type": "code",
       "source_file": "spec/models/reimbursement_spec.rb",
       "source_location": "L1",
-      "community": 174,
+      "community": 175,
       "norm_label": "reimbursement_spec.rb",
       "id": "spec_models_reimbursement_spec_rb"
     },
@@ -1007,7 +1007,7 @@
       "file_type": "code",
       "source_file": "spec/models/reason_spec.rb",
       "source_location": "L1",
-      "community": 175,
+      "community": 176,
       "norm_label": "reason_spec.rb",
       "id": "spec_models_reason_spec_rb"
     },
@@ -1016,7 +1016,7 @@
       "file_type": "code",
       "source_file": "spec/models/user_spec.rb",
       "source_location": "L1",
-      "community": 176,
+      "community": 177,
       "norm_label": "user_spec.rb",
       "id": "spec_models_user_spec_rb"
     },
@@ -1025,7 +1025,7 @@
       "file_type": "code",
       "source_file": "spec/models/place_spec.rb",
       "source_location": "L1",
-      "community": 177,
+      "community": 178,
       "norm_label": "place_spec.rb",
       "id": "spec_models_place_spec_rb"
     },
@@ -1034,7 +1034,7 @@
       "file_type": "code",
       "source_file": "spec/models/structure_spec.rb",
       "source_location": "L1",
-      "community": 178,
+      "community": 179,
       "norm_label": "structure_spec.rb",
       "id": "spec_models_structure_spec_rb"
     },
@@ -1043,7 +1043,7 @@
       "file_type": "code",
       "source_file": "spec/models/mission_request_spec.rb",
       "source_location": "L1",
-      "community": 179,
+      "community": 180,
       "norm_label": "mission_request_spec.rb",
       "id": "spec_models_mission_request_spec_rb"
     },
@@ -1052,7 +1052,7 @@
       "file_type": "code",
       "source_file": "spec/models/vehicle_spec.rb",
       "source_location": "L1",
-      "community": 180,
+      "community": 181,
       "norm_label": "vehicle_spec.rb",
       "id": "spec_models_vehicle_spec_rb"
     },
@@ -1061,7 +1061,7 @@
       "file_type": "code",
       "source_file": "spec/models/path_spec.rb",
       "source_location": "L1",
-      "community": 181,
+      "community": 182,
       "norm_label": "path_spec.rb",
       "id": "spec_models_path_spec_rb"
     },
@@ -1070,7 +1070,7 @@
       "file_type": "code",
       "source_file": "spec/models/transport_spec.rb",
       "source_location": "L1",
-      "community": 182,
+      "community": 183,
       "norm_label": "transport_spec.rb",
       "id": "spec_models_transport_spec_rb"
     },
@@ -1079,7 +1079,7 @@
       "file_type": "code",
       "source_file": "spec/mailers/mission_request_mailer_spec.rb",
       "source_location": "L1",
-      "community": 183,
+      "community": 184,
       "norm_label": "mission_request_mailer_spec.rb",
       "id": "spec_mailers_mission_request_mailer_spec_rb"
     },
@@ -1088,7 +1088,7 @@
       "file_type": "code",
       "source_file": "spec/factories/mission_requests.rb",
       "source_location": "L1",
-      "community": 184,
+      "community": 185,
       "norm_label": "mission_requests.rb",
       "id": "spec_factories_mission_requests_rb"
     },
@@ -1097,7 +1097,7 @@
       "file_type": "code",
       "source_file": "spec/factories/users.rb",
       "source_location": "L1",
-      "community": 185,
+      "community": 186,
       "norm_label": "users.rb",
       "id": "spec_factories_users_rb"
     },
@@ -1106,7 +1106,7 @@
       "file_type": "code",
       "source_file": "spec/factories/transports.rb",
       "source_location": "L1",
-      "community": 186,
+      "community": 187,
       "norm_label": "transports.rb",
       "id": "spec_factories_transports_rb"
     },
@@ -1115,7 +1115,7 @@
       "file_type": "code",
       "source_file": "spec/factories/structures.rb",
       "source_location": "L1",
-      "community": 187,
+      "community": 188,
       "norm_label": "structures.rb",
       "id": "spec_factories_structures_rb"
     },
@@ -1124,7 +1124,7 @@
       "file_type": "code",
       "source_file": "spec/factories/vehicles.rb",
       "source_location": "L1",
-      "community": 188,
+      "community": 189,
       "norm_label": "vehicles.rb",
       "id": "spec_factories_vehicles_rb"
     },
@@ -1133,7 +1133,7 @@
       "file_type": "code",
       "source_file": "spec/factories/reasons.rb",
       "source_location": "L1",
-      "community": 189,
+      "community": 190,
       "norm_label": "reasons.rb",
       "id": "spec_factories_reasons_rb"
     },
@@ -1142,7 +1142,7 @@
       "file_type": "code",
       "source_file": "spec/factories/reimbursements.rb",
       "source_location": "L1",
-      "community": 190,
+      "community": 191,
       "norm_label": "reimbursements.rb",
       "id": "spec_factories_reimbursements_rb"
     },
@@ -1151,7 +1151,7 @@
       "file_type": "code",
       "source_file": "spec/factories/places.rb",
       "source_location": "L1",
-      "community": 191,
+      "community": 192,
       "norm_label": "places.rb",
       "id": "spec_factories_places_rb"
     },
@@ -1160,7 +1160,7 @@
       "file_type": "code",
       "source_file": "spec/factories/paths.rb",
       "source_location": "L1",
-      "community": 192,
+      "community": 193,
       "norm_label": "paths.rb",
       "id": "spec_factories_paths_rb"
     },
@@ -1169,7 +1169,7 @@
       "file_type": "code",
       "source_file": "app/views/pwa/service-worker.js",
       "source_location": "L1",
-      "community": 193,
+      "community": 194,
       "norm_label": "service-worker.js",
       "id": "app_views_pwa_service_worker_js"
     },
@@ -1178,7 +1178,7 @@
       "file_type": "code",
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L1",
-      "community": 103,
+      "community": 104,
       "norm_label": "transport_policy.rb",
       "id": "app_policies_transport_policy_rb"
     },
@@ -1187,7 +1187,7 @@
       "file_type": "code",
       "source_file": "app/policies/transport_policy.rb",
       "source_location": "L3",
-      "community": 103,
+      "community": 104,
       "norm_label": "transportpolicy",
       "id": "policies_transport_policy_transportpolicy"
     },
@@ -1196,7 +1196,7 @@
       "file_type": "code",
       "source_file": "app/policies/reimbursement_policy.rb",
       "source_location": "L1",
-      "community": 95,
+      "community": 96,
       "norm_label": "reimbursement_policy.rb",
       "id": "app_policies_reimbursement_policy_rb"
     },
@@ -1205,7 +1205,7 @@
       "file_type": "code",
       "source_file": "app/policies/reimbursement_policy.rb",
       "source_location": "L5",
-      "community": 95,
+      "community": 96,
       "norm_label": "reimbursementpolicy",
       "id": "policies_reimbursement_policy_reimbursementpolicy"
     },
@@ -1214,7 +1214,7 @@
       "file_type": "code",
       "source_file": "app/policies/reimbursement_policy.rb",
       "source_location": "L6",
-      "community": 95,
+      "community": 96,
       "norm_label": ".print?()",
       "id": "policies_reimbursement_policy_reimbursementpolicy_print"
     },
@@ -1223,7 +1223,7 @@
       "file_type": "code",
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L1",
-      "community": 101,
+      "community": 102,
       "norm_label": "path_policy.rb",
       "id": "app_policies_path_policy_rb"
     },
@@ -1232,7 +1232,7 @@
       "file_type": "code",
       "source_file": "app/policies/path_policy.rb",
       "source_location": "L3",
-      "community": 101,
+      "community": 102,
       "norm_label": "pathpolicy",
       "id": "policies_path_policy_pathpolicy"
     },
@@ -1304,7 +1304,7 @@
       "file_type": "code",
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L1",
-      "community": 104,
+      "community": 105,
       "norm_label": "vehicle_policy.rb",
       "id": "app_policies_vehicle_policy_rb"
     },
@@ -1313,7 +1313,7 @@
       "file_type": "code",
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L3",
-      "community": 104,
+      "community": 105,
       "norm_label": "vehiclepolicy",
       "id": "policies_vehicle_policy_vehiclepolicy"
     },
@@ -1538,7 +1538,7 @@
       "file_type": "code",
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L1",
-      "community": 112,
+      "community": 113,
       "norm_label": "place_policy.rb",
       "id": "app_policies_place_policy_rb"
     },
@@ -1547,7 +1547,7 @@
       "file_type": "code",
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L3",
-      "community": 112,
+      "community": 113,
       "norm_label": "placepolicy",
       "id": "policies_place_policy_placepolicy"
     },
@@ -1556,7 +1556,7 @@
       "file_type": "code",
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L1",
-      "community": 113,
+      "community": 114,
       "norm_label": "structure_policy.rb",
       "id": "app_policies_structure_policy_rb"
     },
@@ -1565,7 +1565,7 @@
       "file_type": "code",
       "source_file": "app/policies/structure_policy.rb",
       "source_location": "L3",
-      "community": 113,
+      "community": 114,
       "norm_label": "structurepolicy",
       "id": "policies_structure_policy_structurepolicy"
     },
@@ -1574,7 +1574,7 @@
       "file_type": "code",
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L1",
-      "community": 102,
+      "community": 103,
       "norm_label": "reason_policy.rb",
       "id": "app_policies_reason_policy_rb"
     },
@@ -1583,7 +1583,7 @@
       "file_type": "code",
       "source_file": "app/policies/reason_policy.rb",
       "source_location": "L3",
-      "community": 102,
+      "community": 103,
       "norm_label": "reasonpolicy",
       "id": "policies_reason_policy_reasonpolicy"
     },
@@ -2519,7 +2519,7 @@
       "file_type": "code",
       "source_file": "app/helpers/mission_requests_helper.rb",
       "source_location": "L1",
-      "community": 36,
+      "community": 35,
       "norm_label": "mission_requests_helper.rb",
       "id": "app_helpers_mission_requests_helper_rb"
     },
@@ -2528,7 +2528,7 @@
       "file_type": "code",
       "source_file": "app/helpers/mission_requests_helper.rb",
       "source_location": "L2",
-      "community": 36,
+      "community": 35,
       "norm_label": "mission_request_index_border_class()",
       "id": "helpers_mission_requests_helper_mission_request_index_border_class"
     },
@@ -2636,7 +2636,7 @@
       "file_type": "code",
       "source_file": "app/models/application_record.rb",
       "source_location": "L1",
-      "community": 111,
+      "community": 112,
       "norm_label": "application_record.rb",
       "id": "app_models_application_record_rb"
     },
@@ -2645,7 +2645,7 @@
       "file_type": "code",
       "source_file": "app/models/application_record.rb",
       "source_location": "L1",
-      "community": 111,
+      "community": 112,
       "norm_label": "applicationrecord",
       "id": "models_application_record_applicationrecord"
     },
@@ -2654,7 +2654,7 @@
       "file_type": "code",
       "source_file": "app/models/place.rb",
       "source_location": "L1",
-      "community": 65,
+      "community": 53,
       "norm_label": "place.rb",
       "id": "app_models_place_rb"
     },
@@ -2663,7 +2663,7 @@
       "file_type": "code",
       "source_file": "app/models/place.rb",
       "source_location": "L1",
-      "community": 65,
+      "community": 53,
       "norm_label": "place",
       "id": "models_place_place"
     },
@@ -2672,7 +2672,7 @@
       "file_type": "code",
       "source_file": "app/models/path.rb",
       "source_location": "L1",
-      "community": 53,
+      "community": 65,
       "norm_label": "path.rb",
       "id": "app_models_path_rb"
     },
@@ -2681,7 +2681,7 @@
       "file_type": "code",
       "source_file": "app/models/path.rb",
       "source_location": "L1",
-      "community": 53,
+      "community": 65,
       "norm_label": "path",
       "id": "models_path_path"
     },
@@ -2753,7 +2753,7 @@
       "file_type": "code",
       "source_file": "app/models/reason.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 37,
       "norm_label": "reason.rb",
       "id": "app_models_reason_rb"
     },
@@ -2762,7 +2762,7 @@
       "file_type": "code",
       "source_file": "app/models/reason.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 37,
       "norm_label": "reason",
       "id": "models_reason_reason"
     },
@@ -2771,7 +2771,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L1",
-      "community": 37,
+      "community": 36,
       "norm_label": "mission_request.rb",
       "id": "app_models_mission_request_rb"
     },
@@ -2780,7 +2780,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L1",
-      "community": 37,
+      "community": 36,
       "norm_label": "missionrequest",
       "id": "models_mission_request_missionrequest"
     },
@@ -2789,7 +2789,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L20",
-      "community": 37,
+      "community": 36,
       "norm_label": ".display_reason()",
       "id": "models_mission_request_missionrequest_display_reason"
     },
@@ -2798,7 +2798,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L24",
-      "community": 37,
+      "community": 36,
       "norm_label": ".display_place()",
       "id": "models_mission_request_missionrequest_display_place"
     },
@@ -2807,7 +2807,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L28",
-      "community": 37,
+      "community": 36,
       "norm_label": ".display_structure()",
       "id": "models_mission_request_missionrequest_display_structure"
     },
@@ -2816,7 +2816,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L32",
-      "community": 37,
+      "community": 36,
       "norm_label": ".display_path()",
       "id": "models_mission_request_missionrequest_display_path"
     },
@@ -2825,7 +2825,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L36",
-      "community": 37,
+      "community": 36,
       "norm_label": ".display_path_lenght()",
       "id": "models_mission_request_missionrequest_display_path_lenght"
     },
@@ -2834,7 +2834,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L40",
-      "community": 37,
+      "community": 36,
       "norm_label": ".display_highway_cost()",
       "id": "models_mission_request_missionrequest_display_highway_cost"
     },
@@ -2843,7 +2843,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L44",
-      "community": 37,
+      "community": 36,
       "norm_label": ".locked?()",
       "id": "models_mission_request_missionrequest_locked"
     },
@@ -2852,7 +2852,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L50",
-      "community": 37,
+      "community": 36,
       "norm_label": ".stored_or_free_fields_present()",
       "id": "models_mission_request_missionrequest_stored_or_free_fields_present"
     },
@@ -2861,7 +2861,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L56",
-      "community": 37,
+      "community": 36,
       "norm_label": ".stored_fields_present?()",
       "id": "models_mission_request_missionrequest_stored_fields_present"
     },
@@ -2870,7 +2870,7 @@
       "file_type": "code",
       "source_file": "app/models/mission_request.rb",
       "source_location": "L60",
-      "community": 37,
+      "community": 36,
       "norm_label": ".free_fields_present?()",
       "id": "models_mission_request_missionrequest_free_fields_present"
     },
@@ -3023,7 +3023,7 @@
       "file_type": "code",
       "source_file": "app/models/structure.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 37,
       "norm_label": "structure.rb",
       "id": "app_models_structure_rb"
     },
@@ -3032,7 +3032,7 @@
       "file_type": "code",
       "source_file": "app/models/structure.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 37,
       "norm_label": "structure",
       "id": "models_structure_structure"
     },
@@ -4139,7 +4139,7 @@
       "file_type": "code",
       "source_file": "app/controllers/admin/places_controller.rb",
       "source_location": "L1",
-      "community": 98,
+      "community": 99,
       "norm_label": "places_controller.rb",
       "id": "app_controllers_admin_places_controller_rb"
     },
@@ -4148,7 +4148,7 @@
       "file_type": "code",
       "source_file": "app/controllers/admin/places_controller.rb",
       "source_location": "L2",
-      "community": 98,
+      "community": 99,
       "norm_label": "placescontroller",
       "id": "admin_places_controller_placescontroller"
     },
@@ -4409,7 +4409,7 @@
       "file_type": "code",
       "source_file": "app/jobs/application_job.rb",
       "source_location": "L1",
-      "community": 100,
+      "community": 101,
       "norm_label": "application_job.rb",
       "id": "app_jobs_application_job_rb"
     },
@@ -4418,7 +4418,7 @@
       "file_type": "code",
       "source_file": "app/jobs/application_job.rb",
       "source_location": "L1",
-      "community": 100,
+      "community": 101,
       "norm_label": "applicationjob",
       "id": "jobs_application_job_applicationjob"
     },
@@ -4454,7 +4454,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/reason_dashboard.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 37,
       "norm_label": "reason_dashboard.rb",
       "id": "app_dashboards_reason_dashboard_rb"
     },
@@ -4463,7 +4463,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/reason_dashboard.rb",
       "source_location": "L3",
-      "community": 30,
+      "community": 37,
       "norm_label": "reasondashboard",
       "id": "dashboards_reason_dashboard_reasondashboard"
     },
@@ -4472,7 +4472,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/reason_dashboard.rb",
       "source_location": "L37",
-      "community": 30,
+      "community": 37,
       "norm_label": ".display_resource()",
       "id": "dashboards_reason_dashboard_reasondashboard_display_resource"
     },
@@ -4535,7 +4535,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/place_dashboard.rb",
       "source_location": "L1",
-      "community": 65,
+      "community": 53,
       "norm_label": "place_dashboard.rb",
       "id": "app_dashboards_place_dashboard_rb"
     },
@@ -4544,7 +4544,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/place_dashboard.rb",
       "source_location": "L3",
-      "community": 65,
+      "community": 53,
       "norm_label": "placedashboard",
       "id": "dashboards_place_dashboard_placedashboard"
     },
@@ -4553,7 +4553,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/place_dashboard.rb",
       "source_location": "L37",
-      "community": 65,
+      "community": 53,
       "norm_label": ".display_resource()",
       "id": "dashboards_place_dashboard_placedashboard_display_resource"
     },
@@ -4589,7 +4589,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L1",
-      "community": 30,
+      "community": 94,
       "norm_label": "structure_dashboard.rb",
       "id": "app_dashboards_structure_dashboard_rb"
     },
@@ -4598,7 +4598,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L3",
-      "community": 30,
+      "community": 94,
       "norm_label": "structuredashboard",
       "id": "dashboards_structure_dashboard_structuredashboard"
     },
@@ -4607,7 +4607,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/structure_dashboard.rb",
       "source_location": "L37",
-      "community": 30,
+      "community": 94,
       "norm_label": ".display_resource()",
       "id": "dashboards_structure_dashboard_structuredashboard_display_resource"
     },
@@ -4643,7 +4643,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/path_dashboard.rb",
       "source_location": "L1",
-      "community": 53,
+      "community": 65,
       "norm_label": "path_dashboard.rb",
       "id": "app_dashboards_path_dashboard_rb"
     },
@@ -4652,7 +4652,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/path_dashboard.rb",
       "source_location": "L3",
-      "community": 53,
+      "community": 65,
       "norm_label": "pathdashboard",
       "id": "dashboards_path_dashboard_pathdashboard"
     },
@@ -4661,7 +4661,7 @@
       "file_type": "code",
       "source_file": "app/dashboards/path_dashboard.rb",
       "source_location": "L44",
-      "community": 53,
+      "community": 65,
       "norm_label": ".display_resource()",
       "id": "dashboards_path_dashboard_pathdashboard_display_resource"
     },
@@ -4940,7 +4940,7 @@
       "file_type": "code",
       "source_file": "app/mailers/application_mailer.rb",
       "source_location": "L1",
-      "community": 110,
+      "community": 111,
       "norm_label": "application_mailer.rb",
       "id": "app_mailers_application_mailer_rb"
     },
@@ -4949,7 +4949,7 @@
       "file_type": "code",
       "source_file": "app/mailers/application_mailer.rb",
       "source_location": "L1",
-      "community": 110,
+      "community": 111,
       "norm_label": "applicationmailer",
       "id": "mailers_application_mailer_applicationmailer"
     },
@@ -4958,7 +4958,7 @@
       "file_type": "code",
       "source_file": "db/seeds.rb",
       "source_location": "L1",
-      "community": 194,
+      "community": 195,
       "norm_label": "seeds.rb",
       "id": "db_seeds_rb"
     },
@@ -4967,7 +4967,7 @@
       "file_type": "code",
       "source_file": "db/schema.rb",
       "source_location": "L1",
-      "community": 195,
+      "community": 196,
       "norm_label": "schema.rb",
       "id": "db_schema_rb"
     },
@@ -4976,7 +4976,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817120521_create_structures.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "20260817120521_create_structures.rb",
       "id": "db_migrate_20260817120521_create_structures_rb"
     },
@@ -4985,7 +4985,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817120521_create_structures.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "createstructures",
       "id": "migrate_20260817120521_create_structures_createstructures"
     },
@@ -4994,7 +4994,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817120521_create_structures.rb",
       "source_location": "L2",
-      "community": 33,
+      "community": 32,
       "norm_label": ".change()",
       "id": "migrate_20260817120521_create_structures_createstructures_change"
     },
@@ -5165,7 +5165,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817112820_create_paths.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "20260817112820_create_paths.rb",
       "id": "db_migrate_20260817112820_create_paths_rb"
     },
@@ -5174,7 +5174,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817112820_create_paths.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "createpaths",
       "id": "migrate_20260817112820_create_paths_createpaths"
     },
@@ -5183,7 +5183,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817112820_create_paths.rb",
       "source_location": "L2",
-      "community": 33,
+      "community": 32,
       "norm_label": ".change()",
       "id": "migrate_20260817112820_create_paths_createpaths_change"
     },
@@ -5192,7 +5192,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817105010_create_reasons.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "20260817105010_create_reasons.rb",
       "id": "db_migrate_20260817105010_create_reasons_rb"
     },
@@ -5201,7 +5201,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817105010_create_reasons.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "createreasons",
       "id": "migrate_20260817105010_create_reasons_createreasons"
     },
@@ -5210,7 +5210,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817105010_create_reasons.rb",
       "source_location": "L2",
-      "community": 33,
+      "community": 32,
       "norm_label": ".change()",
       "id": "migrate_20260817105010_create_reasons_createreasons_change"
     },
@@ -5453,7 +5453,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260818173147_add_mission_requesting_user_to_users.rb",
       "source_location": "L1",
-      "community": 94,
+      "community": 95,
       "norm_label": "20260818173147_add_mission_requesting_user_to_users.rb",
       "id": "db_migrate_20260818173147_add_mission_requesting_user_to_users_rb"
     },
@@ -5462,7 +5462,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260818173147_add_mission_requesting_user_to_users.rb",
       "source_location": "L1",
-      "community": 94,
+      "community": 95,
       "norm_label": "addmissionrequestingusertousers",
       "id": "migrate_20260818173147_add_mission_requesting_user_to_users_addmissionrequestingusertousers"
     },
@@ -5471,7 +5471,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260818173147_add_mission_requesting_user_to_users.rb",
       "source_location": "L2",
-      "community": 94,
+      "community": 95,
       "norm_label": ".change()",
       "id": "migrate_20260818173147_add_mission_requesting_user_to_users_addmissionrequestingusertousers_change"
     },
@@ -5480,7 +5480,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817115231_create_places.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "20260817115231_create_places.rb",
       "id": "db_migrate_20260817115231_create_places_rb"
     },
@@ -5489,7 +5489,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817115231_create_places.rb",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "createplaces",
       "id": "migrate_20260817115231_create_places_createplaces"
     },
@@ -5498,7 +5498,7 @@
       "file_type": "code",
       "source_file": "db/migrate/20260817115231_create_places.rb",
       "source_location": "L2",
-      "community": 33,
+      "community": 32,
       "norm_label": ".change()",
       "id": "migrate_20260817115231_create_places_createplaces_change"
     },
@@ -5885,7 +5885,7 @@
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L220",
-      "community": 97,
+      "community": 98,
       "norm_label": "\ud83d\ude80 workflow con claude code",
       "id": "terminus_claude_workflow_con_claude_code"
     },
@@ -5894,7 +5894,7 @@
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L224",
-      "community": 97,
+      "community": 98,
       "norm_label": "cose che claude code puo fare autonomamente",
       "id": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente"
     },
@@ -5903,7 +5903,7 @@
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L232",
-      "community": 97,
+      "community": 98,
       "norm_label": "cose su cui chiedere conferma prima",
       "id": "terminus_claude_cose_su_cui_chiedere_conferma_prima"
     },
@@ -7532,7 +7532,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L1",
-      "community": 32,
+      "community": 31,
       "norm_label": "models.md",
       "id": "claude_on_rails_prompts_models_md"
     },
@@ -7541,7 +7541,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L1",
-      "community": 32,
+      "community": 31,
       "norm_label": "rails models specialist",
       "id": "prompts_models_rails_models_specialist"
     },
@@ -7550,7 +7550,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L5",
-      "community": 32,
+      "community": 31,
       "norm_label": "core responsibilities",
       "id": "prompts_models_core_responsibilities"
     },
@@ -7559,7 +7559,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L13",
-      "community": 32,
+      "community": 31,
       "norm_label": "rails model best practices",
       "id": "prompts_models_rails_model_best_practices"
     },
@@ -7568,7 +7568,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L15",
-      "community": 32,
+      "community": 31,
       "norm_label": "validations",
       "id": "prompts_models_validations"
     },
@@ -7577,7 +7577,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L21",
-      "community": 32,
+      "community": 31,
       "norm_label": "associations",
       "id": "prompts_models_associations"
     },
@@ -7586,7 +7586,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L28",
-      "community": 32,
+      "community": 31,
       "norm_label": "scopes and queries",
       "id": "prompts_models_scopes_and_queries"
     },
@@ -7595,7 +7595,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L35",
-      "community": 32,
+      "community": 31,
       "norm_label": "callbacks",
       "id": "prompts_models_callbacks"
     },
@@ -7604,7 +7604,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L41",
-      "community": 32,
+      "community": 31,
       "norm_label": "migration guidelines",
       "id": "prompts_models_migration_guidelines"
     },
@@ -7613,7 +7613,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L49",
-      "community": 32,
+      "community": 31,
       "norm_label": "performance considerations",
       "id": "prompts_models_performance_considerations"
     },
@@ -7622,7 +7622,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L57",
-      "community": 32,
+      "community": 31,
       "norm_label": "code examples you follow",
       "id": "prompts_models_code_examples_you_follow"
     },
@@ -7631,7 +7631,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L59",
-      "community": 32,
+      "community": 31,
       "norm_label": "code:ruby (class user < applicationrecord)",
       "id": "prompts_models_codeblock_1"
     },
@@ -7640,7 +7640,7 @@
       "file_type": "document",
       "source_file": ".claude-on-rails/prompts/models.md",
       "source_location": "L84",
-      "community": 32,
+      "community": 31,
       "norm_label": "mcp-enhanced capabilities",
       "id": "prompts_models_mcp_enhanced_capabilities"
     },
@@ -9026,7 +9026,7 @@
       "file_type": "code",
       "source_file": "app/helpers/reimbursements_helper.rb",
       "source_location": "L1",
-      "community": 36,
+      "community": 35,
       "norm_label": "reimbursements_helper.rb",
       "id": "app_helpers_reimbursements_helper_rb"
     },
@@ -9035,7 +9035,7 @@
       "file_type": "code",
       "source_file": "app/helpers/reimbursements_helper.rb",
       "source_location": "L2",
-      "community": 36,
+      "community": 35,
       "norm_label": "stored_mode_checked?()",
       "id": "helpers_reimbursements_helper_stored_mode_checked"
     },
@@ -9044,7 +9044,7 @@
       "file_type": "code",
       "source_file": "app/helpers/reimbursements_helper.rb",
       "source_location": "L8",
-      "community": 36,
+      "community": 35,
       "norm_label": "form_label_class_reimbursement()",
       "id": "helpers_reimbursements_helper_form_label_class_reimbursement"
     },
@@ -9053,7 +9053,7 @@
       "file_type": "code",
       "source_file": "app/helpers/reimbursements_helper.rb",
       "source_location": "L16",
-      "community": 36,
+      "community": 35,
       "norm_label": "form_submit_label_reimbursement()",
       "id": "helpers_reimbursements_helper_form_submit_label_reimbursement"
     },
@@ -9062,7 +9062,7 @@
       "file_type": "code",
       "source_file": "app/helpers/reimbursements_helper.rb",
       "source_location": "L24",
-      "community": 36,
+      "community": 35,
       "norm_label": "form_submit_accent_reimbursement()",
       "id": "helpers_reimbursements_helper_form_submit_accent_reimbursement"
     },
@@ -9071,7 +9071,7 @@
       "file_type": "code",
       "source_file": "app/helpers/reimbursements_helper.rb",
       "source_location": "L32",
-      "community": 36,
+      "community": 35,
       "norm_label": "form_hr_reimbursement()",
       "id": "helpers_reimbursements_helper_form_hr_reimbursement"
     },
@@ -9569,7 +9569,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 37,
       "norm_label": "admin::structurescontroller",
       "id": "admin_structures_controller_adminstructurescontroller"
     },
@@ -9582,7 +9582,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 37,
       "norm_label": "admin::reasonscontroller",
       "id": "admin_reasons_controller_adminreasonscontroller"
     },
@@ -9595,7 +9595,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 32,
       "norm_label": "db/schema.rb",
       "id": "db_schema_schema"
     },
@@ -9608,7 +9608,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 37,
       "norm_label": "it locale: reason",
       "id": "locales_it_reasonlocale"
     },
@@ -9621,7 +9621,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 65,
       "norm_label": "it locale: path",
       "id": "locales_it_pathlocale"
     },
@@ -9634,7 +9634,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 53,
       "norm_label": "it locale: place",
       "id": "locales_it_placelocale"
     },
@@ -9647,7 +9647,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 37,
       "norm_label": "it locale: structure",
       "id": "locales_it_structurelocale"
     },
@@ -9985,7 +9985,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 196,
+      "community": 197,
       "norm_label": "transportscontroller#set_transport",
       "id": "controllers_transports_controller_set_transport"
     },
@@ -10220,7 +10220,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 197,
+      "community": 198,
       "norm_label": "convenzioni database",
       "id": "claude_database_conventions"
     },
@@ -10260,7 +10260,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 198,
+      "community": 199,
       "norm_label": "convenzioni performance",
       "id": "claude_performance_conventions"
     },
@@ -10957,7 +10957,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 199,
+      "community": 200,
       "norm_label": "locale en base (hello)",
       "id": "locales_en_hello"
     },
@@ -11048,7 +11048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 200,
+      "community": 201,
       "norm_label": "robots.txt",
       "id": "public_robots_txt"
     },
@@ -11126,7 +11126,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 114,
+      "community": 115,
       "norm_label": "app favicon icon (svg)",
       "id": "public_icon_svg"
     },
@@ -11139,7 +11139,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 114,
+      "community": 115,
       "norm_label": "app favicon icon (png)",
       "id": "public_icon_png"
     },
@@ -11152,7 +11152,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 201,
+      "community": 202,
       "norm_label": "signature upload test fixture",
       "id": "files_signature"
     },
@@ -11178,7 +11178,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 105,
+      "community": 106,
       "norm_label": "ci pipeline (bin/ci)",
       "id": "config_ci"
     },
@@ -11230,7 +11230,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 202,
+      "community": 203,
       "norm_label": "production environment configuration",
       "id": "environments_production"
     },
@@ -11308,7 +11308,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 203,
+      "community": 204,
       "norm_label": "carrierwave global configuration",
       "id": "initializers_carrierwave_config"
     },
@@ -11399,7 +11399,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 204,
+      "community": 205,
       "norm_label": "assets initializer",
       "id": "initializers_assets"
     },
@@ -11412,7 +11412,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 205,
+      "community": 206,
       "norm_label": "inflections initializer",
       "id": "initializers_inflections"
     },
@@ -11425,7 +11425,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 206,
+      "community": 207,
       "norm_label": "spec_helper rspec config",
       "id": "spec_spec_helper_config"
     },
@@ -11581,7 +11581,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 207,
+      "community": 208,
       "norm_label": "bin/thrust runner script",
       "id": "bin_thrust"
     },
@@ -11646,7 +11646,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 208,
+      "community": 209,
       "norm_label": "bin/rake cli script",
       "id": "bin_rake"
     },
@@ -11685,7 +11685,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 209,
+      "community": 210,
       "norm_label": "pwa service worker (placeholder)",
       "id": "pwa_service_worker_serviceworker"
     },
@@ -11750,7 +11750,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 210,
+      "community": 211,
       "norm_label": "applicationhelper",
       "id": "helpers_application_helper_applicationhelper"
     },
@@ -11776,7 +11776,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 211,
+      "community": 212,
       "norm_label": "application.js entry point",
       "id": "javascript_application_entry"
     },
@@ -11789,7 +11789,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 106,
+      "community": 107,
       "norm_label": "flashcontroller (stimulus)",
       "id": "controllers_flash_controller"
     },
@@ -11802,7 +11802,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 106,
+      "community": 107,
       "norm_label": "stimulus controllers manifest",
       "id": "controllers_index"
     },
@@ -11945,7 +11945,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 212,
+      "community": 213,
       "norm_label": "userdashboard#display_resource",
       "id": "dashboards_user_dashboard_display_resource"
     },
@@ -12036,7 +12036,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 213,
+      "community": 214,
       "norm_label": "addvalidatorfieldstousers migration",
       "id": "migrate_add_validator_fields_to_users_class"
     },
@@ -12049,7 +12049,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 214,
+      "community": 215,
       "norm_label": "addusersignaturetousers migration",
       "id": "migrate_add_user_signature_to_users_class"
     },
@@ -12062,7 +12062,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 215,
+      "community": 216,
       "norm_label": "addconfirmatorfieldstousers migration",
       "id": "migrate_add_confirmator_fields_to_users_class"
     },
@@ -12101,7 +12101,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 96,
+      "community": 97,
       "norm_label": "readme",
       "id": "readme"
     },
@@ -12114,7 +12114,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 96,
+      "community": 97,
       "norm_label": "readme english translation section",
       "id": "readme_english_translation"
     },
@@ -12127,7 +12127,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 96,
+      "community": 97,
       "norm_label": "licence (bilingual mit license)",
       "id": "licence"
     },
@@ -12140,7 +12140,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 216,
+      "community": 217,
       "norm_label": "dev db credentials redacted from nota bene",
       "id": "claude_md_dev_credential_redaction"
     },
@@ -12153,7 +12153,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 105,
+      "community": 106,
       "norm_label": "bundler audit config",
       "id": "config_bundler_audit"
     },
@@ -12231,7 +12231,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 217,
+      "community": 218,
       "norm_label": "400 bad request page",
       "id": "public_400"
     },
@@ -12244,7 +12244,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 218,
+      "community": 219,
       "norm_label": "406 unsupported browser page",
       "id": "public_406_unsupported_browser"
     },
@@ -12257,7 +12257,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 219,
+      "community": 220,
       "norm_label": "500 internal server error page",
       "id": "public_500"
     },
@@ -12270,7 +12270,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 220,
+      "community": 221,
       "norm_label": "422 unprocessable entity page",
       "id": "public_422"
     },
@@ -12283,7 +12283,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 221,
+      "community": 222,
       "norm_label": "404 not found page",
       "id": "public_404"
     },
@@ -12322,7 +12322,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 222,
+      "community": 223,
       "norm_label": "vehicle index icon",
       "id": "vehicles_vehicles_index"
     },
@@ -12335,7 +12335,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 223,
+      "community": 224,
       "norm_label": "vehicle edit icon",
       "id": "vehicles_vehicles_edit"
     },
@@ -12348,7 +12348,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 224,
+      "community": 225,
       "norm_label": "vehicle show icon",
       "id": "vehicles_vehicles_show"
     },
@@ -12361,7 +12361,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 225,
+      "community": 226,
       "norm_label": "vehicle destroy icon",
       "id": "vehicles_vehicles_destroy"
     },
@@ -12374,7 +12374,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 226,
+      "community": 227,
       "norm_label": "vehicle new icon",
       "id": "vehicles_vehicles_new"
     },
@@ -12439,7 +12439,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request locale entry (richiesta missione / richieste missione)",
       "id": "locales_it_mission_request"
     },
@@ -12452,7 +12452,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.name locale attribute (codice richiesta missione)",
       "id": "locales_it_mission_request_name"
     },
@@ -12465,7 +12465,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.departure_date locale attribute (data partenza)",
       "id": "locales_it_mission_request_departure_date"
     },
@@ -12478,7 +12478,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.return_date locale attribute (data ritorno)",
       "id": "locales_it_mission_request_return_date"
     },
@@ -12491,7 +12491,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.request_date locale attribute (data richiesta)",
       "id": "locales_it_mission_request_request_date"
     },
@@ -12504,7 +12504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.reason locale attribute (motivo missione)",
       "id": "locales_it_mission_request_reason"
     },
@@ -12517,7 +12517,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.place locale attribute (luogo)",
       "id": "locales_it_mission_request_place"
     },
@@ -12530,7 +12530,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.structure locale attribute (struttura)",
       "id": "locales_it_mission_request_structure"
     },
@@ -12543,7 +12543,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.path locale attribute (percorso)",
       "id": "locales_it_mission_request_path"
     },
@@ -12556,7 +12556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.path_lenght_fr locale attribute (lunghezza percorso)",
       "id": "locales_it_mission_request_path_lenght_fr"
     },
@@ -12569,7 +12569,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.highway_cost_fr locale attribute (costo autostrada)",
       "id": "locales_it_mission_request_highway_cost_fr"
     },
@@ -12582,7 +12582,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 34,
       "norm_label": "mission_request.user locale attribute (utente)",
       "id": "locales_it_mission_request_user"
     },
@@ -13258,7 +13258,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 107,
+      "community": 108,
       "norm_label": "reimbursementmodecontroller (stimulus)",
       "id": "controllers_reimbursement_mode_controller_reimbursementmodecontroller"
     },
@@ -13271,7 +13271,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 107,
+      "community": 108,
       "norm_label": "stimulus controllers index",
       "id": "controllers_index_index"
     },
@@ -13531,7 +13531,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 227,
+      "community": 228,
       "norm_label": "structures index icon",
       "id": "structures_structures_index_icon"
     },
@@ -13544,7 +13544,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 228,
+      "community": 229,
       "norm_label": "reimbursements index icon",
       "id": "reimbursements_reimbursements_index_icon"
     },
@@ -13557,7 +13557,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 229,
+      "community": 230,
       "norm_label": "modulo rimborsi spese print mockup",
       "id": "reimbursements_rimborsi_spese_mockup"
     },
@@ -13570,7 +13570,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 230,
+      "community": 231,
       "norm_label": "reimbursement printed form mockup (cgil fvg)",
       "id": "reimbursements_rimborsi_spese_screenshot_001"
     },
@@ -13583,7 +13583,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 231,
+      "community": 232,
       "norm_label": "reimbursement new action icon",
       "id": "reimbursements_reimbursements_new_icon"
     },
@@ -13596,7 +13596,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 232,
+      "community": 233,
       "norm_label": "reimbursement show icon",
       "id": "reimbursements_reimbursements_show_icon"
     },
@@ -13609,7 +13609,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 233,
+      "community": 234,
       "norm_label": "reimbursement destroy icon",
       "id": "reimbursements_reimbursements_destroy_icon"
     },
@@ -13622,7 +13622,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 234,
+      "community": 235,
       "norm_label": "rimborsi spese sample forms (png)",
       "id": "reimbursements_rimborsi_spese_png_icon"
     },
@@ -13635,7 +13635,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 235,
+      "community": 236,
       "norm_label": "rimborsi spese form specification mockup",
       "id": "reimbursements_rimborsi_spese_specifiche_form_mockup"
     },
@@ -13648,7 +13648,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 236,
+      "community": 237,
       "norm_label": "reimbursement edit icon",
       "id": "reimbursements_reimbursements_edit_icon"
     },
@@ -13770,7 +13770,7 @@
       "file_type": "code",
       "source_file": "db/cable_schema.rb",
       "source_location": "L1",
-      "community": 237,
+      "community": 238,
       "norm_label": "cable_schema.rb",
       "id": "db_cable_schema_rb"
     },
@@ -13779,7 +13779,7 @@
       "file_type": "code",
       "source_file": "spec/requests/form_errors_spec.rb",
       "source_location": "L1",
-      "community": 238,
+      "community": 239,
       "norm_label": "form_errors_spec.rb",
       "id": "spec_requests_form_errors_spec_rb"
     },
@@ -13853,7 +13853,7 @@
       "file_type": "code",
       "source_file": "spec/requests/holiday_validations_spec.rb",
       "source_location": "L1",
-      "community": 239,
+      "community": 240,
       "norm_label": "holiday_validations_spec.rb",
       "id": "spec_requests_holiday_validations_spec_rb"
     },
@@ -13862,7 +13862,7 @@
       "file_type": "code",
       "source_file": "spec/requests/holidays_spec.rb",
       "source_location": "L1",
-      "community": 240,
+      "community": 241,
       "norm_label": "holidays_spec.rb",
       "id": "spec_requests_holidays_spec_rb"
     },
@@ -13871,7 +13871,7 @@
       "file_type": "code",
       "source_file": "spec/requests/director/holidays_spec.rb",
       "source_location": "L1",
-      "community": 108,
+      "community": 109,
       "norm_label": "holidays_spec.rb",
       "id": "spec_requests_director_holidays_spec_rb"
     },
@@ -13880,7 +13880,7 @@
       "file_type": "code",
       "source_file": "spec/requests/director/holidays_spec.rb",
       "source_location": "L12",
-      "community": 108,
+      "community": 109,
       "norm_label": "badge_color()",
       "id": "director_holidays_spec_badge_color"
     },
@@ -13889,7 +13889,7 @@
       "file_type": "code",
       "source_file": "spec/requests/director/pending_mission_requests_spec.rb",
       "source_location": "L1",
-      "community": 241,
+      "community": 242,
       "norm_label": "pending_mission_requests_spec.rb",
       "id": "spec_requests_director_pending_mission_requests_spec_rb"
     },
@@ -13916,7 +13916,7 @@
       "file_type": "code",
       "source_file": "spec/services/holiday_approval_spec.rb",
       "source_location": "L1",
-      "community": 242,
+      "community": 243,
       "norm_label": "holiday_approval_spec.rb",
       "id": "spec_services_holiday_approval_spec_rb"
     },
@@ -13925,7 +13925,7 @@
       "file_type": "code",
       "source_file": "spec/services/holiday_rejection_spec.rb",
       "source_location": "L1",
-      "community": 243,
+      "community": 244,
       "norm_label": "holiday_rejection_spec.rb",
       "id": "spec_services_holiday_rejection_spec_rb"
     },
@@ -13934,7 +13934,7 @@
       "file_type": "code",
       "source_file": "spec/services/holiday_cancellation_spec.rb",
       "source_location": "L1",
-      "community": 244,
+      "community": 245,
       "norm_label": "holiday_cancellation_spec.rb",
       "id": "spec_services_holiday_cancellation_spec_rb"
     },
@@ -13943,7 +13943,7 @@
       "file_type": "code",
       "source_file": "spec/helpers/mission_requests_helper_spec.rb",
       "source_location": "L1",
-      "community": 36,
+      "community": 35,
       "norm_label": "mission_requests_helper_spec.rb",
       "id": "spec_helpers_mission_requests_helper_spec_rb"
     },
@@ -13952,7 +13952,7 @@
       "file_type": "code",
       "source_file": "spec/helpers/mission_requests_helper_spec.rb",
       "source_location": "L5",
-      "community": 36,
+      "community": 35,
       "norm_label": "age_class()",
       "id": "helpers_mission_requests_helper_spec_age_class"
     },
@@ -13961,7 +13961,7 @@
       "file_type": "code",
       "source_file": "spec/models/holiday_spec.rb",
       "source_location": "L1",
-      "community": 245,
+      "community": 246,
       "norm_label": "holiday_spec.rb",
       "id": "spec_models_holiday_spec_rb"
     },
@@ -13970,7 +13970,7 @@
       "file_type": "code",
       "source_file": "spec/mailers/holiday_mailer_spec.rb",
       "source_location": "L1",
-      "community": 246,
+      "community": 247,
       "norm_label": "holiday_mailer_spec.rb",
       "id": "spec_mailers_holiday_mailer_spec_rb"
     },
@@ -13979,7 +13979,7 @@
       "file_type": "code",
       "source_file": "spec/factories/holidays.rb",
       "source_location": "L1",
-      "community": 247,
+      "community": 248,
       "norm_label": "holidays.rb",
       "id": "spec_factories_holidays_rb"
     },
@@ -14195,7 +14195,7 @@
       "file_type": "code",
       "source_file": "app/services/holiday_approval.rb",
       "source_location": "L1",
-      "community": 31,
+      "community": 30,
       "norm_label": "holiday_approval.rb",
       "id": "app_services_holiday_approval_rb"
     },
@@ -14204,7 +14204,7 @@
       "file_type": "code",
       "source_file": "app/services/holiday_approval.rb",
       "source_location": "L1",
-      "community": 31,
+      "community": 30,
       "norm_label": "holidayapproval",
       "id": "services_holiday_approval_holidayapproval"
     },
@@ -14213,7 +14213,7 @@
       "file_type": "code",
       "source_file": "app/services/holiday_approval.rb",
       "source_location": "L2",
-      "community": 31,
+      "community": 30,
       "norm_label": ".call()",
       "id": "services_holiday_approval_holidayapproval_call"
     },
@@ -14222,7 +14222,7 @@
       "file_type": "code",
       "source_file": "app/services/holiday_approval.rb",
       "source_location": "L6",
-      "community": 31,
+      "community": 30,
       "norm_label": ".initialize()",
       "id": "services_holiday_approval_holidayapproval_initialize"
     },
@@ -14231,7 +14231,7 @@
       "file_type": "code",
       "source_file": "app/helpers/holidays_helper.rb",
       "source_location": "L1",
-      "community": 109,
+      "community": 110,
       "norm_label": "holidays_helper.rb",
       "id": "app_helpers_holidays_helper_rb"
     },
@@ -14240,7 +14240,7 @@
       "file_type": "code",
       "source_file": "app/helpers/holidays_helper.rb",
       "source_location": "L6",
-      "community": 109,
+      "community": 110,
       "norm_label": "holiday_badge_class()",
       "id": "helpers_holidays_helper_holiday_badge_class"
     },
@@ -14249,7 +14249,7 @@
       "file_type": "code",
       "source_file": "app/helpers/mission_requests_helper.rb",
       "source_location": "L12",
-      "community": 36,
+      "community": 35,
       "norm_label": "request_age_background_class()",
       "id": "helpers_mission_requests_helper_request_age_background_class"
     },
@@ -14285,7 +14285,7 @@
       "file_type": "code",
       "source_file": "app/models/user.rb",
       "source_location": "L40",
-      "community": 31,
+      "community": 30,
       "norm_label": ".directors()",
       "id": "models_user_user_directors"
     },
@@ -14357,7 +14357,7 @@
       "file_type": "code",
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L1",
-      "community": 31,
+      "community": 30,
       "norm_label": "approval_decision.rb",
       "id": "app_models_concerns_approval_decision_rb"
     },
@@ -14366,7 +14366,7 @@
       "file_type": "code",
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L14",
-      "community": 31,
+      "community": 30,
       "norm_label": "pending?()",
       "id": "concerns_approval_decision_pending"
     },
@@ -14375,7 +14375,7 @@
       "file_type": "code",
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L18",
-      "community": 36,
+      "community": 35,
       "norm_label": "rejected?()",
       "id": "concerns_approval_decision_rejected"
     },
@@ -14393,7 +14393,7 @@
       "file_type": "code",
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L26",
-      "community": 31,
+      "community": 30,
       "norm_label": "candidate_validators()",
       "id": "concerns_approval_decision_candidate_validators"
     },
@@ -14465,7 +14465,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holiday_validations_controller.rb",
       "source_location": "L42",
-      "community": 31,
+      "community": 30,
       "norm_label": ".unavailable_message()",
       "id": "controllers_holiday_validations_controller_holidayvalidationscontroller_unavailable_message"
     },
@@ -14483,7 +14483,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L1",
-      "community": 34,
+      "community": 33,
       "norm_label": "holidays_controller.rb",
       "id": "app_controllers_holidays_controller_rb"
     },
@@ -14492,7 +14492,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L1",
-      "community": 34,
+      "community": 33,
       "norm_label": "holidayscontroller",
       "id": "controllers_holidays_controller_holidayscontroller"
     },
@@ -14510,7 +14510,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L11",
-      "community": 34,
+      "community": 33,
       "norm_label": ".requests()",
       "id": "controllers_holidays_controller_holidayscontroller_requests"
     },
@@ -14519,7 +14519,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L15",
-      "community": 34,
+      "community": 33,
       "norm_label": ".show()",
       "id": "controllers_holidays_controller_holidayscontroller_show"
     },
@@ -14546,7 +14546,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L35",
-      "community": 34,
+      "community": 33,
       "norm_label": ".edit()",
       "id": "controllers_holidays_controller_holidayscontroller_edit"
     },
@@ -14555,7 +14555,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L38",
-      "community": 34,
+      "community": 33,
       "norm_label": ".update()",
       "id": "controllers_holidays_controller_holidayscontroller_update"
     },
@@ -14564,7 +14564,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L49",
-      "community": 34,
+      "community": 33,
       "norm_label": ".confirm_destroy()",
       "id": "controllers_holidays_controller_holidayscontroller_confirm_destroy"
     },
@@ -14573,7 +14573,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L52",
-      "community": 34,
+      "community": 33,
       "norm_label": ".destroy()",
       "id": "controllers_holidays_controller_holidayscontroller_destroy"
     },
@@ -14582,7 +14582,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L62",
-      "community": 34,
+      "community": 33,
       "norm_label": ".set_holiday()",
       "id": "controllers_holidays_controller_holidayscontroller_set_holiday"
     },
@@ -14591,7 +14591,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L67",
-      "community": 34,
+      "community": 33,
       "norm_label": ".holiday_params()",
       "id": "controllers_holidays_controller_holidayscontroller_holiday_params"
     },
@@ -14600,7 +14600,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L72",
-      "community": 34,
+      "community": 33,
       "norm_label": ".holiday_owner()",
       "id": "controllers_holidays_controller_holidayscontroller_holiday_owner"
     },
@@ -14618,7 +14618,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L82",
-      "community": 31,
+      "community": 30,
       "norm_label": ".announce_to_directors()",
       "id": "controllers_holidays_controller_holidayscontroller_announce_to_directors"
     },
@@ -14627,7 +14627,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L89",
-      "community": 31,
+      "community": 30,
       "norm_label": ".after_save_path()",
       "id": "controllers_holidays_controller_holidayscontroller_after_save_path"
     },
@@ -14636,7 +14636,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L93",
-      "community": 34,
+      "community": 33,
       "norm_label": ".locked_message()",
       "id": "controllers_holidays_controller_holidayscontroller_locked_message"
     },
@@ -14645,7 +14645,7 @@
       "file_type": "code",
       "source_file": "app/controllers/holidays_controller.rb",
       "source_location": "L97",
-      "community": 34,
+      "community": 33,
       "norm_label": ".verify_pundit_usage()",
       "id": "controllers_holidays_controller_holidayscontroller_verify_pundit_usage"
     },
@@ -14663,7 +14663,7 @@
       "file_type": "code",
       "source_file": "app/controllers/mission_request_validations_controller.rb",
       "source_location": "L44",
-      "community": 31,
+      "community": 30,
       "norm_label": ".unavailable_message()",
       "id": "controllers_mission_request_validations_controller_missionrequestvalidationscontroller_unavailable_message"
     },
@@ -14672,7 +14672,7 @@
       "file_type": "code",
       "source_file": "app/controllers/admin/holidays_controller.rb",
       "source_location": "L1",
-      "community": 99,
+      "community": 100,
       "norm_label": "holidays_controller.rb",
       "id": "app_controllers_admin_holidays_controller_rb"
     },
@@ -14681,7 +14681,7 @@
       "file_type": "code",
       "source_file": "app/controllers/admin/holidays_controller.rb",
       "source_location": "L2",
-      "community": 99,
+      "community": 100,
       "norm_label": "holidayscontroller",
       "id": "admin_holidays_controller_holidayscontroller"
     },
@@ -15059,27 +15059,27 @@
       "file_type": "code",
       "source_file": "app/models/holiday.rb",
       "source_location": "L33",
-      "id": "models_holiday_holiday_refresh_audience",
       "community": 60,
-      "norm_label": ".refresh_audience()"
+      "norm_label": ".refresh_audience()",
+      "id": "models_holiday_holiday_refresh_audience"
     },
     {
       "label": "refresh_live_pages()",
       "file_type": "code",
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L33",
-      "id": "concerns_approval_decision_refresh_live_pages",
-      "community": 31,
-      "norm_label": "refresh_live_pages()"
+      "community": 30,
+      "norm_label": "refresh_live_pages()",
+      "id": "concerns_approval_decision_refresh_live_pages"
     },
     {
       "label": "refresh_audience()",
       "file_type": "code",
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L39",
-      "id": "concerns_approval_decision_refresh_audience",
-      "community": 31,
-      "norm_label": "refresh_audience()"
+      "community": 30,
+      "norm_label": "refresh_audience()",
+      "id": "concerns_approval_decision_refresh_audience"
     }
   ],
   "links": [
@@ -33374,9 +33374,9 @@
       "source_file": "app/models/holiday.rb",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_holiday_holiday",
-      "target": "models_holiday_holiday_refresh_audience",
-      "confidence_score": 1.0
+      "target": "models_holiday_holiday_refresh_audience"
     },
     {
       "relation": "calls",
@@ -33457,9 +33457,9 @@
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_models_concerns_approval_decision_rb",
-      "target": "concerns_approval_decision_refresh_live_pages",
-      "confidence_score": 1.0
+      "target": "concerns_approval_decision_refresh_live_pages"
     },
     {
       "relation": "contains",
@@ -33467,9 +33467,9 @@
       "source_file": "app/models/concerns/approval_decision.rb",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_models_concerns_approval_decision_rb",
-      "target": "concerns_approval_decision_refresh_audience",
-      "confidence_score": 1.0
+      "target": "concerns_approval_decision_refresh_audience"
     },
     {
       "relation": "calls",
@@ -34386,5 +34386,5 @@
       "source_file": "app/assets/images/reimbursements/pdf-logo.svg"
     }
   ],
-  "built_at_commit": "424d95931208d0652c5ffa7650ca33f038c88b7e"
+  "built_at_commit": "4f55daed8caee2989526692f33003e3bcc35eea4"
 }

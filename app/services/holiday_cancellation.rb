@@ -20,7 +20,7 @@ class HolidayCancellation
       holiday.destroy!
     end
 
-    holiday.refresh_director_pages if holiday.destroyed?
+    holiday.refresh_live_pages if holiday.destroyed?
     notify_directors if withdrawn_request
     holiday
   end

@@ -11,7 +11,7 @@ class HolidayRejection
   def call
     if holiday.update(request_approved: false, rejection_motivation: rejection_motivation)
       HolidayMailer.rejected(holiday).deliver_later
-      holiday.refresh_director_pages
+      holiday.refresh_live_pages
     end
     holiday
   end

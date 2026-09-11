@@ -39,7 +39,7 @@ class HolidaysController < ApplicationController
     return redirect_to(holiday_path(@holiday), alert: locked_message("modificato")) if @holiday.locked?
 
     if @holiday.update(holiday_params)
-      @holiday.refresh_director_pages
+      @holiday.refresh_live_pages
       redirect_to after_save_path, notice: "Ferie aggiornate con successo."
     else
       render :edit, status: :unprocessable_entity
@@ -78,9 +78,9 @@ class HolidaysController < ApplicationController
     current_user.holiday_team.order(:last_name, :first_name)
   end
 
-  # Directors' open holiday pages always refresh; only a pending request also mails them.
+  # Open holiday pages (the directors' and the owner's) always refresh; only a pending request also mails the directors.
   def announce_to_directors
-    @holiday.refresh_director_pages
+    @holiday.refresh_live_pages
     return unless @holiday.pending?
 
     @holiday.candidate_validators.find_each { |director| HolidayMailer.validation_request(@holiday, director).deliver_later }

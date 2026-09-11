@@ -23,7 +23,7 @@ class MissionRequestApproval
 
     return Reimbursement.find_by(mission_request_id: mission_request.id) if reimbursement.nil?
 
-    mission_request.refresh_director_pages
+    mission_request.refresh_live_pages
     MissionRequestMailer.approved(mission_request, reimbursement).deliver_later
     reimbursement
   end

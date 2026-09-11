@@ -21,7 +21,7 @@ class HolidayApproval
 
     if approved
       HolidayMailer.approved(holiday).deliver_later
-      holiday.refresh_director_pages
+      holiday.refresh_live_pages
     end
     holiday
   end

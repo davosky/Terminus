@@ -77,6 +77,6 @@ class MissionRequestsController < ApplicationController
     @mission_request.candidate_validators.find_each do |validator|
       MissionRequestMailer.validation_request(@mission_request, validator).deliver_later
     end
-    @mission_request.refresh_director_pages
+    @mission_request.refresh_live_pages
   end
 end

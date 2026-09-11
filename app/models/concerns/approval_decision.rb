@@ -27,10 +27,16 @@ module ApprovalDecision
     user.directors
   end
 
-  # Tells every director who can see the record to reload their open pages on
-  # its stream (:mission_requests / :holidays); the broadcast carries no data,
+  # Tells everyone following the record to reload their open pages on its
+  # stream (:mission_requests / :holidays); the broadcast carries no data,
   # each page re-fetches through its own authorized controller.
-  def refresh_director_pages
-    candidate_validators.find_each { |director| Turbo::StreamsChannel.broadcast_refresh_to(director, model_name.plural.to_sym) }
+  def refresh_live_pages
+    refresh_audience.each { |viewer| Turbo::StreamsChannel.broadcast_refresh_to(viewer, model_name.plural.to_sym) }
+  end
+
+  private
+
+  def refresh_audience
+    candidate_validators
   end
 end

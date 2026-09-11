@@ -148,7 +148,7 @@ RSpec.describe "Director::Holidays", type: :request do
   describe "aggiornamento in tempo reale" do
     let!(:other_director) { create(:user, :manager, **org, province: "TS") }
 
-    it "iscrive allo stream il calendario e la lista del direttore, non il calendario del dipendente" do
+    it "iscrive allo stream le pagine ferie del direttore e del dipendente" do
       sign_in director
       get holidays_path
       expect(response.body).to include("turbo-cable-stream-source")
@@ -157,7 +157,27 @@ RSpec.describe "Director::Holidays", type: :request do
 
       sign_in employee
       get holidays_path
-      expect(response.body).not_to include("turbo-cable-stream-source")
+      expect(response.body).to include("turbo-cable-stream-source")
+      get requests_holidays_path
+      expect(response.body).to include("turbo-cable-stream-source")
+    end
+
+    it "la decisione del direttore aggiorna anche le pagine del dipendente" do
+      sign_in director
+
+      assert_turbo_stream_broadcasts [ employee, :holidays ], count: 1 do
+        patch approve_director_holiday_path(pending_request)
+      end
+    end
+
+    it "le ferie inserite dal direttore aggiornano il calendario del dipendente, non quello dei colleghi" do
+      colleague = create(:user, **org)
+      sign_in director
+
+      assert_turbo_stream_broadcasts [ employee, :holidays ], count: 1 do
+        post holidays_path, params: { holiday: { start_date: Date.current + 5.days, end_date: Date.current + 6.days, user_id: employee.id } }
+      end
+      assert_no_turbo_stream_broadcasts [ colleague, :holidays ]
     end
 
     it "una nuova richiesta aggiorna le pagine dei soli direttori della sede" do

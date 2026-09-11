@@ -26,4 +26,11 @@ class Holiday < ApplicationRecord
     self.request_approved = true unless requested?
     self
   end
+
+  private
+
+  # Holiday owners follow their own pages live too; mission request owners don't.
+  def refresh_audience
+    candidate_validators.to_a | [ user ]
+  end
 end

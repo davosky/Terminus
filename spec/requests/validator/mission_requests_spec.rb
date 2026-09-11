@@ -66,6 +66,16 @@ RSpec.describe "Validator::MissionRequests", type: :request do
       expect(pending_request).to be_rejected
       expect(pending_request.rejection_motivation).to eq("Dati incompleti")
     end
+
+    it "non respinge senza motivo e torna all'elenco con un avviso" do
+      sign_in matching_manager
+
+      patch reject_validator_mission_request_path(pending_request), params: { rejection_motivation: "" }
+
+      expect(response).to redirect_to(validator_mission_requests_path)
+      expect(flash[:alert]).to be_present
+      expect(pending_request.reload).to be_pending
+    end
   end
 
   describe "GET /validator/mission_requests/approved" do

@@ -57,6 +57,14 @@ RSpec.describe "MissionRequestValidations", type: :request do
 
       expect(response.body).to include("non è valido")
     end
+
+    it "avvisa se la richiesta è già stata elaborata" do
+      mission_request.update!(request_approved: true)
+
+      get approve_form_mission_request_validation_path(token: token)
+
+      expect(response.body).to include("già stata elaborata")
+    end
   end
 
   describe "POST /validazione_missione/:token/approva" do
@@ -93,6 +101,21 @@ RSpec.describe "MissionRequestValidations", type: :request do
       expect(response).to have_http_status(:ok)
       expect(response.body).to include("rejection_motivation")
     end
+
+    it "mostra un messaggio se il token non è valido" do
+      get reject_form_mission_request_validation_path(token: "invalid")
+
+      expect(response.body).to include("non è valido")
+    end
+
+    it "avvisa se la richiesta è già stata elaborata" do
+      mission_request.update!(request_approved: true)
+
+      get reject_form_mission_request_validation_path(token: token)
+
+      expect(response.body).to include("già stata elaborata")
+      expect(response.body).not_to include("rejection_motivation")
+    end
   end
 
   describe "POST /validazione_missione/:token/respingi" do
@@ -109,6 +132,23 @@ RSpec.describe "MissionRequestValidations", type: :request do
 
       expect(mission_request.reload.request_approved).to be_nil
       expect(response).to have_http_status(:unprocessable_entity)
+    end
+
+    it "mostra un messaggio se il token non è valido" do
+      post reject_mission_request_validation_path(token: "invalid"), params: { rejection_motivation: "Dati incompleti" }
+
+      expect(response.body).to include("non è valido")
+      expect(mission_request.reload.request_approved).to be_nil
+    end
+
+    it "non respinge una richiesta già approvata" do
+      mission_request.update!(request_approved: true)
+
+      post reject_mission_request_validation_path(token: token), params: { rejection_motivation: "Dati incompleti" }
+
+      expect(response.body).to include("già stata elaborata")
+      expect(mission_request.reload).to be_request_approved
+      expect(mission_request.rejection_motivation).to be_nil
     end
   end
 end

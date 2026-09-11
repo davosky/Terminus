@@ -39,6 +39,15 @@ RSpec.describe "Vehicles", type: :request do
     end
   end
 
+  describe "PATCH /vehicles/:id" do
+    it "aggiorna un proprio veicolo" do
+      patch vehicle_path(vehicle), params: { vehicle: { name: "Punto" } }
+
+      expect(response).to redirect_to(vehicles_path)
+      expect(vehicle.reload.name).to eq("Punto")
+    end
+  end
+
   describe "GET /vehicles/:id/confirm_destroy" do
     it "mostra la pagina di conferma senza eliminare il record" do
       expect {

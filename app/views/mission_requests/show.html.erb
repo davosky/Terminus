@@ -37,13 +37,13 @@
           </p>
           <p class="fs-6">
             <% if @mission_request.pending? %>
-              Stato della richiesta: <span class="badge bg-secondary text-white">In attesa di approvazione</span>
+              Stato della richiesta: <span class="fs-5 badge bg-secondary text-white">In attesa di approvazione</span>
             <% elsif @mission_request.rejected? %>
-              Stato della richiesta: <span class="badge bg-danger text-white">Respinta</span>
+              Stato della richiesta: <span class="fs-5 badge bg-danger text-white">Respinta</span>
               <br/>
               Motivo: <%= @mission_request.rejection_motivation %>
             <% else %>
-              Stato della richiesta: <span class="badge bg-success text-white">Approvata</span>
+              Stato della richiesta: <span class="fs-5 badge bg-success text-white">Approvata</span>
             <% end %>
           </p>
           <hr class="text-info mt-3 mb-4"/>

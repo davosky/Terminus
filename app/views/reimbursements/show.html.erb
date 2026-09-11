@@ -55,9 +55,10 @@
             <% if @reimbursement.generic_cost > 0.00 %>
               varie: <strong><%= number_to_currency(@reimbursement.generic_cost) %></strong>.
             <% end %>
-            <br/>
-            Totale rimborso: <strong class="text-primary"><%= number_to_currency(@reimbursement.total_amount) %></strong>.
           </p>
+          <h3>
+            Totale rimborso: <strong class="text-primary"><%= number_to_currency(@reimbursement.total_amount) %></strong>
+          </h3>
           <hr class="text-info mt-3 mb-4"/>
           <div class="d-flex gap-2 mt-3">
             <%= link_to edit_reimbursement_path(@reimbursement), class: "btn btn-primary" do %>

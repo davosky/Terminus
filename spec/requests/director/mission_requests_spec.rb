@@ -20,6 +20,7 @@ RSpec.describe "Director::MissionRequests", type: :request do
       expect(response.body).to include(requester.first_name)
       expect(response.body).to include(director_mission_request_path(pending_request))
       expect(response.body).to include(director_mission_request_path(rejected_request))
+      expect(response.body).to include("turbo-cable-stream-source")
     end
 
     it "non mostra le richieste a un manager di un'altra sede" do

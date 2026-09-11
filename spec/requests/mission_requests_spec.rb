@@ -1,7 +1,9 @@
 require 'rails_helper'
+require 'turbo/broadcastable/test_helper'
 
 RSpec.describe "MissionRequests", type: :request do
   include ActiveJob::TestHelper
+  include Turbo::Broadcastable::TestHelper
 
   let!(:user) { create(:user, :mission_requesting, region: "FVG", province: "FVG", institute: "CGIL") }
   let!(:other_user) { create(:user) }
@@ -131,6 +133,22 @@ RSpec.describe "MissionRequests", type: :request do
       end
 
       expect(ActionMailer::Base.deliveries.count).to eq(1)
+    end
+
+    it "aggiorna in tempo reale le pagine dei soli direttori competenti" do
+      manager = create(:user, :manager, region: user.region, province: user.province, institute: user.institute)
+      other_manager = create(:user, :manager, region: user.region, province: "TS", institute: user.institute)
+
+      assert_turbo_stream_broadcasts [ manager, :mission_requests ], count: 1 do
+        post mission_requests_path, params: {
+          mission_request: {
+            departure_date: Date.current, return_date: Date.current + 2.days, request_date: Date.current,
+            reason_id: reason.id, place_id: place.id, structure_id: structure.id, path_id: path.id,
+            transport_id: transport.id
+          }
+        }
+      end
+      assert_no_turbo_stream_broadcasts [ other_manager, :mission_requests ]
     end
   end
 

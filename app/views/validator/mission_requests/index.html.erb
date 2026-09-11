@@ -1,4 +1,6 @@
 <% content_for :title, "Richieste da Approvare - Terminus" %>
+<% turbo_refreshes_with method: :morph, scroll: :preserve %>
+<%= turbo_stream_from current_user, :mission_requests %>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col col-lg-8 p-2 m-2">

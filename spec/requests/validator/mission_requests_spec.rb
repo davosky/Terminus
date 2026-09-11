@@ -15,6 +15,7 @@ RSpec.describe "Validator::MissionRequests", type: :request do
       get validator_mission_requests_path
 
       expect(response.body).to include(requester.first_name)
+      expect(response.body).to include("turbo-cable-stream-source")
     end
 
     it "non mostra le richieste a un manager non competente" do

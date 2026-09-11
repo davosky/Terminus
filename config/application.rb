@@ -35,6 +35,10 @@ module Terminus
     #
     config.time_zone = "Rome"
     config.i18n.default_locale = :it
+
+    # Uploads go through CarrierWave and Active Storage never builds variants, so
+    # it needs no image backend (image_processing 2 no longer pulls in ruby-vips).
+    config.active_storage.variant_processor = :disabled
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.

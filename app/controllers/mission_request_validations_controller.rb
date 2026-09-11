@@ -9,40 +9,22 @@ class MissionRequestValidationsController < ApplicationController
   # gateways, Outlook Safe Links, etc.) follow links automatically and would
   # otherwise silently approve requests before a human ever opens the mail.
   def approve_form
-    if @mission_request.nil?
-      render_result("Il link non è valido o è scaduto.")
-    elsif !@mission_request.pending?
-      render_result("Questa richiesta missione è già stata elaborata.")
-    end
+    render_result(unavailable_message) if unavailable_message
   end
 
   def approve
-    if @mission_request.nil?
-      render_result("Il link non è valido o è scaduto.")
-    elsif @mission_request.pending?
-      MissionRequestApproval.call(mission_request: @mission_request)
-      render_result("Richiesta missione approvata con successo.")
-    else
-      render_result("Questa richiesta missione è già stata elaborata.")
-    end
+    return render_result(unavailable_message) if unavailable_message
+
+    MissionRequestApproval.call(mission_request: @mission_request)
+    render_result("Richiesta missione approvata con successo.")
   end
 
   def reject_form
-    if @mission_request.nil?
-      render_result("Il link non è valido o è scaduto.")
-    elsif !@mission_request.pending?
-      render_result("Questa richiesta missione è già stata elaborata.")
-    end
+    render_result(unavailable_message) if unavailable_message
   end
 
   def reject
-    if @mission_request.nil?
-      return render_result("Il link non è valido o è scaduto.")
-    end
-
-    unless @mission_request.pending?
-      return render_result("Questa richiesta missione è già stata elaborata.")
-    end
+    return render_result(unavailable_message) if unavailable_message
 
     @mission_request = MissionRequestRejection.call(mission_request: @mission_request, rejection_motivation: params[:rejection_motivation])
 
@@ -57,6 +39,14 @@ class MissionRequestValidationsController < ApplicationController
 
   def set_mission_request
     @mission_request = MissionRequest.find_signed(params[:token], purpose: "mission_request_validation")
+  end
+
+  def unavailable_message
+    if @mission_request.nil?
+      "Il link non è valido o è scaduto."
+    elsif !@mission_request.pending?
+      "Questa richiesta missione è già stata elaborata."
+    end
   end
 
   def render_result(message)

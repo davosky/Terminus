@@ -6,7 +6,7 @@ RSpec.describe "MissionRequests", type: :system do
   let!(:mission_request) { create(:mission_request, user: user, name: "MR-MR-FVG-FVG-202608180925-0001") }
   let!(:other_mission_request) { create(:mission_request, user: other_user, name: "MR-LL-FVG-FVG-202608180925-0002") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo le richieste missione dell'utente corrente nell'elenco" do
     visit mission_requests_path
@@ -27,14 +27,5 @@ RSpec.describe "MissionRequests", type: :system do
 
     expect(page).to have_current_path(mission_requests_path)
     expect(MissionRequest.exists?(mission_request.id)).to be(false)
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

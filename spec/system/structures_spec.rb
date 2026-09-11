@@ -6,7 +6,7 @@ RSpec.describe "Structures", type: :system do
   let!(:structure) { create(:structure, user: user, name: "Sede Trieste") }
   let!(:other_structure) { create(:structure, user: other_user, name: "Sede Udine") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo le strutture dell'utente corrente nell'elenco" do
     visit structures_path
@@ -27,14 +27,5 @@ RSpec.describe "Structures", type: :system do
 
     expect(page).to have_current_path(structures_path)
     expect(Structure.exists?(structure.id)).to be(false)
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

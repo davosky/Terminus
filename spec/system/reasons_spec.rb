@@ -6,7 +6,7 @@ RSpec.describe "Reasons", type: :system do
   let!(:reason) { create(:reason, user: user, name: "Trasferta cliente") }
   let!(:other_reason) { create(:reason, user: other_user, name: "Formazione") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo i motivi missione dell'utente corrente nell'elenco" do
     visit reasons_path
@@ -27,14 +27,5 @@ RSpec.describe "Reasons", type: :system do
 
     expect(page).to have_current_path(reasons_path)
     expect(Reason.exists?(reason.id)).to be(false)
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

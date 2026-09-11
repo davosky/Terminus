@@ -6,7 +6,7 @@ RSpec.describe "Transports", type: :system do
   let!(:transport) { create(:transport, user: user, name: "Auto") }
   let!(:other_transport) { create(:transport, user: other_user, name: "Treno") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo i trasporti dell'utente corrente nell'elenco" do
     visit transports_path
@@ -51,14 +51,5 @@ RSpec.describe "Transports", type: :system do
     expect(page).to have_content("Record di Sistema - Questo record non può essere modificato")
     expect(page).not_to have_field("Trasporto")
     expect(protected_transport.reload.name).to eq("Veicolo Privato")
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

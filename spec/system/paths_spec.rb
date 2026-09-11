@@ -6,7 +6,7 @@ RSpec.describe "Paths", type: :system do
   let!(:path) { create(:path, user: user, name: "Trieste-Udine") }
   let!(:other_path) { create(:path, user: other_user, name: "Pordenone-Gorizia") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo i percorsi dell'utente corrente nell'elenco" do
     visit paths_path
@@ -27,14 +27,5 @@ RSpec.describe "Paths", type: :system do
 
     expect(page).to have_current_path(paths_path)
     expect(Path.exists?(path.id)).to be(false)
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

@@ -8,6 +8,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 # that will avoid rails generators crashing because migrations haven't been run yet
 # return unless Rails.env.test?
 require 'rspec/rails'
+require 'turbo/broadcastable/test_helper'
 require 'capybara/rspec'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -72,7 +73,9 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.include FactoryBot::Syntax::Methods
+  config.include Turbo::Broadcastable::TestHelper
   config.include Devise::Test::IntegrationHelpers, type: :request
+  config.include Devise::Test::IntegrationHelpers, type: :system
 
   config.before(:each, type: :system) do
     driven_by :rack_test

@@ -6,7 +6,7 @@ RSpec.describe "Reimbursements", type: :system do
   let!(:reimbursement) { create(:reimbursement, user: user, name: "RB-MR-FVG-FVG-202608180925-0001") }
   let!(:other_reimbursement) { create(:reimbursement, user: other_user, name: "RB-LL-FVG-FVG-202608180925-0002") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo i rimborsi spese dell'utente corrente nell'elenco" do
     visit reimbursements_path
@@ -27,14 +27,5 @@ RSpec.describe "Reimbursements", type: :system do
 
     expect(page).to have_current_path(reimbursements_path)
     expect(Reimbursement.exists?(reimbursement.id)).to be(false)
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

@@ -6,7 +6,7 @@ RSpec.describe "Vehicles", type: :system do
   let!(:vehicle) { create(:vehicle, user: user, name: "Panda", licence_plate: "AA111BB") }
   let!(:other_vehicle) { create(:vehicle, user: other_user, name: "Punto", licence_plate: "ZZ999YY") }
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "mostra solo i veicoli dell'utente corrente nell'elenco" do
     visit vehicles_path
@@ -27,14 +27,5 @@ RSpec.describe "Vehicles", type: :system do
 
     expect(page).to have_current_path(vehicles_path)
     expect(Vehicle.exists?(vehicle.id)).to be(false)
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

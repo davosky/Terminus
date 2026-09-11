@@ -9,7 +9,7 @@ RSpec.describe "Reimbursement prints", type: :system do
     create(:reimbursement, user: user, name: "RB-MR-FVG-FVG-202607100925-0002", departure_date: Date.new(2026, 7, 10))
   end
 
-  before { login_as(user) }
+  before { sign_in(user) }
 
   it "raggiunge la pagina di stampa dal menu 'Rimborsi Spese'" do
     visit root_path
@@ -37,14 +37,5 @@ RSpec.describe "Reimbursement prints", type: :system do
 
     expect(page).to have_link("Genera PDF",
       href: print_reimbursements_path(format: :pdf, q: { departure_date_gteq: "2026-06-01", departure_date_lteq: "2026-06-30" }))
-  end
-
-  private
-
-  def login_as(user)
-    visit new_user_session_path
-    fill_in "Nome utente", with: user.username
-    fill_in "Password", with: "pAssword1234567"
-    click_button "Accedi"
   end
 end

@@ -32,6 +32,11 @@
 /* Spacing follows Fibonacci multiples of 0.25rem: 1 2 3 5 8 13 21 34 */
 
 @layer base {
+  /* Not the `text-base` utility: it resolves to the `base` colour, not the font size. */
+  body {
+    font-size: var(--text-base);
+  }
+
   input, select, button {
     font-size: var(--text-control);
   }

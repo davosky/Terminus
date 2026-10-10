@@ -25,7 +25,7 @@ che gestisce:
 
 ```bash
 bin/setup   # setup iniziale (dipendenze, database)
-bin/dev     # avvia Rails, il watcher JS (esbuild) e quello CSS (Sass)
+bin/dev     # avvia Rails e il watcher CSS (Tailwind)
 ```
 
 L'applicazione richiede le variabili d'ambiente `DATABASE_HOST`,

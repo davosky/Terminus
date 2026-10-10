@@ -243,7 +243,7 @@ end
 
 ```ruby
 # Gemfile — gem comuni in questo progetto
-gem "administrate"
+gem "madmin"
 gem "bcrypt"
 gem "bootsnap"
 gem "cssbundling-rails"

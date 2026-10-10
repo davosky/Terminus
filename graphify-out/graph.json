@@ -184,6 +184,24 @@
       "norm_label": "rails_helper.rb"
     },
     {
+      "label": "transports_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/requests/transports_spec.rb",
+      "source_location": "L1",
+      "id": "spec_requests_transports_spec_rb",
+      "community": 63,
+      "norm_label": "transports_spec.rb"
+    },
+    {
+      "label": "sign_in_as()",
+      "file_type": "code",
+      "source_file": "spec/requests/transports_spec.rb",
+      "source_location": "L9",
+      "id": "requests_transports_spec_sign_in_as",
+      "community": 63,
+      "norm_label": "sign_in_as()"
+    },
+    {
       "label": "madmin_spec.rb",
       "file_type": "code",
       "source_file": "spec/requests/madmin_spec.rb",
@@ -211,6 +229,15 @@
       "norm_label": "home_spec.rb"
     },
     {
+      "label": "create_default_transports_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/services/create_default_transports_spec.rb",
+      "source_location": "L1",
+      "id": "spec_services_create_default_transports_spec_rb",
+      "community": 66,
+      "norm_label": "create_default_transports_spec.rb"
+    },
+    {
       "label": "user_spec.rb",
       "file_type": "code",
       "source_file": "spec/models/user_spec.rb",
@@ -220,6 +247,15 @@
       "norm_label": "user_spec.rb"
     },
     {
+      "label": "transport_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/models/transport_spec.rb",
+      "source_location": "L1",
+      "id": "spec_models_transport_spec_rb",
+      "community": 65,
+      "norm_label": "transport_spec.rb"
+    },
+    {
       "label": "users.rb",
       "file_type": "code",
       "source_file": "spec/factories/users.rb",
@@ -227,6 +263,105 @@
       "id": "spec_factories_users_rb",
       "community": 41,
       "norm_label": "users.rb"
+    },
+    {
+      "label": "transports.rb",
+      "file_type": "code",
+      "source_file": "spec/factories/transports.rb",
+      "source_location": "L1",
+      "id": "spec_factories_transports_rb",
+      "community": 64,
+      "norm_label": "transports.rb"
+    },
+    {
+      "label": "transport_policy.rb",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L1",
+      "id": "app_policies_transport_policy_rb",
+      "community": 57,
+      "norm_label": "transport_policy.rb"
+    },
+    {
+      "label": "TransportPolicy",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L4",
+      "id": "policies_transport_policy_transportpolicy",
+      "community": 57,
+      "norm_label": "transportpolicy"
+    },
+    {
+      "label": ".show?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L5",
+      "id": "policies_transport_policy_transportpolicy_show",
+      "community": 57,
+      "norm_label": ".show?()"
+    },
+    {
+      "label": ".update?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L9",
+      "id": "policies_transport_policy_transportpolicy_update",
+      "community": 57,
+      "norm_label": ".update?()"
+    },
+    {
+      "label": ".destroy?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L13",
+      "id": "policies_transport_policy_transportpolicy_destroy",
+      "community": 57,
+      "norm_label": ".destroy?()"
+    },
+    {
+      "label": ".edit?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L18",
+      "id": "policies_transport_policy_transportpolicy_edit",
+      "community": 57,
+      "norm_label": ".edit?()"
+    },
+    {
+      "label": ".confirm_destroy?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L22",
+      "id": "policies_transport_policy_transportpolicy_confirm_destroy",
+      "community": 57,
+      "norm_label": ".confirm_destroy?()"
+    },
+    {
+      "label": "Scope",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L26",
+      "id": "policies_transport_policy_scope",
+      "community": 57,
+      "norm_label": "scope"
+    },
+    {
+      "label": ".resolve()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L27",
+      "id": "policies_transport_policy_scope_resolve",
+      "community": 57,
+      "norm_label": ".resolve()"
+    },
+    {
+      "label": ".owner?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L34",
+      "id": "policies_transport_policy_transportpolicy_owner",
+      "community": 57,
+      "norm_label": ".owner?()"
     },
     {
       "label": "application_policy.rb",
@@ -346,6 +481,33 @@
       "norm_label": ".resolve()"
     },
     {
+      "label": "create_default_transports.rb",
+      "file_type": "code",
+      "source_file": "app/services/create_default_transports.rb",
+      "source_location": "L1",
+      "id": "app_services_create_default_transports_rb",
+      "community": 52,
+      "norm_label": "create_default_transports.rb"
+    },
+    {
+      "label": "CreateDefaultTransports",
+      "file_type": "code",
+      "source_file": "app/services/create_default_transports.rb",
+      "source_location": "L2",
+      "id": "services_create_default_transports_createdefaulttransports",
+      "community": 52,
+      "norm_label": "createdefaulttransports"
+    },
+    {
+      "label": ".call()",
+      "file_type": "code",
+      "source_file": "app/services/create_default_transports.rb",
+      "source_location": "L8",
+      "id": "services_create_default_transports_createdefaulttransports_call",
+      "community": 52,
+      "norm_label": ".call()"
+    },
+    {
       "label": "application_helper.rb",
       "file_type": "code",
       "source_file": "app/helpers/application_helper.rb",
@@ -389,6 +551,33 @@
       "id": "controllers_flash_controller_disconnect",
       "community": 15,
       "norm_label": "disconnect()"
+    },
+    {
+      "label": "modal_controller.js",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/modal_controller.js",
+      "source_location": "L1",
+      "id": "app_javascript_controllers_modal_controller_js",
+      "community": 58,
+      "norm_label": "modal_controller.js"
+    },
+    {
+      "label": "connect()",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/modal_controller.js",
+      "source_location": "L8",
+      "id": "controllers_modal_controller_connect",
+      "community": 58,
+      "norm_label": "connect()"
+    },
+    {
+      "label": "closed()",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/modal_controller.js",
+      "source_location": "L12",
+      "id": "controllers_modal_controller_closed",
+      "community": 58,
+      "norm_label": "closed()"
     },
     {
       "label": "application.js",
@@ -436,6 +625,24 @@
       "norm_label": "applicationrecord"
     },
     {
+      "label": "transport.rb",
+      "file_type": "code",
+      "source_file": "app/models/transport.rb",
+      "source_location": "L1",
+      "id": "app_models_transport_rb",
+      "community": 62,
+      "norm_label": "transport.rb"
+    },
+    {
+      "label": "Transport",
+      "file_type": "code",
+      "source_file": "app/models/transport.rb",
+      "source_location": "L1",
+      "id": "models_transport_transport",
+      "community": 62,
+      "norm_label": "transport"
+    },
+    {
       "label": "user.rb",
       "file_type": "code",
       "source_file": "app/models/user.rb",
@@ -457,7 +664,7 @@
       "label": ".full_name()",
       "file_type": "code",
       "source_file": "app/models/user.rb",
-      "source_location": "L14",
+      "source_location": "L16",
       "id": "models_user_user_full_name",
       "community": 14,
       "norm_label": ".full_name()"
@@ -517,6 +724,114 @@
       "norm_label": ".user_not_authorized()"
     },
     {
+      "label": "transports_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_transports_controller_rb",
+      "community": 56,
+      "norm_label": "transports_controller.rb"
+    },
+    {
+      "label": "TransportsController",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L1",
+      "id": "controllers_transports_controller_transportscontroller",
+      "community": 56,
+      "norm_label": "transportscontroller"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L4",
+      "id": "controllers_transports_controller_transportscontroller_index",
+      "community": 56,
+      "norm_label": ".index()"
+    },
+    {
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L8",
+      "id": "controllers_transports_controller_transportscontroller_show",
+      "community": 56,
+      "norm_label": ".show()"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L11",
+      "id": "controllers_transports_controller_transportscontroller_new",
+      "community": 56,
+      "norm_label": ".new()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L15",
+      "id": "controllers_transports_controller_transportscontroller_create",
+      "community": 56,
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".edit()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L24",
+      "id": "controllers_transports_controller_transportscontroller_edit",
+      "community": 56,
+      "norm_label": ".edit()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L27",
+      "id": "controllers_transports_controller_transportscontroller_update",
+      "community": 56,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".confirm_destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L35",
+      "id": "controllers_transports_controller_transportscontroller_confirm_destroy",
+      "community": 56,
+      "norm_label": ".confirm_destroy()"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L38",
+      "id": "controllers_transports_controller_transportscontroller_destroy",
+      "community": 56,
+      "norm_label": ".destroy()"
+    },
+    {
+      "label": ".set_transport()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L45",
+      "id": "controllers_transports_controller_transportscontroller_set_transport",
+      "community": 56,
+      "norm_label": ".set_transport()"
+    },
+    {
+      "label": ".transport_params()",
+      "file_type": "code",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L50",
+      "id": "controllers_transports_controller_transportscontroller_transport_params",
+      "community": 56,
+      "norm_label": ".transport_params()"
+    },
+    {
       "label": "application_controller.rb",
       "file_type": "code",
       "source_file": "app/controllers/madmin/application_controller.rb",
@@ -562,13 +877,40 @@
       "norm_label": "userscontroller"
     },
     {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L3",
+      "id": "madmin_users_controller_userscontroller_create",
+      "community": 52,
+      "norm_label": ".create()"
+    },
+    {
       "label": ".resource_params()",
       "file_type": "code",
       "source_file": "app/controllers/madmin/users_controller.rb",
-      "source_location": "L6",
+      "source_location": "L11",
       "id": "madmin_users_controller_userscontroller_resource_params",
       "community": 52,
       "norm_label": ".resource_params()"
+    },
+    {
+      "label": "transports_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/transports_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_madmin_transports_controller_rb",
+      "community": 61,
+      "norm_label": "transports_controller.rb"
+    },
+    {
+      "label": "TransportsController",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/transports_controller.rb",
+      "source_location": "L2",
+      "id": "madmin_transports_controller_transportscontroller",
+      "community": 61,
+      "norm_label": "transportscontroller"
     },
     {
       "label": "application_job.rb",
@@ -607,6 +949,33 @@
       "norm_label": "applicationmailer"
     },
     {
+      "label": "transport_resource.rb",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/transport_resource.rb",
+      "source_location": "L1",
+      "id": "app_madmin_resources_transport_resource_rb",
+      "community": 59,
+      "norm_label": "transport_resource.rb"
+    },
+    {
+      "label": "TransportResource",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/transport_resource.rb",
+      "source_location": "L1",
+      "id": "resources_transport_resource_transportresource",
+      "community": 59,
+      "norm_label": "transportresource"
+    },
+    {
+      "label": ".display_name()",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/transport_resource.rb",
+      "source_location": "L10",
+      "id": "resources_transport_resource_transportresource_display_name",
+      "community": 59,
+      "norm_label": ".display_name()"
+    },
+    {
       "label": "user_resource.rb",
       "file_type": "code",
       "source_file": "app/madmin/resources/user_resource.rb",
@@ -632,6 +1001,60 @@
       "id": "resources_user_resource_userresource_display_name",
       "community": 14,
       "norm_label": ".display_name()"
+    },
+    {
+      "label": "user_code_field.rb",
+      "file_type": "code",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L1",
+      "id": "app_madmin_fields_user_code_field_rb",
+      "community": 14,
+      "norm_label": "user_code_field.rb"
+    },
+    {
+      "label": "UserCodeField",
+      "file_type": "code",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L2",
+      "id": "fields_user_code_field_usercodefield",
+      "community": 14,
+      "norm_label": "usercodefield"
+    },
+    {
+      "label": ".field_type()",
+      "file_type": "code",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L3",
+      "id": "fields_user_code_field_usercodefield_field_type",
+      "community": 14,
+      "norm_label": ".field_type()"
+    },
+    {
+      "label": ".options_for_select()",
+      "file_type": "code",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L7",
+      "id": "fields_user_code_field_usercodefield_options_for_select",
+      "community": 14,
+      "norm_label": ".options_for_select()"
+    },
+    {
+      "label": ".to_param()",
+      "file_type": "code",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L11",
+      "id": "fields_user_code_field_usercodefield_to_param",
+      "community": 14,
+      "norm_label": ".to_param()"
+    },
+    {
+      "label": ".index_path()",
+      "file_type": "code",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L16",
+      "id": "fields_user_code_field_usercodefield_index_path",
+      "community": 14,
+      "norm_label": ".index_path()"
     },
     {
       "label": "cable_schema.rb",
@@ -677,6 +1100,33 @@
       "id": "db_cache_schema_rb",
       "community": 50,
       "norm_label": "cache_schema.rb"
+    },
+    {
+      "label": "20261010173000_create_transports.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20261010173000_create_transports.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20261010173000_create_transports_rb",
+      "community": 60,
+      "norm_label": "20261010173000_create_transports.rb"
+    },
+    {
+      "label": "CreateTransports",
+      "file_type": "code",
+      "source_file": "db/migrate/20261010173000_create_transports.rb",
+      "source_location": "L1",
+      "id": "migrate_20261010173000_create_transports_createtransports",
+      "community": 60,
+      "norm_label": "createtransports"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20261010173000_create_transports.rb",
+      "source_location": "L2",
+      "id": "migrate_20261010173000_create_transports_createtransports_change",
+      "community": 60,
+      "norm_label": ".change()"
     },
     {
       "label": "20261010105651_devise_create_users.rb",
@@ -1588,6 +2038,15 @@
       "norm_label": "\ud83d\uddc3\ufe0f applicazione"
     },
     {
+      "label": ".create?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L9",
+      "community": 57,
+      "norm_label": ".create?()",
+      "id": "policies_transport_policy_transportpolicy_create"
+    },
+    {
       "label": "service-worker.js",
       "file_type": "code",
       "source_file": "app/views/pwa/service-worker.js",
@@ -1800,12 +2259,188 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/requests/transports_spec.rb",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_requests_transports_spec_rb",
+      "target": "requests_transports_spec_sign_in_as"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/requests/madmin_spec.rb",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "spec_requests_madmin_spec_rb",
       "target": "requests_madmin_spec_sign_in_as"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_policies_transport_policy_rb",
+      "target": "policies_transport_policy_transportpolicy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_policies_transport_policy_rb",
+      "target": "policies_transport_policy_scope"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_show"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_update"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_destroy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_edit"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_confirm_destroy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_create"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_show",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_update",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_destroy",
+      "target": "policies_transport_policy_transportpolicy_update"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_confirm_destroy",
+      "target": "policies_transport_policy_transportpolicy_destroy"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_edit",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_confirm_destroy",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_scope",
+      "target": "policies_transport_policy_scope_resolve"
     },
     {
       "relation": "contains",
@@ -1952,6 +2587,37 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/services/create_default_transports.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_services_create_default_transports_rb",
+      "target": "services_create_default_transports_createdefaulttransports"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/create_default_transports.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_create_default_transports_createdefaulttransports",
+      "target": "services_create_default_transports_createdefaulttransports_call"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "madmin_users_controller_userscontroller_create",
+      "target": "services_create_default_transports_createdefaulttransports_call"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L5",
       "weight": 1.0,
@@ -1972,6 +2638,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/javascript/controllers/modal_controller.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_javascript_controllers_modal_controller_js",
+      "target": "controllers_modal_controller_connect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/javascript/controllers/modal_controller.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_javascript_controllers_modal_controller_js",
+      "target": "controllers_modal_controller_closed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/javascript/controllers/application.js",
       "source_location": "L3",
       "weight": 1.0,
@@ -1988,6 +2674,16 @@
       "confidence_score": 1.0,
       "source": "app_models_application_record_rb",
       "target": "models_application_record_applicationrecord"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/transport.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_models_transport_rb",
+      "target": "models_transport_transport"
     },
     {
       "relation": "contains",
@@ -2018,6 +2714,17 @@
       "source_location": "L43",
       "weight": 1.0,
       "source": "resources_user_resource_userresource_display_name",
+      "target": "models_user_user_full_name"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "fields_user_code_field_usercodefield_options_for_select",
       "target": "models_user_user_full_name"
     },
     {
@@ -2063,6 +2770,127 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_controllers_transports_controller_rb",
+      "target": "controllers_transports_controller_transportscontroller"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_index"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_show"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_new"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_create"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_edit"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_update"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_confirm_destroy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_destroy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_set_transport"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller",
+      "target": "controllers_transports_controller_transportscontroller_transport_params"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/transports_controller.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_transports_controller_transportscontroller_create",
+      "target": "controllers_transports_controller_transportscontroller_new"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/controllers/madmin/application_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -2094,11 +2922,31 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "madmin_users_controller_userscontroller",
+      "target": "madmin_users_controller_userscontroller_create"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/users_controller.rb",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "madmin_users_controller_userscontroller",
       "target": "madmin_users_controller_userscontroller_resource_params"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/transports_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_controllers_madmin_transports_controller_rb",
+      "target": "madmin_transports_controller_transportscontroller"
     },
     {
       "relation": "contains",
@@ -2123,6 +2971,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/transport_resource.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_madmin_resources_transport_resource_rb",
+      "target": "resources_transport_resource_transportresource"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/transport_resource.rb",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "resources_transport_resource_transportresource",
+      "target": "resources_transport_resource_transportresource_display_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/madmin/resources/user_resource.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -2139,6 +3007,76 @@
       "confidence_score": 1.0,
       "source": "resources_user_resource_userresource",
       "target": "resources_user_resource_userresource_display_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_madmin_fields_user_code_field_rb",
+      "target": "fields_user_code_field_usercodefield"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fields_user_code_field_usercodefield",
+      "target": "fields_user_code_field_usercodefield_field_type"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fields_user_code_field_usercodefield",
+      "target": "fields_user_code_field_usercodefield_options_for_select"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fields_user_code_field_usercodefield",
+      "target": "fields_user_code_field_usercodefield_to_param"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/fields/user_code_field.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fields_user_code_field_usercodefield",
+      "target": "fields_user_code_field_usercodefield_index_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261010173000_create_transports.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "db_migrate_20261010173000_create_transports_rb",
+      "target": "migrate_20261010173000_create_transports_createtransports"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261010173000_create_transports.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "migrate_20261010173000_create_transports_createtransports",
+      "target": "migrate_20261010173000_create_transports_createtransports_change"
     },
     {
       "relation": "contains",
@@ -3292,5 +4230,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "802983d3d409c98909d355d1e8049bd3d9eb6104"
+  "built_at_commit": "47783b6b70e60f76bd4abe9c40c9ae2cd91a13b9"
 }

@@ -1,0 +1,7 @@
+<%= render layout: "shared/modal", locals: { icon: "transports/transports_edit.svg", title: t(".title"), back: transports_path } do %>
+  <% if @transport.locked? %>
+    <%= render "locked" %>
+  <% else %>
+    <%= render "form", transport: @transport %>
+  <% end %>
+<% end %>

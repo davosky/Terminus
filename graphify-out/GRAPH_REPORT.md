@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-10-10)
 
 ## Corpus Check
-- 60 files · ~20,514 words
+- 73 files · ~43,170 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 198 nodes · 150 edges · 56 communities (44 shown, 12 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 249 nodes · 197 edges · 67 communities (50 shown, 17 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `802983d3`
+- Built from commit: `47783b6b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,23 +38,29 @@
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — Guida per Claude Code` - 25 edges
-2. `ApplicationPolicy` - 9 edges
-3. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
-4. `7. Autenticazione e Autorizzazione Robuste` - 7 edges
-5. `Installazione e Utilizzo bundler-audit` - 6 edges
-6. `🤝 Convenzioni di Codice` - 5 edges
-7. `3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili` - 5 edges
-8. `6. Upload di File Sicuri e Gestione degli Allegati` - 5 edges
-9. `Terminus` - 4 edges
-10. `2. Mitigazione del Cross-Site Scripting (XSS)` - 4 edges
+2. `TransportsController` - 11 edges
+3. `ApplicationPolicy` - 9 edges
+4. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
+5. `TransportPolicy` - 8 edges
+6. `7. Autenticazione e Autorizzazione Robuste` - 7 edges
+7. `Installazione e Utilizzo bundler-audit` - 6 edges
+8. `UserCodeField` - 5 edges
+9. `🤝 Convenzioni di Codice` - 5 edges
+10. `3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (56 total, 12 thin omitted)
+## Communities (67 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -92,6 +98,10 @@ Nodes (5): Approfondimento: Brakeman, code:ruby, code:bash, code:ruby, Installaz
 Cohesion: 0.22
 Nodes (8): Applicazione WEB scritta in Ruby On Rails per gestire rimborsi spese ed assenze, Controllo visuale, Database, Interfaccia, Logica dell'applicazione, Proporzioni, Struttura di User, Terminus
 
+### Community 14 - "Community 14"
+Cohesion: 0.17
+Nodes (3): UserCodeField, User, UserResource
+
 ### Community 22 - "Community 22"
 Cohesion: 0.29
 Nodes (6): Avvio del progetto, code:bash (bin/setup   # setup iniziale (dipendenze, database)), Licenza, README, Stack tecnico, Terminus
@@ -101,21 +111,21 @@ Cohesion: 0.40
 Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, Italiano
 
 ## Knowledge Gaps
-- **81 isolated node(s):** `Application`, `application`, `ApplicationRecord`, `ApplicationJob`, `ApplicationMailer` (+76 more)
+- **83 isolated node(s):** `Application`, `application`, `ApplicationRecord`, `Transport`, `TransportsController` (+78 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 0` to `Community 1`, `Community 5`, `Community 7`, `Community 8`, `Community 9`?**
-  _High betweenness centrality (0.159) - this node is a cross-community bridge._
+  _High betweenness centrality (0.100) - this node is a cross-community bridge._
 - **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 1` to `Community 0`, `Community 4`?**
-  _High betweenness centrality (0.112) - this node is a cross-community bridge._
+  _High betweenness centrality (0.071) - this node is a cross-community bridge._
 - **Why does `7. Autenticazione e Autorizzazione Robuste` connect `Community 4` to `Community 1`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **What connects `Application`, `application`, `ApplicationRecord` to the rest of the system?**
-  _81 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _83 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.0625 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

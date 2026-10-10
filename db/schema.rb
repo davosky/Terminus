@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_10_10_105651) do
+ActiveRecord::Schema[8.1].define(version: 2026_10_10_173000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "transports", force: :cascade do |t|
+    t.string "transport_name", null: false
+    t.integer "transport_position", null: false
+    t.boolean "locked", default: false, null: false
+    t.integer "user_code", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_code"], name: "index_transports_on_user_code"
+  end
 
   create_table "users", force: :cascade do |t|
     t.serial "user_code", null: false
@@ -40,4 +50,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_10_105651) do
     t.index ["user_code"], name: "index_users_on_user_code", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end
+
+  add_foreign_key "transports", "users", column: "user_code", primary_key: "user_code"
 end

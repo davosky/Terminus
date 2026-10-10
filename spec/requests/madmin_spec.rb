@@ -66,6 +66,39 @@ RSpec.describe "Madmin", type: :request do
       expect(response.body).not_to match(/translation missing/i)
     end
 
+    it "crea un utente con i due trasporti predefiniti" do
+      post madmin_users_path, params: { user: attributes_for(:user, username: "nuovo") }
+      expect(User.find_by!(username: "nuovo").transports.ordered.pluck(:transport_name, :locked))
+        .to eq([ [ "Veicolo Privato", true ], [ "Veicolo Aziendale", true ] ])
+    end
+
+    it "non crea trasporti se l'utente non è valido" do
+      expect { post madmin_users_path, params: { user: { username: "" } } }.not_to change(Transport, :count)
+    end
+
+    it "gestisce i trasporti di tutti gli utenti" do
+      transport = create(:transport, user: target, transport_name: "Treno di Mario")
+      get madmin_transports_path
+      expect(response.body).to include("Treno di Mario")
+      patch madmin_transport_path(transport), params: { transport: { locked: true } }
+      expect(transport.reload).to be_locked
+    end
+
+    it "crea un trasporto scegliendo l'utente tramite user_code" do
+      user_code = target.reload.user_code
+      get new_madmin_transport_path
+      expect(response.body).to include(%(value="#{user_code}"))
+      post madmin_transports_path,
+        params: { transport: { transport_name: "Bus", transport_position: 5, user_code: target.user_code } }
+      expect(target.transports.pluck(:transport_name)).to eq([ "Bus" ])
+    end
+
+    it "sposta un trasporto a un altro utente" do
+      transport = create(:transport)
+      patch madmin_transport_path(transport), params: { transport: { user_code: target.reload.user_code } }
+      expect(transport.reload.user).to eq(target)
+    end
+
     it "modifica un utente lasciando invariata la password vuota" do
       patch madmin_user_path(target), params: { user: { first_name: "Luigi", password: "" } }
       expect(target.reload.first_name).to eq("Luigi")

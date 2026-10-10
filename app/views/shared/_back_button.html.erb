@@ -1,0 +1,5 @@
+<%# Leaves a modal: used for both "Annulla" and "Chiudi" %>
+<%= link_to path, class: "btn btn-secondary", data: { turbo_frame: "_top" } do %>
+  <i class="fa-solid fa-arrow-rotate-left mr-2"></i>
+  <%= label %>
+<% end %>

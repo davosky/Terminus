@@ -3,11 +3,20 @@
     <%= image_tag("navbar/navbar-logo.svg", size: "106x38", alt:"main-logo") %>
   <% end %>
   <%= link_to t("nav.home"), root_path, class: "hover:text-accent" %>
-  <span class="ml-auto hidden sm:flex items-center gap-2">
+  <details class="relative ml-auto" name="nav-menu">
+    <summary class="list-none cursor-pointer p-2 hover:text-accent"><i class="fa-solid fa-gear mr-2"></i><%= t("nav.utility") %></summary>
+    <div class="absolute right-0 z-10 mt-2 min-w-55 rounded-lg border border-line bg-deep p-3 flex flex-col gap-3">
+      <%= link_to transports_path, class: "hover:text-accent"  do %>
+        <i class="fa-solid fa-truck mr-2"></i>
+        <%= t("nav.transports") %>
+      <% end %>
+    </div>
+  </details>
+  <span class="hidden sm:flex items-center gap-2">
     <i class="fa-solid fa-circle-user mr-2"></i>
     <%= current_user.full_name %>
   </span>
-  <details class="relative ml-auto sm:ml-0">
+  <details class="relative" name="nav-menu">
     <summary class="list-none cursor-pointer p-2 hover:text-accent" aria-label="<%= t("nav.menu") %>">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="size-5 fill-current" aria-hidden="true"><path d="M1 3h14v1.6H1zM1 7.2h14v1.6H1zM1 11.4h14V13H1z"/></svg>
     </summary>

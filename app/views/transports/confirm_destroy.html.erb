@@ -1,0 +1,17 @@
+<%= render layout: "shared/modal", locals: { icon: "transports/transports_destroy.svg", title: t(".title"), back: transports_path } do %>
+  <% if @transport.locked? %>
+    <%= render "locked" %>
+  <% else %>
+    <div class="w-full max-w-162 self-center flex flex-col gap-5">
+      <p class="rounded-sm border border-danger p-5 text-danger" role="alert">
+        <i class="fa-solid fa-triangle-exclamation mr-2" aria-hidden="true"></i><%= t("transports.confirm_destroy.warning", name: @transport.transport_name) %>
+      </p>
+      <div class="flex flex-col-reverse gap-5 sm:flex-row sm:justify-end">
+        <%= render "shared/back_button", label: t("modal.cancel"), path: transports_path %>
+        <%= button_to transport_path(@transport), method: :delete, class: "btn btn-danger w-full", form: { data: { turbo_frame: "_top" } } do %>
+          <i class="fa-solid fa-trash" aria-hidden="true"></i><%= t("transports.confirm_destroy.confirm") %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

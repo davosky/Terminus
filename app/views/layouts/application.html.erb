@@ -22,5 +22,6 @@
     <main class="flex-1 flex flex-col items-center justify-center gap-8 px-5 py-8">
       <%= yield %>
     </main>
+    <%= turbo_frame_tag "modal" unless content_for?(:modal_open) %>
   </body>
 </html>

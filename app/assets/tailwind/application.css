@@ -41,3 +41,26 @@
     font-size: var(--text-control);
   }
 }
+
+@layer components {
+  .btn {
+    @apply inline-flex h-13 items-center justify-center gap-2 rounded-sm px-5 cursor-pointer;
+    font-size: var(--text-control);
+  }
+
+  .btn-primary {
+    @apply bg-accent text-deep hover:brightness-110;
+  }
+
+  .btn-secondary {
+    @apply border border-line hover:border-accent hover:text-accent;
+  }
+
+  .btn-danger {
+    @apply bg-danger text-deep hover:brightness-110;
+  }
+
+  .field {
+    @apply h-13 w-full rounded-sm bg-field px-3 focus:outline-2 focus:outline-accent;
+  }
+}

@@ -6,14 +6,59 @@ it:
     home: Home
     menu: Menu
     sign_out: Esci
+    utility: Utility
+    transports: Trasporti
+  modal:
+    close: Chiudi
+    cancel: Annulla
+    save: Salva
+    system_record: Record di Sistema non modificabile
+  transports:
+    index:
+      title: Trasporti
+      new: Nuovo Trasporto
+      actions: Azioni
+      show: Visualizza
+      edit: Modifica
+      destroy: Elimina
+      locked: Record di Sistema
+      empty: Nessun trasporto presente.
+    new:
+      title: Nuovo Trasporto
+    edit:
+      title: Modifica Trasporto
+    show:
+      title: Trasporto
+    confirm_destroy:
+      title: Elimina Trasporto
+      warning: Stai per eliminare definitivamente il trasporto "%{name}". L'operazione non può essere annullata.
+      confirm: Elimina
+    create:
+      success: Trasporto creato.
+    update:
+      success: Trasporto modificato.
+    destroy:
+      success: Trasporto eliminato.
   pundit:
     not_authorized: Non sei autorizzato a eseguire questa azione.
+  attributes:
+    created_at: Creato il
+    updated_at: Aggiornato il
   activerecord:
     models:
       user:
         one: Utente
         other: Utenti
+      transport:
+        one: Trasporto
+        other: Trasporti
     attributes:
+      transport:
+        transport_name: Trasporto
+        transport_position: Posizione
+        locked: Predefinito
+        user: Utente
+        user_code: Codice Utente
       user:
         user_code: Codice Utente
         username: Nome Utente

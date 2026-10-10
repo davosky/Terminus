@@ -1,0 +1,3 @@
+<%= render layout: "shared/modal", locals: { icon: "transports/transports_new.svg", title: t(".title"), back: transports_path } do %>
+  <%= render "form", transport: @transport %>
+<% end %>

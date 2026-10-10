@@ -1,0 +1,11 @@
+<%= render layout: "shared/modal", locals: { icon: "transports/transports_show.svg", title: t(".title"), back: transports_path } do %>
+  <dl class="w-full max-w-162 self-center grid grid-cols-[auto_1fr] gap-x-8 gap-y-3">
+    <dt class="text-muted"><%= Transport.human_attribute_name(:transport_name) %></dt>
+    <dd><%= @transport.transport_name %></dd>
+    <dt class="text-muted"><%= Transport.human_attribute_name(:transport_position) %></dt>
+    <dd><%= @transport.transport_position %></dd>
+  </dl>
+  <div class="w-full max-w-162 self-center flex justify-end">
+    <%= render "shared/back_button", label: t("modal.close"), path: transports_path %>
+  </div>
+<% end %>

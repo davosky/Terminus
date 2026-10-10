@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   GENDERS = %w[M F A].freeze
 
+  has_many :transports, foreign_key: :user_code, primary_key: :user_code
+
   devise :database_authenticatable, :validatable, :lockable
 
   normalizes :region, :province, with: ->(value) { value.strip.upcase }

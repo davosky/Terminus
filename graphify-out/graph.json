@@ -1,0 +1,2917 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "boot.rb",
+      "file_type": "code",
+      "source_file": "config/boot.rb",
+      "source_location": "L1",
+      "id": "config_boot_rb",
+      "community": 23,
+      "norm_label": "boot.rb"
+    },
+    {
+      "label": "routes.rb",
+      "file_type": "code",
+      "source_file": "config/routes.rb",
+      "source_location": "L1",
+      "id": "config_routes_rb",
+      "community": 24,
+      "norm_label": "routes.rb"
+    },
+    {
+      "label": "importmap.rb",
+      "file_type": "code",
+      "source_file": "config/importmap.rb",
+      "source_location": "L1",
+      "id": "config_importmap_rb",
+      "community": 25,
+      "norm_label": "importmap.rb"
+    },
+    {
+      "label": "ci.rb",
+      "file_type": "code",
+      "source_file": "config/ci.rb",
+      "source_location": "L1",
+      "id": "config_ci_rb",
+      "community": 26,
+      "norm_label": "ci.rb"
+    },
+    {
+      "label": "environment.rb",
+      "file_type": "code",
+      "source_file": "config/environment.rb",
+      "source_location": "L1",
+      "id": "config_environment_rb",
+      "community": 27,
+      "norm_label": "environment.rb"
+    },
+    {
+      "label": "application.rb",
+      "file_type": "code",
+      "source_file": "config/application.rb",
+      "source_location": "L1",
+      "id": "config_application_rb",
+      "community": 19,
+      "norm_label": "application.rb"
+    },
+    {
+      "label": "Application",
+      "file_type": "code",
+      "source_file": "config/application.rb",
+      "source_location": "L22",
+      "id": "config_application_application",
+      "community": 19,
+      "norm_label": "application"
+    },
+    {
+      "label": "puma.rb",
+      "file_type": "code",
+      "source_file": "config/puma.rb",
+      "source_location": "L1",
+      "id": "config_puma_rb",
+      "community": 28,
+      "norm_label": "puma.rb"
+    },
+    {
+      "label": "production.rb",
+      "file_type": "code",
+      "source_file": "config/environments/production.rb",
+      "source_location": "L1",
+      "id": "config_environments_production_rb",
+      "community": 29,
+      "norm_label": "production.rb"
+    },
+    {
+      "label": "test.rb",
+      "file_type": "code",
+      "source_file": "config/environments/test.rb",
+      "source_location": "L1",
+      "id": "config_environments_test_rb",
+      "community": 30,
+      "norm_label": "test.rb"
+    },
+    {
+      "label": "development.rb",
+      "file_type": "code",
+      "source_file": "config/environments/development.rb",
+      "source_location": "L1",
+      "id": "config_environments_development_rb",
+      "community": 31,
+      "norm_label": "development.rb"
+    },
+    {
+      "label": "devise.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/devise.rb",
+      "source_location": "L1",
+      "id": "config_initializers_devise_rb",
+      "community": 32,
+      "norm_label": "devise.rb"
+    },
+    {
+      "label": "content_security_policy.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/content_security_policy.rb",
+      "source_location": "L1",
+      "id": "config_initializers_content_security_policy_rb",
+      "community": 33,
+      "norm_label": "content_security_policy.rb"
+    },
+    {
+      "label": "filter_parameter_logging.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/filter_parameter_logging.rb",
+      "source_location": "L1",
+      "id": "config_initializers_filter_parameter_logging_rb",
+      "community": 34,
+      "norm_label": "filter_parameter_logging.rb"
+    },
+    {
+      "label": "assets.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/assets.rb",
+      "source_location": "L1",
+      "id": "config_initializers_assets_rb",
+      "community": 35,
+      "norm_label": "assets.rb"
+    },
+    {
+      "label": "inflections.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/inflections.rb",
+      "source_location": "L1",
+      "id": "config_initializers_inflections_rb",
+      "community": 36,
+      "norm_label": "inflections.rb"
+    },
+    {
+      "label": "spec_helper.rb",
+      "file_type": "code",
+      "source_file": "spec/spec_helper.rb",
+      "source_location": "L1",
+      "id": "spec_spec_helper_rb",
+      "community": 37,
+      "norm_label": "spec_helper.rb"
+    },
+    {
+      "label": "rails_helper.rb",
+      "file_type": "code",
+      "source_file": "spec/rails_helper.rb",
+      "source_location": "L1",
+      "id": "spec_rails_helper_rb",
+      "community": 38,
+      "norm_label": "rails_helper.rb"
+    },
+    {
+      "label": "home_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/requests/home_spec.rb",
+      "source_location": "L1",
+      "id": "spec_requests_home_spec_rb",
+      "community": 39,
+      "norm_label": "home_spec.rb"
+    },
+    {
+      "label": "user_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/models/user_spec.rb",
+      "source_location": "L1",
+      "id": "spec_models_user_spec_rb",
+      "community": 40,
+      "norm_label": "user_spec.rb"
+    },
+    {
+      "label": "users.rb",
+      "file_type": "code",
+      "source_file": "spec/factories/users.rb",
+      "source_location": "L1",
+      "id": "spec_factories_users_rb",
+      "community": 41,
+      "norm_label": "users.rb"
+    },
+    {
+      "label": "service-worker.js",
+      "file_type": "code",
+      "source_file": "app/views/pwa/service-worker.js",
+      "source_location": "L1",
+      "id": "app_views_pwa_service_worker_js",
+      "community": 42,
+      "norm_label": "service-worker.js"
+    },
+    {
+      "label": "application_policy.rb",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L1",
+      "id": "app_policies_application_policy_rb",
+      "community": 2,
+      "norm_label": "application_policy.rb"
+    },
+    {
+      "label": "ApplicationPolicy",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L3",
+      "id": "policies_application_policy_applicationpolicy",
+      "community": 2,
+      "norm_label": "applicationpolicy"
+    },
+    {
+      "label": ".initialize()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L6",
+      "id": "policies_application_policy_applicationpolicy_initialize",
+      "community": 2,
+      "norm_label": ".initialize()"
+    },
+    {
+      "label": ".index?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L11",
+      "id": "policies_application_policy_applicationpolicy_index",
+      "community": 2,
+      "norm_label": ".index?()"
+    },
+    {
+      "label": ".show?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L15",
+      "id": "policies_application_policy_applicationpolicy_show",
+      "community": 2,
+      "norm_label": ".show?()"
+    },
+    {
+      "label": ".create?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L19",
+      "id": "policies_application_policy_applicationpolicy_create",
+      "community": 2,
+      "norm_label": ".create?()"
+    },
+    {
+      "label": ".new?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L23",
+      "id": "policies_application_policy_applicationpolicy_new",
+      "community": 2,
+      "norm_label": ".new?()"
+    },
+    {
+      "label": ".update?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L27",
+      "id": "policies_application_policy_applicationpolicy_update",
+      "community": 2,
+      "norm_label": ".update?()"
+    },
+    {
+      "label": ".edit?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L31",
+      "id": "policies_application_policy_applicationpolicy_edit",
+      "community": 2,
+      "norm_label": ".edit?()"
+    },
+    {
+      "label": ".destroy?()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L35",
+      "id": "policies_application_policy_applicationpolicy_destroy",
+      "community": 2,
+      "norm_label": ".destroy?()"
+    },
+    {
+      "label": "Scope",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L39",
+      "id": "policies_application_policy_scope",
+      "community": 2,
+      "norm_label": "scope"
+    },
+    {
+      "label": ".initialize()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L40",
+      "id": "policies_application_policy_scope_initialize",
+      "community": 2,
+      "norm_label": ".initialize()"
+    },
+    {
+      "label": ".resolve()",
+      "file_type": "code",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L45",
+      "id": "policies_application_policy_scope_resolve",
+      "community": 2,
+      "norm_label": ".resolve()"
+    },
+    {
+      "label": "application_helper.rb",
+      "file_type": "code",
+      "source_file": "app/helpers/application_helper.rb",
+      "source_location": "L1",
+      "id": "app_helpers_application_helper_rb",
+      "community": 43,
+      "norm_label": "application_helper.rb"
+    },
+    {
+      "label": "application.js",
+      "file_type": "code",
+      "source_file": "app/javascript/application.js",
+      "source_location": "L1",
+      "id": "app_javascript_application_js",
+      "community": 44,
+      "norm_label": "application.js"
+    },
+    {
+      "label": "flash_controller.js",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/flash_controller.js",
+      "source_location": "L1",
+      "id": "app_javascript_controllers_flash_controller_js",
+      "community": 15,
+      "norm_label": "flash_controller.js"
+    },
+    {
+      "label": "connect()",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/flash_controller.js",
+      "source_location": "L5",
+      "id": "controllers_flash_controller_connect",
+      "community": 15,
+      "norm_label": "connect()"
+    },
+    {
+      "label": "disconnect()",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/flash_controller.js",
+      "source_location": "L9",
+      "id": "controllers_flash_controller_disconnect",
+      "community": 15,
+      "norm_label": "disconnect()"
+    },
+    {
+      "label": "application.js",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/application.js",
+      "source_location": "L1",
+      "id": "app_javascript_controllers_application_js",
+      "community": 20,
+      "norm_label": "application.js"
+    },
+    {
+      "label": "application",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/application.js",
+      "source_location": "L3",
+      "id": "controllers_application_application",
+      "community": 20,
+      "norm_label": "application"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/index.js",
+      "source_location": "L1",
+      "id": "app_javascript_controllers_index_js",
+      "community": 45,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "application_record.rb",
+      "file_type": "code",
+      "source_file": "app/models/application_record.rb",
+      "source_location": "L1",
+      "id": "app_models_application_record_rb",
+      "community": 18,
+      "norm_label": "application_record.rb"
+    },
+    {
+      "label": "ApplicationRecord",
+      "file_type": "code",
+      "source_file": "app/models/application_record.rb",
+      "source_location": "L1",
+      "id": "models_application_record_applicationrecord",
+      "community": 18,
+      "norm_label": "applicationrecord"
+    },
+    {
+      "label": "user.rb",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "L1",
+      "id": "app_models_user_rb",
+      "community": 14,
+      "norm_label": "user.rb"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "L1",
+      "id": "models_user_user",
+      "community": 14,
+      "norm_label": "user"
+    },
+    {
+      "label": ".full_name()",
+      "file_type": "code",
+      "source_file": "app/models/user.rb",
+      "source_location": "L14",
+      "id": "models_user_user_full_name",
+      "community": 14,
+      "norm_label": ".full_name()"
+    },
+    {
+      "label": "home_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/home_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_home_controller_rb",
+      "community": 12,
+      "norm_label": "home_controller.rb"
+    },
+    {
+      "label": "HomeController",
+      "file_type": "code",
+      "source_file": "app/controllers/home_controller.rb",
+      "source_location": "L1",
+      "id": "controllers_home_controller_homecontroller",
+      "community": 12,
+      "norm_label": "homecontroller"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/controllers/home_controller.rb",
+      "source_location": "L2",
+      "id": "controllers_home_controller_homecontroller_index",
+      "community": 12,
+      "norm_label": ".index()"
+    },
+    {
+      "label": "application_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/application_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_application_controller_rb",
+      "community": 11,
+      "norm_label": "application_controller.rb"
+    },
+    {
+      "label": "ApplicationController",
+      "file_type": "code",
+      "source_file": "app/controllers/application_controller.rb",
+      "source_location": "L1",
+      "id": "controllers_application_controller_applicationcontroller",
+      "community": 11,
+      "norm_label": "applicationcontroller"
+    },
+    {
+      "label": ".user_not_authorized()",
+      "file_type": "code",
+      "source_file": "app/controllers/application_controller.rb",
+      "source_location": "L16",
+      "id": "controllers_application_controller_applicationcontroller_user_not_authorized",
+      "community": 11,
+      "norm_label": ".user_not_authorized()"
+    },
+    {
+      "label": "application_job.rb",
+      "file_type": "code",
+      "source_file": "app/jobs/application_job.rb",
+      "source_location": "L1",
+      "id": "app_jobs_application_job_rb",
+      "community": 17,
+      "norm_label": "application_job.rb"
+    },
+    {
+      "label": "ApplicationJob",
+      "file_type": "code",
+      "source_file": "app/jobs/application_job.rb",
+      "source_location": "L1",
+      "id": "jobs_application_job_applicationjob",
+      "community": 17,
+      "norm_label": "applicationjob"
+    },
+    {
+      "label": "application_mailer.rb",
+      "file_type": "code",
+      "source_file": "app/mailers/application_mailer.rb",
+      "source_location": "L1",
+      "id": "app_mailers_application_mailer_rb",
+      "community": 21,
+      "norm_label": "application_mailer.rb"
+    },
+    {
+      "label": "ApplicationMailer",
+      "file_type": "code",
+      "source_file": "app/mailers/application_mailer.rb",
+      "source_location": "L1",
+      "id": "mailers_application_mailer_applicationmailer",
+      "community": 21,
+      "norm_label": "applicationmailer"
+    },
+    {
+      "label": "cable_schema.rb",
+      "file_type": "code",
+      "source_file": "db/cable_schema.rb",
+      "source_location": "L1",
+      "id": "db_cable_schema_rb",
+      "community": 46,
+      "norm_label": "cable_schema.rb"
+    },
+    {
+      "label": "queue_schema.rb",
+      "file_type": "code",
+      "source_file": "db/queue_schema.rb",
+      "source_location": "L1",
+      "id": "db_queue_schema_rb",
+      "community": 47,
+      "norm_label": "queue_schema.rb"
+    },
+    {
+      "label": "seeds.rb",
+      "file_type": "code",
+      "source_file": "db/seeds.rb",
+      "source_location": "L1",
+      "id": "db_seeds_rb",
+      "community": 48,
+      "norm_label": "seeds.rb"
+    },
+    {
+      "label": "schema.rb",
+      "file_type": "code",
+      "source_file": "db/schema.rb",
+      "source_location": "L1",
+      "id": "db_schema_rb",
+      "community": 49,
+      "norm_label": "schema.rb"
+    },
+    {
+      "label": "cache_schema.rb",
+      "file_type": "code",
+      "source_file": "db/cache_schema.rb",
+      "source_location": "L1",
+      "id": "db_cache_schema_rb",
+      "community": 50,
+      "norm_label": "cache_schema.rb"
+    },
+    {
+      "label": "20261010105651_devise_create_users.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20261010105651_devise_create_users.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20261010105651_devise_create_users_rb",
+      "community": 13,
+      "norm_label": "20261010105651_devise_create_users.rb"
+    },
+    {
+      "label": "DeviseCreateUsers",
+      "file_type": "code",
+      "source_file": "db/migrate/20261010105651_devise_create_users.rb",
+      "source_location": "L3",
+      "id": "migrate_20261010105651_devise_create_users_devisecreateusers",
+      "community": 13,
+      "norm_label": "devisecreateusers"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20261010105651_devise_create_users.rb",
+      "source_location": "L4",
+      "id": "migrate_20261010105651_devise_create_users_devisecreateusers_change",
+      "community": 13,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 22,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "terminus_readme_readme",
+      "community": 22,
+      "norm_label": "readme"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude_md",
+      "community": 0,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md \u2014 Guida per Claude Code",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "terminus_claude_claude_md_guida_per_claude_code",
+      "community": 0,
+      "norm_label": "claude.md \u2014 guida per claude code"
+    },
+    {
+      "label": "1. Pensare prima di scrivere codice",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
+      "id": "terminus_claude_1_pensare_prima_di_scrivere_codice",
+      "community": 0,
+      "norm_label": "1. pensare prima di scrivere codice"
+    },
+    {
+      "label": "2. Prima la semplicit\u00e0",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L18",
+      "id": "terminus_claude_2_prima_la_semplicit\u00e0",
+      "community": 0,
+      "norm_label": "2. prima la semplicita"
+    },
+    {
+      "label": "3. Modifiche chirurgiche",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L30",
+      "id": "terminus_claude_3_modifiche_chirurgiche",
+      "community": 0,
+      "norm_label": "3. modifiche chirurgiche"
+    },
+    {
+      "label": "4. Esecuzione orientata all'obiettivo",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L48",
+      "id": "terminus_claude_4_esecuzione_orientata_all_obiettivo",
+      "community": 0,
+      "norm_label": "4. esecuzione orientata all'obiettivo"
+    },
+    {
+      "label": "code:txt (1. [Passo] \u2192 verifica: [controllo])",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L60",
+      "id": "terminus_claude_codeblock_1",
+      "community": 0,
+      "norm_label": "code:txt (1. [passo] \u2192 verifica: [controllo])"
+    },
+    {
+      "label": "\ud83c\udfd7\ufe0f Stack Tecnico",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L72",
+      "id": "terminus_claude_stack_tecnico",
+      "community": 0,
+      "norm_label": "\ud83c\udfd7\ufe0f stack tecnico"
+    },
+    {
+      "label": "code:bash (Ruby:        >= 4.0.1)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L74",
+      "id": "terminus_claude_codeblock_2",
+      "community": 0,
+      "norm_label": "code:bash (ruby:        >= 4.0.1)"
+    },
+    {
+      "label": "\ud83d\udcc1 Struttura del Progetto",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L87",
+      "id": "terminus_claude_struttura_del_progetto",
+      "community": 0,
+      "norm_label": "\ud83d\udcc1 struttura del progetto"
+    },
+    {
+      "label": "code:bash (app/)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L89",
+      "id": "terminus_claude_codeblock_3",
+      "community": 0,
+      "norm_label": "code:bash (app/)"
+    },
+    {
+      "label": "\ud83e\udd1d Convenzioni di Codice",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L102",
+      "id": "terminus_claude_convenzioni_di_codice",
+      "community": 8,
+      "norm_label": "\ud83e\udd1d convenzioni di codice"
+    },
+    {
+      "label": "Generale",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L104",
+      "id": "terminus_claude_generale",
+      "community": 8,
+      "norm_label": "generale"
+    },
+    {
+      "label": "Modelli",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L113",
+      "id": "terminus_claude_modelli",
+      "community": 8,
+      "norm_label": "modelli"
+    },
+    {
+      "label": "Controller",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L119",
+      "id": "terminus_claude_controller",
+      "community": 8,
+      "norm_label": "controller"
+    },
+    {
+      "label": "Naming",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L125",
+      "id": "terminus_claude_naming",
+      "community": 8,
+      "norm_label": "naming"
+    },
+    {
+      "label": "\ud83e\uddea Testing",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L134",
+      "id": "terminus_claude_testing",
+      "community": 7,
+      "norm_label": "\ud83e\uddea testing"
+    },
+    {
+      "label": "Approccio: Test-first quando possibile",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L136",
+      "id": "terminus_claude_approccio_test_first_quando_possibile",
+      "community": 7,
+      "norm_label": "approccio: test-first quando possibile"
+    },
+    {
+      "label": "code:bash (spec/)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L138",
+      "id": "terminus_claude_codeblock_4",
+      "community": 7,
+      "norm_label": "code:bash (spec/)"
+    },
+    {
+      "label": "Regole per i Test",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L148",
+      "id": "terminus_claude_regole_per_i_test",
+      "community": 7,
+      "norm_label": "regole per i test"
+    },
+    {
+      "label": "code:ruby (# Esempio factory minima)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L157",
+      "id": "terminus_claude_codeblock_5",
+      "community": 7,
+      "norm_label": "code:ruby (# esempio factory minima)"
+    },
+    {
+      "label": "\ud83d\uddc4\ufe0f Database",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L173",
+      "id": "terminus_claude_database",
+      "community": 0,
+      "norm_label": "\ud83d\uddc4\ufe0f database"
+    },
+    {
+      "label": "code:ruby (# \u2705 Migrazione con indice)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L181",
+      "id": "terminus_claude_codeblock_6",
+      "community": 0,
+      "norm_label": "code:ruby (# \u2705 migrazione con indice)"
+    },
+    {
+      "label": "\ud83d\udd12 Sicurezza",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L190",
+      "id": "terminus_claude_sicurezza",
+      "community": 0,
+      "norm_label": "\ud83d\udd12 sicurezza"
+    },
+    {
+      "label": "code:ruby (# \u2705 Sempre scoped all'utente)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L201",
+      "id": "terminus_claude_codeblock_7",
+      "community": 0,
+      "norm_label": "code:ruby (# \u2705 sempre scoped all'utente)"
+    },
+    {
+      "label": "\u26a1 Performance",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L211",
+      "id": "terminus_claude_performance",
+      "community": 0,
+      "norm_label": "\u26a1 performance"
+    },
+    {
+      "label": "\ud83d\ude80 Workflow con Claude Code",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L221",
+      "id": "terminus_claude_workflow_con_claude_code",
+      "community": 0,
+      "norm_label": "\ud83d\ude80 workflow con claude code"
+    },
+    {
+      "label": "Cose che Claude Code pu\u00f2 fare autonomamente",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L225",
+      "id": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente",
+      "community": 0,
+      "norm_label": "cose che claude code puo fare autonomamente"
+    },
+    {
+      "label": "Cose su cui chiedere conferma prima",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L233",
+      "id": "terminus_claude_cose_su_cui_chiedere_conferma_prima",
+      "community": 0,
+      "norm_label": "cose su cui chiedere conferma prima"
+    },
+    {
+      "label": "\ud83d\udce6 Gem Principali",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L242",
+      "id": "terminus_claude_gem_principali",
+      "community": 0,
+      "norm_label": "\ud83d\udce6 gem principali"
+    },
+    {
+      "label": "code:ruby (# Gemfile \u2014 gem comuni in questo progetto)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L244",
+      "id": "terminus_claude_codeblock_8",
+      "community": 0,
+      "norm_label": "code:ruby (# gemfile \u2014 gem comuni in questo progetto)"
+    },
+    {
+      "label": "\ud83c\udf0d Variabili d'Ambiente Richieste",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L281",
+      "id": "terminus_claude_variabili_d_ambiente_richieste",
+      "community": 0,
+      "norm_label": "\ud83c\udf0d variabili d'ambiente richieste"
+    },
+    {
+      "label": "code:ruby (DATABASE_HOST=         # PostgreSQL host es. localhost)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L283",
+      "id": "terminus_claude_codeblock_9",
+      "community": 0,
+      "norm_label": "code:ruby (database_host=         # postgresql host es. localhost)"
+    },
+    {
+      "label": "\ud83d\udccb Comandi Utili",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L292",
+      "id": "terminus_claude_comandi_utili",
+      "community": 0,
+      "norm_label": "\ud83d\udccb comandi utili"
+    },
+    {
+      "label": "code:bash (# Setup)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L294",
+      "id": "terminus_claude_codeblock_10",
+      "community": 0,
+      "norm_label": "code:bash (# setup)"
+    },
+    {
+      "label": "\u274c Anti-Pattern da Evitare",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L314",
+      "id": "terminus_claude_anti_pattern_da_evitare",
+      "community": 0,
+      "norm_label": "\u274c anti-pattern da evitare"
+    },
+    {
+      "label": "\ud83d\udd11 Best Practice Essenziali di Sicurezza per Ruby on Rails",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L326",
+      "id": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails",
+      "community": 0,
+      "norm_label": "\ud83d\udd11 best practice essenziali di sicurezza per ruby on rails"
+    },
+    {
+      "label": "Introduzione e Contesto",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L328",
+      "id": "terminus_claude_introduzione_e_contesto",
+      "community": 0,
+      "norm_label": "introduzione e contesto"
+    },
+    {
+      "label": "Best Practice di Sicurezza Chiave in Ruby on Rails",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L343",
+      "id": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "community": 1,
+      "norm_label": "best practice di sicurezza chiave in ruby on rails"
+    },
+    {
+      "label": "1. Protezione dall'SQL Injection",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L345",
+      "id": "terminus_claude_1_protezione_dall_sql_injection",
+      "community": 1,
+      "norm_label": "1. protezione dall'sql injection"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L355",
+      "id": "terminus_claude_codeblock_11",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L367",
+      "id": "terminus_claude_codeblock_12",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "2. Mitigazione del Cross-Site Scripting (XSS)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L381",
+      "id": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
+      "community": 1,
+      "norm_label": "2. mitigazione del cross-site scripting (xss)"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L391",
+      "id": "terminus_claude_codeblock_13",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L402",
+      "id": "terminus_claude_codeblock_14",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L411",
+      "id": "terminus_claude_codeblock_15",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L426",
+      "id": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
+      "community": 6,
+      "norm_label": "3. gestione sicura di segreti, credenziali e dati di configurazione sensibili"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L436",
+      "id": "terminus_claude_codeblock_16",
+      "community": 6,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L448",
+      "id": "terminus_claude_codeblock_17",
+      "community": 6,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L457",
+      "id": "terminus_claude_codeblock_18",
+      "community": 6,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L469",
+      "id": "terminus_claude_codeblock_19",
+      "community": 6,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "4. Corretta Gestione delle Sessioni e Cookie Sicuri",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L484",
+      "id": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
+      "community": 1,
+      "norm_label": "4. corretta gestione delle sessioni e cookie sicuri"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L494",
+      "id": "terminus_claude_codeblock_20",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L507",
+      "id": "terminus_claude_codeblock_21",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L523",
+      "id": "terminus_claude_codeblock_22",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L540",
+      "id": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
+      "community": 1,
+      "norm_label": "5. strategie di protezione contro il cross-site request forgery (csrf)"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L554",
+      "id": "terminus_claude_codeblock_23",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L565",
+      "id": "terminus_claude_codeblock_24",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "6. Upload di File Sicuri e Gestione degli Allegati",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L582",
+      "id": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
+      "community": 1,
+      "norm_label": "6. upload di file sicuri e gestione degli allegati"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L592",
+      "id": "terminus_claude_codeblock_25",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L611",
+      "id": "terminus_claude_codeblock_26",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L620",
+      "id": "terminus_claude_codeblock_27",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L630",
+      "id": "terminus_claude_codeblock_28",
+      "community": 1,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "7. Autenticazione e Autorizzazione Robuste",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L656",
+      "id": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "community": 4,
+      "norm_label": "7. autenticazione e autorizzazione robuste"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L672",
+      "id": "terminus_claude_codeblock_29",
+      "community": 4,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L679",
+      "id": "terminus_claude_codeblock_30",
+      "community": 4,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L690",
+      "id": "terminus_claude_codeblock_31",
+      "community": 4,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L706",
+      "id": "terminus_claude_codeblock_32",
+      "community": 4,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L715",
+      "id": "terminus_claude_codeblock_33",
+      "community": 4,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L734",
+      "id": "terminus_claude_codeblock_34",
+      "community": 4,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "8. Monitoraggio e Audit di Sicurezza Continui",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L752",
+      "id": "terminus_claude_8_monitoraggio_e_audit_di_sicurezza_continui",
+      "community": 1,
+      "norm_label": "8. monitoraggio e audit di sicurezza continui"
+    },
+    {
+      "label": "Approfondimento: Brakeman",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L778",
+      "id": "terminus_claude_approfondimento_brakeman",
+      "community": 9,
+      "norm_label": "approfondimento: brakeman"
+    },
+    {
+      "label": "Installazione e Utilizzo",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L782",
+      "id": "terminus_claude_installazione_e_utilizzo",
+      "community": 9,
+      "norm_label": "installazione e utilizzo"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L786",
+      "id": "terminus_claude_codeblock_35",
+      "community": 9,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:bash",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L794",
+      "id": "terminus_claude_codeblock_36",
+      "community": 9,
+      "norm_label": "code:bash"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L804",
+      "id": "terminus_claude_codeblock_37",
+      "community": 9,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "Approfondimento: bundler-audit",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L834",
+      "id": "terminus_claude_approfondimento_bundler_audit",
+      "community": 5,
+      "norm_label": "approfondimento: bundler-audit"
+    },
+    {
+      "label": "Installazione e Utilizzo bundler-audit",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L838",
+      "id": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "community": 5,
+      "norm_label": "installazione e utilizzo bundler-audit"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L842",
+      "id": "terminus_claude_codeblock_38",
+      "community": 5,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:bash",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L850",
+      "id": "terminus_claude_codeblock_39",
+      "community": 5,
+      "norm_label": "code:bash"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L864",
+      "id": "terminus_claude_codeblock_40",
+      "community": 5,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L896",
+      "id": "terminus_claude_codeblock_41",
+      "community": 5,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "code:ruby",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L903",
+      "id": "terminus_claude_codeblock_42",
+      "community": 5,
+      "norm_label": "code:ruby"
+    },
+    {
+      "label": "Gem, Librerie e Strumenti Aggiuntivi",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L929",
+      "id": "terminus_claude_gem_librerie_e_strumenti_aggiuntivi",
+      "community": 0,
+      "norm_label": "gem, librerie e strumenti aggiuntivi"
+    },
+    {
+      "label": "Checklist delle Best Practice di Sicurezza",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L965",
+      "id": "terminus_claude_checklist_delle_best_practice_di_sicurezza",
+      "community": 0,
+      "norm_label": "checklist delle best practice di sicurezza"
+    },
+    {
+      "label": "\ud83d\udcc8 Graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L996",
+      "id": "terminus_claude_graphify",
+      "community": 0,
+      "norm_label": "\ud83d\udcc8 graphify"
+    },
+    {
+      "label": "\ud83d\uddc3\ufe0f Applicazione",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1010",
+      "id": "terminus_claude_applicazione",
+      "community": 0,
+      "norm_label": "\ud83d\uddc3\ufe0f applicazione"
+    },
+    {
+      "label": "TERMINUS.md",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L1",
+      "id": "ai_terminus_md",
+      "community": 10,
+      "norm_label": "terminus.md"
+    },
+    {
+      "label": "Terminus",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L1",
+      "id": "ai_terminus_terminus",
+      "community": 10,
+      "norm_label": "terminus"
+    },
+    {
+      "label": "Applicazione WEB scritta in Ruby On Rails per gestire rimborsi spese ed assenze",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L3",
+      "id": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "community": 10,
+      "norm_label": "applicazione web scritta in ruby on rails per gestire rimborsi spese ed assenze"
+    },
+    {
+      "label": "Logica dell'applicazione",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L5",
+      "id": "ai_terminus_logica_dell_applicazione",
+      "community": 10,
+      "norm_label": "logica dell'applicazione"
+    },
+    {
+      "label": "Struttura di User",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L21",
+      "id": "ai_terminus_struttura_di_user",
+      "community": 10,
+      "norm_label": "struttura di user"
+    },
+    {
+      "label": "Interfaccia",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L42",
+      "id": "ai_terminus_interfaccia",
+      "community": 10,
+      "norm_label": "interfaccia"
+    },
+    {
+      "label": "Proporzioni",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L50",
+      "id": "ai_terminus_proporzioni",
+      "community": 10,
+      "norm_label": "proporzioni"
+    },
+    {
+      "label": "Controllo visuale",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L72",
+      "id": "ai_terminus_controllo_visuale",
+      "community": 10,
+      "norm_label": "controllo visuale"
+    },
+    {
+      "label": "Database",
+      "file_type": "document",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L76",
+      "id": "ai_terminus_database",
+      "community": 10,
+      "norm_label": "database"
+    },
+    {
+      "label": "hello_controller.js",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/hello_controller.js",
+      "source_location": "L1",
+      "community": 16,
+      "norm_label": "hello_controller.js",
+      "id": "app_javascript_controllers_hello_controller_js"
+    },
+    {
+      "label": "connect()",
+      "file_type": "code",
+      "source_file": "app/javascript/controllers/hello_controller.js",
+      "source_location": "L4",
+      "community": 16,
+      "norm_label": "connect()",
+      "id": "controllers_hello_controller_connect"
+    },
+    {
+      "label": "TERMINUS.md",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "terminus.md",
+      "id": "terminus_md"
+    },
+    {
+      "label": "Terminus",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "terminus",
+      "id": "terminus_terminus_terminus"
+    },
+    {
+      "label": "Applicazione WEB scritta in Ruby On Rails per gestire rimborsi spese ed assenze",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L3",
+      "community": 3,
+      "norm_label": "applicazione web scritta in ruby on rails per gestire rimborsi spese ed assenze",
+      "id": "terminus_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze"
+    },
+    {
+      "label": "Logica dell'applicazione",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L5",
+      "community": 3,
+      "norm_label": "logica dell'applicazione",
+      "id": "terminus_terminus_logica_dell_applicazione"
+    },
+    {
+      "label": "Struttura di User",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L21",
+      "community": 3,
+      "norm_label": "struttura di user",
+      "id": "terminus_terminus_struttura_di_user"
+    },
+    {
+      "label": "Interfaccia",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L42",
+      "community": 3,
+      "norm_label": "interfaccia",
+      "id": "terminus_terminus_interfaccia"
+    },
+    {
+      "label": "Proporzioni",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L50",
+      "community": 3,
+      "norm_label": "proporzioni",
+      "id": "terminus_terminus_proporzioni"
+    },
+    {
+      "label": "Controllo visuale",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L72",
+      "community": 3,
+      "norm_label": "controllo visuale",
+      "id": "terminus_terminus_controllo_visuale"
+    },
+    {
+      "label": "Database",
+      "file_type": "document",
+      "source_file": "TERMINUS.md",
+      "source_location": "L76",
+      "community": 3,
+      "norm_label": "database",
+      "id": "terminus_terminus_database"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/application.rb",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "config_application_rb",
+      "target": "config_application_application"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_policies_application_policy_rb",
+      "target": "policies_application_policy_applicationpolicy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_policies_application_policy_rb",
+      "target": "policies_application_policy_scope"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_initialize"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_index"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_show"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_create"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_new"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_update"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_edit"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy",
+      "target": "policies_application_policy_applicationpolicy_destroy"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy_new",
+      "target": "policies_application_policy_applicationpolicy_create"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_applicationpolicy_edit",
+      "target": "policies_application_policy_applicationpolicy_update"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_scope",
+      "target": "policies_application_policy_scope_initialize"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/application_policy.rb",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_application_policy_scope",
+      "target": "policies_application_policy_scope_resolve"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/javascript/controllers/flash_controller.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_javascript_controllers_flash_controller_js",
+      "target": "controllers_flash_controller_connect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/javascript/controllers/flash_controller.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "app_javascript_controllers_flash_controller_js",
+      "target": "controllers_flash_controller_disconnect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/javascript/controllers/application.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_javascript_controllers_application_js",
+      "target": "controllers_application_application"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/application_record.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_models_application_record_rb",
+      "target": "models_application_record_applicationrecord"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/user.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_models_user_rb",
+      "target": "models_user_user"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/user.rb",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_user_user",
+      "target": "models_user_user_full_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/home_controller.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_controllers_home_controller_rb",
+      "target": "controllers_home_controller_homecontroller"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/home_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_home_controller_homecontroller",
+      "target": "controllers_home_controller_homecontroller_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/application_controller.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_controllers_application_controller_rb",
+      "target": "controllers_application_controller_applicationcontroller"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/application_controller.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_application_controller_applicationcontroller",
+      "target": "controllers_application_controller_applicationcontroller_user_not_authorized"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/jobs/application_job.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_jobs_application_job_rb",
+      "target": "jobs_application_job_applicationjob"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/mailers/application_mailer.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_mailers_application_mailer_rb",
+      "target": "mailers_application_mailer_applicationmailer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261010105651_devise_create_users.rb",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "db_migrate_20261010105651_devise_create_users_rb",
+      "target": "migrate_20261010105651_devise_create_users_devisecreateusers"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261010105651_devise_create_users.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "migrate_20261010105651_devise_create_users_devisecreateusers",
+      "target": "migrate_20261010105651_devise_create_users_devisecreateusers_change"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "terminus_readme_readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_md",
+      "target": "terminus_claude_claude_md_guida_per_claude_code"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_1_pensare_prima_di_scrivere_codice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_2_prima_la_semplicit\u00e0"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_3_modifiche_chirurgiche"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_4_esecuzione_orientata_all_obiettivo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_stack_tecnico"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_struttura_del_progetto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_convenzioni_di_codice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_testing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_database"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_sicurezza"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L211",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_performance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L221",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_workflow_con_claude_code"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L242",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_gem_principali"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L281",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_variabili_d_ambiente_richieste"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_comandi_utili"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L314",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_anti_pattern_da_evitare"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L326",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L343",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L778",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_approfondimento_brakeman"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L834",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_approfondimento_bundler_audit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L929",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_gem_librerie_e_strumenti_aggiuntivi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L965",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_checklist_delle_best_practice_di_sicurezza"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L996",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1010",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_claude_md_guida_per_claude_code",
+      "target": "terminus_claude_applicazione"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_4_esecuzione_orientata_all_obiettivo",
+      "target": "terminus_claude_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_stack_tecnico",
+      "target": "terminus_claude_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_struttura_del_progetto",
+      "target": "terminus_claude_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_convenzioni_di_codice",
+      "target": "terminus_claude_generale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_convenzioni_di_codice",
+      "target": "terminus_claude_modelli"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_convenzioni_di_codice",
+      "target": "terminus_claude_controller"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_convenzioni_di_codice",
+      "target": "terminus_claude_naming"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_testing",
+      "target": "terminus_claude_approccio_test_first_quando_possibile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_testing",
+      "target": "terminus_claude_regole_per_i_test"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_approccio_test_first_quando_possibile",
+      "target": "terminus_claude_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_regole_per_i_test",
+      "target": "terminus_claude_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_database",
+      "target": "terminus_claude_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_sicurezza",
+      "target": "terminus_claude_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_workflow_con_claude_code",
+      "target": "terminus_claude_cose_che_claude_code_pu\u00f2_fare_autonomamente"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_workflow_con_claude_code",
+      "target": "terminus_claude_cose_su_cui_chiedere_conferma_prima"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L244",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_gem_principali",
+      "target": "terminus_claude_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L283",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_variabili_d_ambiente_richieste",
+      "target": "terminus_claude_codeblock_9"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L294",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_comandi_utili",
+      "target": "terminus_claude_codeblock_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L328",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_essenziali_di_sicurezza_per_ruby_on_rails",
+      "target": "terminus_claude_introduzione_e_contesto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L345",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_1_protezione_dall_sql_injection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L381",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L426",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L484",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L540",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L582",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L656",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_7_autenticazione_e_autorizzazione_robuste"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L752",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_best_practice_di_sicurezza_chiave_in_ruby_on_rails",
+      "target": "terminus_claude_8_monitoraggio_e_audit_di_sicurezza_continui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L355",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_1_protezione_dall_sql_injection",
+      "target": "terminus_claude_codeblock_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L367",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_1_protezione_dall_sql_injection",
+      "target": "terminus_claude_codeblock_12"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L391",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
+      "target": "terminus_claude_codeblock_13"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L402",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
+      "target": "terminus_claude_codeblock_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L411",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_2_mitigazione_del_cross_site_scripting_xss",
+      "target": "terminus_claude_codeblock_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L436",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
+      "target": "terminus_claude_codeblock_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L448",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
+      "target": "terminus_claude_codeblock_17"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L457",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
+      "target": "terminus_claude_codeblock_18"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L469",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
+      "target": "terminus_claude_codeblock_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L494",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
+      "target": "terminus_claude_codeblock_20"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L507",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
+      "target": "terminus_claude_codeblock_21"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L523",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_4_corretta_gestione_delle_sessioni_e_cookie_sicuri",
+      "target": "terminus_claude_codeblock_22"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L554",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
+      "target": "terminus_claude_codeblock_23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L565",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_5_strategie_di_protezione_contro_il_cross_site_request_forgery_csrf",
+      "target": "terminus_claude_codeblock_24"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L592",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
+      "target": "terminus_claude_codeblock_25"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L611",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
+      "target": "terminus_claude_codeblock_26"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L620",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
+      "target": "terminus_claude_codeblock_27"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L630",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_6_upload_di_file_sicuri_e_gestione_degli_allegati",
+      "target": "terminus_claude_codeblock_28"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L672",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "target": "terminus_claude_codeblock_29"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L679",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "target": "terminus_claude_codeblock_30"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L690",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "target": "terminus_claude_codeblock_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L706",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "target": "terminus_claude_codeblock_32"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L715",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "target": "terminus_claude_codeblock_33"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L734",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
+      "target": "terminus_claude_codeblock_34"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L782",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_approfondimento_brakeman",
+      "target": "terminus_claude_installazione_e_utilizzo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L786",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo",
+      "target": "terminus_claude_codeblock_35"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L794",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo",
+      "target": "terminus_claude_codeblock_36"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L804",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo",
+      "target": "terminus_claude_codeblock_37"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L838",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_approfondimento_bundler_audit",
+      "target": "terminus_claude_installazione_e_utilizzo_bundler_audit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L842",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "target": "terminus_claude_codeblock_38"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L850",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "target": "terminus_claude_codeblock_39"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L864",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "target": "terminus_claude_codeblock_40"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L896",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "target": "terminus_claude_codeblock_41"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L903",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_claude_installazione_e_utilizzo_bundler_audit",
+      "target": "terminus_claude_codeblock_42"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ai_terminus_md",
+      "target": "ai_terminus_terminus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "ai_terminus_terminus",
+      "target": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "target": "ai_terminus_logica_dell_applicazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "target": "ai_terminus_struttura_di_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "target": "ai_terminus_interfaccia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "ai_terminus_interfaccia",
+      "target": "ai_terminus_proporzioni",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "ai_terminus_interfaccia",
+      "target": "ai_terminus_controllo_visuale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI/TERMINUS.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "ai_terminus_interfaccia",
+      "target": "ai_terminus_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/javascript/controllers/hello_controller.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_javascript_controllers_hello_controller_js",
+      "target": "controllers_hello_controller_connect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_md",
+      "target": "terminus_terminus_terminus"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_terminus",
+      "target": "terminus_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "target": "terminus_terminus_logica_dell_applicazione"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "target": "terminus_terminus_struttura_di_user"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
+      "target": "terminus_terminus_interfaccia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_interfaccia",
+      "target": "terminus_terminus_proporzioni"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_interfaccia",
+      "target": "terminus_terminus_controllo_visuale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TERMINUS.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "terminus_terminus_interfaccia",
+      "target": "terminus_terminus_database"
+    }
+  ],
+  "hyperedges": []
+}

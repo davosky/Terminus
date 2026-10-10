@@ -1,0 +1,8 @@
+<div class="fixed top-16 inset-x-0 z-20 flex flex-col items-center gap-2 px-5 pointer-events-none">
+  <% if notice %>
+    <div class="rounded-sm border border-accent bg-deep px-5 py-2 text-accent" role="status" data-controller="flash"><%= notice %></div>
+  <% end %>
+  <% if alert %>
+    <div class="rounded-sm border border-danger bg-deep px-5 py-2 text-danger" role="alert" data-controller="flash"><%= alert %></div>
+  <% end %>
+</div>

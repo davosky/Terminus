@@ -1,0 +1,33 @@
+it:
+  app:
+    tagline: Applicazione Web per la gestione di Rimborsi Spese e Assenze
+  nav:
+    home: Home
+    menu: Menu
+    sign_out: Esci
+  pundit:
+    not_authorized: Non sei autorizzato a eseguire questa azione.
+  activerecord:
+    models:
+      user:
+        one: Utente
+        other: Utenti
+    attributes:
+      user:
+        user_code: Codice Utente
+        username: Nome Utente
+        email: E-Mail
+        password: Password
+        first_name: Nome
+        last_name: Cognome
+        gender: Genere
+        region: Regione
+        province: Provincia
+        institute: Istituto
+        office: Ufficio
+        category: Categoria
+        admin: Amministratore
+        manager: Direttore
+        payroll: Ufficio Paghe
+        regular: Dipendente
+        reimbursement_request: Richiesta Rimborsi Obbligatoria

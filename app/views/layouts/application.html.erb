@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title><%= content_for(:title) || "Terminus" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Terminus">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= yield :head %>
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body class="min-h-dvh flex flex-col bg-base text-base text-ink font-sans italic font-medium">
+    <%= render "shared/navbar" if user_signed_in? %>
+    <main class="flex-1 flex flex-col items-center justify-center gap-8 px-5 py-8">
+      <%= yield %>
+    </main>
+  </body>
+</html>

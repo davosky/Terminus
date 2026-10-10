@@ -1,0 +1,19 @@
+<nav class="flex items-center gap-8 bg-deep px-5 h-13">
+  <%= link_to root_path, class: "text-ink", aria: { label: "Terminus" } do %>
+    <%= image_tag("navbar/navbar-logo.svg", class: "img-fluid", size: "106x38", alt:"main-logo") %>
+  <% end %>
+  <%= link_to t("nav.home"), root_path, class: "hover:text-accent" %>
+  <span class="ml-auto hidden sm:flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="size-5 fill-current" aria-hidden="true"><path d="M 8,8 A 3,3 0 1 0 8,2 3,3 0 0 0 8,8 m 2,-3 a 2,2 0 1 1 -4,0 2,2 0 0 1 4,0 m 4,8 c 0,1 -1,1 -1,1 H 3 c 0,0 -1,0 -1,-1 0,-1 1,-4 6,-4 5,0 6,3 6,4 M 13,12.996 C 12.999,12.75 12.846,12.01 12.168,11.332 11.516,10.68 10.289,10 8,10 5.711,10 4.484,10.68 3.832,11.332 3.154,12.01 3.002,12.75 3,12.996 Z"/></svg>
+    <%= current_user.full_name %>
+  </span>
+  <details class="relative ml-auto sm:ml-0">
+    <summary class="list-none cursor-pointer p-2 hover:text-accent" aria-label="<%= t("nav.menu") %>">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="size-5 fill-current" aria-hidden="true"><path d="M1 3h14v1.6H1zM1 7.2h14v1.6H1zM1 11.4h14V13H1z"/></svg>
+    </summary>
+    <div class="absolute right-0 z-10 mt-2 min-w-55 rounded-lg border border-line bg-deep p-3 flex flex-col gap-3">
+      <span class="sm:hidden text-muted"><%= current_user.full_name %></span>
+      <%= button_to t("nav.sign_out"), destroy_user_session_path, method: :delete, class: "w-full text-left cursor-pointer hover:text-accent" %>
+    </div>
+  </details>
+</nav>

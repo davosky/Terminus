@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/BarlowCondensed-MediumItalic.ttf") format("truetype");
+}
+
+/* Palette: dark, warm, low glare. Change the colours here only. */
+@theme {
+  --font-sans: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+
+  --color-base: #2b2622;        /* page background */
+  --color-deep: #171311;        /* navbar, icon boxes */
+  --color-field: #40382f;       /* inputs */
+  --color-line: #6e6052;        /* borders */
+  --color-ink: #f0e6d8;         /* main text */
+  --color-muted: #b8a995;       /* secondary text */
+  --color-accent: #e0a458;      /* focus, primary action */
+  --color-danger: #e98b6d;
+
+  /* Golden ratio type scale */
+  --text-base: 1.125rem;
+  --text-lg: 1.82rem;
+  --text-xl: 2.945rem;
+}
+
+/* Spacing follows Fibonacci multiples of 0.25rem: 1 2 3 5 8 13 21 34 */

@@ -22,9 +22,17 @@
   --color-danger: #e98b6d;
 
   /* Golden ratio type scale */
-  --text-base: 1.125rem;
-  --text-lg: 1.82rem;
-  --text-xl: 2.945rem;
+  --text-base: 1.294rem;
+  --text-nav: 1.423rem;         /* navbar: base + 10% */
+  --text-control: 1.423rem;     /* inputs, selects, buttons: base + 10% */
+  --text-lg: 2.093rem;
+  --text-xl: 3.387rem;
 }
 
 /* Spacing follows Fibonacci multiples of 0.25rem: 1 2 3 5 8 13 21 34 */
+
+@layer base {
+  input, select, button {
+    font-size: var(--text-control);
+  }
+}

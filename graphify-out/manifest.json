@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/README.md": {
-    "mtime": 1791646201.1638885,
-    "ast_hash": "c72928b76b67085ed41b1202ed618f4f",
+    "mtime": 1791646404.4776602,
+    "ast_hash": "c51e70275d1318a735f4df93724a9297",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/CLAUDE.md": {
@@ -415,8 +415,13 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/LICENCE.md": {
-    "mtime": 1784181188.2680452,
-    "ast_hash": "d10a857a3817b9a710c2c7f360bd3e78",
+    "mtime": 1791646439.0205479,
+    "ast_hash": "38789cd20241d4079018bbe93349c06f",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/vendor/assets/stylesheets/fontawesome/LICENSE.txt": {
+    "mtime": 1791646912.2273824,
+    "ast_hash": "f36af1c24ccf20e8805e40b6da8842b9",
     "semantic_hash": ""
   }
 }

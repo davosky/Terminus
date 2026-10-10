@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/routes.rb": {
-    "mtime": 1791645868.5957694,
-    "ast_hash": "6c044978498356fa0de6be089b15ecef",
+    "mtime": 1791646267.3666136,
+    "ast_hash": "ebd794a10eff01f29c94f7eb08b1dfce",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/importmap.rb": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/application.rb": {
-    "mtime": 1791629819.5623572,
-    "ast_hash": "bff1a70dd25d517642c943f0d923e8fa",
+    "mtime": 1791646267.351699,
+    "ast_hash": "159ed9b2b9e32207bc247cab9db1af0c",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/puma.rb": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/rails_helper.rb": {
-    "mtime": 1791629872.6492517,
-    "ast_hash": "560b03181852a9b72977e29d19e379c7",
+    "mtime": 1791646267.3665485,
+    "ast_hash": "015dc28c1c4f54f65357a487066e60ca",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/requests/home_spec.rb": {
@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/README.md": {
-    "mtime": 1791629717.2854538,
-    "ast_hash": "c53b9907999d92eabaf1a2004cac7cb6",
+    "mtime": 1791646201.1638885,
+    "ast_hash": "c72928b76b67085ed41b1202ed618f4f",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/CLAUDE.md": {
@@ -345,8 +345,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/.github/workflows/ci.yml": {
-    "mtime": 1791629717.3054543,
-    "ast_hash": "9312acca3cbb7b97087d6b72f8bc71c9",
+    "mtime": 1791646267.366649,
+    "ast_hash": "b1ffbbdd3a4540e5a3559eaf3ec2806c",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/public/icon.svg": {
@@ -412,6 +412,11 @@
   "/home/davo/Programmazione/Terminus/app/assets/images/navbar/navbar-logo.svg": {
     "mtime": 1791645519.8015883,
     "ast_hash": "31139633839cc8e97101957418484d39",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/LICENCE.md": {
+    "mtime": 1784181188.2680452,
+    "ast_hash": "d10a857a3817b9a710c2c7f360bd3e78",
     "semantic_hash": ""
   }
 }

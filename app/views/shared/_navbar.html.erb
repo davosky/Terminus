@@ -1,6 +1,6 @@
 <nav class="flex items-center gap-8 bg-deep px-5 h-13">
   <%= link_to root_path, class: "text-ink", aria: { label: "Terminus" } do %>
-    <%= image_tag("navbar/navbar-logo.svg", class: "img-fluid", size: "106x38", alt:"main-logo") %>
+    <%= image_tag("navbar/navbar-logo.svg", size: "106x38", alt:"main-logo") %>
   <% end %>
   <%= link_to t("nav.home"), root_path, class: "hover:text-accent" %>
   <span class="ml-auto hidden sm:flex items-center gap-2">

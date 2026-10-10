@@ -61,7 +61,7 @@
       "label": "Application",
       "file_type": "code",
       "source_file": "config/application.rb",
-      "source_location": "L22",
+      "source_location": "L20",
       "id": "config_application_application",
       "community": 19,
       "norm_label": "application"
@@ -191,15 +191,6 @@
       "id": "spec_factories_users_rb",
       "community": 41,
       "norm_label": "users.rb"
-    },
-    {
-      "label": "service-worker.js",
-      "file_type": "code",
-      "source_file": "app/views/pwa/service-worker.js",
-      "source_location": "L1",
-      "id": "app_views_pwa_service_worker_js",
-      "community": 42,
-      "norm_label": "service-worker.js"
     },
     {
       "label": "application_policy.rb",
@@ -607,13 +598,94 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "README",
+      "label": "Terminus",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "id": "terminus_readme_readme",
+      "id": "terminus_readme_terminus",
       "community": 22,
-      "norm_label": "readme"
+      "norm_label": "terminus"
+    },
+    {
+      "label": "Stack tecnico",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "id": "terminus_readme_stack_tecnico",
+      "community": 22,
+      "norm_label": "stack tecnico"
+    },
+    {
+      "label": "Avvio del progetto",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "id": "terminus_readme_avvio_del_progetto",
+      "community": 22,
+      "norm_label": "avvio del progetto"
+    },
+    {
+      "label": "code:bash (bin/setup   # setup iniziale (dipendenze, database))",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "id": "terminus_readme_codeblock_1",
+      "community": 22,
+      "norm_label": "code:bash (bin/setup   # setup iniziale (dipendenze, database))"
+    },
+    {
+      "label": "Licenza",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "id": "terminus_readme_licenza",
+      "community": 22,
+      "norm_label": "licenza"
+    },
+    {
+      "label": "LICENCE.md",
+      "file_type": "document",
+      "source_file": "LICENCE.md",
+      "source_location": "L1",
+      "id": "licence_md",
+      "community": 51,
+      "norm_label": "licence.md"
+    },
+    {
+      "label": "Copyright (c) 2026",
+      "file_type": "document",
+      "source_file": "LICENCE.md",
+      "source_location": "L1",
+      "id": "terminus_licence_copyright_c_2026",
+      "community": 51,
+      "norm_label": "copyright (c) 2026"
+    },
+    {
+      "label": "Davo Davosky - The Davosky Connection",
+      "file_type": "document",
+      "source_file": "LICENCE.md",
+      "source_location": "L3",
+      "id": "terminus_licence_davo_davosky_the_davosky_connection",
+      "community": 51,
+      "norm_label": "davo davosky - the davosky connection"
+    },
+    {
+      "label": "Italiano",
+      "file_type": "document",
+      "source_file": "LICENCE.md",
+      "source_location": "L7",
+      "id": "terminus_licence_italiano",
+      "community": 51,
+      "norm_label": "italiano"
+    },
+    {
+      "label": "English",
+      "file_type": "document",
+      "source_file": "LICENCE.md",
+      "source_location": "L21",
+      "id": "terminus_licence_english",
+      "community": 51,
+      "norm_label": "english"
     },
     {
       "label": "CLAUDE.md",
@@ -1399,85 +1471,103 @@
       "norm_label": "\ud83d\uddc3\ufe0f applicazione"
     },
     {
+      "label": "service-worker.js",
+      "file_type": "code",
+      "source_file": "app/views/pwa/service-worker.js",
+      "source_location": "L1",
+      "community": 42,
+      "norm_label": "service-worker.js",
+      "id": "app_views_pwa_service_worker_js"
+    },
+    {
+      "label": "README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "community": 22,
+      "norm_label": "readme",
+      "id": "terminus_readme_readme"
+    },
+    {
       "label": "TERMINUS.md",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L1",
-      "id": "ai_terminus_md",
       "community": 10,
-      "norm_label": "terminus.md"
+      "norm_label": "terminus.md",
+      "id": "ai_terminus_md"
     },
     {
       "label": "Terminus",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L1",
-      "id": "ai_terminus_terminus",
       "community": 10,
-      "norm_label": "terminus"
+      "norm_label": "terminus",
+      "id": "ai_terminus_terminus"
     },
     {
       "label": "Applicazione WEB scritta in Ruby On Rails per gestire rimborsi spese ed assenze",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L3",
-      "id": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
       "community": 10,
-      "norm_label": "applicazione web scritta in ruby on rails per gestire rimborsi spese ed assenze"
+      "norm_label": "applicazione web scritta in ruby on rails per gestire rimborsi spese ed assenze",
+      "id": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze"
     },
     {
       "label": "Logica dell'applicazione",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L5",
-      "id": "ai_terminus_logica_dell_applicazione",
       "community": 10,
-      "norm_label": "logica dell'applicazione"
+      "norm_label": "logica dell'applicazione",
+      "id": "ai_terminus_logica_dell_applicazione"
     },
     {
       "label": "Struttura di User",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L21",
-      "id": "ai_terminus_struttura_di_user",
       "community": 10,
-      "norm_label": "struttura di user"
+      "norm_label": "struttura di user",
+      "id": "ai_terminus_struttura_di_user"
     },
     {
       "label": "Interfaccia",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L42",
-      "id": "ai_terminus_interfaccia",
       "community": 10,
-      "norm_label": "interfaccia"
+      "norm_label": "interfaccia",
+      "id": "ai_terminus_interfaccia"
     },
     {
       "label": "Proporzioni",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L50",
-      "id": "ai_terminus_proporzioni",
       "community": 10,
-      "norm_label": "proporzioni"
+      "norm_label": "proporzioni",
+      "id": "ai_terminus_proporzioni"
     },
     {
       "label": "Controllo visuale",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L72",
-      "id": "ai_terminus_controllo_visuale",
       "community": 10,
-      "norm_label": "controllo visuale"
+      "norm_label": "controllo visuale",
+      "id": "ai_terminus_controllo_visuale"
     },
     {
       "label": "Database",
       "file_type": "document",
       "source_file": "AI/TERMINUS.md",
       "source_location": "L76",
-      "id": "ai_terminus_database",
       "community": 10,
-      "norm_label": "database"
+      "norm_label": "database",
+      "id": "ai_terminus_database"
     },
     {
       "label": "hello_controller.js",
@@ -1738,9 +1828,9 @@
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_javascript_controllers_flash_controller_js",
-      "target": "controllers_flash_controller_connect",
-      "confidence_score": 1.0
+      "target": "controllers_flash_controller_connect"
     },
     {
       "relation": "contains",
@@ -1748,9 +1838,9 @@
       "source_file": "app/javascript/controllers/flash_controller.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_javascript_controllers_flash_controller_js",
-      "target": "controllers_flash_controller_disconnect",
-      "confidence_score": 1.0
+      "target": "controllers_flash_controller_disconnect"
     },
     {
       "relation": "contains",
@@ -1878,9 +1968,99 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "source": "readme_md",
+      "target": "terminus_readme_terminus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_md",
       "target": "terminus_readme_readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "terminus_readme_terminus",
+      "target": "terminus_readme_stack_tecnico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "terminus_readme_terminus",
+      "target": "terminus_readme_avvio_del_progetto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "terminus_readme_terminus",
+      "target": "terminus_readme_licenza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "terminus_readme_avvio_del_progetto",
+      "target": "terminus_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LICENCE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "licence_md",
+      "target": "terminus_licence_copyright_c_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LICENCE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "licence_md",
+      "target": "terminus_licence_davo_davosky_the_davosky_connection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LICENCE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "terminus_licence_davo_davosky_the_davosky_connection",
+      "target": "terminus_licence_italiano",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LICENCE.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "terminus_licence_davo_davosky_the_davosky_connection",
+      "target": "terminus_licence_english",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2748,9 +2928,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_md",
-      "target": "ai_terminus_terminus",
-      "confidence_score": 1.0
+      "target": "ai_terminus_terminus"
     },
     {
       "relation": "contains",
@@ -2758,9 +2938,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_terminus",
-      "target": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
-      "confidence_score": 1.0
+      "target": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze"
     },
     {
       "relation": "contains",
@@ -2768,9 +2948,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
-      "target": "ai_terminus_logica_dell_applicazione",
-      "confidence_score": 1.0
+      "target": "ai_terminus_logica_dell_applicazione"
     },
     {
       "relation": "contains",
@@ -2778,9 +2958,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
-      "target": "ai_terminus_struttura_di_user",
-      "confidence_score": 1.0
+      "target": "ai_terminus_struttura_di_user"
     },
     {
       "relation": "contains",
@@ -2788,9 +2968,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_applicazione_web_scritta_in_ruby_on_rails_per_gestire_rimborsi_spese_ed_assenze",
-      "target": "ai_terminus_interfaccia",
-      "confidence_score": 1.0
+      "target": "ai_terminus_interfaccia"
     },
     {
       "relation": "contains",
@@ -2798,9 +2978,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_interfaccia",
-      "target": "ai_terminus_proporzioni",
-      "confidence_score": 1.0
+      "target": "ai_terminus_proporzioni"
     },
     {
       "relation": "contains",
@@ -2808,9 +2988,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_interfaccia",
-      "target": "ai_terminus_controllo_visuale",
-      "confidence_score": 1.0
+      "target": "ai_terminus_controllo_visuale"
     },
     {
       "relation": "contains",
@@ -2818,9 +2998,9 @@
       "source_file": "AI/TERMINUS.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ai_terminus_interfaccia",
-      "target": "ai_terminus_database",
-      "confidence_score": 1.0
+      "target": "ai_terminus_database"
     },
     {
       "relation": "contains",
@@ -2913,5 +3093,6 @@
       "target": "terminus_terminus_database"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "f5ae3c363c0f60a6f3e34e0b1bee1ec31e2dec41"
 }

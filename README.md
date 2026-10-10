@@ -1,24 +1,37 @@
-# README
+# Terminus
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Terminus è un'applicazione Web Gestionale  
+che gestisce:
 
-Things you may want to cover:
+- Rimborsi Spese
+- Richieste Rimborsi Spese
+- Assenze
+  - Ferie
+  - Richieste Ferie
+  - Ferie Orarie
+  - Richiesta Ferie Orarie
+  - Permessi
+  - Richiesta Permessi
+  - Malattia
 
-* Ruby version
+## Stack tecnico
 
-* System dependencies
+- Ruby on Rails 8, PostgreSQL
+- Hotwire (Turbo + Stimulus), Tailwind.css
+- Devise (autenticazione via username) e Pundit (autorizzazione)
+- RSpec, FactoryBot e Capybara per i test
 
-* Configuration
+## Avvio del progetto
 
-* Database creation
+```bash
+bin/setup   # setup iniziale (dipendenze, database)
+bin/dev     # avvia Rails, il watcher JS (esbuild) e quello CSS (Sass)
+```
 
-* Database initialization
+L'applicazione richiede le variabili d'ambiente `DATABASE_HOST`,
+`DATABASE_USER`, `DATABASE_PASSWORD` e `SECRET_KEY_BASE` (vedi `.env`,
+gestite tramite `dotenv-rails`).
 
-* How to run the test suite
+## Licenza
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Distribuito sotto licenza MIT. Vedi [LICENCE.md](LICENCE.md).

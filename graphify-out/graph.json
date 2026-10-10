@@ -121,6 +121,15 @@
       "norm_label": "content_security_policy.rb"
     },
     {
+      "label": "madmin.rb",
+      "file_type": "code",
+      "source_file": "config/initializers/madmin.rb",
+      "source_location": "L1",
+      "id": "config_initializers_madmin_rb",
+      "community": 55,
+      "norm_label": "madmin.rb"
+    },
+    {
       "label": "filter_parameter_logging.rb",
       "file_type": "code",
       "source_file": "config/initializers/filter_parameter_logging.rb",
@@ -148,6 +157,15 @@
       "norm_label": "inflections.rb"
     },
     {
+      "label": "madmin.rb",
+      "file_type": "code",
+      "source_file": "config/routes/madmin.rb",
+      "source_location": "L1",
+      "id": "config_routes_madmin_rb",
+      "community": 54,
+      "norm_label": "madmin.rb"
+    },
+    {
       "label": "spec_helper.rb",
       "file_type": "code",
       "source_file": "spec/spec_helper.rb",
@@ -164,6 +182,24 @@
       "id": "spec_rails_helper_rb",
       "community": 38,
       "norm_label": "rails_helper.rb"
+    },
+    {
+      "label": "madmin_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/requests/madmin_spec.rb",
+      "source_location": "L1",
+      "id": "spec_requests_madmin_spec_rb",
+      "community": 53,
+      "norm_label": "madmin_spec.rb"
+    },
+    {
+      "label": "sign_in_as()",
+      "file_type": "code",
+      "source_file": "spec/requests/madmin_spec.rb",
+      "source_location": "L7",
+      "id": "requests_madmin_spec_sign_in_as",
+      "community": 53,
+      "norm_label": "sign_in_as()"
     },
     {
       "label": "home_spec.rb",
@@ -481,6 +517,60 @@
       "norm_label": ".user_not_authorized()"
     },
     {
+      "label": "application_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/application_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_madmin_application_controller_rb",
+      "community": 6,
+      "norm_label": "application_controller.rb"
+    },
+    {
+      "label": "ApplicationController",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/application_controller.rb",
+      "source_location": "L2",
+      "id": "madmin_application_controller_applicationcontroller",
+      "community": 6,
+      "norm_label": "applicationcontroller"
+    },
+    {
+      "label": ".require_admin()",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/application_controller.rb",
+      "source_location": "L8",
+      "id": "madmin_application_controller_applicationcontroller_require_admin",
+      "community": 6,
+      "norm_label": ".require_admin()"
+    },
+    {
+      "label": "users_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_madmin_users_controller_rb",
+      "community": 52,
+      "norm_label": "users_controller.rb"
+    },
+    {
+      "label": "UsersController",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L2",
+      "id": "madmin_users_controller_userscontroller",
+      "community": 52,
+      "norm_label": "userscontroller"
+    },
+    {
+      "label": ".resource_params()",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L6",
+      "id": "madmin_users_controller_userscontroller_resource_params",
+      "community": 52,
+      "norm_label": ".resource_params()"
+    },
+    {
       "label": "application_job.rb",
       "file_type": "code",
       "source_file": "app/jobs/application_job.rb",
@@ -515,6 +605,33 @@
       "id": "mailers_application_mailer_applicationmailer",
       "community": 21,
       "norm_label": "applicationmailer"
+    },
+    {
+      "label": "user_resource.rb",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/user_resource.rb",
+      "source_location": "L1",
+      "id": "app_madmin_resources_user_resource_rb",
+      "community": 14,
+      "norm_label": "user_resource.rb"
+    },
+    {
+      "label": "UserResource",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/user_resource.rb",
+      "source_location": "L1",
+      "id": "resources_user_resource_userresource",
+      "community": 14,
+      "norm_label": "userresource"
+    },
+    {
+      "label": ".display_name()",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/user_resource.rb",
+      "source_location": "L25",
+      "id": "resources_user_resource_userresource_display_name",
+      "community": 14,
+      "norm_label": ".display_name()"
     },
     {
       "label": "cable_schema.rb",
@@ -1107,7 +1224,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L426",
       "id": "terminus_claude_3_gestione_sicura_di_segreti_credenziali_e_dati_di_configurazione_sensibili",
-      "community": 6,
+      "community": 1,
       "norm_label": "3. gestione sicura di segreti, credenziali e dati di configurazione sensibili"
     },
     {
@@ -1116,7 +1233,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L436",
       "id": "terminus_claude_codeblock_16",
-      "community": 6,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -1125,7 +1242,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L448",
       "id": "terminus_claude_codeblock_17",
-      "community": 6,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -1134,7 +1251,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L457",
       "id": "terminus_claude_codeblock_18",
-      "community": 6,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -1143,7 +1260,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L469",
       "id": "terminus_claude_codeblock_19",
-      "community": 6,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -1683,6 +1800,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/requests/madmin_spec.rb",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_requests_madmin_spec_rb",
+      "target": "requests_madmin_spec_sign_in_as"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/policies/application_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
@@ -1883,6 +2010,17 @@
       "target": "models_user_user_full_name"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/madmin/resources/user_resource.rb",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "resources_user_resource_userresource_display_name",
+      "target": "models_user_user_full_name"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/controllers/home_controller.rb",
@@ -1925,6 +2063,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/application_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_controllers_madmin_application_controller_rb",
+      "target": "madmin_application_controller_applicationcontroller"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/application_controller.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "madmin_application_controller_applicationcontroller",
+      "target": "madmin_application_controller_applicationcontroller_require_admin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_controllers_madmin_users_controller_rb",
+      "target": "madmin_users_controller_userscontroller"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/users_controller.rb",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "madmin_users_controller_userscontroller",
+      "target": "madmin_users_controller_userscontroller_resource_params"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/jobs/application_job.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -1941,6 +2119,26 @@
       "confidence_score": 1.0,
       "source": "app_mailers_application_mailer_rb",
       "target": "mailers_application_mailer_applicationmailer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/user_resource.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_madmin_resources_user_resource_rb",
+      "target": "resources_user_resource_userresource"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/user_resource.rb",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "resources_user_resource_userresource",
+      "target": "resources_user_resource_userresource_display_name"
     },
     {
       "relation": "contains",
@@ -3094,5 +3292,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7dde0d0c32c928376821408408e94fd190626640"
+  "built_at_commit": "802983d3d409c98909d355d1e8049bd3d9eb6104"
 }

@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-10-10)
 
 ## Corpus Check
-- 54 files · ~19,866 words
+- 60 files · ~20,514 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 185 nodes · 142 edges · 52 communities (42 shown, 10 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 198 nodes · 150 edges · 56 communities (44 shown, 12 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7dde0d0c`
+- Built from commit: `802983d3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,6 +37,7 @@
 - [[_COMMUNITY_Community 21|Community 21]]
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — Guida per Claude Code` - 25 edges
@@ -53,15 +54,15 @@
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (52 total, 10 thin omitted)
+## Communities (56 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
 Nodes (31): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Modifiche chirurgiche, 4. Esecuzione orientata all'obiettivo, ❌ Anti-Pattern da Evitare, 🗃️ Applicazione, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza (+23 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.10
-Nodes (21): 1. Protezione dall'SQL Injection, 2. Mitigazione del Cross-Site Scripting (XSS), 4. Corretta Gestione delle Sessioni e Cookie Sicuri, 5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF), 6. Upload di File Sicuri e Gestione degli Allegati, 8. Monitoraggio e Audit di Sicurezza Continui, Best Practice di Sicurezza Chiave in Ruby on Rails, code:ruby (+13 more)
+Cohesion: 0.08
+Nodes (26): 1. Protezione dall'SQL Injection, 2. Mitigazione del Cross-Site Scripting (XSS), 3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili, 4. Corretta Gestione delle Sessioni e Cookie Sicuri, 5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF), 6. Upload di File Sicuri e Gestione degli Allegati, 8. Monitoraggio e Audit di Sicurezza Continui, Best Practice di Sicurezza Chiave in Ruby on Rails (+18 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.22
@@ -74,10 +75,6 @@ Nodes (7): 7. Autenticazione e Autorizzazione Robuste, code:ruby, code:ruby, cod
 ### Community 5 - "Community 5"
 Cohesion: 0.29
 Nodes (7): Approfondimento: bundler-audit, code:ruby, code:bash, code:ruby, code:ruby, code:ruby, Installazione e Utilizzo bundler-audit
-
-### Community 6 - "Community 6"
-Cohesion: 0.40
-Nodes (5): 3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili, code:ruby, code:ruby, code:ruby, code:ruby
 
 ### Community 7 - "Community 7"
 Cohesion: 0.40
@@ -106,20 +103,20 @@ Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, I
 ## Knowledge Gaps
 - **81 isolated node(s):** `Application`, `application`, `ApplicationRecord`, `ApplicationJob`, `ApplicationMailer` (+76 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 0` to `Community 1`, `Community 5`, `Community 7`, `Community 8`, `Community 9`?**
-  _High betweenness centrality (0.182) - this node is a cross-community bridge._
-- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 1` to `Community 0`, `Community 4`, `Community 6`?**
-  _High betweenness centrality (0.129) - this node is a cross-community bridge._
+  _High betweenness centrality (0.159) - this node is a cross-community bridge._
+- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 1` to `Community 0`, `Community 4`?**
+  _High betweenness centrality (0.112) - this node is a cross-community bridge._
 - **Why does `7. Autenticazione e Autorizzazione Robuste` connect `Community 4` to `Community 1`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **What connects `Application`, `application`, `ApplicationRecord` to the rest of the system?**
   _81 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.0625 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._

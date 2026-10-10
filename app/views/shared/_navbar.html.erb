@@ -13,6 +13,11 @@
     </summary>
     <div class="absolute right-0 z-10 mt-2 min-w-55 rounded-lg border border-line bg-deep p-3 flex flex-col gap-3">
       <span class="sm:hidden text-muted"><%= current_user.full_name %></span>
+      <% if current_user.admin? %>
+        <%= link_to madmin_root_path, class: "hover:text-accent" do %>
+          <i class="fa-solid fa-gear mr-2"></i><%= t("nav.admin") %>
+        <% end %>
+      <% end %>
       <%= button_to destroy_user_session_path, method: :delete, class: "w-full text-left cursor-pointer hover:text-accent" do %>
         <i class="fa-solid fa-door-open mr-2"></i><%= t("nav.sign_out") %>
       <% end %>

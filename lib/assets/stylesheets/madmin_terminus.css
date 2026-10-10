@@ -1,0 +1,76 @@
+/*
+ * Terminus look for the Madmin admin area. Loaded after Madmin's own CSS
+ * (see config/initializers/madmin.rb).
+ * ponytail: the palette and type values are copied from
+ * app/assets/tailwind/application.css; change them in both files.
+ */
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/BarlowCondensed-MediumItalic.ttf") format("truetype");
+}
+
+:root {
+  color-scheme: dark;
+
+  --primary-color: #e0a458;      /* accent */
+  --link-color: #e0a458;
+  --border-color: #6e6052;       /* line */
+  --input-border-color: #6e6052;
+  --surface-color: #2b2622;      /* base */
+  --background-color: #171311;   /* deep */
+  --hover-color: #40382f;        /* field */
+  --text-color: #f0e6d8;         /* ink */
+  --light-text-color: #b8a995;   /* muted */
+  --danger-color: #e98b6d;
+
+  /* Madmin sizes everything in rem: scaling the root keeps its proportions */
+  font-size: 129.4%;
+  font-family: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+body {
+  font-size: 1rem;
+}
+
+#navbar {
+  background-color: var(--background-color);
+}
+
+/* Dark text on the accent colour, as on the application's primary button */
+.btn.btn-primary,
+.filters-count,
+.pagination .pages a[aria-current="page"] {
+  color: var(--background-color);
+}
+
+[type="checkbox"],
+[type="radio"] {
+  accent-color: var(--primary-color);
+}
+
+.filter-chip {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
+
+.alert.alert-notice {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.alert.alert-danger {
+  background-color: var(--background-color);
+  color: var(--danger-color);
+}
+
+/* Inputs use the application's field colour */
+input:not([type="checkbox"], [type="radio"], [type="hidden"], [type="submit"]),
+select,
+textarea {
+  background-color: var(--hover-color);
+}

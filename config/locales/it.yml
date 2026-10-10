@@ -2,6 +2,7 @@ it:
   app:
     tagline: Applicazione Web per la gestione di Rimborsi Spese e Assenze
   nav:
+    admin: Amministrazione
     home: Home
     menu: Menu
     sign_out: Esci

@@ -1,0 +1,89 @@
+it:
+  madmin:
+    layout:
+      open_menu: Apri menu
+      admin_suffix: Amministrazione
+    navigation:
+      dashboard: Pannello
+      github: Madmin su GitHub
+    dashboard:
+      title: Pannello di amministrazione
+      hint_html: Crea <code>app/views/madmin/dashboard/show.html.erb</code> per personalizzare il pannello.
+    actions:
+      all: Tutti
+      view: Visualizza
+      edit: Modifica
+      delete: Elimina
+      new: Nuovo
+      remove: Rimuovi
+      cancel: Annulla
+    search:
+      placeholder: Cerca
+    titles:
+      new: "Nuovo: %{name}"
+      edit: "Modifica: %{name}"
+    form:
+      errors:
+        one: C'è 1 errore nei dati inseriti
+        other: Ci sono %{count} errori nei dati inseriti
+    flash:
+      readonly: "%{name} è in sola lettura"
+      destroy_failed: "Impossibile eliminare %{name}"
+      destroy_restricted: "Impossibile eliminare %{name}: altri dati dipendono da questo elemento"
+    confirmations:
+      delete: Sei sicuro?
+      remove_with_changes: Sei sicuro? Perderai le altre modifiche.
+    nested_form:
+      add_new: "+ Aggiungi"
+    fields:
+      attachment:
+        one: "%{count} allegato"
+        other: "%{count} allegati"
+    missing_resource:
+      message: "%{resource} non esiste."
+      create_hint: "Crealo eseguendo:"
+    pagination:
+      label: Paginazione
+      previous: Precedente
+      next: Successivo
+      info: "Elementi %{from}-%{to} di %{count}"
+      empty: Nessun elemento trovato
+      per_page: Per pagina
+    filters:
+      button: "Filtri"
+      heading: "Mostra gli elementi in cui"
+      add: "+ Aggiungi filtro"
+      apply: "Applica"
+      clear_all: "Rimuovi filtri"
+      remove: "Rimuovi filtro"
+      column: "Colonna"
+      operator: "Condizione"
+      value: "Valore"
+      operators:
+        string:
+          contains: "contiene"
+          eq: "è"
+          starts_with: "inizia con"
+          blank: "è vuoto"
+          present: "non è vuoto"
+        number:
+          eq: "="
+          gt: ">"
+          gte: "≥"
+          lt: "<"
+          lte: "≤"
+          blank: "è vuoto"
+        date:
+          eq: "il"
+          gte: "dal"
+          lte: "fino al"
+          blank: "è vuoto"
+        datetime:
+          gte: "dopo"
+          lte: "prima di"
+          blank: "è vuoto"
+        boolean:
+          "true": "è vero"
+          "false": "è falso"
+        array:
+          includes: "include"

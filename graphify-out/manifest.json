@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/routes.rb": {
-    "mtime": 1791646267.3666136,
-    "ast_hash": "ebd794a10eff01f29c94f7eb08b1dfce",
+    "mtime": 1791649414.8817806,
+    "ast_hash": "c104a9cc0f2fdb51cd1a9fd4de54ca69",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/importmap.rb": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/locales/it.yml": {
-    "mtime": 1791629872.6329784,
-    "ast_hash": "f8fc194a54300b22d70d034c66b8fb75",
+    "mtime": 1791649771.844882,
+    "ast_hash": "ff3589eded476981884198ae0e9caf64",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/public/400.html": {
@@ -422,6 +422,41 @@
   "/home/davo/Programmazione/Terminus/vendor/assets/stylesheets/fontawesome/LICENSE.txt": {
     "mtime": 1791646912.2273824,
     "ast_hash": "f36af1c24ccf20e8805e40b6da8842b9",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/config/routes/madmin.rb": {
+    "mtime": 1791649414.9183788,
+    "ast_hash": "05a468315adc5c9a3c5191a423a9549d",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/spec/requests/madmin_spec.rb": {
+    "mtime": 1791650141.3205976,
+    "ast_hash": "03c53f94925e689e7de32a0e69d033b6",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/controllers/madmin/application_controller.rb": {
+    "mtime": 1791649455.7497642,
+    "ast_hash": "dbd02f2b07b23421ddbf9543258a3d49",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/controllers/madmin/users_controller.rb": {
+    "mtime": 1791649455.7513268,
+    "ast_hash": "0f507f5eaa00a3b52e312642f03cf184",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/madmin/resources/user_resource.rb": {
+    "mtime": 1791650406.4453266,
+    "ast_hash": "183629f66a8ada5c8fe4b2d1647b86d3",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/config/locales/madmin.it.yml": {
+    "mtime": 1791649455.7642663,
+    "ast_hash": "224164db9aa0d8eb83b529f4119f3f00",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/config/initializers/madmin.rb": {
+    "mtime": 1791649970.0720763,
+    "ast_hash": "3cec05e3255cea23665ed0b2a191769d",
     "semantic_hash": ""
   }
 }

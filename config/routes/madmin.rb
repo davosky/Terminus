@@ -2,5 +2,6 @@
 namespace :madmin do
   resources :transports
   resources :users
+  resources :vehicles
   root to: "dashboard#show"
 end

@@ -1,0 +1,13 @@
+<%= render layout: "shared/modal", locals: { icon: "vehicles/vehicles_destroy.svg", title: t(".title"), back: vehicles_path } do %>
+  <div class="w-full flex flex-col gap-5">
+    <p class="alert-box" role="alert">
+      <i class="fa-solid fa-triangle-exclamation text-lg" aria-hidden="true"></i><%= t("vehicles.confirm_destroy.warning", name: @vehicle.full_name) %>
+    </p>
+    <div class="w-full max-w-89 self-center flex justify-between">
+      <%= render "shared/back_button", label: t("modal.cancel"), path: vehicles_path %>
+      <%= button_to vehicle_path(@vehicle), method: :delete, class: "btn btn-danger", form: { data: { turbo_frame: "_top" } } do %>
+        <i class="fa-solid fa-trash" aria-hidden="true"></i><%= t("vehicles.confirm_destroy.confirm") %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

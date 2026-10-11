@@ -10,6 +10,10 @@
         <i class="fa-solid fa-truck mr-2"></i>
         <%= t("nav.transports") %>
       <% end %>
+      <%= link_to vehicles_path, class: "hover:text-accent" do %>
+        <i class="fa-solid fa-car mr-2"></i>
+        <%= t("nav.vehicles") %>
+      <% end %>
     </div>
   </details>
   <span class="hidden sm:flex items-center gap-2">

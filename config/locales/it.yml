@@ -8,6 +8,7 @@ it:
     sign_out: Esci
     utility: Utility
     transports: Trasporti
+    vehicles: Veicoli
   modal:
     close: Chiudi
     cancel: Annulla
@@ -39,6 +40,31 @@ it:
       success: Trasporto modificato.
     destroy:
       success: Trasporto eliminato.
+  vehicles:
+    index:
+      title: Veicoli
+      new: Nuovo
+      actions: Azioni
+      show: Visualizza
+      edit: Modifica
+      destroy: Elimina
+      empty: Nessun veicolo presente.
+    new:
+      title: Nuovo Veicolo
+    edit:
+      title: Modifica Veicolo
+    show:
+      title: Veicolo
+    confirm_destroy:
+      title: Elimina Veicolo
+      warning: Stai per eliminare definitivamente il veicolo "%{name}". L'operazione non può essere annullata.
+      confirm: Elimina
+    create:
+      success: Veicolo creato.
+    update:
+      success: Veicolo modificato.
+    destroy:
+      success: Veicolo eliminato.
   pundit:
     not_authorized: Non sei autorizzato a eseguire questa azione.
   attributes:
@@ -52,11 +78,23 @@ it:
       transport:
         one: Trasporto
         other: Trasporti
+      vehicle:
+        one: Veicolo
+        other: Veicoli
     attributes:
       transport:
         transport_name: Trasporto
         transport_position: Posizione
         locked: Predefinito
+        user: Utente
+        user_code: Codice Utente
+      vehicle:
+        producer: Produttore
+        name: Modello
+        licence_plate: Targa
+        power: Alimentazione
+        cost_per_km: Costo al Km
+        position: Posizione
         user: Utente
         user_code: Codice Utente
       user:

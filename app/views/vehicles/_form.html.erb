@@ -1,0 +1,41 @@
+<%= form_with model: vehicle, class: "w-full flex flex-col gap-5 rounded-2xl border border-line p-8", data: { turbo_frame: "_top" } do |f| %>
+  <% if vehicle.errors.any? %>
+    <ul class="rounded-sm border border-danger p-3 text-danger" role="alert">
+      <% vehicle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div class="flex flex-col gap-1">
+      <%= f.label :producer %>
+      <%= f.text_field :producer, required: true, autofocus: true, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :licence_plate %>
+      <%= f.text_field :licence_plate, required: true, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :power %>
+      <%= f.select :power, Vehicle::POWERS, { include_blank: true }, required: true, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :cost_per_km %>
+      <%= f.number_field :cost_per_km, required: true, min: 0, step: 0.01, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :position %>
+      <%= f.number_field :position, required: true, min: 1, step: 1, class: "field" %>
+    </div>
+  </div>
+  <div class="mt-3 flex flex-col-reverse items-center gap-5 sm:flex-row sm:justify-end">
+    <%= render "shared/back_button", label: t("modal.cancel"), path: vehicles_path %>
+    <%= f.button class: "btn btn-primary" do %>
+      <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i><%= t("modal.save") %>
+    <% end %>
+  </div>
+<% end %>

@@ -2,6 +2,7 @@ class User < ApplicationRecord
   GENDERS = %w[M F A].freeze
 
   has_many :transports, foreign_key: :user_code, primary_key: :user_code
+  has_many :vehicles, foreign_key: :user_code, primary_key: :user_code
 
   devise :database_authenticatable, :validatable, :lockable
 

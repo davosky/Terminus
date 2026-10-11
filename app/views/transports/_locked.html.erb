@@ -1,8 +1,8 @@
-<div class="w-full max-w-162 self-center flex flex-col gap-5">
-  <p class="rounded-sm border border-danger p-5 text-danger" role="alert">
-    <i class="fa-solid fa-lock mr-2" aria-hidden="true"></i><%= t("modal.system_record") %>
+<div class="w-full flex flex-col gap-5">
+  <p class="w-full max-w-89 aspect-[1.618] self-center flex flex-col items-center justify-center gap-3 rounded-sm border border-danger p-5 text-center text-danger" role="alert">
+    <i class="fa-solid fa-lock text-lg" aria-hidden="true"></i><%= t("modal.system_record") %>
   </p>
-  <div class="flex justify-end">
+  <div class="flex justify-center">
     <%= render "shared/back_button", label: t("modal.close"), path: transports_path %>
   </div>
 </div>

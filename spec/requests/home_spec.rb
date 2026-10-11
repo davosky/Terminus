@@ -8,6 +8,11 @@ RSpec.describe "Home", type: :request do
       get root_path
       expect(response).to redirect_to(new_user_session_path)
     end
+
+    it "mostra il bottone di accesso con la misura unica .btn" do
+      get new_user_session_path
+      expect(css_select("button").map { |button| button["class"].to_s.split }).to all(include("btn"))
+    end
   end
 
   context "quando l'utente accede con username e password" do

@@ -43,8 +43,9 @@
 }
 
 @layer components {
+  /* Every button is 160x50px (height = width x 0.618 / 2), icon on the left of the label. */
   .btn {
-    @apply inline-flex h-13 items-center justify-center gap-2 rounded-sm px-5 cursor-pointer;
+    @apply inline-flex w-40 h-12.5 shrink-0 items-center justify-center gap-2 rounded-sm whitespace-nowrap cursor-pointer;
     font-size: var(--text-control);
   }
 

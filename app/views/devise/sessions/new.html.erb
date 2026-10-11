@@ -19,8 +19,8 @@
       <%= f.password_field :password, autocomplete: "current-password", required: true, class: "min-w-0 flex-1 bg-transparent px-3 outline-none" %>
     </div>
   </div>
-  <%= f.button class: "mt-3 h-13 rounded-sm bg-accent text-deep cursor-pointer hover:brightness-110" do %>
-    <i class="fa-solid fa-right-to-bracket mr-2" aria-hidden="true"></i>
+  <%= f.button class: "btn btn-primary mt-3 self-center" do %>
+    <i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i>
     <%= t("devise.sessions.new.sign_in") %>
   <% end %>
 <% end %>

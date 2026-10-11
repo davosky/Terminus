@@ -41,6 +41,15 @@ RSpec.describe "Transports", type: :request do
       end
     end
 
+    it "usa la misura unica .btn per tutti i bottoni fuori dalla navbar" do
+      [ new_transport_path, edit_transport_path(transport), confirm_destroy_transport_path(transport) ].each do |path|
+        get path
+        buttons = css_select("button") - css_select("nav button")
+        expect(buttons).not_to be_empty
+        expect(buttons).to all(satisfy { |button| button["class"].to_s.split.include?("btn") })
+      end
+    end
+
     it "crea un trasporto proprio e non protetto" do
       post transports_path, params: { transport: { transport_name: "Taxi", transport_position: 4, locked: true } }
       expect(response).to redirect_to(transports_path)

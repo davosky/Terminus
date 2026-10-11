@@ -16,7 +16,7 @@ it:
   transports:
     index:
       title: Trasporti
-      new: Nuovo Trasporto
+      new: Nuovo
       actions: Azioni
       show: Visualizza
       edit: Modifica

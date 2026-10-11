@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/requests/home_spec.rb": {
-    "mtime": 1791645868.596237,
-    "ast_hash": "a3c2b6b3fcb82b7630a50c9db279454f",
+    "mtime": 1791709204.8813353,
+    "ast_hash": "bd6b0907bf98f29c22bf8852282cd4f9",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/models/user_spec.rb": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/locales/it.yml": {
-    "mtime": 1791654985.225538,
-    "ast_hash": "725d912fa6a7466122c20decd3304b35",
+    "mtime": 1791708361.3359149,
+    "ast_hash": "a2fcd5f766ae7da10eb35e4c4946cedd",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/public/400.html": {
@@ -460,8 +460,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/requests/transports_spec.rb": {
-    "mtime": 1791655002.6893098,
-    "ast_hash": "3e8772d3817376580e9359226b3c12e5",
+    "mtime": 1791709204.8812437,
+    "ast_hash": "741305b773226900418de7d264a7db29",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/services/create_default_transports_spec.rb": {

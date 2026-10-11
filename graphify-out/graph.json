@@ -184,6 +184,24 @@
       "norm_label": "rails_helper.rb"
     },
     {
+      "label": "vehicles_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/requests/vehicles_spec.rb",
+      "source_location": "L1",
+      "id": "spec_requests_vehicles_spec_rb",
+      "community": 73,
+      "norm_label": "vehicles_spec.rb"
+    },
+    {
+      "label": "sign_in_as()",
+      "file_type": "code",
+      "source_file": "spec/requests/vehicles_spec.rb",
+      "source_location": "L12",
+      "id": "requests_vehicles_spec_sign_in_as",
+      "community": 73,
+      "norm_label": "sign_in_as()"
+    },
+    {
       "label": "transports_spec.rb",
       "file_type": "code",
       "source_file": "spec/requests/transports_spec.rb",
@@ -247,6 +265,15 @@
       "norm_label": "user_spec.rb"
     },
     {
+      "label": "vehicle_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/models/vehicle_spec.rb",
+      "source_location": "L1",
+      "id": "spec_models_vehicle_spec_rb",
+      "community": 75,
+      "norm_label": "vehicle_spec.rb"
+    },
+    {
       "label": "transport_spec.rb",
       "file_type": "code",
       "source_file": "spec/models/transport_spec.rb",
@@ -274,6 +301,15 @@
       "norm_label": "transports.rb"
     },
     {
+      "label": "vehicles.rb",
+      "file_type": "code",
+      "source_file": "spec/factories/vehicles.rb",
+      "source_location": "L1",
+      "id": "spec_factories_vehicles_rb",
+      "community": 74,
+      "norm_label": "vehicles.rb"
+    },
+    {
       "label": "transport_policy.rb",
       "file_type": "code",
       "source_file": "app/policies/transport_policy.rb",
@@ -292,75 +328,120 @@
       "norm_label": "transportpolicy"
     },
     {
-      "label": ".show?()",
-      "file_type": "code",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L5",
-      "id": "policies_transport_policy_transportpolicy_show",
-      "community": 57,
-      "norm_label": ".show?()"
-    },
-    {
       "label": ".update?()",
       "file_type": "code",
       "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L9",
+      "source_location": "L5",
       "id": "policies_transport_policy_transportpolicy_update",
       "community": 57,
       "norm_label": ".update?()"
     },
     {
-      "label": ".destroy?()",
-      "file_type": "code",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L13",
-      "id": "policies_transport_policy_transportpolicy_destroy",
-      "community": 57,
-      "norm_label": ".destroy?()"
-    },
-    {
       "label": ".edit?()",
       "file_type": "code",
       "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L18",
+      "source_location": "L10",
       "id": "policies_transport_policy_transportpolicy_edit",
       "community": 57,
       "norm_label": ".edit?()"
     },
     {
+      "label": "vehicle_policy.rb",
+      "file_type": "code",
+      "source_file": "app/policies/vehicle_policy.rb",
+      "source_location": "L1",
+      "id": "app_policies_vehicle_policy_rb",
+      "community": 72,
+      "norm_label": "vehicle_policy.rb"
+    },
+    {
+      "label": "VehiclePolicy",
+      "file_type": "code",
+      "source_file": "app/policies/vehicle_policy.rb",
+      "source_location": "L3",
+      "id": "policies_vehicle_policy_vehiclepolicy",
+      "community": 72,
+      "norm_label": "vehiclepolicy"
+    },
+    {
+      "label": "owned_record_policy.rb",
+      "file_type": "code",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L1",
+      "id": "app_policies_owned_record_policy_rb",
+      "community": 67,
+      "norm_label": "owned_record_policy.rb"
+    },
+    {
+      "label": "OwnedRecordPolicy",
+      "file_type": "code",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L4",
+      "id": "policies_owned_record_policy_ownedrecordpolicy",
+      "community": 67,
+      "norm_label": "ownedrecordpolicy"
+    },
+    {
+      "label": ".show?()",
+      "file_type": "code",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L5",
+      "id": "policies_owned_record_policy_ownedrecordpolicy_show",
+      "community": 67,
+      "norm_label": ".show?()"
+    },
+    {
+      "label": ".update?()",
+      "file_type": "code",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L9",
+      "id": "policies_owned_record_policy_ownedrecordpolicy_update",
+      "community": 67,
+      "norm_label": ".update?()"
+    },
+    {
+      "label": ".destroy?()",
+      "file_type": "code",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L13",
+      "id": "policies_owned_record_policy_ownedrecordpolicy_destroy",
+      "community": 67,
+      "norm_label": ".destroy?()"
+    },
+    {
       "label": ".confirm_destroy?()",
       "file_type": "code",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L22",
-      "id": "policies_transport_policy_transportpolicy_confirm_destroy",
-      "community": 57,
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L17",
+      "id": "policies_owned_record_policy_ownedrecordpolicy_confirm_destroy",
+      "community": 67,
       "norm_label": ".confirm_destroy?()"
     },
     {
       "label": "Scope",
       "file_type": "code",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L26",
-      "id": "policies_transport_policy_scope",
-      "community": 57,
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L21",
+      "id": "policies_owned_record_policy_scope",
+      "community": 67,
       "norm_label": "scope"
     },
     {
       "label": ".resolve()",
       "file_type": "code",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L27",
-      "id": "policies_transport_policy_scope_resolve",
-      "community": 57,
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L22",
+      "id": "policies_owned_record_policy_scope_resolve",
+      "community": 67,
       "norm_label": ".resolve()"
     },
     {
       "label": ".owner?()",
       "file_type": "code",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L34",
-      "id": "policies_transport_policy_transportpolicy_owner",
-      "community": 57,
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L29",
+      "id": "policies_owned_record_policy_ownedrecordpolicy_owner",
+      "community": 67,
       "norm_label": ".owner?()"
     },
     {
@@ -664,9 +745,36 @@
       "label": ".full_name()",
       "file_type": "code",
       "source_file": "app/models/user.rb",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "models_user_user_full_name",
       "community": 14,
+      "norm_label": ".full_name()"
+    },
+    {
+      "label": "vehicle.rb",
+      "file_type": "code",
+      "source_file": "app/models/vehicle.rb",
+      "source_location": "L1",
+      "id": "app_models_vehicle_rb",
+      "community": 69,
+      "norm_label": "vehicle.rb"
+    },
+    {
+      "label": "Vehicle",
+      "file_type": "code",
+      "source_file": "app/models/vehicle.rb",
+      "source_location": "L1",
+      "id": "models_vehicle_vehicle",
+      "community": 69,
+      "norm_label": "vehicle"
+    },
+    {
+      "label": ".full_name()",
+      "file_type": "code",
+      "source_file": "app/models/vehicle.rb",
+      "source_location": "L13",
+      "id": "models_vehicle_vehicle_full_name",
+      "community": 69,
       "norm_label": ".full_name()"
     },
     {
@@ -722,6 +830,114 @@
       "id": "controllers_application_controller_applicationcontroller_user_not_authorized",
       "community": 11,
       "norm_label": ".user_not_authorized()"
+    },
+    {
+      "label": "vehicles_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_vehicles_controller_rb",
+      "community": 5,
+      "norm_label": "vehicles_controller.rb"
+    },
+    {
+      "label": "VehiclesController",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L1",
+      "id": "controllers_vehicles_controller_vehiclescontroller",
+      "community": 5,
+      "norm_label": "vehiclescontroller"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L4",
+      "id": "controllers_vehicles_controller_vehiclescontroller_index",
+      "community": 5,
+      "norm_label": ".index()"
+    },
+    {
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L8",
+      "id": "controllers_vehicles_controller_vehiclescontroller_show",
+      "community": 5,
+      "norm_label": ".show()"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L11",
+      "id": "controllers_vehicles_controller_vehiclescontroller_new",
+      "community": 5,
+      "norm_label": ".new()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L15",
+      "id": "controllers_vehicles_controller_vehiclescontroller_create",
+      "community": 5,
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".edit()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L24",
+      "id": "controllers_vehicles_controller_vehiclescontroller_edit",
+      "community": 5,
+      "norm_label": ".edit()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L27",
+      "id": "controllers_vehicles_controller_vehiclescontroller_update",
+      "community": 5,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".confirm_destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L35",
+      "id": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy",
+      "community": 5,
+      "norm_label": ".confirm_destroy()"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L38",
+      "id": "controllers_vehicles_controller_vehiclescontroller_destroy",
+      "community": 5,
+      "norm_label": ".destroy()"
+    },
+    {
+      "label": ".set_vehicle()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L45",
+      "id": "controllers_vehicles_controller_vehiclescontroller_set_vehicle",
+      "community": 5,
+      "norm_label": ".set_vehicle()"
+    },
+    {
+      "label": ".vehicle_params()",
+      "file_type": "code",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L50",
+      "id": "controllers_vehicles_controller_vehiclescontroller_vehicle_params",
+      "community": 5,
+      "norm_label": ".vehicle_params()"
     },
     {
       "label": "transports_controller.rb",
@@ -857,6 +1073,24 @@
       "id": "madmin_application_controller_applicationcontroller_require_admin",
       "community": 6,
       "norm_label": ".require_admin()"
+    },
+    {
+      "label": "vehicles_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/vehicles_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_madmin_vehicles_controller_rb",
+      "community": 71,
+      "norm_label": "vehicles_controller.rb"
+    },
+    {
+      "label": "VehiclesController",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/vehicles_controller.rb",
+      "source_location": "L2",
+      "id": "madmin_vehicles_controller_vehiclescontroller",
+      "community": 71,
+      "norm_label": "vehiclescontroller"
     },
     {
       "label": "users_controller.rb",
@@ -1003,6 +1237,33 @@
       "norm_label": ".display_name()"
     },
     {
+      "label": "vehicle_resource.rb",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/vehicle_resource.rb",
+      "source_location": "L1",
+      "id": "app_madmin_resources_vehicle_resource_rb",
+      "community": 68,
+      "norm_label": "vehicle_resource.rb"
+    },
+    {
+      "label": "VehicleResource",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/vehicle_resource.rb",
+      "source_location": "L1",
+      "id": "resources_vehicle_resource_vehicleresource",
+      "community": 68,
+      "norm_label": "vehicleresource"
+    },
+    {
+      "label": ".display_name()",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/vehicle_resource.rb",
+      "source_location": "L13",
+      "id": "resources_vehicle_resource_vehicleresource_display_name",
+      "community": 68,
+      "norm_label": ".display_name()"
+    },
+    {
       "label": "user_code_field.rb",
       "file_type": "code",
       "source_file": "app/madmin/fields/user_code_field.rb",
@@ -1126,6 +1387,33 @@
       "source_location": "L2",
       "id": "migrate_20261010173000_create_transports_createtransports_change",
       "community": 60,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "20261011112313_create_vehicles.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20261011112313_create_vehicles.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20261011112313_create_vehicles_rb",
+      "community": 70,
+      "norm_label": "20261011112313_create_vehicles.rb"
+    },
+    {
+      "label": "CreateVehicles",
+      "file_type": "code",
+      "source_file": "db/migrate/20261011112313_create_vehicles.rb",
+      "source_location": "L1",
+      "id": "migrate_20261011112313_create_vehicles_createvehicles",
+      "community": 70,
+      "norm_label": "createvehicles"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20261011112313_create_vehicles.rb",
+      "source_location": "L2",
+      "id": "migrate_20261011112313_create_vehicles_createvehicles_change",
+      "community": 70,
       "norm_label": ".change()"
     },
     {
@@ -1944,7 +2232,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L834",
       "id": "terminus_claude_approfondimento_bundler_audit",
-      "community": 5,
+      "community": 0,
       "norm_label": "approfondimento: bundler-audit"
     },
     {
@@ -1953,7 +2241,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L838",
       "id": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "community": 5,
+      "community": 0,
       "norm_label": "installazione e utilizzo bundler-audit"
     },
     {
@@ -1962,7 +2250,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L842",
       "id": "terminus_claude_codeblock_38",
-      "community": 5,
+      "community": 0,
       "norm_label": "code:ruby"
     },
     {
@@ -1971,7 +2259,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L850",
       "id": "terminus_claude_codeblock_39",
-      "community": 5,
+      "community": 0,
       "norm_label": "code:bash"
     },
     {
@@ -1980,7 +2268,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L864",
       "id": "terminus_claude_codeblock_40",
-      "community": 5,
+      "community": 0,
       "norm_label": "code:ruby"
     },
     {
@@ -1989,7 +2277,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L896",
       "id": "terminus_claude_codeblock_41",
-      "community": 5,
+      "community": 0,
       "norm_label": "code:ruby"
     },
     {
@@ -1998,7 +2286,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L903",
       "id": "terminus_claude_codeblock_42",
-      "community": 5,
+      "community": 0,
       "norm_label": "code:ruby"
     },
     {
@@ -2036,6 +2324,60 @@
       "id": "terminus_claude_applicazione",
       "community": 0,
       "norm_label": "\ud83d\uddc3\ufe0f applicazione"
+    },
+    {
+      "label": ".show?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L5",
+      "community": 57,
+      "norm_label": ".show?()",
+      "id": "policies_transport_policy_transportpolicy_show"
+    },
+    {
+      "label": ".destroy?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L13",
+      "community": 57,
+      "norm_label": ".destroy?()",
+      "id": "policies_transport_policy_transportpolicy_destroy"
+    },
+    {
+      "label": ".confirm_destroy?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L22",
+      "community": 57,
+      "norm_label": ".confirm_destroy?()",
+      "id": "policies_transport_policy_transportpolicy_confirm_destroy"
+    },
+    {
+      "label": "Scope",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L26",
+      "community": 57,
+      "norm_label": "scope",
+      "id": "policies_transport_policy_scope"
+    },
+    {
+      "label": ".resolve()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L27",
+      "community": 57,
+      "norm_label": ".resolve()",
+      "id": "policies_transport_policy_scope_resolve"
+    },
+    {
+      "label": ".owner?()",
+      "file_type": "code",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L34",
+      "community": 57,
+      "norm_label": ".owner?()",
+      "id": "policies_transport_policy_transportpolicy_owner"
     },
     {
       "label": ".create?()",
@@ -2259,6 +2601,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/requests/vehicles_spec.rb",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "spec_requests_vehicles_spec_rb",
+      "target": "requests_vehicles_spec_sign_in_as",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/requests/transports_spec.rb",
       "source_location": "L9",
       "weight": 1.0,
@@ -2300,16 +2652,6 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_show"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/transport_policy.rb",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2320,21 +2662,31 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "policies_transport_policy_transportpolicy",
-      "target": "policies_transport_policy_transportpolicy_destroy"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/transport_policy.rb",
       "source_location": "L22",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "policies_transport_policy_transportpolicy",
       "target": "policies_transport_policy_transportpolicy_edit"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_show"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy",
+      "target": "policies_transport_policy_transportpolicy_destroy"
     },
     {
       "relation": "method",
@@ -2371,17 +2723,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "policies_transport_policy_transportpolicy_show",
-      "target": "policies_transport_policy_transportpolicy_owner"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/policies/transport_policy.rb",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2402,13 +2743,13 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L22",
+      "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "policies_transport_policy_transportpolicy_confirm_destroy",
-      "target": "policies_transport_policy_transportpolicy_destroy"
+      "source": "policies_transport_policy_transportpolicy_edit",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner"
     },
     {
       "relation": "calls",
@@ -2422,25 +2763,138 @@
       "target": "policies_transport_policy_transportpolicy_owner"
     },
     {
-      "relation": "calls",
-      "context": "call",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L27",
+      "source_file": "app/policies/vehicle_policy.rb",
+      "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "policies_transport_policy_transportpolicy_confirm_destroy",
-      "target": "policies_transport_policy_transportpolicy_owner"
+      "source": "app_policies_vehicle_policy_rb",
+      "target": "policies_vehicle_policy_vehiclepolicy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_policies_owned_record_policy_rb",
+      "target": "policies_owned_record_policy_ownedrecordpolicy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_policies_owned_record_policy_rb",
+      "target": "policies_owned_record_policy_scope",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/policies/transport_policy.rb",
-      "source_location": "L26",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "policies_transport_policy_scope",
-      "target": "policies_transport_policy_scope_resolve"
+      "source": "policies_owned_record_policy_ownedrecordpolicy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_confirm_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy_show",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy_update",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy_destroy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_ownedrecordpolicy_confirm_destroy",
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/owned_record_policy.rb",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "policies_owned_record_policy_scope",
+      "target": "policies_owned_record_policy_scope_resolve",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2730,6 +3184,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/models/vehicle.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_models_vehicle_rb",
+      "target": "models_vehicle_vehicle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/vehicle.rb",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "models_vehicle_vehicle",
+      "target": "models_vehicle_vehicle_full_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/controllers/home_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -2766,6 +3240,127 @@
       "confidence_score": 1.0,
       "source": "controllers_application_controller_applicationcontroller",
       "target": "controllers_application_controller_applicationcontroller_user_not_authorized"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_controllers_vehicles_controller_rb",
+      "target": "controllers_vehicles_controller_vehiclescontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_edit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_set_vehicle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller",
+      "target": "controllers_vehicles_controller_vehiclescontroller_vehicle_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/vehicles_controller.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "controllers_vehicles_controller_vehiclescontroller_create",
+      "target": "controllers_vehicles_controller_vehiclescontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2911,6 +3506,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/vehicles_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_controllers_madmin_vehicles_controller_rb",
+      "target": "madmin_vehicles_controller_vehiclescontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/controllers/madmin/users_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -3011,6 +3616,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/vehicle_resource.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_madmin_resources_vehicle_resource_rb",
+      "target": "resources_vehicle_resource_vehicleresource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/vehicle_resource.rb",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "resources_vehicle_resource_vehicleresource",
+      "target": "resources_vehicle_resource_vehicleresource_display_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/madmin/fields/user_code_field.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -3077,6 +3702,26 @@
       "confidence_score": 1.0,
       "source": "migrate_20261010173000_create_transports_createtransports",
       "target": "migrate_20261010173000_create_transports_createtransports_change"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261011112313_create_vehicles.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20261011112313_create_vehicles_rb",
+      "target": "migrate_20261011112313_create_vehicles_createvehicles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261011112313_create_vehicles.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_20261011112313_create_vehicles_createvehicles",
+      "target": "migrate_20261011112313_create_vehicles_createvehicles_change",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4059,6 +4704,49 @@
       "target": "terminus_claude_codeblock_42"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_show",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_confirm_destroy",
+      "target": "policies_transport_policy_transportpolicy_destroy"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_transportpolicy_confirm_destroy",
+      "target": "policies_transport_policy_transportpolicy_owner"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/transport_policy.rb",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "policies_transport_policy_scope",
+      "target": "policies_transport_policy_scope_resolve"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AI/TERMINUS.md",
@@ -4230,5 +4918,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "47783b6b70e60f76bd4abe9c40c9ae2cd91a13b9"
+  "built_at_commit": "1ee5e0fff5bb1018641287d06b7b57bc8875a4d3"
 }

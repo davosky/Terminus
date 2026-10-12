@@ -202,6 +202,24 @@
       "norm_label": "sign_in_as()"
     },
     {
+      "label": "structures_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/requests/structures_spec.rb",
+      "source_location": "L1",
+      "id": "spec_requests_structures_spec_rb",
+      "community": 99,
+      "norm_label": "structures_spec.rb"
+    },
+    {
+      "label": "sign_in_as()",
+      "file_type": "code",
+      "source_file": "spec/requests/structures_spec.rb",
+      "source_location": "L10",
+      "id": "requests_structures_spec_sign_in_as",
+      "community": 99,
+      "norm_label": "sign_in_as()"
+    },
+    {
       "label": "paths_spec.rb",
       "file_type": "code",
       "source_file": "spec/requests/paths_spec.rb",
@@ -310,6 +328,15 @@
       "norm_label": "place_spec.rb"
     },
     {
+      "label": "structure_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/models/structure_spec.rb",
+      "source_location": "L1",
+      "id": "spec_models_structure_spec_rb",
+      "community": 101,
+      "norm_label": "structure_spec.rb"
+    },
+    {
       "label": "vehicle_spec.rb",
       "file_type": "code",
       "source_file": "spec/models/vehicle_spec.rb",
@@ -353,6 +380,15 @@
       "id": "spec_factories_transports_rb",
       "community": 64,
       "norm_label": "transports.rb"
+    },
+    {
+      "label": "structures.rb",
+      "file_type": "code",
+      "source_file": "spec/factories/structures.rb",
+      "source_location": "L1",
+      "id": "spec_factories_structures_rb",
+      "community": 100,
+      "norm_label": "structures.rb"
     },
     {
       "label": "vehicles.rb",
@@ -670,6 +706,24 @@
       "norm_label": "placepolicy"
     },
     {
+      "label": "structure_policy.rb",
+      "file_type": "code",
+      "source_file": "app/policies/structure_policy.rb",
+      "source_location": "L1",
+      "id": "app_policies_structure_policy_rb",
+      "community": 98,
+      "norm_label": "structure_policy.rb"
+    },
+    {
+      "label": "StructurePolicy",
+      "file_type": "code",
+      "source_file": "app/policies/structure_policy.rb",
+      "source_location": "L3",
+      "id": "policies_structure_policy_structurepolicy",
+      "community": 98,
+      "norm_label": "structurepolicy"
+    },
+    {
       "label": "create_default_transports.rb",
       "file_type": "code",
       "source_file": "app/services/create_default_transports.rb",
@@ -898,7 +952,7 @@
       "label": ".full_name()",
       "file_type": "code",
       "source_file": "app/models/user.rb",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "models_user_user_full_name",
       "community": 14,
       "norm_label": ".full_name()"
@@ -929,6 +983,24 @@
       "id": "models_vehicle_vehicle_full_name",
       "community": 69,
       "norm_label": ".full_name()"
+    },
+    {
+      "label": "structure.rb",
+      "file_type": "code",
+      "source_file": "app/models/structure.rb",
+      "source_location": "L1",
+      "id": "app_models_structure_rb",
+      "community": 97,
+      "norm_label": "structure.rb"
+    },
+    {
+      "label": "Structure",
+      "file_type": "code",
+      "source_file": "app/models/structure.rb",
+      "source_location": "L1",
+      "id": "models_structure_structure",
+      "community": 97,
+      "norm_label": "structure"
     },
     {
       "label": "home_controller.rb",
@@ -1309,6 +1381,114 @@
       "norm_label": ".vehicle_params()"
     },
     {
+      "label": "structures_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_structures_controller_rb",
+      "community": 4,
+      "norm_label": "structures_controller.rb"
+    },
+    {
+      "label": "StructuresController",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L1",
+      "id": "controllers_structures_controller_structurescontroller",
+      "community": 4,
+      "norm_label": "structurescontroller"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L4",
+      "id": "controllers_structures_controller_structurescontroller_index",
+      "community": 4,
+      "norm_label": ".index()"
+    },
+    {
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L8",
+      "id": "controllers_structures_controller_structurescontroller_show",
+      "community": 4,
+      "norm_label": ".show()"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L11",
+      "id": "controllers_structures_controller_structurescontroller_new",
+      "community": 4,
+      "norm_label": ".new()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L15",
+      "id": "controllers_structures_controller_structurescontroller_create",
+      "community": 4,
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".edit()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L24",
+      "id": "controllers_structures_controller_structurescontroller_edit",
+      "community": 4,
+      "norm_label": ".edit()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L27",
+      "id": "controllers_structures_controller_structurescontroller_update",
+      "community": 4,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".confirm_destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L35",
+      "id": "controllers_structures_controller_structurescontroller_confirm_destroy",
+      "community": 4,
+      "norm_label": ".confirm_destroy()"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L38",
+      "id": "controllers_structures_controller_structurescontroller_destroy",
+      "community": 4,
+      "norm_label": ".destroy()"
+    },
+    {
+      "label": ".set_structure()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L45",
+      "id": "controllers_structures_controller_structurescontroller_set_structure",
+      "community": 4,
+      "norm_label": ".set_structure()"
+    },
+    {
+      "label": ".structure_params()",
+      "file_type": "code",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L50",
+      "id": "controllers_structures_controller_structurescontroller_structure_params",
+      "community": 4,
+      "norm_label": ".structure_params()"
+    },
+    {
       "label": "transports_controller.rb",
       "file_type": "code",
       "source_file": "app/controllers/transports_controller.rb",
@@ -1534,6 +1714,24 @@
       "norm_label": ".resource_params()"
     },
     {
+      "label": "structures_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/structures_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_madmin_structures_controller_rb",
+      "community": 96,
+      "norm_label": "structures_controller.rb"
+    },
+    {
+      "label": "StructuresController",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/structures_controller.rb",
+      "source_location": "L2",
+      "id": "madmin_structures_controller_structurescontroller",
+      "community": 96,
+      "norm_label": "structurescontroller"
+    },
+    {
       "label": "transports_controller.rb",
       "file_type": "code",
       "source_file": "app/controllers/madmin/transports_controller.rb",
@@ -1666,6 +1864,33 @@
       "source_location": "L25",
       "id": "resources_user_resource_userresource_display_name",
       "community": 14,
+      "norm_label": ".display_name()"
+    },
+    {
+      "label": "structure_resource.rb",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/structure_resource.rb",
+      "source_location": "L1",
+      "id": "app_madmin_resources_structure_resource_rb",
+      "community": 94,
+      "norm_label": "structure_resource.rb"
+    },
+    {
+      "label": "StructureResource",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/structure_resource.rb",
+      "source_location": "L1",
+      "id": "resources_structure_resource_structureresource",
+      "community": 94,
+      "norm_label": "structureresource"
+    },
+    {
+      "label": ".display_name()",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/structure_resource.rb",
+      "source_location": "L9",
+      "id": "resources_structure_resource_structureresource_display_name",
+      "community": 94,
       "norm_label": ".display_name()"
     },
     {
@@ -1820,6 +2045,33 @@
       "id": "db_cache_schema_rb",
       "community": 50,
       "norm_label": "cache_schema.rb"
+    },
+    {
+      "label": "20261012120000_create_structures.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20261012120000_create_structures.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20261012120000_create_structures_rb",
+      "community": 95,
+      "norm_label": "20261012120000_create_structures.rb"
+    },
+    {
+      "label": "CreateStructures",
+      "file_type": "code",
+      "source_file": "db/migrate/20261012120000_create_structures.rb",
+      "source_location": "L1",
+      "id": "migrate_20261012120000_create_structures_createstructures",
+      "community": 95,
+      "norm_label": "createstructures"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20261012120000_create_structures.rb",
+      "source_location": "L2",
+      "id": "migrate_20261012120000_create_structures_createstructures_change",
+      "community": 95,
+      "norm_label": ".change()"
     },
     {
       "label": "20261010173000_create_transports.rb",
@@ -2628,7 +2880,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L656",
       "id": "terminus_claude_7_autenticazione_e_autorizzazione_robuste",
-      "community": 4,
+      "community": 1,
       "norm_label": "7. autenticazione e autorizzazione robuste"
     },
     {
@@ -2637,7 +2889,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L672",
       "id": "terminus_claude_codeblock_29",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -2646,7 +2898,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L679",
       "id": "terminus_claude_codeblock_30",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -2655,7 +2907,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L690",
       "id": "terminus_claude_codeblock_31",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -2664,7 +2916,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L706",
       "id": "terminus_claude_codeblock_32",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -2673,7 +2925,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L715",
       "id": "terminus_claude_codeblock_33",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -2682,7 +2934,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L734",
       "id": "terminus_claude_codeblock_34",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:ruby"
     },
     {
@@ -2700,7 +2952,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L778",
       "id": "terminus_claude_approfondimento_brakeman",
-      "community": 0,
+      "community": 93,
       "norm_label": "approfondimento: brakeman"
     },
     {
@@ -2709,7 +2961,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L782",
       "id": "terminus_claude_installazione_e_utilizzo",
-      "community": 0,
+      "community": 93,
       "norm_label": "installazione e utilizzo"
     },
     {
@@ -2718,7 +2970,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L786",
       "id": "terminus_claude_codeblock_35",
-      "community": 0,
+      "community": 93,
       "norm_label": "code:ruby"
     },
     {
@@ -2727,7 +2979,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L794",
       "id": "terminus_claude_codeblock_36",
-      "community": 0,
+      "community": 93,
       "norm_label": "code:bash"
     },
     {
@@ -2736,7 +2988,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L804",
       "id": "terminus_claude_codeblock_37",
-      "community": 0,
+      "community": 93,
       "norm_label": "code:ruby"
     },
     {
@@ -3124,6 +3376,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/requests/structures_spec.rb",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "spec_requests_structures_spec_rb",
+      "target": "requests_structures_spec_sign_in_as",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/requests/paths_spec.rb",
       "source_location": "L10",
       "weight": 1.0,
@@ -3157,9 +3419,9 @@
       "source_file": "spec/requests/places_spec.rb",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_requests_places_spec_rb",
-      "target": "requests_places_spec_sign_in_as",
-      "confidence_score": 1.0
+      "target": "requests_places_spec_sign_in_as"
     },
     {
       "relation": "contains",
@@ -3587,8 +3849,18 @@
       "source_file": "app/policies/place_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_policies_place_policy_rb",
-      "target": "policies_place_policy_placepolicy",
+      "target": "policies_place_policy_placepolicy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/policies/structure_policy.rb",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_policies_structure_policy_rb",
+      "target": "policies_structure_policy_structurepolicy",
       "confidence_score": 1.0
     },
     {
@@ -3688,9 +3960,9 @@
       "source_file": "app/models/place.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_models_place_rb",
-      "target": "models_place_place",
-      "confidence_score": 1.0
+      "target": "models_place_place"
     },
     {
       "relation": "contains",
@@ -3783,6 +4055,16 @@
       "confidence_score": 1.0,
       "source": "models_vehicle_vehicle",
       "target": "models_vehicle_vehicle_full_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/structure.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_models_structure_rb",
+      "target": "models_structure_structure",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3951,9 +4233,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_controllers_places_controller_rb",
-      "target": "controllers_places_controller_placescontroller",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller"
     },
     {
       "relation": "method",
@@ -3961,9 +4243,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_index",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_index"
     },
     {
       "relation": "method",
@@ -3971,9 +4253,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_show",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_show"
     },
     {
       "relation": "method",
@@ -3981,9 +4263,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_new",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_new"
     },
     {
       "relation": "method",
@@ -3991,9 +4273,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_create",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_create"
     },
     {
       "relation": "method",
@@ -4001,9 +4283,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_edit",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_edit"
     },
     {
       "relation": "method",
@@ -4011,9 +4293,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_update",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_update"
     },
     {
       "relation": "method",
@@ -4021,9 +4303,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_confirm_destroy",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_confirm_destroy"
     },
     {
       "relation": "method",
@@ -4031,9 +4313,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_destroy",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_destroy"
     },
     {
       "relation": "method",
@@ -4041,9 +4323,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_set_place",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_set_place"
     },
     {
       "relation": "method",
@@ -4051,9 +4333,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller",
-      "target": "controllers_places_controller_placescontroller_place_params",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_place_params"
     },
     {
       "relation": "calls",
@@ -4062,9 +4344,9 @@
       "source_file": "app/controllers/places_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_places_controller_placescontroller_create",
-      "target": "controllers_places_controller_placescontroller_new",
-      "confidence_score": 1.0
+      "target": "controllers_places_controller_placescontroller_new"
     },
     {
       "relation": "contains",
@@ -4186,6 +4468,127 @@
       "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller_create",
       "target": "controllers_vehicles_controller_vehiclescontroller_new"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_controllers_structures_controller_rb",
+      "target": "controllers_structures_controller_structurescontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_edit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_confirm_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_set_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller",
+      "target": "controllers_structures_controller_structurescontroller_structure_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/structures_controller.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "controllers_structures_controller_structurescontroller_create",
+      "target": "controllers_structures_controller_structurescontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4344,9 +4747,9 @@
       "source_file": "app/controllers/madmin/places_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_controllers_madmin_places_controller_rb",
-      "target": "madmin_places_controller_placescontroller",
-      "confidence_score": 1.0
+      "target": "madmin_places_controller_placescontroller"
     },
     {
       "relation": "contains",
@@ -4391,6 +4794,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/structures_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_controllers_madmin_structures_controller_rb",
+      "target": "madmin_structures_controller_structurescontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/controllers/madmin/transports_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -4424,9 +4837,9 @@
       "source_file": "app/madmin/resources/place_resource.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_madmin_resources_place_resource_rb",
-      "target": "resources_place_resource_placeresource",
-      "confidence_score": 1.0
+      "target": "resources_place_resource_placeresource"
     },
     {
       "relation": "method",
@@ -4434,9 +4847,9 @@
       "source_file": "app/madmin/resources/place_resource.rb",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "resources_place_resource_placeresource",
-      "target": "resources_place_resource_placeresource_display_name",
-      "confidence_score": 1.0
+      "target": "resources_place_resource_placeresource_display_name"
     },
     {
       "relation": "contains",
@@ -4477,6 +4890,26 @@
       "confidence_score": 1.0,
       "source": "resources_user_resource_userresource",
       "target": "resources_user_resource_userresource_display_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/structure_resource.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_madmin_resources_structure_resource_rb",
+      "target": "resources_structure_resource_structureresource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/structure_resource.rb",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "resources_structure_resource_structureresource",
+      "target": "resources_structure_resource_structureresource_display_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4571,6 +5004,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261012120000_create_structures.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20261012120000_create_structures_rb",
+      "target": "migrate_20261012120000_create_structures_createstructures",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261012120000_create_structures.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_20261012120000_create_structures_createstructures",
+      "target": "migrate_20261012120000_create_structures_createstructures_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "db/migrate/20261010173000_create_transports.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -4614,9 +5067,9 @@
       "source_file": "db/migrate/20261012110000_create_places.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "db_migrate_20261012110000_create_places_rb",
-      "target": "migrate_20261012110000_create_places_createplaces",
-      "confidence_score": 1.0
+      "target": "migrate_20261012110000_create_places_createplaces"
     },
     {
       "relation": "method",
@@ -4624,9 +5077,9 @@
       "source_file": "db/migrate/20261012110000_create_places.rb",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "migrate_20261012110000_create_places_createplaces",
-      "target": "migrate_20261012110000_create_places_createplaces_change",
-      "confidence_score": 1.0
+      "target": "migrate_20261012110000_create_places_createplaces_change"
     },
     {
       "relation": "contains",
@@ -5843,5 +6296,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7a2d1453064c52d36f2e122fe1d95978adaf601d"
+  "built_at_commit": "9cd5d36ee3c2bfd9d85b805b85d2f1d598057665"
 }

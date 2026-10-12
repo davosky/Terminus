@@ -1,16 +1,16 @@
 # Graph Report - Terminus  (2026-10-12)
 
 ## Corpus Check
-- 110 files · ~188,592 words
+- 119 files · ~196,443 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 372 nodes · 292 edges · 102 communities (60 shown, 42 thin omitted)
+- 400 nodes · 312 edges · 112 communities (64 shown, 48 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9cd5d36e`
+- Built from commit: `705e0d35`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -67,6 +67,13 @@
 - [[_COMMUNITY_Community 96|Community 96]]
 - [[_COMMUNITY_Community 97|Community 97]]
 - [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 102|Community 102]]
+- [[_COMMUNITY_Community 103|Community 103]]
+- [[_COMMUNITY_Community 104|Community 104]]
+- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Community 106|Community 106]]
+- [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Community 108|Community 108]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — Guida per Claude Code` - 25 edges
@@ -74,24 +81,24 @@
 3. `PlacesController` - 11 edges
 4. `VehiclesController` - 11 edges
 5. `StructuresController` - 11 edges
-6. `TransportsController` - 11 edges
-7. `ApplicationPolicy` - 9 edges
-8. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
-9. `TransportPolicy` - 8 edges
-10. `7. Autenticazione e Autorizzazione Robuste` - 7 edges
+6. `ReasonsController` - 11 edges
+7. `TransportsController` - 11 edges
+8. `ApplicationPolicy` - 9 edges
+9. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
+10. `TransportPolicy` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (102 total, 42 thin omitted)
+## Communities (112 total, 48 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (36): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Modifiche chirurgiche, 4. Esecuzione orientata all'obiettivo, ❌ Anti-Pattern da Evitare, 🗃️ Applicazione, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails, Checklist delle Best Practice di Sicurezza (+28 more)
+Nodes (36): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Modifiche chirurgiche, 4. Esecuzione orientata all'obiettivo, ❌ Anti-Pattern da Evitare, 🗃️ Applicazione, Approfondimento: Brakeman, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails (+28 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.06
-Nodes (33): 1. Protezione dall'SQL Injection, 2. Mitigazione del Cross-Site Scripting (XSS), 3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili, 4. Corretta Gestione delle Sessioni e Cookie Sicuri, 5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF), 6. Upload di File Sicuri e Gestione degli Allegati, 7. Autenticazione e Autorizzazione Robuste, 8. Monitoraggio e Audit di Sicurezza Continui (+25 more)
+Cohesion: 0.08
+Nodes (26): 1. Protezione dall'SQL Injection, 2. Mitigazione del Cross-Site Scripting (XSS), 3. Gestione Sicura di Segreti, Credenziali e Dati di Configurazione Sensibili, 4. Corretta Gestione delle Sessioni e Cookie Sicuri, 5. Strategie di Protezione contro il Cross-Site Request Forgery (CSRF), 6. Upload di File Sicuri e Gestione degli Allegati, 8. Monitoraggio e Audit di Sicurezza Continui, Best Practice di Sicurezza Chiave in Ruby on Rails (+18 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.22
@@ -121,25 +128,31 @@ Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, I
 Cohesion: 0.29
 Nodes (7): Approfondimento: bundler-audit, code:ruby, code:bash, code:ruby, code:ruby, code:ruby, Installazione e Utilizzo bundler-audit
 
-### Community 93 - "Community 93"
+### Community 102 - "Community 102"
+Cohesion: 0.29
+Nodes (7): 7. Autenticazione e Autorizzazione Robuste, code:ruby, code:ruby, code:ruby, code:ruby, code:ruby, code:ruby
+
+### Community 103 - "Community 103"
 Cohesion: 0.40
-Nodes (5): Approfondimento: Brakeman, code:ruby, code:bash, code:ruby, Installazione e Utilizzo
+Nodes (5): Controller, 🤝 Convenzioni di Codice, Generale, Modelli, Naming
 
 ## Knowledge Gaps
-- **93 isolated node(s):** `Application`, `PathPolicy`, `VehiclePolicy`, `PlacePolicy`, `StructurePolicy` (+88 more)
+- **96 isolated node(s):** `Application`, `PathPolicy`, `VehiclePolicy`, `PlacePolicy`, `StructurePolicy` (+91 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **42 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **48 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 0` to `Community 1`, `Community 76`, `Community 93`, `Community 7`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
-- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 1` to `Community 0`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 0` to `Community 1`, `Community 7`, `Community 76`, `Community 103`?**
+  _High betweenness centrality (0.039) - this node is a cross-community bridge._
+- **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 1` to `Community 0`, `Community 102`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `7. Autenticazione e Autorizzazione Robuste` connect `Community 102` to `Community 1`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `Application`, `PathPolicy`, `VehiclePolicy` to the rest of the system?**
-  _93 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _96 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._

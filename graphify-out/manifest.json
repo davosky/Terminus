@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/routes.rb": {
-    "mtime": 1791794458.8117294,
-    "ast_hash": "8f0f263db2145bf2d316f66d610f78c1",
+    "mtime": 1791794967.6853318,
+    "ast_hash": "63ab7c01a5512afa068b39dfbc3c7f49",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/importmap.rb": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/models/user.rb": {
-    "mtime": 1791794458.811668,
-    "ast_hash": "de2b88a7fcda8a76cb04734012573149",
+    "mtime": 1791794967.6852639,
+    "ast_hash": "62127f1ed809faf382040cc7842428fe",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/app/controllers/home_controller.rb": {
@@ -235,8 +235,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/db/schema.rb": {
-    "mtime": 1791794473.3435843,
-    "ast_hash": "5b1b7b716096b036f9c586d9a65637d7",
+    "mtime": 1791794983.4652119,
+    "ast_hash": "fe56c43d94ef212aecd1b6ca26b56748",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/db/cache_schema.rb": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/locales/it.yml": {
-    "mtime": 1791794458.8121796,
-    "ast_hash": "0a09965b357cdf0ce064e65b28e87344",
+    "mtime": 1791794967.6857407,
+    "ast_hash": "9245d34f183421c441f106af044e64f6",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/public/400.html": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/config/routes/madmin.rb": {
-    "mtime": 1791794458.811765,
-    "ast_hash": "20f5e0994b8bcc114990f03447bb37c2",
+    "mtime": 1791794967.6853714,
+    "ast_hash": "3949bf7b824e43248e9bc91a883fb280",
     "semantic_hash": ""
   },
   "/home/davo/Programmazione/Terminus/spec/requests/madmin_spec.rb": {
@@ -832,6 +832,76 @@
   "/home/davo/Programmazione/Terminus/app/assets/images/structures/structures_destroy.svg": {
     "mtime": 1786968005.1760256,
     "ast_hash": "e2f9f7acc912eae967167faed90d9f49",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/spec/requests/reasons_spec.rb": {
+    "mtime": 1791794967.6755025,
+    "ast_hash": "3d6724aa1f70bd05546856e4b261f223",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/spec/models/reason_spec.rb": {
+    "mtime": 1791794967.6738703,
+    "ast_hash": "1b95fd9c4416cb635921b0a18a33090b",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/spec/factories/reasons.rb": {
+    "mtime": 1791794967.6728704,
+    "ast_hash": "d12855271767c5075a7591a35e945dcf",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/policies/reason_policy.rb": {
+    "mtime": 1791794967.6698701,
+    "ast_hash": "338aafed17852731940f345ab5a3d2fd",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/models/reason.rb": {
+    "mtime": 1791794967.6708703,
+    "ast_hash": "bfef5ab673caa5b1d7f55b13a6d6585f",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/controllers/reasons_controller.rb": {
+    "mtime": 1791794967.6688702,
+    "ast_hash": "218be4a3fbbedd87b5ae112f6201fcb9",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/controllers/madmin/reasons_controller.rb": {
+    "mtime": 1791794967.6697927,
+    "ast_hash": "7d56268e733685aa2634cd86dfc75a18",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/madmin/resources/reason_resource.rb": {
+    "mtime": 1791794967.6719973,
+    "ast_hash": "e5f664a78409c710371613b79b52d2e5",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/db/migrate/20261012130000_create_reasons.rb": {
+    "mtime": 1791794967.6726809,
+    "ast_hash": "48220b9a38686f0f98d2c0ce11bdfc87",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reasons/reasons_show.svg": {
+    "mtime": 1786963729.2982595,
+    "ast_hash": "b8a2b609ba759b89ca5ebc0b60fc25b1",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reasons/reasons_destroy.svg": {
+    "mtime": 1786963516.8664815,
+    "ast_hash": "a3819a9165435796f2d047e8d0d3d858",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reasons/reasons_index.svg": {
+    "mtime": 1786963412.8165324,
+    "ast_hash": "4e1948c263df6d575a25a49cb29bb1b6",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reasons/reasons_edit.svg": {
+    "mtime": 1786963593.4757695,
+    "ast_hash": "3683f257bbc8426e7d1b223d234bbf74",
+    "semantic_hash": ""
+  },
+  "/home/davo/Programmazione/Terminus/app/assets/images/reasons/reasons_new.svg": {
+    "mtime": 1786963657.211047,
+    "ast_hash": "0615e6c0fd0d114997ceec231513df4f",
     "semantic_hash": ""
   }
 }

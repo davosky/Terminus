@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :vehicles, foreign_key: :user_code, primary_key: :user_code
   has_many :paths, foreign_key: :user_code, primary_key: :user_code
   has_many :places, foreign_key: :user_code, primary_key: :user_code
+  has_many :structures, foreign_key: :user_code, primary_key: :user_code
 
   devise :database_authenticatable, :validatable, :lockable
 

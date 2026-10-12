@@ -1,0 +1,13 @@
+<%= render layout: "shared/modal", locals: { icon: "structures/structures_show.svg", title: t(".title"), back: structures_path } do %>
+  <div class="w-full flex flex-col gap-8 rounded-2xl border border-line p-8">
+    <dl class="grid grid-cols-[auto_1fr] gap-x-8 gap-y-3">
+      <dt class="text-muted"><%= Structure.human_attribute_name(:name) %></dt>
+      <dd><%= @structure.name %></dd>
+      <dt class="text-muted"><%= Structure.human_attribute_name(:position) %></dt>
+      <dd><%= @structure.position %></dd>
+    </dl>
+    <div class="flex justify-end">
+      <%= render "shared/back_button", label: t("modal.close"), path: structures_path %>
+    </div>
+  </div>
+<% end %>

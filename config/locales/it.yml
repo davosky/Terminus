@@ -11,6 +11,7 @@ it:
     vehicles: Veicoli
     paths: Percorsi
     places: Luoghi
+    structures: Strutture
   modal:
     close: Chiudi
     cancel: Annulla
@@ -117,6 +118,31 @@ it:
       success: Luogo modificato.
     destroy:
       success: Luogo eliminato.
+  structures:
+    index:
+      title: Strutture
+      new: Nuova
+      actions: Azioni
+      show: Visualizza
+      edit: Modifica
+      destroy: Elimina
+      empty: Nessuna struttura presente.
+    new:
+      title: Nuova Struttura
+    edit:
+      title: Modifica Struttura
+    show:
+      title: Struttura
+    confirm_destroy:
+      title: Elimina Struttura
+      warning: Stai per eliminare definitivamente la struttura "%{name}". L'operazione non può essere annullata.
+      confirm: Elimina
+    create:
+      success: Struttura creata.
+    update:
+      success: Struttura modificata.
+    destroy:
+      success: Struttura eliminata.
   pundit:
     not_authorized: Non sei autorizzato a eseguire questa azione.
   attributes:
@@ -139,7 +165,15 @@ it:
       place:
         one: Luogo
         other: Luoghi
+      structure:
+        one: Struttura
+        other: Strutture
     attributes:
+      structure:
+        name: Struttura
+        position: Posizione
+        user: Utente
+        user_code: Codice Utente
       place:
         name: Luogo
         position: Posizione

@@ -1,0 +1,17 @@
+<%= render layout: "shared/modal", locals: { icon: "paths/paths_show.svg", title: t(".title"), back: paths_path } do %>
+  <div class="w-full flex flex-col gap-8 rounded-2xl border border-line p-8">
+    <dl class="grid grid-cols-[auto_1fr] gap-x-8 gap-y-3">
+      <dt class="text-muted"><%= Path.human_attribute_name(:name) %></dt>
+      <dd><%= @path.name %></dd>
+      <dt class="text-muted"><%= Path.human_attribute_name(:lenght) %></dt>
+      <dd><%= number_with_precision(@path.lenght, precision: 2) %></dd>
+      <dt class="text-muted"><%= Path.human_attribute_name(:highway_cost) %></dt>
+      <dd><%= number_to_currency(@path.highway_cost) %></dd>
+      <dt class="text-muted"><%= Path.human_attribute_name(:position) %></dt>
+      <dd><%= @path.position %></dd>
+    </dl>
+    <div class="flex justify-end">
+      <%= render "shared/back_button", label: t("modal.close"), path: paths_path %>
+    </div>
+  </div>
+<% end %>

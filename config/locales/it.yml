@@ -9,6 +9,7 @@ it:
     utility: Utility
     transports: Trasporti
     vehicles: Veicoli
+    paths: Percorsi
   modal:
     close: Chiudi
     cancel: Annulla
@@ -65,6 +66,31 @@ it:
       success: Veicolo modificato.
     destroy:
       success: Veicolo eliminato.
+  paths:
+    index:
+      title: Percorsi
+      new: Nuovo
+      actions: Azioni
+      show: Visualizza
+      edit: Modifica
+      destroy: Elimina
+      empty: Nessun percorso presente.
+    new:
+      title: Nuovo Percorso
+    edit:
+      title: Modifica Percorso
+    show:
+      title: Percorso
+    confirm_destroy:
+      title: Elimina Percorso
+      warning: Stai per eliminare definitivamente il percorso "%{name}". L'operazione non può essere annullata.
+      confirm: Elimina
+    create:
+      success: Percorso creato.
+    update:
+      success: Percorso modificato.
+    destroy:
+      success: Percorso eliminato.
   pundit:
     not_authorized: Non sei autorizzato a eseguire questa azione.
   attributes:
@@ -81,7 +107,17 @@ it:
       vehicle:
         one: Veicolo
         other: Veicoli
+      path:
+        one: Percorso
+        other: Percorsi
     attributes:
+      path:
+        name: Percorso
+        lenght: Lunghezza Percorso in Km
+        highway_cost: Costo Autostrada
+        position: Posizione
+        user: Utente
+        user_code: Codice Utente
       transport:
         transport_name: Trasporto
         transport_position: Posizione

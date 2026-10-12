@@ -1,0 +1,33 @@
+<%= form_with model: path, class: "w-full flex flex-col gap-5 rounded-2xl border border-line p-8", data: { turbo_frame: "_top" } do |f| %>
+  <% if path.errors.any? %>
+    <ul class="rounded-sm border border-danger p-3 text-danger" role="alert">
+      <% path.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div class="flex flex-col gap-1">
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true, autofocus: true, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :lenght %>
+      <%= f.number_field :lenght, required: true, min: 0.01, step: 0.01, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :highway_cost %>
+      <%= f.number_field :highway_cost, min: 0, step: 0.01, class: "field" %>
+    </div>
+    <div class="flex flex-col gap-1">
+      <%= f.label :position %>
+      <%= f.number_field :position, required: true, min: 1, step: 1, class: "field" %>
+    </div>
+  </div>
+  <div class="mt-3 flex flex-col-reverse items-center gap-5 sm:flex-row sm:justify-end">
+    <%= render "shared/back_button", label: t("modal.cancel"), path: paths_path %>
+    <%= f.button class: "btn btn-primary" do %>
+      <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i><%= t("modal.save") %>
+    <% end %>
+  </div>
+<% end %>

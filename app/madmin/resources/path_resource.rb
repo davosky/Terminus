@@ -1,0 +1,12 @@
+class PathResource < Madmin::Resource
+  attribute :id, form: false
+  attribute :name, index: true
+  attribute :lenght, index: true
+  attribute :highway_cost
+  attribute :position, index: true
+  attribute :user, field: UserCodeField, index: true
+  attribute :created_at, form: false
+  attribute :updated_at, form: false
+
+  def self.display_name(record) = record.name
+end

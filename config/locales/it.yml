@@ -10,6 +10,7 @@ it:
     transports: Trasporti
     vehicles: Veicoli
     paths: Percorsi
+    places: Luoghi
   modal:
     close: Chiudi
     cancel: Annulla
@@ -91,6 +92,31 @@ it:
       success: Percorso modificato.
     destroy:
       success: Percorso eliminato.
+  places:
+    index:
+      title: Luoghi
+      new: Nuovo
+      actions: Azioni
+      show: Visualizza
+      edit: Modifica
+      destroy: Elimina
+      empty: Nessun luogo presente.
+    new:
+      title: Nuovo Luogo
+    edit:
+      title: Modifica Luogo
+    show:
+      title: Luogo
+    confirm_destroy:
+      title: Elimina Luogo
+      warning: Stai per eliminare definitivamente il luogo "%{name}". L'operazione non può essere annullata.
+      confirm: Elimina
+    create:
+      success: Luogo creato.
+    update:
+      success: Luogo modificato.
+    destroy:
+      success: Luogo eliminato.
   pundit:
     not_authorized: Non sei autorizzato a eseguire questa azione.
   attributes:
@@ -110,7 +136,15 @@ it:
       path:
         one: Percorso
         other: Percorsi
+      place:
+        one: Luogo
+        other: Luoghi
     attributes:
+      place:
+        name: Luogo
+        position: Posizione
+        user: Utente
+        user_code: Codice Utente
       path:
         name: Percorso
         lenght: Lunghezza Percorso in Km

@@ -18,6 +18,10 @@
         <i class="fa-solid fa-road mr-2"></i>
         <%= t("nav.paths") %>
       <% end %>
+      <%= link_to places_path, class: "hover:text-accent" do %>
+        <i class="fa-solid fa-city mr-2"></i>
+        <%= t("nav.places") %>
+      <% end %>
     </div>
   </details>
   <span class="hidden sm:flex items-center gap-2">

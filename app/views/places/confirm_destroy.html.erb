@@ -1,0 +1,13 @@
+<%= render layout: "shared/modal", locals: { icon: "places/places_destroy.svg", title: t(".title"), back: places_path } do %>
+  <div class="w-full flex flex-col gap-5">
+    <p class="alert-box" role="alert">
+      <i class="fa-solid fa-triangle-exclamation text-lg" aria-hidden="true"></i><%= t("places.confirm_destroy.warning", name: @place.name) %>
+    </p>
+    <div class="w-full max-w-89 self-center flex justify-between">
+      <%= render "shared/back_button", label: t("modal.cancel"), path: places_path %>
+      <%= button_to place_path(@place), method: :delete, class: "btn btn-danger", form: { data: { turbo_frame: "_top" } } do %>
+        <i class="fa-solid fa-trash" aria-hidden="true"></i><%= t("places.confirm_destroy.confirm") %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

@@ -1,6 +1,7 @@
 # Below are the routes for madmin
 namespace :madmin do
   resources :paths
+  resources :places
   resources :transports
   resources :users
   resources :vehicles

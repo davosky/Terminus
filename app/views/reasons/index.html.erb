@@ -1,0 +1,43 @@
+<%= render "shared/flash" %>
+<section class="w-full max-w-233 mb-auto flex flex-col gap-8">
+  <header class="flex items-center gap-3 sm:gap-5 border-b border-line pb-5">
+    <%= image_tag "reasons/reasons_index.svg", size: "55x55", alt: "" %>
+    <h1 class="text-lg"><%= t(".title") %></h1>
+    <%= link_to new_reason_path, class: "btn btn-primary ml-auto", data: { turbo_frame: "modal" } do %>
+      <i class="fa-solid fa-plus" aria-hidden="true"></i><%= t(".new") %>
+    <% end %>
+  </header>
+  <table class="w-full text-left">
+    <thead class="bg-deep">
+      <tr>
+        <th class="w-34 p-3"><%= Reason.human_attribute_name(:position) %></th>
+        <th class="p-3"><%= Reason.human_attribute_name(:name) %></th>
+        <th class="p-3"><span class="sr-only"><%= t(".actions") %></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @reasons.each do |reason| %>
+        <tr class="border-b border-line">
+          <td class="p-3"><%= reason.position %></td>
+          <td class="p-3"><%= reason.name %></td>
+          <td class="p-3">
+            <div class="flex justify-end gap-5">
+              <%= link_to reason_path(reason), class: "hover:text-accent", data: { turbo_frame: "modal" }, aria: { label: t(".show") }, title: t(".show") do %>
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+              <% end %>
+              <%= link_to edit_reason_path(reason), class: "hover:text-accent", data: { turbo_frame: "modal" }, aria: { label: t(".edit") }, title: t(".edit") do %>
+                <i class="fa-solid fa-pen" aria-hidden="true"></i>
+              <% end %>
+              <%= link_to confirm_destroy_reason_path(reason), class: "hover:text-danger", data: { turbo_frame: "modal" }, aria: { label: t(".destroy") }, title: t(".destroy") do %>
+                <i class="fa-solid fa-trash" aria-hidden="true"></i>
+              <% end %>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <% if @reasons.empty? %>
+    <p class="text-center text-muted"><%= t(".empty") %></p>
+  <% end %>
+</section>

@@ -12,6 +12,7 @@ it:
     paths: Percorsi
     places: Luoghi
     structures: Strutture
+    reasons: Motivi Missione
   modal:
     close: Chiudi
     cancel: Annulla
@@ -143,6 +144,31 @@ it:
       success: Struttura modificata.
     destroy:
       success: Struttura eliminata.
+  reasons:
+    index:
+      title: Motivi Missione
+      new: Nuovo
+      actions: Azioni
+      show: Visualizza
+      edit: Modifica
+      destroy: Elimina
+      empty: Nessun motivo missione presente.
+    new:
+      title: Nuovo Motivo Missione
+    edit:
+      title: Modifica Motivo Missione
+    show:
+      title: Motivo Missione
+    confirm_destroy:
+      title: Elimina Motivo Missione
+      warning: Stai per eliminare definitivamente il motivo missione "%{name}". L'operazione non può essere annullata.
+      confirm: Elimina
+    create:
+      success: Motivo missione creato.
+    update:
+      success: Motivo missione modificato.
+    destroy:
+      success: Motivo missione eliminato.
   pundit:
     not_authorized: Non sei autorizzato a eseguire questa azione.
   attributes:
@@ -168,7 +194,15 @@ it:
       structure:
         one: Struttura
         other: Strutture
+      reason:
+        one: Motivo Missione
+        other: Motivi Missione
     attributes:
+      reason:
+        name: Motivo Missione
+        position: Posizione
+        user: Utente
+        user_code: Codice Utente
       structure:
         name: Struttura
         position: Posizione

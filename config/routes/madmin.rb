@@ -2,6 +2,7 @@
 namespace :madmin do
   resources :paths
   resources :places
+  resources :reasons
   resources :structures
   resources :transports
   resources :users

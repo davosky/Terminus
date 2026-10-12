@@ -1,0 +1,3 @@
+<%= render layout: "shared/modal", locals: { icon: "reasons/reasons_new.svg", title: t(".title"), back: reasons_path } do %>
+  <%= render "form", reason: @reason %>
+<% end %>

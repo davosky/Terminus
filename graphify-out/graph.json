@@ -202,6 +202,24 @@
       "norm_label": "sign_in_as()"
     },
     {
+      "label": "paths_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/requests/paths_spec.rb",
+      "source_location": "L1",
+      "id": "spec_requests_paths_spec_rb",
+      "community": 82,
+      "norm_label": "paths_spec.rb"
+    },
+    {
+      "label": "sign_in_as()",
+      "file_type": "code",
+      "source_file": "spec/requests/paths_spec.rb",
+      "source_location": "L10",
+      "id": "requests_paths_spec_sign_in_as",
+      "community": 82,
+      "norm_label": "sign_in_as()"
+    },
+    {
       "label": "transports_spec.rb",
       "file_type": "code",
       "source_file": "spec/requests/transports_spec.rb",
@@ -274,6 +292,15 @@
       "norm_label": "vehicle_spec.rb"
     },
     {
+      "label": "path_spec.rb",
+      "file_type": "code",
+      "source_file": "spec/models/path_spec.rb",
+      "source_location": "L1",
+      "id": "spec_models_path_spec_rb",
+      "community": 84,
+      "norm_label": "path_spec.rb"
+    },
+    {
       "label": "transport_spec.rb",
       "file_type": "code",
       "source_file": "spec/models/transport_spec.rb",
@@ -310,6 +337,15 @@
       "norm_label": "vehicles.rb"
     },
     {
+      "label": "paths.rb",
+      "file_type": "code",
+      "source_file": "spec/factories/paths.rb",
+      "source_location": "L1",
+      "id": "spec_factories_paths_rb",
+      "community": 83,
+      "norm_label": "paths.rb"
+    },
+    {
       "label": "transport_policy.rb",
       "file_type": "code",
       "source_file": "app/policies/transport_policy.rb",
@@ -344,6 +380,24 @@
       "id": "policies_transport_policy_transportpolicy_edit",
       "community": 57,
       "norm_label": ".edit?()"
+    },
+    {
+      "label": "path_policy.rb",
+      "file_type": "code",
+      "source_file": "app/policies/path_policy.rb",
+      "source_location": "L1",
+      "id": "app_policies_path_policy_rb",
+      "community": 81,
+      "norm_label": "path_policy.rb"
+    },
+    {
+      "label": "PathPolicy",
+      "file_type": "code",
+      "source_file": "app/policies/path_policy.rb",
+      "source_location": "L3",
+      "id": "policies_path_policy_pathpolicy",
+      "community": 81,
+      "norm_label": "pathpolicy"
     },
     {
       "label": "vehicle_policy.rb",
@@ -706,6 +760,33 @@
       "norm_label": "applicationrecord"
     },
     {
+      "label": "path.rb",
+      "file_type": "code",
+      "source_file": "app/models/path.rb",
+      "source_location": "L1",
+      "id": "app_models_path_rb",
+      "community": 78,
+      "norm_label": "path.rb"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "app/models/path.rb",
+      "source_location": "L1",
+      "id": "models_path_path",
+      "community": 78,
+      "norm_label": "path"
+    },
+    {
+      "label": ".highway_cost=()",
+      "file_type": "code",
+      "source_file": "app/models/path.rb",
+      "source_location": "L12",
+      "id": "models_path_path_highway_cost",
+      "community": 78,
+      "norm_label": ".highway_cost=()"
+    },
+    {
       "label": "transport.rb",
       "file_type": "code",
       "source_file": "app/models/transport.rb",
@@ -745,7 +826,7 @@
       "label": ".full_name()",
       "file_type": "code",
       "source_file": "app/models/user.rb",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "models_user_user_full_name",
       "community": 14,
       "norm_label": ".full_name()"
@@ -803,6 +884,114 @@
       "id": "controllers_home_controller_homecontroller_index",
       "community": 12,
       "norm_label": ".index()"
+    },
+    {
+      "label": "paths_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_paths_controller_rb",
+      "community": 9,
+      "norm_label": "paths_controller.rb"
+    },
+    {
+      "label": "PathsController",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L1",
+      "id": "controllers_paths_controller_pathscontroller",
+      "community": 9,
+      "norm_label": "pathscontroller"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L4",
+      "id": "controllers_paths_controller_pathscontroller_index",
+      "community": 9,
+      "norm_label": ".index()"
+    },
+    {
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L8",
+      "id": "controllers_paths_controller_pathscontroller_show",
+      "community": 9,
+      "norm_label": ".show()"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L11",
+      "id": "controllers_paths_controller_pathscontroller_new",
+      "community": 9,
+      "norm_label": ".new()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L15",
+      "id": "controllers_paths_controller_pathscontroller_create",
+      "community": 9,
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".edit()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L24",
+      "id": "controllers_paths_controller_pathscontroller_edit",
+      "community": 9,
+      "norm_label": ".edit()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L27",
+      "id": "controllers_paths_controller_pathscontroller_update",
+      "community": 9,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".confirm_destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L35",
+      "id": "controllers_paths_controller_pathscontroller_confirm_destroy",
+      "community": 9,
+      "norm_label": ".confirm_destroy()"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L38",
+      "id": "controllers_paths_controller_pathscontroller_destroy",
+      "community": 9,
+      "norm_label": ".destroy()"
+    },
+    {
+      "label": ".set_path()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L45",
+      "id": "controllers_paths_controller_pathscontroller_set_path",
+      "community": 9,
+      "norm_label": ".set_path()"
+    },
+    {
+      "label": ".path_params()",
+      "file_type": "code",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L50",
+      "id": "controllers_paths_controller_pathscontroller_path_params",
+      "community": 9,
+      "norm_label": ".path_params()"
     },
     {
       "label": "application_controller.rb",
@@ -1048,6 +1237,24 @@
       "norm_label": ".transport_params()"
     },
     {
+      "label": "paths_controller.rb",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/paths_controller.rb",
+      "source_location": "L1",
+      "id": "app_controllers_madmin_paths_controller_rb",
+      "community": 80,
+      "norm_label": "paths_controller.rb"
+    },
+    {
+      "label": "PathsController",
+      "file_type": "code",
+      "source_file": "app/controllers/madmin/paths_controller.rb",
+      "source_location": "L2",
+      "id": "madmin_paths_controller_pathscontroller",
+      "community": 80,
+      "norm_label": "pathscontroller"
+    },
+    {
       "label": "application_controller.rb",
       "file_type": "code",
       "source_file": "app/controllers/madmin/application_controller.rb",
@@ -1264,6 +1471,33 @@
       "norm_label": ".display_name()"
     },
     {
+      "label": "path_resource.rb",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/path_resource.rb",
+      "source_location": "L1",
+      "id": "app_madmin_resources_path_resource_rb",
+      "community": 77,
+      "norm_label": "path_resource.rb"
+    },
+    {
+      "label": "PathResource",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/path_resource.rb",
+      "source_location": "L1",
+      "id": "resources_path_resource_pathresource",
+      "community": 77,
+      "norm_label": "pathresource"
+    },
+    {
+      "label": ".display_name()",
+      "file_type": "code",
+      "source_file": "app/madmin/resources/path_resource.rb",
+      "source_location": "L11",
+      "id": "resources_path_resource_pathresource_display_name",
+      "community": 77,
+      "norm_label": ".display_name()"
+    },
+    {
       "label": "user_code_field.rb",
       "file_type": "code",
       "source_file": "app/madmin/fields/user_code_field.rb",
@@ -1441,6 +1675,33 @@
       "source_location": "L4",
       "id": "migrate_20261010105651_devise_create_users_devisecreateusers_change",
       "community": 13,
+      "norm_label": ".change()"
+    },
+    {
+      "label": "20261012100000_create_paths.rb",
+      "file_type": "code",
+      "source_file": "db/migrate/20261012100000_create_paths.rb",
+      "source_location": "L1",
+      "id": "db_migrate_20261012100000_create_paths_rb",
+      "community": 79,
+      "norm_label": "20261012100000_create_paths.rb"
+    },
+    {
+      "label": "CreatePaths",
+      "file_type": "code",
+      "source_file": "db/migrate/20261012100000_create_paths.rb",
+      "source_location": "L1",
+      "id": "migrate_20261012100000_create_paths_createpaths",
+      "community": 79,
+      "norm_label": "createpaths"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "db/migrate/20261012100000_create_paths.rb",
+      "source_location": "L2",
+      "id": "migrate_20261012100000_create_paths_createpaths_change",
+      "community": 79,
       "norm_label": ".change()"
     },
     {
@@ -2187,7 +2448,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L778",
       "id": "terminus_claude_approfondimento_brakeman",
-      "community": 9,
+      "community": 0,
       "norm_label": "approfondimento: brakeman"
     },
     {
@@ -2196,7 +2457,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L782",
       "id": "terminus_claude_installazione_e_utilizzo",
-      "community": 9,
+      "community": 0,
       "norm_label": "installazione e utilizzo"
     },
     {
@@ -2205,7 +2466,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L786",
       "id": "terminus_claude_codeblock_35",
-      "community": 9,
+      "community": 0,
       "norm_label": "code:ruby"
     },
     {
@@ -2214,7 +2475,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L794",
       "id": "terminus_claude_codeblock_36",
-      "community": 9,
+      "community": 0,
       "norm_label": "code:bash"
     },
     {
@@ -2223,7 +2484,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L804",
       "id": "terminus_claude_codeblock_37",
-      "community": 9,
+      "community": 0,
       "norm_label": "code:ruby"
     },
     {
@@ -2232,7 +2493,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L834",
       "id": "terminus_claude_approfondimento_bundler_audit",
-      "community": 0,
+      "community": 76,
       "norm_label": "approfondimento: bundler-audit"
     },
     {
@@ -2241,7 +2502,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L838",
       "id": "terminus_claude_installazione_e_utilizzo_bundler_audit",
-      "community": 0,
+      "community": 76,
       "norm_label": "installazione e utilizzo bundler-audit"
     },
     {
@@ -2250,7 +2511,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L842",
       "id": "terminus_claude_codeblock_38",
-      "community": 0,
+      "community": 76,
       "norm_label": "code:ruby"
     },
     {
@@ -2259,7 +2520,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L850",
       "id": "terminus_claude_codeblock_39",
-      "community": 0,
+      "community": 76,
       "norm_label": "code:bash"
     },
     {
@@ -2268,7 +2529,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L864",
       "id": "terminus_claude_codeblock_40",
-      "community": 0,
+      "community": 76,
       "norm_label": "code:ruby"
     },
     {
@@ -2277,7 +2538,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L896",
       "id": "terminus_claude_codeblock_41",
-      "community": 0,
+      "community": 76,
       "norm_label": "code:ruby"
     },
     {
@@ -2286,7 +2547,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L903",
       "id": "terminus_claude_codeblock_42",
-      "community": 0,
+      "community": 76,
       "norm_label": "code:ruby"
     },
     {
@@ -2604,8 +2865,18 @@
       "source_file": "spec/requests/vehicles_spec.rb",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_requests_vehicles_spec_rb",
-      "target": "requests_vehicles_spec_sign_in_as",
+      "target": "requests_vehicles_spec_sign_in_as"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/requests/paths_spec.rb",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "spec_requests_paths_spec_rb",
+      "target": "requests_paths_spec_sign_in_as",
       "confidence_score": 1.0
     },
     {
@@ -2765,12 +3036,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/policies/path_policy.rb",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_policies_path_policy_rb",
+      "target": "policies_path_policy_pathpolicy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/policies/vehicle_policy.rb",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_policies_vehicle_policy_rb",
-      "target": "policies_vehicle_policy_vehiclepolicy",
-      "confidence_score": 1.0
+      "target": "policies_vehicle_policy_vehiclepolicy"
     },
     {
       "relation": "contains",
@@ -2778,9 +3059,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_policies_owned_record_policy_rb",
-      "target": "policies_owned_record_policy_ownedrecordpolicy",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy"
     },
     {
       "relation": "contains",
@@ -2788,9 +3069,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_policies_owned_record_policy_rb",
-      "target": "policies_owned_record_policy_scope",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_scope"
     },
     {
       "relation": "method",
@@ -2798,9 +3079,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_show",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_show"
     },
     {
       "relation": "method",
@@ -2808,9 +3089,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_update",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_update"
     },
     {
       "relation": "method",
@@ -2818,9 +3099,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_destroy",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_destroy"
     },
     {
       "relation": "method",
@@ -2828,9 +3109,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_confirm_destroy",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_confirm_destroy"
     },
     {
       "relation": "method",
@@ -2838,9 +3119,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner"
     },
     {
       "relation": "calls",
@@ -2849,9 +3130,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy_show",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner"
     },
     {
       "relation": "calls",
@@ -2860,9 +3141,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy_update",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner"
     },
     {
       "relation": "calls",
@@ -2871,9 +3152,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy_destroy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_update",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_update"
     },
     {
       "relation": "calls",
@@ -2882,9 +3163,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_ownedrecordpolicy_confirm_destroy",
-      "target": "policies_owned_record_policy_ownedrecordpolicy_owner",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_ownedrecordpolicy_owner"
     },
     {
       "relation": "method",
@@ -2892,9 +3173,9 @@
       "source_file": "app/policies/owned_record_policy.rb",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "policies_owned_record_policy_scope",
-      "target": "policies_owned_record_policy_scope_resolve",
-      "confidence_score": 1.0
+      "target": "policies_owned_record_policy_scope_resolve"
     },
     {
       "relation": "contains",
@@ -3132,6 +3413,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/models/path.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_models_path_rb",
+      "target": "models_path_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models/path.rb",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "models_path_path",
+      "target": "models_path_path_highway_cost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/models/transport.rb",
       "source_location": "L1",
       "weight": 1.0,
@@ -3187,9 +3488,9 @@
       "source_file": "app/models/vehicle.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_models_vehicle_rb",
-      "target": "models_vehicle_vehicle",
-      "confidence_score": 1.0
+      "target": "models_vehicle_vehicle"
     },
     {
       "relation": "method",
@@ -3197,9 +3498,9 @@
       "source_file": "app/models/vehicle.rb",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_vehicle_vehicle",
-      "target": "models_vehicle_vehicle_full_name",
-      "confidence_score": 1.0
+      "target": "models_vehicle_vehicle_full_name"
     },
     {
       "relation": "contains",
@@ -3220,6 +3521,127 @@
       "confidence_score": 1.0,
       "source": "controllers_home_controller_homecontroller",
       "target": "controllers_home_controller_homecontroller_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_controllers_paths_controller_rb",
+      "target": "controllers_paths_controller_pathscontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_edit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_confirm_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_set_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller",
+      "target": "controllers_paths_controller_pathscontroller_path_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/controllers/paths_controller.rb",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "controllers_paths_controller_pathscontroller_create",
+      "target": "controllers_paths_controller_pathscontroller_new",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3247,9 +3669,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_controllers_vehicles_controller_rb",
-      "target": "controllers_vehicles_controller_vehiclescontroller",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller"
     },
     {
       "relation": "method",
@@ -3257,9 +3679,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_index",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_index"
     },
     {
       "relation": "method",
@@ -3267,9 +3689,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_show",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_show"
     },
     {
       "relation": "method",
@@ -3277,9 +3699,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_new",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_new"
     },
     {
       "relation": "method",
@@ -3287,9 +3709,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_create",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_create"
     },
     {
       "relation": "method",
@@ -3297,9 +3719,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_edit",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_edit"
     },
     {
       "relation": "method",
@@ -3307,9 +3729,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_update",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_update"
     },
     {
       "relation": "method",
@@ -3317,9 +3739,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_confirm_destroy"
     },
     {
       "relation": "method",
@@ -3327,9 +3749,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_destroy",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_destroy"
     },
     {
       "relation": "method",
@@ -3337,9 +3759,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_set_vehicle",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_set_vehicle"
     },
     {
       "relation": "method",
@@ -3347,9 +3769,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller",
-      "target": "controllers_vehicles_controller_vehiclescontroller_vehicle_params",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_vehicle_params"
     },
     {
       "relation": "calls",
@@ -3358,9 +3780,9 @@
       "source_file": "app/controllers/vehicles_controller.rb",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_vehicles_controller_vehiclescontroller_create",
-      "target": "controllers_vehicles_controller_vehiclescontroller_new",
-      "confidence_score": 1.0
+      "target": "controllers_vehicles_controller_vehiclescontroller_new"
     },
     {
       "relation": "contains",
@@ -3486,6 +3908,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/controllers/madmin/paths_controller.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_controllers_madmin_paths_controller_rb",
+      "target": "madmin_paths_controller_pathscontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/controllers/madmin/application_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
@@ -3509,9 +3941,9 @@
       "source_file": "app/controllers/madmin/vehicles_controller.rb",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_controllers_madmin_vehicles_controller_rb",
-      "target": "madmin_vehicles_controller_vehiclescontroller",
-      "confidence_score": 1.0
+      "target": "madmin_vehicles_controller_vehiclescontroller"
     },
     {
       "relation": "contains",
@@ -3619,9 +4051,9 @@
       "source_file": "app/madmin/resources/vehicle_resource.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_madmin_resources_vehicle_resource_rb",
-      "target": "resources_vehicle_resource_vehicleresource",
-      "confidence_score": 1.0
+      "target": "resources_vehicle_resource_vehicleresource"
     },
     {
       "relation": "method",
@@ -3629,8 +4061,28 @@
       "source_file": "app/madmin/resources/vehicle_resource.rb",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "resources_vehicle_resource_vehicleresource",
-      "target": "resources_vehicle_resource_vehicleresource_display_name",
+      "target": "resources_vehicle_resource_vehicleresource_display_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/path_resource.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_madmin_resources_path_resource_rb",
+      "target": "resources_path_resource_pathresource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/madmin/resources/path_resource.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "resources_path_resource_pathresource",
+      "target": "resources_path_resource_pathresource_display_name",
       "confidence_score": 1.0
     },
     {
@@ -3709,9 +4161,9 @@
       "source_file": "db/migrate/20261011112313_create_vehicles.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "db_migrate_20261011112313_create_vehicles_rb",
-      "target": "migrate_20261011112313_create_vehicles_createvehicles",
-      "confidence_score": 1.0
+      "target": "migrate_20261011112313_create_vehicles_createvehicles"
     },
     {
       "relation": "method",
@@ -3719,9 +4171,9 @@
       "source_file": "db/migrate/20261011112313_create_vehicles.rb",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "migrate_20261011112313_create_vehicles_createvehicles",
-      "target": "migrate_20261011112313_create_vehicles_createvehicles_change",
-      "confidence_score": 1.0
+      "target": "migrate_20261011112313_create_vehicles_createvehicles_change"
     },
     {
       "relation": "contains",
@@ -3742,6 +4194,26 @@
       "confidence_score": 1.0,
       "source": "migrate_20261010105651_devise_create_users_devisecreateusers",
       "target": "migrate_20261010105651_devise_create_users_devisecreateusers_change"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261012100000_create_paths.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "db_migrate_20261012100000_create_paths_rb",
+      "target": "migrate_20261012100000_create_paths_createpaths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db/migrate/20261012100000_create_paths.rb",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "migrate_20261012100000_create_paths_createpaths",
+      "target": "migrate_20261012100000_create_paths_createpaths_change",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4918,5 +5390,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1ee5e0fff5bb1018641287d06b7b57bc8875a4d3"
+  "built_at_commit": "6822cff9d86c2b3f745e6276c4180c953be75ca2"
 }

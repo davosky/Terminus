@@ -1,16 +1,16 @@
-# Graph Report - Terminus  (2026-10-11)
+# Graph Report - Terminus  (2026-10-12)
 
 ## Corpus Check
-- 83 files · ~66,894 words
+- 92 files · ~98,507 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 287 nodes · 231 edges · 76 communities (52 shown, 24 thin omitted)
+- 316 nodes · 252 edges · 85 communities (55 shown, 30 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1ee5e0ff`
+- Built from commit: `6822cff9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -50,27 +50,33 @@
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — Guida per Claude Code` - 25 edges
-2. `VehiclesController` - 11 edges
-3. `TransportsController` - 11 edges
-4. `ApplicationPolicy` - 9 edges
-5. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
-6. `TransportPolicy` - 8 edges
-7. `7. Autenticazione e Autorizzazione Robuste` - 7 edges
-8. `OwnedRecordPolicy` - 6 edges
-9. `Installazione e Utilizzo bundler-audit` - 6 edges
-10. `UserCodeField` - 5 edges
+2. `PathsController` - 11 edges
+3. `VehiclesController` - 11 edges
+4. `TransportsController` - 11 edges
+5. `ApplicationPolicy` - 9 edges
+6. `Best Practice di Sicurezza Chiave in Ruby on Rails` - 9 edges
+7. `TransportPolicy` - 8 edges
+8. `7. Autenticazione e Autorizzazione Robuste` - 7 edges
+9. `OwnedRecordPolicy` - 6 edges
+10. `Installazione e Utilizzo bundler-audit` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (76 total, 24 thin omitted)
+## Communities (85 total, 30 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (38): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Modifiche chirurgiche, 4. Esecuzione orientata all'obiettivo, ❌ Anti-Pattern da Evitare, 🗃️ Applicazione, Approfondimento: bundler-audit, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails (+30 more)
+Nodes (36): 1. Pensare prima di scrivere codice, 2. Prima la semplicità, 3. Modifiche chirurgiche, 4. Esecuzione orientata all'obiettivo, ❌ Anti-Pattern da Evitare, 🗃️ Applicazione, Approfondimento: Brakeman, 🔑 Best Practice Essenziali di Sicurezza per Ruby on Rails (+28 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.08
@@ -92,10 +98,6 @@ Nodes (5): Approccio: Test-first quando possibile, code:bash (spec/), code:ruby 
 Cohesion: 0.40
 Nodes (5): Controller, 🤝 Convenzioni di Codice, Generale, Modelli, Naming
 
-### Community 9 - "Community 9"
-Cohesion: 0.40
-Nodes (5): Approfondimento: Brakeman, code:ruby, code:bash, code:ruby, Installazione e Utilizzo
-
 ### Community 10 - "Community 10"
 Cohesion: 0.22
 Nodes (8): Applicazione WEB scritta in Ruby On Rails per gestire rimborsi spese ed assenze, Controllo visuale, Database, Interfaccia, Logica dell'applicazione, Proporzioni, Struttura di User, Terminus
@@ -112,23 +114,27 @@ Nodes (6): Avvio del progetto, code:bash (bin/setup   # setup iniziale (dipenden
 Cohesion: 0.40
 Nodes (4): Copyright (c) 2026, Davo Davosky - The Davosky Connection, English, Italiano
 
+### Community 76 - "Community 76"
+Cohesion: 0.29
+Nodes (7): Approfondimento: bundler-audit, code:ruby, code:bash, code:ruby, code:ruby, code:ruby, Installazione e Utilizzo bundler-audit
+
 ## Knowledge Gaps
-- **85 isolated node(s):** `Application`, `VehiclePolicy`, `application`, `ApplicationRecord`, `Transport` (+80 more)
+- **87 isolated node(s):** `Application`, `PathPolicy`, `VehiclePolicy`, `application`, `ApplicationRecord` (+82 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 0` to `Community 8`, `Community 1`, `Community 9`, `Community 7`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
+- **Why does `CLAUDE.md — Guida per Claude Code` connect `Community 0` to `Community 8`, `Community 1`, `Community 76`, `Community 7`?**
+  _High betweenness centrality (0.062) - this node is a cross-community bridge._
 - **Why does `Best Practice di Sicurezza Chiave in Ruby on Rails` connect `Community 1` to `Community 0`, `Community 4`?**
-  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **Why does `7. Autenticazione e Autorizzazione Robuste` connect `Community 4` to `Community 1`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **What connects `Application`, `VehiclePolicy`, `application` to the rest of the system?**
-  _85 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **What connects `Application`, `PathPolicy`, `VehiclePolicy` to the rest of the system?**
+  _87 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._

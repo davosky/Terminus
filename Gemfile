@@ -73,4 +73,4 @@ gem "faker", "~> 3.8", groups: [ :development, :test ]
 
 gem "capybara", "~> 3.40", group: :test
 
-gem "madmin", "~> 3.3"
+gem "madmin", "~> 3.4"
